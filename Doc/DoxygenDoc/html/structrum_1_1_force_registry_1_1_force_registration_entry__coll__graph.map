@@ -1,0 +1,4 @@
+<map id="rum::ForceRegistry::ForceRegistrationEntry" name="rum::ForceRegistry::ForceRegistrationEntry">
+<area shape="rect" id="node2" href="$classrum_1_1_rigid_body.html" title="{rum::RigidBody\n||+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ getForceAccumulated()\l+ getTorqueAccumulated()\land 37 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="370,233,585,487"/>
+<area shape="rect" id="node9" href="$classrum_1_1_force_generator.html" title="{rum::ForceGenerator\n||+ UpdateForce()\l}" alt="" coords="609,321,751,399"/>
+</map>

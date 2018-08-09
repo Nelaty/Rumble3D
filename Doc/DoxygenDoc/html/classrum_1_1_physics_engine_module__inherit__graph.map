@@ -1,0 +1,4 @@
+<map id="rum::PhysicsEngineModule" name="rum::PhysicsEngineModule">
+<area shape="rect" id="node2" href="$classrum_1_1_particle_world.html" title="{rum::ParticleWorld\n||+ ParticleWorld()\l+ ~ParticleWorld()\l+ OnBegin()\l+ Reset()\l+ Step()\l+ Integrate()\l+ AddParticle()\l+ RemoveParticle()\l+ RemoveAllParticles()\l+ AddContactGenerator()\l+ RemoveContactGenerator()\l+ RemoveAllContactGenerators()\l+ GetParticleForceRegistry()\l}" alt="" coords="5,255,217,509"/>
+<area shape="rect" id="node3" href="$classrum_1_1_rigid_body_world.html" title="{rum::RigidBodyWorld\n||+ RigidBodyWorld()\l+ ~RigidBodyWorld()\l+ integrate()\l+ addRigidBody()\l+ removeRigidBody()\l+ RemoveAllRigidBodies()\l+ AddForceGenerator()\l+ RemoveForceGenerator()\l+ RemoveAllForceGenerators()\l+ addCollisionBox()\l+ addCollisionPrimitive()\l+ getRigidBodyForceRegistry()\l+ StartFrame()\l+ runPhysics()\l}" alt="" coords="242,248,442,516"/>
+</map>

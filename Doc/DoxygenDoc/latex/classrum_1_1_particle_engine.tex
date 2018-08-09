@@ -1,0 +1,78 @@
+\hypertarget{classrum_1_1_particle_engine}{}\section{rum\+:\+:Particle\+Engine Class Reference}
+\label{classrum_1_1_particle_engine}\index{rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}}
+Inheritance diagram for rum\+:\+:Particle\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrum_1_1_particle_engine}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classrum_1_1_particle_engine_a3785ceb58569bfdf126f7e61cce19be5}\label{classrum_1_1_particle_engine_a3785ceb58569bfdf126f7e61cce19be5}} 
+using {\bfseries Particle\+World\+\_\+\+TP} = std\+::unique\+\_\+ptr$<$ \hyperlink{classrum_1_1_particle_world}{Particle\+World} $>$
+\item 
+\mbox{\Hypertarget{classrum_1_1_particle_engine_a49901384a4c75032ab9b5a33a5a7d5cc}\label{classrum_1_1_particle_engine_a49901384a4c75032ab9b5a33a5a7d5cc}} 
+using {\bfseries Particle\+Node\+\_\+\+TP} = Particle\+Node $\ast$
+\item 
+\mbox{\Hypertarget{classrum_1_1_particle_engine_aadfb6f92c3af8210a30ad71d038d8024}\label{classrum_1_1_particle_engine_aadfb6f92c3af8210a30ad71d038d8024}} 
+using {\bfseries Particle\+Nodes\+\_\+T} = std\+::vector$<$ Particle\+Node\+\_\+\+TP $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classrum_1_1_particle_engine_ac25c2f442c5ca9ace806384797cbe0a6}{Step} (const float time\+Delta) override
+\item 
+virtual void \hyperlink{classrum_1_1_particle_engine_a7b3f0cc43054fb7a6367cf082543396e}{Integrate} (const float time\+Delta) override
+\item 
+virtual void \hyperlink{classrum_1_1_particle_engine_af1249c80ca75209f08b88f76b94a60f9}{Reset} () override
+\item 
+\mbox{\Hypertarget{classrum_1_1_particle_engine_a4f6d10f807ee41f424739d777147967a}\label{classrum_1_1_particle_engine_a4f6d10f807ee41f424739d777147967a}} 
+void {\bfseries Add\+Particle\+Node} (Particle\+Node $\ast$particle\+Node)
+\item 
+\mbox{\Hypertarget{classrum_1_1_particle_engine_a9156915ba5a1cd59e7f9fd68095da07c}\label{classrum_1_1_particle_engine_a9156915ba5a1cd59e7f9fd68095da07c}} 
+bool {\bfseries Remove\+Particle\+Node} (Particle\+Node $\ast$particle\+Node)
+\item 
+\mbox{\Hypertarget{classrum_1_1_particle_engine_a39ff2aaad1ddf86edf636dd6321f88b2}\label{classrum_1_1_particle_engine_a39ff2aaad1ddf86edf636dd6321f88b2}} 
+\hyperlink{classrum_1_1_particle_world}{Particle\+World} $\ast$ {\bfseries Get\+World} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_engine_a7b3f0cc43054fb7a6367cf082543396e}\label{classrum_1_1_particle_engine_a7b3f0cc43054fb7a6367cf082543396e}} 
+\index{rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}!Integrate@{Integrate}}
+\index{Integrate@{Integrate}!rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}}
+\subsubsection{\texorpdfstring{Integrate()}{Integrate()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Engine\+::\+Integrate (\begin{DoxyParamCaption}\item[{const float}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Apply the changes as a result of the simulation. 
+
+Implements \hyperlink{classrum_1_1_physics_engine_module_a8635a9194b86cf3c70723ebb4e8c967c}{rum\+::\+Physics\+Engine\+Module}.
+
+\mbox{\Hypertarget{classrum_1_1_particle_engine_af1249c80ca75209f08b88f76b94a60f9}\label{classrum_1_1_particle_engine_af1249c80ca75209f08b88f76b94a60f9}} 
+\index{rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}!Reset@{Reset}}
+\index{Reset@{Reset}!rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Engine\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Reset the physics engine module to its initial state 
+
+Implements \hyperlink{classrum_1_1_physics_engine_module_a1ee77a3a48ced8291a86506e6904ca9e}{rum\+::\+Physics\+Engine\+Module}.
+
+\mbox{\Hypertarget{classrum_1_1_particle_engine_ac25c2f442c5ca9ace806384797cbe0a6}\label{classrum_1_1_particle_engine_ac25c2f442c5ca9ace806384797cbe0a6}} 
+\index{rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}!Step@{Step}}
+\index{Step@{Step}!rum\+::\+Particle\+Engine@{rum\+::\+Particle\+Engine}}
+\subsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Engine\+::\+Step (\begin{DoxyParamCaption}\item[{const float}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Calculate changes in the physics engine and accumulate them in buffers. Will not apply those changes yet. 
+
+Implements \hyperlink{classrum_1_1_physics_engine_module_a0c8bfcf27aee16f05ef9a83948f330ac}{rum\+::\+Physics\+Engine\+Module}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/Particle\+Engine.\+h\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/Particle\+Engine.\+cpp\end{DoxyCompactItemize}

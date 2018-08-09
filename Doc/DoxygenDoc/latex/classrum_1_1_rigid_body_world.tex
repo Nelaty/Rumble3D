@@ -1,0 +1,182 @@
+\hypertarget{classrum_1_1_rigid_body_world}{}\section{rum\+:\+:Rigid\+Body\+World Class Reference}
+\label{classrum_1_1_rigid_body_world}\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+
+
+{\ttfamily \#include $<$Rigid\+Body\+World.\+h$>$}
+
+
+
+Inheritance diagram for rum\+:\+:Rigid\+Body\+World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classrum_1_1_rigid_body_world__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rum\+:\+:Rigid\+Body\+World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrum_1_1_rigid_body_world__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$ $>$ \hyperlink{classrum_1_1_rigid_body_world_afe5860f7166496b2adca2b8febe24b00}{Rigid\+Bodies}
+\item 
+typedef std\+::list$<$ \hyperlink{classrum_1_1_collision_box}{Collision\+Box} $\ast$ $>$ \hyperlink{classrum_1_1_rigid_body_world_a61fdadb1dd461f21c67f82c35ff08d1e}{Collision\+Boxes}
+\item 
+typedef std\+::list$<$ \hyperlink{classrum_1_1_collision_primitive}{Collision\+Primitive} $\ast$ $>$ \hyperlink{classrum_1_1_rigid_body_world_aac4ad352eb6647e1055b306c8dad6640}{Collision\+Primitives}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_rigid_body_world_a4ee28cf5c01d2501b86f1a561bd81b5b}{Rigid\+Body\+World} (unsigned max\+Contacts, unsigned iterations)
+\item 
+\hyperlink{classrum_1_1_rigid_body_world_ad3c644b75ec540c77eac4afdcb4fb894}{$\sim$\+Rigid\+Body\+World} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_ad7112530d6702445b7ce3ed6d2364c5a}{integrate} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_afaeef60e06bb9804ea2316dc6b7c2653}{add\+Rigid\+Body} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$rb)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_ad43516679c85851f227a3f637ec22a8f}{remove\+Rigid\+Body} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$rb)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_a8a5b1d19a8cc5cd6018ff3e4150e3a75}{Remove\+All\+Rigid\+Bodies} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_ac31792a35fd305feb3b78317595b6a88}{Add\+Force\+Generator} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$rigid\+Body, \hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$force\+Generator)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_aab51d7273a8868425adfd4d7b9536ee0}{Remove\+Force\+Generator} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$rigid\+Body, \hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$force\+Generator)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_a8035c1b8adbf487d68bcbcea020acaa6}{Remove\+All\+Force\+Generators} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_a8e771d43f2242d305055f2bd5017715d}{add\+Collision\+Box} (\hyperlink{classrum_1_1_collision_box}{Collision\+Box} $\ast$box)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_a812a6ce6c6a1b577cf2cd8ef8d1fb525}{add\+Collision\+Primitive} (\hyperlink{classrum_1_1_collision_primitive}{Collision\+Primitive} $\ast$primitive)
+\item 
+\hyperlink{classrum_1_1_force_registry}{Force\+Registry} $\ast$ \hyperlink{classrum_1_1_rigid_body_world_ad48970bd5edc2982d4d64d9861a3f25d}{get\+Rigid\+Body\+Force\+Registry} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_a104eac3b31fdb31280dc13345c2d8653}{Start\+Frame} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_world_ae1e8c9b40613123a99dd14fe19926807}{run\+Physics} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration, unsigned \&tmp)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a61fdadb1dd461f21c67f82c35ff08d1e}\label{classrum_1_1_rigid_body_world_a61fdadb1dd461f21c67f82c35ff08d1e}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Collision\+Boxes@{Collision\+Boxes}}
+\index{Collision\+Boxes@{Collision\+Boxes}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Collision\+Boxes}{CollisionBoxes}}
+{\footnotesize\ttfamily typedef std\+::list$<$\hyperlink{classrum_1_1_collision_box}{Collision\+Box}$\ast$$>$ \hyperlink{classrum_1_1_rigid_body_world_a61fdadb1dd461f21c67f82c35ff08d1e}{rum\+::\+Rigid\+Body\+World\+::\+Collision\+Boxes}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_aac4ad352eb6647e1055b306c8dad6640}\label{classrum_1_1_rigid_body_world_aac4ad352eb6647e1055b306c8dad6640}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Collision\+Primitives@{Collision\+Primitives}}
+\index{Collision\+Primitives@{Collision\+Primitives}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Collision\+Primitives}{CollisionPrimitives}}
+{\footnotesize\ttfamily typedef std\+::list$<$\hyperlink{classrum_1_1_collision_primitive}{Collision\+Primitive}$\ast$$>$ \hyperlink{classrum_1_1_rigid_body_world_aac4ad352eb6647e1055b306c8dad6640}{rum\+::\+Rigid\+Body\+World\+::\+Collision\+Primitives}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_afe5860f7166496b2adca2b8febe24b00}\label{classrum_1_1_rigid_body_world_afe5860f7166496b2adca2b8febe24b00}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Rigid\+Bodies@{Rigid\+Bodies}}
+\index{Rigid\+Bodies@{Rigid\+Bodies}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Rigid\+Bodies}{RigidBodies}}
+{\footnotesize\ttfamily typedef std\+::list$<$\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}$\ast$$>$ \hyperlink{classrum_1_1_rigid_body_world_afe5860f7166496b2adca2b8febe24b00}{rum\+::\+Rigid\+Body\+World\+::\+Rigid\+Bodies}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a4ee28cf5c01d2501b86f1a561bd81b5b}\label{classrum_1_1_rigid_body_world_a4ee28cf5c01d2501b86f1a561bd81b5b}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Rigid\+Body\+World@{Rigid\+Body\+World}}
+\index{Rigid\+Body\+World@{Rigid\+Body\+World}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Rigid\+Body\+World()}{RigidBodyWorld()}}
+{\footnotesize\ttfamily rum\+::\+Rigid\+Body\+World\+::\+Rigid\+Body\+World (\begin{DoxyParamCaption}\item[{unsigned}]{max\+Contacts,  }\item[{unsigned}]{iterations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_ad3c644b75ec540c77eac4afdcb4fb894}\label{classrum_1_1_rigid_body_world_ad3c644b75ec540c77eac4afdcb4fb894}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!````~Rigid\+Body\+World@{$\sim$\+Rigid\+Body\+World}}
+\index{````~Rigid\+Body\+World@{$\sim$\+Rigid\+Body\+World}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{$\sim$\+Rigid\+Body\+World()}{~RigidBodyWorld()}}
+{\footnotesize\ttfamily rum\+::\+Rigid\+Body\+World\+::$\sim$\+Rigid\+Body\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a8e771d43f2242d305055f2bd5017715d}\label{classrum_1_1_rigid_body_world_a8e771d43f2242d305055f2bd5017715d}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!add\+Collision\+Box@{add\+Collision\+Box}}
+\index{add\+Collision\+Box@{add\+Collision\+Box}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{add\+Collision\+Box()}{addCollisionBox()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::add\+Collision\+Box (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_collision_box}{Collision\+Box} $\ast$}]{box }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a812a6ce6c6a1b577cf2cd8ef8d1fb525}\label{classrum_1_1_rigid_body_world_a812a6ce6c6a1b577cf2cd8ef8d1fb525}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!add\+Collision\+Primitive@{add\+Collision\+Primitive}}
+\index{add\+Collision\+Primitive@{add\+Collision\+Primitive}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{add\+Collision\+Primitive()}{addCollisionPrimitive()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::add\+Collision\+Primitive (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_collision_primitive}{Collision\+Primitive} $\ast$}]{primitive }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_ac31792a35fd305feb3b78317595b6a88}\label{classrum_1_1_rigid_body_world_ac31792a35fd305feb3b78317595b6a88}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Add\+Force\+Generator@{Add\+Force\+Generator}}
+\index{Add\+Force\+Generator@{Add\+Force\+Generator}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Add\+Force\+Generator()}{AddForceGenerator()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::\+Add\+Force\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{rigid\+Body,  }\item[{\hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$}]{force\+Generator }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_afaeef60e06bb9804ea2316dc6b7c2653}\label{classrum_1_1_rigid_body_world_afaeef60e06bb9804ea2316dc6b7c2653}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!add\+Rigid\+Body@{add\+Rigid\+Body}}
+\index{add\+Rigid\+Body@{add\+Rigid\+Body}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{add\+Rigid\+Body()}{addRigidBody()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::add\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{rb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_ad48970bd5edc2982d4d64d9861a3f25d}\label{classrum_1_1_rigid_body_world_ad48970bd5edc2982d4d64d9861a3f25d}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!get\+Rigid\+Body\+Force\+Registry@{get\+Rigid\+Body\+Force\+Registry}}
+\index{get\+Rigid\+Body\+Force\+Registry@{get\+Rigid\+Body\+Force\+Registry}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{get\+Rigid\+Body\+Force\+Registry()}{getRigidBodyForceRegistry()}}
+{\footnotesize\ttfamily \hyperlink{classrum_1_1_force_registry}{Force\+Registry} $\ast$ rum\+::\+Rigid\+Body\+World\+::get\+Rigid\+Body\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_ad7112530d6702445b7ce3ed6d2364c5a}\label{classrum_1_1_rigid_body_world_ad7112530d6702445b7ce3ed6d2364c5a}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!integrate@{integrate}}
+\index{integrate@{integrate}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::integrate (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a8035c1b8adbf487d68bcbcea020acaa6}\label{classrum_1_1_rigid_body_world_a8035c1b8adbf487d68bcbcea020acaa6}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Remove\+All\+Force\+Generators@{Remove\+All\+Force\+Generators}}
+\index{Remove\+All\+Force\+Generators@{Remove\+All\+Force\+Generators}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Remove\+All\+Force\+Generators()}{RemoveAllForceGenerators()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::\+Remove\+All\+Force\+Generators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a8a5b1d19a8cc5cd6018ff3e4150e3a75}\label{classrum_1_1_rigid_body_world_a8a5b1d19a8cc5cd6018ff3e4150e3a75}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Remove\+All\+Rigid\+Bodies@{Remove\+All\+Rigid\+Bodies}}
+\index{Remove\+All\+Rigid\+Bodies@{Remove\+All\+Rigid\+Bodies}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Remove\+All\+Rigid\+Bodies()}{RemoveAllRigidBodies()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::\+Remove\+All\+Rigid\+Bodies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_aab51d7273a8868425adfd4d7b9536ee0}\label{classrum_1_1_rigid_body_world_aab51d7273a8868425adfd4d7b9536ee0}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Remove\+Force\+Generator@{Remove\+Force\+Generator}}
+\index{Remove\+Force\+Generator@{Remove\+Force\+Generator}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Remove\+Force\+Generator()}{RemoveForceGenerator()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::\+Remove\+Force\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{rigid\+Body,  }\item[{\hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$}]{force\+Generator }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_ad43516679c85851f227a3f637ec22a8f}\label{classrum_1_1_rigid_body_world_ad43516679c85851f227a3f637ec22a8f}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!remove\+Rigid\+Body@{remove\+Rigid\+Body}}
+\index{remove\+Rigid\+Body@{remove\+Rigid\+Body}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{remove\+Rigid\+Body()}{removeRigidBody()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::remove\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{rb }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_ae1e8c9b40613123a99dd14fe19926807}\label{classrum_1_1_rigid_body_world_ae1e8c9b40613123a99dd14fe19926807}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!run\+Physics@{run\+Physics}}
+\index{run\+Physics@{run\+Physics}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{run\+Physics()}{runPhysics()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::run\+Physics (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration,  }\item[{unsigned \&}]{tmp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_world_a104eac3b31fdb31280dc13345c2d8653}\label{classrum_1_1_rigid_body_world_a104eac3b31fdb31280dc13345c2d8653}} 
+\index{rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}!Start\+Frame@{Start\+Frame}}
+\index{Start\+Frame@{Start\+Frame}!rum\+::\+Rigid\+Body\+World@{rum\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{Start\+Frame()}{StartFrame()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+World\+::\+Start\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_rigid_body_world_8h}{Rigid\+Body\+World.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_rigid_body_world_8cpp}{Rigid\+Body\+World.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{classrum_1_1_bounding_sphere}{}\section{rum\+:\+:Bounding\+Sphere Class Reference}
+\label{classrum_1_1_bounding_sphere}\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+
+
+{\ttfamily \#include $<$Bounding\+Sphere.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:Bounding\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classrum_1_1_bounding_sphere__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_bounding_sphere_a9fcd71c636d8603a7f2b8bf0571187ef}{Bounding\+Sphere} ()
+\item 
+\hyperlink{classrum_1_1_bounding_sphere_adc0112926da70e6670fd75feb04ba1d0}{Bounding\+Sphere} (const glm\+::vec3 \&center, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} radius)
+\item 
+\hyperlink{classrum_1_1_bounding_sphere_ad97a79a4d245770556b3526d3db9cad8}{Bounding\+Sphere} (const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} \&one, const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} \&two)
+\item 
+\hyperlink{classrum_1_1_bounding_sphere_a2a6e3e469ebaa4a783cc0688c065d171}{$\sim$\+Bounding\+Sphere} ()
+\item 
+bool \hyperlink{classrum_1_1_bounding_sphere_a7e6b47e6ec7600266a2df32a04e3b075}{Overlaps} (const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} $\ast$other) const
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_bounding_sphere_ab1921b42cca30a1c9deb3bee24c6d423}{Get\+Size} () const
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_bounding_sphere_a69dfe111291edb351c1b316818fd136e}{Get\+Growth} (const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_bounding_sphere_acc7a118371f95f36831b12c1862fbfb1}{m\+\_\+center}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_bounding_sphere_acc810ba77f514caeef45a248f2ffb67c}{m\+\_\+radius}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_a9fcd71c636d8603a7f2b8bf0571187ef}\label{classrum_1_1_bounding_sphere_a9fcd71c636d8603a7f2b8bf0571187ef}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
+\index{Bounding\+Sphere@{Bounding\+Sphere}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_adc0112926da70e6670fd75feb04ba1d0}\label{classrum_1_1_bounding_sphere_adc0112926da70e6670fd75feb04ba1d0}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
+\index{Bounding\+Sphere@{Bounding\+Sphere}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{center,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_ad97a79a4d245770556b3526d3db9cad8}\label{classrum_1_1_bounding_sphere_ad97a79a4d245770556b3526d3db9cad8}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
+\index{Bounding\+Sphere@{Bounding\+Sphere}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} \&}]{one,  }\item[{const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} \&}]{two }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_a2a6e3e469ebaa4a783cc0688c065d171}\label{classrum_1_1_bounding_sphere_a2a6e3e469ebaa4a783cc0688c065d171}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!````~Bounding\+Sphere@{$\sim$\+Bounding\+Sphere}}
+\index{````~Bounding\+Sphere@{$\sim$\+Bounding\+Sphere}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{$\sim$\+Bounding\+Sphere()}{~BoundingSphere()}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Sphere\+::$\sim$\+Bounding\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_a69dfe111291edb351c1b316818fd136e}\label{classrum_1_1_bounding_sphere_a69dfe111291edb351c1b316818fd136e}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!Get\+Growth@{Get\+Growth}}
+\index{Get\+Growth@{Get\+Growth}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Get\+Growth()}{GetGrowth()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Bounding\+Sphere\+::\+Get\+Growth (\begin{DoxyParamCaption}\item[{const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_ab1921b42cca30a1c9deb3bee24c6d423}\label{classrum_1_1_bounding_sphere_ab1921b42cca30a1c9deb3bee24c6d423}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Bounding\+Sphere\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_a7e6b47e6ec7600266a2df32a04e3b075}\label{classrum_1_1_bounding_sphere_a7e6b47e6ec7600266a2df32a04e3b075}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Overlaps()}{Overlaps()}}
+{\footnotesize\ttfamily bool rum\+::\+Bounding\+Sphere\+::\+Overlaps (\begin{DoxyParamCaption}\item[{const \hyperlink{classrum_1_1_bounding_sphere}{Bounding\+Sphere} $\ast$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_acc7a118371f95f36831b12c1862fbfb1}\label{classrum_1_1_bounding_sphere_acc7a118371f95f36831b12c1862fbfb1}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!m\+\_\+center@{m\+\_\+center}}
+\index{m\+\_\+center@{m\+\_\+center}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+center}{m\_center}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Bounding\+Sphere\+::m\+\_\+center\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_sphere_acc810ba77f514caeef45a248f2ffb67c}\label{classrum_1_1_bounding_sphere_acc810ba77f514caeef45a248f2ffb67c}} 
+\index{rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}!m\+\_\+radius@{m\+\_\+radius}}
+\index{m\+\_\+radius@{m\+\_\+radius}!rum\+::\+Bounding\+Sphere@{rum\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+radius}{m\_radius}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Bounding\+Sphere\+::m\+\_\+radius\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_bounding_sphere_8h}{Bounding\+Sphere.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_bounding_sphere_8cpp}{Bounding\+Sphere.\+cpp}\end{DoxyCompactItemize}

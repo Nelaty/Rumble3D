@@ -1,0 +1,97 @@
+\hypertarget{classrum_1_1_anchored_spring}{}\section{rum\+:\+:Anchored\+Spring Class Reference}
+\label{classrum_1_1_anchored_spring}\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+
+
+{\ttfamily \#include $<$Anchored\+Spring.\+h$>$}
+
+
+
+Inheritance diagram for rum\+:\+:Anchored\+Spring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classrum_1_1_anchored_spring__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rum\+:\+:Anchored\+Spring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_anchored_spring__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_anchored_spring_a3bce11c4c0009f1ae3da23525cb99d6c}{Anchored\+Spring} (const glm\+::vec3 \&anchor, const glm\+::vec3 \&local\+Connection\+Point, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} spring\+Constant, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rest\+Length)
+\item 
+virtual void \hyperlink{classrum_1_1_anchored_spring_a7fd4b23ad409fbb678ecace8e99fed68}{Update\+Force} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$body, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_anchored_spring_ab828f6a46832b1a36909bf858608579b}{m\+\_\+connection\+Point}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_anchored_spring_ae13ff4ceb813a9e88182fdf04d890d08}{m\+\_\+anchor}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_anchored_spring_a9ceccbbc91b17c65825827b595d242d2}{m\+\_\+spring\+Constant}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_anchored_spring_a399861e72ff803834a5203f79741653c}{m\+\_\+rest\+Length}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_anchored_spring_a3bce11c4c0009f1ae3da23525cb99d6c}\label{classrum_1_1_anchored_spring_a3bce11c4c0009f1ae3da23525cb99d6c}} 
+\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}!Anchored\+Spring@{Anchored\+Spring}}
+\index{Anchored\+Spring@{Anchored\+Spring}!rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+\subsubsection{\texorpdfstring{Anchored\+Spring()}{AnchoredSpring()}}
+{\footnotesize\ttfamily rum\+::\+Anchored\+Spring\+::\+Anchored\+Spring (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{anchor,  }\item[{const glm\+::vec3 \&}]{local\+Connection\+Point,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{spring\+Constant,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{rest\+Length }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_anchored_spring_a7fd4b23ad409fbb678ecace8e99fed68}\label{classrum_1_1_anchored_spring_a7fd4b23ad409fbb678ecace8e99fed68}} 
+\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}!Update\+Force@{Update\+Force}}
+\index{Update\+Force@{Update\+Force}!rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+\subsubsection{\texorpdfstring{Update\+Force()}{UpdateForce()}}
+{\footnotesize\ttfamily void rum\+::\+Anchored\+Spring\+::\+Update\+Force (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{body,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \hyperlink{classrum_1_1_force_generator_a6b038c9a39e4cf64b2dcf2741804a824}{rum\+::\+Force\+Generator}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_anchored_spring_ae13ff4ceb813a9e88182fdf04d890d08}\label{classrum_1_1_anchored_spring_ae13ff4ceb813a9e88182fdf04d890d08}} 
+\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}!m\+\_\+anchor@{m\+\_\+anchor}}
+\index{m\+\_\+anchor@{m\+\_\+anchor}!rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+\subsubsection{\texorpdfstring{m\+\_\+anchor}{m\_anchor}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Anchored\+Spring\+::m\+\_\+anchor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_anchored_spring_ab828f6a46832b1a36909bf858608579b}\label{classrum_1_1_anchored_spring_ab828f6a46832b1a36909bf858608579b}} 
+\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}!m\+\_\+connection\+Point@{m\+\_\+connection\+Point}}
+\index{m\+\_\+connection\+Point@{m\+\_\+connection\+Point}!rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+\subsubsection{\texorpdfstring{m\+\_\+connection\+Point}{m\_connectionPoint}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Anchored\+Spring\+::m\+\_\+connection\+Point\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_anchored_spring_a399861e72ff803834a5203f79741653c}\label{classrum_1_1_anchored_spring_a399861e72ff803834a5203f79741653c}} 
+\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}!m\+\_\+rest\+Length@{m\+\_\+rest\+Length}}
+\index{m\+\_\+rest\+Length@{m\+\_\+rest\+Length}!rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+\subsubsection{\texorpdfstring{m\+\_\+rest\+Length}{m\_restLength}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Anchored\+Spring\+::m\+\_\+rest\+Length\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_anchored_spring_a9ceccbbc91b17c65825827b595d242d2}\label{classrum_1_1_anchored_spring_a9ceccbbc91b17c65825827b595d242d2}} 
+\index{rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}!m\+\_\+spring\+Constant@{m\+\_\+spring\+Constant}}
+\index{m\+\_\+spring\+Constant@{m\+\_\+spring\+Constant}!rum\+::\+Anchored\+Spring@{rum\+::\+Anchored\+Spring}}
+\subsubsection{\texorpdfstring{m\+\_\+spring\+Constant}{m\_springConstant}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Anchored\+Spring\+::m\+\_\+spring\+Constant\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_anchored_spring_8h}{Anchored\+Spring.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_anchored_spring_8cpp}{Anchored\+Spring.\+cpp}\end{DoxyCompactItemize}

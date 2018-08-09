@@ -1,0 +1,182 @@
+\hypertarget{classrum_1_1_particle_world}{}\section{rum\+:\+:Particle\+World Class Reference}
+\label{classrum_1_1_particle_world}\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+
+
+{\ttfamily \#include $<$Particle\+World.\+h$>$}
+
+
+
+Inheritance diagram for rum\+:\+:Particle\+World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{classrum_1_1_particle_world__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rum\+:\+:Particle\+World\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classrum_1_1_particle_world__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{classrum_1_1_particle_world_ac172daef7c571097de59488881afa300}{Particles} = std\+::vector$<$ \hyperlink{classrum_1_1_particle}{Particle} $\ast$ $>$
+\item 
+using \hyperlink{classrum_1_1_particle_world_a78bc596aacdfcee5c3b788fb350a84c1}{Contact\+Generators} = std\+::vector$<$ \hyperlink{classrum_1_1_particle_contact_generator}{Particle\+Contact\+Generator} $\ast$ $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_particle_world_a1de60a26fde85310d906b829bd20e5d1}{Particle\+World} (unsigned int max\+Contacts, unsigned int iterations=0)
+\item 
+\hyperlink{classrum_1_1_particle_world_a8aaca4550e9469cd4a363fedee6ed75c}{$\sim$\+Particle\+World} ()
+\item 
+virtual void \hyperlink{classrum_1_1_particle_world_add8060f77975d47e984a0e0a3d1a0c0c}{On\+Begin} () override
+\item 
+virtual void \hyperlink{classrum_1_1_particle_world_ab30292cabe306715e49b5234abff1f3c}{Reset} () override
+\item 
+virtual void \hyperlink{classrum_1_1_particle_world_a3d71b71a6a76744b75990e1c53efd92e}{Step} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} time\+Delta) override
+\item 
+virtual void \hyperlink{classrum_1_1_particle_world_a8537914776ce477d40ff97ed7b7730d2}{Integrate} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration) override
+\item 
+void \hyperlink{classrum_1_1_particle_world_a082a750fe9f9ebe0f2b9537fe62eeb71}{Add\+Particle} (\hyperlink{classrum_1_1_particle}{Particle} $\ast$p)
+\item 
+void \hyperlink{classrum_1_1_particle_world_a1e1ec7ffcd63ea5e1387de1fa1b8bea4}{Remove\+Particle} (\hyperlink{classrum_1_1_particle}{Particle} $\ast$p)
+\item 
+void \hyperlink{classrum_1_1_particle_world_a8b83f021e1fe1634e109c2854a1bd0e6}{Remove\+All\+Particles} ()
+\item 
+void \hyperlink{classrum_1_1_particle_world_a6ee40c3bfe3cae4667f68be881d43958}{Add\+Contact\+Generator} (\hyperlink{classrum_1_1_particle_contact_generator}{Particle\+Contact\+Generator} $\ast$pcg)
+\item 
+void \hyperlink{classrum_1_1_particle_world_abd7e00ca94ac98c4e410808227ca343a}{Remove\+Contact\+Generator} (\hyperlink{classrum_1_1_particle_contact_generator}{Particle\+Contact\+Generator} $\ast$pcg)
+\item 
+void \hyperlink{classrum_1_1_particle_world_a1cce582ad1d87d19246d821ac8d21a8b}{Remove\+All\+Contact\+Generators} ()
+\item 
+\hyperlink{classrum_1_1_particle_force_registry}{Particle\+Force\+Registry} \& \hyperlink{classrum_1_1_particle_world_a3a4d112218f537a590d2f482dea25d6c}{Get\+Particle\+Force\+Registry} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_world_a78bc596aacdfcee5c3b788fb350a84c1}\label{classrum_1_1_particle_world_a78bc596aacdfcee5c3b788fb350a84c1}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Contact\+Generators@{Contact\+Generators}}
+\index{Contact\+Generators@{Contact\+Generators}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Contact\+Generators}{ContactGenerators}}
+{\footnotesize\ttfamily using \hyperlink{classrum_1_1_particle_world_a78bc596aacdfcee5c3b788fb350a84c1}{rum\+::\+Particle\+World\+::\+Contact\+Generators} =  std\+::vector$<$\hyperlink{classrum_1_1_particle_contact_generator}{Particle\+Contact\+Generator}$\ast$$>$}
+
+\mbox{\Hypertarget{classrum_1_1_particle_world_ac172daef7c571097de59488881afa300}\label{classrum_1_1_particle_world_ac172daef7c571097de59488881afa300}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Particles@{Particles}}
+\index{Particles@{Particles}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Particles}{Particles}}
+{\footnotesize\ttfamily using \hyperlink{classrum_1_1_particle_world_ac172daef7c571097de59488881afa300}{rum\+::\+Particle\+World\+::\+Particles} =  std\+::vector$<$\hyperlink{classrum_1_1_particle}{Particle}$\ast$$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_world_a1de60a26fde85310d906b829bd20e5d1}\label{classrum_1_1_particle_world_a1de60a26fde85310d906b829bd20e5d1}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Particle\+World@{Particle\+World}}
+\index{Particle\+World@{Particle\+World}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Particle\+World()}{ParticleWorld()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+World\+::\+Particle\+World (\begin{DoxyParamCaption}\item[{unsigned int}]{max\+Contacts,  }\item[{unsigned int}]{iterations = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+Teilchen-\/\+Simulator mit max\+Contacts Kontakten und einer optionalen Anzahl Iterationen. Falls iterations == 0, dann werden 2 $\ast$ Anzahl der Kontakte Iterationen durchgeführt. \mbox{\Hypertarget{classrum_1_1_particle_world_a8aaca4550e9469cd4a363fedee6ed75c}\label{classrum_1_1_particle_world_a8aaca4550e9469cd4a363fedee6ed75c}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!````~Particle\+World@{$\sim$\+Particle\+World}}
+\index{````~Particle\+World@{$\sim$\+Particle\+World}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+World()}{~ParticleWorld()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+World\+::$\sim$\+Particle\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_world_a6ee40c3bfe3cae4667f68be881d43958}\label{classrum_1_1_particle_world_a6ee40c3bfe3cae4667f68be881d43958}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Add\+Contact\+Generator@{Add\+Contact\+Generator}}
+\index{Add\+Contact\+Generator@{Add\+Contact\+Generator}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Add\+Contact\+Generator()}{AddContactGenerator()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Add\+Contact\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle_contact_generator}{Particle\+Contact\+Generator} $\ast$}]{pcg }\end{DoxyParamCaption})}
+
+Add another contact generator \mbox{\Hypertarget{classrum_1_1_particle_world_a082a750fe9f9ebe0f2b9537fe62eeb71}\label{classrum_1_1_particle_world_a082a750fe9f9ebe0f2b9537fe62eeb71}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Add\+Particle@{Add\+Particle}}
+\index{Add\+Particle@{Add\+Particle}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Add\+Particle()}{AddParticle()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Add\+Particle (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Add another particle \mbox{\Hypertarget{classrum_1_1_particle_world_a3a4d112218f537a590d2f482dea25d6c}\label{classrum_1_1_particle_world_a3a4d112218f537a590d2f482dea25d6c}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Get\+Particle\+Force\+Registry@{Get\+Particle\+Force\+Registry}}
+\index{Get\+Particle\+Force\+Registry@{Get\+Particle\+Force\+Registry}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Get\+Particle\+Force\+Registry()}{GetParticleForceRegistry()}}
+{\footnotesize\ttfamily \hyperlink{classrum_1_1_particle_force_registry}{rum\+::\+Particle\+Force\+Registry} \& rum\+::\+Particle\+World\+::\+Get\+Particle\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Needed to bind particles to particle force generators \mbox{\Hypertarget{classrum_1_1_particle_world_a8537914776ce477d40ff97ed7b7730d2}\label{classrum_1_1_particle_world_a8537914776ce477d40ff97ed7b7730d2}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Integrate@{Integrate}}
+\index{Integrate@{Integrate}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Integrate()}{Integrate()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Integrate (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Apply the changes as a result of the simulation. 
+
+Implements \hyperlink{classrum_1_1_physics_engine_module_a8635a9194b86cf3c70723ebb4e8c967c}{rum\+::\+Physics\+Engine\+Module}.
+
+\mbox{\Hypertarget{classrum_1_1_particle_world_add8060f77975d47e984a0e0a3d1a0c0c}\label{classrum_1_1_particle_world_add8060f77975d47e984a0e0a3d1a0c0c}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!On\+Begin@{On\+Begin}}
+\index{On\+Begin@{On\+Begin}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{On\+Begin()}{OnBegin()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+On\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Initializations for a single frame (tick) 
+
+Reimplemented from \hyperlink{classrum_1_1_physics_engine_module_a6d599ea88574a867e22b569b8e83f5c2}{rum\+::\+Physics\+Engine\+Module}.
+
+\mbox{\Hypertarget{classrum_1_1_particle_world_a1cce582ad1d87d19246d821ac8d21a8b}\label{classrum_1_1_particle_world_a1cce582ad1d87d19246d821ac8d21a8b}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Remove\+All\+Contact\+Generators@{Remove\+All\+Contact\+Generators}}
+\index{Remove\+All\+Contact\+Generators@{Remove\+All\+Contact\+Generators}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Remove\+All\+Contact\+Generators()}{RemoveAllContactGenerators()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Remove\+All\+Contact\+Generators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove all contact generators \mbox{\Hypertarget{classrum_1_1_particle_world_a8b83f021e1fe1634e109c2854a1bd0e6}\label{classrum_1_1_particle_world_a8b83f021e1fe1634e109c2854a1bd0e6}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Remove\+All\+Particles@{Remove\+All\+Particles}}
+\index{Remove\+All\+Particles@{Remove\+All\+Particles}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Remove\+All\+Particles()}{RemoveAllParticles()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Remove\+All\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove all particles \mbox{\Hypertarget{classrum_1_1_particle_world_abd7e00ca94ac98c4e410808227ca343a}\label{classrum_1_1_particle_world_abd7e00ca94ac98c4e410808227ca343a}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Remove\+Contact\+Generator@{Remove\+Contact\+Generator}}
+\index{Remove\+Contact\+Generator@{Remove\+Contact\+Generator}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Remove\+Contact\+Generator()}{RemoveContactGenerator()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Remove\+Contact\+Generator (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle_contact_generator}{Particle\+Contact\+Generator} $\ast$}]{pcg }\end{DoxyParamCaption})}
+
+Remove a specific contact generator \mbox{\Hypertarget{classrum_1_1_particle_world_a1e1ec7ffcd63ea5e1387de1fa1b8bea4}\label{classrum_1_1_particle_world_a1e1ec7ffcd63ea5e1387de1fa1b8bea4}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Remove\+Particle@{Remove\+Particle}}
+\index{Remove\+Particle@{Remove\+Particle}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Remove\+Particle()}{RemoveParticle()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Remove\+Particle (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{p }\end{DoxyParamCaption})}
+
+Remove a specific particle \mbox{\Hypertarget{classrum_1_1_particle_world_ab30292cabe306715e49b5234abff1f3c}\label{classrum_1_1_particle_world_ab30292cabe306715e49b5234abff1f3c}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Reset@{Reset}}
+\index{Reset@{Reset}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Reset the physics engine module to its initial state 
+
+Implements \hyperlink{classrum_1_1_physics_engine_module_a1ee77a3a48ced8291a86506e6904ca9e}{rum\+::\+Physics\+Engine\+Module}.
+
+\mbox{\Hypertarget{classrum_1_1_particle_world_a3d71b71a6a76744b75990e1c53efd92e}\label{classrum_1_1_particle_world_a3d71b71a6a76744b75990e1c53efd92e}} 
+\index{rum\+::\+Particle\+World@{rum\+::\+Particle\+World}!Step@{Step}}
+\index{Step@{Step}!rum\+::\+Particle\+World@{rum\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+World\+::\+Step (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Calculate changes in the physics engine and accumulate them in buffers. Will not apply those changes yet. 
+
+Implements \hyperlink{classrum_1_1_physics_engine_module_a0c8bfcf27aee16f05ef9a83948f330ac}{rum\+::\+Physics\+Engine\+Module}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\hyperlink{_particle_world_8h}{Particle\+World.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\hyperlink{_particle_world_8cpp}{Particle\+World.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="rum::CollisionSphere" name="rum::CollisionSphere">
+<area shape="rect" id="node2" href="$classrum_1_1_collision_primitive.html" title="{rum::CollisionPrimitive\n|# m_body\l# m_offset\l# m_transform\l|+ ~CollisionPrimitive()\l+ CalculateInternals()\l+ GetAxis()\l+ GetTransform()\l+ GetBody()\l# CollisionPrimitive()\l}" alt="" coords="5,5,156,185"/>
+</map>

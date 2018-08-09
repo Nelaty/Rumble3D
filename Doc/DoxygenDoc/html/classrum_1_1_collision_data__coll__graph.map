@@ -1,0 +1,4 @@
+<map id="rum::CollisionData" name="rum::CollisionData">
+<area shape="rect" id="node4" href="$classrum_1_1_contact.html" title="{rum::Contact\n||+ SetContactPoint()\l+ GetContactPoint()\l+ SetContactNormal()\l+ GetContactMormal()\l+ SetPenetration()\l+ GetPenetration()\l+ SetBodyData()\l+ CalculateContactBasis()\l+ CalculateFrictionlessImpulse()\l# CalculateInternals()\l# CalculateLocalVelocity()\l# CalculateDesiredDeltaVelocity()\l# SwapBodies()\l# ApplyVelocityChange()\l# ApplyPositionChange()\l}" alt="" coords="180,564,396,847"/>
+<area shape="rect" id="node6" href="$classrum_1_1_rigid_body.html" title="{rum::RigidBody\n||+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ getForceAccumulated()\l+ getTorqueAccumulated()\land 37 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="586,233,800,487"/>
+</map>

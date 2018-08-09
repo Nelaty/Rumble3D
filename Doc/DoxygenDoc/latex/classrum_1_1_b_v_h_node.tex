@@ -1,0 +1,156 @@
+\hypertarget{classrum_1_1_b_v_h_node}{}\section{rum\+:\+:B\+V\+H\+Node$<$ Bounding\+Volume\+Class $>$ Class Template Reference}
+\label{classrum_1_1_b_v_h_node}\index{rum\+::\+B\+V\+H\+Node$<$ Bounding\+Volume\+Class $>$@{rum\+::\+B\+V\+H\+Node$<$ Bounding\+Volume\+Class $>$}}
+
+
+{\ttfamily \#include $<$B\+V\+H\+Node.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:B\+V\+H\+Node$<$ Bounding\+Volume\+Class $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_b_v_h_node__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_b_v_h_node_aca2a55118d5c021f92b8e0105fa32625}{B\+V\+H\+Node} ()
+\item 
+\hyperlink{classrum_1_1_b_v_h_node_a4d6bef35007d6473eefe2ce8979e2e2c}{B\+V\+H\+Node} (\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$ $\ast$parent, const Bounding\+Volume\+Class \&volume, \hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$body=nullptr)
+\item 
+\hyperlink{classrum_1_1_b_v_h_node_a97283b0dd8f0cf52762da014a94ade0b}{$\sim$\+B\+V\+H\+Node} ()
+\item 
+bool \hyperlink{classrum_1_1_b_v_h_node_ad916d1d80373a61b95d99d6ae7472007}{Is\+Leaf} () const
+\item 
+unsigned int \hyperlink{classrum_1_1_b_v_h_node_a951e91e4c58802cb843e5b0a146c4eb1}{Get\+Potential\+Contacts} (\hyperlink{structrum_1_1_potential_contacts}{Potential\+Contacts} $\ast$contacts, unsigned int limit) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classrum_1_1_b_v_h_node_a4d60cfdfc53028f0a567fe5f5c316848}{Overlaps} (\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$ $\ast$other) const
+\item 
+unsigned \hyperlink{classrum_1_1_b_v_h_node_a51c82ced5651f99e338bd0ce71700ca6}{Get\+Potential\+Contacts\+With} (\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$ $\ast$other, \hyperlink{structrum_1_1_potential_contacts}{Potential\+Contacts} $\ast$contacts, unsigned limit) const
+\item 
+void \hyperlink{classrum_1_1_b_v_h_node_a8cd9eb8eaf308170ae0350a617210096}{Recalculate\+Bounding\+Volume} ()
+\item 
+void \hyperlink{classrum_1_1_b_v_h_node_ab74f21c80eb2ad8087b9b897fd3dccd4}{Insert} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$new\+Body, const Bounding\+Volume\+Class \&new\+Volume)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node} $\ast$ \hyperlink{classrum_1_1_b_v_h_node_a681ca4a3084ba34bd54c546a7ef2a36c}{m\+\_\+children} \mbox{[}2\mbox{]}
+\item 
+Bounding\+Volume\+Class \hyperlink{classrum_1_1_b_v_h_node_aae21162bff289e2d0d502c9360d0f36c}{m\+\_\+volume}
+\item 
+\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$ \hyperlink{classrum_1_1_b_v_h_node_a24954eb90f55a8a29c6459706554c9d6}{m\+\_\+body}
+\item 
+\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node} $\ast$ \hyperlink{classrum_1_1_b_v_h_node_ae69483db4fada9afde3a31393243a87d}{m\+\_\+parent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_aca2a55118d5c021f92b8e0105fa32625}\label{classrum_1_1_b_v_h_node_aca2a55118d5c021f92b8e0105fa32625}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!B\+V\+H\+Node@{B\+V\+H\+Node}}
+\index{B\+V\+H\+Node@{B\+V\+H\+Node}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{B\+V\+H\+Node()}{BVHNode()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+\hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a4d6bef35007d6473eefe2ce8979e2e2c}\label{classrum_1_1_b_v_h_node_a4d6bef35007d6473eefe2ce8979e2e2c}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!B\+V\+H\+Node@{B\+V\+H\+Node}}
+\index{B\+V\+H\+Node@{B\+V\+H\+Node}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{B\+V\+H\+Node()}{BVHNode()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+\hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node} (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$ $\ast$}]{parent,  }\item[{const Bounding\+Volume\+Class \&}]{volume,  }\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{body = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a97283b0dd8f0cf52762da014a94ade0b}\label{classrum_1_1_b_v_h_node_a97283b0dd8f0cf52762da014a94ade0b}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!````~B\+V\+H\+Node@{$\sim$\+B\+V\+H\+Node}}
+\index{````~B\+V\+H\+Node@{$\sim$\+B\+V\+H\+Node}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{$\sim$\+B\+V\+H\+Node()}{~BVHNode()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+\hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::$\sim$\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a951e91e4c58802cb843e5b0a146c4eb1}\label{classrum_1_1_b_v_h_node_a951e91e4c58802cb843e5b0a146c4eb1}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!Get\+Potential\+Contacts@{Get\+Potential\+Contacts}}
+\index{Get\+Potential\+Contacts@{Get\+Potential\+Contacts}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{Get\+Potential\+Contacts()}{GetPotentialContacts()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+unsigned int \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::Get\+Potential\+Contacts (\begin{DoxyParamCaption}\item[{\hyperlink{structrum_1_1_potential_contacts}{Potential\+Contacts} $\ast$}]{contacts,  }\item[{unsigned int}]{limit }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a51c82ced5651f99e338bd0ce71700ca6}\label{classrum_1_1_b_v_h_node_a51c82ced5651f99e338bd0ce71700ca6}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!Get\+Potential\+Contacts\+With@{Get\+Potential\+Contacts\+With}}
+\index{Get\+Potential\+Contacts\+With@{Get\+Potential\+Contacts\+With}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{Get\+Potential\+Contacts\+With()}{GetPotentialContactsWith()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+unsigned \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::Get\+Potential\+Contacts\+With (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$ $\ast$}]{other,  }\item[{\hyperlink{structrum_1_1_potential_contacts}{Potential\+Contacts} $\ast$}]{contacts,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_ab74f21c80eb2ad8087b9b897fd3dccd4}\label{classrum_1_1_b_v_h_node_ab74f21c80eb2ad8087b9b897fd3dccd4}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!Insert@{Insert}}
+\index{Insert@{Insert}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{Insert()}{Insert()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+void \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::Insert (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{new\+Body,  }\item[{const Bounding\+Volume\+Class \&}]{new\+Volume }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_ad916d1d80373a61b95d99d6ae7472007}\label{classrum_1_1_b_v_h_node_ad916d1d80373a61b95d99d6ae7472007}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!Is\+Leaf@{Is\+Leaf}}
+\index{Is\+Leaf@{Is\+Leaf}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{Is\+Leaf()}{IsLeaf()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+bool \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::Is\+Leaf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a4d60cfdfc53028f0a567fe5f5c316848}\label{classrum_1_1_b_v_h_node_a4d60cfdfc53028f0a567fe5f5c316848}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{Overlaps()}{Overlaps()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+bool \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::Overlaps (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$ $\ast$}]{other }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a8cd9eb8eaf308170ae0350a617210096}\label{classrum_1_1_b_v_h_node_a8cd9eb8eaf308170ae0350a617210096}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!Recalculate\+Bounding\+Volume@{Recalculate\+Bounding\+Volume}}
+\index{Recalculate\+Bounding\+Volume@{Recalculate\+Bounding\+Volume}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{Recalculate\+Bounding\+Volume()}{RecalculateBoundingVolume()}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
+void \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::Recalculate\+Bounding\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a24954eb90f55a8a29c6459706554c9d6}\label{classrum_1_1_b_v_h_node_a24954eb90f55a8a29c6459706554c9d6}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!m\+\_\+body@{m\+\_\+body}}
+\index{m\+\_\+body@{m\+\_\+body}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{m\+\_\+body}{m\_body}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class$>$ \\
+\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}$\ast$ \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::m\+\_\+body\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_a681ca4a3084ba34bd54c546a7ef2a36c}\label{classrum_1_1_b_v_h_node_a681ca4a3084ba34bd54c546a7ef2a36c}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!m\+\_\+children@{m\+\_\+children}}
+\index{m\+\_\+children@{m\+\_\+children}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{m\+\_\+children}{m\_children}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class$>$ \\
+\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$\ast$ \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::m\+\_\+children\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_ae69483db4fada9afde3a31393243a87d}\label{classrum_1_1_b_v_h_node_ae69483db4fada9afde3a31393243a87d}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!m\+\_\+parent@{m\+\_\+parent}}
+\index{m\+\_\+parent@{m\+\_\+parent}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{m\+\_\+parent}{m\_parent}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class$>$ \\
+\hyperlink{classrum_1_1_b_v_h_node}{B\+V\+H\+Node}$\ast$ \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::m\+\_\+parent\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_b_v_h_node_aae21162bff289e2d0d502c9360d0f36c}\label{classrum_1_1_b_v_h_node_aae21162bff289e2d0d502c9360d0f36c}} 
+\index{rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}!m\+\_\+volume@{m\+\_\+volume}}
+\index{m\+\_\+volume@{m\+\_\+volume}!rum\+::\+B\+V\+H\+Node@{rum\+::\+B\+V\+H\+Node}}
+\subsubsection{\texorpdfstring{m\+\_\+volume}{m\_volume}}
+{\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class$>$ \\
+Bounding\+Volume\+Class \hyperlink{classrum_1_1_b_v_h_node}{rum\+::\+B\+V\+H\+Node}$<$ Bounding\+Volume\+Class $>$\+::m\+\_\+volume\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_b_v_h_node_8h}{B\+V\+H\+Node.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_b_v_h_node_8cpp}{B\+V\+H\+Node.\+cpp}\end{DoxyCompactItemize}

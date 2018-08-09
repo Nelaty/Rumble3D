@@ -1,0 +1,3 @@
+<map id="rum::CollisionPrimitive" name="rum::CollisionPrimitive">
+<area shape="rect" id="node3" href="$classrum_1_1_rigid_body.html" title="{rum::RigidBody\n||+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ getForceAccumulated()\l+ getTorqueAccumulated()\land 37 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="333,233,547,487"/>
+</map>

@@ -1,0 +1,250 @@
+\hypertarget{classrum_1_1_contact}{}\section{rum\+:\+:Contact Class Reference}
+\label{classrum_1_1_contact}\index{rum\+::\+Contact@{rum\+::\+Contact}}
+
+
+{\ttfamily \#include $<$Contact.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:Contact\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_contact__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classrum_1_1_contact_a64ba0fca39f090fd7f211cb1a7585578}{Set\+Contact\+Point} (const glm\+::vec3 \&contact\+Point)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_a1a21b5351b7b4a84e05557232cc8b838}{Get\+Contact\+Point} ()
+\item 
+void \hyperlink{classrum_1_1_contact_a0e0cd538aab86185bd22e6660e225db2}{Set\+Contact\+Normal} (const glm\+::vec3 \&contact\+Normal)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_a4f3310ec7a77f61dbf8733b0fe127550}{Get\+Contact\+Mormal} ()
+\item 
+void \hyperlink{classrum_1_1_contact_a713b7b8eb8adcf50a616ab9e1b391ecc}{Set\+Penetration} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} penetration)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_contact_a337aa264d344357959c3f31494610292}{Get\+Penetration} ()
+\item 
+void \hyperlink{classrum_1_1_contact_ada3b091bf846f790e889c9cc526f47df}{Set\+Body\+Data} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$one, \hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$two, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} friction, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} restitution)
+\item 
+void \hyperlink{classrum_1_1_contact_af2b19ba7393d8596ec34aac2de9aebfa}{Calculate\+Contact\+Basis} ()
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_a74dad6b365bbe5337e61c2cfeed9f247}{Calculate\+Frictionless\+Impulse} (glm\+::mat3 $\ast$inverse\+Inertia\+Tensor)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classrum_1_1_contact_a69187a1397d9855d53b176640e2d4346}{Calculate\+Internals} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_ad10049d2987b416faf35fc84817e6a1c}{Calculate\+Local\+Velocity} (unsigned body\+Index, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\item 
+void \hyperlink{classrum_1_1_contact_a0b77ca13a132628887894b9842816e32}{Calculate\+Desired\+Delta\+Velocity} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\item 
+void \hyperlink{classrum_1_1_contact_a26fd198d01eac4046fd6dfc36a6c2e89}{Swap\+Bodies} ()
+\item 
+void \hyperlink{classrum_1_1_contact_a1e4cac982b6b49f5720f9ef9ce039864}{Apply\+Velocity\+Change} (glm\+::vec3 velocity\+Change\mbox{[}2\mbox{]}, glm\+::vec3 rotation\+Change\mbox{[}2\mbox{]})
+\item 
+void \hyperlink{classrum_1_1_contact_acd9c12208d68554a2e81494b5677ce86}{Apply\+Position\+Change} (glm\+::vec3 linear\+Change\mbox{[}2\mbox{]}, glm\+::vec3 angular\+Change\mbox{[}2\mbox{]}, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} penetration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$ \hyperlink{classrum_1_1_contact_a119ef7e9e16f64e6d3102a27d4c043dd}{m\+\_\+body} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_contact_ab226a6190ff85141d7d67851b69c376f}{m\+\_\+friction}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_contact_a99498377d3d6b5ae69036c29fce0ff05}{m\+\_\+restitution}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_a5e70d4ad5c287cc877be38fd1efd57b0}{m\+\_\+contact\+Point}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_a2e85ae74bc451a99b9443dfe605cf2c4}{m\+\_\+contact\+Normal}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_contact_ae66eaa462e7faf31c9f1ecd78cf172d3}{m\+\_\+penetration}
+\item 
+glm\+::mat3 \hyperlink{classrum_1_1_contact_a10b413ee85f533c7e4e2ed13a6599836}{m\+\_\+contact\+To\+World}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_a350a7e23fdbbb38425ba302e9628bf08}{m\+\_\+contact\+Velocity}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_contact_a55d1f634223ef4deb365d47c3dae9a97}{m\+\_\+desired\+Delta\+Velocity}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_contact_aae0e51d30ae3e1631dd2017ce87812ba}{m\+\_\+relative\+Contact\+Position} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrum_1_1_contact_a274795e9632d5cb7d5d387fc31136fe5}{Contact\+Resolver}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_contact_acd9c12208d68554a2e81494b5677ce86}\label{classrum_1_1_contact_acd9c12208d68554a2e81494b5677ce86}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Apply\+Position\+Change@{Apply\+Position\+Change}}
+\index{Apply\+Position\+Change@{Apply\+Position\+Change}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Apply\+Position\+Change()}{ApplyPositionChange()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Apply\+Position\+Change (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{linear\+Change\mbox{[}2\mbox{]},  }\item[{glm\+::vec3}]{angular\+Change\mbox{[}2\mbox{]},  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{penetration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a1e4cac982b6b49f5720f9ef9ce039864}\label{classrum_1_1_contact_a1e4cac982b6b49f5720f9ef9ce039864}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Apply\+Velocity\+Change@{Apply\+Velocity\+Change}}
+\index{Apply\+Velocity\+Change@{Apply\+Velocity\+Change}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Apply\+Velocity\+Change()}{ApplyVelocityChange()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Apply\+Velocity\+Change (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{velocity\+Change\mbox{[}2\mbox{]},  }\item[{glm\+::vec3}]{rotation\+Change\mbox{[}2\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_af2b19ba7393d8596ec34aac2de9aebfa}\label{classrum_1_1_contact_af2b19ba7393d8596ec34aac2de9aebfa}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Calculate\+Contact\+Basis@{Calculate\+Contact\+Basis}}
+\index{Calculate\+Contact\+Basis@{Calculate\+Contact\+Basis}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Calculate\+Contact\+Basis()}{CalculateContactBasis()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Calculate\+Contact\+Basis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a0b77ca13a132628887894b9842816e32}\label{classrum_1_1_contact_a0b77ca13a132628887894b9842816e32}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Calculate\+Desired\+Delta\+Velocity@{Calculate\+Desired\+Delta\+Velocity}}
+\index{Calculate\+Desired\+Delta\+Velocity@{Calculate\+Desired\+Delta\+Velocity}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Calculate\+Desired\+Delta\+Velocity()}{CalculateDesiredDeltaVelocity()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Calculate\+Desired\+Delta\+Velocity (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a74dad6b365bbe5337e61c2cfeed9f247}\label{classrum_1_1_contact_a74dad6b365bbe5337e61c2cfeed9f247}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Calculate\+Frictionless\+Impulse@{Calculate\+Frictionless\+Impulse}}
+\index{Calculate\+Frictionless\+Impulse@{Calculate\+Frictionless\+Impulse}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Calculate\+Frictionless\+Impulse()}{CalculateFrictionlessImpulse()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::\+Calculate\+Frictionless\+Impulse (\begin{DoxyParamCaption}\item[{glm\+::mat3 $\ast$}]{inverse\+Inertia\+Tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a69187a1397d9855d53b176640e2d4346}\label{classrum_1_1_contact_a69187a1397d9855d53b176640e2d4346}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Calculate\+Internals@{Calculate\+Internals}}
+\index{Calculate\+Internals@{Calculate\+Internals}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Calculate\+Internals()}{CalculateInternals()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Calculate\+Internals (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_ad10049d2987b416faf35fc84817e6a1c}\label{classrum_1_1_contact_ad10049d2987b416faf35fc84817e6a1c}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Calculate\+Local\+Velocity@{Calculate\+Local\+Velocity}}
+\index{Calculate\+Local\+Velocity@{Calculate\+Local\+Velocity}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Calculate\+Local\+Velocity()}{CalculateLocalVelocity()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::\+Calculate\+Local\+Velocity (\begin{DoxyParamCaption}\item[{unsigned}]{body\+Index,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a4f3310ec7a77f61dbf8733b0fe127550}\label{classrum_1_1_contact_a4f3310ec7a77f61dbf8733b0fe127550}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Get\+Contact\+Mormal@{Get\+Contact\+Mormal}}
+\index{Get\+Contact\+Mormal@{Get\+Contact\+Mormal}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Get\+Contact\+Mormal()}{GetContactMormal()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::\+Get\+Contact\+Mormal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a1a21b5351b7b4a84e05557232cc8b838}\label{classrum_1_1_contact_a1a21b5351b7b4a84e05557232cc8b838}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Get\+Contact\+Point@{Get\+Contact\+Point}}
+\index{Get\+Contact\+Point@{Get\+Contact\+Point}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Get\+Contact\+Point()}{GetContactPoint()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::\+Get\+Contact\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a337aa264d344357959c3f31494610292}\label{classrum_1_1_contact_a337aa264d344357959c3f31494610292}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Get\+Penetration@{Get\+Penetration}}
+\index{Get\+Penetration@{Get\+Penetration}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Get\+Penetration()}{GetPenetration()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Contact\+::\+Get\+Penetration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_ada3b091bf846f790e889c9cc526f47df}\label{classrum_1_1_contact_ada3b091bf846f790e889c9cc526f47df}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Set\+Body\+Data@{Set\+Body\+Data}}
+\index{Set\+Body\+Data@{Set\+Body\+Data}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Set\+Body\+Data()}{SetBodyData()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Set\+Body\+Data (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{one,  }\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{two,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{friction,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{restitution }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a0e0cd538aab86185bd22e6660e225db2}\label{classrum_1_1_contact_a0e0cd538aab86185bd22e6660e225db2}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Set\+Contact\+Normal@{Set\+Contact\+Normal}}
+\index{Set\+Contact\+Normal@{Set\+Contact\+Normal}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Set\+Contact\+Normal()}{SetContactNormal()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Set\+Contact\+Normal (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{contact\+Normal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a64ba0fca39f090fd7f211cb1a7585578}\label{classrum_1_1_contact_a64ba0fca39f090fd7f211cb1a7585578}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Set\+Contact\+Point@{Set\+Contact\+Point}}
+\index{Set\+Contact\+Point@{Set\+Contact\+Point}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Set\+Contact\+Point()}{SetContactPoint()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Set\+Contact\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{contact\+Point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a713b7b8eb8adcf50a616ab9e1b391ecc}\label{classrum_1_1_contact_a713b7b8eb8adcf50a616ab9e1b391ecc}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Set\+Penetration@{Set\+Penetration}}
+\index{Set\+Penetration@{Set\+Penetration}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Set\+Penetration()}{SetPenetration()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Set\+Penetration (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{penetration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a26fd198d01eac4046fd6dfc36a6c2e89}\label{classrum_1_1_contact_a26fd198d01eac4046fd6dfc36a6c2e89}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Swap\+Bodies@{Swap\+Bodies}}
+\index{Swap\+Bodies@{Swap\+Bodies}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Swap\+Bodies()}{SwapBodies()}}
+{\footnotesize\ttfamily void rum\+::\+Contact\+::\+Swap\+Bodies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_contact_a274795e9632d5cb7d5d387fc31136fe5}\label{classrum_1_1_contact_a274795e9632d5cb7d5d387fc31136fe5}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!Contact\+Resolver@{Contact\+Resolver}}
+\index{Contact\+Resolver@{Contact\+Resolver}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{Contact\+Resolver}{ContactResolver}}
+{\footnotesize\ttfamily friend class \hyperlink{classrum_1_1_contact_resolver}{Contact\+Resolver}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_contact_a119ef7e9e16f64e6d3102a27d4c043dd}\label{classrum_1_1_contact_a119ef7e9e16f64e6d3102a27d4c043dd}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+body@{m\+\_\+body}}
+\index{m\+\_\+body@{m\+\_\+body}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+body}{m\_body}}
+{\footnotesize\ttfamily \hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}$\ast$ rum\+::\+Contact\+::m\+\_\+body\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a2e85ae74bc451a99b9443dfe605cf2c4}\label{classrum_1_1_contact_a2e85ae74bc451a99b9443dfe605cf2c4}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+contact\+Normal@{m\+\_\+contact\+Normal}}
+\index{m\+\_\+contact\+Normal@{m\+\_\+contact\+Normal}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Normal}{m\_contactNormal}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::m\+\_\+contact\+Normal\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a5e70d4ad5c287cc877be38fd1efd57b0}\label{classrum_1_1_contact_a5e70d4ad5c287cc877be38fd1efd57b0}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+contact\+Point@{m\+\_\+contact\+Point}}
+\index{m\+\_\+contact\+Point@{m\+\_\+contact\+Point}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Point}{m\_contactPoint}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::m\+\_\+contact\+Point\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a10b413ee85f533c7e4e2ed13a6599836}\label{classrum_1_1_contact_a10b413ee85f533c7e4e2ed13a6599836}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+contact\+To\+World@{m\+\_\+contact\+To\+World}}
+\index{m\+\_\+contact\+To\+World@{m\+\_\+contact\+To\+World}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+To\+World}{m\_contactToWorld}}
+{\footnotesize\ttfamily glm\+::mat3 rum\+::\+Contact\+::m\+\_\+contact\+To\+World\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a350a7e23fdbbb38425ba302e9628bf08}\label{classrum_1_1_contact_a350a7e23fdbbb38425ba302e9628bf08}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+contact\+Velocity@{m\+\_\+contact\+Velocity}}
+\index{m\+\_\+contact\+Velocity@{m\+\_\+contact\+Velocity}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Velocity}{m\_contactVelocity}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::m\+\_\+contact\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a55d1f634223ef4deb365d47c3dae9a97}\label{classrum_1_1_contact_a55d1f634223ef4deb365d47c3dae9a97}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+desired\+Delta\+Velocity@{m\+\_\+desired\+Delta\+Velocity}}
+\index{m\+\_\+desired\+Delta\+Velocity@{m\+\_\+desired\+Delta\+Velocity}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+desired\+Delta\+Velocity}{m\_desiredDeltaVelocity}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Contact\+::m\+\_\+desired\+Delta\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_ab226a6190ff85141d7d67851b69c376f}\label{classrum_1_1_contact_ab226a6190ff85141d7d67851b69c376f}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+friction@{m\+\_\+friction}}
+\index{m\+\_\+friction@{m\+\_\+friction}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+friction}{m\_friction}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Contact\+::m\+\_\+friction\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_ae66eaa462e7faf31c9f1ecd78cf172d3}\label{classrum_1_1_contact_ae66eaa462e7faf31c9f1ecd78cf172d3}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+penetration@{m\+\_\+penetration}}
+\index{m\+\_\+penetration@{m\+\_\+penetration}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+penetration}{m\_penetration}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Contact\+::m\+\_\+penetration\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_aae0e51d30ae3e1631dd2017ce87812ba}\label{classrum_1_1_contact_aae0e51d30ae3e1631dd2017ce87812ba}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+relative\+Contact\+Position@{m\+\_\+relative\+Contact\+Position}}
+\index{m\+\_\+relative\+Contact\+Position@{m\+\_\+relative\+Contact\+Position}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+relative\+Contact\+Position}{m\_relativeContactPosition}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Contact\+::m\+\_\+relative\+Contact\+Position\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_contact_a99498377d3d6b5ae69036c29fce0ff05}\label{classrum_1_1_contact_a99498377d3d6b5ae69036c29fce0ff05}} 
+\index{rum\+::\+Contact@{rum\+::\+Contact}!m\+\_\+restitution@{m\+\_\+restitution}}
+\index{m\+\_\+restitution@{m\+\_\+restitution}!rum\+::\+Contact@{rum\+::\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+restitution}{m\_restitution}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Contact\+::m\+\_\+restitution\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_contact_8h}{Contact.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_contact_8cpp}{Contact.\+cpp}\end{DoxyCompactItemize}

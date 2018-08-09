@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{25A2AD93-2B9C-4E47-984E-6B0292DC8122}</ProjectGuid>
+    <RootNamespace>Rumble3D</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
+    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
+    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
+    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
+    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ParticleEngine\Particle.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleAnchoredSpring.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleBungee.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleBuoyancy.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleCable.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleCollision.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleConstraint.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleContact.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleContactGenerator.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleContactResolver.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleDrag.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleForceGenerator.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleForceRegistry.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleGravity.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleLink.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleSpring.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleWorld.cpp" />
+    <ClCompile Include="src\PhysicsEngine.cpp" />
+    <ClCompile Include="src\PhysicsEngineModule.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\AnchoredSpring.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\BoundingBox.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\BoundingSphere.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\BVHNode.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionBox.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionData.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetector.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionPlane.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionPrimitive.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionSphere.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\Contact.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\ContactGenerator.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\ContactResolver.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\DirectedForce.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\ForceRegistry.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\Gravity.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\RigidBody.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\RigidBodyWorld.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\Spring.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\R3D\Common\Config.h" />
+    <ClInclude Include="include\R3D\Common\Precision.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\Particle.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleAnchoredSpring.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleBungee.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleBuoyancy.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleCable.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleCollision.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleConstraint.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleContact.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleContactGenerator.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleContactResolver.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleDrag.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineFwd.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineRoot.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleForceGenerator.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleForceRegistry.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleGravity.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleLink.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleRod.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleSpring.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleWorld.h" />
+    <ClInclude Include="include\R3D\PhysicsEngine.h" />
+    <ClInclude Include="include\R3D\PhysicsEngineModule.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\AnchoredSpring.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\BoundingBox.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\BoundingSphere.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\BVHNode.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionBox.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionData.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetector.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionPlane.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionPrimitive.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionSphere.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\Contact.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\ContactGenerator.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\ContactResolver.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\DirectedForce.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\ForceGenerator.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\ForceRegistry.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\Gravity.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBody.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineFwd.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineRoot.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyWorld.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\Spring.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\glm.0.9.8.5\build\native\glm.targets" Condition="Exists('..\packages\glm.0.9.8.5\build\native\glm.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\glm.0.9.8.5\build\native\glm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glm.0.9.8.5\build\native\glm.targets'))" />
+  </Target>
+</Project>

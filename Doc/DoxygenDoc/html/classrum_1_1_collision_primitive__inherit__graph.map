@@ -1,0 +1,4 @@
+<map id="rum::CollisionPrimitive" name="rum::CollisionPrimitive">
+<area shape="rect" id="node2" href="$classrum_1_1_collision_box.html" title="{rum::CollisionBox\n|# m_halfSize\l|+ CollisionBox()\l+ ~CollisionBox()\l+ getHalfSize()\l}" alt="" coords="5,233,129,340"/>
+<area shape="rect" id="node3" href="$classrum_1_1_collision_sphere.html" title="{rum::CollisionSphere\n|# m_radius\l|+ CollisionSphere()\l+ ~CollisionSphere()\l+ GetRadius()\l}" alt="" coords="153,233,296,340"/>
+</map>

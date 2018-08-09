@@ -1,0 +1,93 @@
+#pragma once
+#include "CollisionSphere.h"
+#include "CollisionBox.h"
+#include "CollisionPlane.h"
+#include "CollisionData.h"
+
+#include <glm/glm.hpp>
+
+namespace rum
+{
+	// Behälter für Kollisionsalgorithmen:
+	class CollisionDetector
+	{
+	public:
+		static unsigned sphereAndHalfSpace(
+			const CollisionSphere &sphere,
+			const CollisionPlane &plane,
+			CollisionData *data);
+
+		static unsigned sphereAndTruePlane(
+			const CollisionSphere &sphere,
+			const CollisionPlane &plane,
+			CollisionData *data);
+
+		static unsigned sphereAndSphere(
+			const CollisionSphere &one,
+			const CollisionSphere &two,
+			CollisionData *data);
+
+		static unsigned boxAndHalfSpace(
+			const CollisionBox &box,
+			const CollisionPlane &plane,
+			CollisionData *data);
+
+		static unsigned CollisionDetector::boxAndSphere(
+			const CollisionBox &box,
+			const CollisionSphere &sphere,
+			CollisionData *data);
+
+		static unsigned CollisionDetector::boxAndBox(
+			const CollisionBox &one,
+			const CollisionBox &two,
+			CollisionData *data);
+	private:
+		static real transformToAxis(
+			const CollisionBox &box,
+			const glm::vec3 &axis);
+		/*
+		* Überlappen zweier Quader entlang einer Achse.
+		* Rückgabe ist der Wert der Überlappung.
+		* toCentre ist der Vektor zwischen den Quadern und wird
+		* übergeben, um nicht immer neu berechnet werden zu müssen.
+		*/
+		static real penetrationOnAxis(
+			const CollisionBox &one,
+			const CollisionBox &two,
+			const glm::vec3 &axis,
+			const glm::vec3 &toCentre);
+
+		//SAT-Test, ob bzgl.einer Achse eine Überlappung stattfindet.
+		static bool CollisionDetector::tryAxis(
+			const CollisionBox &one,
+			const CollisionBox &two,
+			glm::vec3 axis,
+			const glm::vec3& toCentre,
+			unsigned index,
+			// INOUT-Parameter
+			real& smallestPenetration,
+			unsigned &smallestCase);
+
+		// Erstellt die Kontaktdaten für den Fall BoxBox-Kollision
+		// wenn der Kontakt Ecke-Fläche ist:
+		static void fillPointFaceBoxBox(
+			const CollisionBox &one,
+			const CollisionBox &two,
+			const glm::vec3 &toCentre,
+			CollisionData *data,
+			unsigned best,
+			real pen);
+
+		static glm::vec3 contactPoint(
+			const glm::vec3 &pOne,
+			const glm::vec3 &dOne,
+			real oneSize,
+			const glm::vec3 &pTwo,
+			const glm::vec3 &dTwo,
+			real twoSize,
+			// useOne = true und Kontaktpunkt außerhalb der Kante
+			// (Kante-Fläche-Kontakt) dann nehmen wir den Mittelpunkt
+			// von Quader 1, sonst von Quader 2.
+			bool useOne);
+	};
+}

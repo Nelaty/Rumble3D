@@ -1,0 +1,37 @@
+#include "R3D/ParticleEngine/ParticleBungee.h"
+#include "R3D/ParticleEngine/Particle.h"
+
+#include <glm/glm.hpp>
+
+namespace rum
+{
+	ParticleBungee::ParticleBungee(Particle* other, real springConstant, real restLength)
+	{
+		m_other = other;
+		m_springConstant = springConstant;
+		m_restLength = restLength;
+	}
+	
+	
+	ParticleBungee::~ParticleBungee()
+	{
+	}
+
+	void ParticleBungee::UpdateForce(Particle* particle, real duration)
+	{
+		glm::vec3 force = particle->GetPosition();
+		force -= m_other->GetPosition();
+	
+		real magnitude = glm::length(force);
+		if(magnitude <= m_restLength)
+		{
+			return;
+		}
+	
+		magnitude = m_springConstant * (m_restLength - magnitude);
+	
+		force = glm::normalize(force);
+		force *= magnitude;
+		particle->AddForce(force);
+	}
+}

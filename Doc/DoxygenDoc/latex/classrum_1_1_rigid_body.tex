@@ -1,0 +1,548 @@
+\hypertarget{classrum_1_1_rigid_body}{}\section{rum\+:\+:Rigid\+Body Class Reference}
+\label{classrum_1_1_rigid_body}\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+
+
+{\ttfamily \#include $<$Rigid\+Body.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:Rigid\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_rigid_body__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a3f14dfc9bb7dcfc961373b8f7cb71dc9}{calculate\+Derived\+Data} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a15fd4045586f493df7611c7d362bff16}{set\+Inertia\+Tensor} (const glm\+::mat3 \&inertia\+Tensor)
+\item 
+glm\+::mat3 \hyperlink{classrum_1_1_rigid_body_a116880f250df7efe113f87b189fdfca5}{get\+Inverse\+Tensor} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_ac71fd21db22c1a36a32c03d342dd6dbe}{set\+Mass} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} mass)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_a07818ed12a3e223b40191a5d934a2c94}{get\+Mass} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a3fb4c29e486be6984d0f7a21a7bede06}{set\+Inverse\+Mass} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} inverse\+Mass)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_a4c1a53f80f22157d60037099bb54544a}{get\+Inverse\+Mass} () const
+\item 
+bool \hyperlink{classrum_1_1_rigid_body_abc90d8e280d6f0724cda920c78ae4927}{has\+Finite\+Mass} ()
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_ad13fc4c6b7b199a62ab85a716077ac27}{get\+Force\+Accumulated} ()
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a9868612d7d60df7abfde0b657d3bad78}{get\+Torque\+Accumulated} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a7511dfe4f717b8217ae38ced29116a21}{set\+Position} (const glm\+::vec3 \&position)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_afc0f30fdfffeabbda5b59d96a571b9ac}{set\+Position} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a9221f1b74f8a258a9ad050ddaea64412}{get\+Position} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a807a0309fef97be32db6f1e981e2f029}{set\+Velocity} (const glm\+::vec3 \&velocity)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a9c0d7b85a4fa9fcd4fa4a7ab3e309234}{set\+Velocity} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a4e321b456c54e8090e1c897d513829f9}{get\+Velocity} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a217a8370a7196e29e2e02fa57cde9bb4}{set\+Acceleration} (const glm\+::vec3 \&acceleration)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a663501367c795254a324349d55b3f6f6}{set\+Acceleration} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a8b303ca817b107348692e5b442ae7a56}{get\+Acceleration} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_ac7afc4f115c4a387aa9e6929c9d7a40c}{set\+Linear\+Damping} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} linear\+Damping)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_a637e50a502427fdd128873a015e84997}{get\+Linear\+Damping} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a205cac5b6c9a0d7ce8371e94af3b95ee}{set\+Angular\+Damping} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} angular\+Damping)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_a13f45609fd48d44695190a4bd81f2ad7}{get\+Angular\+Damping} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a2f4565f3884f4870403a2f6000860a81}{set\+Orientation} (const glm\+::quat \&orientation)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a10978d0759ab1cbe0e63a3143d4141b8}{set\+Orientation} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} r, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} i, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} j, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} k)
+\item 
+glm\+::quat \hyperlink{classrum_1_1_rigid_body_a333d4b85e26497a8939faa1d0048d131}{get\+Orientation} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_aa6b6e73db8fefb0a54d82cf245b6bda6}{set\+Rotation} (const glm\+::vec3 \&rotation)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_aa0156ccce8351de3e869dd19117e014a}{set\+Rotation} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_aa99998dba8c818290cfba8dacccd66a2}{get\+Rotation} () const
+\item 
+glm\+::mat4 \hyperlink{classrum_1_1_rigid_body_a5e289b46c1849f186295d7f3cdef113d}{get\+Transformation\+Matrix} () const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a1bef6c65c76a64c0a7ea8ebff4cd5c58}{get\+Inverse\+Inertia\+Tensor\+World} (glm\+::mat3 $\ast$inverse\+Inertia\+Tensor\+World) const
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a347acf72fd3aa739218025050713948a}{add\+Velocity} (const glm\+::vec3 \&delta\+Velocity)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a8d3625960b75bdf71c205274896d1969}{add\+Rotation} (const glm\+::vec3 \&delta\+Rotation)
+\item 
+bool \hyperlink{classrum_1_1_rigid_body_a8864878e784f5cc50993ed2470b03cb3}{is\+Dead} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a253cfde1f35c821afcfef39ecf237428}{set\+Dead} (const bool dead)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_ae6048d852853ae37ebc9301b430ad021}{clear\+Accumulators} ()
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a82678048704e31e6781d107c89094706}{add\+Force} (const glm\+::vec3 \&force)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a8bfbbe5f4c71e6e3d484479bcbf98b8e}{add\+Force\+At\+Point} (const glm\+::vec3 \&force, const glm\+::vec3 \&point)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a5025fc4cc7be3202b84485ae2fdfdcf7}{add\+Force\+At\+Body\+Point} (const glm\+::vec3 \&force, const glm\+::vec3 \&point)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_aaaf225465b2beb2e1d5737adb17a1421}{add\+Torque} (const glm\+::vec3 \&torque)
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a4aff0a01d641859d37f87126d15ec277}{get\+Point\+In\+Local\+Space} (const glm\+::vec3 \&point) const
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a6c47248ece653cb70c2bf5e785d3d13c}{get\+Point\+In\+World\+Space} (const glm\+::vec3 \&point) const
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a7904a2e04f4b5b491b1ac092474a96ec}{get\+Direction\+In\+Local\+Space} (const glm\+::vec3 \&direction) const
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a5b6261b8cc054b044219f976d2b9d5e3}{get\+Direction\+In\+World\+Space} (const glm\+::vec3 \&direction) const
+\item 
+glm\+::mat3 \hyperlink{classrum_1_1_rigid_body_a993bb9d458773a9fc67fad4c5d50ecc6}{calculate\+Cube\+Tensor} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} mass, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x\+\_\+half, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y\+\_\+half, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z\+\_\+half)
+\item 
+glm\+::mat3 \hyperlink{classrum_1_1_rigid_body_a93de6b632eb6da8fdaafaedb8ca249ab}{calculate\+Shere\+Tensor} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} mass, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} radius)
+\item 
+virtual void \hyperlink{classrum_1_1_rigid_body_a3f9e7cf532fc67b639b489a3875b08fd}{integrate} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classrum_1_1_rigid_body_a14e0125fad626f899e31e2aa4a4c7a71}{calculate\+Transformation\+Matrix} (glm\+::mat4 \&transformation\+Matrix, const glm\+::vec3 \&position, const glm\+::quat \&orientation)
+\item 
+void \hyperlink{classrum_1_1_rigid_body_aacbc5d4d598578ebe4624dd5b10d1253}{transform\+Inertia\+Tensor} (glm\+::mat3 \&iit\+World, const glm\+::mat3 \&iit, const glm\+::mat4 \&rot\+Mat)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_ae44a097e5f506fa92b4362fb7f3d1e34}{m\+\_\+inverse\+Mass}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_a1d4bf555e6b2f2bb856d4e0d54ee7578}{m\+\_\+linear\+Damping}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_rigid_body_ae4da76f319cb35a3d9c98ca3b6a49978}{m\+\_\+angular\+Damping}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a6ebb914d867b2ed3199a7917bf8a4b26}{m\+\_\+position}
+\item 
+glm\+::quat \hyperlink{classrum_1_1_rigid_body_ad6a5781f0de7e6389c4d77ed9b35d36a}{m\+\_\+orientation}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a48ac9b6ee9e5b953e811b9d53b5152c4}{m\+\_\+velocity}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a6ac55e43c61722e4cba0dac0a0a703b3}{m\+\_\+acceleration}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a781351881377ba7e431191d2c1967c7b}{m\+\_\+last\+Frame\+Acceleration}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_ab28218707fc017407491826bb40a06e5}{m\+\_\+rotation}
+\item 
+glm\+::mat4 \hyperlink{classrum_1_1_rigid_body_ad3a0b17141b70e55f03a713f3892100e}{m\+\_\+transformation\+Matrix}
+\item 
+glm\+::mat3 \hyperlink{classrum_1_1_rigid_body_a2d280d2c778fe82a303d8495a71b3470}{m\+\_\+inverse\+Inertia\+Tensor}
+\item 
+glm\+::mat3 \hyperlink{classrum_1_1_rigid_body_a2d1996a62209043fe5c43a5bc275f912}{m\+\_\+inverse\+Inertia\+Tensor\+World}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a7e38f8a99d5dd102ea8496814048bcc0}{m\+\_\+force\+Accumulated}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_rigid_body_a9d879f2a5d1430d4c16931bc6b96459d}{m\+\_\+torque\+Accumulated}
+\item 
+bool \hyperlink{classrum_1_1_rigid_body_aeca9c644919b9a8974e016cc1e8b9e71}{m\+\_\+dead} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a82678048704e31e6781d107c89094706}\label{classrum_1_1_rigid_body_a82678048704e31e6781d107c89094706}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!add\+Force@{add\+Force}}
+\index{add\+Force@{add\+Force}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{add\+Force()}{addForce()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::add\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a5025fc4cc7be3202b84485ae2fdfdcf7}\label{classrum_1_1_rigid_body_a5025fc4cc7be3202b84485ae2fdfdcf7}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!add\+Force\+At\+Body\+Point@{add\+Force\+At\+Body\+Point}}
+\index{add\+Force\+At\+Body\+Point@{add\+Force\+At\+Body\+Point}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{add\+Force\+At\+Body\+Point()}{addForceAtBodyPoint()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::add\+Force\+At\+Body\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force,  }\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a8bfbbe5f4c71e6e3d484479bcbf98b8e}\label{classrum_1_1_rigid_body_a8bfbbe5f4c71e6e3d484479bcbf98b8e}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!add\+Force\+At\+Point@{add\+Force\+At\+Point}}
+\index{add\+Force\+At\+Point@{add\+Force\+At\+Point}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{add\+Force\+At\+Point()}{addForceAtPoint()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::add\+Force\+At\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force,  }\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a8d3625960b75bdf71c205274896d1969}\label{classrum_1_1_rigid_body_a8d3625960b75bdf71c205274896d1969}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!add\+Rotation@{add\+Rotation}}
+\index{add\+Rotation@{add\+Rotation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{add\+Rotation()}{addRotation()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::add\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{delta\+Rotation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_aaaf225465b2beb2e1d5737adb17a1421}\label{classrum_1_1_rigid_body_aaaf225465b2beb2e1d5737adb17a1421}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!add\+Torque@{add\+Torque}}
+\index{add\+Torque@{add\+Torque}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{add\+Torque()}{addTorque()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::add\+Torque (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{torque }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a347acf72fd3aa739218025050713948a}\label{classrum_1_1_rigid_body_a347acf72fd3aa739218025050713948a}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!add\+Velocity@{add\+Velocity}}
+\index{add\+Velocity@{add\+Velocity}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{add\+Velocity()}{addVelocity()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::add\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{delta\+Velocity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a993bb9d458773a9fc67fad4c5d50ecc6}\label{classrum_1_1_rigid_body_a993bb9d458773a9fc67fad4c5d50ecc6}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!calculate\+Cube\+Tensor@{calculate\+Cube\+Tensor}}
+\index{calculate\+Cube\+Tensor@{calculate\+Cube\+Tensor}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{calculate\+Cube\+Tensor()}{calculateCubeTensor()}}
+{\footnotesize\ttfamily glm\+::mat3 rum\+::\+Rigid\+Body\+::calculate\+Cube\+Tensor (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{mass,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x\+\_\+half,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y\+\_\+half,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z\+\_\+half }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a3f14dfc9bb7dcfc961373b8f7cb71dc9}\label{classrum_1_1_rigid_body_a3f14dfc9bb7dcfc961373b8f7cb71dc9}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!calculate\+Derived\+Data@{calculate\+Derived\+Data}}
+\index{calculate\+Derived\+Data@{calculate\+Derived\+Data}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{calculate\+Derived\+Data()}{calculateDerivedData()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::calculate\+Derived\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a93de6b632eb6da8fdaafaedb8ca249ab}\label{classrum_1_1_rigid_body_a93de6b632eb6da8fdaafaedb8ca249ab}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!calculate\+Shere\+Tensor@{calculate\+Shere\+Tensor}}
+\index{calculate\+Shere\+Tensor@{calculate\+Shere\+Tensor}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{calculate\+Shere\+Tensor()}{calculateShereTensor()}}
+{\footnotesize\ttfamily glm\+::mat3 rum\+::\+Rigid\+Body\+::calculate\+Shere\+Tensor (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{mass,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a14e0125fad626f899e31e2aa4a4c7a71}\label{classrum_1_1_rigid_body_a14e0125fad626f899e31e2aa4a4c7a71}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!calculate\+Transformation\+Matrix@{calculate\+Transformation\+Matrix}}
+\index{calculate\+Transformation\+Matrix@{calculate\+Transformation\+Matrix}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{calculate\+Transformation\+Matrix()}{calculateTransformationMatrix()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::calculate\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4 \&}]{transformation\+Matrix,  }\item[{const glm\+::vec3 \&}]{position,  }\item[{const glm\+::quat \&}]{orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ae6048d852853ae37ebc9301b430ad021}\label{classrum_1_1_rigid_body_ae6048d852853ae37ebc9301b430ad021}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!clear\+Accumulators@{clear\+Accumulators}}
+\index{clear\+Accumulators@{clear\+Accumulators}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{clear\+Accumulators()}{clearAccumulators()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::clear\+Accumulators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a8b303ca817b107348692e5b442ae7a56}\label{classrum_1_1_rigid_body_a8b303ca817b107348692e5b442ae7a56}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Acceleration@{get\+Acceleration}}
+\index{get\+Acceleration@{get\+Acceleration}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Acceleration()}{getAcceleration()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a13f45609fd48d44695190a4bd81f2ad7}\label{classrum_1_1_rigid_body_a13f45609fd48d44695190a4bd81f2ad7}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Angular\+Damping@{get\+Angular\+Damping}}
+\index{get\+Angular\+Damping@{get\+Angular\+Damping}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Angular\+Damping()}{getAngularDamping()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::get\+Angular\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a7904a2e04f4b5b491b1ac092474a96ec}\label{classrum_1_1_rigid_body_a7904a2e04f4b5b491b1ac092474a96ec}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Direction\+In\+Local\+Space@{get\+Direction\+In\+Local\+Space}}
+\index{get\+Direction\+In\+Local\+Space@{get\+Direction\+In\+Local\+Space}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Direction\+In\+Local\+Space()}{getDirectionInLocalSpace()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Direction\+In\+Local\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a5b6261b8cc054b044219f976d2b9d5e3}\label{classrum_1_1_rigid_body_a5b6261b8cc054b044219f976d2b9d5e3}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Direction\+In\+World\+Space@{get\+Direction\+In\+World\+Space}}
+\index{get\+Direction\+In\+World\+Space@{get\+Direction\+In\+World\+Space}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Direction\+In\+World\+Space()}{getDirectionInWorldSpace()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Direction\+In\+World\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ad13fc4c6b7b199a62ab85a716077ac27}\label{classrum_1_1_rigid_body_ad13fc4c6b7b199a62ab85a716077ac27}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Force\+Accumulated@{get\+Force\+Accumulated}}
+\index{get\+Force\+Accumulated@{get\+Force\+Accumulated}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Force\+Accumulated()}{getForceAccumulated()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Force\+Accumulated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a1bef6c65c76a64c0a7ea8ebff4cd5c58}\label{classrum_1_1_rigid_body_a1bef6c65c76a64c0a7ea8ebff4cd5c58}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Inverse\+Inertia\+Tensor\+World@{get\+Inverse\+Inertia\+Tensor\+World}}
+\index{get\+Inverse\+Inertia\+Tensor\+World@{get\+Inverse\+Inertia\+Tensor\+World}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Inverse\+Inertia\+Tensor\+World()}{getInverseInertiaTensorWorld()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::get\+Inverse\+Inertia\+Tensor\+World (\begin{DoxyParamCaption}\item[{glm\+::mat3 $\ast$}]{inverse\+Inertia\+Tensor\+World }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a4c1a53f80f22157d60037099bb54544a}\label{classrum_1_1_rigid_body_a4c1a53f80f22157d60037099bb54544a}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Inverse\+Mass@{get\+Inverse\+Mass}}
+\index{get\+Inverse\+Mass@{get\+Inverse\+Mass}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Inverse\+Mass()}{getInverseMass()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::get\+Inverse\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a116880f250df7efe113f87b189fdfca5}\label{classrum_1_1_rigid_body_a116880f250df7efe113f87b189fdfca5}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Inverse\+Tensor@{get\+Inverse\+Tensor}}
+\index{get\+Inverse\+Tensor@{get\+Inverse\+Tensor}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Inverse\+Tensor()}{getInverseTensor()}}
+{\footnotesize\ttfamily glm\+::mat3 rum\+::\+Rigid\+Body\+::get\+Inverse\+Tensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a637e50a502427fdd128873a015e84997}\label{classrum_1_1_rigid_body_a637e50a502427fdd128873a015e84997}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Linear\+Damping@{get\+Linear\+Damping}}
+\index{get\+Linear\+Damping@{get\+Linear\+Damping}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Linear\+Damping()}{getLinearDamping()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::get\+Linear\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a07818ed12a3e223b40191a5d934a2c94}\label{classrum_1_1_rigid_body_a07818ed12a3e223b40191a5d934a2c94}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a333d4b85e26497a8939faa1d0048d131}\label{classrum_1_1_rigid_body_a333d4b85e26497a8939faa1d0048d131}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Orientation@{get\+Orientation}}
+\index{get\+Orientation@{get\+Orientation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Orientation()}{getOrientation()}}
+{\footnotesize\ttfamily glm\+::quat rum\+::\+Rigid\+Body\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a4aff0a01d641859d37f87126d15ec277}\label{classrum_1_1_rigid_body_a4aff0a01d641859d37f87126d15ec277}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Point\+In\+Local\+Space@{get\+Point\+In\+Local\+Space}}
+\index{get\+Point\+In\+Local\+Space@{get\+Point\+In\+Local\+Space}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Point\+In\+Local\+Space()}{getPointInLocalSpace()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Point\+In\+Local\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a6c47248ece653cb70c2bf5e785d3d13c}\label{classrum_1_1_rigid_body_a6c47248ece653cb70c2bf5e785d3d13c}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Point\+In\+World\+Space@{get\+Point\+In\+World\+Space}}
+\index{get\+Point\+In\+World\+Space@{get\+Point\+In\+World\+Space}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Point\+In\+World\+Space()}{getPointInWorldSpace()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Point\+In\+World\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a9221f1b74f8a258a9ad050ddaea64412}\label{classrum_1_1_rigid_body_a9221f1b74f8a258a9ad050ddaea64412}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_aa99998dba8c818290cfba8dacccd66a2}\label{classrum_1_1_rigid_body_aa99998dba8c818290cfba8dacccd66a2}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a9868612d7d60df7abfde0b657d3bad78}\label{classrum_1_1_rigid_body_a9868612d7d60df7abfde0b657d3bad78}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Torque\+Accumulated@{get\+Torque\+Accumulated}}
+\index{get\+Torque\+Accumulated@{get\+Torque\+Accumulated}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Torque\+Accumulated()}{getTorqueAccumulated()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Torque\+Accumulated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a5e289b46c1849f186295d7f3cdef113d}\label{classrum_1_1_rigid_body_a5e289b46c1849f186295d7f3cdef113d}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Transformation\+Matrix@{get\+Transformation\+Matrix}}
+\index{get\+Transformation\+Matrix@{get\+Transformation\+Matrix}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Transformation\+Matrix()}{getTransformationMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 rum\+::\+Rigid\+Body\+::get\+Transformation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a4e321b456c54e8090e1c897d513829f9}\label{classrum_1_1_rigid_body_a4e321b456c54e8090e1c897d513829f9}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_abc90d8e280d6f0724cda920c78ae4927}\label{classrum_1_1_rigid_body_abc90d8e280d6f0724cda920c78ae4927}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!has\+Finite\+Mass@{has\+Finite\+Mass}}
+\index{has\+Finite\+Mass@{has\+Finite\+Mass}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{has\+Finite\+Mass()}{hasFiniteMass()}}
+{\footnotesize\ttfamily bool rum\+::\+Rigid\+Body\+::has\+Finite\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a3f9e7cf532fc67b639b489a3875b08fd}\label{classrum_1_1_rigid_body_a3f9e7cf532fc67b639b489a3875b08fd}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!integrate@{integrate}}
+\index{integrate@{integrate}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::integrate (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a8864878e784f5cc50993ed2470b03cb3}\label{classrum_1_1_rigid_body_a8864878e784f5cc50993ed2470b03cb3}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!is\+Dead@{is\+Dead}}
+\index{is\+Dead@{is\+Dead}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{is\+Dead()}{isDead()}}
+{\footnotesize\ttfamily bool rum\+::\+Rigid\+Body\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a217a8370a7196e29e2e02fa57cde9bb4}\label{classrum_1_1_rigid_body_a217a8370a7196e29e2e02fa57cde9bb4}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Acceleration@{set\+Acceleration}}
+\index{set\+Acceleration@{set\+Acceleration}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{acceleration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a663501367c795254a324349d55b3f6f6}\label{classrum_1_1_rigid_body_a663501367c795254a324349d55b3f6f6}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Acceleration@{set\+Acceleration}}
+\index{set\+Acceleration@{set\+Acceleration}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a205cac5b6c9a0d7ce8371e94af3b95ee}\label{classrum_1_1_rigid_body_a205cac5b6c9a0d7ce8371e94af3b95ee}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Angular\+Damping@{set\+Angular\+Damping}}
+\index{set\+Angular\+Damping@{set\+Angular\+Damping}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Angular\+Damping()}{setAngularDamping()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Angular\+Damping (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{angular\+Damping }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a253cfde1f35c821afcfef39ecf237428}\label{classrum_1_1_rigid_body_a253cfde1f35c821afcfef39ecf237428}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Dead@{set\+Dead}}
+\index{set\+Dead@{set\+Dead}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Dead()}{setDead()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Dead (\begin{DoxyParamCaption}\item[{const bool}]{dead }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a15fd4045586f493df7611c7d362bff16}\label{classrum_1_1_rigid_body_a15fd4045586f493df7611c7d362bff16}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Inertia\+Tensor@{set\+Inertia\+Tensor}}
+\index{set\+Inertia\+Tensor@{set\+Inertia\+Tensor}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Inertia\+Tensor()}{setInertiaTensor()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Inertia\+Tensor (\begin{DoxyParamCaption}\item[{const glm\+::mat3 \&}]{inertia\+Tensor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a3fb4c29e486be6984d0f7a21a7bede06}\label{classrum_1_1_rigid_body_a3fb4c29e486be6984d0f7a21a7bede06}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Inverse\+Mass@{set\+Inverse\+Mass}}
+\index{set\+Inverse\+Mass@{set\+Inverse\+Mass}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Inverse\+Mass()}{setInverseMass()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Inverse\+Mass (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{inverse\+Mass }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ac7afc4f115c4a387aa9e6929c9d7a40c}\label{classrum_1_1_rigid_body_ac7afc4f115c4a387aa9e6929c9d7a40c}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Linear\+Damping@{set\+Linear\+Damping}}
+\index{set\+Linear\+Damping@{set\+Linear\+Damping}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Linear\+Damping()}{setLinearDamping()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Linear\+Damping (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{linear\+Damping }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ac71fd21db22c1a36a32c03d342dd6dbe}\label{classrum_1_1_rigid_body_ac71fd21db22c1a36a32c03d342dd6dbe}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Mass@{set\+Mass}}
+\index{set\+Mass@{set\+Mass}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Mass (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{mass }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a2f4565f3884f4870403a2f6000860a81}\label{classrum_1_1_rigid_body_a2f4565f3884f4870403a2f6000860a81}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Orientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const glm\+::quat \&}]{orientation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a10978d0759ab1cbe0e63a3143d4141b8}\label{classrum_1_1_rigid_body_a10978d0759ab1cbe0e63a3143d4141b8}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Orientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{r,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{i,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{j,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{k }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a7511dfe4f717b8217ae38ced29116a21}\label{classrum_1_1_rigid_body_a7511dfe4f717b8217ae38ced29116a21}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_afc0f30fdfffeabbda5b59d96a571b9ac}\label{classrum_1_1_rigid_body_afc0f30fdfffeabbda5b59d96a571b9ac}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Position@{set\+Position}}
+\index{set\+Position@{set\+Position}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Position (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_aa6b6e73db8fefb0a54d82cf245b6bda6}\label{classrum_1_1_rigid_body_aa6b6e73db8fefb0a54d82cf245b6bda6}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{rotation }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_aa0156ccce8351de3e869dd19117e014a}\label{classrum_1_1_rigid_body_aa0156ccce8351de3e869dd19117e014a}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a807a0309fef97be32db6f1e981e2f029}\label{classrum_1_1_rigid_body_a807a0309fef97be32db6f1e981e2f029}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a9c0d7b85a4fa9fcd4fa4a7ab3e309234}\label{classrum_1_1_rigid_body_a9c0d7b85a4fa9fcd4fa4a7ab3e309234}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!set\+Velocity@{set\+Velocity}}
+\index{set\+Velocity@{set\+Velocity}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_aacbc5d4d598578ebe4624dd5b10d1253}\label{classrum_1_1_rigid_body_aacbc5d4d598578ebe4624dd5b10d1253}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!transform\+Inertia\+Tensor@{transform\+Inertia\+Tensor}}
+\index{transform\+Inertia\+Tensor@{transform\+Inertia\+Tensor}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{transform\+Inertia\+Tensor()}{transformInertiaTensor()}}
+{\footnotesize\ttfamily void rum\+::\+Rigid\+Body\+::transform\+Inertia\+Tensor (\begin{DoxyParamCaption}\item[{glm\+::mat3 \&}]{iit\+World,  }\item[{const glm\+::mat3 \&}]{iit,  }\item[{const glm\+::mat4 \&}]{rot\+Mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a6ac55e43c61722e4cba0dac0a0a703b3}\label{classrum_1_1_rigid_body_a6ac55e43c61722e4cba0dac0a0a703b3}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+acceleration@{m\+\_\+acceleration}}
+\index{m\+\_\+acceleration@{m\+\_\+acceleration}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+acceleration}{m\_acceleration}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+acceleration\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ae4da76f319cb35a3d9c98ca3b6a49978}\label{classrum_1_1_rigid_body_ae4da76f319cb35a3d9c98ca3b6a49978}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}}
+\index{m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+angular\+Damping}{m\_angularDamping}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::m\+\_\+angular\+Damping\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_aeca9c644919b9a8974e016cc1e8b9e71}\label{classrum_1_1_rigid_body_aeca9c644919b9a8974e016cc1e8b9e71}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+dead@{m\+\_\+dead}}
+\index{m\+\_\+dead@{m\+\_\+dead}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+dead}{m\_dead}}
+{\footnotesize\ttfamily bool rum\+::\+Rigid\+Body\+::m\+\_\+dead = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a7e38f8a99d5dd102ea8496814048bcc0}\label{classrum_1_1_rigid_body_a7e38f8a99d5dd102ea8496814048bcc0}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+force\+Accumulated@{m\+\_\+force\+Accumulated}}
+\index{m\+\_\+force\+Accumulated@{m\+\_\+force\+Accumulated}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+force\+Accumulated}{m\_forceAccumulated}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+force\+Accumulated\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a2d280d2c778fe82a303d8495a71b3470}\label{classrum_1_1_rigid_body_a2d280d2c778fe82a303d8495a71b3470}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+inverse\+Inertia\+Tensor@{m\+\_\+inverse\+Inertia\+Tensor}}
+\index{m\+\_\+inverse\+Inertia\+Tensor@{m\+\_\+inverse\+Inertia\+Tensor}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Inertia\+Tensor}{m\_inverseInertiaTensor}}
+{\footnotesize\ttfamily glm\+::mat3 rum\+::\+Rigid\+Body\+::m\+\_\+inverse\+Inertia\+Tensor\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a2d1996a62209043fe5c43a5bc275f912}\label{classrum_1_1_rigid_body_a2d1996a62209043fe5c43a5bc275f912}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+inverse\+Inertia\+Tensor\+World@{m\+\_\+inverse\+Inertia\+Tensor\+World}}
+\index{m\+\_\+inverse\+Inertia\+Tensor\+World@{m\+\_\+inverse\+Inertia\+Tensor\+World}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Inertia\+Tensor\+World}{m\_inverseInertiaTensorWorld}}
+{\footnotesize\ttfamily glm\+::mat3 rum\+::\+Rigid\+Body\+::m\+\_\+inverse\+Inertia\+Tensor\+World\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ae44a097e5f506fa92b4362fb7f3d1e34}\label{classrum_1_1_rigid_body_ae44a097e5f506fa92b4362fb7f3d1e34}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}}
+\index{m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Mass}{m\_inverseMass}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::m\+\_\+inverse\+Mass\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a781351881377ba7e431191d2c1967c7b}\label{classrum_1_1_rigid_body_a781351881377ba7e431191d2c1967c7b}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+last\+Frame\+Acceleration@{m\+\_\+last\+Frame\+Acceleration}}
+\index{m\+\_\+last\+Frame\+Acceleration@{m\+\_\+last\+Frame\+Acceleration}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+Frame\+Acceleration}{m\_lastFrameAcceleration}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+last\+Frame\+Acceleration\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a1d4bf555e6b2f2bb856d4e0d54ee7578}\label{classrum_1_1_rigid_body_a1d4bf555e6b2f2bb856d4e0d54ee7578}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+linear\+Damping@{m\+\_\+linear\+Damping}}
+\index{m\+\_\+linear\+Damping@{m\+\_\+linear\+Damping}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+linear\+Damping}{m\_linearDamping}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Rigid\+Body\+::m\+\_\+linear\+Damping\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ad6a5781f0de7e6389c4d77ed9b35d36a}\label{classrum_1_1_rigid_body_ad6a5781f0de7e6389c4d77ed9b35d36a}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+orientation@{m\+\_\+orientation}}
+\index{m\+\_\+orientation@{m\+\_\+orientation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+orientation}{m\_orientation}}
+{\footnotesize\ttfamily glm\+::quat rum\+::\+Rigid\+Body\+::m\+\_\+orientation\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a6ebb914d867b2ed3199a7917bf8a4b26}\label{classrum_1_1_rigid_body_a6ebb914d867b2ed3199a7917bf8a4b26}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ab28218707fc017407491826bb40a06e5}\label{classrum_1_1_rigid_body_ab28218707fc017407491826bb40a06e5}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+rotation@{m\+\_\+rotation}}
+\index{m\+\_\+rotation@{m\+\_\+rotation}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a9d879f2a5d1430d4c16931bc6b96459d}\label{classrum_1_1_rigid_body_a9d879f2a5d1430d4c16931bc6b96459d}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+torque\+Accumulated@{m\+\_\+torque\+Accumulated}}
+\index{m\+\_\+torque\+Accumulated@{m\+\_\+torque\+Accumulated}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+torque\+Accumulated}{m\_torqueAccumulated}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+torque\+Accumulated\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_ad3a0b17141b70e55f03a713f3892100e}\label{classrum_1_1_rigid_body_ad3a0b17141b70e55f03a713f3892100e}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+transformation\+Matrix@{m\+\_\+transformation\+Matrix}}
+\index{m\+\_\+transformation\+Matrix@{m\+\_\+transformation\+Matrix}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+transformation\+Matrix}{m\_transformationMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 rum\+::\+Rigid\+Body\+::m\+\_\+transformation\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_rigid_body_a48ac9b6ee9e5b953e811b9d53b5152c4}\label{classrum_1_1_rigid_body_a48ac9b6ee9e5b953e811b9d53b5152c4}} 
+\index{rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}!m\+\_\+velocity@{m\+\_\+velocity}}
+\index{m\+\_\+velocity@{m\+\_\+velocity}!rum\+::\+Rigid\+Body@{rum\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+velocity}{m\_velocity}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Rigid\+Body\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_rigid_body_8cpp}{Rigid\+Body.\+cpp}\end{DoxyCompactItemize}

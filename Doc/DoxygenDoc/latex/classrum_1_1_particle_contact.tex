@@ -1,0 +1,135 @@
+\hypertarget{classrum_1_1_particle_contact}{}\section{rum\+:\+:Particle\+Contact Class Reference}
+\label{classrum_1_1_particle_contact}\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+
+
+{\ttfamily \#include $<$Particle\+Contact.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:Particle\+Contact\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_particle_contact__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_contact_a85e06dde6b23622bf8d9f6a99205fcfc}{calculate\+Separating\+Velocity} () const
+\item 
+void \hyperlink{classrum_1_1_particle_contact_acf090d7537e78bea0e9008b55a3959c9}{resolve} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\item 
+\hyperlink{classrum_1_1_particle}{Particle} $\ast$ \hyperlink{classrum_1_1_particle_contact_a3cccc345ae55939b5fca963e86d7deae}{get\+Particles} ()
+\item 
+void \hyperlink{classrum_1_1_particle_contact_a0626aa815eab861f15cc9dfc582452a6}{set\+Contact\+Normal} (glm\+::vec3 normal)
+\item 
+void \hyperlink{classrum_1_1_particle_contact_abf356cecb0c3c42d889a561afc901a97}{set\+Restitution} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} restitution)
+\item 
+void \hyperlink{classrum_1_1_particle_contact_ab31f404b4e571262ade5c9d8b1f36f97}{set\+Penetration} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} penetration)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_particle}{Particle} $\ast$ \hyperlink{classrum_1_1_particle_contact_a01267c3d6f9227b318a7b49182d01006}{m\+\_\+particles} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_contact_a0be16bc823ae27866228345eb3349482}{m\+\_\+restitution}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_particle_contact_a8b0d26e0c773a739f34eb27d7e8d9c17}{m\+\_\+contact\+Normal}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_contact_a935966849508ec47d3c6330816f873de}{m\+\_\+penetration}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_particle_contact_ab03921d708387e5bbc3a0c01f1f5a3da}{m\+\_\+particles\+Movement} \mbox{[}2\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classrum_1_1_particle_contact_ab2e3f4c3dc9b46966c6ec90e0fe88b6c}{Particle\+Contact\+Resolver}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a85e06dde6b23622bf8d9f6a99205fcfc}\label{classrum_1_1_particle_contact_a85e06dde6b23622bf8d9f6a99205fcfc}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!calculate\+Separating\+Velocity@{calculate\+Separating\+Velocity}}
+\index{calculate\+Separating\+Velocity@{calculate\+Separating\+Velocity}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{calculate\+Separating\+Velocity()}{calculateSeparatingVelocity()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+Contact\+::calculate\+Separating\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a3cccc345ae55939b5fca963e86d7deae}\label{classrum_1_1_particle_contact_a3cccc345ae55939b5fca963e86d7deae}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!get\+Particles@{get\+Particles}}
+\index{get\+Particles@{get\+Particles}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{get\+Particles()}{getParticles()}}
+{\footnotesize\ttfamily \hyperlink{classrum_1_1_particle}{Particle} $\ast$ rum\+::\+Particle\+Contact\+::get\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_acf090d7537e78bea0e9008b55a3959c9}\label{classrum_1_1_particle_contact_acf090d7537e78bea0e9008b55a3959c9}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!resolve@{resolve}}
+\index{resolve@{resolve}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Contact\+::resolve (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a0626aa815eab861f15cc9dfc582452a6}\label{classrum_1_1_particle_contact_a0626aa815eab861f15cc9dfc582452a6}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!set\+Contact\+Normal@{set\+Contact\+Normal}}
+\index{set\+Contact\+Normal@{set\+Contact\+Normal}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{set\+Contact\+Normal()}{setContactNormal()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Contact\+::set\+Contact\+Normal (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{normal }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_ab31f404b4e571262ade5c9d8b1f36f97}\label{classrum_1_1_particle_contact_ab31f404b4e571262ade5c9d8b1f36f97}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!set\+Penetration@{set\+Penetration}}
+\index{set\+Penetration@{set\+Penetration}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{set\+Penetration()}{setPenetration()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Contact\+::set\+Penetration (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{penetration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_abf356cecb0c3c42d889a561afc901a97}\label{classrum_1_1_particle_contact_abf356cecb0c3c42d889a561afc901a97}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!set\+Restitution@{set\+Restitution}}
+\index{set\+Restitution@{set\+Restitution}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{set\+Restitution()}{setRestitution()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Contact\+::set\+Restitution (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{restitution }\end{DoxyParamCaption})}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_contact_ab2e3f4c3dc9b46966c6ec90e0fe88b6c}\label{classrum_1_1_particle_contact_ab2e3f4c3dc9b46966c6ec90e0fe88b6c}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!Particle\+Contact\+Resolver@{Particle\+Contact\+Resolver}}
+\index{Particle\+Contact\+Resolver@{Particle\+Contact\+Resolver}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{Particle\+Contact\+Resolver}{ParticleContactResolver}}
+{\footnotesize\ttfamily friend class \hyperlink{classrum_1_1_particle_contact_resolver}{Particle\+Contact\+Resolver}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a8b0d26e0c773a739f34eb27d7e8d9c17}\label{classrum_1_1_particle_contact_a8b0d26e0c773a739f34eb27d7e8d9c17}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!m\+\_\+contact\+Normal@{m\+\_\+contact\+Normal}}
+\index{m\+\_\+contact\+Normal@{m\+\_\+contact\+Normal}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Normal}{m\_contactNormal}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Particle\+Contact\+::m\+\_\+contact\+Normal}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a01267c3d6f9227b318a7b49182d01006}\label{classrum_1_1_particle_contact_a01267c3d6f9227b318a7b49182d01006}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!m\+\_\+particles@{m\+\_\+particles}}
+\index{m\+\_\+particles@{m\+\_\+particles}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+particles}{m\_particles}}
+{\footnotesize\ttfamily \hyperlink{classrum_1_1_particle}{Particle}$\ast$ rum\+::\+Particle\+Contact\+::m\+\_\+particles\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_ab03921d708387e5bbc3a0c01f1f5a3da}\label{classrum_1_1_particle_contact_ab03921d708387e5bbc3a0c01f1f5a3da}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!m\+\_\+particles\+Movement@{m\+\_\+particles\+Movement}}
+\index{m\+\_\+particles\+Movement@{m\+\_\+particles\+Movement}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+particles\+Movement}{m\_particlesMovement}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Particle\+Contact\+::m\+\_\+particles\+Movement\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a935966849508ec47d3c6330816f873de}\label{classrum_1_1_particle_contact_a935966849508ec47d3c6330816f873de}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!m\+\_\+penetration@{m\+\_\+penetration}}
+\index{m\+\_\+penetration@{m\+\_\+penetration}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+penetration}{m\_penetration}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+Contact\+::m\+\_\+penetration}
+
+\mbox{\Hypertarget{classrum_1_1_particle_contact_a0be16bc823ae27866228345eb3349482}\label{classrum_1_1_particle_contact_a0be16bc823ae27866228345eb3349482}} 
+\index{rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}!m\+\_\+restitution@{m\+\_\+restitution}}
+\index{m\+\_\+restitution@{m\+\_\+restitution}!rum\+::\+Particle\+Contact@{rum\+::\+Particle\+Contact}}
+\subsubsection{\texorpdfstring{m\+\_\+restitution}{m\_restitution}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+Contact\+::m\+\_\+restitution}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\hyperlink{_particle_contact_8h}{Particle\+Contact.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\hyperlink{_particle_contact_8cpp}{Particle\+Contact.\+cpp}\end{DoxyCompactItemize}

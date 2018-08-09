@@ -1,0 +1,292 @@
+\hypertarget{classrum_1_1_particle}{}\section{rum\+:\+:Particle Class Reference}
+\label{classrum_1_1_particle}\index{rum\+::\+Particle@{rum\+::\+Particle}}
+
+
+{\ttfamily \#include $<$Particle.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:Particle\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{classrum_1_1_particle__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_particle_a9ae5ce0fc18a8be75950b336b92ecd75}{Particle} ()
+\item 
+virtual \hyperlink{classrum_1_1_particle_abc143197fe05fa60a1a3ccbf7b5f0fe8}{$\sim$\+Particle} ()
+\item 
+void \hyperlink{classrum_1_1_particle_a6525cbbbf7709bdacb7cb431d3622661}{Set\+Mass} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} mass)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_a060c6f1db7424d67b4c01e6f7e538eca}{Get\+Mass} () const
+\item 
+void \hyperlink{classrum_1_1_particle_a2233ab971870fc1cf2337f01cdcae4fb}{Set\+Inverse\+Mass} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} inverse\+Mass)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_a97e3662e7232daf4f2eabb79e4e06a3e}{Get\+Inverse\+Mass} () const
+\item 
+bool \hyperlink{classrum_1_1_particle_a0c19cd4e0c2933b4cc6357bb70c2c1a1}{Has\+Finite\+Mass} ()
+\item 
+void \hyperlink{classrum_1_1_particle_a2c564f2fe0122a6dd33b8113fde29e6d}{Set\+Position} (const glm\+::vec3 \&position)
+\item 
+void \hyperlink{classrum_1_1_particle_a1886668419cd31d6e0dacd1b62087ca0}{Set\+Position} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+const glm\+::vec3 \& \hyperlink{classrum_1_1_particle_a78064d4405febbf7939070d1d2861594}{Get\+Position} () const
+\item 
+void \hyperlink{classrum_1_1_particle_a48c69c70728f76190cf698a0bb733607}{Set\+Velocity} (const glm\+::vec3 \&velocity)
+\item 
+void \hyperlink{classrum_1_1_particle_a481befad17e369f9ca7de3d60965a5d8}{Set\+Velocity} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+const glm\+::vec3 \& \hyperlink{classrum_1_1_particle_adc199154d918e360103fa99f5b697604}{Get\+Velocity} () const
+\item 
+void \hyperlink{classrum_1_1_particle_a541556744b743995687bfabd42be67eb}{Set\+Acceleration} (const glm\+::vec3 \&acceleration)
+\item 
+void \hyperlink{classrum_1_1_particle_abfc528b024698e69b09b33ca6828f551}{Set\+Acceleration} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} x, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} y, const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} z)
+\item 
+const glm\+::vec3 \& \hyperlink{classrum_1_1_particle_a2fee14e654f4914de9c5455d26223b86}{Get\+Acceleration} () const
+\item 
+void \hyperlink{classrum_1_1_particle_a9472726d229860f267dc8b7e8b7fe2cc}{Set\+Damping} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} damping)
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_a8635e9e5ab669d9d754195a265293dde}{Get\+Damping} () const
+\item 
+void \hyperlink{classrum_1_1_particle_acd315e7907736b20493e091651cff616}{Set\+Is\+Dead} (bool is\+Dead)
+\item 
+bool \hyperlink{classrum_1_1_particle_af9cc5e4971981a3ad4c59370aa80a6ee}{Is\+Dead} ()
+\item 
+const glm\+::vec3 \& \hyperlink{classrum_1_1_particle_aa13821d1abbcc67a90d37936b58c632b}{Get\+Force\+Accum} ()
+\item 
+void \hyperlink{classrum_1_1_particle_adb76d2210f9fc1f95839a3c116a52b38}{Clear\+Accumulator} ()
+\item 
+void \hyperlink{classrum_1_1_particle_afe6a59e7c46860227b61b57eee5a37b0}{Add\+Force} (const glm\+::vec3 \&force)
+\item 
+virtual void \hyperlink{classrum_1_1_particle_ac2200e991b81a380177275d6dd04ab64}{Integrate} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_particle_a6e7c397b620c9d03fb6c7d4359649d40}{m\+\_\+position}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_particle_a8dfab481a4ef728d40e86f7369baf307}{m\+\_\+velocity}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_particle_aee85fab3a2d274ecc7d997f1c0c34132}{m\+\_\+acceleration}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_particle_afe25996db7b8665b775e4b46d52fea50}{m\+\_\+force\+Accum}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_a7fa92aadbccc9d999d84cef129cf8870}{m\+\_\+inverse\+Mass}
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_a76f5e4b0ed29a1d86419230621dd1047}{m\+\_\+damping}
+\item 
+bool \hyperlink{classrum_1_1_particle_ab056fc8b2187694c0742bd234b9cc6a3}{m\+\_\+is\+Dead}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_a9ae5ce0fc18a8be75950b336b92ecd75}\label{classrum_1_1_particle_a9ae5ce0fc18a8be75950b336b92ecd75}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Particle()}{Particle()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+::\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_abc143197fe05fa60a1a3ccbf7b5f0fe8}\label{classrum_1_1_particle_abc143197fe05fa60a1a3ccbf7b5f0fe8}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!````~Particle@{$\sim$\+Particle}}
+\index{````~Particle@{$\sim$\+Particle}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle()}{~Particle()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+::$\sim$\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_afe6a59e7c46860227b61b57eee5a37b0}\label{classrum_1_1_particle_afe6a59e7c46860227b61b57eee5a37b0}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Add\+Force@{Add\+Force}}
+\index{Add\+Force@{Add\+Force}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Add\+Force()}{AddForce()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Add\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force }\end{DoxyParamCaption})}
+
+Add a force to the force accumulator. \mbox{\Hypertarget{classrum_1_1_particle_adb76d2210f9fc1f95839a3c116a52b38}\label{classrum_1_1_particle_adb76d2210f9fc1f95839a3c116a52b38}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Clear\+Accumulator@{Clear\+Accumulator}}
+\index{Clear\+Accumulator@{Clear\+Accumulator}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Clear\+Accumulator()}{ClearAccumulator()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Clear\+Accumulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set the accumulated forces to zero. \mbox{\Hypertarget{classrum_1_1_particle_a2fee14e654f4914de9c5455d26223b86}\label{classrum_1_1_particle_a2fee14e654f4914de9c5455d26223b86}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Acceleration@{Get\+Acceleration}}
+\index{Get\+Acceleration@{Get\+Acceleration}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Acceleration()}{GetAcceleration()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& rum\+::\+Particle\+::\+Get\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_particle_a8635e9e5ab669d9d754195a265293dde}\label{classrum_1_1_particle_a8635e9e5ab669d9d754195a265293dde}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Damping@{Get\+Damping}}
+\index{Get\+Damping@{Get\+Damping}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Damping()}{GetDamping()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+::\+Get\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the linear damping constant of this particle. \mbox{\Hypertarget{classrum_1_1_particle_aa13821d1abbcc67a90d37936b58c632b}\label{classrum_1_1_particle_aa13821d1abbcc67a90d37936b58c632b}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Force\+Accum@{Get\+Force\+Accum}}
+\index{Get\+Force\+Accum@{Get\+Force\+Accum}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Force\+Accum()}{GetForceAccum()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& rum\+::\+Particle\+::\+Get\+Force\+Accum (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get current sum of accumulated forces. \mbox{\Hypertarget{classrum_1_1_particle_a97e3662e7232daf4f2eabb79e4e06a3e}\label{classrum_1_1_particle_a97e3662e7232daf4f2eabb79e4e06a3e}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Inverse\+Mass@{Get\+Inverse\+Mass}}
+\index{Get\+Inverse\+Mass@{Get\+Inverse\+Mass}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Inverse\+Mass()}{GetInverseMass()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+::\+Get\+Inverse\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current inverse mass of this particle If particle has infinite mass, inverse mass will be 0. \mbox{\Hypertarget{classrum_1_1_particle_a060c6f1db7424d67b4c01e6f7e538eca}\label{classrum_1_1_particle_a060c6f1db7424d67b4c01e6f7e538eca}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Mass@{Get\+Mass}}
+\index{Get\+Mass@{Get\+Mass}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Mass()}{GetMass()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+::\+Get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current mass of this particle. \mbox{\Hypertarget{classrum_1_1_particle_a78064d4405febbf7939070d1d2861594}\label{classrum_1_1_particle_a78064d4405febbf7939070d1d2861594}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Position@{Get\+Position}}
+\index{Get\+Position@{Get\+Position}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Position()}{GetPosition()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& rum\+::\+Particle\+::\+Get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current position of this particle. \mbox{\Hypertarget{classrum_1_1_particle_adc199154d918e360103fa99f5b697604}\label{classrum_1_1_particle_adc199154d918e360103fa99f5b697604}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Get\+Velocity@{Get\+Velocity}}
+\index{Get\+Velocity@{Get\+Velocity}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Get\+Velocity()}{GetVelocity()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& rum\+::\+Particle\+::\+Get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current velocity of this particle. \mbox{\Hypertarget{classrum_1_1_particle_a0c19cd4e0c2933b4cc6357bb70c2c1a1}\label{classrum_1_1_particle_a0c19cd4e0c2933b4cc6357bb70c2c1a1}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Has\+Finite\+Mass@{Has\+Finite\+Mass}}
+\index{Has\+Finite\+Mass@{Has\+Finite\+Mass}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Has\+Finite\+Mass()}{HasFiniteMass()}}
+{\footnotesize\ttfamily bool rum\+::\+Particle\+::\+Has\+Finite\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if this particle has infinite mass. \begin{DoxyReturn}{Returns}
+True if mass is infinite. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrum_1_1_particle_ac2200e991b81a380177275d6dd04ab64}\label{classrum_1_1_particle_ac2200e991b81a380177275d6dd04ab64}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Integrate@{Integrate}}
+\index{Integrate@{Integrate}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Integrate()}{Integrate()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Integrate (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Apply forces and update position, velocity and acceleration. \mbox{\Hypertarget{classrum_1_1_particle_af9cc5e4971981a3ad4c59370aa80a6ee}\label{classrum_1_1_particle_af9cc5e4971981a3ad4c59370aa80a6ee}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Is\+Dead@{Is\+Dead}}
+\index{Is\+Dead@{Is\+Dead}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Is\+Dead()}{IsDead()}}
+{\footnotesize\ttfamily bool rum\+::\+Particle\+::\+Is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Check if this particle is dead. \mbox{\Hypertarget{classrum_1_1_particle_a541556744b743995687bfabd42be67eb}\label{classrum_1_1_particle_a541556744b743995687bfabd42be67eb}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Acceleration@{Set\+Acceleration}}
+\index{Set\+Acceleration@{Set\+Acceleration}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Acceleration()}{SetAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Acceleration (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{acceleration }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_particle_abfc528b024698e69b09b33ca6828f551}\label{classrum_1_1_particle_abfc528b024698e69b09b33ca6828f551}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Acceleration@{Set\+Acceleration}}
+\index{Set\+Acceleration@{Set\+Acceleration}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Acceleration()}{SetAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Acceleration (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_particle_a9472726d229860f267dc8b7e8b7fe2cc}\label{classrum_1_1_particle_a9472726d229860f267dc8b7e8b7fe2cc}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Damping@{Set\+Damping}}
+\index{Set\+Damping@{Set\+Damping}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Damping()}{SetDamping()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Damping (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{damping }\end{DoxyParamCaption})}
+
+Change the linear damping constant of this particle. \mbox{\Hypertarget{classrum_1_1_particle_a2233ab971870fc1cf2337f01cdcae4fb}\label{classrum_1_1_particle_a2233ab971870fc1cf2337f01cdcae4fb}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Inverse\+Mass@{Set\+Inverse\+Mass}}
+\index{Set\+Inverse\+Mass@{Set\+Inverse\+Mass}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Inverse\+Mass()}{SetInverseMass()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Inverse\+Mass (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{inverse\+Mass }\end{DoxyParamCaption})}
+
+Change the inverse mass of this particle to the given value. Implicitly changes mass. 
+\begin{DoxyParams}{Parameters}
+{\em inverse\+Mass} & A value of 0 is equivalent to infinite mass. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classrum_1_1_particle_acd315e7907736b20493e091651cff616}\label{classrum_1_1_particle_acd315e7907736b20493e091651cff616}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Is\+Dead@{Set\+Is\+Dead}}
+\index{Set\+Is\+Dead@{Set\+Is\+Dead}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Is\+Dead()}{SetIsDead()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Is\+Dead (\begin{DoxyParamCaption}\item[{bool}]{is\+Dead }\end{DoxyParamCaption})}
+
+Set dead state of this particle. \mbox{\Hypertarget{classrum_1_1_particle_a6525cbbbf7709bdacb7cb431d3622661}\label{classrum_1_1_particle_a6525cbbbf7709bdacb7cb431d3622661}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Mass@{Set\+Mass}}
+\index{Set\+Mass@{Set\+Mass}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Mass()}{SetMass()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Mass (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{mass }\end{DoxyParamCaption})}
+
+Change the mass of this particle to the given given value. Implicitly changes inverse mass. \mbox{\Hypertarget{classrum_1_1_particle_a2c564f2fe0122a6dd33b8113fde29e6d}\label{classrum_1_1_particle_a2c564f2fe0122a6dd33b8113fde29e6d}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Position()}{SetPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})}
+
+Change particle position to given vector. \mbox{\Hypertarget{classrum_1_1_particle_a1886668419cd31d6e0dacd1b62087ca0}\label{classrum_1_1_particle_a1886668419cd31d6e0dacd1b62087ca0}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Position@{Set\+Position}}
+\index{Set\+Position@{Set\+Position}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Position()}{SetPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Position (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+Change particle position to given coordinates. \mbox{\Hypertarget{classrum_1_1_particle_a48c69c70728f76190cf698a0bb733607}\label{classrum_1_1_particle_a48c69c70728f76190cf698a0bb733607}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Velocity@{Set\+Velocity}}
+\index{Set\+Velocity@{Set\+Velocity}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Velocity()}{SetVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
+
+Change the current velocity of this particle to the given velocity. \mbox{\Hypertarget{classrum_1_1_particle_a481befad17e369f9ca7de3d60965a5d8}\label{classrum_1_1_particle_a481befad17e369f9ca7de3d60965a5d8}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!Set\+Velocity@{Set\+Velocity}}
+\index{Set\+Velocity@{Set\+Velocity}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{Set\+Velocity()}{SetVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+::\+Set\+Velocity (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{x,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{y,  }\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{z }\end{DoxyParamCaption})}
+
+Change the current velocity of this particle to the given velocity. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_aee85fab3a2d274ecc7d997f1c0c34132}\label{classrum_1_1_particle_aee85fab3a2d274ecc7d997f1c0c34132}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+acceleration@{m\+\_\+acceleration}}
+\index{m\+\_\+acceleration@{m\+\_\+acceleration}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+acceleration}{m\_acceleration}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Particle\+::m\+\_\+acceleration\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_a76f5e4b0ed29a1d86419230621dd1047}\label{classrum_1_1_particle_a76f5e4b0ed29a1d86419230621dd1047}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+damping@{m\+\_\+damping}}
+\index{m\+\_\+damping@{m\+\_\+damping}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+damping}{m\_damping}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+::m\+\_\+damping\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_afe25996db7b8665b775e4b46d52fea50}\label{classrum_1_1_particle_afe25996db7b8665b775e4b46d52fea50}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+force\+Accum@{m\+\_\+force\+Accum}}
+\index{m\+\_\+force\+Accum@{m\+\_\+force\+Accum}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+force\+Accum}{m\_forceAccum}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Particle\+::m\+\_\+force\+Accum\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_a7fa92aadbccc9d999d84cef129cf8870}\label{classrum_1_1_particle_a7fa92aadbccc9d999d84cef129cf8870}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}}
+\index{m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Mass}{m\_inverseMass}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+::m\+\_\+inverse\+Mass\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_ab056fc8b2187694c0742bd234b9cc6a3}\label{classrum_1_1_particle_ab056fc8b2187694c0742bd234b9cc6a3}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+is\+Dead@{m\+\_\+is\+Dead}}
+\index{m\+\_\+is\+Dead@{m\+\_\+is\+Dead}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+is\+Dead}{m\_isDead}}
+{\footnotesize\ttfamily bool rum\+::\+Particle\+::m\+\_\+is\+Dead\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_a6e7c397b620c9d03fb6c7d4359649d40}\label{classrum_1_1_particle_a6e7c397b620c9d03fb6c7d4359649d40}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+position@{m\+\_\+position}}
+\index{m\+\_\+position@{m\+\_\+position}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Particle\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_a8dfab481a4ef728d40e86f7369baf307}\label{classrum_1_1_particle_a8dfab481a4ef728d40e86f7369baf307}} 
+\index{rum\+::\+Particle@{rum\+::\+Particle}!m\+\_\+velocity@{m\+\_\+velocity}}
+\index{m\+\_\+velocity@{m\+\_\+velocity}!rum\+::\+Particle@{rum\+::\+Particle}}
+\subsubsection{\texorpdfstring{m\+\_\+velocity}{m\_velocity}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Particle\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\hyperlink{_particle_8h}{Particle.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\hyperlink{_particle_8cpp}{Particle.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,108 @@
+\hypertarget{classrum_1_1_bounding_box}{}\section{rum\+:\+:Bounding\+Box Class Reference}
+\label{classrum_1_1_bounding_box}\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+
+
+{\ttfamily \#include $<$Bounding\+Box.\+h$>$}
+
+
+
+Collaboration diagram for rum\+:\+:Bounding\+Box\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=183pt]{classrum_1_1_bounding_box__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_bounding_box_ab8fc622a27065c0bfe9e9f3d057c900e}{Bounding\+Box} ()
+\item 
+\hyperlink{classrum_1_1_bounding_box_a60123b8bafc7fa4ef78cdf2a4c49eac3}{Bounding\+Box} (const glm\+::vec3 \&center, const glm\+::vec3 \&bounds)
+\item 
+\hyperlink{classrum_1_1_bounding_box_a68f722c0cc72e5c939fa1fa382b26330}{Bounding\+Box} (const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} \&one, const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} \&two)
+\item 
+\hyperlink{classrum_1_1_bounding_box_a515a617dd779ad1932598f0bb6bd9669}{$\sim$\+Bounding\+Box} ()
+\item 
+bool \hyperlink{classrum_1_1_bounding_box_af7d2034adecd49f949b7bf5bfa942498}{Overlaps} (const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} $\ast$other) const
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_bounding_box_add513abe94c5ad77ff3ec2f29b6d6241}{Get\+Size} () const
+\item 
+\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_bounding_box_a944672fb8a07383cf4409393a62ffc1f}{Get\+Growth} (const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_bounding_box_af9c7a5df5b02f646a1aa0d5cf0c4e1fd}{m\+\_\+center}
+\item 
+glm\+::vec3 \hyperlink{classrum_1_1_bounding_box_a676df9315a0bf21962b02c65cb765a3a}{m\+\_\+bounds}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_bounding_box_ab8fc622a27065c0bfe9e9f3d057c900e}\label{classrum_1_1_bounding_box_ab8fc622a27065c0bfe9e9f3d057c900e}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_box_a60123b8bafc7fa4ef78cdf2a4c49eac3}\label{classrum_1_1_bounding_box_a60123b8bafc7fa4ef78cdf2a4c49eac3}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{center,  }\item[{const glm\+::vec3 \&}]{bounds }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_box_a68f722c0cc72e5c939fa1fa382b26330}\label{classrum_1_1_bounding_box_a68f722c0cc72e5c939fa1fa382b26330}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!Bounding\+Box@{Bounding\+Box}}
+\index{Bounding\+Box@{Bounding\+Box}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Bounding\+Box()}{BoundingBox()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Box\+::\+Bounding\+Box (\begin{DoxyParamCaption}\item[{const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} \&}]{one,  }\item[{const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} \&}]{two }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_box_a515a617dd779ad1932598f0bb6bd9669}\label{classrum_1_1_bounding_box_a515a617dd779ad1932598f0bb6bd9669}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!````~Bounding\+Box@{$\sim$\+Bounding\+Box}}
+\index{````~Bounding\+Box@{$\sim$\+Bounding\+Box}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{$\sim$\+Bounding\+Box()}{~BoundingBox()}}
+{\footnotesize\ttfamily rum\+::\+Bounding\+Box\+::$\sim$\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_bounding_box_a944672fb8a07383cf4409393a62ffc1f}\label{classrum_1_1_bounding_box_a944672fb8a07383cf4409393a62ffc1f}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!Get\+Growth@{Get\+Growth}}
+\index{Get\+Growth@{Get\+Growth}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Get\+Growth()}{GetGrowth()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Bounding\+Box\+::\+Get\+Growth (\begin{DoxyParamCaption}\item[{const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} \&}]{other }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_box_add513abe94c5ad77ff3ec2f29b6d6241}\label{classrum_1_1_bounding_box_add513abe94c5ad77ff3ec2f29b6d6241}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Get\+Size()}{GetSize()}}
+{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Bounding\+Box\+::\+Get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_box_af7d2034adecd49f949b7bf5bfa942498}\label{classrum_1_1_bounding_box_af7d2034adecd49f949b7bf5bfa942498}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!Overlaps@{Overlaps}}
+\index{Overlaps@{Overlaps}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{Overlaps()}{Overlaps()}}
+{\footnotesize\ttfamily bool rum\+::\+Bounding\+Box\+::\+Overlaps (\begin{DoxyParamCaption}\item[{const \hyperlink{classrum_1_1_bounding_box}{Bounding\+Box} $\ast$}]{other }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_bounding_box_a676df9315a0bf21962b02c65cb765a3a}\label{classrum_1_1_bounding_box_a676df9315a0bf21962b02c65cb765a3a}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!m\+\_\+bounds@{m\+\_\+bounds}}
+\index{m\+\_\+bounds@{m\+\_\+bounds}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{m\+\_\+bounds}{m\_bounds}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Bounding\+Box\+::m\+\_\+bounds\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_bounding_box_af9c7a5df5b02f646a1aa0d5cf0c4e1fd}\label{classrum_1_1_bounding_box_af9c7a5df5b02f646a1aa0d5cf0c4e1fd}} 
+\index{rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}!m\+\_\+center@{m\+\_\+center}}
+\index{m\+\_\+center@{m\+\_\+center}!rum\+::\+Bounding\+Box@{rum\+::\+Bounding\+Box}}
+\subsubsection{\texorpdfstring{m\+\_\+center}{m\_center}}
+{\footnotesize\ttfamily glm\+::vec3 rum\+::\+Bounding\+Box\+::m\+\_\+center\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_bounding_box_8h}{Bounding\+Box.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_bounding_box_8cpp}{Bounding\+Box.\+cpp}\end{DoxyCompactItemize}

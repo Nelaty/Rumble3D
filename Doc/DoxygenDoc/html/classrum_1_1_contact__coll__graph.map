@@ -1,0 +1,3 @@
+<map id="rum::Contact" name="rum::Contact">
+<area shape="rect" id="node4" href="$classrum_1_1_rigid_body.html" title="{rum::RigidBody\n||+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ getForceAccumulated()\l+ getTorqueAccumulated()\land 37 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="423,233,638,487"/>
+</map>

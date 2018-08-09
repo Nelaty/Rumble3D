@@ -1,0 +1,150 @@
+\hypertarget{classrum_1_1_physics_engine_module}{}\section{rum\+:\+:Physics\+Engine\+Module Class Reference}
+\label{classrum_1_1_physics_engine_module}\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+
+
+{\ttfamily \#include $<$Physics\+Engine\+Module.\+h$>$}
+
+
+
+Inheritance diagram for rum\+:\+:Physics\+Engine\+Module\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_physics_engine_module__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rum\+:\+:Physics\+Engine\+Module\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{classrum_1_1_physics_engine_module__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{classrum_1_1_physics_engine_module_a5ca9d6dd8dc60cec6c562f5aa80ecf64}{$\sim$\+Physics\+Engine\+Module} ()
+\item 
+virtual void \hyperlink{classrum_1_1_physics_engine_module_a6d599ea88574a867e22b569b8e83f5c2}{On\+Begin} ()
+\item 
+virtual void \hyperlink{classrum_1_1_physics_engine_module_a82e0d611a6a42f118d8ae92ff3ee91a0}{On\+End} ()
+\item 
+virtual void \hyperlink{classrum_1_1_physics_engine_module_a0c8bfcf27aee16f05ef9a83948f330ac}{Step} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} time\+Delta)=0
+\item 
+virtual void \hyperlink{classrum_1_1_physics_engine_module_a8635a9194b86cf3c70723ebb4e8c967c}{Integrate} (const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} time\+Delta)=0
+\item 
+virtual void \hyperlink{classrum_1_1_physics_engine_module_a1ee77a3a48ced8291a86506e6904ca9e}{Reset} ()=0
+\item 
+void \hyperlink{classrum_1_1_physics_engine_module_a5570ab64f9ff8e6449cbdbc32c9c36c9}{Enable} (bool enabled)
+\item 
+bool \hyperlink{classrum_1_1_physics_engine_module_ae87521693e0b32f7ed741eb73b4db806}{Is\+Enabled} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classrum_1_1_physics_engine_module_ab94c27f034522f95456f7736b50b6063}{Physics\+Engine\+Module} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classrum_1_1_physics_engine_module_acf8ef2890d8aed6c265d28e4e0288e88}{m\+\_\+enabled}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for physic engine modules. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_a5ca9d6dd8dc60cec6c562f5aa80ecf64}\label{classrum_1_1_physics_engine_module_a5ca9d6dd8dc60cec6c562f5aa80ecf64}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!````~Physics\+Engine\+Module@{$\sim$\+Physics\+Engine\+Module}}
+\index{````~Physics\+Engine\+Module@{$\sim$\+Physics\+Engine\+Module}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Engine\+Module()}{~PhysicsEngineModule()}}
+{\footnotesize\ttfamily rum\+::\+Physics\+Engine\+Module\+::$\sim$\+Physics\+Engine\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_ab94c27f034522f95456f7736b50b6063}\label{classrum_1_1_physics_engine_module_ab94c27f034522f95456f7736b50b6063}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!Physics\+Engine\+Module@{Physics\+Engine\+Module}}
+\index{Physics\+Engine\+Module@{Physics\+Engine\+Module}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{Physics\+Engine\+Module()}{PhysicsEngineModule()}}
+{\footnotesize\ttfamily rum\+::\+Physics\+Engine\+Module\+::\+Physics\+Engine\+Module (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_a5570ab64f9ff8e6449cbdbc32c9c36c9}\label{classrum_1_1_physics_engine_module_a5570ab64f9ff8e6449cbdbc32c9c36c9}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!Enable@{Enable}}
+\index{Enable@{Enable}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{Enable()}{Enable()}}
+{\footnotesize\ttfamily void rum\+::\+Physics\+Engine\+Module\+::\+Enable (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
+
+Enable or disable this module. \mbox{\Hypertarget{classrum_1_1_physics_engine_module_a8635a9194b86cf3c70723ebb4e8c967c}\label{classrum_1_1_physics_engine_module_a8635a9194b86cf3c70723ebb4e8c967c}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!Integrate@{Integrate}}
+\index{Integrate@{Integrate}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{Integrate()}{Integrate()}}
+{\footnotesize\ttfamily virtual void rum\+::\+Physics\+Engine\+Module\+::\+Integrate (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Apply the changes as a result of the simulation. 
+
+Implemented in \hyperlink{classrum_1_1_particle_world_a8537914776ce477d40ff97ed7b7730d2}{rum\+::\+Particle\+World}.
+
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_ae87521693e0b32f7ed741eb73b4db806}\label{classrum_1_1_physics_engine_module_ae87521693e0b32f7ed741eb73b4db806}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!Is\+Enabled@{Is\+Enabled}}
+\index{Is\+Enabled@{Is\+Enabled}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{Is\+Enabled()}{IsEnabled()}}
+{\footnotesize\ttfamily bool rum\+::\+Physics\+Engine\+Module\+::\+Is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check if this module is currently enabled. \begin{DoxyReturn}{Returns}
+true if currently enabled. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_a6d599ea88574a867e22b569b8e83f5c2}\label{classrum_1_1_physics_engine_module_a6d599ea88574a867e22b569b8e83f5c2}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!On\+Begin@{On\+Begin}}
+\index{On\+Begin@{On\+Begin}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{On\+Begin()}{OnBegin()}}
+{\footnotesize\ttfamily void rum\+::\+Physics\+Engine\+Module\+::\+On\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Reimplemented in \hyperlink{classrum_1_1_particle_world_add8060f77975d47e984a0e0a3d1a0c0c}{rum\+::\+Particle\+World}.
+
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_a82e0d611a6a42f118d8ae92ff3ee91a0}\label{classrum_1_1_physics_engine_module_a82e0d611a6a42f118d8ae92ff3ee91a0}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!On\+End@{On\+End}}
+\index{On\+End@{On\+End}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{On\+End()}{OnEnd()}}
+{\footnotesize\ttfamily void rum\+::\+Physics\+Engine\+Module\+::\+On\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_a1ee77a3a48ced8291a86506e6904ca9e}\label{classrum_1_1_physics_engine_module_a1ee77a3a48ced8291a86506e6904ca9e}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!Reset@{Reset}}
+\index{Reset@{Reset}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void rum\+::\+Physics\+Engine\+Module\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Reset the physics engine module to its initial state 
+
+Implemented in \hyperlink{classrum_1_1_particle_world_ab30292cabe306715e49b5234abff1f3c}{rum\+::\+Particle\+World}.
+
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_a0c8bfcf27aee16f05ef9a83948f330ac}\label{classrum_1_1_physics_engine_module_a0c8bfcf27aee16f05ef9a83948f330ac}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!Step@{Step}}
+\index{Step@{Step}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{Step()}{Step()}}
+{\footnotesize\ttfamily virtual void rum\+::\+Physics\+Engine\+Module\+::\+Step (\begin{DoxyParamCaption}\item[{const \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Calculate changes in the physics engine and accumulate them in buffers. Will not apply those changes yet. 
+
+Implemented in \hyperlink{classrum_1_1_particle_world_a3d71b71a6a76744b75990e1c53efd92e}{rum\+::\+Particle\+World}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_physics_engine_module_acf8ef2890d8aed6c265d28e4e0288e88}\label{classrum_1_1_physics_engine_module_acf8ef2890d8aed6c265d28e4e0288e88}} 
+\index{rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}!m\+\_\+enabled@{m\+\_\+enabled}}
+\index{m\+\_\+enabled@{m\+\_\+enabled}!rum\+::\+Physics\+Engine\+Module@{rum\+::\+Physics\+Engine\+Module}}
+\subsubsection{\texorpdfstring{m\+\_\+enabled}{m\_enabled}}
+{\footnotesize\ttfamily bool rum\+::\+Physics\+Engine\+Module\+::m\+\_\+enabled\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\hyperlink{_physics_engine_module_8h}{Physics\+Engine\+Module.\+h}\item 
+F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\hyperlink{_physics_engine_module_8cpp}{Physics\+Engine\+Module.\+cpp}\end{DoxyCompactItemize}
