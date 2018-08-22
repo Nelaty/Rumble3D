@@ -17,22 +17,22 @@ namespace rum
 		}
 
 		// Cache the sphere position
-		glm::vec3 position = sphere.GetAxis(3);
+		const auto position = sphere.getAxis(3);
 	
 		// Find the distance from the plane
-		real ballDistance =	glm::dot(plane.GetNormal(), position) -
-			sphere.GetRadius() - plane.GetOffset();
+		const auto ballDistance =	glm::dot(plane.getNormal(), position) -
+			sphere.getRadius() - plane.getOffset();
 	
 		if(ballDistance >= 0)
 		{
 			return 0;
 		}
 		// Create the contact - it has a normal in the plane direction.
-		Contact* contact = data->getContacts();
-		contact->SetContactNormal(plane.GetNormal());
-		contact->SetPenetration(-ballDistance);
-		contact->SetContactPoint(position - plane.GetNormal() * (ballDistance + sphere.GetRadius()));
-		contact->SetBodyData(sphere.GetBody(), nullptr, data->getFriction(), data->getRestitution());
+		auto contact = data->getContacts();
+		contact->setContactNormal(plane.getNormal());
+		contact->setPenetration(-ballDistance);
+		contact->setContactPoint(position - plane.getNormal() * (ballDistance + sphere.getRadius()));
+		contact->setBodyData(sphere.getBody(), nullptr, data->getFriction(), data->getRestitution());
 	
 		data->addContacts(1);
 		return 1;
@@ -56,15 +56,15 @@ namespace rum
 		}
 
 		// Positionen der Kugeln:
-		glm::vec3 positionOne = one.GetAxis(3);
-		glm::vec3 positionTwo = two.GetAxis(3);
+		const auto positionOne = one.getAxis(3);
+		const auto positionTwo = two.getAxis(3);
 	
 		// Vector zwischen den Kugeln und seine Länge:
-		glm::vec3 midline = positionOne - positionTwo;
-		real size = glm::length(midline);
+		const auto midline = positionOne - positionTwo;
+		const auto size = glm::length(midline);
 	
 		// Keine Kollision:
-		if (size <= 0.0f || size >= one.GetRadius() + two.GetRadius())
+		if (size <= 0.0f || size >= one.getRadius() + two.getRadius())
 		{
 			return 0;
 		}
@@ -72,10 +72,10 @@ namespace rum
 		// Erstellung der Kontaktnormalen und der Kontaktdaten:
 		glm::vec3 normal = midline * (static_cast<real>(1.0f) / size);
 		Contact* contact = data->getContacts();
-		contact->SetContactNormal(normal);
-		contact->SetContactPoint(positionOne + midline * static_cast<real>(0.5f));
-		contact->SetPenetration((one.GetRadius() + two.GetRadius() - size));
-		contact->SetBodyData(one.GetBody(), two.GetBody(),
+		contact->setContactNormal(normal);
+		contact->setContactPoint(positionOne + midline * static_cast<real>(0.5f));
+		contact->setPenetration((one.getRadius() + two.getRadius() - size));
+		contact->setBodyData(one.getBody(), two.getBody(),
 							 data->getFriction(), data->getRestitution());
 		
 		data->addContacts(1);
@@ -115,25 +115,25 @@ namespace rum
 			// Calculate the position of each vertex
 			glm::vec3 vertexPos(mults[i][0], mults[i][1], mults[i][2]);
 			vertexPos *= box.getHalfSize();
-			vertexPos = glm::vec3(box.GetTransform() * glm::vec4(vertexPos, static_cast<real>(1.0f)));
+			vertexPos = glm::vec3(box.getTransform() * glm::vec4(vertexPos, static_cast<real>(1.0f)));
 
 			// Abstand von der Ebene:
-			real vertexDistance = glm::dot(vertexPos, plane.GetNormal());
+			real vertexDistance = glm::dot(vertexPos, plane.getNormal());
 	
 			// Vergleich mit dem Abstand der EBene vomUrsprung:
-			if (vertexDistance <= plane.GetOffset())
+			if (vertexDistance <= plane.getOffset())
 			{
 				// Create the contact data.
 				// The contact point is halfway between the vertex and the
 				// plane - we multiply the direction by half (?) the separation
-				// distance and add the vertex location.
-				glm::vec3 tmp = plane.GetNormal();
-				tmp *= (vertexDistance - plane.GetOffset());
+				// distance and RegisterForce the vertex location.
+				glm::vec3 tmp = plane.getNormal();
+				tmp *= (vertexDistance - plane.getOffset());
 				tmp += vertexPos;
-				contact->SetContactPoint(tmp);
-				contact->SetContactNormal(plane.GetNormal());
-				contact->SetPenetration(plane.GetOffset() - vertexDistance);
-				contact->SetBodyData(box.GetBody(), nullptr,
+				contact->setContactPoint(tmp);
+				contact->setContactNormal(plane.getNormal());
+				contact->setPenetration(plane.getOffset() - vertexDistance);
+				contact->setBodyData(box.getBody(), nullptr,
 					data->getFriction(), data->getRestitution());
 	
 				// Verwaltung der Indizes des Arrays
@@ -150,59 +150,25 @@ namespace rum
 		return contactsUsed;
 	}
 	
-	/*
-	unsigned CollisionDetector::boxAndHalfSpace(const CollisionBox &box, const CollisionPlane &plane,
-		CollisionData *data ){
-		// Haben wir noch Platz im Kontakt-Array
-		if (data->getContactsLeft() <= 0) return 0;
-	
-		 // Check for intersection
-		if (!IntersectionTests::boxAndHalfSpace(box, plane))
-		{ return 0; }
-	
-		// Es kommt zu einemKontakt. Also berechnen wir die max. 4 Kontaktpunkte:
-		// Alle Kombinationen der Ecken über die halfSize:
-		static real mults[8][3] = { { 1, 1, 1 }, { -1, 1, 1 }, { 1, -1, 1 }, { -1, -1, 1 },
-		{ 1, 1, -1 }, { -1, 1, -1 }, { 1, -1, -1 }, { -1, -1, -1 } };
-	
-		Contact* contact = data->getContacts();
-		unsigned contactsUsed = 0;
-		for (unsigned i = 0; i < 8; i++) {
-	
-			// Calculate the position of each vertex
-			glm::vec3 vertexPos(mults[i][0], mults[i][1], mults[i][2]);
-			vertexPos.componentProductUpdate(box.getHalfSize());
-			vertexPos = box.getTransform().transform(vertexPos);
-	
-	
-	
-		}
-	
-		data->addContacts(contactsUsed);
-		return contactsUsed;
-	}
-	
-	*/
-	
 	unsigned CollisionDetector::boxAndSphere(const CollisionBox &box,
 											 const CollisionSphere &sphere,
 											 CollisionData *data)
 	{
 		// Kugelmittelpunkt in Quaderkoordinaten transformieren:
-		glm::vec3 centre = sphere.GetAxis(3);
+		glm::vec3 centre = sphere.getAxis(3);
 		//glm::vec3 relCentre = box.GetTransform().transformInverse(centre);
 		// TODO: test result
-		glm::vec3 relCentre = glm::transpose(glm::mat3(box.GetTransform())) * 
-			(centre - glm::vec3(box.GetTransform()[3]));
+		glm::vec3 relCentre = glm::transpose(glm::mat3(box.getTransform())) * 
+			(centre - glm::vec3(box.getTransform()[3]));
 		
 		real boxX = box.getHalfSize().x;
 		real boxY = box.getHalfSize().y;
 		real boxZ = box.getHalfSize().z;
 	
 		// Early out check 
-		if (abs(relCentre.x) - sphere.GetRadius() > boxX ||
-			abs(relCentre.y) - sphere.GetRadius() > boxY ||
-			abs(relCentre.z) - sphere.GetRadius() > boxZ)
+		if (abs(relCentre.x) - sphere.getRadius() > boxX ||
+			abs(relCentre.y) - sphere.getRadius() > boxY ||
+			abs(relCentre.z) - sphere.getRadius() > boxZ)
 		{
 			return 0;
 		}
@@ -225,22 +191,22 @@ namespace rum
 	
 		// Prüfe, ob ein Kontakt vorliegt:
 		dist = glm::length2(closestPt - relCentre);
-		if(dist > sphere.GetRadius() * sphere.GetRadius())
+		if(dist > sphere.getRadius() * sphere.getRadius())
 		{
 			return 0;
 		}
 
 		// Erstelle den Kontakt:
 		glm::vec3 closestPtWorld = 
-			glm::vec3(box.GetTransform() * glm::vec4(closestPt, static_cast<real>(1.0f)));
+			glm::vec3(box.getTransform() * glm::vec4(closestPt, static_cast<real>(1.0f)));
 	
 		Contact* contact = data->getContacts();
 		glm::vec3 tmp = (closestPtWorld - centre);
 		tmp = glm::normalize(tmp);
-		contact->SetContactNormal(tmp);
-		contact->SetContactPoint(closestPtWorld);
-		contact->SetPenetration(sphere.GetRadius() - sqrt(dist));
-		contact->SetBodyData(box.GetBody(), sphere.GetBody(),
+		contact->setContactNormal(tmp);
+		contact->setContactPoint(closestPtWorld);
+		contact->setPenetration(sphere.getRadius() - sqrt(dist));
+		contact->setBodyData(box.getBody(), sphere.getBody(),
 			data->getFriction(), data->getRestitution());
 	
 		data->addContacts(1);
@@ -251,9 +217,9 @@ namespace rum
 											const glm::vec3 &axis)
 	{
 		return
-			box.getHalfSize().x * abs(glm::dot(axis, box.GetAxis(0))) +
-			box.getHalfSize().y * abs(glm::dot(axis, box.GetAxis(1))) +
-			box.getHalfSize().z * abs(glm::dot(axis, box.GetAxis(2)));
+			box.getHalfSize().x * abs(glm::dot(axis, box.getAxis(0))) +
+			box.getHalfSize().y * abs(glm::dot(axis, box.getAxis(1))) +
+			box.getHalfSize().z * abs(glm::dot(axis, box.getAxis(2)));
 	}
 	
 	real CollisionDetector::penetrationOnAxis(const CollisionBox &one,
@@ -313,8 +279,8 @@ namespace rum
 										  CollisionData *data)
 	{
 		// Vektor zwischen den Schwerpunkten:
-		glm::vec3 twoCentre = two.GetAxis(3);
-		glm::vec3 oneCentre = one.GetAxis(3);
+		glm::vec3 twoCentre = two.getAxis(3);
+		glm::vec3 oneCentre = one.getAxis(3);
 		glm::vec3 toCentre(0, 0, 0);
 		toCentre = twoCentre - oneCentre;
 		// Angenommen,es gibt keinen Kontakt:
@@ -324,28 +290,28 @@ namespace rum
 		// SAT-Test mit allen Achsen. Wenn ein Test positiv ist,
 		// verlassen wir die Methode mit 0Kontakten.
 		// Sonst suchen wir die Achsemit der minimalen Durchdringung:
-		CHECK_OVERLAP(one.GetAxis(0), 0);
-		CHECK_OVERLAP(one.GetAxis(1), 1);
-		CHECK_OVERLAP(one.GetAxis(2), 2);
+		CHECK_OVERLAP(one.getAxis(0), 0);
+		CHECK_OVERLAP(one.getAxis(1), 1);
+		CHECK_OVERLAP(one.getAxis(2), 2);
 	
-		CHECK_OVERLAP(two.GetAxis(0), 3);
-		CHECK_OVERLAP(two.GetAxis(1), 4);
-		CHECK_OVERLAP(two.GetAxis(2), 5);
+		CHECK_OVERLAP(two.getAxis(0), 3);
+		CHECK_OVERLAP(two.getAxis(1), 4);
+		CHECK_OVERLAP(two.getAxis(2), 5);
 	
 		// Beste Werte zwischenspeichern, falls es nur noch
 		// fast parallele Kanten gibt, die uns keine Aussage
 		// machen lassen.
 		unsigned int bestSingleAxis = best;
 			
-		CHECK_OVERLAP(glm::cross(one.GetAxis(0), two.GetAxis(0)), 6);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(0), two.GetAxis(1)), 7);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(0), two.GetAxis(2)), 8);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(1), two.GetAxis(0)), 9);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(1), two.GetAxis(1)), 10);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(1), two.GetAxis(2)), 11);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(2), two.GetAxis(0)), 12);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(2), two.GetAxis(1)), 13);
-		CHECK_OVERLAP(glm::cross(one.GetAxis(2), two.GetAxis(2)), 14);
+		CHECK_OVERLAP(glm::cross(one.getAxis(0), two.getAxis(0)), 6);
+		CHECK_OVERLAP(glm::cross(one.getAxis(0), two.getAxis(1)), 7);
+		CHECK_OVERLAP(glm::cross(one.getAxis(0), two.getAxis(2)), 8);
+		CHECK_OVERLAP(glm::cross(one.getAxis(1), two.getAxis(0)), 9);
+		CHECK_OVERLAP(glm::cross(one.getAxis(1), two.getAxis(1)), 10);
+		CHECK_OVERLAP(glm::cross(one.getAxis(1), two.getAxis(2)), 11);
+		CHECK_OVERLAP(glm::cross(one.getAxis(2), two.getAxis(0)), 12);
+		CHECK_OVERLAP(glm::cross(one.getAxis(2), two.getAxis(1)), 13);
+		CHECK_OVERLAP(glm::cross(one.getAxis(2), two.getAxis(2)), 14);
 
 		// Make sure we've got a result.
 		// assert(best != 0xffffff);
@@ -373,8 +339,8 @@ namespace rum
 			best -= 6; // damit nur noch 0..8
 			unsigned int oneAxisIndex = best / 3;
 			unsigned int twoAxisIndex = best % 3;
-			glm::vec3 oneAxis = one.GetAxis(oneAxisIndex);
-			glm::vec3 twoAxis = two.GetAxis(twoAxisIndex);
+			glm::vec3 oneAxis = one.getAxis(oneAxisIndex);
+			glm::vec3 twoAxis = two.getAxis(twoAxisIndex);
 			glm::vec3 axis = glm::cross(oneAxis, twoAxis);
 			axis = glm::normalize(axis);
 	
@@ -395,7 +361,7 @@ namespace rum
 					ptOnOneEdge[i] = static_cast<real>(0.0f);
 				}
 				// sonst: eine oder andere Kante.
-				else if (glm::dot(one.GetAxis(i), axis) > static_cast<real>(0.0f)) 
+				else if (glm::dot(one.getAxis(i), axis) > static_cast<real>(0.0f)) 
 				{
 					ptOnOneEdge[i] = -(ptOnOneEdge[i]);
 				}
@@ -405,7 +371,7 @@ namespace rum
 					ptOnTwoEdge[i] = static_cast<real>(0.0f);
 				}
 				// sonst: eine oder andere Kante.
-				else if (glm::dot(two.GetAxis(i), axis) < static_cast<real>(0.0f)) 
+				else if (glm::dot(two.getAxis(i), axis) < static_cast<real>(0.0f)) 
 				{
 					ptOnTwoEdge[i] = -(ptOnTwoEdge[i]);
 				}
@@ -415,8 +381,8 @@ namespace rum
 			//////////////////////////////////////////////////////////////////////////
 	
 			// Transformation in Weltkoordinaten:
-			ptOnOneEdge = glm::vec3(one.GetTransform() * glm::vec4(ptOnOneEdge, static_cast<real>(1.0f)));
-			ptOnTwoEdge = glm::vec3(two.GetTransform() * glm::vec4(ptOnTwoEdge, static_cast<real>(1.0f)));
+			ptOnOneEdge = glm::vec3(one.getTransform() * glm::vec4(ptOnOneEdge, static_cast<real>(1.0f)));
+			ptOnTwoEdge = glm::vec3(two.getTransform() * glm::vec4(ptOnTwoEdge, static_cast<real>(1.0f)));
 	
 			// Wir haben jetzt einen Punkt und eine Richtung für die kollidierenden
 			// Kanten. Wir suchen jetzt den Punkt wo die beiden Kanten am nächsten
@@ -429,10 +395,10 @@ namespace rum
 			// We can fill the contact.
 			Contact* contact = data->getContacts();
 	
-			contact->SetPenetration(pen);
-			contact->SetContactNormal(axis);
-			contact->SetContactPoint(vertex);
-			contact->SetBodyData(one.GetBody(), two.GetBody(),
+			contact->setPenetration(pen);
+			contact->setContactNormal(axis);
+			contact->setContactPoint(vertex);
+			contact->setBodyData(one.getBody(), two.getBody(),
 								 data->getFriction(), data->getRestitution());
 			data->addContacts(1);
 			return 1;
@@ -449,9 +415,9 @@ namespace rum
 												real pen)
 	{
 		Contact* contact = data->getContacts();
-		glm::vec3 normal = one.GetAxis(best);
+		glm::vec3 normal = one.getAxis(best);
 		// Richtige Fläche auswählen:
-		if (glm::dot(one.GetAxis(best), toCentre) >  static_cast<real>(0.0f))
+		if (glm::dot(one.getAxis(best), toCentre) >  static_cast<real>(0.0f))
 		{
 			normal = -normal;
 		}
@@ -461,24 +427,24 @@ namespace rum
 		// in die entgegengesetze Richtung negieren wir seine Koordinate, um 
 		//eine andere Ecke zu erhalten:
 		glm::vec3 vertex = two.getHalfSize();
-		if(glm::dot(two.GetAxis(0), normal) < static_cast<real>(0.0f))
+		if(glm::dot(two.getAxis(0), normal) < static_cast<real>(0.0f))
 		{
 			vertex.x = -vertex.x;
 		}
-		if(glm::dot(two.GetAxis(1), normal) < static_cast<real>(0.0f))
+		if(glm::dot(two.getAxis(1), normal) < static_cast<real>(0.0f))
 		{
 			vertex.y = -vertex.y;
 		}
-		if(glm::dot(two.GetAxis(2), normal) < static_cast<real>(0.0f))
+		if(glm::dot(two.getAxis(2), normal) < static_cast<real>(0.0f))
 		{
 			vertex.z = -vertex.z;
 		}
 
 		// Create the contact data
-		contact->SetContactNormal(normal);
-		contact->SetPenetration(pen);
-		contact->SetContactPoint(glm::vec3(two.GetTransform() * glm::vec4(vertex, static_cast<real>(1.0f))));
-		contact->SetBodyData(one.GetBody(), two.GetBody(),
+		contact->setContactNormal(normal);
+		contact->setPenetration(pen);
+		contact->setContactPoint(glm::vec3(two.getTransform() * glm::vec4(vertex, static_cast<real>(1.0f))));
+		contact->setBodyData(one.getBody(), two.getBody(),
 			data->getFriction(), data->getRestitution());
 	}
 	

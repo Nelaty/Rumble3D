@@ -16,7 +16,7 @@ namespace rum
 		// im Array.
 		// Rückgabewert ist die Anzahl der Kontakte, die in 
 		// den Array geschrieben wurden.
-		virtual unsigned AddContact(ParticleContact* contact, unsigned int limit) const = 0;
+		virtual unsigned addContact(ParticleContact* contact, unsigned int limit) const = 0;
 
 	protected:
 		explicit ParticleContactGenerator();

@@ -3,28 +3,27 @@
 namespace rum
 {
 	PhysicsEngineModule::~PhysicsEngineModule()
-	{
-	}
+	= default;
 
 	PhysicsEngineModule::PhysicsEngineModule()
 		: m_enabled{true}
 	{
 	}
 
-	void PhysicsEngineModule::OnBegin()
+	void PhysicsEngineModule::onBegin()
 	{
 	}
 
-	void PhysicsEngineModule::OnEnd()
+	void PhysicsEngineModule::onEnd()
 	{
 	}
 
-	void PhysicsEngineModule::Enable(bool enabled)
+	void PhysicsEngineModule::enable(const bool enabled)
 	{
 		m_enabled = enabled;
 	}
 
-	bool PhysicsEngineModule::IsEnabled() const
+	bool PhysicsEngineModule::isEnabled() const
 	{
 		return m_enabled;
 	}

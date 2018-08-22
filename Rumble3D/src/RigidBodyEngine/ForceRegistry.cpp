@@ -4,38 +4,42 @@
 
 namespace rum
 {
-	void ForceRegistry::Remove(RigidBody * rigidBody, ForceGenerator * fg)
+	void ForceRegistry::unregisterForce(RigidBody* rigidBody, ForceGenerator* fg)
 	{
-		Registry::iterator i = registrations.begin();
-		for (; i != registrations.end(); i++)
+		auto i = m_registrations.begin();
+		for (; i != m_registrations.end(); ++i)
 		{
-			if (i->rigidBody == rigidBody && i->forceGenerator == fg)
+			if (i->m_rigidBody == rigidBody && i->m_forceGenerator == fg)
 			{
-				registrations.erase(i);
+				m_registrations.erase(i);
 			}
 		}
 	}
 	
-	
-	void ForceRegistry::Clear()
+	void ForceRegistry::clear()
 	{
-		registrations.clear();
+		m_registrations.clear();
+	}
+
+	ForceRegistry::ForceRegistry()
+	= default;
+
+	ForceRegistry::~ForceRegistry()
+	= default;
+
+	void ForceRegistry::registerForce(RigidBody* rigidBody, ForceGenerator* fg)
+	{
+		ForceRegistrationEntry registration{};
+		registration.m_rigidBody = rigidBody;
+		registration.m_forceGenerator = fg;
+		m_registrations.push_back(registration);
 	}
 	
-	void ForceRegistry::Add(RigidBody * rigidBody, ForceGenerator * fg)
+	void ForceRegistry::updateForces(const real duration)
 	{
-		ForceRegistrationEntry registration;
-		registration.rigidBody = rigidBody;
-		registration.forceGenerator = fg;
-		registrations.push_back(registration);
-	}
-	
-	
-	void ForceRegistry::UpdateForces(real duration)
-	{
-		for (ForceRegistrationEntry i : registrations)
+		for (auto& i : m_registrations)
 		{
-			i.forceGenerator->UpdateForce(i.rigidBody, duration);
+			i.m_forceGenerator->updateForce(i.m_rigidBody, duration);
 		}
 	}
 }

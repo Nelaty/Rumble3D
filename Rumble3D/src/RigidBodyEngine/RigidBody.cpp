@@ -163,8 +163,14 @@ namespace rum
 		//	return m_transformationMatrix.transformDirection(direction);
 		return glm::mat3(m_transformationMatrix) * direction;
 	}
-	
-	
+
+
+	RigidBody::RigidBody()
+	= default;
+
+	RigidBody::~RigidBody()
+	= default;
+
 	void RigidBody::calculateDerivedData()
 	{
 		m_orientation = glm::normalize(m_orientation);
@@ -449,7 +455,7 @@ namespace rum
 			0, 0, mass / 48.0 * (x_half*x_half + y_half*y_half));
 	}
 	
-	glm::mat3 RigidBody::calculateShereTensor(real mass, real radius)
+	glm::mat3 RigidBody::calculateSphereTensor(real mass, real radius)
 	{
 		return glm::mat3(
 			2.0f * mass * radius * radius / 5.0f, 0, 0,

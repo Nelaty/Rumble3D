@@ -9,25 +9,24 @@ namespace rum
 	}
 	
 	CollisionPlane::~CollisionPlane()
-	{
-	}
+	= default;
 
-	real CollisionPlane::GetOffset() const
+	real CollisionPlane::getOffset() const
 	{
 		return m_offset;
 	}
 	
-	glm::vec3 CollisionPlane::GetNormal() const
+	glm::vec3 CollisionPlane::getNormal() const
 	{
 		return m_normal;
 	}
 	
-	void CollisionPlane::SetOffset(const real offset)
+	void CollisionPlane::setOffset(const real offset)
 	{
 		m_offset = offset;
 	}
 	
-	void CollisionPlane::SetNormal(const glm::vec3 & normal)
+	void CollisionPlane::setNormal(const glm::vec3 & normal)
 	{
 		m_normal = normal;
 	}

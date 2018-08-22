@@ -12,7 +12,7 @@ namespace rum
 		explicit ParticleBuoyancy(real maxDepth, real volume, real liquidHeight, real liquidDensity = real(1000.0f));
 		~ParticleBuoyancy();
 
-		virtual void UpdateForce(Particle* particle, real duration);
+		void updateForce(Particle* particle, real duration) override;
 
 	protected:
 		real m_maxDepth;

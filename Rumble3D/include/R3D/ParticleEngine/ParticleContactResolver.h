@@ -8,14 +8,16 @@ namespace rum
 	class ParticleContactResolver
 	{
 	public:
-		ParticleContactResolver(unsigned int iterations);
+		explicit ParticleContactResolver(unsigned int iterations);
 		~ParticleContactResolver();
-		
-		//Setze Anzahl der Iterationen nach der Erzeugung:
-		void SetIterations(unsigned int iterations);
+
+		/** Set the number of iterations after creation. */
+		void setIterations(unsigned int iterations);
 	
-		// Kollisions- und Durchdringungsbehandlung:
-		void ResolveContacts(ParticleContact* contactArray, unsigned int numberOfContacts, real duration);
+		/** Resolve collision and penetration. */
+		void resolveContacts(ParticleContact* contactArray,
+							 unsigned int numberOfContacts,
+							 real duration);
 
 	protected:
 		unsigned m_iterations;

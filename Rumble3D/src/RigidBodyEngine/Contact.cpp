@@ -2,38 +2,46 @@
 
 namespace rum
 {
-	void Contact::SetContactPoint(const glm::vec3& contactPoint)
+	Contact::Contact()
+	= default;
+
+	Contact::~Contact()
+	= default;
+
+	void Contact::setContactPoint(const glm::vec3& contactPoint)
 	{
 		m_contactPoint = contactPoint;
 	}
 	
-	glm::vec3 Contact::GetContactPoint()
+	glm::vec3 Contact::getContactPoint() const
 	{
 		return m_contactPoint;
 	}
 	
-	void Contact::SetContactNormal(const glm::vec3& contactNormal)
+	void Contact::setContactNormal(const glm::vec3& contactNormal)
 	{
 		m_contactNormal = contactNormal;
 	}
 	
-	glm::vec3 Contact::GetContactMormal()
+	glm::vec3 Contact::getContactNormal() const
 	{
 		return m_contactNormal;
 	}
 	
-	void Contact::SetPenetration(const real penetration)
+	void Contact::setPenetration(const real penetration)
 	{
 		m_penetration = penetration;
 	}
 	
-	real Contact::GetPenetration()
+	real Contact::getPenetration() const
 	{
 		return m_penetration;
 	}
 	
-	void Contact::SetBodyData(RigidBody * one, RigidBody * two,
-		real friction, real restitution) 
+	void Contact::setBodyData(RigidBody* one, 
+							  RigidBody* two,
+	                          const real friction,
+	                          const real restitution) 
 	{
 		m_body[0] = one;
 		m_body[1] = two;
@@ -41,12 +49,12 @@ namespace rum
 		m_restitution = restitution;
 	}
 	
-	void Contact::CalculateContactBasis()
+	void Contact::calculateContactBasis()
 	{
 		glm::vec3 contactTangent[2];
-		real contactNormalX = m_contactNormal.x;
-		real contactNormalY = m_contactNormal.y;
-		real contactNormalZ = m_contactNormal.z;
+		const auto contactNormalX = m_contactNormal.x;
+		const auto contactNormalY = m_contactNormal.y;
+		const auto contactNormalZ = m_contactNormal.z;
 	
 		// Check whether the Z-axis is nearer to the X or Y axis
 		if (abs(contactNormalX) > abs(contactNormalY))
@@ -69,7 +77,7 @@ namespace rum
 		else
 		{
 			// Scaling factor to ensure the results are normalized
-			const real s = (real)1.0 / sqrt(contactNormalZ*contactNormalZ +
+			const real s = static_cast<real>(1.0) / sqrt(contactNormalZ*contactNormalZ +
 				contactNormalY*contactNormalY);
 	
 			// The new X-axis is at right angles to the world X-axis
@@ -90,7 +98,7 @@ namespace rum
 		m_contactToWorld[2] = contactTangent[1];
 	}
 	
-	glm::vec3 Contact::CalculateFrictionlessImpulse(glm::mat3 * inverseInertiaTensor){
+	glm::vec3 Contact::calculateFrictionlessImpulse(glm::mat3 * inverseInertiaTensor){
 		glm::vec3 impulseContact;
 		
 		// Erstelle Vektor für die Geschwindigkeitsänderung in World-Koordinaten
@@ -126,16 +134,16 @@ namespace rum
 		return impulseContact;
 	}
 	
-	void Contact::CalculateInternals(real duration)
+	void Contact::calculateInternals(real duration)
 	{
 		// Check if the first object is NULL, and swap if it is.
 		if(!m_body[0])
 		{
-			SwapBodies();
+			swapBodies();
 		}
 
 		// Calculate an set of axis at the contact point.
-		CalculateContactBasis();
+		calculateContactBasis();
 	
 		// Store the relative position of the contact relative to each body
 		m_relativeContactPosition[0] = m_contactPoint - m_body[0]->getPosition();
@@ -144,21 +152,21 @@ namespace rum
 		}
 	
 		// Find the relative velocity of the bodies at the contact point.
-		m_contactVelocity = CalculateLocalVelocity(0, duration);
+		m_contactVelocity = calculateLocalVelocity(0, duration);
 		if (m_body[1]) {
-			m_contactVelocity -= CalculateLocalVelocity(1, duration);
+			m_contactVelocity -= calculateLocalVelocity(1, duration);
 		}
 	
 		// Calculate the desired change in velocity for resolution
-		CalculateDesiredDeltaVelocity(duration);
+		calculateDesiredDeltaVelocity(duration);
 	}
 	
-	glm::vec3 Contact::CalculateLocalVelocity(unsigned bodyIndex, real duration)
+	glm::vec3 Contact::calculateLocalVelocity(unsigned bodyIndex, real duration)
 	{
-		RigidBody *thisBody = m_body[bodyIndex];
+		const auto thisBody = m_body[bodyIndex];
 	
 		// Work out the velocity of the contact point.
-		glm::vec3 velocity = glm::cross(thisBody->getRotation(),
+		auto velocity = glm::cross(thisBody->getRotation(),
 										m_relativeContactPosition[bodyIndex]);
 		velocity += thisBody->getVelocity();
 	
@@ -189,7 +197,7 @@ namespace rum
 		*/
 	}
 	
-	void Contact::CalculateDesiredDeltaVelocity(real duration)
+	void Contact::calculateDesiredDeltaVelocity(real duration)
 	{
 		/* Hier Code wenn isAwake implementiert und lastFrame verwendet wird:
 		const static real velocityLimit = (real)0.25f;
@@ -212,11 +220,10 @@ namespace rum
 		*/
 	
 		// If the velocity is very slow, limit the restitution
-		const static real velocityLimit = (real)0.25f;
-		real thisRestitution = m_restitution;
-		if (abs(m_contactVelocity.x) < velocityLimit)
+		auto thisRestitution = m_restitution;
+		if (abs(m_contactVelocity.x) < s_velocityLimit)
 		{
-			thisRestitution = (real)0.0f;
+			thisRestitution = static_cast<real>(0.0f);
 		}
 	
 		m_desiredDeltaVelocity =
@@ -227,16 +234,16 @@ namespace rum
 		// -thisRestitution * m_contactVelocity.x - velocityFromAcc);
 	}
 	
-	void Contact::SwapBodies()
+	void Contact::swapBodies()
 	{
 		m_contactNormal *= -1;
-	
-		RigidBody *temp = m_body[0];
+
+		const auto temp = m_body[0];
 		m_body[0] = m_body[1];
 		m_body[1] = temp;
 	}
 	
-	void Contact::ApplyVelocityChange(glm::vec3 velocityChange[2],
+	void Contact::applyVelocityChange(glm::vec3 velocityChange[2],
 									  glm::vec3 rotationChange[2])
 	{
 		// Zwischenspeichern der inversen Trägheitstensoren in Weltkoordinaten
@@ -253,7 +260,7 @@ namespace rum
 		if (m_friction == static_cast<real>(0.0f))
 		{
 			// Ohne Reibung
-			impulseContact = CalculateFrictionlessImpulse(inverseInertiaTensor);
+			impulseContact = calculateFrictionlessImpulse(inverseInertiaTensor);
 		}
 		else
 		{
@@ -262,7 +269,7 @@ namespace rum
 		}
 	
 		// Konvertiere Impuls in Welt-Koordinaten
-		glm::vec3 impulse = m_contactToWorld * impulseContact;
+		const auto impulse = m_contactToWorld * impulseContact;
 	
 		// Aufspaltung in lineare und rotational Komponente:
 		glm::vec3 impulsiveTorque = glm::cross(m_relativeContactPosition[0], impulse);
@@ -278,7 +285,7 @@ namespace rum
 		{
 			// Für zweiten Körper; Drehmoment negativ; 
 			// erreicht durch Operandentausch imKreuzprodukt:
-			glm::vec3 impulsiveTorque = glm::cross(impulse, m_relativeContactPosition[1]); 
+			impulsiveTorque = glm::cross(impulse, m_relativeContactPosition[1]); 
 			rotationChange[1] = inverseInertiaTensor[1] * impulsiveTorque;
 			velocityChange[1] = glm::vec3(static_cast<real>(0.0f));
 			velocityChange[1] += -m_body[1]->getInverseMass() * impulse;
@@ -289,11 +296,11 @@ namespace rum
 		}
 	}
 	
-	void Contact::ApplyPositionChange(glm::vec3 linearChange[2],
-		glm::vec3 angularChange[2],
-		real penetration)
+	void Contact::applyPositionChange(glm::vec3 linearChange[2],
+									  glm::vec3 angularChange[2],
+	                                  const real penetration)
 	{
-		const real angularLimit = (real)0.2f;
+		const auto angularLimit = static_cast<real>(0.2f);
 		real angularMove[2];
 		real linearMove[2];
 	
@@ -303,108 +310,114 @@ namespace rum
 	
 		// We need to work out the inertia of each object in the direction
 		// of the contact normal, due to angular inertia only.
-		for (unsigned i = 0; i < 2; i++) if (m_body[i])
+		for(unsigned i = 0; i < 2; i++)
 		{
-			glm::mat3 inverseInertiaTensor;
-			m_body[i]->getInverseInertiaTensorWorld(&inverseInertiaTensor);
-	
-			// Use the same procedure as for calculating frictionless
-			// velocity change to work out the angular inertia.
-			glm::vec3 angularInertiaWorld = glm::cross(m_relativeContactPosition[i],
-													   m_contactNormal);
-			angularInertiaWorld = inverseInertiaTensor * angularInertiaWorld;
-			angularInertiaWorld = glm::cross(angularInertiaWorld, m_relativeContactPosition[i]);
-			angularInertia[i] = glm::dot(angularInertiaWorld, m_contactNormal);
-	
-			// The linear component is simply the inverse mass
-			linearInertia[i] = m_body[i]->getInverseMass();
-	
-			// Keep track of the total inertia from all components
-			totalInertia += linearInertia[i] + angularInertia[i];
-	
-			// We break the loop here so that the totalInertia value is
-			// completely calculated (by both iterations) before
-			// continuing.
+			if(m_body[i])
+			{
+				glm::mat3 inverseInertiaTensor;
+				m_body[i]->getInverseInertiaTensorWorld(&inverseInertiaTensor);
+
+				// Use the same procedure as for calculating frictionless
+				// velocity change to work out the angular inertia.
+				glm::vec3 angularInertiaWorld = glm::cross(m_relativeContactPosition[i],
+														   m_contactNormal);
+				angularInertiaWorld = inverseInertiaTensor * angularInertiaWorld;
+				angularInertiaWorld = glm::cross(angularInertiaWorld, m_relativeContactPosition[i]);
+				angularInertia[i] = glm::dot(angularInertiaWorld, m_contactNormal);
+
+				// The linear component is simply the inverse mass
+				linearInertia[i] = m_body[i]->getInverseMass();
+
+				// Keep track of the total inertia from all components
+				totalInertia += linearInertia[i] + angularInertia[i];
+
+				// We break the loop here so that the totalInertia value is
+				// completely calculated (by both iterations) before
+				// continuing.
+			}
 		}
 	
 		// Loop through again calculating and applying the changes
-		for (unsigned i = 0; i < 2; i++) if (m_body[i])
+		for(unsigned i = 0; i < 2; i++)
 		{
-			// The linear and angular movements required are in proportion to
-			// the two inverse inertias.
-			real sign = (i == 0) ? static_cast<real>(1.0f) : static_cast<real>(-1);
-			angularMove[i] =
-				sign * penetration * (angularInertia[i] / totalInertia);
-			linearMove[i] =
-				sign * penetration * (linearInertia[i] / totalInertia);
-	
-			// To avoid angular projections that are too great (when mass is large
-			// but inertia tensor is small) limit the angular move.
-			glm::vec3 projection = m_relativeContactPosition[i];
-			projection += glm::dot(-m_relativeContactPosition[i], m_contactNormal) * m_contactNormal;
+			if(m_body[i])
+			{
+				// The linear and angular movements required are in proportion to
+				// the two inverse inertias.
+				const auto sign = (i == 0) ? static_cast<real>(1.0f) : static_cast<real>(-1);
+				angularMove[i] =
+					sign * penetration * (angularInertia[i] / totalInertia);
+				linearMove[i] =
+					sign * penetration * (linearInertia[i] / totalInertia);
 
-			// Use the small angle approximation for the sine of the angle (i.e.
-			// the magnitude would be sine(angularLimit) * projection.magnitude
-			// but we approximate sine(angularLimit) to angularLimit).
-			real maxMagnitude = angularLimit * glm::length(projection);
-	
-			if (angularMove[i] < -maxMagnitude)
-			{
-				real totalMove = angularMove[i] + linearMove[i];
-				angularMove[i] = -maxMagnitude;
-				linearMove[i] = totalMove - angularMove[i];
-			}
-			else if (angularMove[i] > maxMagnitude)
-			{
-				real totalMove = angularMove[i] + linearMove[i];
-				angularMove[i] = maxMagnitude;
-				linearMove[i] = totalMove - angularMove[i];
-			}
-	
-			// We have the linear amount of movement required by turning
-			// the rigid body (in angularMove[i]). We now need to
-			// calculate the desired rotation to achieve that.
-			if (angularMove[i] == 0)
-			{
-				// Easy case - no angular movement means no rotation.
-				angularChange[i] = glm::vec3(static_cast<real>(0.0f));
-			}
-			else
-			{
-				// Work out the direction we'd like to rotate in.
-				glm::vec3 targetAngularDirection = glm::cross(m_relativeContactPosition[i], m_contactNormal);
+				// To avoid angular projections that are too great (when mass is large
+				// but inertia tensor is small) limit the angular move.
+				glm::vec3 projection = m_relativeContactPosition[i];
+				projection += glm::dot(-m_relativeContactPosition[i], m_contactNormal) * m_contactNormal;
 
-				glm::mat3 inverseInertiaTensor;
-				m_body[i]->getInverseInertiaTensorWorld(&inverseInertiaTensor);
-	
-				// Work out the direction we'd need to rotate to achieve that
-				angularChange[i] = (angularMove[i] / angularInertia[i]) *
-					inverseInertiaTensor * targetAngularDirection;
-			}
-	
-			// Velocity change is easier - it is just the linear movement
-			// along the contact normal.
-			linearChange[i] = m_contactNormal * linearMove[i];
-	
-			// Now we can start to apply the values we've calculated.
-			// Apply the linear movement
-			glm::vec3 pos = m_body[i]->getPosition();
-			pos += linearMove[i] * m_contactNormal;
-			m_body[i]->setPosition(pos);
-	
-			// And the change in orientation
-			glm::quat q = m_body[i]->getOrientation();
-			//q.addScaledVector(angularChange[i], static_cast<real>(1.0)); // ACHTUNG in add... *0,5!!!
-			q += (glm::quat(static_cast<real>(0.0f), angularChange[i] * static_cast<real>(1.0)) * q * static_cast<real>(0.5f));
+				// Use the small angle approximation for the sine of the angle (i.e.
+				// the magnitude would be sine(angularLimit) * projection.magnitude
+				// but we approximate sine(angularLimit) to angularLimit).
+				const auto maxMagnitude = angularLimit * glm::length(projection);
 
-			m_body[i]->setOrientation(q);
-	
-			// We need to calculate the derived data for any body that is
-			// asleep, so that the changes are reflected in the object's
-			// data. Otherwise the resolution will not change the position
-			// of the object, and the next collision detection round will
-			// have the same penetration.
-			//if (!m_body[i]->getAwake()) m_body[i]->calculateDerivedData();
+				if(angularMove[i] < -maxMagnitude)
+				{
+					const auto totalMove = angularMove[i] + linearMove[i];
+					angularMove[i] = -maxMagnitude;
+					linearMove[i] = totalMove - angularMove[i];
+				}
+				else if(angularMove[i] > maxMagnitude)
+				{
+					const auto totalMove = angularMove[i] + linearMove[i];
+					angularMove[i] = maxMagnitude;
+					linearMove[i] = totalMove - angularMove[i];
+				}
+
+				// We have the linear amount of movement required by turning
+				// the rigid body (in angularMove[i]). We now need to
+				// calculate the desired rotation to achieve that.
+				if(angularMove[i] == 0)
+				{
+					// Easy case - no angular movement means no rotation.
+					angularChange[i] = glm::vec3(static_cast<real>(0.0f));
+				}
+				else
+				{
+					// Work out the direction we'd like to rotate in.
+					glm::vec3 targetAngularDirection = glm::cross(m_relativeContactPosition[i], m_contactNormal);
+
+					glm::mat3 inverseInertiaTensor;
+					m_body[i]->getInverseInertiaTensorWorld(&inverseInertiaTensor);
+
+					// Work out the direction we'd need to rotate to achieve that
+					angularChange[i] = (angularMove[i] / angularInertia[i]) *
+						inverseInertiaTensor * targetAngularDirection;
+				}
+
+				// Velocity change is easier - it is just the linear movement
+				// along the contact normal.
+				linearChange[i] = m_contactNormal * linearMove[i];
+
+				// Now we can start to apply the values we've calculated.
+				// Apply the linear movement
+				glm::vec3 pos = m_body[i]->getPosition();
+				pos += linearMove[i] * m_contactNormal;
+				m_body[i]->setPosition(pos);
+
+				// And the change in orientation
+				glm::quat q = m_body[i]->getOrientation();
+				//q.addScaledVector(angularChange[i], static_cast<real>(1.0)); // ACHTUNG in RegisterForce... *0,5!!!
+				q += (glm::quat(static_cast<real>(0.0f), angularChange[i] * static_cast<real>(1.0)) * q * static_cast<real>(0.5f));
+
+				m_body[i]->setOrientation(q);
+
+				// We need to calculate the derived data for any body that is
+				// asleep, so that the changes are reflected in the object's
+				// data. Otherwise the resolution will not change the position
+				// of the object, and the next collision detection round will
+				// have the same penetration.
+				//if (!m_body[i]->getAwake()) m_body[i]->calculateDerivedData();
+			}
 		}
 	}
 }

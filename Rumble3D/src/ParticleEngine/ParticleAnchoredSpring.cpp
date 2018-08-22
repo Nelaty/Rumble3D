@@ -14,9 +14,9 @@ namespace rum
 	{
 	}
 
-	void ParticleAnchoredSpring::UpdateForce(Particle* particle, real duration)
+	void ParticleAnchoredSpring::updateForce(Particle* particle, real duration)
 	{
-		glm::vec3 force = particle->GetPosition();
+		glm::vec3 force = particle->getPosition();
 		force -= *m_anchor;
 
 		real magnitude = glm::length(force);
@@ -24,6 +24,6 @@ namespace rum
 
 		force = glm::normalize(force);
 		force *= magnitude;
-		particle->AddForce(force);
+		particle->addForce(force);
 	}
 }

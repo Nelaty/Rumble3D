@@ -4,10 +4,8 @@
 namespace rum
 {
 	ParticleForceGenerator::~ParticleForceGenerator()
-	{
-	}
+	= default;
 
 	ParticleForceGenerator::ParticleForceGenerator()
-	{
-	}
+	= default;
 }

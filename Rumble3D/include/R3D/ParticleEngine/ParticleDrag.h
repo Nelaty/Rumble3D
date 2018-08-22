@@ -11,8 +11,8 @@ namespace rum
 	public:
 		ParticleDrag(real k1, real k2);
 		~ParticleDrag();
-	
-		virtual void updateForce(Particle * particle, real duration);
+
+		void updateForce(Particle * particle, real duration) override;
 
 	protected:
 		real m_k1;

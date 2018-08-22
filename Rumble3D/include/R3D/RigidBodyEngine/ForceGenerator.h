@@ -8,6 +8,11 @@ namespace rum
 	class ForceGenerator
 	{
 	public:
-		virtual void UpdateForce(RigidBody* body, real duration) = 0;
+		virtual ~ForceGenerator();
+
+		virtual void updateForce(RigidBody* body, real duration);
+
+	protected:
+		explicit ForceGenerator();
 	};
 }

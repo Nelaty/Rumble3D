@@ -2,19 +2,25 @@
 
 namespace rum
 {
-	bool CollisionData::hasMoreContacts()
+	CollisionData::CollisionData()
+	= default;
+
+	CollisionData::~CollisionData()
+	= default;
+
+	bool CollisionData::hasMoreContacts() const
 	{
 		return (m_contactsLeft > 0);
 	}
 	
-	void CollisionData::reset(unsigned maxContacts)
+	void CollisionData::reset(const unsigned maxContacts)
 	{
 		m_contactsLeft = maxContacts;
 		m_contactCount = 0;
 		m_contacts = m_contactArray;
 	}
 	
-	void CollisionData::addContacts(unsigned count)
+	void CollisionData::addContacts(const unsigned count)
 	{
 		// Reduzierung der freien Kontakte; ERhöhung der gefundenen Kontakte:
 		m_contactsLeft -= count;

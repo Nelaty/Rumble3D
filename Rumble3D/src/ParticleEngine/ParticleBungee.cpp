@@ -17,10 +17,10 @@ namespace rum
 	{
 	}
 
-	void ParticleBungee::UpdateForce(Particle* particle, real duration)
+	void ParticleBungee::updateForce(Particle* particle, real duration)
 	{
-		glm::vec3 force = particle->GetPosition();
-		force -= m_other->GetPosition();
+		glm::vec3 force = particle->getPosition();
+		force -= m_other->getPosition();
 	
 		real magnitude = glm::length(force);
 		if(magnitude <= m_restLength)
@@ -32,6 +32,6 @@ namespace rum
 	
 		force = glm::normalize(force);
 		force *= magnitude;
-		particle->AddForce(force);
+		particle->addForce(force);
 	}
 }

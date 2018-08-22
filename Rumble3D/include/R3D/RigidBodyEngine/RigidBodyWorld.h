@@ -18,34 +18,33 @@ namespace rum
 	class RigidBodyWorld : public PhysicsEngineModule
 	{
 	public:
-		typedef std::list<RigidBody*> RigidBodies;
-		typedef std::list<CollisionBox*> CollisionBoxes;
-		typedef std::list<CollisionPrimitive*> CollisionPrimitives;
+		using RigidBodies = std::list<RigidBody*>;
+		using CollisionBoxes = std::list<CollisionBox*>;
+		using CollisionPrimitives = std::list<CollisionPrimitive*>;
 		
-	public:
 		RigidBodyWorld(unsigned maxContacts, unsigned iterations);
 		~RigidBodyWorld();
 
-		void integrate(real duration);
+		void integrate(real timeDelta) override;
 
-		/* Add and remove rigid bodies */
+		/* Add and unregisterForce rigid bodies */
 		void addRigidBody(RigidBody* rb);
 		void removeRigidBody(RigidBody* rb);
-		void RemoveAllRigidBodies();
+		void removeAllRigidBodies();
 		
-		/* Add and remove force generators */
-		void AddForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator);
-		void RemoveForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator);
-		void RemoveAllForceGenerators();
+		/* Add and unregisterForce force generators */
+		void addForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator);
+		void removeForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator);
+		void removeAllForceGenerators();
 
 		void addCollisionBox(CollisionBox* box);
 		void addCollisionPrimitive(CollisionPrimitive* primitive);
 		// um Kraftgeneratoren an Teilchen binden zu können.
-		ForceRegistry *getRigidBodyForceRegistry();
+		ForceRegistry& getRigidBodyForceRegistry();
 
 		// Die Engine:
-		void StartFrame();
-		void runPhysics(const real duration, unsigned & tmp);
+		void startFrame();
+		void runPhysics(real timeDelta, unsigned & tmp);
 
 	private:
 		RigidBodies m_rigidBodies;
@@ -53,7 +52,7 @@ namespace rum
 		CollisionPrimitives m_collisionPrimitives;
 
 		ForceRegistry m_registry;
-		CollisionData* m_KollisionsDaten;
+		CollisionData* m_collisionData;
 		ContactResolver* m_resolver;
 
 		Contact* m_contacts;

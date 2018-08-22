@@ -4,38 +4,38 @@
 
 namespace rum
 {
-	void ParticleForceRegistry::Remove(Particle* particle, ParticleForceGenerator * fg)
+	void ParticleForceRegistry::remove(Particle* particle, ParticleForceGenerator * fg)
 	{
-		Registry::iterator i = registrations.begin();
-		for (; i != registrations.end(); i++)
+		auto i = m_registrations.begin();
+		for (; i != m_registrations.end(); ++i)
 		{
-			if (i->particle == particle && i->forceGenerator == fg)
+			if (i->m_particle == particle && i->m_forceGenerator == fg)
 			{
-				registrations.erase(i);
+				m_registrations.erase(i);
 			}
 		}
 	}
 	
 	
-	void ParticleForceRegistry::Clear()
+	void ParticleForceRegistry::clear()
 	{
-		registrations.clear();
+		m_registrations.clear();
 	}
 	
-	void ParticleForceRegistry::Add(Particle * particle, ParticleForceGenerator * fg)
+	void ParticleForceRegistry::add(Particle* particle, ParticleForceGenerator * fg)
 	{
-		ParticleForceRegistrationEntry registration;
-		registration.particle = particle;
-		registration.forceGenerator = fg;
-		registrations.push_back(registration);
+		ParticleForceRegistrationEntry registration{};
+		registration.m_particle = particle;
+		registration.m_forceGenerator = fg;
+		m_registrations.push_back(registration);
 	}
 	
 	
-	void ParticleForceRegistry::UpdateForces(real duration)
+	void ParticleForceRegistry::updateForces(const real duration)
 	{
-		for(auto& it : registrations)
+		for(auto& it : m_registrations)
 		{
-			it.forceGenerator->UpdateForce(it.particle, duration);
+			it.m_forceGenerator->updateForce(it.m_particle, duration);
 		}
 	}
 }

@@ -12,39 +12,41 @@ namespace rum
 		* Creates a new contact resolver with the given number of iterations
 		* per resolution call, and optional epsilon values.
 		*/
-		ContactResolver(unsigned iterations,
-						real velocityEpsilon = real(0.01f),
-						real positionEpsilon = real(0.01f));
+		explicit ContactResolver(unsigned iterations,
+								 real velocityEpsilon = real(0.01f),
+								 real positionEpsilon = real(0.01f));
 
 		/**
 		* Creates a new contact resolver with the given number of iterations
 		* for each kind of resolution, and optional epsilon values.
 		*/
 		ContactResolver(unsigned velocityIterations,
-			unsigned positionIterations,
-			real velocityEpsilon = real(0.01f),
-			real positionEpsilon = real(0.01f));
+						unsigned positionIterations,
+						real velocityEpsilon = real(0.01f),
+						real positionEpsilon = real(0.01f));
 
 		void setIterations(unsigned iterations);
 		void setIterations(unsigned velocityIterations,
 						   unsigned positionIterations);
+
 		void setEpsilon(real velocityEpsilon,
 						real positionEpsilon);
 
 		void resolveContacts(Contact *contacts,
 							 unsigned numContacts,
-							 real duration);
+							 real timeDelta);
+
 		void prepareContacts(Contact* contacts,
 							 unsigned numContacts,
-							 real duration);
+							 real timeDelta);
 
 		void adjustVelocities(Contact *c,
 							  unsigned numContacts,
-							  real duration);
+							  real timeDelta);
 		void adjustPositions(Contact *c,
 							 unsigned numContacts,
-							 real duration);
-		bool isValid();
+							 real timeDelta);
+		bool isValid() const;
 
 	protected:
 		/**
@@ -92,7 +94,7 @@ namespace rum
 		* Keeps track of whether the internal settings are valid.
 		*/
 		bool m_validSettings;
-
+		unsigned m_iterations;
 	};
 
 }

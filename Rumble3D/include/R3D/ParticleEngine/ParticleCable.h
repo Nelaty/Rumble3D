@@ -12,9 +12,9 @@ namespace rum
 		explicit ParticleCable();
 		~ParticleCable();
 
-		unsigned int AddContact(ParticleContact* contact, unsigned int limit) const override;
-		void SetMaxLength(real maxLength);
-		void SetRestitution(real restitution);
+		virtual unsigned int addContact(ParticleContact* contact, unsigned int limit) const override;
+		void setMaxLength(real maxLength);
+		void setRestitution(real restitution);
 
 	protected:
 		real m_maxLength;

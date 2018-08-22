@@ -9,12 +9,12 @@ namespace rum
 	}
 	
 	
-	void ParticleGravity::UpdateForce(Particle* particle, real duration)
+	void ParticleGravity::updateForce(Particle* particle, real duration)
 	{
-		if(!particle->HasFiniteMass())
+		if(!particle->hasFiniteMass())
 		{
 			return;
 		}
-		particle->AddForce(m_gravity * particle->GetMass());
+		particle->addForce(m_gravity * particle->getMass());
 	}
 }

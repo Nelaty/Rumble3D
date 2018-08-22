@@ -14,9 +14,9 @@ namespace rum
 		DirectedForce(glm::vec3 localPosition, glm::vec3 force);
 		~DirectedForce();
 		
-		void UpdateForce(RigidBody* body, real duration) override;
+		void updateForce(RigidBody* body, real duration) override;
 		
-		void SetForce(const glm::vec3& force);
+		void setForce(const glm::vec3& force);
 		
 	private:
 		glm::vec3 m_force;

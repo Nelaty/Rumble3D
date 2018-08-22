@@ -3,6 +3,8 @@
 
 #include <glm/glm.hpp>
 
+#include <array>
+
 namespace rum
 {
 	class RigidBody;
@@ -10,7 +12,7 @@ namespace rum
 	class CollisionBox : public CollisionPrimitive
 	{
 	public:
-		CollisionBox(RigidBody * m_body, glm::mat4 offset, glm::vec3 _halfsize);
+		CollisionBox(RigidBody* body, const glm::mat4& offset, const glm::vec3& halfSize);
 		~CollisionBox();
 
 		glm::vec3 getHalfSize() const;
@@ -21,7 +23,7 @@ namespace rum
 	private:
 		void initVertices();
 
-		glm::vec3 m_vertices[8];
+		std::array<glm::vec3, 8> m_vertices;
 	};
 
 }

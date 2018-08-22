@@ -13,7 +13,7 @@ namespace rum
 		explicit ParticleCollision(real restitution, real distance, real penetration);
 		~ParticleCollision();
 
-		unsigned int addContact(ParticleContact* contact, unsigned limit) const;
+		unsigned int addContact(ParticleContact* contact, unsigned limit) const override;
 	
 	protected:
 		real m_restitution;

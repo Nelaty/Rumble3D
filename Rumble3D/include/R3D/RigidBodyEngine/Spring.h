@@ -17,7 +17,7 @@ namespace rum
 			   real springConstant,
 			   real restLength);
 
-		virtual void UpdateForce(RigidBody* body, real duration) override;
+		virtual void updateForce(RigidBody* body, real duration) override;
 
 	protected:
 		glm::vec3 m_connectionPoint; // in lokalen Koordinaten des Körpers

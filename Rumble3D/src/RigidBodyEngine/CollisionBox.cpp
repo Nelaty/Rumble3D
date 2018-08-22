@@ -2,23 +2,24 @@
 
 namespace rum
 {
-	CollisionBox::CollisionBox(RigidBody * _body, glm::mat4 _offset, glm::vec3 _halfsize)
+	CollisionBox::CollisionBox(RigidBody* body, const glm::mat4& offset, const glm::vec3& halfSize)
+		: m_halfSize{halfSize}
 	{
-		m_body = _body;
-		m_offset = _offset;
-		m_halfSize = _halfsize;
+		m_body = body;
+		m_offset = offset;
 	}
 	
 	CollisionBox::~CollisionBox()
-	{
-	}
+	= default;
 
 	glm::vec3 CollisionBox::getHalfSize() const{
 		return m_halfSize;
 	}
 	
-	void CollisionBox::initVertices(){
-		glm::vec3 vertices[8] = {
+	void CollisionBox::initVertices()
+	{
+		m_vertices =
+		{
 			glm::vec3(-m_halfSize.x, -m_halfSize.y, -m_halfSize.z),
 			glm::vec3(-m_halfSize.x, -m_halfSize.y, +m_halfSize.z),
 			glm::vec3(-m_halfSize.x, +m_halfSize.y, -m_halfSize.z),
@@ -28,9 +29,9 @@ namespace rum
 			glm::vec3(+m_halfSize.x, +m_halfSize.y, -m_halfSize.z),
 			glm::vec3(+m_halfSize.x, +m_halfSize.y, +m_halfSize.z)
 		};
-		for (unsigned i = 0; i < 8; i++)
+		for(auto& vertex : m_vertices)
 		{
-			vertices[i] = glm::vec3(m_offset * glm::vec4(vertices[i], static_cast<real>(1.0f)));
+			vertex = glm::vec3(m_offset * glm::vec4(vertex, static_cast<real>(1.0f)));
 		}
 	}
 }

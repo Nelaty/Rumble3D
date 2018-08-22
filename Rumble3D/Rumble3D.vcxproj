@@ -160,6 +160,7 @@
     <ClCompile Include="src\ParticleEngine\ParticleForceRegistry.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleGravity.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleLink.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleRod.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleSpring.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleWorld.cpp" />
     <ClCompile Include="src\PhysicsEngine.cpp" />
@@ -178,6 +179,7 @@
     <ClCompile Include="src\RigidBodyEngine\ContactGenerator.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ContactResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\DirectedForce.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\ForceGenerator.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ForceRegistry.cpp" />
     <ClCompile Include="src\RigidBodyEngine\Gravity.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBody.cpp" />
@@ -198,8 +200,6 @@
     <ClInclude Include="include\R3D\ParticleEngine\ParticleContactGenerator.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleContactResolver.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleDrag.h" />
-    <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineFwd.h" />
-    <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineRoot.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleForceGenerator.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleForceRegistry.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleGravity.h" />
@@ -227,8 +227,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\ForceRegistry.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\Gravity.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBody.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineFwd.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineRoot.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyWorld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\Spring.h" />
   </ItemGroup>

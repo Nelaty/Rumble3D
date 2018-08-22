@@ -6,102 +6,94 @@
 namespace rum
 {
 	PhysicsEngine::PhysicsEngine()
-	{
-	}
+	= default;
 
 	PhysicsEngine::~PhysicsEngine()
+	= default;
+
+	void PhysicsEngine::update(const real timeDelta)
 	{
+		onBegin();
+		step(timeDelta);
+		integrate(timeDelta);
+		onEnd();
 	}
 
-	void PhysicsEngine::Update(const real timeDelta)
+	rum::PhysicsEngineModule* PhysicsEngine::findModule(const std::string& key) const
 	{
-		OnBegin();
-		Step(timeDelta);
-		Integrate(timeDelta);
-		OnEnd();
-	}
-
-	rum::PhysicsEngineModule* PhysicsEngine::FindModule(const std::string& key) const
-	{
-		auto foundModule = m_modules.find(key);
+		const auto foundModule = m_modules.find(key);
 		return foundModule->second;
 	}
 
-	bool PhysicsEngine::IsModuleRegistered(const std::string& key) const
+	bool PhysicsEngine::isModuleRegistered(const std::string& key) const
 	{
-		return FindModule(key) != nullptr;
+		return findModule(key) != nullptr;
 	}
 
-	rum::PhysicsEngineModule* PhysicsEngine::RegisterModule(const std::string& key, PhysicsEngineModule* module)
+	rum::PhysicsEngineModule* PhysicsEngine::registerModule(const std::string& key, PhysicsEngineModule* module)
 	{
-		auto foundModule = FindModule(key);
+		const auto foundModule = findModule(key);
 		if(foundModule)
 		{
 			return foundModule;
 		}
-		else
-		{
-			auto entry = std::make_pair(key, module);
-			m_modules.insert(entry);
-			return module;
-		}
+		auto entry = std::make_pair(key, module);
+		m_modules.insert(entry);
+		return module;
 	}
 
-	rum::PhysicsEngineModule* PhysicsEngine::UnregisterModule(const std::string& key)
+	rum::PhysicsEngineModule* PhysicsEngine::unregisterModule(const std::string& key)
 	{
-		auto removedModule = m_modules.find(key);
+		const auto removedModule = m_modules.find(key);
 		if(removedModule == m_modules.end())
 		{
 			return nullptr;
 		}
-		else
-		{
-			auto module = removedModule->second;
-			m_modules.erase(removedModule);
-			return module;
-		}
+		auto module = removedModule->second;
+		m_modules.erase(removedModule);
+		return module;
 	}
 
-	void PhysicsEngine::OnBegin()
+	void PhysicsEngine::onBegin()
 	{
 		for(auto& it : m_modules)
 		{
-			if(it.second->IsEnabled())
+			if(it.second->isEnabled())
 			{
-				it.second->OnBegin();
+				it.second->onBegin();
 			}	
 		}
 	}
 
-	void PhysicsEngine::OnEnd()
+	void PhysicsEngine::onEnd()
 	{
 		for(auto& it : m_modules)
 		{
-			if(it.second->IsEnabled())
+			if(it.second->isEnabled())
 			{
-				it.second->OnEnd();
+				it.second->onEnd();
 			}
 		}
 	}
 
-	void PhysicsEngine::Step(const real timeDelta)
+	void PhysicsEngine::step(const real timeDelta)
 	{
 		for(auto& it : m_modules)
 		{
-			if(it.second->IsEnabled())
+			if(it.second->isEnabled())
 			{
-				it.second->Step(timeDelta);
+				it.second->step(timeDelta);
 			}
 		}
 	}
 
-	void PhysicsEngine::Integrate(const real timeDelta)
+	void PhysicsEngine::integrate(const real timeDelta)
 	{
 		for(auto& it : m_modules)
 		{
-			if(it.second->IsEnabled())
+			if(it.second->isEnabled())
 			{
-				it.second->Integrate(timeDelta);
+				it.second->integrate(timeDelta);
 			}
 		}
 	}

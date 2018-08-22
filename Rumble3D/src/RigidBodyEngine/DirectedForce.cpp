@@ -12,23 +12,22 @@ namespace rum
 	}
 	
 	DirectedForce::~DirectedForce()
+	= default;
+
+	void DirectedForce::updateForce(RigidBody* body, real duration)
 	{
-	}
-	
-	void DirectedForce::UpdateForce(RigidBody* body, real duration)
-	{
-		glm::vec3 attackPoint = m_localPosition;
-		glm::vec3 forceLocal = m_force;
-		auto quat = body->getOrientation();
+		const auto attackPoint = m_localPosition;
+		auto forceLocal = m_force;
+		const auto quaternion = body->getOrientation();
 	
 		// Rotate forceLocal by quaternion
-		forceLocal = quat * forceLocal;
+		forceLocal = quaternion * forceLocal;
 
 		body->addForceAtBodyPoint(forceLocal, attackPoint);
 		body->addRotation(forceLocal);
 	}
 
-	void DirectedForce::SetForce(const glm::vec3& force)
+	void DirectedForce::setForce(const glm::vec3& force)
 	{
 		m_force = force;
 	}	

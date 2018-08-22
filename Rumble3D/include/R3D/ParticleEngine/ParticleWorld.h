@@ -24,36 +24,36 @@ namespace rum
 		 * optionalen Anzahl Iterationen. Falls iterations == 0, dann
 		 * werden 2 * Anzahl der Kontakte Iterationen durchgeführt.
 		 */
-		ParticleWorld(unsigned int maxContacts, unsigned int iterations = 0);
+		explicit ParticleWorld(unsigned int maxContacts, unsigned int iterations = 0);
 		~ParticleWorld();
 	
 		/** Initializations for a single frame (tick) */
-		virtual void OnBegin() override;
-		virtual void Reset() override;
+		void onBegin() override;
+		void reset() override;
 
-		virtual void Step(const real timeDelta) override;
-		virtual void Integrate(real duration) override;
+		void step(real timeDelta) override;
+		void integrate(real timeDelta) override;
 
 		/** Add another particle */
-		void AddParticle(Particle* p);
+		void addParticle(Particle* p);
 		/** Remove a specific particle */
-		void RemoveParticle(Particle* p);
+		void removeParticle(Particle* p);
 		/** Remove all particles */
-		void RemoveAllParticles();
+		void removeAllParticles();
 
 		/** Add another contact generator */
-		void AddContactGenerator(ParticleContactGenerator* pcg);
+		void addContactGenerator(ParticleContactGenerator* pcg);
 		/** Remove a specific contact generator */
-		void RemoveContactGenerator(ParticleContactGenerator* pcg);
+		void removeContactGenerator(ParticleContactGenerator* pcg);
 		/** Remove all contact generators */
-		void RemoveAllContactGenerators();
+		void removeAllContactGenerators();
 
 		/** Needed to bind particles to particle force generators */
-		ParticleForceRegistry& GetParticleForceRegistry();
+		ParticleForceRegistry& getParticleForceRegistry();
 
 	private:
-		unsigned int GenerateContacts();
-		void RunCollisionSolver(real duration);
+		unsigned int generateContacts();
+		void runCollisionSolver(real timeDelta);
 
 		Particles m_particles;
 		ParticleForceRegistry m_registry;

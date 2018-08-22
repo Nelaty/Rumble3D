@@ -14,13 +14,13 @@ namespace rum
 	}
 
 	void ParticleDrag::updateForce(Particle * particle, real duration){
-		glm::vec3 force = particle->GetVelocity();
+		glm::vec3 force = particle->getVelocity();
 	
 		real dragCoefficient = glm::length(force);
 		dragCoefficient = m_k1 * dragCoefficient + m_k2 * dragCoefficient * dragCoefficient;
 	
 		force = glm::normalize(force);
 		force *= -dragCoefficient;
-		particle->AddForce(force);
+		particle->addForce(force);
 	}
 }

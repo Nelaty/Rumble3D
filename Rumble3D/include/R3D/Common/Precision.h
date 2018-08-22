@@ -1,7 +1,7 @@
 #pragma once
 #include "Config.h"
 
-#include <math.h>
+#include <cmath>
 #include <limits>
 
 

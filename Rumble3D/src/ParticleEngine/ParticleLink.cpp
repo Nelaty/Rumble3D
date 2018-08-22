@@ -8,13 +8,19 @@ namespace rum
 {
 	real ParticleLink::currentLength() const 
 	{
-		glm::vec3 distance = m_particles[0]->GetPosition() - m_particles[1]->GetPosition();
+		const auto distance = m_particles[0]->getPosition() - m_particles[1]->getPosition();
 		return glm::length(distance);
 	}
-	
+
+	ParticleLink::~ParticleLink()
+	= default;
+
 	void ParticleLink::setParticles(Particle* particle0, Particle* particle1)
 	{
 		m_particles[0] = particle0;
 		m_particles[1] = particle1;
 	}
+
+	ParticleLink::ParticleLink()
+	= default;
 }

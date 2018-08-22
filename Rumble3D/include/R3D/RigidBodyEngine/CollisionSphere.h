@@ -11,10 +11,10 @@ namespace rum
 	class CollisionSphere : public CollisionPrimitive
 	{
 	public:
-		CollisionSphere(RigidBody * body, glm::mat4 offset, real radius); 
+		CollisionSphere(RigidBody* body, const glm::mat4& offset, real radius); 
 		~CollisionSphere();
 
-		real GetRadius() const;
+		real getRadius() const;
 
 	protected:
 		real m_radius;

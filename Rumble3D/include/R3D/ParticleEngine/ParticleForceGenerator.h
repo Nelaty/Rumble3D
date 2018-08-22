@@ -15,7 +15,7 @@ namespace rum
 		// überladen werden muss. Die Methode berechnet und aktualisiert
 		// die Kraft, die auf das Teilchen particle in der Zeitscheibe 
 		// duration wirkt.
-		virtual void UpdateForce(Particle* particle, real duration) = 0;
+		virtual void updateForce(Particle* particle, real duration) = 0;
 
 	protected:
 		explicit ParticleForceGenerator();

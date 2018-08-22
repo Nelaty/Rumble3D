@@ -12,82 +12,82 @@
 namespace rum
 {
 	
-	RigidBodyWorld::RigidBodyWorld(unsigned maxContacts, unsigned iterations)
+	RigidBodyWorld::RigidBodyWorld(const unsigned maxContacts, const unsigned iterations)
 		: m_maxContacts(maxContacts),
 		m_iterations(iterations)
 	{
 		m_contacts = new Contact[maxContacts];
 		m_calculateIterations = (iterations == 0);
 		m_resolver = new ContactResolver(iterations);
-		m_KollisionsDaten = new CollisionData();
-		m_KollisionsDaten->reset(4);
+		m_collisionData = new CollisionData();
+		m_collisionData->reset(4);
 	}
 	
 	RigidBodyWorld::~RigidBodyWorld()
 	{
 		delete[] m_contacts;
 		delete m_resolver;
-		delete m_KollisionsDaten;
+		delete m_collisionData;
 	}
 	
-	void RigidBodyWorld::addRigidBody(RigidBody * rb)
+	void RigidBodyWorld::addRigidBody(RigidBody* rb)
 	{
 		m_rigidBodies.push_back(rb);
 	}
 	
-	void RigidBodyWorld::addCollisionBox(CollisionBox * box)
+	void RigidBodyWorld::addCollisionBox(CollisionBox* box)
 	{
 		m_collisionBoxes.push_back(box);
 	}
 	
-	void RigidBodyWorld::addCollisionPrimitive(CollisionPrimitive * primitive)
+	void RigidBodyWorld::addCollisionPrimitive(CollisionPrimitive* primitive)
 	{
 		m_collisionPrimitives.push_back(primitive);
 	}
 	
-	void RigidBodyWorld::removeRigidBody(RigidBody * rb)
+	void RigidBodyWorld::removeRigidBody(RigidBody* rb)
 	{
 		m_rigidBodies.remove(rb);
 	}
 	
-	void RigidBodyWorld::RemoveAllRigidBodies()
+	void RigidBodyWorld::removeAllRigidBodies()
 	{
 		m_rigidBodies.clear();
 	}
 
-	void RigidBodyWorld::AddForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator)
+	void RigidBodyWorld::addForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator)
 	{
-		m_registry.Add(rigidBody, forceGenerator);
+		m_registry.registerForce(rigidBody, forceGenerator);
 	}
 
-	void RigidBodyWorld::RemoveForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator)
+	void RigidBodyWorld::removeForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator)
 	{
-		m_registry.Remove(rigidBody, forceGenerator);
+		m_registry.unregisterForce(rigidBody, forceGenerator);
 	}
 
-	void RigidBodyWorld::RemoveAllForceGenerators()
+	void RigidBodyWorld::removeAllForceGenerators()
 	{
-		m_registry.Clear();
+		m_registry.clear();
 	}
 
-	ForceRegistry * RigidBodyWorld::getRigidBodyForceRegistry()
+	ForceRegistry& RigidBodyWorld::getRigidBodyForceRegistry()
 	{
-		return &m_registry;
+		return m_registry;
 	}
 	
-	void RigidBodyWorld::StartFrame()
+	void RigidBodyWorld::startFrame()
 	{
-		for (RigidBody* rb : m_rigidBodies) 
+		for (auto& rb : m_rigidBodies) 
 		{
 			rb->clearAccumulators();
 			rb->calculateDerivedData();
 		}
 	}
 	
-	void RigidBodyWorld::runPhysics(const real duration, unsigned & tmp)
+	void RigidBodyWorld::runPhysics(const real timeDelta, unsigned& tmp)
 	{
-		m_registry.UpdateForces(duration);
-		integrate(duration);
+		m_registry.updateForces(timeDelta);
+		integrate(timeDelta);
 		return;
 		// Prüfe auf Kontakte:
 
@@ -96,8 +96,8 @@ namespace rum
 		//detect aufrufen. Hier momentan nur 2 Boxen mit BoundingBoxes:
 		CollisionBox * b1 = nullptr;
 		CollisionBox * b2 = nullptr;
-		int i = 1;
-		for (CollisionBox* box : m_collisionBoxes)
+		auto i = 1;
+		for (auto& box : m_collisionBoxes)
 		{
 			if (i == 1)
 			{
@@ -110,19 +110,19 @@ namespace rum
 			}
 		}
 		
-		tmp = CollisionDetector::boxAndBox(*b1, *b2, m_KollisionsDaten);
+		tmp = CollisionDetector::boxAndBox(*b1, *b2, m_collisionData);
 		// Resolve Kontakte:
-		if (m_KollisionsDaten->getContactCount() > 0)
+		if (m_collisionData->getContactCount() > 0)
 		{
-			m_resolver->resolveContacts(m_KollisionsDaten->getContacts(), 1, duration);
+			m_resolver->resolveContacts(m_collisionData->getContacts(), 1, timeDelta);
 		}
 	}
 	
-	void RigidBodyWorld::integrate(real duration)
+	void RigidBodyWorld::integrate(const real timeDelta)
 	{
-		for (RigidBody* rb : m_rigidBodies) 
+		for (auto& rb : m_rigidBodies) 
 		{
-			rb->integrate(duration);
+			rb->integrate(timeDelta);
 		}
 	}
 }

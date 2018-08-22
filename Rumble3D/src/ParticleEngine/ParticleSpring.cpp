@@ -5,7 +5,7 @@
 
 namespace rum
 {
-	ParticleSpring::ParticleSpring(Particle* other, real springConstant, real restLength)
+	ParticleSpring::ParticleSpring(Particle* other, const real springConstant, const real restLength)
 		: m_other{other},
 		m_springConstant{springConstant},
 		m_restLength{restLength}
@@ -13,23 +13,22 @@ namespace rum
 	}
 	
 	ParticleSpring::~ParticleSpring()
-	{
-	}
+	= default;
 
-	void ParticleSpring::UpdateForce(Particle* particle, real duration)
+	void ParticleSpring::updateForce(Particle* particle, real duration)
 	{
 		// Vektor der Feder
-		glm::vec3 force = particle->GetPosition();
-		force -= m_other->GetPosition();
+		auto force = particle->getPosition();
+		force -= m_other->getPosition();
 	
 		// Kraft berechnen:
-		real magnitude = glm::length(force);
+		auto magnitude = glm::length(force);
 		magnitude -= m_restLength;
 		magnitude *= m_springConstant;
 	
 		//Resultierende Federkraft und Anwendung auf Teilchen:
 		force = glm::normalize(force);
 		force *= -magnitude;
-		particle->AddForce(force);
+		particle->addForce(force);
 	}
 }

@@ -12,8 +12,8 @@ namespace rum
 	{
 	public:
 		ParticleGravity(const glm::vec3& gravity);
-	
-		virtual void UpdateForce(Particle* particle, real duration);
+
+		void updateForce(Particle* particle, real duration) override;
 
 	protected:
 		glm::vec3 m_gravity;

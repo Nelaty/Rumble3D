@@ -13,12 +13,12 @@ namespace rum
 	{
 	}
 
-	void ParticleContactResolver::SetIterations(unsigned int iterations)
+	void ParticleContactResolver::setIterations(unsigned int iterations)
 	{
 		m_iterations = iterations;
 	}
 
-	void ParticleContactResolver::ResolveContacts(ParticleContact* contactArray, unsigned int numberOfContacts, real duration)
+	void ParticleContactResolver::resolveContacts(ParticleContact* contactArray, unsigned int numberOfContacts, real duration)
 	{
 		unsigned i;
 		m_iterationsUsed = 0;

@@ -11,13 +11,19 @@ namespace rum
 		resolveInterpenetration(duration);
 	}
 
+	ParticleContact::ParticleContact()
+	= default;
+
+	ParticleContact::~ParticleContact()
+	= default;
+
 	real ParticleContact::calculateSeparatingVelocity() const
 	{
 		// v_s = (\dot{p_a} - \dot{p_b}) * (\hat{p_a -p_b})
-		glm::vec3 relativeVelocity = m_particles[0]->GetVelocity();
+		glm::vec3 relativeVelocity = m_particles[0]->getVelocity();
 		if(m_particles[1])
 		{
-			relativeVelocity -= m_particles[1]->GetVelocity();
+			relativeVelocity -= m_particles[1]->getVelocity();
 		}
 		return glm::dot(relativeVelocity, m_contactNormal);
 	}
@@ -38,10 +44,10 @@ namespace rum
 		//ACHTUNG: Hier nicht berücksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
 		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird geprüft.
 		
-		glm::vec3 accelerationCausedVelocity = m_particles[0]->GetAcceleration();
+		glm::vec3 accelerationCausedVelocity = m_particles[0]->getAcceleration();
 		if(m_particles[1])
 		{
-			accelerationCausedVelocity -= m_particles[1]->GetAcceleration();
+			accelerationCausedVelocity -= m_particles[1]->getAcceleration();
 		}
 		// Skalarprodukt: wieviel der Beschleunigung wirkt in Richtung Kontaktnormale:
 		real accelerationCausedSeparationVelocity =	glm::dot(accelerationCausedVelocity, m_contactNormal) * duration;
@@ -61,15 +67,15 @@ namespace rum
 		real deltaVelocity = newSeparatingVelocity - separatingVelocity;
 
 		// Veraenderung der Geschwindigkeit in Abh. der Massen der Teilchen
-		real totalInverseMass = m_particles[0]->GetInverseMass();
+		real totalInverseMass = m_particles[0]->getInverseMass();
 		if(m_particles[1])
 		{
-			totalInverseMass += m_particles[1]->GetInverseMass();
+			totalInverseMass += m_particles[1]->getInverseMass();
 		}
 		// Fehler Millington: Massen und nicht 1/Masse nehmen!!!
 
 		// Wenn beide Teilchen unendliche Masse, dann aendert Impuls nichts:
-		if(!(m_particles[0]->HasFiniteMass()))
+		if(!(m_particles[0]->hasFiniteMass()))
 		{
 			return;
 		}
@@ -81,14 +87,14 @@ namespace rum
 
 		// Anwendung des Impulses je Teilchen proportional zu den inversen Massen:
 		// \prime{\hat{p}} = \dot{p} + 1/m * g
-		m_particles[0]->SetVelocity(m_particles[0]->GetVelocity() +
-									impulsePerMass * m_particles[0]->GetInverseMass());
+		m_particles[0]->setVelocity(m_particles[0]->getVelocity() +
+									impulsePerMass * m_particles[0]->getInverseMass());
 
 		if (m_particles[1]) 
 		{
 			// hier negativ, da aus Sicht von m_particles[0]
-			m_particles[1]->SetVelocity(m_particles[1]->GetVelocity() +
-										impulsePerMass * -m_particles[1]->GetInverseMass()); 
+			m_particles[1]->setVelocity(m_particles[1]->getVelocity() +
+										impulsePerMass * -m_particles[1]->getInverseMass()); 
 		}
 	}
 
@@ -102,12 +108,12 @@ namespace rum
 		}
 
 		// m_a + m_b
-		real totalMass = m_particles[0]->GetMass();
+		real totalMass = m_particles[0]->getMass();
 		if(m_particles[1])
 		{
-			totalMass += m_particles[1]->GetMass();
+			totalMass += m_particles[1]->getMass();
 		}
-		if(!m_particles[0]->HasFiniteMass())
+		if(!m_particles[0]->hasFiniteMass())
 		{
 			return;
 		}
@@ -119,10 +125,10 @@ namespace rum
 		glm::vec3 movePerInverseMass = dn * ((real)1.0 / totalMass);
 
 		// Berechnung von Delta-p_a und Delta-p_b
-		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->GetMass();
+		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->getMass();
 		if (m_particles[1])
 		{
-			m_particlesMovement[1] = movePerInverseMass * -m_particles[1]->GetMass();
+			m_particlesMovement[1] = movePerInverseMass * -m_particles[1]->getMass();
 		}
 		else 
 		{
@@ -130,10 +136,10 @@ namespace rum
 		}
 
 		// Anwendung der Aufloesung der Durchdringung:
-		m_particles[0]->SetPosition(m_particles[0]->GetPosition() + m_particlesMovement[0]);
+		m_particles[0]->setPosition(m_particles[0]->getPosition() + m_particlesMovement[0]);
 		if (m_particles[1])
 		{
-			m_particles[1]->SetPosition(m_particles[1]->GetPosition() + m_particlesMovement[1]);
+			m_particles[1]->setPosition(m_particles[1]->getPosition() + m_particlesMovement[1]);
 		}
 	}
 

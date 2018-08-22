@@ -13,9 +13,9 @@ namespace rum
 	{
 	}
 
-	real ParticleConstraint::CurrentLength() const
+	real ParticleConstraint::currentLength() const
 	{
-		glm::vec3 distance = m_particle->GetPosition() - m_anchor;
+		glm::vec3 distance = m_particle->getPosition() - m_anchor;
 		return glm::length(distance);
 	}
 }

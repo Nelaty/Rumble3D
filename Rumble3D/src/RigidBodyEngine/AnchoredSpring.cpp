@@ -14,7 +14,7 @@ namespace rum
 	{
 	}
 	
-	void AnchoredSpring::UpdateForce(RigidBody* body, real duration)
+	void AnchoredSpring::updateForce(RigidBody* body, real duration)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:
 		glm::vec3 localW = body->getPointInWorldSpace(m_connectionPoint);

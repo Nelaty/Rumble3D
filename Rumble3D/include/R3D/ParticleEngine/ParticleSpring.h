@@ -12,10 +12,11 @@ namespace rum
 		ParticleSpring(Particle* other, real springConstant, real restLength);
 		~ParticleSpring();
 
-		virtual void UpdateForce(Particle* particle, real duration);
+		void updateForce(Particle* particle, real duration) override;
 
 	protected:
-		Particle* m_other; //das andere Teilchen.
+		/** The other particle, this particle is connected to. */
+		Particle* m_other;
 		real m_springConstant;
 		real m_restLength;
 	};

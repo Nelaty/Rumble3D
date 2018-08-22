@@ -5,8 +5,8 @@
 namespace rum
 {
 	BoundingBox::BoundingBox()
-		: m_bounds{1.0, 1.0, 1.0},
-		m_center{0.5, 0.5, 0.5}
+		: m_center{0.5, 0.5, 0.5},
+		m_bounds{1.0, 1.0, 1.0}
 	{
 	}
 
@@ -18,8 +18,8 @@ namespace rum
 
 	BoundingBox::BoundingBox(const BoundingBox& one, const BoundingBox& two)
 	{
-		glm::vec3 dist = one.m_center - two.m_center;
-		glm::vec3 extends = (one.m_bounds + two.m_bounds) * static_cast<real>(0.5);
+		const auto dist = one.m_center - two.m_center;
+		const auto extends = (one.m_bounds + two.m_bounds) * static_cast<real>(0.5);
 
 		m_bounds.x = dist.x + extends.x;
 		m_bounds.y = dist.y + extends.y;
@@ -34,51 +34,50 @@ namespace rum
 	{
 	}
 
-	bool BoundingBox::Overlaps(const BoundingBox* other) const
+	bool BoundingBox::overlaps(const BoundingBox* other) const
 	{
 		// Check all six sides
-		bool dosentCollide = false;
+		auto doesntCollide = false;
 		// Front
-		dosentCollide = other->m_center.z + other->m_bounds.z * 0.5 <
+		doesntCollide &= other->m_center.z + other->m_bounds.z * 0.5 <
 			m_center.z - m_bounds.z * 0.5;
 		
 		// Behind
-		dosentCollide = dosentCollide ||
+		doesntCollide &= doesntCollide ||
 			other->m_center.z - other->m_bounds.z * 0.5 >
 			m_center.z + m_bounds.z * 0.5;
 	
 		// Over
-		dosentCollide = dosentCollide || 
+		doesntCollide &= doesntCollide || 
 			other->m_center.y + other->m_bounds.y * 0.5 <
 			m_center.y - m_bounds.y * 0.5;
 	
 		// Under
-		dosentCollide = dosentCollide || 
+		doesntCollide &= doesntCollide || 
 			other->m_center.y - other->m_bounds.y * 0.5 >
 			m_center.y + m_bounds.y * 0.5;
 	
 		// Left
-		dosentCollide = dosentCollide || 
+		doesntCollide &= doesntCollide || 
 			other->m_center.x + other->m_bounds.x * 0.5 <
 			m_center.x - m_bounds.x * 0.5;
 	
 		// Right
-		dosentCollide = dosentCollide || 
+		doesntCollide &= doesntCollide || 
 			other->m_center.x - other->m_bounds.x * 0.5 >
 			m_center.x + m_bounds.x * 0.5;
 		
-		return !dosentCollide;
+		return !doesntCollide;
 	}
 
-	real BoundingBox::GetSize() const
+	real BoundingBox::getVolume() const
 	{
 		return m_bounds.x * m_bounds.y * m_bounds.z;
 	}
 
-	real BoundingBox::GetGrowth(const BoundingBox &other) const
+	real BoundingBox::getGrowth(const BoundingBox &other) const
 	{
-		
-		BoundingBox newBox(*this, other);
+		const BoundingBox newBox(*this, other);
 		return glm::length2(newBox.m_bounds) * glm::length2(newBox.m_bounds) -
 			glm::length2(m_bounds) * glm::length2(m_bounds);
 	}

@@ -22,7 +22,7 @@ namespace rum
 	protected:
 		explicit ParticleConstraint();
 
-		real CurrentLength() const;
+		real currentLength() const;
 
 		glm::vec3 m_anchor;
 		Particle* m_particle;

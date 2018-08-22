@@ -9,12 +9,15 @@ namespace rum
 	class RigidBody
 	{
 	public:
+		explicit RigidBody();
+		~RigidBody();
+
 		void calculateDerivedData();
 		void setInertiaTensor(const glm::mat3& inertiaTensor);
 		glm::mat3 getInverseTensor();
 
 		/* (Inverse) Mass access */
-		void setMass(const real mass);
+		void setMass(real mass);
 		real getMass() const;
 		void setInverseMass(const real inverseMass);
 		real getInverseMass() const;
@@ -26,41 +29,41 @@ namespace rum
 
 		/* Position access */
 		void setPosition(const glm::vec3& position);
-		void setPosition(const real x, const real y, const real z);
-		//void getPosition(glm::vec3 * position) const;
+		void setPosition(real x, real y, real z);
 		glm::vec3 getPosition() const;
 
 		/* Velocity access */
 		void setVelocity(const glm::vec3& velocity);
-		void setVelocity(const real x, const real y, const real z);
-		//void getVelocity(glm::vec3 *velocity) const;
+		void setVelocity(real x, real y, real z);
 		glm::vec3 getVelocity() const;
 
 		/* Acceleration access */
 		void setAcceleration(const glm::vec3& acceleration);
-		void setAcceleration(const real x, const real y, const real z);
-		//void getAcceleration(glm::vec3 &acceleration) const;
+		void setAcceleration(real x, real y, real z);
 		glm::vec3 getAcceleration() const;
 
 		/* Linear and angular damping access */
-		void setLinearDamping(const real linearDamping);
+		void setLinearDamping(real linearDamping);
 		real getLinearDamping() const;
-		void setAngularDamping(const real angularDamping);
+		void setAngularDamping(real angularDamping);
 		real getAngularDamping() const;
 
 		void setOrientation(const glm::quat& orientation);
-		void setOrientation(const real r, const real i, const real j, const real k);
+		void setOrientation(real r, real i, real j, real k);
 		glm::quat getOrientation() const;
+
 		void setRotation(const glm::vec3& rotation);
-		void setRotation(const real x, const real y, const real z);
+		void setRotation(real x, real y, real z);
 		glm::vec3 getRotation() const;
+
 		glm::mat4 getTransformationMatrix() const;
 		void getInverseInertiaTensorWorld(glm::mat3* inverseInertiaTensorWorld) const;
+
 		void addVelocity(const glm::vec3& deltaVelocity);
 		void addRotation(const glm::vec3& deltaRotation);
 
 		bool isDead();
-		void setDead(const bool dead);
+		void setDead(bool isDead);
 
 
 		// Löschen aller aufsummierten Kräfte und Drehmomente.
@@ -87,14 +90,14 @@ namespace rum
 		glm::vec3 getDirectionInWorldSpace(const glm::vec3 &direction) const;
 
 		glm::mat3 calculateCubeTensor(real mass, real x_half, real y_half, real z_half);
-		glm::mat3 calculateShereTensor(real mass, real radius);
+		glm::mat3 calculateSphereTensor(real mass, real radius);
 
 		virtual void integrate(real duration);// Bestimmung des neuen Ortes für das Teilchen.
 
 	protected:
-		real m_inverseMass;
-		real m_linearDamping;
-		real m_angularDamping;
+		real m_inverseMass{};
+		real m_linearDamping{};
+		real m_angularDamping{};
 
 		glm::vec3 m_position; // Position des Schwerpunkts. 
 		glm::quat m_orientation;

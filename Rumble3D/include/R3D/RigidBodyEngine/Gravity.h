@@ -11,10 +11,10 @@ namespace rum
 	class Gravity :	public ForceGenerator
 	{
 	public:
-		Gravity(const glm::vec3& gravity);
+		explicit Gravity(const glm::vec3& gravity);
 		~Gravity();
 
-		virtual void UpdateForce(RigidBody* body, real duration) override;
+		void updateForce(RigidBody* body, real timeDelta) override;
 	
 	protected:
 		glm::vec3 m_gravity;

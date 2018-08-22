@@ -16,12 +16,13 @@ namespace rum
 
 		// Gibt true zurück, wenn sich die BoundingSphere mit other überlappt
 		// und sonst false
-		bool Overlaps(const BoundingBox* other) const;
-		real GetSize() const;
+		bool overlaps(const BoundingBox* other) const;
+		/** Get the volume of this bounding box. */
+		real getVolume() const;
 		// Gibt einen Wert zurück, der das Wachstum einer Kugel durch eine
 		// andere Kugel beschreibt, indem Näherungen der Oberflächen 
 		// berechnet werden.
-		real GetGrowth(const BoundingBox& other) const;
+		real getGrowth(const BoundingBox& other) const;
 
 	protected:
 		glm::vec3 m_center;

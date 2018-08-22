@@ -14,7 +14,7 @@ namespace rum
 		explicit ParticleAnchoredSpring(glm::vec3* anchor, real springConstant, real restLength);
 		~ParticleAnchoredSpring();
 
-		virtual void UpdateForce(Particle* particle, real duration);
+		void updateForce(Particle* particle, real duration) override;
 	
 	protected:
 		glm::vec3* m_anchor;

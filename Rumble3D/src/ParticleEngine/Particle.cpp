@@ -1,8 +1,6 @@
 #include "R3D/ParticleEngine/Particle.h"
-#include <math.h>
-#include <assert.h>
-
-#include <glm/gtc/constants.hpp>
+#include <cmath>
+#include <cassert>
 
 namespace rum 
 {
@@ -10,7 +8,7 @@ namespace rum
 		: m_position{real(0)},
 		m_velocity{real(0)},
 		m_acceleration{real(0)},
-		m_forceAccum{real(0)},
+		m_forceAccumulator{real(0)},
 		m_inverseMass{0},
 		m_damping{1},
 		m_isDead{false}
@@ -18,149 +16,144 @@ namespace rum
 	}
 
 	Particle::~Particle()
-	{
-	}
+	= default;
 
-	void Particle::SetMass(const real mass)
+	void Particle::setMass(const real mass)
 	{
 		assert(mass != 0);
-		Particle::m_inverseMass = (static_cast<real>(1.0)) / mass;
+		m_inverseMass = (static_cast<real>(1.0)) / mass;
 	}
 
-	real Particle::GetMass() const
+	real Particle::getMass() const
 	{
 		if (m_inverseMass == 0) 
 		{
 			return EROS_REAL_MAX;
 		}
-		else 
-		{
-			return (static_cast<real>(1.0)) / m_inverseMass;
-		}
+		return (static_cast<real>(1.0)) / m_inverseMass;
 	}
 
-	void Particle::SetInverseMass(const real inverseMass)
+	void Particle::setInverseMass(const real inverseMass)
 	{
-		Particle::m_inverseMass = inverseMass;
+		m_inverseMass = inverseMass;
 	}
 
-	real Particle::GetInverseMass() const
+	real Particle::getInverseMass() const
 	{
 		return m_inverseMass;
 	}
 
-	bool Particle::HasFiniteMass()
+	bool Particle::hasFiniteMass() const
 	{
 		return m_inverseMass > 0.0f;
 	}
 
-	const glm::vec3& Particle::GetForceAccum()
+	const glm::vec3& Particle::getForceAccumulator() const
 	{
-		m_forceAccum += m_forceAccum * m_inverseMass;
-		return m_forceAccum;
+		return m_forceAccumulator;
 	}
 
-	void Particle::SetDamping(const real damping)
+	void Particle::setDamping(const real damping)
 	{
-		Particle::m_damping = damping;
+		m_damping = damping;
 	}
 
-	real Particle::GetDamping() const
+	real Particle::getDamping() const
 	{
 		return m_damping;
 	}
 
-	void Particle::SetPosition(const glm::vec3 &position)
+	void Particle::setPosition(const glm::vec3 &position)
 	{
-		Particle::m_position = position;
+		m_position = position;
 	}
 
-	void Particle::SetPosition(const real x, const real y, const real z)
+	void Particle::setPosition(const real x, const real y, const real z)
 	{
 		m_position.x = x;
 		m_position.y = y;
 		m_position.z = z;
 	}
 
-	const glm::vec3& Particle::GetPosition() const
+	const glm::vec3& Particle::getPosition() const
 	{
 		return m_position;
 	}
 
-	void Particle::SetVelocity(const glm::vec3 &velocity)
+	void Particle::setVelocity(const glm::vec3 &velocity)
 	{
-		Particle::m_velocity = velocity;
+		m_velocity = velocity;
 	}
 
-	void Particle::SetVelocity(const real x, const real y, const real z)
+	void Particle::setVelocity(const real x, const real y, const real z)
 	{
 		m_velocity.x = x;
 		m_velocity.y = y;
 		m_velocity.z = z;
 	}
 
-	const glm::vec3& Particle::GetVelocity() const
+	const glm::vec3& Particle::getVelocity() const
 	{
 		return m_velocity;
 	}
 
-	void Particle::SetAcceleration(const glm::vec3 &acceleration)
+	void Particle::setAcceleration(const glm::vec3 &acceleration)
 	{
-		Particle::m_acceleration = acceleration;
+		m_acceleration = acceleration;
 	}
 
-	void Particle::SetAcceleration(const real x, const real y, const real z)
+	void Particle::setAcceleration(const real x, const real y, const real z)
 	{
 		m_acceleration.x = x;
 		m_acceleration.y = y;
 		m_acceleration.z = z;
 	}
 
-	const glm::vec3& Particle::GetAcceleration() const
+	const glm::vec3& Particle::getAcceleration() const
 	{
 		return m_acceleration;
 	}
 
-	void Particle::SetIsDead(bool isDead)
+	void Particle::setIsDead(bool isDead)
 	{
 		m_isDead = isDead;
 	}
 
-	bool Particle::IsDead()
+	bool Particle::isDead() const
 	{
 		return m_isDead;
 	}
 
-	void Particle::ClearAccumulator()
+	void Particle::clearAccumulator()
 	{
-		m_forceAccum = glm::vec3(0.0f);
+		m_forceAccumulator = glm::vec3(0.0f);
 	}
 
-	void Particle::AddForce(const glm::vec3 &force)
+	void Particle::addForce(const glm::vec3 &force)
 	{
-		m_forceAccum += force;
+		m_forceAccumulator += force;
 	}
 
-	void Particle::Integrate(real duration) 
+	void Particle::integrate(const real duration) 
 	{
 		if (m_isDead || m_inverseMass <= 0) return;
 
 		assert(duration > 0.0);
 
-		//Neue Position bestimmen:
-		//Hier quadratischer Term aus der Beschleunigung nicht berücksichtigt, da marginal.
+		// Neue Position bestimmen:
+		// Hier quadratischer Term aus der Beschleunigung nicht berücksichtigt, da marginal.
 		m_position += m_velocity * duration;
 
-		//Beschleunigung bestimmen:
+		// Beschleunigung bestimmen:
 		glm::vec3 resultingAcceleration = m_acceleration;
-		resultingAcceleration += m_forceAccum * m_inverseMass;
+		resultingAcceleration += m_forceAccumulator * m_inverseMass;
 
-		//Neue Geschwindigkeit durch die Beschleunigung:
+		// Neue Geschwindigkeit durch die Beschleunigung:
 		m_velocity += resultingAcceleration * duration;
 
-		//Dämpfung berücksichtigen:
+		// Dämpfung berücksichtigen:
 		m_velocity *= pow(m_damping, duration);
 
-		ClearAccumulator();
+		clearAccumulator();
 	}
 }

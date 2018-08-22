@@ -10,13 +10,13 @@ namespace rum
 	class CollisionPlane
 	{
 	public:
-		CollisionPlane(const glm::vec3 & normal, const real offset);
+		CollisionPlane(const glm::vec3 & normal, real offset);
 		~CollisionPlane();
 		
-		real GetOffset() const;
-		glm::vec3 GetNormal() const;
-		void SetOffset(const real offset);
-		void SetNormal(const glm::vec3 & normal);
+		real getOffset() const;
+		glm::vec3 getNormal() const;
+		void setOffset(real offset);
+		void setNormal(const glm::vec3 & normal);
 
 	protected:
 		glm::vec3 m_normal;

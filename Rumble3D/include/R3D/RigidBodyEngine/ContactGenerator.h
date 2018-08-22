@@ -6,8 +6,12 @@ namespace rum
 	class ContactGenerator
 	{
 	public:
-		virtual unsigned addContact(Contact *contact, unsigned limit) const = 0;
-	};
+		virtual ~ContactGenerator();
+		
+		virtual unsigned addContact(Contact *contact, unsigned limit) const;
 
+	protected:
+		explicit ContactGenerator();
+	};
 }
 

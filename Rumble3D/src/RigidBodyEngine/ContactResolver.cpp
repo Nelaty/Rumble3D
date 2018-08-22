@@ -6,45 +6,45 @@
 namespace rum
 {
 	
-	ContactResolver::ContactResolver(unsigned iterations,
-									 real velocityEpsilon,
-									 real positionEpsilon)
+	ContactResolver::ContactResolver(const unsigned iterations,
+	                                 const real velocityEpsilon,
+	                                 const real positionEpsilon)
 	{
 		setIterations(iterations, iterations);
 		setEpsilon(velocityEpsilon, positionEpsilon);
 	}
-	
-	ContactResolver::ContactResolver(unsigned velocityIterations,
+
+	ContactResolver::ContactResolver(const unsigned velocityIterations,
 									 unsigned positionIterations,
-									 real velocityEpsilon,
-									 real positionEpsilon)
+	                                 const real velocityEpsilon,
+	                                 const real positionEpsilon)
 	{
 		setIterations(velocityIterations);
 		setEpsilon(velocityEpsilon, positionEpsilon);
 	}
 	
-	void ContactResolver::setIterations(unsigned iterations)
+	void ContactResolver::setIterations(const unsigned iterations)
 	{
 		setIterations(iterations, iterations);
 	}
 	
-	void ContactResolver::setIterations(unsigned velocityIterations,
-										unsigned positionIterations)
+	void ContactResolver::setIterations(const unsigned velocityIterations,
+	                                    const unsigned positionIterations)
 	{
 		m_velocityIterations = velocityIterations;
 		m_positionIterations = positionIterations;
 	}
 	
-	void ContactResolver::setEpsilon(real velocityEpsilon,
-									 real positionEpsilon)
+	void ContactResolver::setEpsilon(const real velocityEpsilon,
+	                                 const real positionEpsilon)
 	{
 		m_velocityEpsilon = velocityEpsilon;
 		m_positionEpsilon = positionEpsilon;
 	}
 	
 	void ContactResolver::resolveContacts(Contact *contacts,
-										  unsigned numContacts,
-										  real duration)
+	                                      const unsigned numContacts,
+	                                      const real timeDelta)
 	{
 		// Make sure we have something to do.
 		if(numContacts == 0)
@@ -56,42 +56,41 @@ namespace rum
 			return;
 		}
 		// Prepare the contacts for processing
-		prepareContacts(contacts, numContacts, duration);
+		prepareContacts(contacts, numContacts, timeDelta);
 	
 		// Resolve the interpenetration problems with the contacts.
-		adjustPositions(contacts, numContacts, duration);
+		adjustPositions(contacts, numContacts, timeDelta);
 	
 		// Resolve the velocity problems with the contacts.
-		adjustVelocities(contacts, numContacts, duration);
+		adjustVelocities(contacts, numContacts, timeDelta);
 	}
 	
 	void ContactResolver::prepareContacts(Contact* contacts,
-										  unsigned numContacts,
-										  real duration)
+	                                      const unsigned numContacts,
+	                                      const real timeDelta)
 	{
 		// Generate contact velocity and axis information.
 		Contact* lastContact = contacts + numContacts;
 		for (Contact* contact = contacts; contact < lastContact; contact++)
 		{
 			// Calculate the internal contact data (inertia, basis, etc).
-			contact->CalculateInternals(duration);
+			contact->calculateInternals(timeDelta);
 		}
 	}
 	
 	void ContactResolver::adjustVelocities(Contact *c,
-										   unsigned numContacts,
-										   real duration)
+	                                       const unsigned numContacts,
+	                                       const real timeDelta)
 	{
 		glm::vec3 velocityChange[2], rotationChange[2];
-		glm::vec3 deltaVel;
-	
+
 		// iteratively handle impacts in order of severity.
 		m_velocityIterationsUsed = 0;
 		while (m_velocityIterationsUsed < m_velocityIterations)
 		{
 			// Find contact with maximum magnitude of probable velocity change.
-			real max = m_velocityEpsilon;
-			unsigned index = numContacts;
+			auto max = m_velocityEpsilon;
+			auto index = numContacts;
 			for (unsigned i = 0; i < numContacts; i++)
 			{
 				if (c[i].m_desiredDeltaVelocity > max)
@@ -100,13 +99,13 @@ namespace rum
 					index = i;
 				}
 			}
-			if (index == numContacts) break;
+			if(index == numContacts) break;
 	
 			// Match the awake state at the contact
 			//c[index].matchAwakeState();
 	
 			// Do the resolution on the contact that came out top.
-			c[index].ApplyVelocityChange(velocityChange, rotationChange);
+			c[index].applyVelocityChange(velocityChange, rotationChange);
 	
 			// With the change in velocity of the two bodies, the update of
 			// contact velocities means that some of the relative closing
@@ -122,7 +121,7 @@ namespace rum
 					{
 						if (c[i].m_body[b] == c[index].m_body[d])
 						{
-							deltaVel = velocityChange[d] +
+							glm::vec3 deltaVel = velocityChange[d] +
 								glm::cross(rotationChange[d], c[i].m_relativeContactPosition[b]);
 	
 							// The sign of the change is negative if we're dealing
@@ -131,7 +130,7 @@ namespace rum
 								glm::transpose(c[i].m_contactToWorld) * deltaVel * 
 								static_cast<real>((b ? -1 : 1));
 								
-							c[i].CalculateDesiredDeltaVelocity(duration);
+							c[i].calculateDesiredDeltaVelocity(timeDelta);
 						}
 					}
 				}
@@ -141,21 +140,19 @@ namespace rum
 	}
 	
 	void ContactResolver::adjustPositions(Contact *c,
-										  unsigned numContacts,
-										  real duration)
+	                                      const unsigned numContacts,
+										  real timeDelta)
 	{
-		unsigned i, index;
+		unsigned i;
 		glm::vec3 linearChange[2], angularChange[2];
-		real max;
-		glm::vec3 deltaPosition;
-	
+
 		// iteratively resolve interpenetrations in order of severity.
 		m_positionIterationsUsed = 0;
 		while (m_positionIterationsUsed < m_positionIterations)
 		{
 			// Find biggest penetration
-			max = m_positionEpsilon;
-			index = numContacts;
+			auto max = m_positionEpsilon;
+			auto index = numContacts;
 			for (i = 0; i<numContacts; i++)
 			{
 				if (c[i].m_penetration > max)
@@ -170,7 +167,7 @@ namespace rum
 			//c[index].matchAwakeState();
 	
 			// Resolve the penetration.
-			c[index].ApplyPositionChange(
+			c[index].applyPositionChange(
 				linearChange,
 				angularChange,
 				max);
@@ -188,7 +185,7 @@ namespace rum
 					{
 						if (c[i].m_body[b] == c[index].m_body[d])
 						{
-							deltaPosition = linearChange[d] +
+							auto deltaPosition = linearChange[d] +
 								glm::cross(angularChange[d], c[i].m_relativeContactPosition[b]);
 	
 							// The sign of the change is positive if we're
@@ -206,7 +203,7 @@ namespace rum
 		}
 	}
 	
-	bool ContactResolver::isValid()
+	bool ContactResolver::isValid() const
 	{
 		return (m_velocityIterations > 0) &&
 			(m_positionIterations > 0) &&

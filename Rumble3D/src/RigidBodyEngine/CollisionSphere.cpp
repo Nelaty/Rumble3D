@@ -2,7 +2,7 @@
 
 namespace rum
 {
-	CollisionSphere::CollisionSphere(RigidBody* body, glm::mat4 offset, real radius) 
+	CollisionSphere::CollisionSphere(RigidBody* body, const glm::mat4& offset, const real radius) 
 		: m_radius{radius}
 	{
 		m_body = body;
@@ -10,10 +10,9 @@ namespace rum
 	}
 	
 	CollisionSphere::~CollisionSphere()
-	{
-	}
+	= default;
 
-	real CollisionSphere::GetRadius() const
+	real CollisionSphere::getRadius() const
 	{
 		return m_radius;
 	}

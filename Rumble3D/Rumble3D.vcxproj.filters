@@ -129,6 +129,12 @@
     <ClCompile Include="src\PhysicsEngineModule.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ParticleEngine\ParticleRod.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\ForceGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\R3D\RigidBodyEngine\AnchoredSpring.h">
@@ -185,12 +191,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBody.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineFwd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineRoot.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyWorld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -228,12 +228,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\ParticleEngine\ParticleDrag.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineFwd.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineRoot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\ParticleEngine\ParticleForceGenerator.h">

@@ -32,12 +32,12 @@ namespace rum
 			const CollisionPlane &plane,
 			CollisionData *data);
 
-		static unsigned CollisionDetector::boxAndSphere(
+		static unsigned boxAndSphere(
 			const CollisionBox &box,
 			const CollisionSphere &sphere,
 			CollisionData *data);
 
-		static unsigned CollisionDetector::boxAndBox(
+		static unsigned boxAndBox(
 			const CollisionBox &one,
 			const CollisionBox &two,
 			CollisionData *data);
@@ -58,7 +58,7 @@ namespace rum
 			const glm::vec3 &toCentre);
 
 		//SAT-Test, ob bzgl.einer Achse eine Überlappung stattfindet.
-		static bool CollisionDetector::tryAxis(
+		static bool tryAxis(
 			const CollisionBox &one,
 			const CollisionBox &two,
 			glm::vec3 axis,

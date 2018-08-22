@@ -14,34 +14,34 @@ namespace rum
 	public:
 		virtual ~PhysicsEngineModule();
 
-		virtual void OnBegin();
-		virtual void OnEnd();
+		virtual void onBegin();
+		virtual void onEnd();
 
 		/**
 		*  Calculate changes in the physics engine and accumulate
 		*  them in buffers.
 		*  Will not apply those changes yet.
 		*/
-		virtual void Step(const real timeDelta) = 0;
+		virtual void step(real timeDelta) = 0;
 		/**
 		*  Apply the changes as a result of the simulation.
 		*/
-		virtual void Integrate(const real timeDelta) = 0;
+		virtual void integrate(real timeDelta) = 0;
 
 		/**
 		* Reset the physics engine module to its initial state
 		*/
-		virtual void Reset() = 0;
+		virtual void reset() = 0;
 
 		/**
 		 * Enable or disable this module.
 		 */
-		void Enable(bool enabled);
+		void enable(bool enabled);
 		/**
 		 * Check if this module is currently enabled.
 		 * \return true if currently enabled.
 		 */
-		bool IsEnabled() const;
+		bool isEnabled() const;
 
 	protected:
 		explicit PhysicsEngineModule();

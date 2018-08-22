@@ -11,13 +11,11 @@ namespace rum
 	class ParticleRod :	public ParticleLink
 	{
 	public:
-		// Erzeugt einen Kontakt, um das Tau daran zu 
-		// hindern, über die Mamimallänge hinaus angespannt 
-		// zu werden, indem sich die beiden verbundenen 
-		// Teilchen zu weit voneinander entfernen.
-		unsigned int AddContact(ParticleContact* contact, unsigned int limit) const override;
-	
+		virtual ~ParticleRod();
+
 	protected:
-		real m_length; // Abstand der Teilchen;
+		explicit ParticleRod();
+
+		real m_length{}; // Abstand der Teilchen;
 	};
 }

@@ -17,7 +17,7 @@ namespace rum
 	{
 	}
 
-	unsigned int ParticleCable::AddContact(ParticleContact* contact, unsigned int limit) const
+	unsigned int ParticleCable::addContact(ParticleContact* contact, unsigned int limit) const
 	{
 		real length = currentLength();
 		if (length < m_maxLength) 
@@ -26,7 +26,7 @@ namespace rum
 		}
 		
 		contact->m_particles[0] = m_particles[0];
-		if (m_particles[1]->HasFiniteMass()) 
+		if (m_particles[1]->hasFiniteMass()) 
 		{
 			contact->m_particles[1] = m_particles[1];
 		}
@@ -36,7 +36,7 @@ namespace rum
 		}
 		
 		// Negative Kontaktnormale:
-		glm::vec3 normal = m_particles[1]->GetPosition() - m_particles[0]->GetPosition();
+		glm::vec3 normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
 		normal = glm::normalize(normal);
 	
 		contact->setContactNormal(normal);
@@ -46,12 +46,12 @@ namespace rum
 		return 1;
 	}
 	
-	void ParticleCable::SetMaxLength(real maxLength)
+	void ParticleCable::setMaxLength(real maxLength)
 	{
 		m_maxLength = maxLength;
 	}
 	
-	void ParticleCable::SetRestitution(real restitution)
+	void ParticleCable::setRestitution(real restitution)
 	{
 		m_restitution = restitution;
 	}

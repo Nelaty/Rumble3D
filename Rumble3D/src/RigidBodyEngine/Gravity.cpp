@@ -9,16 +9,15 @@ namespace rum
 	}
 	
 	Gravity::~Gravity()
-	{
-	}
+	= default;
 
-	void Gravity::UpdateForce(RigidBody* body, real duration)
+	void Gravity::updateForce(RigidBody* body, const real timeDelta)
 	{
 		if(!body->hasFiniteMass())
 		{
 			return;
 		}
 	
-		body->addForce(m_gravity * body->getMass());
+		body->addForce(m_gravity * body->getMass() * timeDelta);
 	}
 }

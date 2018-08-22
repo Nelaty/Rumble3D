@@ -18,9 +18,9 @@ namespace rum
 	{
 	}
 
-	void ParticleBuoyancy::UpdateForce(Particle* particle, real duration)
+	void ParticleBuoyancy::updateForce(Particle* particle, real duration)
 	{
-		real depth = particle->GetPosition().y;
+		real depth = particle->getPosition().y;
 		real halfMaxDepth = m_maxDepth / 2;
 	
 		// Above water surface
@@ -34,12 +34,12 @@ namespace rum
 		if (depth <= m_liquidHeight - halfMaxDepth) 
 		{
 			force.y = m_liquidDensity * m_volume * 9.81f;
-			particle->AddForce(force);
+			particle->addForce(force);
 			return;
 		}
 	
 		// Partly submerged
 		force.y = (m_liquidDensity * m_volume * 9.81 * (m_liquidHeight - depth + halfMaxDepth) / m_maxDepth);
-		particle->AddForce(force);
+		particle->addForce(force);
 	}
 }

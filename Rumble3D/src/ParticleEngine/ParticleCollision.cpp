@@ -31,7 +31,7 @@ namespace rum
 		contact->m_particles[1] = m_particles[1];
 	
 		// Negative Kontaktnormale:
-		glm::vec3 normal = m_particles[1]->GetPosition() - m_particles[0]->GetPosition();
+		glm::vec3 normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
 		normal *= (-1);
 		normal = glm::normalize(normal);
 	

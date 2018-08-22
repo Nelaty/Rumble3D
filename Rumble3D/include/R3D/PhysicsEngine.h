@@ -21,50 +21,50 @@ namespace rum
 		/** 
 		 * Update physic modules. 
 		 */
-		void Update(const real timeDelta);
+		void update(real timeDelta);
 
 		/** 
 		 * Try to find an existing module.
 		 * \return The found module or nullptr if the module doesn't exist.
 		 */
-		PhysicsEngineModule* FindModule(const std::string& key) const;
+		PhysicsEngineModule* findModule(const std::string& key) const;
 
 		/**
 		 * Check if a module with the given key is already registered.
 		 * \return True if module is registered.
 		 */
-		bool IsModuleRegistered(const std::string& key) const;
+		bool isModuleRegistered(const std::string& key) const;
 
 		/** 
 		 * Register a new physics module with a given key. Fails, when a
 		 * module with the same key is already registered.
 		 * \return The registered module or an existing module with the same key.
 		 */
-		PhysicsEngineModule* RegisterModule(const std::string& key, PhysicsEngineModule* module);
+		PhysicsEngineModule* registerModule(const std::string& key, PhysicsEngineModule* module);
 
-		/** 
+		/**
 		 * Unregister an existing physics module. 
 		 * \return The unregistered module or nullptr if the module doesn't exist.
 		 */
-		PhysicsEngineModule* UnregisterModule(const std::string& key);		
+		PhysicsEngineModule* unregisterModule(const std::string& key);		
 
 	private:
 		/** 
 		 * Calls OnBegin function on every module. 
 		 */
-		void OnBegin();
+		void onBegin();
 		/** 
 		 * Calls OnEnd function on every module. 
 		 */
-		void OnEnd();
+		void onEnd();
 		/** 
 		 * Calls Step function on every module. 
 		 */
-		void Step(const real timeDelta);
+		void step(real timeDelta);
 		/** 
 		 * Calls Integrate function on every module. 
 		 */
-		void Integrate(const real timeDelta);
+		void integrate(real timeDelta);
 
 		std::map<std::string, PhysicsEngineModule*> m_modules;
 	};
@@ -73,7 +73,7 @@ namespace rum
 	class TestClass
 	{
 	public:
-		int Test()
+		static int test()
 		{
 			return 3;
 		}

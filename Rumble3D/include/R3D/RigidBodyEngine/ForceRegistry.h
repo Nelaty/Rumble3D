@@ -11,28 +11,30 @@ namespace rum
 	class ForceRegistry
 	{
 	public:
-		// Registriert ein Paar aus Teilchen und Kraftgenerator, der
-		// auf dem Teilchen wirkt.
-		void Add(RigidBody * rigidBody, ForceGenerator * fg);
-		// Löscht einen Eintrag aus der Registry.
-		void Remove(RigidBody * rigidBody, ForceGenerator * fg);
-		// Löscht alle Einträge aus der Registry.
-		void Clear();
-		// Ruft alle Kraft-Generatoren auf, so dass diese die Kräfte
-		// der zugehörenden Teilchen aktualisieren können.
-		void UpdateForces(real duration);
-
-	protected:
-		// Ein Eintrag in der Registry:
-		struct ForceRegistrationEntry 
+		/** A entry of the ForceRegistry. */
+		struct ForceRegistrationEntry
 		{
-			RigidBody * rigidBody;
-			ForceGenerator * forceGenerator;
+			RigidBody* m_rigidBody;
+			ForceGenerator* m_forceGenerator;
 		};
 
-		// Die Registry:
-		typedef std::vector<ForceRegistrationEntry> Registry;
-		Registry registrations;
+		using Registry = std::vector<ForceRegistrationEntry>;
 
+		explicit ForceRegistry();
+		~ForceRegistry();
+
+		// Registriert ein Paar aus Teilchen und Kraftgenerator, der
+		// auf dem Teilchen wirkt.
+		void registerForce(RigidBody* rigidBody, ForceGenerator * fg);
+		// Löscht einen Eintrag aus der Registry.
+		void unregisterForce(RigidBody* rigidBody, ForceGenerator * fg);
+		// Löscht alle Einträge aus der Registry.
+		void clear();
+		// Ruft alle Kraft-Generatoren auf, so dass diese die Kräfte
+		// der zugehörenden Teilchen aktualisieren können.
+		void updateForces(real duration);
+
+	protected:	
+		Registry m_registrations;
 	};
 }

@@ -1,16 +1,15 @@
 #include "R3D/RigidBodyEngine/BoundingSphere.h"
 
-#define _USE_MATH_DEFINES
-#include <math.h>
+#include <corecrt_math_defines.h>
+
 #include <glm/gtx/norm.hpp>
 #include <glm/gtc/constants.hpp>
 
 namespace rum
 {
 	BoundingSphere::BoundingSphere()
-	{
-	}
-	
+	= default;
+
 	BoundingSphere::BoundingSphere(const glm::vec3 & center, real radius)
 		: m_center(center), 
 		m_radius(radius)
@@ -19,9 +18,9 @@ namespace rum
 	
 	BoundingSphere::BoundingSphere(const BoundingSphere & one, const BoundingSphere & two)
 	{
-		glm::vec3 centerOffset = two.m_center - one.m_center;
-		real distance = glm::length2(centerOffset);
-		real radiusDifference = two.m_radius - one.m_radius;
+		const auto centerOffset = two.m_center - one.m_center;
+		auto distance = glm::length2(centerOffset);
+		const auto radiusDifference = two.m_radius - one.m_radius;
 	
 		// Liegen die Kugeln ineinander?
 		if ((radiusDifference * radiusDifference) >= distance)
@@ -53,27 +52,22 @@ namespace rum
 	}
 	
 	BoundingSphere::~BoundingSphere()
-	{
-	}
+	= default;
 
-	bool BoundingSphere::Overlaps(const BoundingSphere* other) const
+	bool BoundingSphere::overlaps(const BoundingSphere* other) const
 	{
-		real distanceSquared = glm::length2(m_center - other->m_center);
+		const auto distanceSquared = glm::length2(m_center - other->m_center);
 		return distanceSquared < ((m_radius + other->m_radius) * (m_radius + other->m_radius));
 	}
 	
-	real BoundingSphere::GetSize() const
+	real BoundingSphere::getVolume() const
 	{
 		return static_cast<real>(1.333333) * M_PI * m_radius * m_radius * m_radius;
 	}
 	
-	real BoundingSphere::GetGrowth(const BoundingSphere& other) const
+	real BoundingSphere::getGrowth(const BoundingSphere& other) const
 	{
-		BoundingSphere newSphere(*this, other);
+		const BoundingSphere newSphere(*this, other);
 		return newSphere.m_radius*newSphere.m_radius - m_radius*m_radius;
 	}
 }
-
-#ifdef _USE_MATH_DEFINES
-#undef _USE_MATH_DEFINES
-#endif // _USE_MATH_DEFINES

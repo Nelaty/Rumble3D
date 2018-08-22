@@ -12,7 +12,7 @@ namespace rum
 		explicit ParticleBungee(Particle* other, real springConstant, real restLength);
 		~ParticleBungee();
 
-		virtual void UpdateForce(Particle* particle, real duration);
+		virtual void updateForce(Particle* particle, real duration);
 
 	protected:
 		Particle* m_other; //das andere Teilchen.
