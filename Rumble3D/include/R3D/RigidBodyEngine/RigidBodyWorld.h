@@ -1,64 +1,58 @@
 #pragma once
 #include "R3D/PhysicsEngineModule.h"
-#include "R3D/Common/Precision.h"
-#include "ForceRegistry.h"
+#include "R3D/Common/Common.h"
 
-#include <list>
+#include "R3D/RigidBodyEngine/ForceRegistry.h"
+
+#include <vector>
 
 namespace rum 
 {
 	class ForceGenerator;
 	class RigidBody;
-	class CollisionBox;
-	class CollisionPrimitive;
-	class CollisionData;
-	class Contact;
-	class ContactResolver;
 
-	class RigidBodyWorld : public PhysicsEngineModule
+	class RigidBodyEngineCI;
+
+	class R3D_DECLSPEC RigidBodyWorld : public PhysicsEngineModule
 	{
 	public:
-		using RigidBodies = std::list<RigidBody*>;
-		using CollisionBoxes = std::list<CollisionBox*>;
-		using CollisionPrimitives = std::list<CollisionPrimitive*>;
+		using RigidBodies = std::vector<RigidBody*>;
 		
-		RigidBodyWorld(unsigned maxContacts, unsigned iterations);
+		RigidBodyWorld();
 		~RigidBodyWorld();
 
-		void integrate(real timeDelta) override;
+		/** Set the computation interface, which simulates the rigid bodies. */
+		void setComputationInterface(RigidBodyEngineCI* computationInterface);
+		/** Get the currently used computation interface. */
+		IComputationInterface* getComputationInterface() const override;
 
-		/* Add and unregisterForce rigid bodies */
-		void addRigidBody(RigidBody* rb);
-		void removeRigidBody(RigidBody* rb);
-		void removeAllRigidBodies();
-		
-		/* Add and unregisterForce force generators */
-		void addForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator);
-		void removeForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator);
-		void removeAllForceGenerators();
+		/** Register a new rigid body, which should be simulated. */
+		void registerRigidBody(RigidBody* rb);
+		/** Unregister an already registered rigid body. */
+		bool unregisterRigidBody(RigidBody* rb);
+		/** Unregister all registered rigid bodies. */
+		void unregisterAllRigidBodies();
 
-		void addCollisionBox(CollisionBox* box);
-		void addCollisionPrimitive(CollisionPrimitive* primitive);
-		// um Kraftgeneratoren an Teilchen binden zu können.
-		ForceRegistry& getRigidBodyForceRegistry();
+		/** Get all currently registered rigid bodies. */
+		RigidBodies& getRigidBodies();
+		/** Get all currently registered rigid bodies. */
+		const RigidBodies& getRigidBodies() const;
 
-		// Die Engine:
-		void startFrame();
-		void runPhysics(real timeDelta, unsigned & tmp);
+		/** 
+		 * Get the force registry, which holds all currently active force
+		 * generators.
+		 */
+		ForceRegistry& getForceRegistry();
+		/**
+		* Get the force registry, which holds all currently active force
+		* generators.
+		*/
+		const ForceRegistry& getForceRegistry() const;
 
 	private:
+		RigidBodyEngineCI* m_computationInterface{};
+
 		RigidBodies m_rigidBodies;
-		CollisionBoxes m_collisionBoxes;
-		CollisionPrimitives m_collisionPrimitives;
-
-		ForceRegistry m_registry;
-		CollisionData* m_collisionData;
-		ContactResolver* m_resolver;
-
-		Contact* m_contacts;
-		unsigned m_maxContacts;
-		bool m_calculateIterations = true; // true: die Klasse berechnet Anzahl Iterationen.
-		unsigned m_iterations; // Für den ParticleContactResolver.
+		ForceRegistry m_forceRegistry;
 	};
-
 }

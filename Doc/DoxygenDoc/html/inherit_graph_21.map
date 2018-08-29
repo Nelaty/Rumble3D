@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrum_1_1_physics_engine_module.html" title="rum::PhysicsEngineModule" alt="" coords="5,31,187,57"/>
-<area shape="rect" id="node2" href="$classrum_1_1_particle_world.html" title="rum::ParticleWorld" alt="" coords="242,5,373,32"/>
-<area shape="rect" id="node3" href="$classrum_1_1_rigid_body_world.html" title="rum::RigidBodyWorld" alt="" coords="235,56,380,83"/>
+<area shape="rect" id="node1" href="$classrum_1_1_i_narrow_phase_filter.html" title="rum::INarrowPhaseFilter" alt="" coords="5,5,167,32"/>
+<area shape="rect" id="node2" href="$classrum_1_1_narrow_phase_filter.html" title="rum::NarrowPhaseFilter" alt="" coords="215,5,373,32"/>
 </map>

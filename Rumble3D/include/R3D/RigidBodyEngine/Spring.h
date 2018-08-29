@@ -1,14 +1,16 @@
 #pragma once
-#include "ForceGenerator.h"
+#include "R3D/RigidBodyEngine/ForceGenerator.h"
 
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
+
 #include <glm/glm.hpp>
 
 namespace rum
 {
 	class RigidBody;
 
-	class Spring : public ForceGenerator
+	class R3D_DECLSPEC Spring : public ForceGenerator
 	{
 	public:
 		Spring(const glm::vec3& localConnectionPoint,
@@ -17,7 +19,7 @@ namespace rum
 			   real springConstant,
 			   real restLength);
 
-		virtual void updateForce(RigidBody* body, real duration) override;
+		void updateForce(RigidBody* body, real duration) override;
 
 	protected:
 		glm::vec3 m_connectionPoint; // in lokalen Koordinaten des Körpers

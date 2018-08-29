@@ -1,4 +1,4 @@
 <map id="rum::ParticleConstraint" name="rum::ParticleConstraint">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_contact_generator.html" title="{rum::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ AddContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,248,204,355"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle.html" title="{rum::Particle\n||+ Particle()\l+ ~Particle()\l+ SetMass()\l+ GetMass()\l+ SetInverseMass()\l+ GetInverseMass()\l+ HasFiniteMass()\l+ SetPosition()\l+ SetPosition()\l+ GetPosition()\land 14 more...\l}" alt="" coords="228,189,363,413"/>
+<area shape="rect" id="node2" href="$classrum_1_1_particle_contact_generator.html" title="{rum::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ addContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,248,204,355"/>
+<area shape="rect" id="node3" href="$classrum_1_1_particle.html" title="{rum::Particle\n||+ Particle()\l+ ~Particle()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ setPosition()\l+ setPosition()\l+ getPosition()\land 14 more...\l}" alt="" coords="228,189,360,413"/>
 </map>

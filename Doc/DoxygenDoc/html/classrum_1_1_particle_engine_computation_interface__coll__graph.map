@@ -1,0 +1,5 @@
+<map id="rum::ParticleEngineComputationInterface" name="rum::ParticleEngineComputationInterface">
+<area shape="rect" id="node2" href="$classrum_1_1_i_computation_interface.html" title="{rum::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,360,183,525"/>
+<area shape="rect" id="node3" href="$classrum_1_1_particle_world.html" title="{rum::ParticleWorld\n||+ ParticleWorld()\l+ ~ParticleWorld()\l+ setComputationInterface()\l+ getComputationInterface()\l+ addParticle()\l+ removeParticle()\l+ removeAllParticles()\l+ addContactGenerator()\l+ removeContactGenerator()\l+ removeAllContactGenerators()\l+ getParticleForceRegistry()\l}" alt="" coords="207,331,413,555"/>
+<area shape="rect" id="node4" href="$classrum_1_1_physics_engine_module.html" title="{rum::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="219,145,401,281"/>
+</map>

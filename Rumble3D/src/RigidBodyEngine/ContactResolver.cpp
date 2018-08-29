@@ -15,9 +15,10 @@ namespace rum
 	}
 
 	ContactResolver::ContactResolver(const unsigned velocityIterations,
-									 unsigned positionIterations,
+	                                 const unsigned positionIterations,
 	                                 const real velocityEpsilon,
 	                                 const real positionEpsilon)
+		: m_positionIterations{positionIterations}
 	{
 		setIterations(velocityIterations);
 		setEpsilon(velocityEpsilon, positionEpsilon);

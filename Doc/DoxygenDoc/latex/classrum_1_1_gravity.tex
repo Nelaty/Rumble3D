@@ -19,23 +19,24 @@ Collaboration diagram for rum\+:\+:Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=256pt]{classrum_1_1_gravity__coll__graph}
+\includegraphics[width=253pt]{classrum_1_1_gravity__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrum_1_1_gravity_a9fca05b6d906fec4c40507b0c738dff8}{Gravity} (const glm\+::vec3 \&gravity)
+\mbox{\hyperlink{classrum_1_1_gravity_a9fca05b6d906fec4c40507b0c738dff8}{Gravity}} (const glm\+::vec3 \&gravity)
 \item 
-\hyperlink{classrum_1_1_gravity_a67fc63876df40007e8c7bde5e8a72569}{$\sim$\+Gravity} ()
+\mbox{\hyperlink{classrum_1_1_gravity_a67fc63876df40007e8c7bde5e8a72569}{$\sim$\+Gravity}} ()
 \item 
-virtual void \hyperlink{classrum_1_1_gravity_a721c721904536378636143b21486ea2c}{Update\+Force} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$body, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration) override
+void \mbox{\hyperlink{classrum_1_1_gravity_abf5ce00e3e2e924a086ada82fc9d1404}{update\+Force}} (\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} time\+Delta) override
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-glm\+::vec3 \hyperlink{classrum_1_1_gravity_a82c9f64363024c45e96ba851a612613b}{m\+\_\+gravity}
+glm\+::vec3 \mbox{\hyperlink{classrum_1_1_gravity_a82c9f64363024c45e96ba851a612613b}{m\+\_\+gravity}}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
@@ -43,26 +44,26 @@ glm\+::vec3 \hyperlink{classrum_1_1_gravity_a82c9f64363024c45e96ba851a612613b}{m
 \index{rum\+::\+Gravity@{rum\+::\+Gravity}!Gravity@{Gravity}}
 \index{Gravity@{Gravity}!rum\+::\+Gravity@{rum\+::\+Gravity}}
 \subsubsection{\texorpdfstring{Gravity()}{Gravity()}}
-{\footnotesize\ttfamily rum\+::\+Gravity\+::\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily rum\+::\+Gravity\+::\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \mbox{\Hypertarget{classrum_1_1_gravity_a67fc63876df40007e8c7bde5e8a72569}\label{classrum_1_1_gravity_a67fc63876df40007e8c7bde5e8a72569}} 
 \index{rum\+::\+Gravity@{rum\+::\+Gravity}!````~Gravity@{$\sim$\+Gravity}}
 \index{````~Gravity@{$\sim$\+Gravity}!rum\+::\+Gravity@{rum\+::\+Gravity}}
 \subsubsection{\texorpdfstring{$\sim$\+Gravity()}{~Gravity()}}
-{\footnotesize\ttfamily rum\+::\+Gravity\+::$\sim$\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily rum\+::\+Gravity\+::$\sim$\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classrum_1_1_gravity_a721c721904536378636143b21486ea2c}\label{classrum_1_1_gravity_a721c721904536378636143b21486ea2c}} 
-\index{rum\+::\+Gravity@{rum\+::\+Gravity}!Update\+Force@{Update\+Force}}
-\index{Update\+Force@{Update\+Force}!rum\+::\+Gravity@{rum\+::\+Gravity}}
-\subsubsection{\texorpdfstring{Update\+Force()}{UpdateForce()}}
-{\footnotesize\ttfamily void rum\+::\+Gravity\+::\+Update\+Force (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{body,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+\mbox{\Hypertarget{classrum_1_1_gravity_abf5ce00e3e2e924a086ada82fc9d1404}\label{classrum_1_1_gravity_abf5ce00e3e2e924a086ada82fc9d1404}} 
+\index{rum\+::\+Gravity@{rum\+::\+Gravity}!update\+Force@{update\+Force}}
+\index{update\+Force@{update\+Force}!rum\+::\+Gravity@{rum\+::\+Gravity}}
+\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+{\footnotesize\ttfamily void rum\+::\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{classrum_1_1_force_generator_a6b038c9a39e4cf64b2dcf2741804a824}{rum\+::\+Force\+Generator}.
+Reimplemented from \mbox{\hyperlink{classrum_1_1_force_generator_aee5f1dc03ba285b5122fa2a8ba790230}{rum\+::\+Force\+Generator}}.
 
 
 
@@ -77,5 +78,5 @@ Implements \hyperlink{classrum_1_1_force_generator_a6b038c9a39e4cf64b2dcf2741804
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_gravity_8h}{Gravity.\+h}\item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_gravity_8cpp}{Gravity.\+cpp}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_gravity_8h}{Gravity.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_gravity_8cpp}{Gravity.\+cpp}}\end{DoxyCompactItemize}

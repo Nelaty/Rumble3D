@@ -16,28 +16,28 @@ Collaboration diagram for rum\+:\+:Particle\+Force\+Registry\+:\nopagebreak
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structrum_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}
+struct \mbox{\hyperlink{structrum_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classrum_1_1_particle_force_registry_a5465cbeb57e7f7d69a76d86650a96a1d}{Add} (\hyperlink{classrum_1_1_particle}{Particle} $\ast$particle, \hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator} $\ast$fg)
+void \mbox{\hyperlink{classrum_1_1_particle_force_registry_a9297d30559870d6a33a459430d2ac757}{add}} (\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$fg)
 \item 
-void \hyperlink{classrum_1_1_particle_force_registry_abe34dbb3647802fcf07160fcbd1ad04b}{Remove} (\hyperlink{classrum_1_1_particle}{Particle} $\ast$particle, \hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator} $\ast$fg)
+void \mbox{\hyperlink{classrum_1_1_particle_force_registry_a326fe2b591d058a3feea1effa5ac3a70}{remove}} (\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$fg)
 \item 
-void \hyperlink{classrum_1_1_particle_force_registry_a24e4af625395c40b5f50c7efaf5ee028}{Clear} ()
+void \mbox{\hyperlink{classrum_1_1_particle_force_registry_a856ccf8959632accfbec1abf67813b71}{clear}} ()
 \item 
-void \hyperlink{classrum_1_1_particle_force_registry_a079cef854e8840d8c2690e4c0af3c9fb}{Update\+Forces} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+void \mbox{\hyperlink{classrum_1_1_particle_force_registry_a0c7ba8f4e4572243079e4e9758080aa0}{update\+Forces}} (\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} duration)
 \end{DoxyCompactItemize}
 \subsection*{Protected Types}
 \begin{DoxyCompactItemize}
 \item 
-typedef std\+::vector$<$ \hyperlink{structrum_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry} $>$ \hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{Registry}
+typedef std\+::vector$<$ \mbox{\hyperlink{structrum_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}} $>$ \mbox{\hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{Registry}}
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{Registry} \hyperlink{classrum_1_1_particle_force_registry_a3ddde857faa8f9c610cdfc119c152b01}{registrations}
+\mbox{\hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{Registry}} \mbox{\hyperlink{classrum_1_1_particle_force_registry_a650e1205958b828c0d501b812b35212a}{m\+\_\+registrations}}
 \end{DoxyCompactItemize}
 
 
@@ -46,47 +46,47 @@ typedef std\+::vector$<$ \hyperlink{structrum_1_1_particle_force_registry_1_1_pa
 \index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!Registry@{Registry}}
 \index{Registry@{Registry}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
 \subsubsection{\texorpdfstring{Registry}{Registry}}
-{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{structrum_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}$>$ \hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{rum\+::\+Particle\+Force\+Registry\+::\+Registry}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{structrum_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}}$>$ \mbox{\hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{rum\+::\+Particle\+Force\+Registry\+::\+Registry}}\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a5465cbeb57e7f7d69a76d86650a96a1d}\label{classrum_1_1_particle_force_registry_a5465cbeb57e7f7d69a76d86650a96a1d}} 
-\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!Add@{Add}}
-\index{Add@{Add}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Add()}{Add()}}
-{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::\+Add (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{particle,  }\item[{\hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator} $\ast$}]{fg }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a9297d30559870d6a33a459430d2ac757}\label{classrum_1_1_particle_force_registry_a9297d30559870d6a33a459430d2ac757}} 
+\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!add@{add}}
+\index{add@{add}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a24e4af625395c40b5f50c7efaf5ee028}\label{classrum_1_1_particle_force_registry_a24e4af625395c40b5f50c7efaf5ee028}} 
-\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!Clear@{Clear}}
-\index{Clear@{Clear}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Clear()}{Clear()}}
-{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a856ccf8959632accfbec1abf67813b71}\label{classrum_1_1_particle_force_registry_a856ccf8959632accfbec1abf67813b71}} 
+\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!clear@{clear}}
+\index{clear@{clear}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classrum_1_1_particle_force_registry_abe34dbb3647802fcf07160fcbd1ad04b}\label{classrum_1_1_particle_force_registry_abe34dbb3647802fcf07160fcbd1ad04b}} 
-\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!Remove@{Remove}}
-\index{Remove@{Remove}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Remove()}{Remove()}}
-{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{particle,  }\item[{\hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator} $\ast$}]{fg }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a326fe2b591d058a3feea1effa5ac3a70}\label{classrum_1_1_particle_force_registry_a326fe2b591d058a3feea1effa5ac3a70}} 
+\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!remove@{remove}}
+\index{remove@{remove}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{classrum_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a079cef854e8840d8c2690e4c0af3c9fb}\label{classrum_1_1_particle_force_registry_a079cef854e8840d8c2690e4c0af3c9fb}} 
-\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!Update\+Forces@{Update\+Forces}}
-\index{Update\+Forces@{Update\+Forces}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Update\+Forces()}{UpdateForces()}}
-{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::\+Update\+Forces (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a0c7ba8f4e4572243079e4e9758080aa0}\label{classrum_1_1_particle_force_registry_a0c7ba8f4e4572243079e4e9758080aa0}} 
+\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!update\+Forces@{update\+Forces}}
+\index{update\+Forces@{update\+Forces}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{update\+Forces()}{updateForces()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Force\+Registry\+::update\+Forces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}}]{duration }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a3ddde857faa8f9c610cdfc119c152b01}\label{classrum_1_1_particle_force_registry_a3ddde857faa8f9c610cdfc119c152b01}} 
-\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!registrations@{registrations}}
-\index{registrations@{registrations}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
-\subsubsection{\texorpdfstring{registrations}{registrations}}
-{\footnotesize\ttfamily \hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{Registry} rum\+::\+Particle\+Force\+Registry\+::registrations\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classrum_1_1_particle_force_registry_a650e1205958b828c0d501b812b35212a}\label{classrum_1_1_particle_force_registry_a650e1205958b828c0d501b812b35212a}} 
+\index{rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}!m\+\_\+registrations@{m\+\_\+registrations}}
+\index{m\+\_\+registrations@{m\+\_\+registrations}!rum\+::\+Particle\+Force\+Registry@{rum\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{m\+\_\+registrations}{m\_registrations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_particle_force_registry_a63b7b5a4c79dafe5b3658505c7ac1163}{Registry}} rum\+::\+Particle\+Force\+Registry\+::m\+\_\+registrations\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\hyperlink{_particle_force_registry_8h}{Particle\+Force\+Registry.\+h}\item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\hyperlink{_particle_force_registry_8cpp}{Particle\+Force\+Registry.\+cpp}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8h}{Particle\+Force\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8cpp}{Particle\+Force\+Registry.\+cpp}}\end{DoxyCompactItemize}

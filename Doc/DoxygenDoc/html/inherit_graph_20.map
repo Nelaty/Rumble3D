@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrum_1_1_physics_engine.html" title="rum::PhysicsEngine" alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node1" href="$classrum_1_1_i_narrow_phase_algorithm.html" title="rum::INarrowPhaseAlgorithm" alt="" coords="5,56,192,83"/>
+<area shape="rect" id="node2" href="$classrum_1_1_i_box_box_narrow_algorithm.html" title="rum::IBoxBoxNarrowAlgorithm" alt="" coords="249,5,445,32"/>
+<area shape="rect" id="node4" href="$classrum_1_1_i_box_sphere_narrow_algorithm.html" title="rum::IBoxSphereNarrowAlgorithm" alt="" coords="240,56,455,83"/>
+<area shape="rect" id="node6" href="$classrum_1_1_i_sphere_sphere_narrow_algorithm.html" title="rum::ISphereSphereNarrow\lAlgorithm" alt="" coords="259,107,436,149"/>
+<area shape="rect" id="node3" href="$classrum_1_1_box_box_narrow_algorithm.html" title="rum::BoxBoxNarrowAlgorithm" alt="" coords="521,5,714,32"/>
+<area shape="rect" id="node5" href="$classrum_1_1_box_sphere_narrow_algorithm.html" title="rum::BoxSphereNarrowAlgorithm" alt="" coords="512,56,723,83"/>
+<area shape="rect" id="node7" href="$classrum_1_1_sphere_sphere_narrow_algorithm.html" title="rum::SphereSphereNarrowAlgorithm" alt="" coords="503,115,732,141"/>
 </map>

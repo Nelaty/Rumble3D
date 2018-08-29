@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <vector>
@@ -10,7 +11,7 @@ namespace rum
 
 	// Speichert alle Kraft-Generatoren und die Teilchen, auf denen
 	// sie wirken.
-	class ParticleForceRegistry
+	class R3D_DECLSPEC ParticleForceRegistry
 	{	
 	public:
 		// Registriert ein Paar aus Teilchen und Kraftgenerator, der

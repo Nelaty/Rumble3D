@@ -1,0 +1,3 @@
+<map id="rum::INarrowPhaseFilter" name="rum::INarrowPhaseFilter">
+<area shape="rect" id="node2" href="$classrum_1_1_narrow_phase_filter.html" title="{rum::NarrowPhaseFilter\n|# m_iterations\l# m_collisionsMax\l# m_collisionData\l# m_boxBox\l# m_boxSphere\l# m_sphereSphere\l|+ NarrowPhaseFilter()\l+ ~NarrowPhaseFilter()\l+ generateCollisionData()\l+ setBoxBoxAlgorithm()\l+ setBoxSphereAlgorithm()\l+ setSphereSphereAlgorithm()\l+ generateCollisionData()\l+ generateCollisionData()\l+ generateCollisionData()\l+ generateCollisionData()\l# init()\l# initCollisionData()\l# initAlgorithms()\l}" alt="" coords="5,219,203,545"/>
+</map>

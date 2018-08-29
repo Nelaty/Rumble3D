@@ -1,15 +1,17 @@
 #pragma once
-#include "RigidBody.h"
+#include "R3D/Common/Common.h"
 
 namespace rum
 {
+	class RigidBody;
+
 	struct PotentialContacts
 	{
 		RigidBody* m_bodies[2];
 	};
 	
 	template<class BoundingVolumeClass>
-	class BVHNode
+	class R3D_DECLSPEC BVHNode
 	{
 	public:
 		BVHNode();
@@ -18,6 +20,7 @@ namespace rum
 			RigidBody * body = nullptr);
 		~BVHNode();
 
+		/** Check if this node is a leaf node (= has no child nodes) */
 		bool isLeaf() const;
 		// Identifiziert die möglichen Kontakte von diesem Knoten abwärts
 		// im Baum. Diese werden in das array contacts geschrieben (bis
@@ -37,14 +40,13 @@ namespace rum
 		void recalculateBoundingVolume();
 		void insert(RigidBody* newBody, const BoundingVolumeClass &newVolume);
 
-		// Kindknoten dieses Knotens.
-		BVHNode* m_children[2];
-		// Bounding Volume, das alle Kinder umfasst.
-		BoundingVolumeClass m_volume;
-		// Festkörper an diesem Knoten. Nur bei Blättern
-		// gesetzt, sonst NULL.
-		RigidBody* m_body;
-		// Elternknoten im Baum:
 		BVHNode* m_parent;
+		BVHNode* m_children[2];
+
+		// Festkörper an diesem Knoten. Nur bei Blättern gesetzt, sonst NULL.
+		RigidBody* m_body;
+	
+		// Bounding Volume, das alle Kinder umfasst.
+		BoundingVolumeClass m_volume;	
 	};
 }

@@ -1,4 +1,5 @@
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
+#include "R3D/Utility/InertiaTensorGenerator.h"
 
 namespace rum
 {
@@ -15,5 +16,10 @@ namespace rum
 	real CollisionSphere::getRadius() const
 	{
 		return m_radius;
+	}
+
+	void CollisionSphere::generateContact(INarrowPhaseFilter* filter, CollisionPrimitive* other)
+	{
+		other->generateContact(filter, this);
 	}
 }

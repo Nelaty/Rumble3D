@@ -25,23 +25,46 @@ Collaboration diagram for rum\+:\+:Force\+Generator\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \hyperlink{classrum_1_1_force_generator_a6b038c9a39e4cf64b2dcf2741804a824}{Update\+Force} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$body, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)=0
+virtual \mbox{\hyperlink{classrum_1_1_force_generator_a9b332008be5cec3cdef03fa03077a54e}{$\sim$\+Force\+Generator}} ()
+\item 
+virtual void \mbox{\hyperlink{classrum_1_1_force_generator_aee5f1dc03ba285b5122fa2a8ba790230}{update\+Force}} (\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} duration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrum_1_1_force_generator_aa96fa405b09b0f608c42b8c1db971c7c}{Force\+Generator}} ()
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_force_generator_a9b332008be5cec3cdef03fa03077a54e}\label{classrum_1_1_force_generator_a9b332008be5cec3cdef03fa03077a54e}} 
+\index{rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}!````~Force\+Generator@{$\sim$\+Force\+Generator}}
+\index{````~Force\+Generator@{$\sim$\+Force\+Generator}!rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}}
+\subsubsection{\texorpdfstring{$\sim$\+Force\+Generator()}{~ForceGenerator()}}
+{\footnotesize\ttfamily rum\+::\+Force\+Generator\+::$\sim$\+Force\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classrum_1_1_force_generator_aa96fa405b09b0f608c42b8c1db971c7c}\label{classrum_1_1_force_generator_aa96fa405b09b0f608c42b8c1db971c7c}} 
+\index{rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}!Force\+Generator@{Force\+Generator}}
+\index{Force\+Generator@{Force\+Generator}!rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}}
+\subsubsection{\texorpdfstring{Force\+Generator()}{ForceGenerator()}}
+{\footnotesize\ttfamily rum\+::\+Force\+Generator\+::\+Force\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classrum_1_1_force_generator_a6b038c9a39e4cf64b2dcf2741804a824}\label{classrum_1_1_force_generator_a6b038c9a39e4cf64b2dcf2741804a824}} 
-\index{rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}!Update\+Force@{Update\+Force}}
-\index{Update\+Force@{Update\+Force}!rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}}
-\subsubsection{\texorpdfstring{Update\+Force()}{UpdateForce()}}
-{\footnotesize\ttfamily virtual void rum\+::\+Force\+Generator\+::\+Update\+Force (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{body,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classrum_1_1_force_generator_aee5f1dc03ba285b5122fa2a8ba790230}\label{classrum_1_1_force_generator_aee5f1dc03ba285b5122fa2a8ba790230}} 
+\index{rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}!update\+Force@{update\+Force}}
+\index{update\+Force@{update\+Force}!rum\+::\+Force\+Generator@{rum\+::\+Force\+Generator}}
+\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+{\footnotesize\ttfamily void rum\+::\+Force\+Generator\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Implemented in \hyperlink{classrum_1_1_spring_ac9c58b1740f347199669132722b998af}{rum\+::\+Spring}, \hyperlink{classrum_1_1_anchored_spring_a7fd4b23ad409fbb678ecace8e99fed68}{rum\+::\+Anchored\+Spring}, \hyperlink{classrum_1_1_directed_force_a79b53d849f80fb69ca1fa42ea43829b4}{rum\+::\+Directed\+Force}, and \hyperlink{classrum_1_1_gravity_a721c721904536378636143b21486ea2c}{rum\+::\+Gravity}.
+Reimplemented in \mbox{\hyperlink{classrum_1_1_spring_a31f5e48beb95ebc394ff2cb1dd813708}{rum\+::\+Spring}}, \mbox{\hyperlink{classrum_1_1_anchored_spring_aeb146ac725ea6f9ee9c52b322ba70452}{rum\+::\+Anchored\+Spring}}, \mbox{\hyperlink{classrum_1_1_gravity_abf5ce00e3e2e924a086ada82fc9d1404}{rum\+::\+Gravity}}, and \mbox{\hyperlink{classrum_1_1_directed_force_af775ae939b728dadcfcfa6d6719c6015}{rum\+::\+Directed\+Force}}.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_force_generator_8h}{Force\+Generator.\+h}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_force_generator_8h}{Force\+Generator.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_force_generator_8cpp}{Force\+Generator.\+cpp}}\end{DoxyCompactItemize}

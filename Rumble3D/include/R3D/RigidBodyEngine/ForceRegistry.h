@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <vector>
@@ -8,7 +9,7 @@ namespace rum
 	class RigidBody;
 	class ForceGenerator;
 
-	class ForceRegistry
+	class R3D_DECLSPEC ForceRegistry
 	{
 	public:
 		/** A entry of the ForceRegistry. */

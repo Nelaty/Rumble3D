@@ -25,48 +25,67 @@ Collaboration diagram for rum\+:\+:Particle\+Link\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual unsigned int \hyperlink{classrum_1_1_particle_link_a86e7dbac23cd26fce627bf5ed1fae6f5}{Add\+Contact} (\hyperlink{classrum_1_1_particle_contact}{Particle\+Contact} $\ast$contact, unsigned int limit) const =0
+virtual \mbox{\hyperlink{classrum_1_1_particle_link_a93add8689cecd885bfe9652d3d9dc440}{$\sim$\+Particle\+Link}} ()
 \item 
-void \hyperlink{classrum_1_1_particle_link_a87021898f5a8ec8f5764c747c8117544}{set\+Particles} (\hyperlink{classrum_1_1_particle}{Particle} $\ast$particle0, \hyperlink{classrum_1_1_particle}{Particle} $\ast$particle1=0)
+unsigned int \mbox{\hyperlink{classrum_1_1_particle_link_a0da76619bd1d2ae04d5f8173c2883ff2}{add\+Contact}} (\mbox{\hyperlink{classrum_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned int limit) const override=0
+\item 
+void \mbox{\hyperlink{classrum_1_1_particle_link_a9c9c83b1752a6b7e8d95658218402128}{set\+Particles}} (\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$particle0, \mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$particle1=nullptr)
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} \hyperlink{classrum_1_1_particle_link_ad77a03be98566b0913aad0882e2283ac}{current\+Length} () const
+\mbox{\hyperlink{classrum_1_1_particle_link_abcd2cccf1292b259443298ba7fc724d1}{Particle\+Link}} ()
+\item 
+\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} \mbox{\hyperlink{classrum_1_1_particle_link_ad77a03be98566b0913aad0882e2283ac}{current\+Length}} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrum_1_1_particle}{Particle} $\ast$ \hyperlink{classrum_1_1_particle_link_a0a919ccae0b5813620d5010d49094dc7}{m\+\_\+particles} \mbox{[}2\mbox{]}
+\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$ \mbox{\hyperlink{classrum_1_1_particle_link_a0a919ccae0b5813620d5010d49094dc7}{m\+\_\+particles}} \mbox{[}2\mbox{]} \{\}
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_particle_link_a93add8689cecd885bfe9652d3d9dc440}\label{classrum_1_1_particle_link_a93add8689cecd885bfe9652d3d9dc440}} 
+\index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!````~Particle\+Link@{$\sim$\+Particle\+Link}}
+\index{````~Particle\+Link@{$\sim$\+Particle\+Link}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Link()}{~ParticleLink()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+Link\+::$\sim$\+Particle\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_link_abcd2cccf1292b259443298ba7fc724d1}\label{classrum_1_1_particle_link_abcd2cccf1292b259443298ba7fc724d1}} 
+\index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!Particle\+Link@{Particle\+Link}}
+\index{Particle\+Link@{Particle\+Link}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
+\subsubsection{\texorpdfstring{Particle\+Link()}{ParticleLink()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+Link\+::\+Particle\+Link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classrum_1_1_particle_link_a86e7dbac23cd26fce627bf5ed1fae6f5}\label{classrum_1_1_particle_link_a86e7dbac23cd26fce627bf5ed1fae6f5}} 
-\index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!Add\+Contact@{Add\+Contact}}
-\index{Add\+Contact@{Add\+Contact}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
-\subsubsection{\texorpdfstring{Add\+Contact()}{AddContact()}}
-{\footnotesize\ttfamily virtual unsigned int rum\+::\+Particle\+Link\+::\+Add\+Contact (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle_contact}{Particle\+Contact} $\ast$}]{contact,  }\item[{unsigned int}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classrum_1_1_particle_link_a0da76619bd1d2ae04d5f8173c2883ff2}\label{classrum_1_1_particle_link_a0da76619bd1d2ae04d5f8173c2883ff2}} 
+\index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!add\+Contact@{add\+Contact}}
+\index{add\+Contact@{add\+Contact}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
+\subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
+{\footnotesize\ttfamily unsigned int rum\+::\+Particle\+Link\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned int}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
 
 
 
-Implements \hyperlink{classrum_1_1_particle_contact_generator_a99c829af7d261ff236a4d829374daa9b}{rum\+::\+Particle\+Contact\+Generator}.
+Implements \mbox{\hyperlink{classrum_1_1_particle_contact_generator_a343d3df815d7e170458fe937fe82aad5}{rum\+::\+Particle\+Contact\+Generator}}.
 
 
 
-Implemented in \hyperlink{classrum_1_1_particle_rod_abc0fad39193787cb65e937cd7d20874e}{rum\+::\+Particle\+Rod}, and \hyperlink{classrum_1_1_particle_cable_a06c6184b7e1d6047db4f732b132fb329}{rum\+::\+Particle\+Cable}.
+Implemented in \mbox{\hyperlink{classrum_1_1_particle_cable_a078344be0db7ccc00d326ac767736431}{rum\+::\+Particle\+Cable}}.
 
 \mbox{\Hypertarget{classrum_1_1_particle_link_ad77a03be98566b0913aad0882e2283ac}\label{classrum_1_1_particle_link_ad77a03be98566b0913aad0882e2283ac}} 
 \index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!current\+Length@{current\+Length}}
 \index{current\+Length@{current\+Length}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
 \subsubsection{\texorpdfstring{current\+Length()}{currentLength()}}
-{\footnotesize\ttfamily \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} rum\+::\+Particle\+Link\+::current\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} rum\+::\+Particle\+Link\+::current\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classrum_1_1_particle_link_a87021898f5a8ec8f5764c747c8117544}\label{classrum_1_1_particle_link_a87021898f5a8ec8f5764c747c8117544}} 
+\mbox{\Hypertarget{classrum_1_1_particle_link_a9c9c83b1752a6b7e8d95658218402128}\label{classrum_1_1_particle_link_a9c9c83b1752a6b7e8d95658218402128}} 
 \index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!set\+Particles@{set\+Particles}}
 \index{set\+Particles@{set\+Particles}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
 \subsubsection{\texorpdfstring{set\+Particles()}{setParticles()}}
-{\footnotesize\ttfamily void rum\+::\+Particle\+Link\+::set\+Particles (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{particle0,  }\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{particle1 = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Link\+::set\+Particles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$}]{particle0,  }\item[{\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$}]{particle1 = {\ttfamily nullptr} }\end{DoxyParamCaption})}
 
 
 
@@ -75,11 +94,11 @@ Implemented in \hyperlink{classrum_1_1_particle_rod_abc0fad39193787cb65e937cd7d2
 \index{rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}!m\+\_\+particles@{m\+\_\+particles}}
 \index{m\+\_\+particles@{m\+\_\+particles}!rum\+::\+Particle\+Link@{rum\+::\+Particle\+Link}}
 \subsubsection{\texorpdfstring{m\+\_\+particles}{m\_particles}}
-{\footnotesize\ttfamily \hyperlink{classrum_1_1_particle}{Particle}$\ast$ rum\+::\+Particle\+Link\+::m\+\_\+particles\mbox{[}2\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_particle}{Particle}}$\ast$ rum\+::\+Particle\+Link\+::m\+\_\+particles\mbox{[}2\mbox{]} \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\hyperlink{_particle_link_8h}{Particle\+Link.\+h}\item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\hyperlink{_particle_link_8cpp}{Particle\+Link.\+cpp}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_link_8h}{Particle\+Link.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_link_8cpp}{Particle\+Link.\+cpp}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 <map id="rum::ParticleForceRegistry::ParticleForceRegistrationEntry" name="rum::ParticleForceRegistry::ParticleForceRegistrationEntry">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_force_generator.html" title="{rum::ParticleForceGenerator\n||+ ~ParticleForceGenerator()\l+ UpdateForce()\l# ParticleForceGenerator()\l}" alt="" coords="5,248,192,355"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle.html" title="{rum::Particle\n||+ Particle()\l+ ~Particle()\l+ SetMass()\l+ GetMass()\l+ SetInverseMass()\l+ GetInverseMass()\l+ HasFiniteMass()\l+ SetPosition()\l+ SetPosition()\l+ GetPosition()\land 14 more...\l}" alt="" coords="217,189,351,413"/>
+<area shape="rect" id="node2" href="$classrum_1_1_particle_force_generator.html" title="Schnittstellen&#45;Klasse für Kraft&#45;Generatoren. " alt="" coords="5,248,192,355"/>
+<area shape="rect" id="node3" href="$classrum_1_1_particle.html" title="{rum::Particle\n||+ Particle()\l+ ~Particle()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ setPosition()\l+ setPosition()\l+ getPosition()\land 14 more...\l}" alt="" coords="217,189,349,413"/>
 </map>

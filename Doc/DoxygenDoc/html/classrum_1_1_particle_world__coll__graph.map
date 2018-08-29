@@ -1,3 +1,3 @@
 <map id="rum::ParticleWorld" name="rum::ParticleWorld">
-<area shape="rect" id="node2" href="$classrum_1_1_physics_engine_module.html" title="{rum::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ OnBegin()\l+ OnEnd()\l+ Step()\l+ Integrate()\l+ Reset()\l+ Enable()\l+ IsEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="21,145,202,340"/>
+<area shape="rect" id="node2" href="$classrum_1_1_physics_engine_module.html" title="{rum::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="19,145,202,281"/>
 </map>

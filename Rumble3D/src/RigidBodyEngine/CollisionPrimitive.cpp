@@ -1,9 +1,27 @@
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
+#include "R3D/RigidBodyEngine/RigidBody.h"
+
+#include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
+
+#include "R3D/RigidBodyEngine/CollisionBox.h"
+#include "R3D/RigidBodyEngine/CollisionSphere.h"
 
 namespace rum
 {
 	CollisionPrimitive::~CollisionPrimitive()
 	= default;
+
+	void CollisionPrimitive::generateContact(INarrowPhaseFilter* filter,
+											 CollisionBox* other)
+	{
+		
+	}
+
+	void CollisionPrimitive::generateContact(INarrowPhaseFilter* filter, 
+											 CollisionSphere* other)
+	{
+		
+	}
 
 	void CollisionPrimitive::calculateInternals()
 	{

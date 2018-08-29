@@ -1,14 +1,16 @@
 #pragma once
 #include "ForceGenerator.h"
 
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
+
 #include <glm/glm.hpp>
 
 namespace rum 
 {
 	class RigidBody;
 
-	class Gravity :	public ForceGenerator
+	class R3D_DECLSPEC Gravity : public ForceGenerator
 	{
 	public:
 		explicit Gravity(const glm::vec3& gravity);

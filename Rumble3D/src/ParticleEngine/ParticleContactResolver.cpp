@@ -10,15 +10,16 @@ namespace rum
 	}
 
 	ParticleContactResolver::~ParticleContactResolver()
-	{
-	}
+	= default;
 
 	void ParticleContactResolver::setIterations(unsigned int iterations)
 	{
 		m_iterations = iterations;
 	}
 
-	void ParticleContactResolver::resolveContacts(ParticleContact* contactArray, unsigned int numberOfContacts, real duration)
+	void ParticleContactResolver::resolveContacts(ParticleContact* contactArray,
+	                                              const unsigned int numberOfContacts,
+	                                              const real duration)
 	{
 		unsigned i;
 		m_iterationsUsed = 0;
@@ -26,11 +27,11 @@ namespace rum
 		{
 			// Suche den Kontakt mit kleinster Trennungsgeschwindigkeit
 			// gleich größter Kollisionsgeschwindigkeit:
-			real max = EROS_REAL_MAX;
-			unsigned maxIndex = numberOfContacts;
+			auto max = R3D_REAL_MAX;
+			auto maxIndex = numberOfContacts;
 			for (i = 0; i < numberOfContacts; ++i)
 			{
-				real separationVelocity = contactArray[i].calculateSeparatingVelocity();
+				const auto separationVelocity = contactArray[i].calculateSeparatingVelocity();
 				if (separationVelocity < max &&
 					(separationVelocity < 0 || contactArray[i].m_penetration > 0)) 
 				{
@@ -48,7 +49,7 @@ namespace rum
 			contactArray[maxIndex].resolve(duration);
 			
 			// Behandlung der Durchdringung:
-			glm::vec3* move = contactArray[maxIndex].m_particlesMovement;
+			const auto move = contactArray[maxIndex].m_particlesMovement;
 			for (i = 0; i < numberOfContacts; ++i)
 			{
 				if (contactArray[i].m_particles[0] == contactArray[maxIndex].m_particles[0])

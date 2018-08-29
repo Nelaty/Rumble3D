@@ -7,8 +7,10 @@ namespace rum
 		: m_gravity{gravity}
 	{
 	}
-	
-	
+
+	ParticleGravity::~ParticleGravity()
+	= default;
+
 	void ParticleGravity::updateForce(Particle* particle, real duration)
 	{
 		if(!particle->hasFiniteMass())

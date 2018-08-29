@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "ParticleForceGenerator.h"
 #include "R3D/Common/Precision.h"
 
@@ -8,7 +9,7 @@ namespace rum
 {
 	class Particle;
 
-	class ParticleAnchoredSpring : public ParticleForceGenerator
+	class R3D_DECLSPEC ParticleAnchoredSpring : public ParticleForceGenerator
 	{
 	public:
 		explicit ParticleAnchoredSpring(glm::vec3* anchor, real springConstant, real restLength);

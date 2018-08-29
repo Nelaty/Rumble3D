@@ -8,7 +8,7 @@ namespace rum
 	CollisionData::~CollisionData()
 	= default;
 
-	bool CollisionData::hasMoreContacts() const
+	bool CollisionData::hasUnusedContacts() const
 	{
 		return (m_contactsLeft > 0);
 	}

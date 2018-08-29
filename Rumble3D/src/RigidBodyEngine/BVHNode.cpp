@@ -1,6 +1,7 @@
 #include "R3D/RigidBodyEngine/BVHNode.h"
 #include "R3D/RigidBodyEngine/BoundingSphere.h"
 #include "R3D/RigidBodyEngine/BoundingBox.h"
+#include "R3D/RigidBodyEngine/RigidBody.h"
 
 namespace rum
 {

@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "ParticleLink.h"
 #include "R3D/Common/Precision.h"
 
@@ -6,13 +7,13 @@ namespace rum
 {
 	class ParticleContact;
 	
-	class ParticleCable : public ParticleLink
+	class R3D_DECLSPEC ParticleCable : public ParticleLink
 	{
 	public:
 		explicit ParticleCable();
 		~ParticleCable();
 
-		virtual unsigned int addContact(ParticleContact* contact, unsigned int limit) const override;
+		unsigned int addContact(ParticleContact* contact, unsigned int limit) const override;
 		void setMaxLength(real maxLength);
 		void setRestitution(real restitution);
 

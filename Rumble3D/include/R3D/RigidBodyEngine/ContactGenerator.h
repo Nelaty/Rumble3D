@@ -1,9 +1,11 @@
 #pragma once
-#include "Contact.h"
+#include "R3D/Common/Common.h"
 
 namespace rum
 {
-	class ContactGenerator
+	class Contact;
+
+	class R3D_DECLSPEC ContactGenerator
 	{
 	public:
 		virtual ~ContactGenerator();

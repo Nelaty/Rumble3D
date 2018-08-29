@@ -1,4 +1,5 @@
 #include "R3D/RigidBodyEngine/Contact.h"
+#include "R3D/RigidBodyEngine/RigidBody.h"
 
 namespace rum
 {
@@ -98,7 +99,8 @@ namespace rum
 		m_contactToWorld[2] = contactTangent[1];
 	}
 	
-	glm::vec3 Contact::calculateFrictionlessImpulse(glm::mat3 * inverseInertiaTensor){
+	glm::vec3 Contact::calculateFrictionlessImpulse(glm::mat3* inverseInertiaTensor)
+	{
 		glm::vec3 impulseContact;
 		
 		// Erstelle Vektor für die Geschwindigkeitsänderung in World-Koordinaten
@@ -134,7 +136,7 @@ namespace rum
 		return impulseContact;
 	}
 	
-	void Contact::calculateInternals(real duration)
+	void Contact::calculateInternals(const real duration)
 	{
 		// Check if the first object is NULL, and swap if it is.
 		if(!m_body[0])
@@ -146,9 +148,9 @@ namespace rum
 		calculateContactBasis();
 	
 		// Store the relative position of the contact relative to each body
-		m_relativeContactPosition[0] = m_contactPoint - m_body[0]->getPosition();
+		m_relativeContactPosition[0] = m_contactPoint - m_body[0]->getCenterOfMass();
 		if (m_body[1]) {
-			m_relativeContactPosition[1] = m_contactPoint - m_body[1]->getPosition();
+			m_relativeContactPosition[1] = m_contactPoint - m_body[1]->getCenterOfMass();
 		}
 	
 		// Find the relative velocity of the bodies at the contact point.
@@ -161,7 +163,7 @@ namespace rum
 		calculateDesiredDeltaVelocity(duration);
 	}
 	
-	glm::vec3 Contact::calculateLocalVelocity(unsigned bodyIndex, real duration)
+	glm::vec3 Contact::calculateLocalVelocity(const unsigned bodyIndex, const real duration)
 	{
 		const auto thisBody = m_body[bodyIndex];
 	
@@ -197,7 +199,7 @@ namespace rum
 		*/
 	}
 	
-	void Contact::calculateDesiredDeltaVelocity(real duration)
+	void Contact::calculateDesiredDeltaVelocity(const real duration)
 	{
 		/* Hier Code wenn isAwake implementiert und lastFrame verwendet wird:
 		const static real velocityLimit = (real)0.25f;
@@ -400,9 +402,9 @@ namespace rum
 
 				// Now we can start to apply the values we've calculated.
 				// Apply the linear movement
-				glm::vec3 pos = m_body[i]->getPosition();
+				glm::vec3 pos = m_body[i]->getCenterOfMass();
 				pos += linearMove[i] * m_contactNormal;
-				m_body[i]->setPosition(pos);
+				m_body[i]->setCenterOfMass(pos);
 
 				// And the change in orientation
 				glm::quat q = m_body[i]->getOrientation();

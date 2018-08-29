@@ -1,11 +1,12 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
 
 namespace rum
 {
-	class BoundingSphere
+	class R3D_DECLSPEC BoundingSphere
 	{	
 	public:
 		BoundingSphere();

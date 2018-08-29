@@ -1,5 +1,6 @@
 #pragma once
 #include "ForceGenerator.h"
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
@@ -8,15 +9,16 @@ namespace rum
 {
 	class RigidBody;
 
-	class AnchoredSpring : public ForceGenerator
+	class R3D_DECLSPEC AnchoredSpring : public ForceGenerator
 	{
 	public:
-		AnchoredSpring(const glm::vec3& anchor,
-					   const glm::vec3& localConnectionPoint,
-					   real springConstant,
-					   real restLength);
+		explicit AnchoredSpring(const glm::vec3& anchor,
+								const glm::vec3& localConnectionPoint,
+								real springConstant,
+								real restLength);
+		~AnchoredSpring();
 
-		virtual void updateForce(RigidBody* body, real duration) override;
+		void updateForce(RigidBody* body, real duration) override;
 
 	protected:
 		glm::vec3 m_connectionPoint; // in lokalen Koordinaten des Körpers

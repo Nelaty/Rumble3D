@@ -1,0 +1,231 @@
+\hypertarget{classrum_1_1_narrow_phase_filter}{}\section{rum\+:\+:Narrow\+Phase\+Filter Class Reference}
+\label{classrum_1_1_narrow_phase_filter}\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+
+
+{\ttfamily \#include $<$Narrow\+Phase\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for rum\+:\+:Narrow\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classrum_1_1_narrow_phase_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rum\+:\+:Narrow\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classrum_1_1_narrow_phase_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Algorithm\+Type $>$ }\\using \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}} = std\+::unique\+\_\+ptr$<$ Algorithm\+Type $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a39c93f6384868ade8b9ee8f09cfef270}{Narrow\+Phase\+Filter}} (unsigned int iterations=10, unsigned int collisions\+Max=1000)
+\item 
+\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_ac63ac2b2ec6460c6212f06d875cae328}{$\sim$\+Narrow\+Phase\+Filter}} ()
+\item 
+const \mbox{\hyperlink{classrum_1_1_collision_data}{Collision\+Data}} \& \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a3c31b3e4ec6b2c1a1c104ac734be686c}{generate\+Collision\+Data}} (const std\+::vector$<$ \mbox{\hyperlink{structrum_1_1_broad_phase_collision}{Broad\+Phase\+Collision}} $>$ \&collisions) override
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a888f91e93de3ee05bcf0811a7d39ea2c}{set\+Box\+Box\+Algorithm}} (\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_box_box_narrow_algorithm}{I\+Box\+Box\+Narrow\+Algorithm}} $>$ algorithm)
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a2420746ba108a35b3f06f7b351abfa5f}{set\+Box\+Sphere\+Algorithm}} (\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_box_sphere_narrow_algorithm}{I\+Box\+Sphere\+Narrow\+Algorithm}} $>$ algorithm)
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_ad29d02d2db07f650a60e97771b05f325}{set\+Sphere\+Sphere\+Algorithm}} (\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_sphere_sphere_narrow_algorithm}{I\+Sphere\+Sphere\+Narrow\+Algorithm}} $>$ algorithm)
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a02edd873c8c7711aa3ef6249cae6ca1e}{generate\+Collision\+Data}} (\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$second)
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_ab72aba07867b2cbe21bd7f046f9a5e77}{generate\+Collision\+Data}} (\mbox{\hyperlink{classrum_1_1_collision_box}{Collision\+Box}} $\ast$first, \mbox{\hyperlink{classrum_1_1_collision_box}{Collision\+Box}} $\ast$second) override
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_abc6c56571ea9110801cac4b57960b8b3}{generate\+Collision\+Data}} (\mbox{\hyperlink{classrum_1_1_collision_box}{Collision\+Box}} $\ast$first, \mbox{\hyperlink{classrum_1_1_collision_sphere}{Collision\+Sphere}} $\ast$second) override
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a5cc42b7f9ce3866d5e837d95fe3f1592}{generate\+Collision\+Data}} (\mbox{\hyperlink{classrum_1_1_collision_sphere}{Collision\+Sphere}} $\ast$first, \mbox{\hyperlink{classrum_1_1_collision_sphere}{Collision\+Sphere}} $\ast$second) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_aae77f4be01dc6b6b4189ee266d8ca55a}{init}} ()
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_afde3247e3cea00a46f8bf360951930d0}{init\+Collision\+Data}} ()
+\item 
+void \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a60ad337a7ee592f8cce5f18eec9eca37}{init\+Algorithms}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a2575cbc0c8ad20cdc396530dfa065dba}{m\+\_\+iterations}}
+\item 
+unsigned int \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a31fd0f5be9c5bdf070f0b3c659482457}{m\+\_\+collisions\+Max}}
+\item 
+\mbox{\hyperlink{classrum_1_1_collision_data}{Collision\+Data}} \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a1ff9f5bd13d32ce1613fd1168baf79bc}{m\+\_\+collision\+Data}}
+\item 
+\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_box_box_narrow_algorithm}{I\+Box\+Box\+Narrow\+Algorithm}} $>$ \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_aa052144003d2e05ce1c7435f6bdbade5}{m\+\_\+box\+Box}}
+\item 
+\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_box_sphere_narrow_algorithm}{I\+Box\+Sphere\+Narrow\+Algorithm}} $>$ \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a1680a72ef5e04befbc12fa97e4a09114}{m\+\_\+box\+Sphere}}
+\item 
+\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_sphere_sphere_narrow_algorithm}{I\+Sphere\+Sphere\+Narrow\+Algorithm}} $>$ \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a4a6d0976218094e2618c246cc7f8b80f}{m\+\_\+sphere\+Sphere}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}\label{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!Algorithm@{Algorithm}}
+\index{Algorithm@{Algorithm}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{Algorithm}{Algorithm}}
+{\footnotesize\ttfamily template$<$class Algorithm\+Type $>$ \\
+using \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{rum\+::\+Narrow\+Phase\+Filter\+::\+Algorithm}} =  std\+::unique\+\_\+ptr$<$Algorithm\+Type$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a39c93f6384868ade8b9ee8f09cfef270}\label{classrum_1_1_narrow_phase_filter_a39c93f6384868ade8b9ee8f09cfef270}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!Narrow\+Phase\+Filter@{Narrow\+Phase\+Filter}}
+\index{Narrow\+Phase\+Filter@{Narrow\+Phase\+Filter}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{Narrow\+Phase\+Filter()}{NarrowPhaseFilter()}}
+{\footnotesize\ttfamily rum\+::\+Narrow\+Phase\+Filter\+::\+Narrow\+Phase\+Filter (\begin{DoxyParamCaption}\item[{unsigned int}]{iterations = {\ttfamily 10},  }\item[{unsigned int}]{collisions\+Max = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_ac63ac2b2ec6460c6212f06d875cae328}\label{classrum_1_1_narrow_phase_filter_ac63ac2b2ec6460c6212f06d875cae328}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!````~Narrow\+Phase\+Filter@{$\sim$\+Narrow\+Phase\+Filter}}
+\index{````~Narrow\+Phase\+Filter@{$\sim$\+Narrow\+Phase\+Filter}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+Narrow\+Phase\+Filter()}{~NarrowPhaseFilter()}}
+{\footnotesize\ttfamily rum\+::\+Narrow\+Phase\+Filter\+::$\sim$\+Narrow\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a3c31b3e4ec6b2c1a1c104ac734be686c}\label{classrum_1_1_narrow_phase_filter_a3c31b3e4ec6b2c1a1c104ac734be686c}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/5]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classrum_1_1_collision_data}{Collision\+Data}} \& rum\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{structrum_1_1_broad_phase_collision}{Broad\+Phase\+Collision}} $>$ \&}]{collisions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrum_1_1_i_narrow_phase_filter_acfce7d2c3d62880920b1ca415f891526}{rum\+::\+I\+Narrow\+Phase\+Filter}}.
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a02edd873c8c7711aa3ef6249cae6ca1e}\label{classrum_1_1_narrow_phase_filter_a02edd873c8c7711aa3ef6249cae6ca1e}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/5]}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_ab72aba07867b2cbe21bd7f046f9a5e77}\label{classrum_1_1_narrow_phase_filter_ab72aba07867b2cbe21bd7f046f9a5e77}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [3/5]}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_collision_box}{Collision\+Box}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classrum_1_1_collision_box}{Collision\+Box}} $\ast$}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrum_1_1_i_narrow_phase_filter_ade1c61b0bd136086ff27ca34953508c1}{rum\+::\+I\+Narrow\+Phase\+Filter}}.
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_abc6c56571ea9110801cac4b57960b8b3}\label{classrum_1_1_narrow_phase_filter_abc6c56571ea9110801cac4b57960b8b3}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [4/5]}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_collision_box}{Collision\+Box}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classrum_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrum_1_1_i_narrow_phase_filter_a0f09a3143208893aa12fc9d86c7006e7}{rum\+::\+I\+Narrow\+Phase\+Filter}}.
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a5cc42b7f9ce3866d5e837d95fe3f1592}\label{classrum_1_1_narrow_phase_filter_a5cc42b7f9ce3866d5e837d95fe3f1592}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [5/5]}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classrum_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrum_1_1_i_narrow_phase_filter_a24ed990b049a4912fdebe0dd395d018b}{rum\+::\+I\+Narrow\+Phase\+Filter}}.
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_aae77f4be01dc6b6b4189ee266d8ca55a}\label{classrum_1_1_narrow_phase_filter_aae77f4be01dc6b6b4189ee266d8ca55a}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!init@{init}}
+\index{init@{init}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a60ad337a7ee592f8cce5f18eec9eca37}\label{classrum_1_1_narrow_phase_filter_a60ad337a7ee592f8cce5f18eec9eca37}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!init\+Algorithms@{init\+Algorithms}}
+\index{init\+Algorithms@{init\+Algorithms}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{init\+Algorithms()}{initAlgorithms()}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::init\+Algorithms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_afde3247e3cea00a46f8bf360951930d0}\label{classrum_1_1_narrow_phase_filter_afde3247e3cea00a46f8bf360951930d0}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!init\+Collision\+Data@{init\+Collision\+Data}}
+\index{init\+Collision\+Data@{init\+Collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{init\+Collision\+Data()}{initCollisionData()}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::init\+Collision\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a888f91e93de3ee05bcf0811a7d39ea2c}\label{classrum_1_1_narrow_phase_filter_a888f91e93de3ee05bcf0811a7d39ea2c}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!set\+Box\+Box\+Algorithm@{set\+Box\+Box\+Algorithm}}
+\index{set\+Box\+Box\+Algorithm@{set\+Box\+Box\+Algorithm}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{set\+Box\+Box\+Algorithm()}{setBoxBoxAlgorithm()}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::set\+Box\+Box\+Algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_box_box_narrow_algorithm}{I\+Box\+Box\+Narrow\+Algorithm}} $>$}]{algorithm }\end{DoxyParamCaption})}
+
+Set the algorithm used for box-\/box collisions. \mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a2420746ba108a35b3f06f7b351abfa5f}\label{classrum_1_1_narrow_phase_filter_a2420746ba108a35b3f06f7b351abfa5f}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!set\+Box\+Sphere\+Algorithm@{set\+Box\+Sphere\+Algorithm}}
+\index{set\+Box\+Sphere\+Algorithm@{set\+Box\+Sphere\+Algorithm}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{set\+Box\+Sphere\+Algorithm()}{setBoxSphereAlgorithm()}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::set\+Box\+Sphere\+Algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_box_sphere_narrow_algorithm}{I\+Box\+Sphere\+Narrow\+Algorithm}} $>$}]{algorithm }\end{DoxyParamCaption})}
+
+Set the algorithm used for box-\/sphere collisions. \mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_ad29d02d2db07f650a60e97771b05f325}\label{classrum_1_1_narrow_phase_filter_ad29d02d2db07f650a60e97771b05f325}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!set\+Sphere\+Sphere\+Algorithm@{set\+Sphere\+Sphere\+Algorithm}}
+\index{set\+Sphere\+Sphere\+Algorithm@{set\+Sphere\+Sphere\+Algorithm}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{set\+Sphere\+Sphere\+Algorithm()}{setSphereSphereAlgorithm()}}
+{\footnotesize\ttfamily void rum\+::\+Narrow\+Phase\+Filter\+::set\+Sphere\+Sphere\+Algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$ \mbox{\hyperlink{classrum_1_1_i_sphere_sphere_narrow_algorithm}{I\+Sphere\+Sphere\+Narrow\+Algorithm}} $>$}]{algorithm }\end{DoxyParamCaption})}
+
+Set the algorithm used for sphere-\/sphere collisions. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_aa052144003d2e05ce1c7435f6bdbade5}\label{classrum_1_1_narrow_phase_filter_aa052144003d2e05ce1c7435f6bdbade5}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!m\+\_\+box\+Box@{m\+\_\+box\+Box}}
+\index{m\+\_\+box\+Box@{m\+\_\+box\+Box}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+box\+Box}{m\_boxBox}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$\mbox{\hyperlink{classrum_1_1_i_box_box_narrow_algorithm}{I\+Box\+Box\+Narrow\+Algorithm}}$>$ rum\+::\+Narrow\+Phase\+Filter\+::m\+\_\+box\+Box\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a1680a72ef5e04befbc12fa97e4a09114}\label{classrum_1_1_narrow_phase_filter_a1680a72ef5e04befbc12fa97e4a09114}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!m\+\_\+box\+Sphere@{m\+\_\+box\+Sphere}}
+\index{m\+\_\+box\+Sphere@{m\+\_\+box\+Sphere}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+box\+Sphere}{m\_boxSphere}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$\mbox{\hyperlink{classrum_1_1_i_box_sphere_narrow_algorithm}{I\+Box\+Sphere\+Narrow\+Algorithm}}$>$ rum\+::\+Narrow\+Phase\+Filter\+::m\+\_\+box\+Sphere\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a1ff9f5bd13d32ce1613fd1168baf79bc}\label{classrum_1_1_narrow_phase_filter_a1ff9f5bd13d32ce1613fd1168baf79bc}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!m\+\_\+collision\+Data@{m\+\_\+collision\+Data}}
+\index{m\+\_\+collision\+Data@{m\+\_\+collision\+Data}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+collision\+Data}{m\_collisionData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_collision_data}{Collision\+Data}} rum\+::\+Narrow\+Phase\+Filter\+::m\+\_\+collision\+Data\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a31fd0f5be9c5bdf070f0b3c659482457}\label{classrum_1_1_narrow_phase_filter_a31fd0f5be9c5bdf070f0b3c659482457}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!m\+\_\+collisions\+Max@{m\+\_\+collisions\+Max}}
+\index{m\+\_\+collisions\+Max@{m\+\_\+collisions\+Max}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+collisions\+Max}{m\_collisionsMax}}
+{\footnotesize\ttfamily unsigned int rum\+::\+Narrow\+Phase\+Filter\+::m\+\_\+collisions\+Max\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a2575cbc0c8ad20cdc396530dfa065dba}\label{classrum_1_1_narrow_phase_filter_a2575cbc0c8ad20cdc396530dfa065dba}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!m\+\_\+iterations@{m\+\_\+iterations}}
+\index{m\+\_\+iterations@{m\+\_\+iterations}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+iterations}{m\_iterations}}
+{\footnotesize\ttfamily unsigned int rum\+::\+Narrow\+Phase\+Filter\+::m\+\_\+iterations\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classrum_1_1_narrow_phase_filter_a4a6d0976218094e2618c246cc7f8b80f}\label{classrum_1_1_narrow_phase_filter_a4a6d0976218094e2618c246cc7f8b80f}} 
+\index{rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}!m\+\_\+sphere\+Sphere@{m\+\_\+sphere\+Sphere}}
+\index{m\+\_\+sphere\+Sphere@{m\+\_\+sphere\+Sphere}!rum\+::\+Narrow\+Phase\+Filter@{rum\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+sphere\+Sphere}{m\_sphereSphere}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_narrow_phase_filter_a499acd63e16f164dbf1ee7567c1a3e0f}{Algorithm}}$<$\mbox{\hyperlink{classrum_1_1_i_sphere_sphere_narrow_algorithm}{I\+Sphere\+Sphere\+Narrow\+Algorithm}}$>$ rum\+::\+Narrow\+Phase\+Filter\+::m\+\_\+sphere\+Sphere\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_narrow_phase_filter_8h}{Narrow\+Phase\+Filter.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_narrow_phase_filter_8cpp}{Narrow\+Phase\+Filter.\+cpp}}\end{DoxyCompactItemize}

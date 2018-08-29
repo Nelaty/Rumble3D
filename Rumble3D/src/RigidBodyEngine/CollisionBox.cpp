@@ -1,8 +1,11 @@
 #include "R3D/RigidBodyEngine/CollisionBox.h"
+#include "R3D/Common/Precision.h"
 
 namespace rum
 {
-	CollisionBox::CollisionBox(RigidBody* body, const glm::mat4& offset, const glm::vec3& halfSize)
+	CollisionBox::CollisionBox(RigidBody* body, 
+							   const glm::mat4& offset,
+							   const glm::vec3& halfSize)
 		: m_halfSize{halfSize}
 	{
 		m_body = body;
@@ -33,5 +36,10 @@ namespace rum
 		{
 			vertex = glm::vec3(m_offset * glm::vec4(vertex, static_cast<real>(1.0f)));
 		}
+	}
+
+	void CollisionBox::generateContact(INarrowPhaseFilter* filter, CollisionPrimitive* other)
+	{
+		other->generateContact(filter, this);
 	}
 }

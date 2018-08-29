@@ -1,0 +1,73 @@
+\hypertarget{classrum_1_1_i_broad_phase_filter}{}\section{rum\+:\+:I\+Broad\+Phase\+Filter Class Reference}
+\label{classrum_1_1_i_broad_phase_filter}\index{rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}}
+
+
+{\ttfamily \#include $<$I\+Broad\+Phase\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for rum\+:\+:I\+Broad\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classrum_1_1_i_broad_phase_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for rum\+:\+:I\+Broad\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classrum_1_1_i_broad_phase_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classrum_1_1_i_broad_phase_filter_aecd212a1208bd98dc1dc895640d1b364}{$\sim$\+I\+Broad\+Phase\+Filter}} ()
+\item 
+virtual std\+::vector$<$ \mbox{\hyperlink{structrum_1_1_broad_phase_collision}{Broad\+Phase\+Collision}} $>$ \mbox{\hyperlink{classrum_1_1_i_broad_phase_filter_a241cca5d9043353d7fb458b65b22eec0}{generate\+Collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&rigid\+Bodies)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrum_1_1_i_broad_phase_filter_ae301bb63e91192f2edd60cd258ea02c7}{I\+Broad\+Phase\+Filter}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_i_broad_phase_filter_aecd212a1208bd98dc1dc895640d1b364}\label{classrum_1_1_i_broad_phase_filter_aecd212a1208bd98dc1dc895640d1b364}} 
+\index{rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}!````~I\+Broad\+Phase\+Filter@{$\sim$\+I\+Broad\+Phase\+Filter}}
+\index{````~I\+Broad\+Phase\+Filter@{$\sim$\+I\+Broad\+Phase\+Filter}!rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Broad\+Phase\+Filter()}{~IBroadPhaseFilter()}}
+{\footnotesize\ttfamily rum\+::\+I\+Broad\+Phase\+Filter\+::$\sim$\+I\+Broad\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classrum_1_1_i_broad_phase_filter_ae301bb63e91192f2edd60cd258ea02c7}\label{classrum_1_1_i_broad_phase_filter_ae301bb63e91192f2edd60cd258ea02c7}} 
+\index{rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}!I\+Broad\+Phase\+Filter@{I\+Broad\+Phase\+Filter}}
+\index{I\+Broad\+Phase\+Filter@{I\+Broad\+Phase\+Filter}!rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{I\+Broad\+Phase\+Filter()}{IBroadPhaseFilter()}}
+{\footnotesize\ttfamily rum\+::\+I\+Broad\+Phase\+Filter\+::\+I\+Broad\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_i_broad_phase_filter_a241cca5d9043353d7fb458b65b22eec0}\label{classrum_1_1_i_broad_phase_filter_a241cca5d9043353d7fb458b65b22eec0}} 
+\index{rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}!generate\+Collisions@{generate\+Collisions}}
+\index{generate\+Collisions@{generate\+Collisions}!rum\+::\+I\+Broad\+Phase\+Filter@{rum\+::\+I\+Broad\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collisions()}{generateCollisions()}}
+{\footnotesize\ttfamily virtual std\+::vector$<$\mbox{\hyperlink{structrum_1_1_broad_phase_collision}{Broad\+Phase\+Collision}}$>$ rum\+::\+I\+Broad\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&}]{rigid\+Bodies }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. \begin{DoxyReturn}{Returns}
+A number of possible collisions. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classrum_1_1_broad_phase_filter_a093dbf88b707226854b0042d60a1b128}{rum\+::\+Broad\+Phase\+Filter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_i_broad_phase_filter_8h}{I\+Broad\+Phase\+Filter.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_i_broad_phase_filter_8cpp}{I\+Broad\+Phase\+Filter.\+cpp}}\end{DoxyCompactItemize}

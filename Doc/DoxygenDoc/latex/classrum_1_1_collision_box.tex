@@ -25,36 +25,48 @@ Collaboration diagram for rum\+:\+:Collision\+Box\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrum_1_1_collision_box_a700f72696623dc264a0ac1b187329c4e}{Collision\+Box} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$\hyperlink{classrum_1_1_collision_primitive_a9ef6e9862ac5e75330395368e401530e}{m\+\_\+body}, glm\+::mat4 offset, glm\+::vec3 \+\_\+halfsize)
+\mbox{\hyperlink{classrum_1_1_collision_box_a8b829760e2fb5c6ae02753067e0575d5}{Collision\+Box}} (\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$body, const glm\+::mat4 \&offset, const glm\+::vec3 \&half\+Size)
 \item 
-\hyperlink{classrum_1_1_collision_box_a3e480bda7dc21dad54dbc18bf38a7da3}{$\sim$\+Collision\+Box} ()
+\mbox{\hyperlink{classrum_1_1_collision_box_a3e480bda7dc21dad54dbc18bf38a7da3}{$\sim$\+Collision\+Box}} ()
 \item 
-glm\+::vec3 \hyperlink{classrum_1_1_collision_box_a41fd485b6fc134f77a83efba31f19543}{get\+Half\+Size} () const
+glm\+::vec3 \mbox{\hyperlink{classrum_1_1_collision_box_a41fd485b6fc134f77a83efba31f19543}{get\+Half\+Size}} () const
+\item 
+void \mbox{\hyperlink{classrum_1_1_collision_box_a3f72c354e24f866be640f0b3f8e2a4b4}{generate\+Contact}} (\mbox{\hyperlink{classrum_1_1_i_narrow_phase_filter}{I\+Narrow\+Phase\+Filter}} $\ast$filter, \mbox{\hyperlink{classrum_1_1_collision_primitive}{Collision\+Primitive}} $\ast$other) override
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-glm\+::vec3 \hyperlink{classrum_1_1_collision_box_ac154420e43adf96a09bd6d1340987bb5}{m\+\_\+half\+Size}
+glm\+::vec3 \mbox{\hyperlink{classrum_1_1_collision_box_ac154420e43adf96a09bd6d1340987bb5}{m\+\_\+half\+Size}}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classrum_1_1_collision_box_a700f72696623dc264a0ac1b187329c4e}\label{classrum_1_1_collision_box_a700f72696623dc264a0ac1b187329c4e}} 
+\mbox{\Hypertarget{classrum_1_1_collision_box_a8b829760e2fb5c6ae02753067e0575d5}\label{classrum_1_1_collision_box_a8b829760e2fb5c6ae02753067e0575d5}} 
 \index{rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}!Collision\+Box@{Collision\+Box}}
 \index{Collision\+Box@{Collision\+Box}!rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}}
 \subsubsection{\texorpdfstring{Collision\+Box()}{CollisionBox()}}
-{\footnotesize\ttfamily rum\+::\+Collision\+Box\+::\+Collision\+Box (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{m\+\_\+body,  }\item[{glm\+::mat4}]{offset,  }\item[{glm\+::vec3}]{\+\_\+halfsize }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily rum\+::\+Collision\+Box\+::\+Collision\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{const glm\+::mat4 \&}]{offset,  }\item[{const glm\+::vec3 \&}]{half\+Size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \mbox{\Hypertarget{classrum_1_1_collision_box_a3e480bda7dc21dad54dbc18bf38a7da3}\label{classrum_1_1_collision_box_a3e480bda7dc21dad54dbc18bf38a7da3}} 
 \index{rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}!````~Collision\+Box@{$\sim$\+Collision\+Box}}
 \index{````~Collision\+Box@{$\sim$\+Collision\+Box}!rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}}
 \subsubsection{\texorpdfstring{$\sim$\+Collision\+Box()}{~CollisionBox()}}
-{\footnotesize\ttfamily rum\+::\+Collision\+Box\+::$\sim$\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily rum\+::\+Collision\+Box\+::$\sim$\+Collision\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrum_1_1_collision_box_a3f72c354e24f866be640f0b3f8e2a4b4}\label{classrum_1_1_collision_box_a3f72c354e24f866be640f0b3f8e2a4b4}} 
+\index{rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}!generate\+Contact@{generate\+Contact}}
+\index{generate\+Contact@{generate\+Contact}!rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}}
+\subsubsection{\texorpdfstring{generate\+Contact()}{generateContact()}}
+{\footnotesize\ttfamily void rum\+::\+Collision\+Box\+::generate\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_i_narrow_phase_filter}{I\+Narrow\+Phase\+Filter}} $\ast$}]{filter,  }\item[{\mbox{\hyperlink{classrum_1_1_collision_primitive}{Collision\+Primitive}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classrum_1_1_collision_primitive_a31af51e97485378954de219b8411a27d}{rum\+::\+Collision\+Primitive}}.
+
 \mbox{\Hypertarget{classrum_1_1_collision_box_a41fd485b6fc134f77a83efba31f19543}\label{classrum_1_1_collision_box_a41fd485b6fc134f77a83efba31f19543}} 
 \index{rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}!get\+Half\+Size@{get\+Half\+Size}}
 \index{get\+Half\+Size@{get\+Half\+Size}!rum\+::\+Collision\+Box@{rum\+::\+Collision\+Box}}
@@ -74,5 +86,5 @@ glm\+::vec3 \hyperlink{classrum_1_1_collision_box_ac154420e43adf96a09bd6d1340987
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_collision_box_8h}{Collision\+Box.\+h}\item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_collision_box_8cpp}{Collision\+Box.\+cpp}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_box_8h}{Collision\+Box.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_box_8cpp}{Collision\+Box.\+cpp}}\end{DoxyCompactItemize}

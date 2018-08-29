@@ -1,128 +1,66 @@
 #include "R3D/RigidBodyEngine/RigidBodyWorld.h"
-#include "R3D/RigidBodyEngine/CollisionDetector.h"
 
+#include "R3D/RigidBodyEngine/ForceGenerator.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
-#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
-#include "R3D/RigidBodyEngine/CollisionBox.h"
-#include "R3D/RigidBodyEngine/CollisionData.h"
-#include "R3D/RigidBodyEngine/ContactResolver.h"
-#include "R3D/RigidBodyEngine/Contact.h"
+#include "R3D/RigidBodyEngine/RigidBodyEngineCI.h"
 
+#include <algorithm>
 
 namespace rum
 {
 	
-	RigidBodyWorld::RigidBodyWorld(const unsigned maxContacts, const unsigned iterations)
-		: m_maxContacts(maxContacts),
-		m_iterations(iterations)
-	{
-		m_contacts = new Contact[maxContacts];
-		m_calculateIterations = (iterations == 0);
-		m_resolver = new ContactResolver(iterations);
-		m_collisionData = new CollisionData();
-		m_collisionData->reset(4);
-	}
-	
+	RigidBodyWorld::RigidBodyWorld()
+	= default;
+
 	RigidBodyWorld::~RigidBodyWorld()
+	= default;
+
+	void RigidBodyWorld::setComputationInterface(RigidBodyEngineCI* computationInterface)
 	{
-		delete[] m_contacts;
-		delete m_resolver;
-		delete m_collisionData;
+		m_computationInterface = computationInterface;
 	}
-	
-	void RigidBodyWorld::addRigidBody(RigidBody* rb)
+
+	IComputationInterface* RigidBodyWorld::getComputationInterface() const
+	{
+		return m_computationInterface;
+	}
+
+	void RigidBodyWorld::registerRigidBody(RigidBody* rb)
 	{
 		m_rigidBodies.push_back(rb);
 	}
 	
-	void RigidBodyWorld::addCollisionBox(CollisionBox* box)
+	bool RigidBodyWorld::unregisterRigidBody(RigidBody* rb)
 	{
-		m_collisionBoxes.push_back(box);
+		const auto removedRigidBody = std::remove(m_rigidBodies.begin(),
+												  m_rigidBodies.end(),
+												  rb);
+
+		return removedRigidBody != m_rigidBodies.end();
 	}
 	
-	void RigidBodyWorld::addCollisionPrimitive(CollisionPrimitive* primitive)
-	{
-		m_collisionPrimitives.push_back(primitive);
-	}
-	
-	void RigidBodyWorld::removeRigidBody(RigidBody* rb)
-	{
-		m_rigidBodies.remove(rb);
-	}
-	
-	void RigidBodyWorld::removeAllRigidBodies()
+	void RigidBodyWorld::unregisterAllRigidBodies()
 	{
 		m_rigidBodies.clear();
 	}
 
-	void RigidBodyWorld::addForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator)
+	RigidBodyWorld::RigidBodies& RigidBodyWorld::getRigidBodies()
 	{
-		m_registry.registerForce(rigidBody, forceGenerator);
+		return m_rigidBodies;
 	}
 
-	void RigidBodyWorld::removeForceGenerator(RigidBody* rigidBody, ForceGenerator* forceGenerator)
+	const RigidBodyWorld::RigidBodies& RigidBodyWorld::getRigidBodies() const
 	{
-		m_registry.unregisterForce(rigidBody, forceGenerator);
+		return m_rigidBodies;
 	}
 
-	void RigidBodyWorld::removeAllForceGenerators()
+	ForceRegistry& RigidBodyWorld::getForceRegistry()
 	{
-		m_registry.clear();
+		return m_forceRegistry;
 	}
 
-	ForceRegistry& RigidBodyWorld::getRigidBodyForceRegistry()
+	const ForceRegistry& RigidBodyWorld::getForceRegistry() const
 	{
-		return m_registry;
-	}
-	
-	void RigidBodyWorld::startFrame()
-	{
-		for (auto& rb : m_rigidBodies) 
-		{
-			rb->clearAccumulators();
-			rb->calculateDerivedData();
-		}
-	}
-	
-	void RigidBodyWorld::runPhysics(const real timeDelta, unsigned& tmp)
-	{
-		m_registry.updateForces(timeDelta);
-		integrate(timeDelta);
-		return;
-		// Prüfe auf Kontakte:
-
-		//Hier Iteration über RigidBodies und ihre BoundingAreas
-		//Je nachdem, welche Kombination, die richtige Methode von
-		//detect aufrufen. Hier momentan nur 2 Boxen mit BoundingBoxes:
-		CollisionBox * b1 = nullptr;
-		CollisionBox * b2 = nullptr;
-		auto i = 1;
-		for (auto& box : m_collisionBoxes)
-		{
-			if (i == 1)
-			{
-				b1 = box; 
-				i++;
-			} 
-			else 
-			{
-				b2 = box;
-			}
-		}
-		
-		tmp = CollisionDetector::boxAndBox(*b1, *b2, m_collisionData);
-		// Resolve Kontakte:
-		if (m_collisionData->getContactCount() > 0)
-		{
-			m_resolver->resolveContacts(m_collisionData->getContacts(), 1, timeDelta);
-		}
-	}
-	
-	void RigidBodyWorld::integrate(const real timeDelta)
-	{
-		for (auto& rb : m_rigidBodies) 
-		{
-			rb->integrate(timeDelta);
-		}
-	}
+		return m_forceRegistry;
+	}	
 }

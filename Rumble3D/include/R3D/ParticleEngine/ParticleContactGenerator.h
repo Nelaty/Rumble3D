@@ -1,10 +1,11 @@
 #pragma once
+#include "R3D/Common/Common.h"
 
 namespace rum 
 {
 	class ParticleContact;
 
-	class ParticleContactGenerator 
+	class R3D_DECLSPEC ParticleContactGenerator
 	{
 	public:
 		virtual ~ParticleContactGenerator();

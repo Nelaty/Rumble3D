@@ -1,12 +1,13 @@
 #pragma once
 #include "ParticleForceGenerator.h"
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 namespace rum
 {
 	class Particle;
 
-	class ParticleSpring : public ParticleForceGenerator
+	class R3D_DECLSPEC ParticleSpring : public ParticleForceGenerator
 	{	
 	public:
 		ParticleSpring(Particle* other, real springConstant, real restLength);

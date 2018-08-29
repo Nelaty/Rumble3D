@@ -1,0 +1,4 @@
+<map id="rum::DefaultRigidBodyEngineCI" name="rum::DefaultRigidBodyEngineCI">
+<area shape="rect" id="node2" href="$classrum_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used for rigid body worlds. " alt="" coords="25,219,188,340"/>
+<area shape="rect" id="node3" href="$classrum_1_1_i_computation_interface.html" title="{rum::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="18,5,195,171"/>
+</map>

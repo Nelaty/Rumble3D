@@ -1,12 +1,13 @@
 #pragma once
 #include "Contact.h"
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 namespace rum
 {
 	class Contact;
 
-	class CollisionData
+	class R3D_DECLSPEC CollisionData
 	{
 	public:
 		explicit CollisionData();
@@ -14,13 +15,15 @@ namespace rum
 
 		// Gibt true zurück, wenn noch freie Plätze im Array vorhanden sind
 		// und sonst false.
-		bool hasMoreContacts() const;
+		bool hasUnusedContacts() const;
 		// Zurücksetzen des Arrays, so dass keine Kontakte gespeichert sind.
-		void reset(unsigned maxContacts); 
+		void reset(unsigned maxContacts);
+
 		// Indexverwaltung, wenn neue Kontakte hinzukamen.
 		void addContacts(unsigned count);
 		int getContactsLeft() const;
-		Contact * getContacts() const;
+		Contact* getContacts() const;
+
 		real getFriction() const;
 		real getRestitution() const;
 		int getContactCount() const;

@@ -4,7 +4,7 @@
 int main(int argc, char** argv)
 {
 	rum::PhysicsEngine physicsEngine;
-	physicsEngine.update(1);
+	physicsEngine.tick(1);
 
 	getchar();
 }

@@ -19,5 +19,5 @@ Additional dependencies:
 * Rumble3D.lib
 
 ## 3. Documentation
-* [Doxygen](./Doc/DoxygenDoc/html/index.html)
-* [User manual](./Doc/UserManual/Rumble3D_UserManual.pdf)
+* [Doxygen](https://nelaty.github.io/Rumble3D/Doc/DoxygenDoc/html/index.html)
+* [User manual](https://nelaty.github.io/Rumble3D/Doc/UserManual/Rumble3D_UserManual.pdf)

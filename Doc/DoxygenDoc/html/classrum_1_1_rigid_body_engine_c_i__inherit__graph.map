@@ -1,0 +1,4 @@
+<map id="rum::RigidBodyEngineCI" name="rum::RigidBodyEngineCI">
+<area shape="rect" id="node3" href="$classrum_1_1_default_rigid_body_engine_c_i.html" title="{rum::DefaultRigidBodyEngineCI\n||+ DefaultRigidBodyEngineCI()\l+ ~DefaultRigidBodyEngineCI()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l}" alt="" coords="5,388,208,553"/>
+<area shape="rect" id="node2" href="$classrum_1_1_i_computation_interface.html" title="{rum::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="18,5,195,171"/>
+</map>

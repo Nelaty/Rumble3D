@@ -1,0 +1,12 @@
+<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBoxSphereNarrowAlgorithm.cpp" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBoxSphereNarrowAlgorithm.cpp">
+<area shape="rect" id="node2" href="$_i_box_sphere_narrow_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/IBoxSphereNarrowAlgorithm.h" alt="" coords="167,139,365,195"/>
+<area shape="rect" id="node13" href="$_collision_box_8h.html" title="R3D/RigidBodyEngine\l/CollisionBox.h" alt="" coords="376,250,527,291"/>
+<area shape="rect" id="node16" href="$_collision_sphere_8h.html" title="R3D/RigidBodyEngine\l/CollisionSphere.h" alt="" coords="551,250,701,291"/>
+<area shape="rect" id="node3" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="180,243,352,299"/>
+<area shape="rect" id="node4" href="$_collision_detection_2_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="5,243,156,299"/>
+<area shape="rect" id="node5" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/Contact.h" alt="" coords="287,347,437,388"/>
+<area shape="rect" id="node6" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="151,436,322,463"/>
+<area shape="rect" id="node8" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="347,436,519,463"/>
+<area shape="rect" id="node7" href="$_config_8h.html" title="Config.h" alt="" coords="257,511,326,537"/>
+<area shape="rect" id="node14" href="$_collision_primitive_8h.html" title="CollisionPrimitive.h" alt="" coords="513,354,643,381"/>
+</map>

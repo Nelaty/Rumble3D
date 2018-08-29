@@ -1,11 +1,12 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 namespace rum
 {
 	class Contact;
 
-	class ContactResolver
+	class R3D_DECLSPEC ContactResolver
 	{
 	public:
 		/**

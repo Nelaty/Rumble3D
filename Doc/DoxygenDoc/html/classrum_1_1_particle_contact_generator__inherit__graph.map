@@ -1,7 +1,7 @@
 <map id="rum::ParticleContactGenerator" name="rum::ParticleContactGenerator">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_constraint.html" title="{rum::ParticleConstraint\n|# m_anchor\l# m_particle\l|+ ~ParticleConstraint()\l# ParticleConstraint()\l# CurrentLength()\l}" alt="" coords="5,160,160,281"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle_link.html" title="{rum::ParticleLink\n|# m_particles\l|+ AddContact()\l+ setParticles()\l# currentLength()\l}" alt="" coords="184,167,304,274"/>
-<area shape="rect" id="node4" href="$classrum_1_1_particle_cable.html" title="{rum::ParticleCable\n|# m_maxLength\l# m_restitution\l|+ ParticleCable()\l+ ~ParticleCable()\l+ AddContact()\l+ SetMaxLength()\l+ SetRestitution()\l}" alt="" coords="18,329,147,480"/>
-<area shape="rect" id="node5" href="$classrum_1_1_particle_collision.html" title="{rum::ParticleCollision\n|# m_restitution\l# m_distance\l# m_penetration\l|+ ParticleCollision()\l+ ~ParticleCollision()\l+ addContact()\l}" alt="" coords="171,337,317,473"/>
-<area shape="rect" id="node6" href="$classrum_1_1_particle_rod.html" title="{rum::ParticleRod\n|# m_length\l|+ AddContact()\l}" alt="" coords="341,366,459,443"/>
+<area shape="rect" id="node2" href="$classrum_1_1_particle_constraint.html" title="{rum::ParticleConstraint\n|# m_anchor\l# m_particle\l|+ ~ParticleConstraint()\l# ParticleConstraint()\l# currentLength()\l}" alt="" coords="5,167,160,289"/>
+<area shape="rect" id="node3" href="$classrum_1_1_particle_link.html" title="{rum::ParticleLink\n|# m_particles\l|+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="184,160,304,296"/>
+<area shape="rect" id="node4" href="$classrum_1_1_particle_cable.html" title="{rum::ParticleCable\n|# m_maxLength\l# m_restitution\l|+ ParticleCable()\l+ ~ParticleCable()\l+ addContact()\l+ setMaxLength()\l+ setRestitution()\l}" alt="" coords="18,344,147,495"/>
+<area shape="rect" id="node5" href="$classrum_1_1_particle_collision.html" title="{rum::ParticleCollision\n|# m_restitution\l# m_distance\l# m_penetration\l|+ ParticleCollision()\l+ ~ParticleCollision()\l+ addContact()\l}" alt="" coords="171,351,317,487"/>
+<area shape="rect" id="node6" href="$classrum_1_1_particle_rod.html" title="{rum::ParticleRod\n|# m_length\l|+ ~ParticleRod()\l# ParticleRod()\l}" alt="" coords="341,373,459,465"/>
 </map>

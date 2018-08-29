@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrum_1_1_particle_contact_resolver.html" title="rum::ParticleContactResolver" alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node1" href="$classrum_1_1_i_broad_phase_filter.html" title="rum::IBroadPhaseFilter" alt="" coords="5,5,160,32"/>
+<area shape="rect" id="node2" href="$classrum_1_1_broad_phase_filter.html" title="rum::BroadPhaseFilter" alt="" coords="208,5,360,32"/>
 </map>

@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
@@ -7,7 +8,7 @@ namespace rum
 {
 	class Particle;
 
-	class ParticleContact
+	class R3D_DECLSPEC ParticleContact
 	{
 		// Die Resolver-Klasse muss ohne Unterlass die Attribute von ParticleContact
 		// lesen und verändern. Der Code im Resolver würde mit gettern und settern

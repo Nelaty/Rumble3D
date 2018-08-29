@@ -1,37 +1,22 @@
 #pragma once
-#include "R3D/Common/Precision.h"
-
-#include <memory>
+#include "R3D/Common/Common.h"
 
 namespace rum
 {
+	class IComputationInterface;
 
 	/**
 	 * Abstract class for physic engine modules.
 	 */
-	class PhysicsEngineModule
+	class R3D_DECLSPEC PhysicsEngineModule
 	{
 	public:
 		virtual ~PhysicsEngineModule();
 
-		virtual void onBegin();
-		virtual void onEnd();
-
 		/**
-		*  Calculate changes in the physics engine and accumulate
-		*  them in buffers.
-		*  Will not apply those changes yet.
-		*/
-		virtual void step(real timeDelta) = 0;
-		/**
-		*  Apply the changes as a result of the simulation.
-		*/
-		virtual void integrate(real timeDelta) = 0;
-
-		/**
-		* Reset the physics engine module to its initial state
-		*/
-		virtual void reset() = 0;
+		 * Get the computation interface of this module.
+		 */
+		virtual IComputationInterface* getComputationInterface() const = 0;
 
 		/**
 		 * Enable or disable this module.

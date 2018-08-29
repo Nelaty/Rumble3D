@@ -1,23 +1,18 @@
 var searchData=
 [
-  ['add',['Add',['../classrum_1_1_particle_force_registry.html#a5465cbeb57e7f7d69a76d86650a96a1d',1,'rum::ParticleForceRegistry::Add()'],['../classrum_1_1_force_registry.html#a3062f9ea0518bdef2624b39e17eb95d4',1,'rum::ForceRegistry::Add()']]],
-  ['addcollisionbox',['addCollisionBox',['../classrum_1_1_rigid_body_world.html#a8e771d43f2242d305055f2bd5017715d',1,'rum::RigidBodyWorld']]],
-  ['addcollisionprimitive',['addCollisionPrimitive',['../classrum_1_1_rigid_body_world.html#a812a6ce6c6a1b577cf2cd8ef8d1fb525',1,'rum::RigidBodyWorld']]],
-  ['addcontact',['addContact',['../classrum_1_1_particle_collision.html#ad2f5fd21d9acf412ebf915df4495c159',1,'rum::ParticleCollision::addContact()'],['../classrum_1_1_contact_generator.html#ae1caf36f986a52ed338328cd940fc192',1,'rum::ContactGenerator::addContact()'],['../classrum_1_1_particle_cable.html#a06c6184b7e1d6047db4f732b132fb329',1,'rum::ParticleCable::AddContact()'],['../classrum_1_1_particle_contact_generator.html#a99c829af7d261ff236a4d829374daa9b',1,'rum::ParticleContactGenerator::AddContact()'],['../classrum_1_1_particle_link.html#a86e7dbac23cd26fce627bf5ed1fae6f5',1,'rum::ParticleLink::AddContact()'],['../classrum_1_1_particle_rod.html#abc0fad39193787cb65e937cd7d20874e',1,'rum::ParticleRod::AddContact()']]],
-  ['addcontactgenerator',['AddContactGenerator',['../classrum_1_1_particle_world.html#a6ee40c3bfe3cae4667f68be881d43958',1,'rum::ParticleWorld']]],
+  ['add',['add',['../classrum_1_1_particle_force_registry.html#a9297d30559870d6a33a459430d2ac757',1,'rum::ParticleForceRegistry']]],
+  ['addcontact',['addContact',['../classrum_1_1_particle_cable.html#a078344be0db7ccc00d326ac767736431',1,'rum::ParticleCable::addContact()'],['../classrum_1_1_particle_collision.html#a0f935f8f4093623ea52a6fcbb902b2a4',1,'rum::ParticleCollision::addContact()'],['../classrum_1_1_particle_contact_generator.html#a343d3df815d7e170458fe937fe82aad5',1,'rum::ParticleContactGenerator::addContact()'],['../classrum_1_1_particle_link.html#a0da76619bd1d2ae04d5f8173c2883ff2',1,'rum::ParticleLink::addContact()'],['../classrum_1_1_contact_generator.html#a10e14c5da23ed3fa91a6abac2f133b72',1,'rum::ContactGenerator::addContact()']]],
   ['addcontacts',['addContacts',['../classrum_1_1_collision_data.html#a6774145a5f81c49c30c5d0c7954d35d5',1,'rum::CollisionData']]],
-  ['addforce',['addForce',['../classrum_1_1_rigid_body.html#a82678048704e31e6781d107c89094706',1,'rum::RigidBody::addForce()'],['../classrum_1_1_particle.html#afe6a59e7c46860227b61b57eee5a37b0',1,'rum::Particle::AddForce()']]],
+  ['addforce',['addForce',['../classrum_1_1_particle.html#a70292de889740fba9fd0624f4a88bf91',1,'rum::Particle::addForce()'],['../classrum_1_1_rigid_body.html#a82678048704e31e6781d107c89094706',1,'rum::RigidBody::addForce()']]],
   ['addforceatbodypoint',['addForceAtBodyPoint',['../classrum_1_1_rigid_body.html#a5025fc4cc7be3202b84485ae2fdfdcf7',1,'rum::RigidBody']]],
   ['addforceatpoint',['addForceAtPoint',['../classrum_1_1_rigid_body.html#a8bfbbe5f4c71e6e3d484479bcbf98b8e',1,'rum::RigidBody']]],
-  ['addforcegenerator',['AddForceGenerator',['../classrum_1_1_rigid_body_world.html#ac31792a35fd305feb3b78317595b6a88',1,'rum::RigidBodyWorld']]],
-  ['addparticle',['AddParticle',['../classrum_1_1_particle_world.html#a082a750fe9f9ebe0f2b9537fe62eeb71',1,'rum::ParticleWorld']]],
-  ['addrigidbody',['addRigidBody',['../classrum_1_1_rigid_body_world.html#afaeef60e06bb9804ea2316dc6b7c2653',1,'rum::RigidBodyWorld']]],
+  ['addintermediatephasefilter',['addIntermediatePhaseFilter',['../classrum_1_1_collision_detector.html#ac94d9993483834effa1baea4ca938ad3',1,'rum::CollisionDetector']]],
   ['addrotation',['addRotation',['../classrum_1_1_rigid_body.html#a8d3625960b75bdf71c205274896d1969',1,'rum::RigidBody']]],
   ['addtorque',['addTorque',['../classrum_1_1_rigid_body.html#aaaf225465b2beb2e1d5737adb17a1421',1,'rum::RigidBody']]],
   ['addvelocity',['addVelocity',['../classrum_1_1_rigid_body.html#a347acf72fd3aa739218025050713948a',1,'rum::RigidBody']]],
-  ['adjustpositions',['adjustPositions',['../classrum_1_1_contact_resolver.html#a6900a5545bde3995302f22bdb7c85934',1,'rum::ContactResolver']]],
-  ['adjustvelocities',['adjustVelocities',['../classrum_1_1_contact_resolver.html#a9a76b0e81743999eea3c0ec882960d4c',1,'rum::ContactResolver']]],
+  ['adjustpositions',['adjustPositions',['../classrum_1_1_contact_resolver.html#aa926dab40e3e591854ef0cc707a7fd74',1,'rum::ContactResolver']]],
+  ['adjustvelocities',['adjustVelocities',['../classrum_1_1_contact_resolver.html#ae598b9b8332a1293ec59e4e20f6e3043',1,'rum::ContactResolver']]],
   ['anchoredspring',['AnchoredSpring',['../classrum_1_1_anchored_spring.html#a3bce11c4c0009f1ae3da23525cb99d6c',1,'rum::AnchoredSpring']]],
-  ['applypositionchange',['ApplyPositionChange',['../classrum_1_1_contact.html#acd9c12208d68554a2e81494b5677ce86',1,'rum::Contact']]],
-  ['applyvelocitychange',['ApplyVelocityChange',['../classrum_1_1_contact.html#a1e4cac982b6b49f5720f9ef9ce039864',1,'rum::Contact']]]
+  ['applypositionchange',['applyPositionChange',['../classrum_1_1_contact.html#aa520a3300393dbb8a0a0433044f68538',1,'rum::Contact']]],
+  ['applyvelocitychange',['applyVelocityChange',['../classrum_1_1_contact.html#a685e24aa5f4606149ab30c934a9095ca',1,'rum::Contact']]]
 ];

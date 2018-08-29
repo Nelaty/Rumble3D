@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "ParticleForceGenerator.h"
 #include "R3D/Common/Precision.h"
 
@@ -8,10 +9,11 @@ namespace rum
 {
 	class Particle;
 
-	class ParticleGravity :	public ParticleForceGenerator
+	class R3D_DECLSPEC ParticleGravity : public ParticleForceGenerator
 	{
 	public:
-		ParticleGravity(const glm::vec3& gravity);
+		explicit ParticleGravity(const glm::vec3& gravity);
+		~ParticleGravity();
 
 		void updateForce(Particle* particle, real duration) override;
 

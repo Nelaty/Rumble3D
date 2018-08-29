@@ -11,15 +11,14 @@ namespace rum
 	}
 
 	ParticleAnchoredSpring::~ParticleAnchoredSpring()
-	{
-	}
+	= default;
 
 	void ParticleAnchoredSpring::updateForce(Particle* particle, real duration)
 	{
-		glm::vec3 force = particle->getPosition();
+		auto force = particle->getPosition();
 		force -= *m_anchor;
 
-		real magnitude = glm::length(force);
+		auto magnitude = glm::length(force);
 		magnitude = (m_restLength - magnitude) * m_springConstant;
 
 		force = glm::normalize(force);

@@ -7,21 +7,24 @@ namespace rum
 								   const glm::vec3& localConnectionPoint,
 								   real springConstant,
 								   real restLength) 
-		: m_anchor(anchor),
-		m_connectionPoint(localConnectionPoint),
+		: m_connectionPoint(localConnectionPoint),
+		m_anchor(anchor),
 		m_springConstant(springConstant),
 		m_restLength(restLength)
 	{
 	}
-	
-	void AnchoredSpring::updateForce(RigidBody* body, real duration)
+
+	AnchoredSpring::~AnchoredSpring()
+	= default;
+
+	void AnchoredSpring::updateForce(RigidBody* body, const real duration)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:
-		glm::vec3 localW = body->getPointInWorldSpace(m_connectionPoint);
-		glm::vec3 force = localW - m_anchor;
+		const auto localW = body->getPointInWorldSpace(m_connectionPoint);
+		auto force = localW - m_anchor;
 
 		// Betrag der Kraft:
-		real magnitude = glm::length(force);
+		auto magnitude = glm::length(force);
 		magnitude = abs(magnitude - m_restLength);
 		magnitude *= m_springConstant;
 	

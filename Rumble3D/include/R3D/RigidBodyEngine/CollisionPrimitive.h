@@ -1,16 +1,29 @@
 #pragma once
-#include "RigidBody.h"
+#include "R3D/Common/Common.h"
 
 #include <glm/glm.hpp>
 
 namespace rum
 {
 	class RigidBody;
+	class INarrowPhaseFilter;
 
-	class CollisionPrimitive
+	class CollisionBox;
+	class CollisionSphere;
+
+	class R3D_DECLSPEC CollisionPrimitive
 	{
 	public:
 		virtual ~CollisionPrimitive();
+
+		virtual void generateContact(INarrowPhaseFilter* filter,
+									 CollisionPrimitive* other) = 0;
+
+		void generateContact(INarrowPhaseFilter* filter,
+							 CollisionBox* other);
+
+		void generateContact(INarrowPhaseFilter* filter,
+							 CollisionSphere* other);		
 
 		// Berechnet die Transformation:
 		void calculateInternals();

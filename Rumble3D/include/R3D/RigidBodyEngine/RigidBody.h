@@ -1,12 +1,14 @@
 #pragma once
+#include "R3D/RigidBodyEngine/CollisionObject.h"
 #include "R3D/Common/Precision.h"
+#include "R3D/Common/Common.h"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
 
 namespace rum 
 {
-	class RigidBody
+	class R3D_DECLSPEC RigidBody : public CollisionObject
 	{
 	public:
 		explicit RigidBody();
@@ -14,23 +16,23 @@ namespace rum
 
 		void calculateDerivedData();
 		void setInertiaTensor(const glm::mat3& inertiaTensor);
-		glm::mat3 getInverseTensor();
+		glm::mat3 getInverseTensor() const;
 
 		/* (Inverse) Mass access */
 		void setMass(real mass);
 		real getMass() const;
-		void setInverseMass(const real inverseMass);
+		void setInverseMass(real inverseMass);
 		real getInverseMass() const;
-		bool hasFiniteMass();
+		bool hasFiniteMass() const;
 
 		/* Force and torque accumulator access */
-		glm::vec3 getForceAccumulated();
-		glm::vec3 getTorqueAccumulated();
+		glm::vec3 getForceAccumulated() const;
+		glm::vec3 getTorqueAccumulated() const;
 
 		/* Position access */
-		void setPosition(const glm::vec3& position);
-		void setPosition(real x, real y, real z);
-		glm::vec3 getPosition() const;
+		void setCenterOfMass(const glm::vec3& centerOfMass);
+		void setCenterOfMass(real x, real y, real z);
+		glm::vec3 getCenterOfMass() const;
 
 		/* Velocity access */
 		void setVelocity(const glm::vec3& velocity);
@@ -62,8 +64,8 @@ namespace rum
 		void addVelocity(const glm::vec3& deltaVelocity);
 		void addRotation(const glm::vec3& deltaRotation);
 
-		bool isDead();
-		void setDead(bool isDead);
+		bool isDead() const;
+		void setDead(bool dead);
 
 
 		// Löschen aller aufsummierten Kräfte und Drehmomente.
@@ -89,9 +91,6 @@ namespace rum
 		glm::vec3 getDirectionInLocalSpace(const glm::vec3 &direction) const;
 		glm::vec3 getDirectionInWorldSpace(const glm::vec3 &direction) const;
 
-		glm::mat3 calculateCubeTensor(real mass, real x_half, real y_half, real z_half);
-		glm::mat3 calculateSphereTensor(real mass, real radius);
-
 		virtual void integrate(real duration);// Bestimmung des neuen Ortes für das Teilchen.
 
 	protected:
@@ -99,7 +98,7 @@ namespace rum
 		real m_linearDamping{};
 		real m_angularDamping{};
 
-		glm::vec3 m_position; // Position des Schwerpunkts. 
+		glm::vec3 m_centerOfMass;
 		glm::quat m_orientation;
 		glm::vec3 m_velocity;
 		glm::vec3 m_acceleration;
@@ -115,11 +114,11 @@ namespace rum
 		glm::vec3 m_torqueAccumulated;
 		bool m_dead = false;
 
-		void calculateTransformationMatrix(glm::mat4& transformationMatrix,
+		static void calculateTransformationMatrix(glm::mat4& transformationMatrix,
 										   const glm::vec3& position,
 										   const glm::quat& orientation);
 
-		void transformInertiaTensor(glm::mat3& iitWorld,
+		static void transformInertiaTensor(glm::mat3& iitWorld,
 									const glm::mat3& iit,
 									const glm::mat4& rotMat);
 	};

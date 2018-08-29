@@ -1,5 +1,7 @@
 #include "R3D/RigidBodyEngine/RigidBody.h"
-#include <assert.h>
+#include <cassert>
+
+#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 
 
 namespace rum
@@ -8,8 +10,6 @@ namespace rum
 												  const glm::vec3& position,
 												  const glm::quat& orientation)
 	{
-		//transformationMatrix.setOrientationAndPos(orientation, position);
-		
 		transformationMatrix = glm::mat4_cast(orientation);
 		transformationMatrix[3] += glm::vec4(position, static_cast<real>(1.0f));
 	}
@@ -138,32 +138,30 @@ namespace rum
 			t62*rotMat[2][2];
 	}
 	
-	glm::vec3 RigidBody::getPointInLocalSpace(const glm::vec3 &point) const
+	glm::vec3 RigidBody::getPointInLocalSpace(const glm::vec3& point) const
 	{
 		// return m_transformationMatrix.transformInverse(point);
 	
 		glm::vec3 temp = point;
 		temp -= glm::vec3(m_transformationMatrix[3]);
-		return glm::transpose(glm::mat3(m_transformationMatrix)) * temp;
+		return glm::inverse(glm::mat3(m_transformationMatrix)) * temp;
 	}
 	
-	glm::vec3 RigidBody::getPointInWorldSpace(const glm::vec3 &point) const
+	glm::vec3 RigidBody::getPointInWorldSpace(const glm::vec3& point) const
 	{
 		return glm::vec3(m_transformationMatrix * glm::vec4(point, static_cast<real>(1.0f)));
 	}
 	
-	glm::vec3 RigidBody::getDirectionInLocalSpace(const glm::vec3 &direction) const
+	glm::vec3 RigidBody::getDirectionInLocalSpace(const glm::vec3& direction) const
 	{
 		// return m_transformationMatrix.transformInverseDirection(direction);
-		return glm::transpose(glm::mat3(m_transformationMatrix)) * direction;
+		return glm::inverse(glm::mat3(m_transformationMatrix)) * direction;
 	}
 	
-	glm::vec3 RigidBody::getDirectionInWorldSpace(const glm::vec3 &direction) const
+	glm::vec3 RigidBody::getDirectionInWorldSpace(const glm::vec3& direction) const
 	{
-		//	return m_transformationMatrix.transformDirection(direction);
 		return glm::mat3(m_transformationMatrix) * direction;
 	}
-
 
 	RigidBody::RigidBody()
 	= default;
@@ -174,18 +172,18 @@ namespace rum
 	void RigidBody::calculateDerivedData()
 	{
 		m_orientation = glm::normalize(m_orientation);
-		calculateTransformationMatrix(m_transformationMatrix, m_position, m_orientation);
+		calculateTransformationMatrix(m_transformationMatrix, m_centerOfMass, m_orientation);
 		transformInertiaTensor(m_inverseInertiaTensorWorld,
 							   m_inverseInertiaTensor,
 							   m_transformationMatrix);
 	}
 	
-	void RigidBody::setInertiaTensor(const glm::mat3 & inertiaTensor)
+	void RigidBody::setInertiaTensor(const glm::mat3& inertiaTensor)
 	{
 		m_inverseInertiaTensor = glm::inverse(inertiaTensor);
 	}
 	
-	glm::mat3 RigidBody::getInverseTensor()
+	glm::mat3 RigidBody::getInverseTensor() const
 	{
 		return m_inverseInertiaTensor;
 	}
@@ -200,17 +198,14 @@ namespace rum
 	{
 		if (m_inverseMass == 0) 
 		{
-			return EROS_REAL_MAX;
+			return R3D_REAL_MAX;
 		}
-		else 
-		{
-			return static_cast<real>(1.0f) / m_inverseMass;
-		}
+		return static_cast<real>(1.0f) / m_inverseMass;
 	}
 	
 	void RigidBody::setInverseMass(const real inverseMass)
 	{
-		RigidBody::m_inverseMass = inverseMass;
+		m_inverseMass = inverseMass;
 	}
 	
 	real RigidBody::getInverseMass() const
@@ -218,24 +213,24 @@ namespace rum
 		return m_inverseMass;
 	}
 	
-	bool RigidBody::hasFiniteMass()
+	bool RigidBody::hasFiniteMass() const
 	{
 		return m_inverseMass > 0.0f;
 	}
 	
-	glm::vec3 RigidBody::getForceAccumulated()
+	glm::vec3 RigidBody::getForceAccumulated() const
 	{
 		return m_forceAccumulated;
 	}
 	
-	glm::vec3 RigidBody::getTorqueAccumulated()
+	glm::vec3 RigidBody::getTorqueAccumulated() const
 	{
 		return m_torqueAccumulated;
 	}
 	
-	void RigidBody::setLinearDamping(const real _linearDamping)
+	void RigidBody::setLinearDamping(const real linearDamping)
 	{
-		m_linearDamping = _linearDamping;
+		m_linearDamping = linearDamping;
 	}
 	
 	real RigidBody::getLinearDamping() const
@@ -243,40 +238,35 @@ namespace rum
 		return m_linearDamping;
 	}
 	
-	void RigidBody::setAngularDamping(const real _angularDamping)
+	void RigidBody::setAngularDamping(const real angularDamping)
 	{
-		m_angularDamping = _angularDamping;
+		m_angularDamping = angularDamping;
 	}
 	
 	real RigidBody::getAngularDamping() const{
 		return m_angularDamping;
 	}
 	
-	void RigidBody::setPosition(const glm::vec3 &position)
+	void RigidBody::setCenterOfMass(const glm::vec3& centerOfMass)
 	{
-		RigidBody::m_position = position;
+		m_centerOfMass = centerOfMass;
 	}
 	
-	void RigidBody::setPosition(const real x, const real y, const real z)
+	void RigidBody::setCenterOfMass(const real x, const real y, const real z)
 	{
-		m_position.x = x;
-		m_position.y = y;
-		m_position.z = z;
+		m_centerOfMass.x = x;
+		m_centerOfMass.y = y;
+		m_centerOfMass.z = z;
 	}
 	
-	/*void RigidBody::getPosition(glm::vec3 * position) const
+	glm::vec3 RigidBody::getCenterOfMass() const
 	{
-		*position = RigidBody::m_position;
-	}*/
-	
-	glm::vec3 RigidBody::getPosition() const
-	{
-		return m_position;
+		return m_centerOfMass;
 	}
 	
-	void RigidBody::setVelocity(const glm::vec3 &velocity)
+	void RigidBody::setVelocity(const glm::vec3& velocity)
 	{
-		RigidBody::m_velocity = velocity;
+		m_velocity = velocity;
 	}
 	
 	void RigidBody::setVelocity(const real x, const real y, const real z)
@@ -286,11 +276,6 @@ namespace rum
 		m_velocity.z = z;
 	}
 	
-	/*void RigidBody::getVelocity(glm::vec3 *velocity) const
-	{
-		*velocity = RigidBody::m_velocity;
-	}*/
-	
 	glm::vec3 RigidBody::getVelocity() const
 	{
 		return m_velocity;
@@ -298,7 +283,7 @@ namespace rum
 	
 	void RigidBody::setAcceleration(const glm::vec3& acceleration)
 	{
-		RigidBody::m_acceleration = acceleration;
+		m_acceleration = acceleration;
 	}
 	
 	void RigidBody::setAcceleration(const real x, const real y, const real z)
@@ -308,14 +293,9 @@ namespace rum
 		m_acceleration.z = z;
 	}
 	
-	/*void RigidBody::getAcceleration(glm::vec3 &acceleration) const
+	void RigidBody::getInverseInertiaTensorWorld(glm::mat3* inverseInertiaTensorWorld) const 
 	{
-		acceleration = RigidBody::m_acceleration;
-	}*/
-	
-	void RigidBody::getInverseInertiaTensorWorld(glm::mat3 * _inverseInertiaTensorWorld) const 
-	{
-		*_inverseInertiaTensorWorld = m_inverseInertiaTensorWorld;
+		*inverseInertiaTensorWorld = m_inverseInertiaTensorWorld;
 	}
 	
 	glm::vec3 RigidBody::getAcceleration() const
@@ -323,9 +303,9 @@ namespace rum
 		return m_acceleration;
 	}
 	
-	void RigidBody::setOrientation(const glm::quat & _orientation)
+	void RigidBody::setOrientation(const glm::quat & orientation)
 	{
-		m_orientation = _orientation;
+		m_orientation = orientation;
 	}
 	
 	void RigidBody::setOrientation(const real r, const real i, const real j, const real k)
@@ -341,9 +321,9 @@ namespace rum
 		return m_orientation;
 	}
 	
-	void RigidBody::setRotation(const glm::vec3 & _rotation)
+	void RigidBody::setRotation(const glm::vec3 & rotation)
 	{
-		m_rotation = _rotation;
+		m_rotation = rotation;
 	}
 	
 	void RigidBody::setRotation(const real x, const real y, const real z)
@@ -356,13 +336,14 @@ namespace rum
 		return m_rotation;
 	}
 	
-	bool RigidBody::isDead(){
+	bool RigidBody::isDead() const
+	{
 		return m_dead;
 	}
 	
-	void RigidBody::setDead(const bool _dead)
+	void RigidBody::setDead(const bool dead)
 	{
-		m_dead = _dead;
+		m_dead = dead;
 	}
 	
 	void RigidBody::clearAccumulators()
@@ -371,24 +352,24 @@ namespace rum
 		m_torqueAccumulated = glm::vec3(static_cast<real>(0.0f));
 	}
 	
-	void RigidBody::addForce(const glm::vec3 &force)
+	void RigidBody::addForce(const glm::vec3& force)
 	{
 		m_forceAccumulated += force;
 	}
 	
-	void RigidBody::addForceAtPoint(const glm::vec3 & force, const glm::vec3 & point)
+	void RigidBody::addForceAtPoint(const glm::vec3& force, const glm::vec3& point)
 	{
 		// Angriffspunkt der Kraft relativ zum Schwerpunkt:
-		glm::vec3 pt = point;
-		pt -= m_position;
+		auto pt = point;
+		pt -= m_centerOfMass;
 	
 		m_forceAccumulated += force;
 		m_torqueAccumulated += glm::cross(pt, force);
 	}
 	
-	void RigidBody::addForceAtBodyPoint(const glm::vec3 & force, const glm::vec3 & point)
+	void RigidBody::addForceAtBodyPoint(const glm::vec3& force, const glm::vec3& point)
 	{
-		glm::vec3 pt = getPointInWorldSpace(point);
+		const auto pt = getPointInWorldSpace(point);
 		addForceAtPoint(force, pt);
 	}
 	
@@ -402,7 +383,7 @@ namespace rum
 		return m_transformationMatrix;
 	}
 	
-	void RigidBody::integrate(real duration) 
+	void RigidBody::integrate(const real duration) 
 	{
 		calculateDerivedData();
 		// Lineare Beschleunigung:
@@ -424,7 +405,7 @@ namespace rum
 		m_rotation *= static_cast<real>(-1.0f); //Da Rotation falsch herum in Vektoria
 	
 		// Positionsanpassung linear:
-		m_position += duration * m_velocity;
+		m_centerOfMass += duration * m_velocity;
 		
 		// Positionsanpassung Drehung:
 		//m_orientation.updateOrientationByAngularVelocity(m_rotation, duration);		
@@ -437,29 +418,13 @@ namespace rum
 		m_rotation *= -1.0; //Wieder zurückrechnen. Da Rotation falsch herum in Vektoria
 	}
 	
-	void RigidBody::addVelocity(const glm::vec3 &deltaVelocity)
+	void RigidBody::addVelocity(const glm::vec3& deltaVelocity)
 	{
 		m_velocity += deltaVelocity;
 	}
 	
-	void RigidBody::addRotation(const glm::vec3 &deltaRotation)
+	void RigidBody::addRotation(const glm::vec3& deltaRotation)
 	{
 		m_rotation += deltaRotation;
-	}
-	
-	glm::mat3 RigidBody::calculateCubeTensor(real mass, real x_half, real y_half, real z_half)
-	{
-		return glm::mat3(
-			mass / 48.0f * (y_half*y_half + z_half * z_half), 0, 0,
-			0, mass / 48.0f * (x_half*x_half + z_half*z_half), 0,
-			0, 0, mass / 48.0 * (x_half*x_half + y_half*y_half));
-	}
-	
-	glm::mat3 RigidBody::calculateSphereTensor(real mass, real radius)
-	{
-		return glm::mat3(
-			2.0f * mass * radius * radius / 5.0f, 0, 0,
-			0, 2.0f * mass * radius * radius / 5.0f, 0,
-			0, 0, 2.0f * mass * radius * radius / 5.0f);
 	}
 }

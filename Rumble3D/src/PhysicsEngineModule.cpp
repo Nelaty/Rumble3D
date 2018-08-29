@@ -10,14 +10,6 @@ namespace rum
 	{
 	}
 
-	void PhysicsEngineModule::onBegin()
-	{
-	}
-
-	void PhysicsEngineModule::onEnd()
-	{
-	}
-
 	void PhysicsEngineModule::enable(const bool enabled)
 	{
 		m_enabled = enabled;

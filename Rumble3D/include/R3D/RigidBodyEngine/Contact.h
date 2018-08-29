@@ -1,10 +1,14 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
-#include "RigidBody.h"
+
+#include <glm/glm.hpp>
 
 namespace rum
 {
-	class Contact
+	class RigidBody;
+
+	class R3D_DECLSPEC Contact
 	{
 		friend class ContactResolver;
 	
@@ -17,7 +21,7 @@ namespace rum
 		void setContactNormal(const glm::vec3& contactNormal);
 		glm::vec3 getContactNormal() const;
 
-		void setPenetration(const real penetration);
+		void setPenetration(real penetration);
 		real getPenetration() const;
 
 		void setBodyData(RigidBody* one, RigidBody* two,

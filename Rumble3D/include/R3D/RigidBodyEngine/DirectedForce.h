@@ -1,5 +1,6 @@
 #pragma once
 #include "ForceGenerator.h"
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
@@ -8,7 +9,7 @@ namespace rum
 {
 	class RigidBody;
 
-	class DirectedForce : public ForceGenerator
+	class R3D_DECLSPEC DirectedForce : public ForceGenerator
 	{
 	public:
 		DirectedForce(glm::vec3 localPosition, glm::vec3 force);

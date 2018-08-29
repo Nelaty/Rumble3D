@@ -1,7 +1,6 @@
 #include "R3D/PhysicsEngine.h"
 #include "R3D/PhysicsEngineModule.h"
-
-#include <algorithm>
+#include "R3D/IComputationInterface.h"
 
 namespace rum
 {
@@ -11,7 +10,7 @@ namespace rum
 	PhysicsEngine::~PhysicsEngine()
 	= default;
 
-	void PhysicsEngine::update(const real timeDelta)
+	void PhysicsEngine::tick(const real timeDelta)
 	{
 		onBegin();
 		step(timeDelta);
@@ -30,7 +29,7 @@ namespace rum
 		return findModule(key) != nullptr;
 	}
 
-	rum::PhysicsEngineModule* PhysicsEngine::registerModule(const std::string& key, PhysicsEngineModule* module)
+	rum::PhysicsEngineModule* PhysicsEngine::registerModule(PhysicsEngineModule* module, const std::string& key)
 	{
 		const auto foundModule = findModule(key);
 		if(foundModule)
@@ -60,7 +59,8 @@ namespace rum
 		{
 			if(it.second->isEnabled())
 			{
-				it.second->onBegin();
+				auto compInterface = it.second->getComputationInterface();
+				compInterface->onBegin();
 			}	
 		}
 	}
@@ -71,7 +71,8 @@ namespace rum
 		{
 			if(it.second->isEnabled())
 			{
-				it.second->onEnd();
+				auto compInterface = it.second->getComputationInterface();
+				compInterface->onEnd();
 			}
 		}
 	}
@@ -82,7 +83,8 @@ namespace rum
 		{
 			if(it.second->isEnabled())
 			{
-				it.second->step(timeDelta);
+				auto compInterface = it.second->getComputationInterface();
+				compInterface->step(timeDelta);
 			}
 		}
 	}
@@ -93,7 +95,8 @@ namespace rum
 		{
 			if(it.second->isEnabled())
 			{
-				it.second->integrate(timeDelta);
+				auto compInterface = it.second->getComputationInterface();
+				compInterface->integrate(timeDelta);
 			}
 		}
 	}

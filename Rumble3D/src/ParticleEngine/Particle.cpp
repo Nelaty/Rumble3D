@@ -9,8 +9,8 @@ namespace rum
 		m_velocity{real(0)},
 		m_acceleration{real(0)},
 		m_forceAccumulator{real(0)},
-		m_inverseMass{0},
 		m_damping{1},
+		m_inverseMass{0},
 		m_isDead{false}
 	{
 	}
@@ -28,7 +28,7 @@ namespace rum
 	{
 		if (m_inverseMass == 0) 
 		{
-			return EROS_REAL_MAX;
+			return R3D_REAL_MAX;
 		}
 		return (static_cast<real>(1.0)) / m_inverseMass;
 	}
@@ -140,18 +140,18 @@ namespace rum
 
 		assert(duration > 0.0);
 
-		// Neue Position bestimmen:
-		// Hier quadratischer Term aus der Beschleunigung nicht berücksichtigt, da marginal.
+		// Update the position
+		// Ignore quadratic term, since its effect is marginal
 		m_position += m_velocity * duration;
 
-		// Beschleunigung bestimmen:
-		glm::vec3 resultingAcceleration = m_acceleration;
+		// Calculate the acceleration
+		auto resultingAcceleration = m_acceleration;
 		resultingAcceleration += m_forceAccumulator * m_inverseMass;
 
-		// Neue Geschwindigkeit durch die Beschleunigung:
+		// Update the velocity
 		m_velocity += resultingAcceleration * duration;
 
-		// Dämpfung berücksichtigen:
+		// Apply damping
 		m_velocity *= pow(m_damping, duration);
 
 		clearAccumulator();

@@ -1,0 +1,4 @@
+<map id="rum::DefaultParticleEngineCI" name="rum::DefaultParticleEngineCI">
+<area shape="rect" id="node2" href="$classrum_1_1_particle_engine_c_i.html" title="{rum::ParticleEngineCI\n|# m_particleWorld\l|+ ~ParticleEngineCI()\l+ setParticleWorld()\l+ getParticleWorld()\l# ParticleEngineCI()\l}" alt="" coords="25,219,173,340"/>
+<area shape="rect" id="node3" href="$classrum_1_1_i_computation_interface.html" title="{rum::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="11,5,188,171"/>
+</map>

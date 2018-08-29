@@ -1,11 +1,17 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
 
 namespace rum 
 {
-	class Particle 
+	/**
+	 * A particle represents a single point in space with physical
+	 * properties. A particle has no orientation and therefor can't
+	 * be rotated.
+	 */
+	class R3D_DECLSPEC Particle 
 	{
 	public:
 		explicit Particle();
@@ -81,9 +87,12 @@ namespace rum
 		glm::vec3 m_position;
 		glm::vec3 m_velocity;
 		glm::vec3 m_acceleration;
+
 		glm::vec3 m_forceAccumulator;
-		real m_inverseMass;
 		real m_damping;
+
+		real m_inverseMass;
+		
 		bool m_isDead;
 	};
 }

@@ -1,3 +1,3 @@
 <map id="rum::CollisionBox" name="rum::CollisionBox">
-<area shape="rect" id="node2" href="$classrum_1_1_collision_primitive.html" title="{rum::CollisionPrimitive\n|# m_body\l# m_offset\l# m_transform\l|+ ~CollisionPrimitive()\l+ CalculateInternals()\l+ GetAxis()\l+ GetTransform()\l+ GetBody()\l# CollisionPrimitive()\l}" alt="" coords="5,5,156,185"/>
+<area shape="rect" id="node2" href="$classrum_1_1_collision_primitive.html" title="{rum::CollisionPrimitive\n|# m_body\l# m_offset\l# m_transform\l|+ ~CollisionPrimitive()\l+ generateContact()\l+ generateContact()\l+ generateContact()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l# CollisionPrimitive()\l}" alt="" coords="5,5,156,229"/>
 </map>

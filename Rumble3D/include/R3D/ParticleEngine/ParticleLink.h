@@ -1,5 +1,6 @@
 #pragma once
 #include "ParticleContactGenerator.h"
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 namespace rum
@@ -8,7 +9,7 @@ namespace rum
 	class ParticleContact;
 
 	// Speichert zwei verbundene Teilchen.
-	class ParticleLink : public ParticleContactGenerator
+	class R3D_DECLSPEC ParticleLink : public ParticleContactGenerator
 	{
 	public:
 		virtual ~ParticleLink();

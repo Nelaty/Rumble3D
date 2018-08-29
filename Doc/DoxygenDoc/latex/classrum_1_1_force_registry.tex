@@ -10,83 +10,102 @@ Collaboration diagram for rum\+:\+:Force\+Registry\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=208pt]{classrum_1_1_force_registry__coll__graph}
+\includegraphics[width=220pt]{classrum_1_1_force_registry__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structrum_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}
+struct \mbox{\hyperlink{structrum_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classrum_1_1_force_registry_a4a52c8f9558a80eea2e47e328b687c77}{Registry}} = std\+::vector$<$ \mbox{\hyperlink{structrum_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}} $>$
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classrum_1_1_force_registry_a3062f9ea0518bdef2624b39e17eb95d4}{Add} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$rigid\+Body, \hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$fg)
+\mbox{\hyperlink{classrum_1_1_force_registry_aa45ab19bcf87ffb0f3dfc73dd7a3beac}{Force\+Registry}} ()
 \item 
-void \hyperlink{classrum_1_1_force_registry_a26782e5d963910c3b61b27362591ba36}{Remove} (\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$rigid\+Body, \hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$fg)
+\mbox{\hyperlink{classrum_1_1_force_registry_aacf8096092db2532452f25e1a1a66515}{$\sim$\+Force\+Registry}} ()
 \item 
-void \hyperlink{classrum_1_1_force_registry_a571da7ffd245ae2b09dd5538881a19de}{Clear} ()
+void \mbox{\hyperlink{classrum_1_1_force_registry_a8aa91bdec15bc2f06f8fa331f7418c92}{register\+Force}} (\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body, \mbox{\hyperlink{classrum_1_1_force_generator}{Force\+Generator}} $\ast$fg)
 \item 
-void \hyperlink{classrum_1_1_force_registry_a162fdd23949e8c99523257a551c41e7c}{Update\+Forces} (\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
-\end{DoxyCompactItemize}
-\subsection*{Protected Types}
-\begin{DoxyCompactItemize}
+void \mbox{\hyperlink{classrum_1_1_force_registry_ab4e2467560453bfbb700fdff9eee02ad}{unregister\+Force}} (\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body, \mbox{\hyperlink{classrum_1_1_force_generator}{Force\+Generator}} $\ast$fg)
 \item 
-typedef std\+::vector$<$ \hyperlink{structrum_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry} $>$ \hyperlink{classrum_1_1_force_registry_a9523605286e7ef4f693c3c485df757a6}{Registry}
+void \mbox{\hyperlink{classrum_1_1_force_registry_a74b9f08c0fb87c8b49125fb98b6c347a}{clear}} ()
+\item 
+void \mbox{\hyperlink{classrum_1_1_force_registry_a5fe035c304a9f490332c3e7db423dfaa}{update\+Forces}} (\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} duration)
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrum_1_1_force_registry_a9523605286e7ef4f693c3c485df757a6}{Registry} \hyperlink{classrum_1_1_force_registry_a6b37ba6705d19a996324d1d10d642041}{registrations}
+\mbox{\hyperlink{classrum_1_1_force_registry_a4a52c8f9558a80eea2e47e328b687c77}{Registry}} \mbox{\hyperlink{classrum_1_1_force_registry_ab1f714dc80759abe5e34761d79b7ab8f}{m\+\_\+registrations}}
 \end{DoxyCompactItemize}
 
 
 \subsection{Member Typedef Documentation}
-\mbox{\Hypertarget{classrum_1_1_force_registry_a9523605286e7ef4f693c3c485df757a6}\label{classrum_1_1_force_registry_a9523605286e7ef4f693c3c485df757a6}} 
+\mbox{\Hypertarget{classrum_1_1_force_registry_a4a52c8f9558a80eea2e47e328b687c77}\label{classrum_1_1_force_registry_a4a52c8f9558a80eea2e47e328b687c77}} 
 \index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!Registry@{Registry}}
 \index{Registry@{Registry}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
 \subsubsection{\texorpdfstring{Registry}{Registry}}
-{\footnotesize\ttfamily typedef std\+::vector$<$\hyperlink{structrum_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}$>$ \hyperlink{classrum_1_1_force_registry_a9523605286e7ef4f693c3c485df757a6}{rum\+::\+Force\+Registry\+::\+Registry}\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classrum_1_1_force_registry_a4a52c8f9558a80eea2e47e328b687c77}{rum\+::\+Force\+Registry\+::\+Registry}} =  std\+::vector$<$\mbox{\hyperlink{structrum_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}}$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrum_1_1_force_registry_aa45ab19bcf87ffb0f3dfc73dd7a3beac}\label{classrum_1_1_force_registry_aa45ab19bcf87ffb0f3dfc73dd7a3beac}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!Force\+Registry@{Force\+Registry}}
+\index{Force\+Registry@{Force\+Registry}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{Force\+Registry()}{ForceRegistry()}}
+{\footnotesize\ttfamily rum\+::\+Force\+Registry\+::\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classrum_1_1_force_registry_aacf8096092db2532452f25e1a1a66515}\label{classrum_1_1_force_registry_aacf8096092db2532452f25e1a1a66515}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!````~Force\+Registry@{$\sim$\+Force\+Registry}}
+\index{````~Force\+Registry@{$\sim$\+Force\+Registry}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{$\sim$\+Force\+Registry()}{~ForceRegistry()}}
+{\footnotesize\ttfamily rum\+::\+Force\+Registry\+::$\sim$\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classrum_1_1_force_registry_a3062f9ea0518bdef2624b39e17eb95d4}\label{classrum_1_1_force_registry_a3062f9ea0518bdef2624b39e17eb95d4}} 
-\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!Add@{Add}}
-\index{Add@{Add}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Add()}{Add()}}
-{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::\+Add (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{rigid\+Body,  }\item[{\hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$}]{fg }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_force_registry_a74b9f08c0fb87c8b49125fb98b6c347a}\label{classrum_1_1_force_registry_a74b9f08c0fb87c8b49125fb98b6c347a}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!clear@{clear}}
+\index{clear@{clear}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classrum_1_1_force_registry_a571da7ffd245ae2b09dd5538881a19de}\label{classrum_1_1_force_registry_a571da7ffd245ae2b09dd5538881a19de}} 
-\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!Clear@{Clear}}
-\index{Clear@{Clear}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Clear()}{Clear()}}
-{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::\+Clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_force_registry_a8aa91bdec15bc2f06f8fa331f7418c92}\label{classrum_1_1_force_registry_a8aa91bdec15bc2f06f8fa331f7418c92}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!register\+Force@{register\+Force}}
+\index{register\+Force@{register\+Force}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{register\+Force()}{registerForce()}}
+{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::register\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body,  }\item[{\mbox{\hyperlink{classrum_1_1_force_generator}{Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classrum_1_1_force_registry_a26782e5d963910c3b61b27362591ba36}\label{classrum_1_1_force_registry_a26782e5d963910c3b61b27362591ba36}} 
-\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!Remove@{Remove}}
-\index{Remove@{Remove}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Remove()}{Remove()}}
-{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::\+Remove (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body} $\ast$}]{rigid\+Body,  }\item[{\hyperlink{classrum_1_1_force_generator}{Force\+Generator} $\ast$}]{fg }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_force_registry_ab4e2467560453bfbb700fdff9eee02ad}\label{classrum_1_1_force_registry_ab4e2467560453bfbb700fdff9eee02ad}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!unregister\+Force@{unregister\+Force}}
+\index{unregister\+Force@{unregister\+Force}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{unregister\+Force()}{unregisterForce()}}
+{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::unregister\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body,  }\item[{\mbox{\hyperlink{classrum_1_1_force_generator}{Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classrum_1_1_force_registry_a162fdd23949e8c99523257a551c41e7c}\label{classrum_1_1_force_registry_a162fdd23949e8c99523257a551c41e7c}} 
-\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!Update\+Forces@{Update\+Forces}}
-\index{Update\+Forces@{Update\+Forces}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
-\subsubsection{\texorpdfstring{Update\+Forces()}{UpdateForces()}}
-{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::\+Update\+Forces (\begin{DoxyParamCaption}\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classrum_1_1_force_registry_a5fe035c304a9f490332c3e7db423dfaa}\label{classrum_1_1_force_registry_a5fe035c304a9f490332c3e7db423dfaa}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!update\+Forces@{update\+Forces}}
+\index{update\+Forces@{update\+Forces}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{update\+Forces()}{updateForces()}}
+{\footnotesize\ttfamily void rum\+::\+Force\+Registry\+::update\+Forces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}}]{duration }\end{DoxyParamCaption})}
 
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classrum_1_1_force_registry_a6b37ba6705d19a996324d1d10d642041}\label{classrum_1_1_force_registry_a6b37ba6705d19a996324d1d10d642041}} 
-\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!registrations@{registrations}}
-\index{registrations@{registrations}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
-\subsubsection{\texorpdfstring{registrations}{registrations}}
-{\footnotesize\ttfamily \hyperlink{classrum_1_1_force_registry_a9523605286e7ef4f693c3c485df757a6}{Registry} rum\+::\+Force\+Registry\+::registrations\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classrum_1_1_force_registry_ab1f714dc80759abe5e34761d79b7ab8f}\label{classrum_1_1_force_registry_ab1f714dc80759abe5e34761d79b7ab8f}} 
+\index{rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}!m\+\_\+registrations@{m\+\_\+registrations}}
+\index{m\+\_\+registrations@{m\+\_\+registrations}!rum\+::\+Force\+Registry@{rum\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{m\+\_\+registrations}{m\_registrations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrum_1_1_force_registry_a4a52c8f9558a80eea2e47e328b687c77}{Registry}} rum\+::\+Force\+Registry\+::m\+\_\+registrations\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\hyperlink{_force_registry_8h}{Force\+Registry.\+h}\item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\hyperlink{_force_registry_8cpp}{Force\+Registry.\+cpp}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_force_registry_8h}{Force\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_force_registry_8cpp}{Force\+Registry.\+cpp}}\end{DoxyCompactItemize}

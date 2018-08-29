@@ -19,20 +19,22 @@ Collaboration diagram for rum\+:\+:Particle\+Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=279pt]{classrum_1_1_particle_gravity__coll__graph}
+\includegraphics[width=281pt]{classrum_1_1_particle_gravity__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classrum_1_1_particle_gravity_af489016667073103233d0703ab2efbaa}{Particle\+Gravity} (const glm\+::vec3 \&gravity)
+\mbox{\hyperlink{classrum_1_1_particle_gravity_af489016667073103233d0703ab2efbaa}{Particle\+Gravity}} (const glm\+::vec3 \&gravity)
 \item 
-virtual void \hyperlink{classrum_1_1_particle_gravity_a8b943480e3856d1818e5090097403679}{Update\+Force} (\hyperlink{classrum_1_1_particle}{Particle} $\ast$particle, \hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real} duration)
+\mbox{\hyperlink{classrum_1_1_particle_gravity_a4c09cee665172d402c6c545a3f9119ce}{$\sim$\+Particle\+Gravity}} ()
+\item 
+void \mbox{\hyperlink{classrum_1_1_particle_gravity_a52871a283cfef5377ef493bed81954a7}{update\+Force}} (\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}} duration) override
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-glm\+::vec3 \hyperlink{classrum_1_1_particle_gravity_a9fbc86ccd5d18e93626a6c4b0fc3b5e2}{m\+\_\+gravity}
+glm\+::vec3 \mbox{\hyperlink{classrum_1_1_particle_gravity_a9fbc86ccd5d18e93626a6c4b0fc3b5e2}{m\+\_\+gravity}}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -42,20 +44,26 @@ glm\+::vec3 \hyperlink{classrum_1_1_particle_gravity_a9fbc86ccd5d18e93626a6c4b0f
 \index{rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}!Particle\+Gravity@{Particle\+Gravity}}
 \index{Particle\+Gravity@{Particle\+Gravity}!rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}}
 \subsubsection{\texorpdfstring{Particle\+Gravity()}{ParticleGravity()}}
-{\footnotesize\ttfamily rum\+::\+Particle\+Gravity\+::\+Particle\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily rum\+::\+Particle\+Gravity\+::\+Particle\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classrum_1_1_particle_gravity_a4c09cee665172d402c6c545a3f9119ce}\label{classrum_1_1_particle_gravity_a4c09cee665172d402c6c545a3f9119ce}} 
+\index{rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}!````~Particle\+Gravity@{$\sim$\+Particle\+Gravity}}
+\index{````~Particle\+Gravity@{$\sim$\+Particle\+Gravity}!rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Gravity()}{~ParticleGravity()}}
+{\footnotesize\ttfamily rum\+::\+Particle\+Gravity\+::$\sim$\+Particle\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classrum_1_1_particle_gravity_a8b943480e3856d1818e5090097403679}\label{classrum_1_1_particle_gravity_a8b943480e3856d1818e5090097403679}} 
-\index{rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}!Update\+Force@{Update\+Force}}
-\index{Update\+Force@{Update\+Force}!rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}}
-\subsubsection{\texorpdfstring{Update\+Force()}{UpdateForce()}}
-{\footnotesize\ttfamily void rum\+::\+Particle\+Gravity\+::\+Update\+Force (\begin{DoxyParamCaption}\item[{\hyperlink{classrum_1_1_particle}{Particle} $\ast$}]{particle,  }\item[{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{classrum_1_1_particle_gravity_a52871a283cfef5377ef493bed81954a7}\label{classrum_1_1_particle_gravity_a52871a283cfef5377ef493bed81954a7}} 
+\index{rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}!update\+Force@{update\+Force}}
+\index{update\+Force@{update\+Force}!rum\+::\+Particle\+Gravity@{rum\+::\+Particle\+Gravity}}
+\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+{\footnotesize\ttfamily void rum\+::\+Particle\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrum_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacerum_a7e8cca23573d5eaead0f138cbaa4862c}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \hyperlink{classrum_1_1_particle_force_generator_aca758295718deb8569796185ccbe8d54}{rum\+::\+Particle\+Force\+Generator}.
+Implements \mbox{\hyperlink{classrum_1_1_particle_force_generator_af7abcafb9527220988ec4b9dde817b34}{rum\+::\+Particle\+Force\+Generator}}.
 
 
 
@@ -70,5 +78,5 @@ Implements \hyperlink{classrum_1_1_particle_force_generator_aca758295718deb85697
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}\item 
-F\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}

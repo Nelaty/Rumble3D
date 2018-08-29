@@ -1,8 +1,9 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
-#include <string>
 #include <map>
+#include <string>
 
 namespace rum
 {
@@ -12,16 +13,16 @@ namespace rum
 	 * The PhysicsEngine is the main component of this library and consists
 	 * of multiple PhysicsEngineModule.
 	 */
-	class PhysicsEngine
+	class R3D_DECLSPEC PhysicsEngine
 	{
 	public:
 		explicit PhysicsEngine();
 		~PhysicsEngine();
 
 		/** 
-		 * Update physic modules. 
+		 * Update all enabled physic modules. 
 		 */
-		void update(real timeDelta);
+		void tick(real timeDelta);
 
 		/** 
 		 * Try to find an existing module.
@@ -40,7 +41,7 @@ namespace rum
 		 * module with the same key is already registered.
 		 * \return The registered module or an existing module with the same key.
 		 */
-		PhysicsEngineModule* registerModule(const std::string& key, PhysicsEngineModule* module);
+		PhysicsEngineModule* registerModule(PhysicsEngineModule* module, const std::string& key);
 
 		/**
 		 * Unregister an existing physics module. 
@@ -50,19 +51,19 @@ namespace rum
 
 	private:
 		/** 
-		 * Calls OnBegin function on every module. 
+		 * Calls onBegin function on every module. 
 		 */
 		void onBegin();
 		/** 
-		 * Calls OnEnd function on every module. 
+		 * Calls onEnd function on every module. 
 		 */
 		void onEnd();
 		/** 
-		 * Calls Step function on every module. 
+		 * Calls step function on every module. 
 		 */
 		void step(real timeDelta);
 		/** 
-		 * Calls Integrate function on every module. 
+		 * Calls integrate function on every module. 
 		 */
 		void integrate(real timeDelta);
 

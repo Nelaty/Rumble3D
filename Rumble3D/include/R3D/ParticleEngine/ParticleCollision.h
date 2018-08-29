@@ -1,4 +1,5 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "ParticleLink.h"
 #include "R3D/Common/Precision.h"
 
@@ -6,7 +7,7 @@ namespace rum
 {
 	class ParticleContact;
 
-	class ParticleCollision : public ParticleLink
+	class R3D_DECLSPEC ParticleCollision : public ParticleLink
 	{
 	
 	public:
