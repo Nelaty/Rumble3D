@@ -207,6 +207,21 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\CollisionResolver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\FrictionResolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\VelocityResolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\PhysicMaterial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\R3D\RigidBodyEngine\AnchoredSpring.h">
@@ -417,6 +432,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\FrictionResolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\PhysicMaterial.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

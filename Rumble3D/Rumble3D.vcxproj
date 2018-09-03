@@ -201,6 +201,10 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionPlane.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionPrimitive.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\CollisionResolver.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\FrictionResolver.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\VelocityResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionSphere.cpp" />
     <ClCompile Include="src\RigidBodyEngine\Contact.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ContactGenerator.cpp" />
@@ -210,6 +214,7 @@
     <ClCompile Include="src\RigidBodyEngine\ForceGenerator.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ForceRegistry.cpp" />
     <ClCompile Include="src\RigidBodyEngine\Gravity.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\PhysicMaterial.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBody.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBodyEngineCI.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBodyWorld.cpp" />
@@ -272,6 +277,9 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionPlane.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionPrimitive.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\CollisionResolver.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\FrictionResolver.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionSphere.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\Contact.h" />
@@ -282,6 +290,7 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\ForceGenerator.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\ForceRegistry.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\Gravity.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\PhysicMaterial.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBody.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineCI.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyWorld.h" />

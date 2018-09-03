@@ -4,11 +4,12 @@
 
 namespace r3
 {
-	class R3D_DECLSPEC VelocityResolver : public ICollisionResolutionFilter
+	class R3D_DECLSPEC FrictionResolver : public ICollisionResolutionFilter
 	{
 	public:
-		explicit VelocityResolver();
-		~VelocityResolver();
+		explicit FrictionResolver();
+		~FrictionResolver();
+
 
 		void resolve(const CollisionData& collisionData) override;
 	};
