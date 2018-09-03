@@ -3,7 +3,7 @@
 #include <glm/gtx/norm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-namespace rum
+namespace r3
 {
 	unsigned CollisionDetectorOld::sphereAndHalfSpace(
 		const CollisionSphere &sphere,

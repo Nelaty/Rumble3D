@@ -1,9 +1,10 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "ISphereSphereNarrowAlgorithm.h"
 
-namespace rum
+namespace r3
 {
-	class SphereSphereNarrowAlgorithm : public ISphereSphereNarrowAlgorithm
+	class R3D_DECLSPEC SphereSphereNarrowAlgorithm : public ISphereSphereNarrowAlgorithm
 	{
 	public:
 		explicit SphereSphereNarrowAlgorithm();

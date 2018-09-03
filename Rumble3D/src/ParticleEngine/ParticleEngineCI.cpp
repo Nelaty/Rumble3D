@@ -1,6 +1,6 @@
 #include "R3D/ParticleEngine/ParticleEngineCI.h"
 
-namespace rum
+namespace r3
 {
 	ParticleEngineCI::~ParticleEngineCI()
 	= default;

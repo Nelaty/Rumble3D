@@ -4,7 +4,7 @@
 
 #include <algorithm>
 
-namespace rum
+namespace r3
 {
 	ParticleWorld::ParticleWorld()
 	= default;
@@ -37,7 +37,7 @@ namespace rum
 		m_particles.clear();
 	}
 	
-	rum::ParticleForceRegistry& ParticleWorld::getParticleForceRegistry()
+	r3::ParticleForceRegistry& ParticleWorld::getParticleForceRegistry()
 {
 		return m_forceRegistry;
 	}

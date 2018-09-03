@@ -5,7 +5,7 @@
 #include <map>
 #include <string>
 
-namespace rum
+namespace r3
 {
 	class PhysicsEngineModule;
 

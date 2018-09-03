@@ -9,7 +9,7 @@
 
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	NarrowPhaseFilter::NarrowPhaseFilter(const unsigned iterations, 
 										 const unsigned collisionsMax)

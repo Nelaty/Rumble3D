@@ -3,7 +3,7 @@
 #include "R3D/RigidBodyEngine/BoundingBox.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	template<class BoundingVolumeClass>
 	BVHNode<BoundingVolumeClass>::BVHNode()
@@ -12,9 +12,9 @@ namespace rum
 	template<class BoundingVolumeClass>
 	BVHNode<BoundingVolumeClass>::BVHNode(BVHNode<BoundingVolumeClass> *parent, const BoundingVolumeClass &volume,
 										  RigidBody* body)
-		: m_volume(volume),
+		: m_parent(parent),
 		m_body(body),
-		m_parent(parent)
+		m_volume(volume)
 	{
 		m_children[0] = m_children[1] = nullptr;
 	}
@@ -128,27 +128,18 @@ namespace rum
 				return count + m_children[1]->getPotentialContactsWith(
 					other, contacts + count, limit - count);
 			}
-			else
-			{
-				return count;
-			}
+			return count;
 		}
-		else
-		{
-			// Rekursion in children[0] von other:
-			unsigned count = getPotentialContactsWith(other->m_children[0], contacts, limit);
+		// Rekursion in children[0] von other:
+		unsigned count = getPotentialContactsWith(other->m_children[0], contacts, limit);
 
-			// Rekursion in andere Seite, wenn genügend PLatz im Array:
-			if(limit > count)
-			{
-				return count + getPotentialContactsWith(
-					other->m_children[1], contacts + count, limit - count);
-			}
-			else
-			{
-				return count;
-			}
+		// Rekursion in andere Seite, wenn genügend PLatz im Array:
+		if(limit > count)
+		{
+			return count + getPotentialContactsWith(
+				other->m_children[1], contacts + count, limit - count);
 		}
+		return count;
 	}
 
 	template<class BoundingVolumeClass>

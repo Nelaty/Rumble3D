@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 #include "R3D/Common/Precision.h"
 
-namespace rum
+namespace r3
 {
 	CollisionBox::CollisionBox(RigidBody* body, 
 							   const glm::mat4& offset,

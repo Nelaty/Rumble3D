@@ -1,10 +1,11 @@
 #pragma once
+#include "R3D/Common/Common.h"
 
-namespace rum
+namespace r3
 {
 	class RigidBody;
 
-	struct BroadPhaseCollision
+	struct R3D_DECLSPEC BroadPhaseCollision
 	{
 		RigidBody* m_first;
 		RigidBody* m_second;

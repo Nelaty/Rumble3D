@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/RigidBodyEngineCI.h"
 #include "R3D/RigidBodyEngine/RigidBodyWorld.h"
 
-namespace rum
+namespace r3
 {
 	RigidBodyEngineCI::~RigidBodyEngineCI()
 	= default;

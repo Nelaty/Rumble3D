@@ -1,6 +1,6 @@
 #include "R3D/PhysicsEngineModule.h"
 
-namespace rum
+namespace r3
 {
 	PhysicsEngineModule::~PhysicsEngineModule()
 	= default;

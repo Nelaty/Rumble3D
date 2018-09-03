@@ -2,7 +2,7 @@
 #include "R3D/IComputationInterface.h"
 #include "R3D/Common/Common.h"
 
-namespace rum
+namespace r3
 {
 	class RigidBodyWorld;
 

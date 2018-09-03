@@ -1,13 +1,14 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollision.h"
 
 #include <vector>
 
-namespace rum
+namespace r3
 {
 	class RigidBody;
 
-	class IBroadPhaseFilter
+	class R3D_DECLSPEC IBroadPhaseFilter
 	{
 	public:
 		virtual ~IBroadPhaseFilter();

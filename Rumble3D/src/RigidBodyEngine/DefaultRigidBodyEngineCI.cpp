@@ -2,11 +2,11 @@
 #include "R3D/RigidBodyEngine/RigidBodyWorld.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-#include "R3D/RigidBodyEngine/CollisionResolving/ICollisionResolver.h"
+#include "R3D/RigidBodyEngine/CollisionResolution/CollisionResolver.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.h"
 
-namespace rum
+namespace r3
 {
 	DefaultRigidBodyEngineCI::DefaultRigidBodyEngineCI()
 	{

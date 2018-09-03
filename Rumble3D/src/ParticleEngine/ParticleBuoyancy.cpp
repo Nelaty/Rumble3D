@@ -3,7 +3,7 @@
 
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
 	ParticleBuoyancy::ParticleBuoyancy(real maxDepth, real volume, real liquidHeight, real liquidDensity)
 	{

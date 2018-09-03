@@ -7,7 +7,7 @@
 
 #include <algorithm>
 
-namespace rum
+namespace r3
 {
 	CollisionDetector::CollisionDetector(const unsigned int iterations, 
 										 const unsigned contactsMax)

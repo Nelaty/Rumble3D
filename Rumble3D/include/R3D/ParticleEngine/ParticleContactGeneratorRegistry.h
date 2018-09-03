@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 
-namespace rum
+namespace r3
 {
 	class ParticleContactGenerator;
 

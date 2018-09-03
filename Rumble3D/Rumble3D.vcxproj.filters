@@ -159,9 +159,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionDetector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\CollisionResolving\ICollisionResolver.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\INarrowPhaseAlgorithm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -202,6 +199,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Utility\InertiaTensorGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utility\Random.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\CollisionResolver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -362,9 +365,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionDetector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolving\ICollisionResolver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\INarrowPhaseAlgorithm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -408,6 +408,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\Utility\InertiaTensorGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\Utility\Random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\CollisionResolver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

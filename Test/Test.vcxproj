@@ -75,31 +75,35 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>$(SolutionDir)Test\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
     <SourcePath>$(VC_SourcePath);</SourcePath>
+    <IntDir>$(ProjectDir)\Bin\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>$(SolutionDir)Test\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
     <SourcePath>$(VC_SourcePath);</SourcePath>
+    <IntDir>$(ProjectDir)\Bin\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)Test\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
     <SourcePath>$(VC_SourcePath);</SourcePath>
+    <IntDir>$(ProjectDir)\Bin\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)Test\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <OutDir>$(ProjectDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
     <SourcePath>$(VC_SourcePath);</SourcePath>
+    <IntDir>$(ProjectDir)\Bin\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)External\Includes\UnitTest++;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)External\Libs\$(PlatformShortName)\$(Configuration)\;$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalDependencies>Rumble3D.lib;UnitTest++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -109,11 +113,11 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)External\Includes\UnitTest++;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)External\Libs\$(PlatformShortName)\$(Configuration)\;$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalDependencies>Rumble3D.lib;UnitTest++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -125,13 +129,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)External\Includes\UnitTest++;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)External\Libs\$(PlatformShortName)\$(Configuration)\;$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalDependencies>Rumble3D.lib;UnitTest++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>
@@ -143,13 +147,13 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)External\Includes\UnitTest++;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)External\include;$(SolutionDir)\Rumble3D\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>$(SolutionDir)External\Libs\$(PlatformShortName)\$(Configuration)\;$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</AdditionalLibraryDirectories>
       <AdditionalDependencies>Rumble3D.lib;UnitTest++.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
     </Link>

@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/IBoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 
-namespace rum
+namespace r3
 {
 	IBoxBoxNarrowAlgorithm::~IBoxBoxNarrowAlgorithm()
 	= default;

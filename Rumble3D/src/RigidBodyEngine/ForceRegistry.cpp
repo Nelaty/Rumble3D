@@ -2,7 +2,7 @@
 #include "R3D/RigidBodyEngine/ForceGenerator.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	void ForceRegistry::unregisterForce(RigidBody* rigidBody, ForceGenerator* fg)
 	{

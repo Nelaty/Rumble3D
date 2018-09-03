@@ -4,7 +4,7 @@
 
 #include <glm/glm.hpp>
 
-namespace rum 
+namespace r3 
 {
 	/**
 	 * A particle represents a single point in space with physical

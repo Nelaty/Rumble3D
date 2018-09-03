@@ -1,6 +1,6 @@
 #include "R3D/ParticleEngine/ParticleContactGenerator.h"
 
-namespace rum
+namespace r3
 {
 	ParticleContactGenerator::~ParticleContactGenerator()
 	{

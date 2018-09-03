@@ -5,7 +5,7 @@
 #include <glm/gtx/norm.hpp>
 #include <glm/gtc/constants.hpp>
 
-namespace rum
+namespace r3
 {
 	BoundingSphere::BoundingSphere()
 	= default;

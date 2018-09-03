@@ -3,7 +3,7 @@
 
 #include <glm/gtc/constants.hpp>
 
-namespace rum
+namespace r3
 {
 	void ParticleContact::resolve(real duration)
 	{

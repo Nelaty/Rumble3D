@@ -1,7 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
 
-namespace rum
+namespace r3
 {
 	class RigidBody;
 
@@ -15,9 +15,9 @@ namespace rum
 	{
 	public:
 		BVHNode();
-		BVHNode(BVHNode<BoundingVolumeClass> * parent,
-			const BoundingVolumeClass & volume,
-			RigidBody * body = nullptr);
+		BVHNode(BVHNode<BoundingVolumeClass>* parent,
+				const BoundingVolumeClass& volume,
+				RigidBody* body = nullptr);
 		~BVHNode();
 
 		/** Check if this node is a leaf node (= has no child nodes) */

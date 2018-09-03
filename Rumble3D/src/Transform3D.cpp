@@ -2,7 +2,7 @@
 
 #include <glm/gtx/quaternion.hpp>
 
-namespace rum
+namespace r3
 {
 	Transform3D::Transform3D(const glm::vec3& position,
 							 const glm::mat3& rotation)

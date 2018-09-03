@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/BoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 
-namespace rum
+namespace r3
 {
 	BoxBoxNarrowAlgorithm::BoxBoxNarrowAlgorithm()
 	= default;

@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/Gravity.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	Gravity::Gravity(const glm::vec3& gravity)
 		: m_gravity(gravity)

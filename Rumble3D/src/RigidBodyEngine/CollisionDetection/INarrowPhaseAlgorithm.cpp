@@ -1,6 +1,6 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
 
-namespace rum
+namespace r3
 {
 	INarrowPhaseAlgorithm::~INarrowPhaseAlgorithm()
 	= default;

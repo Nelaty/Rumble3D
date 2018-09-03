@@ -1,6 +1,6 @@
 #include "R3D/RigidBodyEngine/CollisionData.h"
 
-namespace rum
+namespace r3
 {
 	CollisionData::CollisionData()
 	= default;

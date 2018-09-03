@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionObject.h"
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 
-namespace rum
+namespace r3
 {
 	CollisionObject::~CollisionObject()
 	= default;

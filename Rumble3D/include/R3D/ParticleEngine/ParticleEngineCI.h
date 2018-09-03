@@ -5,7 +5,7 @@
 /**
  * \brief Abstract class for computation interfaces used for particle worlds.
  */
-namespace rum
+namespace r3
 {
 	class ParticleWorld;
 

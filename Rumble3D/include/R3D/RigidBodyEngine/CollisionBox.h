@@ -6,7 +6,7 @@
 
 #include <array>
 
-namespace rum
+namespace r3
 {
 	class RigidBody;
 

@@ -8,7 +8,7 @@
 
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
 	// \todo replace static methods with replaceable algorithms
 	// Behälter für Kollisionsalgorithmen:

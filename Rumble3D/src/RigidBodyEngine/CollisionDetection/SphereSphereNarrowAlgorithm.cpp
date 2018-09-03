@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/SphereSphereNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 
-namespace rum
+namespace r3
 {
 	SphereSphereNarrowAlgorithm::SphereSphereNarrowAlgorithm()
 	= default;

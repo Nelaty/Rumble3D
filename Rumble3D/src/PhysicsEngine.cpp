@@ -2,7 +2,7 @@
 #include "R3D/PhysicsEngineModule.h"
 #include "R3D/IComputationInterface.h"
 
-namespace rum
+namespace r3
 {
 	PhysicsEngine::PhysicsEngine()
 	= default;
@@ -18,7 +18,7 @@ namespace rum
 		onEnd();
 	}
 
-	rum::PhysicsEngineModule* PhysicsEngine::findModule(const std::string& key) const
+	r3::PhysicsEngineModule* PhysicsEngine::findModule(const std::string& key) const
 	{
 		const auto foundModule = m_modules.find(key);
 		return foundModule->second;
@@ -29,7 +29,7 @@ namespace rum
 		return findModule(key) != nullptr;
 	}
 
-	rum::PhysicsEngineModule* PhysicsEngine::registerModule(PhysicsEngineModule* module, const std::string& key)
+	r3::PhysicsEngineModule* PhysicsEngine::registerModule(PhysicsEngineModule* module, const std::string& key)
 	{
 		const auto foundModule = findModule(key);
 		if(foundModule)
@@ -41,7 +41,7 @@ namespace rum
 		return module;
 	}
 
-	rum::PhysicsEngineModule* PhysicsEngine::unregisterModule(const std::string& key)
+	r3::PhysicsEngineModule* PhysicsEngine::unregisterModule(const std::string& key)
 	{
 		const auto removedModule = m_modules.find(key);
 		if(removedModule == m_modules.end())

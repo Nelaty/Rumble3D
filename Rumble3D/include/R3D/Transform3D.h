@@ -5,7 +5,7 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
 
-namespace rum
+namespace r3
 {
 	class R3D_DECLSPEC Transform3D
 	{

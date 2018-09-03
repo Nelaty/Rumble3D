@@ -1,7 +1,7 @@
 #include "R3D/ParticleEngine/ParticleAnchoredSpring.h"
 #include "R3D/ParticleEngine/Particle.h"
 
-namespace rum
+namespace r3
 {
 	ParticleAnchoredSpring::ParticleAnchoredSpring(glm::vec3* anchor, real springConstant, real restLength)
 		: m_anchor{anchor},

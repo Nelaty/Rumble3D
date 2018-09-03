@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollision.h"
 
-namespace rum
+namespace r3
 {
 	INarrowPhaseFilter::~INarrowPhaseFilter()
 	= default;

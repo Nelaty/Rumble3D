@@ -1,11 +1,12 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 
 #include <memory>
 #include <list>
 #include <vector>
 
-namespace rum
+namespace r3
 {
 	class IBroadPhaseFilter;
 	class IIntermediatePhaseFilter;
@@ -18,7 +19,7 @@ namespace rum
 	 * It executes collision detection filters (programs) in a specific
 	 * order to generate contacts.
 	 */
-	class CollisionDetector
+	class R3D_DECLSPEC CollisionDetector
 	{
 	public:
 		using BroadPhaseFilter_Ptr = std::unique_ptr<IBroadPhaseFilter>;

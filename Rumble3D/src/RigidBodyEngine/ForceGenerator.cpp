@@ -1,6 +1,6 @@
 #include "R3D/RigidBodyEngine/ForceGenerator.h"
 
-namespace rum
+namespace r3
 {
 	ForceGenerator::~ForceGenerator()
 	= default;

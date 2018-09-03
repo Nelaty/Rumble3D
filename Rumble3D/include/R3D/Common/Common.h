@@ -1,11 +1,12 @@
 #pragma once
 #include "Config.h"
 
-namespace rum
+namespace r3
 {
 	#ifdef R3D_DLL_EXPORT
 	#define R3D_DECLSPEC __declspec(dllexport)
-	#elif R3D_DLL_IMPORT
+	#endif
+	#ifdef R3D_DLL_IMPORT
 	#define R3D_DECLSPEC __declspec(dllimport)
 	#endif
 

@@ -3,7 +3,7 @@
 
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
 	ParticleSpring::ParticleSpring(Particle* other, const real springConstant, const real restLength)
 		: m_other{other},

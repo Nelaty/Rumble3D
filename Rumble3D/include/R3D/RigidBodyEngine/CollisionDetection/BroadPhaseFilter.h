@@ -1,9 +1,10 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "IBroadPhaseFilter.h"
 
-namespace rum
+namespace r3
 {
-	class BroadPhaseFilter : public IBroadPhaseFilter
+	class R3D_DECLSPEC BroadPhaseFilter : public IBroadPhaseFilter
 	{
 	public:
 		explicit BroadPhaseFilter();

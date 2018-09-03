@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/AnchoredSpring.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	AnchoredSpring::AnchoredSpring(const glm::vec3& anchor,
 								   const glm::vec3& localConnectionPoint,

@@ -1,11 +1,12 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 
 #include <vector>
 #include <memory>
 
-namespace rum
+namespace r3
 {
 	class IBoxBoxNarrowAlgorithm;
 	class IBoxSphereNarrowAlgorithm;
@@ -15,7 +16,7 @@ namespace rum
 	class CollisionBox;
 	class CollisionSphere;
 
-	class NarrowPhaseFilter : public INarrowPhaseFilter
+	class R3D_DECLSPEC NarrowPhaseFilter : public INarrowPhaseFilter
 	{
 	public:
 		template<class AlgorithmType>

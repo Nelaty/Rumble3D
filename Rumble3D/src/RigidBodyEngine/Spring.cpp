@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/Spring.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	Spring::Spring(const glm::vec3& localConnectionPoint,
 				   RigidBody* other,

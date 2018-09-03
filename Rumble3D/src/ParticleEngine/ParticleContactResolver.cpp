@@ -1,7 +1,7 @@
 #include "R3D/ParticleEngine/ParticleContactResolver.h"
 #include "R3D/ParticleEngine/ParticleContact.h"
 
-namespace rum
+namespace r3
 {
 	ParticleContactResolver::ParticleContactResolver(unsigned int iterations)
 		: m_iterations{iterations},

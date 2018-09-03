@@ -2,7 +2,7 @@
 
 #include <glm/gtx/norm.hpp>
 
-namespace rum
+namespace r3
 {
 	BoundingBox::BoundingBox()
 		: m_center{0.5, 0.5, 0.5},

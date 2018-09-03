@@ -4,7 +4,7 @@
 
 #include <vector>
 
-namespace rum
+namespace r3
 {
 	class Particle;
 	class ParticleForceGenerator;

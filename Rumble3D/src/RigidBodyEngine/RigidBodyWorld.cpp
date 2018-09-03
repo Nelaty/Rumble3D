@@ -6,7 +6,7 @@
 
 #include <algorithm>
 
-namespace rum
+namespace r3
 {
 	
 	RigidBodyWorld::RigidBodyWorld()

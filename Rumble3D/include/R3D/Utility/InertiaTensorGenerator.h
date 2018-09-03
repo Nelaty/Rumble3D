@@ -1,11 +1,12 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
-	class InertiaTensorGenerator
+	class R3D_DECLSPEC InertiaTensorGenerator
 	{
 	public:
 		static glm::mat3 generateCubeTensor(real mass, real xHalf, real yHalf, real zHalf);

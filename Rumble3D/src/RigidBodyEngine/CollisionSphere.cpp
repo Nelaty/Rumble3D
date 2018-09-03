@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 #include "R3D/Utility/InertiaTensorGenerator.h"
 
-namespace rum
+namespace r3
 {
 	CollisionSphere::CollisionSphere(RigidBody* body, const glm::mat4& offset, const real radius) 
 		: m_radius{radius}

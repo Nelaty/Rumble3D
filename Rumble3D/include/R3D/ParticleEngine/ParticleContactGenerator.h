@@ -1,7 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
 
-namespace rum 
+namespace r3 
 {
 	class ParticleContact;
 

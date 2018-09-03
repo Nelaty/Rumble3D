@@ -4,7 +4,7 @@
 
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
 	class R3D_DECLSPEC BoundingBox
 	{

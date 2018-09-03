@@ -1,9 +1,10 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "IBoxSphereNarrowAlgorithm.h"
 
-namespace rum
+namespace r3
 {
-	class BoxSphereNarrowAlgorithm : public IBoxSphereNarrowAlgorithm
+	class R3D_DECLSPEC BoxSphereNarrowAlgorithm : public IBoxSphereNarrowAlgorithm
 	{
 	public:
 		explicit BoxSphereNarrowAlgorithm();

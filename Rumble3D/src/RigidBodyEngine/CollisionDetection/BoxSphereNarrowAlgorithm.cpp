@@ -2,7 +2,7 @@
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 
-namespace rum
+namespace r3
 {
 	BoxSphereNarrowAlgorithm::BoxSphereNarrowAlgorithm()
 	= default;

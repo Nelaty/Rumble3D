@@ -8,7 +8,7 @@
 #include <cassert>
 #include <memory>
 
-namespace rum
+namespace r3
 {
 	DefaultParticleEngineCI::DefaultParticleEngineCI(const unsigned maxContacts, 
 																 const unsigned iterations,

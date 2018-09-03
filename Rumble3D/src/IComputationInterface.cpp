@@ -1,6 +1,6 @@
 #include "R3D/IComputationInterface.h"
 
-namespace rum
+namespace r3
 {
 	IComputationInterface::~IComputationInterface()
 	= default;

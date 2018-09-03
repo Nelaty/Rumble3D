@@ -3,7 +3,7 @@
 #include "R3D/Common/Precision.h"
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
 	// Die Klasse ist nicht abgeleitet von CollisionPrimitive,
 	// da sie Wände und Böden darstellt, also nicht bewegliche 

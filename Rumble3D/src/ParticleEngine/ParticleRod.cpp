@@ -1,6 +1,6 @@
 #include "R3D/ParticleEngine/ParticleRod.h"
 
-namespace rum
+namespace r3
 {
 	ParticleRod::~ParticleRod()
 	= default;

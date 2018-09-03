@@ -2,7 +2,7 @@
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
-namespace rum
+namespace r3
 {
 	class ParticleContact;
 

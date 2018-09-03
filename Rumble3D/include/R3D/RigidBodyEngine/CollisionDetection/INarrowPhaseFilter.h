@@ -1,18 +1,19 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollision.h"
 
 #include <vector>
 
 
-namespace rum
+namespace r3
 {
 	struct BroadPhaseCollision;
 
 	class CollisionBox;
 	class CollisionSphere;
 
-	class INarrowPhaseFilter
+	class R3D_DECLSPEC INarrowPhaseFilter
 	{
 	public:
 		virtual ~INarrowPhaseFilter();

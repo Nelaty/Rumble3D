@@ -1,6 +1,6 @@
 #include "R3D/Utility/InertiaTensorGenerator.h"
 
-namespace rum
+namespace r3
 {
 	glm::mat3 InertiaTensorGenerator::generateCubeTensor(const real mass, 
 												  const real xHalf,

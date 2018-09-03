@@ -1,7 +1,9 @@
 #include "R3D/RigidBodyEngine/Contact.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+#include <utility>
+
+namespace r3
 {
 	Contact::Contact()
 	= default;
@@ -239,10 +241,7 @@ namespace rum
 	void Contact::swapBodies()
 	{
 		m_contactNormal *= -1;
-
-		const auto temp = m_body[0];
-		m_body[0] = m_body[1];
-		m_body[1] = temp;
+		std::swap(m_body[0], m_body[1]);
 	}
 	
 	void Contact::applyVelocityChange(glm::vec3 velocityChange[2],
@@ -402,12 +401,12 @@ namespace rum
 
 				// Now we can start to apply the values we've calculated.
 				// Apply the linear movement
-				glm::vec3 pos = m_body[i]->getCenterOfMass();
+				auto pos = m_body[i]->getCenterOfMass();
 				pos += linearMove[i] * m_contactNormal;
 				m_body[i]->setCenterOfMass(pos);
 
 				// And the change in orientation
-				glm::quat q = m_body[i]->getOrientation();
+				auto q = m_body[i]->getOrientation();
 				//q.addScaledVector(angularChange[i], static_cast<real>(1.0)); // ACHTUNG in RegisterForce... *0,5!!!
 				q += (glm::quat(static_cast<real>(0.0f), angularChange[i] * static_cast<real>(1.0)) * q * static_cast<real>(0.5f));
 

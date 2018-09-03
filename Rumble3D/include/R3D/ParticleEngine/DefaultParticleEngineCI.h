@@ -3,7 +3,7 @@
 #include "R3D/ParticleEngine/ParticleEngineCI.h"
 #include "R3D/ParticleEngine/ParticleContactResolver.h"
 
-namespace rum
+namespace r3
 {
 	class ParticleContact;
 

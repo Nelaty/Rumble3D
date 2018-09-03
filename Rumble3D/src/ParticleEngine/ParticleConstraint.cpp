@@ -2,7 +2,7 @@
 #include "R3D/ParticleEngine/Particle.h"
 #include "R3D/ParticleEngine/ParticleContact.h"
 
-namespace rum
+namespace r3
 {
 
 	ParticleConstraint::~ParticleConstraint()

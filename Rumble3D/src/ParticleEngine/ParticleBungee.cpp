@@ -3,7 +3,7 @@
 
 #include <glm/glm.hpp>
 
-namespace rum
+namespace r3
 {
 	ParticleBungee::ParticleBungee(Particle* other, real springConstant, real restLength)
 	{

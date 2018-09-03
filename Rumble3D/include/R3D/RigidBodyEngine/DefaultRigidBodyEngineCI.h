@@ -5,9 +5,9 @@
 
 #include <memory>
 
-namespace rum
+namespace r3
 {
-	class ICollisionResolver;
+	class CollisionResolver;
 
 	class DefaultRigidBodyEngineCI : public RigidBodyEngineCI
 	{
@@ -26,6 +26,6 @@ namespace rum
 		void init();
 
 		CollisionDetector m_collisionDetector;
-		std::unique_ptr<ICollisionResolver> m_collisionResolver;
+		std::unique_ptr<CollisionResolver> m_collisionResolver;
 	};
 }

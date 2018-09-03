@@ -4,7 +4,7 @@
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 
 
-namespace rum
+namespace r3
 {
 	void RigidBody::calculateTransformationMatrix(glm::mat4& transformationMatrix,
 												  const glm::vec3& position,

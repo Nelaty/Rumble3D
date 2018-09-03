@@ -5,7 +5,7 @@
 #include <limits>
 
 
-namespace rum
+namespace r3
 {
 	/* float */
 	#if ((R3D_CURRENT_PRECISION_LEVEL) == R3D_PRECISION_LEVEL_LOW)
@@ -84,6 +84,6 @@ namespace rum
 	#endif // __PRECISION_LEVEL_EROS__
 
 	static constexpr real R3D_PI = static_cast<real>(3.1415926535897932384626433832795);
-	static constexpr real R3D_TWO_PI = 2.0 * R3D_PI;
-	static constexpr real R3D_HALF_PI = 0.5 * R3D_PI;
+	static constexpr real R3D_TWO_PI = static_cast<real>(2.0) * R3D_PI;
+	static constexpr real R3D_HALF_PI = static_cast<real>(0.5) * R3D_PI;
 }

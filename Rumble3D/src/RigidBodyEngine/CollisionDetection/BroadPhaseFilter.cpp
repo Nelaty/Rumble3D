@@ -1,7 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-namespace rum
+namespace r3
 {
 	BroadPhaseFilter::BroadPhaseFilter()
 	= default;

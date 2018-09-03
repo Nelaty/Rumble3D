@@ -1,7 +1,7 @@
 #include "R3D/ParticleEngine/ParticleGravity.h"
 #include "R3D/ParticleEngine/Particle.h"
 
-namespace rum
+namespace r3
 {
 	ParticleGravity::ParticleGravity(const glm::vec3& gravity)
 		: m_gravity{gravity}

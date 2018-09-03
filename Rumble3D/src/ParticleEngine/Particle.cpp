@@ -2,7 +2,7 @@
 #include <cmath>
 #include <cassert>
 
-namespace rum 
+namespace r3 
 {
 	Particle::Particle()
 		: m_position{real(0)},

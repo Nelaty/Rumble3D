@@ -1,7 +1,7 @@
 #include "R3D/ParticleEngine/ParticleDrag.h"
 #include "R3D/ParticleEngine/Particle.h"
 
-namespace rum
+namespace r3
 {
 	ParticleDrag::ParticleDrag(real k1, real k2)
 	{

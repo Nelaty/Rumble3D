@@ -2,7 +2,7 @@
 #include "R3D/ParticleEngine/Particle.h"
 #include "R3D/ParticleEngine/ParticleForceGenerator.h"
 
-namespace rum
+namespace r3
 {
 	void ParticleForceRegistry::remove(Particle* particle, ParticleForceGenerator * fg)
 	{

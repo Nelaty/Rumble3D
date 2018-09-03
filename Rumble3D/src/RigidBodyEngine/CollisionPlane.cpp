@@ -1,6 +1,6 @@
 #include "R3D/RigidBodyEngine/CollisionPlane.h"
 
-namespace rum
+namespace r3
 {
 	CollisionPlane::CollisionPlane(const glm::vec3& normal, const real offset) 
 		: m_normal(normal), 

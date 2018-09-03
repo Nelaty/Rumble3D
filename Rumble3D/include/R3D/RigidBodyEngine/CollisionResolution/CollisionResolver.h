@@ -1,16 +1,18 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 
-namespace rum
+namespace r3
 {
-	class ICollisionResolver
+	class R3D_DECLSPEC CollisionResolver
 	{
 	public:
-		virtual ~ICollisionResolver();
+		explicit CollisionResolver();
+		virtual ~CollisionResolver();
 
 		virtual void resolveCollisions(const CollisionData& collisionData) = 0;
 
 	protected:
-		explicit ICollisionResolver();
+		
 	};
 }

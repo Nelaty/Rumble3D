@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv)
 {
-	rum::PhysicsEngine physicsEngine;
+	r3::PhysicsEngine physicsEngine;
 	physicsEngine.tick(1);
 
 	getchar();

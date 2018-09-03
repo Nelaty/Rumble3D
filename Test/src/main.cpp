@@ -1,15 +1,16 @@
-#include "UnitTest++.h"
+#include "UnitTest++/UnitTest++.h"
 #include "R3D/PhysicsEngine.h"
+#include "../../../EyeCandy3D/External/unittest-cpp-master/UnitTest++/TestRunner.h"
 
 TEST(mySuccessfulTest)
 {
-	rum::TestClass simpleTest;
+	r3::TestClass simpleTest;
 	CHECK_EQUAL(3, simpleTest.test());
 }
 
 TEST(myUnsuccessfulTest)
 {
-	rum::TestClass simpleTest;
+	r3::TestClass simpleTest;
 	CHECK_EQUAL(1, simpleTest.test());
 }
 

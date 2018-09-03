@@ -3,7 +3,7 @@
 
 #include <glm/gtc/quaternion.hpp>
 
-namespace rum
+namespace r3
 {
 	DirectedForce::DirectedForce(glm::vec3 localPosition, glm::vec3 force)
 		: m_force{force},
