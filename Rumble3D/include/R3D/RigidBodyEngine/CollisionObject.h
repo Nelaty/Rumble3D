@@ -1,5 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
+#include "R3D/Transform3D.h"
 
 namespace r3
 {
@@ -15,9 +16,14 @@ namespace r3
 		/** Get the currently used collision primitive */
 		CollisionPrimitive* getCollisionPrimitive() const;
 
+		const Transform3D& getTransform() const;
+		Transform3D& getTransform();
+
 	protected:
 		explicit CollisionObject(CollisionPrimitive* collisionPrimitive = nullptr);
 
 		CollisionPrimitive* m_collisionPrimitive;
+
+		Transform3D m_transform;
 	};
 }

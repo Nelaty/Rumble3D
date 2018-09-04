@@ -20,4 +20,14 @@ namespace r3
 		: m_collisionPrimitive{collisionPrimitive}
 	{
 	}
+
+	const Transform3D& CollisionObject::getTransform() const
+	{
+		return m_transform;
+	}
+
+	Transform3D& CollisionObject::getTransform()
+	{
+		return m_transform;
+	}
 }

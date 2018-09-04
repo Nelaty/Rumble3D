@@ -63,7 +63,7 @@ namespace r3
 		if (abs(contactNormalX) > abs(contactNormalY))
 		{
 			// Scaling factor to ensure the results are normalized
-			const real s = static_cast<real>(1.0f) / sqrt(contactNormalZ*contactNormalZ +
+			const auto s = static_cast<real>(1.0f) / sqrt(contactNormalZ*contactNormalZ +
 				contactNormalX*contactNormalX);
 	
 			// The new X-axis is at right angles to the world Y-axis
@@ -112,7 +112,7 @@ namespace r3
 		deltaVelWorld = glm::cross(deltaVelWorld, m_relativeContactPosition[0]);
 	
 		// Umwandlung in Kontaktkoordinaten
-		real deltaVelocity = glm::dot(deltaVelWorld, m_contactNormal);
+		auto deltaVelocity = glm::dot(deltaVelWorld, m_contactNormal);
 	
 		// Addition der linearen Komponente der Geschwindigkeitsänderung:
 		deltaVelocity += m_body[0]->getInverseMass();
@@ -204,7 +204,6 @@ namespace r3
 	void Contact::calculateDesiredDeltaVelocity(const real duration)
 	{
 		/* Hier Code wenn isAwake implementiert und lastFrame verwendet wird:
-		const static real velocityLimit = (real)0.25f;
 	
 		// Calculate the acceleration induced velocity accumulated this frame
 		real velocityFromAcc = 0;

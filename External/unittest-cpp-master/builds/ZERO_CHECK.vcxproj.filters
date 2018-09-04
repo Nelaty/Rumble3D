@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Library\Documents\Job\Forschungsmaster\Projekte\EyeCandy3D\External\unittest-cpp-master\builds\CMakeFiles\fb6b02e032588f4197cceb2772503310\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{18775840-6F01-35F8-B71D-AEE3DB3AE282}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

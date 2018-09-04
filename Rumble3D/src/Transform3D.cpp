@@ -1,5 +1,6 @@
 #include "R3D/Transform3D.h"
 
+#include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtx/quaternion.hpp>
 
 namespace r3
@@ -29,6 +30,21 @@ namespace r3
 	const glm::vec3& Transform3D::getPosition() const
 	{
 		return m_position;
+	}
+
+	void Transform3D::translate(const glm::vec3& delta)
+	{
+		m_position += delta;
+	}
+
+	void Transform3D::rotate(const glm::quat& rot)
+	{
+		m_rotation = m_rotation * glm::toMat3(rot);
+	}
+
+	void Transform3D::setRotation(const float w, const float x, const float y, const float z)
+	{
+		setRotation(glm::quat(w, x, y, z));
 	}
 
 	void Transform3D::setRotation(const glm::quat& orientation)

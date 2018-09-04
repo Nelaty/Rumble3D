@@ -21,6 +21,11 @@ namespace r3
 		/** Get the current position. */
 		const glm::vec3& getPosition() const;
 
+		void translate(const glm::vec3& delta);
+
+		void rotate(const glm::quat& rot);
+		/** Set the current rotation. */
+		void setRotation(float w, float x, float y, float z);
 		/** Set the current rotation. */
 		void setRotation(const glm::quat& orientation);
 		/** Get the current rotation. */

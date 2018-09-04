@@ -219,7 +219,10 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\PhysicMaterial.cpp">
+    <ClCompile Include="src\RigidBodyEngine\PhysicsMaterial.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -443,7 +446,13 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\PhysicMaterial.h">
+    <ClInclude Include="include\R3D\RigidBodyEngine\PhysicsMaterial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionMask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyDef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
