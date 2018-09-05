@@ -1,5 +1,6 @@
 #include "R3D/RigidBodyEngine/RigidBodyEngineCI.h"
 #include "R3D/RigidBodyEngine/RigidBodyWorld.h"
+#include "R3D/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.h"
 
 namespace r3
 {
@@ -17,7 +18,8 @@ namespace r3
 	}
 
 	RigidBodyEngineCI::RigidBodyEngineCI(RigidBodyWorld* rigidBodyWorld)
-		: m_rigidBodyWorld{rigidBodyWorld}
+		: m_collisionResolver{nullptr},
+		m_rigidBodyWorld{rigidBodyWorld}
 	{
 	}
 }

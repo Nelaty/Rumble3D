@@ -4,7 +4,7 @@
 
 namespace r3
 {
-	struct PhysicsMaterialDef
+	struct R3D_DECLSPEC PhysicsMaterialDef
 	{
 		static constexpr real s_defaultFriction = 0.0f;
 		static constexpr real s_defaultRestitution = 1.0f;
@@ -13,7 +13,7 @@ namespace r3
 		real m_restitution{s_defaultRestitution};
 	};
 
-	class PhysicsMaterial
+	class R3D_DECLSPEC PhysicsMaterial
 	{
 	public:
 		explicit PhysicsMaterial();

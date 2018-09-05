@@ -6,13 +6,15 @@ namespace r3
 {
 	class Particle;
 
-	///Schnittstellen-Klasse für Kraft-Generatoren
+	/**
+	 * Interface for force generators.
+	 */
 	class R3D_DECLSPEC ParticleForceGenerator
 	{
 	public:
 		virtual ~ParticleForceGenerator();
 
-		/* Schnittstellen-Methode, die im speziellen Kraft-Generator 
+		/** Schnittstellen-Methode, die im speziellen Kraft-Generator 
 		 überladen werden muss. Die Methode berechnet und aktualisiert
 		 die Kraft, die auf das Teilchen particle in der Zeitscheibe 
 		 duration wirkt.

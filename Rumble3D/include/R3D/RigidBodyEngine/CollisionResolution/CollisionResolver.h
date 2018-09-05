@@ -1,6 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
+#include "R3D/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.h"
 
 #include <memory>
 #include <vector>
@@ -9,7 +9,7 @@ namespace r3
 {
 	class ICollisionResolutionFilter;
 
-	class R3D_DECLSPEC CollisionResolver
+	class R3D_DECLSPEC CollisionResolver : public ICollisionResolverAccess
 	{
 	public:
 		using Filter_Ptr = std::unique_ptr<ICollisionResolutionFilter>;
@@ -17,7 +17,7 @@ namespace r3
 		explicit CollisionResolver();
 		virtual ~CollisionResolver();
 
-		void resolveCollisions(const CollisionData& collisionData);
+		void resolveCollisions(const CollisionData& collisionData) override;
 
 		/**
 		 * \brief Insert a new filter, which will be executed after all 

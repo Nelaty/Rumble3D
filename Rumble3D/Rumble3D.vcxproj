@@ -204,6 +204,7 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\CollisionResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\FrictionResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolverAccess.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\VelocityResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionSphere.cpp" />
@@ -281,6 +282,7 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\CollisionResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\FrictionResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolutionFilter.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolverAccess.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionSphere.h" />

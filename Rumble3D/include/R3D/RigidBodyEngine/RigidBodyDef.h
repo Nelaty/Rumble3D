@@ -1,8 +1,9 @@
 #pragma once
+#include "R3D/Common/Common.h"
 
 namespace r3
 {
-	struct RigidBodyDef
+	struct R3D_DECLSPEC RigidBodyDef
 	{
 		
 	};

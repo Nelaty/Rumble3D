@@ -1,4 +1,6 @@
 #pragma once
+#include "R3D/Common/Common.h"
+
 #include <glm/glm.hpp>
 
 namespace utl
@@ -6,7 +8,7 @@ namespace utl
 	/**
 	* Equally distributed random number generator.
 	*/
-	class Random
+	class R3D_DECLSPEC Random
 	{
 	public:
 		/** Seed the random number generator with the current time. */

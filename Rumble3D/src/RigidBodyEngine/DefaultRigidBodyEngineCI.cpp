@@ -102,5 +102,7 @@ namespace r3
 
 		m_collisionDetector.setBroadPhaseFilter(std::move(broadPhaseFilter));
 		m_collisionDetector.setNarrowPhaseFilter(std::move(narrowPhaseFilter));
+
+		m_collisionResolver = std::make_unique<CollisionResolver>();
 	}
 }

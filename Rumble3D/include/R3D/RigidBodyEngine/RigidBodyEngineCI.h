@@ -2,8 +2,12 @@
 #include "R3D/IComputationInterface.h"
 #include "R3D/Common/Common.h"
 
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionDetector.h"
+
 namespace r3
 {
+	class ICollisionResolverAccess;
+
 	class RigidBodyWorld;
 
 	/**
@@ -22,6 +26,9 @@ namespace r3
 
 	protected:
 		explicit RigidBodyEngineCI(RigidBodyWorld* rigidBodyWorld = nullptr);
+
+		CollisionDetector m_collisionDetector;
+		std::unique_ptr<ICollisionResolverAccess> m_collisionResolver;
 
 		RigidBodyWorld* m_rigidBodyWorld;
 	};

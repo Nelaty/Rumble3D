@@ -1,11 +1,13 @@
 #pragma once
+#include "R3D/Common/Common.h"
+
 #include <vector>
 
 namespace r3
 {
 	class ParticleContactGenerator;
 
-	class ParticleContactGeneratorRegistry
+	class R3D_DECLSPEC ParticleContactGeneratorRegistry
 	{
 	public:
 		explicit ParticleContactGeneratorRegistry();

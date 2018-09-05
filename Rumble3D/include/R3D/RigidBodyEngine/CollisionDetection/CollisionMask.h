@@ -1,8 +1,9 @@
 #pragma once
+#include "R3D/Common/Common.h"
 
 namespace r3
 {
-	struct CollisionMask
+	struct R3D_DECLSPEC CollisionMask
 	{
 		explicit CollisionMask(unsigned int layer = 0, unsigned int group = 0);
 

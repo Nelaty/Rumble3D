@@ -225,6 +225,9 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionMask.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolverAccess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\R3D\RigidBodyEngine\AnchoredSpring.h">
@@ -453,6 +456,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolverAccess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

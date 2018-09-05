@@ -1,15 +1,14 @@
 #pragma once
 #include "RigidBodyEngineCI.h"
-
-#include "R3D/RigidBodyEngine/CollisionDetection/CollisionDetector.h"
+#include "R3D/Common/Common.h"
 
 #include <memory>
 
 namespace r3
 {
-	class CollisionResolver;
+	class ICollisionResolverAccess;
 
-	class DefaultRigidBodyEngineCI : public RigidBodyEngineCI
+	class R3D_DECLSPEC DefaultRigidBodyEngineCI : public RigidBodyEngineCI
 	{
 	public:
 		explicit DefaultRigidBodyEngineCI();
@@ -24,8 +23,5 @@ namespace r3
 
 	private:
 		void init();
-
-		CollisionDetector m_collisionDetector;
-		std::unique_ptr<CollisionResolver> m_collisionResolver;
 	};
 }
