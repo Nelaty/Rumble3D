@@ -21,6 +21,8 @@ namespace r3
 		explicit RigidBody(const RigidBodyDef& def);
 		~RigidBody();
 
+		void init(const RigidBodyDef& definition);
+
 		void calculateDerivedData();
 		void setInertiaTensor(const glm::mat3& inertiaTensor);
 		glm::mat3 getInverseTensor() const;

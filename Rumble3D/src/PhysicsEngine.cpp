@@ -21,6 +21,10 @@ namespace r3
 	r3::PhysicsEngineModule* PhysicsEngine::findModule(const std::string& key) const
 	{
 		const auto foundModule = m_modules.find(key);
+		if(foundModule == m_modules.end())
+		{
+			return nullptr;
+		}
 		return foundModule->second;
 	}
 
@@ -48,7 +52,7 @@ namespace r3
 		{
 			return nullptr;
 		}
-		auto module = removedModule->second;
+		const auto module = removedModule->second;
 		m_modules.erase(removedModule);
 		return module;
 	}

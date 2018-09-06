@@ -1,5 +1,6 @@
 #include "R3D/RigidBodyEngine/CollisionDetectorOld.h"
 
+#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -8,7 +9,7 @@ namespace r3
 	unsigned CollisionDetectorOld::sphereAndHalfSpace(
 		const CollisionSphere &sphere,
 		const CollisionPlane &plane,
-		CollisionData *data)
+		CollisionDataOld *data)
 	{
 		// Make sure we have contacts
 		if(data->getContactsLeft() <= 0)
@@ -40,14 +41,14 @@ namespace r3
 	
 	unsigned CollisionDetectorOld::sphereAndTruePlane(const CollisionSphere &sphere,
 												   const CollisionPlane &plane,
-												   CollisionData *data)
+													  CollisionDataOld *data)
 	{ // Implementierung entfällt, da hier nicht benötigt.
 		return 1;
 	}
 	
 	unsigned CollisionDetectorOld::sphereAndSphere(const CollisionSphere &one, 
 												const CollisionSphere &two, 
-												CollisionData *data)
+												   CollisionDataOld *data)
 	{
 		// Wenn Kontakt-Array voll ist, nichts mehr zu tun:
 		if(data->getContactsLeft() <= 0)
@@ -83,8 +84,8 @@ namespace r3
 	}
 	
 	unsigned CollisionDetectorOld::boxAndHalfSpace(const CollisionBox &box,
-												const CollisionPlane &plane,
-												CollisionData *data)
+												   const CollisionPlane &plane,
+												   CollisionDataOld *data)
 	{
 		// Make sure we have contacts
 		if(data->getContactsLeft() <= 0)
@@ -151,8 +152,8 @@ namespace r3
 	}
 	
 	unsigned CollisionDetectorOld::boxAndSphere(const CollisionBox &box,
-											 const CollisionSphere &sphere,
-											 CollisionData *data)
+												const CollisionSphere &sphere,
+												CollisionDataOld *data)
 	{
 		// Kugelmittelpunkt in Quaderkoordinaten transformieren:
 		glm::vec3 centre = sphere.getAxis(3);
@@ -275,8 +276,8 @@ namespace r3
 	if (!tryAxis(one, two, (axis), toCentre, (index), pen, best)) return 0;
 	
 	unsigned CollisionDetectorOld::boxAndBox(const CollisionBox &one,
-										  const CollisionBox &two,
-										  CollisionData *data)
+											 const CollisionBox &two,
+											 CollisionDataOld *data)
 	{
 		// Vektor zwischen den Schwerpunkten:
 		glm::vec3 twoCentre = two.getAxis(3);
@@ -301,6 +302,7 @@ namespace r3
 		// Beste Werte zwischenspeichern, falls es nur noch
 		// fast parallele Kanten gibt, die uns keine Aussage
 		// machen lassen.
+		/// \todo variable is never set???
 		unsigned int bestSingleAxis = best;
 			
 		CHECK_OVERLAP(glm::cross(one.getAxis(0), two.getAxis(0)), 6);
@@ -408,11 +410,11 @@ namespace r3
 	}
 	
 	void CollisionDetectorOld::fillPointFaceBoxBox(const CollisionBox &one,
-												const CollisionBox &two,
-												const glm::vec3 &toCentre,
-												CollisionData *data,
-												unsigned best,
-												real pen)
+												   const CollisionBox &two,
+												   const glm::vec3 &toCentre,
+												   CollisionDataOld *data,
+	                                               const unsigned best,
+	                                               const real pen)
 	{
 		Contact* contact = data->getContacts();
 		glm::vec3 normal = one.getAxis(best);

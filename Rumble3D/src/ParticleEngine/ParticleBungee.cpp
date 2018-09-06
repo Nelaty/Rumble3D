@@ -14,8 +14,7 @@ namespace r3
 	
 	
 	ParticleBungee::~ParticleBungee()
-	{
-	}
+	= default;
 
 	void ParticleBungee::updateForce(Particle* particle, real duration)
 	{

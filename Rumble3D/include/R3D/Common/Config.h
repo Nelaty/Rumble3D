@@ -1,8 +1,8 @@
 #pragma once
 
 #define R3D_PRECISION_LEVEL_LOW 0
-#define R3D__PRECISION_LEVEL_MED 1
-#define R3D__PRECISION_LEVEL_HIGH 2
+#define R3D_PRECISION_LEVEL_MED 1
+#define R3D_PRECISION_LEVEL_HIGH 2
 
 
 /************************************************************************/

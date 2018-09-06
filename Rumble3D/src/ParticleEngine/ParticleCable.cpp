@@ -14,8 +14,7 @@ namespace r3
 	}
 
 	ParticleCable::~ParticleCable()
-	{
-	}
+	= default;
 
 	unsigned int ParticleCable::addContact(ParticleContact* contact, unsigned int limit) const
 	{

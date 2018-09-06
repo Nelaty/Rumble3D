@@ -25,22 +25,33 @@ namespace r3
 		return m_computationInterface;
 	}
 
-	void RigidBodyWorld::registerRigidBody(RigidBody* rb)
+	RigidBody* RigidBodyWorld::createRigidBody(const RigidBodyDef definition)
 	{
-		m_rigidBodies.push_back(rb);
+		auto rigidBody = new RigidBody(definition);
+		m_rigidBodies.emplace_back(rigidBody);
+		return rigidBody;
 	}
-	
-	bool RigidBodyWorld::unregisterRigidBody(RigidBody* rb)
-	{
-		const auto removedRigidBody = std::remove(m_rigidBodies.begin(),
-												  m_rigidBodies.end(),
-												  rb);
 
-		return removedRigidBody != m_rigidBodies.end();
-	}
-	
-	void RigidBodyWorld::unregisterAllRigidBodies()
+	bool RigidBodyWorld::destroyRigidBody(RigidBody* particle)
 	{
+		const auto removedBody = std::remove(m_rigidBodies.begin(),
+											 m_rigidBodies.end(),
+											 particle);
+
+		if(removedBody != m_rigidBodies.end())
+		{
+			delete *removedBody;
+			return true;
+		}
+		return false;
+	}
+
+	void RigidBodyWorld::destroyAllRigidBodies()
+	{
+		for(auto& it : m_rigidBodies)
+		{
+			delete it;
+		}
 		m_rigidBodies.clear();
 	}
 

@@ -1,5 +1,6 @@
 #include "R3D/ParticleEngine/ParticleContactResolver.h"
 #include "R3D/ParticleEngine/ParticleContact.h"
+#include "R3D/ParticleEngine/Particle.h"
 
 namespace r3
 {

@@ -5,7 +5,7 @@
 
 namespace r3
 {
-	void ParticleContact::resolve(real duration)
+	void ParticleContact::resolve(const real duration)
 	{
 		resolveVelocity(duration);
 		resolveInterpenetration(duration);
@@ -143,22 +143,22 @@ namespace r3
 		}
 	}
 
-	Particle * ParticleContact::getParticles()
+	Particle* ParticleContact::getParticles()
 	{
-		return *m_particles;
+		return m_particles[0];
 	}
 
-	void ParticleContact::setContactNormal(glm::vec3 normal)
+	void ParticleContact::setContactNormal(const glm::vec3 normal)
 	{
 		m_contactNormal = normal;
 	}
 
-	void ParticleContact::setRestitution(real restitution)
+	void ParticleContact::setRestitution(const real restitution)
 	{
 		m_restitution = restitution;
 	}
 
-	void ParticleContact::setPenetration(real penetration)
+	void ParticleContact::setPenetration(const real penetration)
 	{
 		m_penetration = penetration;
 	}

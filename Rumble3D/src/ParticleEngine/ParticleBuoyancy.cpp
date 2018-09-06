@@ -15,8 +15,7 @@ namespace r3
 	
 	
 	ParticleBuoyancy::~ParticleBuoyancy()
-	{
-	}
+	= default;
 
 	void ParticleBuoyancy::updateForce(Particle* particle, real duration)
 	{

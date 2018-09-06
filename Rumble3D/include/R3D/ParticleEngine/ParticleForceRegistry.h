@@ -34,7 +34,7 @@ namespace r3
 		};
 
 		// Die Registry:
-		typedef std::vector<ParticleForceRegistrationEntry> Registry;
+		using Registry = std::vector<ParticleForceRegistrationEntry>;
 		Registry m_registrations;
 	};
 }

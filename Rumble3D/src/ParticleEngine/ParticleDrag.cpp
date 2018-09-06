@@ -1,19 +1,21 @@
 #include "R3D/ParticleEngine/ParticleDrag.h"
 #include "R3D/ParticleEngine/Particle.h"
 
+#include <glm/glm.hpp>
+
 namespace r3
 {
-	ParticleDrag::ParticleDrag(real k1, real k2)
+	ParticleDrag::ParticleDrag(const real k1, const real k2)
 	{
 		m_k1 = k1;
 		m_k2 = k2;
 	}
 	
 	ParticleDrag::~ParticleDrag()
-	{
-	}
+	= default;
 
-	void ParticleDrag::updateForce(Particle * particle, real duration){
+	void ParticleDrag::updateForce(Particle * particle, real duration)
+	{
 		glm::vec3 force = particle->getVelocity();
 	
 		real dragCoefficient = glm::length(force);

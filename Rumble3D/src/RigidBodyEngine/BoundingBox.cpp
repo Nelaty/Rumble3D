@@ -1,5 +1,6 @@
 #include "R3D/RigidBodyEngine/BoundingBox.h"
 
+#define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>
 
 namespace r3

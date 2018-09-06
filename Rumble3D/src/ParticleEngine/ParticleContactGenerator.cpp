@@ -3,10 +3,8 @@
 namespace r3
 {
 	ParticleContactGenerator::~ParticleContactGenerator()
-	{
-	}
+	= default;
 
 	ParticleContactGenerator::ParticleContactGenerator()
-	{
-	}
+	= default;
 }

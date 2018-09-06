@@ -4,7 +4,7 @@
 #include "CollisionSphere.h"
 #include "CollisionBox.h"
 #include "CollisionPlane.h"
-#include "CollisionData.h"
+#include "CollisionDataOld.h"
 
 #include <glm/glm.hpp>
 
@@ -17,27 +17,27 @@ namespace r3
 	public:
 		static unsigned sphereAndHalfSpace(const CollisionSphere &sphere,
 										   const CollisionPlane &plane,
-										   CollisionData *data);
+										   CollisionDataOld *data);
 
 		static unsigned sphereAndTruePlane(const CollisionSphere &sphere,
 										   const CollisionPlane &plane,
-										   CollisionData *data);
+										   CollisionDataOld *data);
 
 		static unsigned sphereAndSphere(const CollisionSphere &one,
 										const CollisionSphere &two,
-										CollisionData *data);
+										CollisionDataOld *data);
 
 		static unsigned boxAndHalfSpace(const CollisionBox &box,
 										const CollisionPlane &plane,
-										CollisionData *data);
+										CollisionDataOld *data);
 
 		static unsigned boxAndSphere(const CollisionBox &box,
 									 const CollisionSphere &sphere,
-									 CollisionData *data);
+									 CollisionDataOld *data);
 
 		static unsigned boxAndBox(const CollisionBox &one,
 								  const CollisionBox &two,
-								  CollisionData *data);
+								  CollisionDataOld *data);
 
 	private:
 		static real transformToAxis(const CollisionBox &box,
@@ -74,7 +74,7 @@ namespace r3
 		static void fillPointFaceBoxBox(const CollisionBox &one,
 										const CollisionBox &two,
 										const glm::vec3 &toCentre,
-										CollisionData *data,
+										CollisionDataOld *data,
 										unsigned best,
 										real pen);
 

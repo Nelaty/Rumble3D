@@ -21,22 +21,37 @@ namespace r3
 	{
 		return m_computationInterface;
 	}
-	
-	void ParticleWorld::registerParticle(Particle* p)
+
+	Particle* ParticleWorld::createParticle(const ParticleDef definition)
 	{
-		m_particles.push_back(p);
+		auto particle = new Particle(definition);
+		m_particles.emplace_back(particle);
+		return particle;
 	}
-	
-	void ParticleWorld::unregisterParticle(Particle* p)
+
+	bool ParticleWorld::destroyParticle(Particle* particle)
 	{
-		std::remove(m_particles.begin(), m_particles.end(), p);
+		const auto removedParticle = std::remove(m_particles.begin(),
+												 m_particles.end(),
+												 particle);
+
+		if(removedParticle != m_particles.end())
+		{
+			delete *removedParticle;
+			return true;
+		}
+		return false;
 	}
-	
-	void ParticleWorld::unregisterAllParticles()
+
+	void ParticleWorld::destroyAllParticles()
 	{
+		for(auto& it : m_particles)
+		{
+			delete it;
+		}
 		m_particles.clear();
 	}
-	
+
 	r3::ParticleForceRegistry& ParticleWorld::getParticleForceRegistry()
 {
 		return m_forceRegistry;
@@ -47,12 +62,12 @@ namespace r3
 		return m_forceRegistry;
 	}
 
-	ParticleWorld::Particles& ParticleWorld::getParticles()
+	ParticleWorld::Particle_Container& ParticleWorld::getParticles()
 	{
 		return m_particles;
 	}
 
-	const ParticleWorld::Particles& ParticleWorld::getParticles() const
+	const ParticleWorld::Particle_Container& ParticleWorld::getParticles() const
 	{
 		return m_particles;
 	}

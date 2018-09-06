@@ -7,14 +7,41 @@
 namespace r3
 {
 	RigidBody::RigidBody()
-	= default;
+	{
+		init(RigidBodyDef());
+	}
 
 	RigidBody::RigidBody(const RigidBodyDef& def)
 	{
+		init(def);
 	}
 
 	RigidBody::~RigidBody()
 	= default;
+
+	void RigidBody::init(const RigidBodyDef& definition)
+	{
+		m_physicsMaterial = definition.m_physicsMaterial;
+		m_collisionMask = definition.m_collisionMask;
+
+		m_inverseMass = definition.m_inverseMass;
+
+		m_linearDamping = definition.m_linearDamping;
+		m_angularDamping = definition.m_angularDamping;
+
+		m_velocity = definition.m_velocity;
+		m_acceleration = definition.m_acceleration;
+		m_lastFrameAcceleration = definition.m_lastFrameAcceleration;
+		m_rotation = definition.m_rotation;
+
+		m_transformationMatrix = definition.m_transformationMatrix;
+		m_inverseInertiaTensor = definition.m_inverseInertiaTensor;
+		m_inverseInertiaTensorWorld = definition.m_inverseInertiaTensorWorld;
+
+		m_forceAccumulated = definition.m_forceAccumulated;
+		m_torqueAccumulated = definition.m_torqueAccumulated;
+		m_awake = definition.m_awake;
+	}
 
 	void RigidBody::calculateTransformationMatrix(glm::mat4& transformationMatrix,
 	                                              const glm::vec3& position,

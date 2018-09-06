@@ -2,6 +2,7 @@
 #include "R3D/PhysicsEngineModule.h"
 #include "R3D/Common/Common.h"
 
+#include "R3D/RigidBodyEngine/RigidBodyDef.h"
 #include "R3D/RigidBodyEngine/ForceRegistry.h"
 
 #include <vector>
@@ -26,12 +27,22 @@ namespace r3
 		/** Get the currently used computation interface. */
 		IComputationInterface* getComputationInterface() const override;
 
-		/** Register a new rigid body, which should be simulated. */
-		void registerRigidBody(RigidBody* rb);
-		/** Unregister an already registered rigid body. */
-		bool unregisterRigidBody(RigidBody* rb);
-		/** Unregister all registered rigid bodies. */
-		void unregisterAllRigidBodies();
+		/**
+		* \brief Allocate space for a new rigid body and register it.
+		* \param definition Construction information for the new rigid body.
+		* \return The new rigid body.
+		*/
+		RigidBody* createRigidBody(RigidBodyDef definition = RigidBodyDef());
+		/**
+		* \brief Free memory of a given rigid body.
+		* \param particle The rigid body to destroy.
+		* \return True if the rigid body was found, false otherwise.
+		*/
+		bool destroyRigidBody(RigidBody* particle);
+		/**
+		* \brief Free memory of all rigid bodies.
+		*/
+		void destroyAllRigidBodies();
 
 		/** Get all currently registered rigid bodies. */
 		RigidBodies& getRigidBodies();

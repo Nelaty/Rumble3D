@@ -7,11 +7,11 @@ namespace r3
 {
 	class Contact;
 
-	class R3D_DECLSPEC CollisionData
+	class R3D_DECLSPEC CollisionDataOld
 	{
 	public:
-		explicit CollisionData();
-		~CollisionData();
+		explicit CollisionDataOld();
+		~CollisionDataOld();
 
 		// Gibt true zurück, wenn noch freie Plätze im Array vorhanden sind
 		// und sonst false.

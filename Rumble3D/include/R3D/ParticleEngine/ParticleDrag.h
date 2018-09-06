@@ -1,6 +1,6 @@
 #pragma once
-#include "R3D/Common/Common.h"
 #include "ParticleForceGenerator.h"
+#include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 namespace r3
@@ -13,7 +13,7 @@ namespace r3
 		ParticleDrag(real k1, real k2);
 		~ParticleDrag();
 
-		void updateForce(Particle * particle, real duration) override;
+		void updateForce(Particle* particle, real duration) override;
 
 	protected:
 		real m_k1;

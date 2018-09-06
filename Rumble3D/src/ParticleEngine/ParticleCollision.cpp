@@ -4,7 +4,9 @@
 
 namespace r3
 {
-	ParticleCollision::ParticleCollision(real restitution, real distance, real penetration) 
+	ParticleCollision::ParticleCollision(const real restitution, 
+										 const real distance, 
+										 const real penetration) 
 		: m_restitution(restitution), 
 		m_distance(distance), 
 		m_penetration(penetration)
@@ -13,13 +15,12 @@ namespace r3
 	
 	
 	ParticleCollision::~ParticleCollision()
-	{
-	}
-	
+	= default;
+
 	unsigned int ParticleCollision::addContact(ParticleContact* contact, unsigned limit) const 
 	{
 		// Entfernung der Teilchen:
-		real length = currentLength();
+		const real length = currentLength();
 	
 		// Wenn wir nicht zu nah sind, nichts tun:
 		if (length > m_distance) { 

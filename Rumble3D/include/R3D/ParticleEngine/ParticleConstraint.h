@@ -13,7 +13,6 @@
 namespace r3
 {
 	class Particle;
-	class ParticleContact;
 
 	class R3D_DECLSPEC ParticleConstraint : public ParticleContactGenerator
 	{
@@ -26,6 +25,6 @@ namespace r3
 		real currentLength() const;
 
 		glm::vec3 m_anchor;
-		Particle* m_particle;
+		Particle* m_particle{};
 	};
 }

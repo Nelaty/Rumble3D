@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{25A2AD93-2B9C-4E47-984E-6B0292DC8122}</ProjectGuid>
     <RootNamespace>Rumble3D</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -69,24 +69,24 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
-    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)\Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
-    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)\Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
-    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)\Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);$(ProjectDir)/include</IncludePath>
-    <OutDir>$(SolutionDir)\Build\$(PlatformShortName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)\Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);$(ProjectDir);</IncludePath>
+    <OutDir>$(SolutionDir)Build\$(PlatformShortName)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Bin\$(ProjectName)\$(PlatformShortName)\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -94,6 +94,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ObjectFileName>$(IntDir)\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(ProjectDir)/include;</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -108,6 +110,8 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ObjectFileName>$(IntDir)\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(ProjectDir)/include;</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -124,6 +128,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ObjectFileName>$(IntDir)\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(ProjectDir)/include;</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -142,6 +148,8 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ObjectFileName>$(IntDir)\%(RelativeDir)</ObjectFileName>
+      <AdditionalIncludeDirectories>$(ProjectDir)/include;</AdditionalIncludeDirectories>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -166,6 +174,7 @@
     <ClCompile Include="src\ParticleEngine\ParticleContactGenerator.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleContactGeneratorRegistry.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleContactResolver.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleDef.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleDrag.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleEngineCI.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleForceGenerator.cpp" />
@@ -182,7 +191,7 @@
     <ClCompile Include="src\RigidBodyEngine\BoundingSphere.cpp" />
     <ClCompile Include="src\RigidBodyEngine\BVHNode.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionBox.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\CollisionData.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDataOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BoxBoxNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BoxSphereNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseFilter.cpp" />
@@ -218,6 +227,7 @@
     <ClCompile Include="src\RigidBodyEngine\Gravity.cpp" />
     <ClCompile Include="src\RigidBodyEngine\PhysicsMaterial.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBody.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\RigidBodyDef.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBodyEngineCI.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBodyWorld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\Spring.cpp" />
@@ -242,6 +252,7 @@
     <ClInclude Include="include\R3D\ParticleEngine\ParticleContactGenerator.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleContactGeneratorRegistry.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleContactResolver.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleDef.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleDrag.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineCI.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleForceGenerator.h" />
@@ -258,7 +269,7 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\BoundingSphere.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\BVHNode.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionBox.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionData.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDataOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BoxBoxNarrowAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BoxSphereNarrowAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseCollision.h" />
@@ -309,12 +320,12 @@
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
-    <Import Project="..\packages\glm.0.9.8.5\build\native\glm.targets" Condition="Exists('..\packages\glm.0.9.8.5\build\native\glm.targets')" />
+    <Import Project="..\packages\glm.0.9.9\build\native\glm.targets" Condition="Exists('..\packages\glm.0.9.9\build\native\glm.targets')" />
   </ImportGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+      <ErrorText>Dieses Projekt verweist auf mindestens ein NuGet-Paket, das auf diesem Computer fehlt. Verwenden Sie die Wiederherstellung von NuGet-Paketen, um die fehlenden Dateien herunterzuladen. Weitere Informationen finden Sie unter "http://go.microsoft.com/fwlink/?LinkID=322105". Die fehlende Datei ist "{0}".</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\glm.0.9.8.5\build\native\glm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glm.0.9.8.5\build\native\glm.targets'))" />
+    <Error Condition="!Exists('..\packages\glm.0.9.9\build\native\glm.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\glm.0.9.9\build\native\glm.targets'))" />
   </Target>
 </Project>

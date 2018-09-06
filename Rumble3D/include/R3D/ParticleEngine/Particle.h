@@ -2,6 +2,8 @@
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
+#include "R3D/ParticleEngine/ParticleDef.h"
+
 #include <glm/glm.hpp>
 
 namespace r3 
@@ -15,7 +17,14 @@ namespace r3
 	{
 	public:
 		explicit Particle();
+		explicit Particle(const ParticleDef& definition);
 		virtual ~Particle();
+
+		/**
+		 * Initialize this particle with a given definition.
+		 * Automatically called from constructors.
+		 */
+		void init(const ParticleDef& definition);
 
 		/**
 		 * Change the mass of this particle to the given given value. 
