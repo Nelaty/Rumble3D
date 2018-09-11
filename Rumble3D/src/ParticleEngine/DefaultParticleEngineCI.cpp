@@ -29,12 +29,6 @@ namespace r3
 	void DefaultParticleEngineCI::onBegin()
 	{
 		assert(m_particleWorld != nullptr);
-
-		auto& particles = m_particleWorld->getParticles();
-		for(auto& it : particles)
-		{
-			it->clearAccumulator();
-		}
 	}
 
 	void DefaultParticleEngineCI::step(const real timeDelta)
@@ -60,6 +54,12 @@ namespace r3
 	void DefaultParticleEngineCI::onEnd()
 	{
 		assert(m_particleWorld != nullptr);
+
+		auto& particles = m_particleWorld->getParticles();
+		for(auto& it : particles)
+		{
+			it->clearAccumulator();
+		}
 	}
 
 	void DefaultParticleEngineCI::runCollisionSolver(const real timeDelta)
