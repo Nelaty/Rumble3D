@@ -10,7 +10,7 @@ namespace r3
 	class R3D_DECLSPEC ParticleCable : public ParticleLink
 	{
 	public:
-		explicit ParticleCable();
+		explicit ParticleCable(real maxLength = 1.0f, real restitution = 0.0f);
 		~ParticleCable();
 
 		unsigned int addContact(ParticleContact* contact, unsigned int limit) const override;

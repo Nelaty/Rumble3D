@@ -54,7 +54,7 @@ namespace r3
 		{
 			p->integrate(timeDelta);
 		}
-		//runCollisionSolver(timeDelta);
+		runCollisionSolver(timeDelta);
 	}
 
 	void DefaultParticleEngineCI::onEnd()

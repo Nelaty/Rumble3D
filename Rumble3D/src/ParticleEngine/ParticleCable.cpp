@@ -7,9 +7,9 @@
 namespace r3
 {
 
-	ParticleCable::ParticleCable()
-		: m_maxLength{1.0f},
-		m_restitution{0.0f}
+	ParticleCable::ParticleCable(const real maxLength, const real restitution)
+		: m_maxLength{maxLength},
+		m_restitution{restitution}
 	{
 	}
 
@@ -18,7 +18,7 @@ namespace r3
 
 	unsigned int ParticleCable::addContact(ParticleContact* contact, unsigned int limit) const
 	{
-		real length = currentLength();
+		const auto length = currentLength();
 		if (length < m_maxLength) 
 		{
 			return 0;
@@ -31,11 +31,11 @@ namespace r3
 		}
 		else 
 		{
-			contact->m_particles[1] = 0;
+			contact->m_particles[1] = nullptr;
 		}
 		
 		// Negative Kontaktnormale:
-		glm::vec3 normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
+		auto normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
 		normal = glm::normalize(normal);
 	
 		contact->setContactNormal(normal);
@@ -45,12 +45,12 @@ namespace r3
 		return 1;
 	}
 	
-	void ParticleCable::setMaxLength(real maxLength)
+	void ParticleCable::setMaxLength(const real maxLength)
 	{
 		m_maxLength = maxLength;
 	}
 	
-	void ParticleCable::setRestitution(real restitution)
+	void ParticleCable::setRestitution(const real restitution)
 	{
 		m_restitution = restitution;
 	}
