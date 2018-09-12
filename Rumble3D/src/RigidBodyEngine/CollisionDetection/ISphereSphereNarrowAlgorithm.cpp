@@ -6,6 +6,14 @@ namespace r3
 	ISphereSphereNarrowAlgorithm::~ISphereSphereNarrowAlgorithm()
 	= default;
 
+	bool ISphereSphereNarrowAlgorithm::generateContactData(CollisionPrimitive* first, CollisionPrimitive* second,
+		CollisionData& collisionData)
+	{
+		return generateContactData(static_cast<CollisionSphere*>(first),
+								   static_cast<CollisionSphere*>(second),
+								   collisionData);
+	}
+
 	ISphereSphereNarrowAlgorithm::ISphereSphereNarrowAlgorithm()
 	= default;
 }

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hasfinitemass',['hasFiniteMass',['../classrum_1_1_particle.html#a83071b132ef0961b63d05c68dd8ffb51',1,'rum::Particle::hasFiniteMass()'],['../classrum_1_1_rigid_body.html#a2f9a0176ad97d72081fce6f9724e52ea',1,'rum::RigidBody::hasFiniteMass()']]],
-  ['hasunusedcontacts',['hasUnusedContacts',['../classrum_1_1_collision_data.html#a00b88f3e835fc6b3dd48739c518aa66f',1,'rum::CollisionData']]]
+  ['hasfinitemass',['hasFiniteMass',['../classr3_1_1_particle.html#a7517367ac5587d97d783429585ec0e90',1,'r3::Particle::hasFiniteMass()'],['../classr3_1_1_rigid_body.html#a4e2a5b4dd423c75199fb0a4fb2ae078f',1,'r3::RigidBody::hasFiniteMass()']]],
+  ['hasunusedcontacts',['hasUnusedContacts',['../classr3_1_1_collision_data_old.html#a84bd3d8cbf7b3b2f26f31c8a1e1d6b0e',1,'r3::CollisionDataOld']]]
 ];

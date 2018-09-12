@@ -9,8 +9,9 @@ namespace r3
 	BroadPhaseFilter::~BroadPhaseFilter()
 	= default;
 
-	std::vector<BroadPhaseCollision> BroadPhaseFilter::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
+	void BroadPhaseFilter::generateCollisions(const std::vector<RigidBody*>& rigidBodies,
+											  BroadPhaseCollisionData& data)
 	{
-		return std::vector<BroadPhaseCollision>();
+		/// \todo use rigid body mask and layout
 	}
 }

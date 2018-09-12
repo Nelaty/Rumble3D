@@ -1,14 +1,19 @@
 var searchData=
 [
-  ['eros_5freal_5fepsilon',['EROS_REAL_EPSILON',['../_precision_8h.html#a28d5519fa5020127b5fc02188d33da25',1,'Precision.h']]],
-  ['eros_5freal_5fmant_5fdig',['EROS_REAL_MANT_DIG',['../_precision_8h.html#a429e803d612f7fc4572a9eba45b514b7',1,'Precision.h']]],
-  ['eros_5freal_5fmax',['EROS_REAL_MAX',['../_precision_8h.html#ab67d23fbc22ae0f6aca45882be00bb8e',1,'Precision.h']]],
-  ['eros_5freal_5fmax_5f10_5fexp',['EROS_REAL_MAX_10_EXP',['../_precision_8h.html#a6a0ea581f889d148e52be25ca39f5492',1,'Precision.h']]],
-  ['eros_5freal_5fmax_5fexp',['EROS_REAL_MAX_EXP',['../_precision_8h.html#ae77bef44a7d1c587482d34b0f7ae0731',1,'Precision.h']]],
-  ['eros_5freal_5fmin',['EROS_REAL_MIN',['../_precision_8h.html#aa3dc2e2228f97fb76d369792ff81f6cd',1,'Precision.h']]],
-  ['eros_5freal_5fmin_5f10_5fexp',['EROS_REAL_MIN_10_EXP',['../_precision_8h.html#ad1b16328304ef760ecfbbe6f10f8edc5',1,'Precision.h']]],
-  ['eros_5freal_5fmin_5fexp',['EROS_REAL_MIN_EXP',['../_precision_8h.html#a5848c6401d2539762766ba9ef57bd979',1,'Precision.h']]],
-  ['eros_5freal_5fmin_5fpos_5fvalue',['EROS_REAL_MIN_POS_VALUE',['../_precision_8h.html#a3dc7272e54028be761928f1c560901d2',1,'Precision.h']]],
-  ['eros_5freal_5fprecision_5fdezimal_5fdig',['EROS_REAL_PRECISION_DEZIMAL_DIG',['../_precision_8h.html#a4f6c5cf31ab620cb2caf771f1b5af785',1,'Precision.h']]],
-  ['eros_5freal_5fprecision_5fdig',['EROS_REAL_PRECISION_DIG',['../_precision_8h.html#a64fdac1e10a75b313624b01ba486792f',1,'Precision.h']]]
+  ['r3d_5fcurrent_5fprecision_5flevel',['R3D_CURRENT_PRECISION_LEVEL',['../_config_8h.html#a4885ca8a464b7e3f4d7f4a5865634a70',1,'Config.h']]],
+  ['r3d_5fdeclspec',['R3D_DECLSPEC',['../_common_8h.html#a7680bc6fc1bc4d95b31f78e494db41e2',1,'Common.h']]],
+  ['r3d_5fprecision_5flevel_5fhigh',['R3D_PRECISION_LEVEL_HIGH',['../_config_8h.html#a321b3676378fcab09206772ed96acb66',1,'Config.h']]],
+  ['r3d_5fprecision_5flevel_5flow',['R3D_PRECISION_LEVEL_LOW',['../_config_8h.html#a005293c006fc7cbf9d6e1f6e2d72a95c',1,'Config.h']]],
+  ['r3d_5fprecision_5flevel_5fmed',['R3D_PRECISION_LEVEL_MED',['../_config_8h.html#a9c491c45a628ff120b2aab750a2f6982',1,'Config.h']]],
+  ['r3d_5freal_5fepsilon',['R3D_REAL_EPSILON',['../_precision_8h.html#a14e6a34c24bbd93730a1abb62a0f23a7',1,'Precision.h']]],
+  ['r3d_5freal_5fmant_5fdig',['R3D_REAL_MANT_DIG',['../_precision_8h.html#ad9d09b0a39cd2765af41b2ce7f3f1e34',1,'Precision.h']]],
+  ['r3d_5freal_5fmax',['R3D_REAL_MAX',['../_precision_8h.html#a19c1979c9242424c7af88822a56d6d0d',1,'Precision.h']]],
+  ['r3d_5freal_5fmax_5f10_5fexp',['R3D_REAL_MAX_10_EXP',['../_precision_8h.html#a44c5bff8a8d7ac574c102a648e0c85f5',1,'Precision.h']]],
+  ['r3d_5freal_5fmax_5fexp',['R3D_REAL_MAX_EXP',['../_precision_8h.html#ac7ac00556e6aa98137d2d87fa10ed041',1,'Precision.h']]],
+  ['r3d_5freal_5fmin',['R3D_REAL_MIN',['../_precision_8h.html#a47a496136d7f53b10cfacab5f3af17f9',1,'Precision.h']]],
+  ['r3d_5freal_5fmin_5f10_5fexp',['R3D_REAL_MIN_10_EXP',['../_precision_8h.html#aa1c8211c694e438920b213e799ef2a8d',1,'Precision.h']]],
+  ['r3d_5freal_5fmin_5fexp',['R3D_REAL_MIN_EXP',['../_precision_8h.html#a92afd08c45374ade1b5f97359ba5efe3',1,'Precision.h']]],
+  ['r3d_5freal_5fmin_5fpos_5fvalue',['R3D_REAL_MIN_POS_VALUE',['../_precision_8h.html#a5b7e0b7c4d34f87c579ea007a0fb3443',1,'Precision.h']]],
+  ['r3d_5freal_5fprecision_5fdecimal_5fdig',['R3D_REAL_PRECISION_DECIMAL_DIG',['../_precision_8h.html#a666f2ecf39f2b15358d1f6110481db8d',1,'Precision.h']]],
+  ['r3d_5freal_5fprecision_5fdig',['R3D_REAL_PRECISION_DIG',['../_precision_8h.html#ab382ddb3ae2223ad0e729c82f793a954',1,'Precision.h']]]
 ];

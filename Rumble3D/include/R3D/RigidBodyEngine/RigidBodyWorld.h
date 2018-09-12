@@ -17,7 +17,7 @@ namespace r3
 	class R3D_DECLSPEC RigidBodyWorld : public PhysicsEngineModule
 	{
 	public:
-		using RigidBodies = std::vector<RigidBody*>;
+		using RigidBody_Container = std::vector<RigidBody*>;
 		
 		RigidBodyWorld();
 		~RigidBodyWorld();
@@ -45,9 +45,9 @@ namespace r3
 		void destroyAllRigidBodies();
 
 		/** Get all currently registered rigid bodies. */
-		RigidBodies& getRigidBodies();
+		RigidBody_Container& getRigidBodies();
 		/** Get all currently registered rigid bodies. */
-		const RigidBodies& getRigidBodies() const;
+		const RigidBody_Container& getRigidBodies() const;
 
 		/** 
 		 * Get the force registry, which holds all currently active force
@@ -63,7 +63,7 @@ namespace r3
 	private:
 		RigidBodyEngineCI* m_computationInterface{};
 
-		RigidBodies m_rigidBodies;
+		RigidBody_Container m_rigidBodies;
 		ForceRegistry m_forceRegistry;
 	};
 }

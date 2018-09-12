@@ -1,6 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollisionData.h"
 
 #include <memory>
 #include <list>
@@ -26,9 +27,15 @@ namespace r3
 		using IntermediatePhaseFilter_Ptr = std::unique_ptr<IIntermediatePhaseFilter>;
 		using NarrowPhaseFilter_Ptr = std::unique_ptr<INarrowPhaseFilter>;
 
-		explicit CollisionDetector(unsigned int iterations = 10, unsigned int contactsMax = 1000);
+		explicit CollisionDetector(unsigned int contactsMax = 1000, unsigned int iterations = 0);
 		CollisionDetector(const CollisionDetector&) = delete;
 		~CollisionDetector();
+
+		/** Set the number of used contacts and iterations. */
+		void init(unsigned int contactsMax = 1000, unsigned int iterations = 0);
+
+		/** Reset previously calculated collisions. */
+		void reset();
 
 		/** 
 		 * Generate a number of contacts for the given rigid bodies
@@ -67,6 +74,9 @@ namespace r3
 	private:
 		unsigned int m_contactsMax;
 		unsigned int m_iterations;
+
+		BroadPhaseCollisionData m_broadPhaseCollisions;
+		CollisionData m_collisions;
 
 		BroadPhaseFilter_Ptr m_broadPhaseFilter;
 		std::list<IntermediatePhaseFilter_Ptr> m_intermediatePhaseFilters;

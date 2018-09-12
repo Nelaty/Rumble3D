@@ -1,5 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
+#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 #include "R3D/Common/Precision.h"
 #include <glm/glm.hpp>
 
@@ -8,7 +9,7 @@ namespace r3
 	// Die Klasse ist nicht abgeleitet von CollisionPrimitive,
 	// da sie Wände und Böden darstellt, also nicht bewegliche 
 	// Objekte.
-	class R3D_DECLSPEC CollisionPlane
+	class R3D_DECLSPEC CollisionPlane : public CollisionPrimitive
 	{
 	public:
 		CollisionPlane(const glm::vec3 & normal, real offset);

@@ -1,5 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h"
 
 #include <glm/glm.hpp>
 
@@ -14,16 +15,7 @@ namespace r3
 	class R3D_DECLSPEC CollisionPrimitive
 	{
 	public:
-		virtual ~CollisionPrimitive();
-
-		virtual void generateContact(INarrowPhaseFilter* filter,
-									 CollisionPrimitive* other) = 0;
-
-		void generateContact(INarrowPhaseFilter* filter,
-							 CollisionBox* other);
-
-		void generateContact(INarrowPhaseFilter* filter,
-							 CollisionSphere* other);		
+		virtual ~CollisionPrimitive();	
 
 		// Berechnet die Transformation:
 		void calculateInternals();
@@ -32,13 +24,18 @@ namespace r3
 		const glm::mat4 & getTransform() const;
 		RigidBody* getBody() const;
 
+		CollisionPrimitiveType getType() const;
+
 	protected:
-		explicit CollisionPrimitive();
+		explicit CollisionPrimitive(CollisionPrimitiveType type);
 
 		// Festkörper, der duch das Objekt repräsentiert wird.
 		RigidBody* m_body{};
 		// Offset gegenüber dem repräsentierten Festkörper.
 		glm::mat4 m_offset;
 		glm::mat4 m_transform;
+
+	private:
+		CollisionPrimitiveType m_type;
 	};
 }

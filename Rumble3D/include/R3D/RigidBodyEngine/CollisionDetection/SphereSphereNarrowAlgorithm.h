@@ -10,6 +10,7 @@ namespace r3
 		explicit SphereSphereNarrowAlgorithm();
 		~SphereSphereNarrowAlgorithm();
 
+	protected:
 		bool generateContactData(CollisionSphere* first,
 								 CollisionSphere* second,
 								 CollisionData& collisionData) override;

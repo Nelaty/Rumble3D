@@ -55,12 +55,12 @@ namespace r3
 		m_rigidBodies.clear();
 	}
 
-	RigidBodyWorld::RigidBodies& RigidBodyWorld::getRigidBodies()
+	RigidBodyWorld::RigidBody_Container& RigidBodyWorld::getRigidBodies()
 	{
 		return m_rigidBodies;
 	}
 
-	const RigidBodyWorld::RigidBodies& RigidBodyWorld::getRigidBodies() const
+	const RigidBodyWorld::RigidBody_Container& RigidBodyWorld::getRigidBodies() const
 	{
 		return m_rigidBodies;
 	}

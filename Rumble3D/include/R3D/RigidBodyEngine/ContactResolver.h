@@ -4,7 +4,7 @@
 
 namespace r3
 {
-	class Contact;
+	class ContactOld;
 
 	class R3D_DECLSPEC ContactResolver
 	{
@@ -33,18 +33,18 @@ namespace r3
 		void setEpsilon(real velocityEpsilon,
 						real positionEpsilon);
 
-		void resolveContacts(Contact *contacts,
+		void resolveContacts(ContactOld *contacts,
 							 unsigned numContacts,
 							 real timeDelta);
 
-		void prepareContacts(Contact* contacts,
+		void prepareContacts(ContactOld* contacts,
 							 unsigned numContacts,
 							 real timeDelta);
 
-		void adjustVelocities(Contact *c,
+		void adjustVelocities(ContactOld *c,
 							  unsigned numContacts,
 							  real timeDelta);
-		void adjustPositions(Contact *c,
+		void adjustPositions(ContactOld *c,
 							 unsigned numContacts,
 							 real timeDelta);
 		bool isValid() const;

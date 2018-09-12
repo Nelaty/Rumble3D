@@ -42,7 +42,7 @@ namespace r3
 	private:
 		static real transformToAxis(const CollisionBox &box,
 									const glm::vec3 &axis);
-		/*
+		/**
 		* Überlappen zweier Quader entlang einer Achse.
 		* Rückgabe ist der Wert der Überlappung.
 		* toCentre ist der Vektor zwischen den Quadern und wird
@@ -67,7 +67,7 @@ namespace r3
 							real& smallestPenetration,
 							unsigned &smallestCase);
 
-		/* 
+		/**
 		 * Erstellt die Kontaktdaten für den Fall BoxBox-Kollision
 		 * wenn der Kontakt Ecke-Fläche ist:
 		 */

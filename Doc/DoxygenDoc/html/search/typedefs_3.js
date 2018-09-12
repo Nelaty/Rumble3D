@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['narrowphasefilter_5fptr',['NarrowPhaseFilter_Ptr',['../classrum_1_1_collision_detector.html#a8a6d24fed38f8be11b25e43eaabc9638',1,'rum::CollisionDetector']]]
+  ['intermediatephasefilter_5fptr',['IntermediatePhaseFilter_Ptr',['../classr3_1_1_collision_detector.html#a8337c2c23ec77350b65977e043c07827',1,'r3::CollisionDetector']]]
 ];

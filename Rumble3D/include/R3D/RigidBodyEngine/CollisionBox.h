@@ -20,8 +20,6 @@ namespace r3
 
 		glm::vec3 getHalfSize() const;
 
-		void generateContact(INarrowPhaseFilter* filter, CollisionPrimitive* other) override;
-
 	protected:
 		glm::vec3 m_halfSize; // Halbe Entfernung der Seiten vom Mittelpunkt eines Quaders
 

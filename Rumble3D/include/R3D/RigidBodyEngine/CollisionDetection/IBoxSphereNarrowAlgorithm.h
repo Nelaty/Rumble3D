@@ -13,11 +13,18 @@ namespace r3
 	public:
 		virtual ~IBoxSphereNarrowAlgorithm();
 
+		bool generateContactData(CollisionPrimitive* first,
+								 CollisionPrimitive* second,
+								 CollisionData& collisionData) override final;
+
+	protected:
 		virtual bool generateContactData(CollisionBox* first,
 										 CollisionSphere* second,
 										 CollisionData& collisionData) = 0;
+		bool generateContactData(CollisionSphere* first,
+								 CollisionBox* second,
+								 CollisionData& collisionData);
 
-	protected:
 		explicit IBoxSphereNarrowAlgorithm();
 	};
 }

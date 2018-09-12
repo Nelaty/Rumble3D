@@ -1,5 +1,5 @@
 #include "R3D/RigidBodyEngine/ContactResolver.h"
-#include "R3D/RigidBodyEngine/Contact.h"
+#include "R3D/RigidBodyEngine/ContactOld.h"
 
 #include <glm/glm.hpp>
 
@@ -43,7 +43,7 @@ namespace r3
 		m_positionEpsilon = positionEpsilon;
 	}
 	
-	void ContactResolver::resolveContacts(Contact *contacts,
+	void ContactResolver::resolveContacts(ContactOld *contacts,
 	                                      const unsigned numContacts,
 	                                      const real timeDelta)
 	{
@@ -66,20 +66,20 @@ namespace r3
 		adjustVelocities(contacts, numContacts, timeDelta);
 	}
 	
-	void ContactResolver::prepareContacts(Contact* contacts,
+	void ContactResolver::prepareContacts(ContactOld* contacts,
 	                                      const unsigned numContacts,
 	                                      const real timeDelta)
 	{
 		// Generate contact velocity and axis information.
-		Contact* lastContact = contacts + numContacts;
-		for (Contact* contact = contacts; contact < lastContact; contact++)
+		ContactOld* lastContact = contacts + numContacts;
+		for (ContactOld* contact = contacts; contact < lastContact; contact++)
 		{
 			// Calculate the internal contact data (inertia, basis, etc).
 			contact->calculateInternals(timeDelta);
 		}
 	}
 	
-	void ContactResolver::adjustVelocities(Contact *c,
+	void ContactResolver::adjustVelocities(ContactOld *c,
 	                                       const unsigned numContacts,
 	                                       const real timeDelta)
 	{
@@ -140,7 +140,7 @@ namespace r3
 		}
 	}
 	
-	void ContactResolver::adjustPositions(Contact *c,
+	void ContactResolver::adjustPositions(ContactOld *c,
 	                                      const unsigned numContacts,
 										  real timeDelta)
 	{

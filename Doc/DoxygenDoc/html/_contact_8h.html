@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rumble3D: D:/Library/Documents/Job/Forschungsmaster/Projekte/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/Contact.h File Reference</title>
+<title>Rumble3D: D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Contact.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4afeb6557afd5c9d89ff3424cab508f4.html">Rumble3D</a></li><li class="navelem"><a class="el" href="dir_3a95e4d4a22cf54751ef1514bb03a84a.html">include</a></li><li class="navelem"><a class="el" href="dir_bb57e8985be6345160b95bc715b6ed65.html">R3D</a></li><li class="navelem"><a class="el" href="dir_18b973c5f9231e74e174876c3d6a11c4.html">RigidBodyEngine</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4afeb6557afd5c9d89ff3424cab508f4.html">Rumble3D</a></li><li class="navelem"><a class="el" href="dir_3a95e4d4a22cf54751ef1514bb03a84a.html">include</a></li><li class="navelem"><a class="el" href="dir_bb57e8985be6345160b95bc715b6ed65.html">R3D</a></li><li class="navelem"><a class="el" href="dir_18b973c5f9231e74e174876c3d6a11c4.html">RigidBodyEngine</a></li><li class="navelem"><a class="el" href="dir_4762bb1bcfd1e9fa802a8f5c3b61c662.html">CollisionDetection</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -75,54 +75,66 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="_common_8h_source.html">R3D/Common/Common.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="_precision_8h_source.html">R3D/Common/Precision.h</a>&quot;</code><br />
-<code>#include &lt;glm/glm.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="_collision_pair_8h_source.html">CollisionPair.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Contact.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="_contact_8h__incl.png" border="0" usemap="#_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_contact_8h" alt=""/></div>
-<map name="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_contact_8h" id="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_contact_8h">
-<area shape="rect" id="node2" href="_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,139,176,165"/>
-<area shape="rect" id="node4" href="_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="201,139,373,165"/>
-<area shape="rect" id="node3" href="_config_8h.html" title="Config.h" alt="" coords="89,213,159,240"/>
+<div class="center"><img src="_contact_8h__incl.png" border="0" usemap="#_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_collision_detection_2_contact_8h" alt=""/></div>
+<map name="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_collision_detection_2_contact_8h" id="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_collision_detection_2_contact_8h">
+<area shape="rect" id="node2" href="_common_8h.html" title="R3D/Common/Common.h" alt="" coords="37,228,207,255"/>
+<area shape="rect" id="node4" href="_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="115,153,220,180"/>
+<area shape="rect" id="node3" href="_config_8h.html" title="Config.h" alt="" coords="87,303,157,329"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="_contact_8h__dep__incl.png" border="0" usemap="#_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_contact_8hdep" alt=""/></div>
-<map name="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_contact_8hdep" id="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_contact_8hdep">
-<area shape="rect" id="node2" href="_collision_data_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionData.h" alt="" coords="282,139,485,224"/>
-<area shape="rect" id="node6" href="_collision_detection_2_collision_data_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/CollisionData.h" alt="" coords="1583,139,1805,224"/>
-<area shape="rect" id="node30" href="_contact_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/Contact.cpp" alt="" coords="1829,146,2050,217"/>
-<area shape="rect" id="node31" href="_contact_generator_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/ContactGenerator.cpp" alt="" coords="2075,146,2353,217"/>
-<area shape="rect" id="node32" href="_contact_resolver_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/ContactResolver.cpp" alt="" coords="2377,146,2648,217"/>
-<area shape="rect" id="node3" href="_collision_detector_old_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetectorOld.h" alt="" coords="282,279,485,365"/>
-<area shape="rect" id="node5" href="_collision_data_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionData.cpp" alt="" coords="5,287,257,357"/>
-<area shape="rect" id="node4" href="_collision_detector_old_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetector\lOld.cpp" alt="" coords="129,427,379,513"/>
-<area shape="rect" id="node7" href="_i_box_box_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/IBoxBoxNarrowAlgorithm.h" alt="" coords="2651,279,2940,365"/>
-<area shape="rect" id="node12" href="_i_box_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/IBoxSphereNarrow\lAlgorithm.h" alt="" coords="3273,272,3515,372"/>
-<area shape="rect" id="node16" href="_collision_detector_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/CollisionDetector.h" alt="" coords="637,279,879,365"/>
-<area shape="rect" id="node20" href="_i_narrow_phase_filter_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/INarrowPhaseFilter.h" alt="" coords="1199,279,1453,365"/>
-<area shape="rect" id="node21" href="_narrow_phase_filter_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/NarrowPhaseFilter.h" alt="" coords="1487,427,1738,513"/>
-<area shape="rect" id="node24" href="_i_sphere_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/ISphereSphereNarrow\lAlgorithm.h" alt="" coords="2090,272,2349,372"/>
-<area shape="rect" id="node28" href="_i_collision_resolver_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionResolving/ICollisionResolver.h" alt="" coords="1652,279,1899,365"/>
-<area shape="rect" id="node8" href="_box_box_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/BoxBoxNarrowAlgorithm.h" alt="" coords="2652,427,2939,513"/>
-<area shape="rect" id="node11" href="_i_box_box_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/IBoxBoxNarrowAlgorithm.cpp" alt="" coords="2963,427,3217,513"/>
-<area shape="rect" id="node9" href="_box_box_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/BoxBoxNarrowAlgorithm.cpp" alt="" coords="2799,568,3053,653"/>
-<area shape="rect" id="node10" href="_narrow_phase_filter_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/NarrowPhaseFilter.cpp" alt="" coords="2520,568,2775,653"/>
-<area shape="rect" id="node13" href="_box_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/BoxSphereNarrowAlgorithm.h" alt="" coords="3242,427,3546,513"/>
-<area shape="rect" id="node15" href="_i_box_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/IBoxSphereNarrowAlgorithm.cpp" alt="" coords="3571,427,3825,513"/>
-<area shape="rect" id="node14" href="_box_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/BoxSphereNarrowAlgorithm.cpp" alt="" coords="3267,568,3521,653"/>
-<area shape="rect" id="node17" href="_default_rigid_body_engine_c_i_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/DefaultRigidBodyEngineCI.h" alt="" coords="403,427,606,513"/>
-<area shape="rect" id="node19" href="_collision_detector_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/CollisionDetector.cpp" alt="" coords="631,427,885,513"/>
-<area shape="rect" id="node18" href="_default_rigid_body_engine_c_i_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/DefaultRigidBody\lEngineCI.cpp" alt="" coords="1487,568,1738,653"/>
-<area shape="rect" id="node22" href="_i_narrow_phase_filter_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/INarrowPhaseFilter.cpp" alt="" coords="909,427,1164,513"/>
-<area shape="rect" id="node23" href="_collision_primitive_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionPrimitive.cpp" alt="" coords="1189,435,1463,505"/>
-<area shape="rect" id="node25" href="_sphere_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/include/R3D/RigidBodyEngine\l/CollisionDetection/SphereSphereNarrow\lAlgorithm.h" alt="" coords="2371,420,2627,520"/>
-<area shape="rect" id="node27" href="_i_sphere_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/ISphereSphereNarrowAlgorithm.cpp" alt="" coords="2092,427,2347,513"/>
-<area shape="rect" id="node26" href="_sphere_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionDetection\l/SphereSphereNarrowAlgorithm.cpp" alt="" coords="2241,568,2496,653"/>
-<area shape="rect" id="node29" href="_i_collision_resolver_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/Rumble3D/Rumble3D\l/src/RigidBodyEngine/CollisionResolving\l/ICollisionResolver.cpp" alt="" coords="1813,427,2068,513"/>
+<div class="center"><img src="_contact_8h__dep__incl.png" border="0" usemap="#_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_collision_detection_2_contact_8hdep" alt=""/></div>
+<map name="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_collision_detection_2_contact_8hdep" id="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2include_2_r3_d_2_rigid_body_engine_2_collision_detection_2_contact_8hdep">
+<area shape="rect" id="node2" href="_collision_data_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/CollisionData.h" alt="" coords="2208,153,2441,253"/>
+<area shape="rect" id="node45" href="_contact_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/Contact.cpp" alt="" coords="2466,161,2741,246"/>
+<area shape="rect" id="node3" href="_i_box_box_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/IBoxBoxNarrowAlgorithm.h" alt="" coords="452,449,685,549"/>
+<area shape="rect" id="node8" href="_i_box_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/IBoxSphereNarrowAlgorithm.h" alt="" coords="831,449,1064,549"/>
+<area shape="rect" id="node12" href="_collision_detector_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/CollisionDetector.h" alt="" coords="2915,301,3148,401"/>
+<area shape="rect" id="node20" href="_i_narrow_phase_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="1376,301,1609,401"/>
+<area shape="rect" id="node21" href="_i_sphere_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/ISphereSphereNarrowAlgorithm.h" alt="" coords="1088,449,1321,549"/>
+<area shape="rect" id="node28" href="_i_narrow_phase_filter_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/INarrowPhaseFilter.h" alt="" coords="2317,301,2551,401"/>
+<area shape="rect" id="node29" href="_narrow_phase_filter_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/NarrowPhaseFilter.h" alt="" coords="2039,449,2272,549"/>
+<area shape="rect" id="node32" href="_i_collision_resolution_filter_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionResolution\l/ICollisionResolutionFilter.h" alt="" coords="4299,301,4537,401"/>
+<area shape="rect" id="node41" href="_i_collision_resolver_access_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionResolution\l/ICollisionResolverAccess.h" alt="" coords="3440,301,3679,401"/>
+<area shape="rect" id="node44" href="_collision_data_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/CollisionData.cpp" alt="" coords="4562,309,4837,394"/>
+<area shape="rect" id="node4" href="_box_box_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/BoxBoxNarrowAlgorithm.h" alt="" coords="39,597,272,697"/>
+<area shape="rect" id="node7" href="_i_box_box_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/IBoxBoxNarrowAlgorithm.cpp" alt="" coords="296,605,599,690"/>
+<area shape="rect" id="node5" href="_box_box_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/BoxBoxNarrowAlgorithm.cpp" alt="" coords="5,745,305,831"/>
+<area shape="rect" id="node6" href="_service_locator_collision_algorithm_matrix_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/ServiceLocator\l/ServiceLocatorCollisionAlgorithmMatrix.cpp" alt="" coords="797,745,1073,831"/>
+<area shape="rect" id="node9" href="_box_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/BoxSphereNarrowAlgorithm.h" alt="" coords="623,597,856,697"/>
+<area shape="rect" id="node11" href="_i_box_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/IBoxSphereNarrowAlgorithm.cpp" alt="" coords="880,605,1201,690"/>
+<area shape="rect" id="node10" href="_box_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/BoxSphereNarrowAlgorithm.cpp" alt="" coords="455,745,773,831"/>
+<area shape="rect" id="node13" href="_rigid_body_engine_c_i_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/RigidBodyEngineCI.h" alt="" coords="3193,457,3443,542"/>
+<area shape="rect" id="node19" href="_collision_detector_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/CollisionDetector.cpp" alt="" coords="2894,457,3169,542"/>
+<area shape="rect" id="node14" href="_default_rigid_body_engine_c_i_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/DefaultRigidBodyEngineCI.h" alt="" coords="2721,605,3011,690"/>
+<area shape="rect" id="node17" href="_rigid_body_engine_c_i_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/RigidBodyEngineCI.cpp" alt="" coords="3334,605,3609,690"/>
+<area shape="rect" id="node18" href="_rigid_body_world_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/RigidBodyWorld.cpp" alt="" coords="3035,605,3310,690"/>
+<area shape="rect" id="node15" href="_default_rigid_body_engine_c_i_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/DefaultRigidBodyEngineCI.cpp" alt="" coords="2491,745,2766,831"/>
+<area shape="rect" id="node16" href="_service_locator_computation_interface_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/ServiceLocator\l/ServiceLocatorComputationInterface.cpp" alt="" coords="2790,745,3051,831"/>
+<area shape="rect" id="node25" href="_collision_algorithm_matrix_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/CollisionAlgorithmMatrix.cpp" alt="" coords="1665,457,1963,542"/>
+<area shape="rect" id="node26" href="_i_narrow_phase_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/INarrowPhaseAlgorithm.cpp" alt="" coords="1345,457,1640,542"/>
+<area shape="rect" id="node27" href="_narrow_phase_filter_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/NarrowPhaseFilter.cpp" alt="" coords="1941,605,2215,690"/>
+<area shape="rect" id="node22" href="_sphere_sphere_narrow_algorithm_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionDetection\l/SphereSphereNarrowAlgorithm.h" alt="" coords="1589,597,1823,697"/>
+<area shape="rect" id="node24" href="_i_sphere_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/ISphereSphereNarrowAlgorithm.cpp" alt="" coords="1226,605,1565,690"/>
+<area shape="rect" id="node23" href="_sphere_sphere_narrow_algorithm_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/SphereSphereNarrowAlgorithm.cpp" alt="" coords="1538,745,1874,831"/>
+<area shape="rect" id="node30" href="_i_narrow_phase_filter_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionDetection/INarrowPhaseFilter.cpp" alt="" coords="2297,457,2571,542"/>
+<area shape="rect" id="node31" href="_collision_primitive_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionPrimitive.cpp" alt="" coords="2595,457,2870,542"/>
+<area shape="rect" id="node33" href="_friction_resolver_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionResolution\l/FrictionResolver.h" alt="" coords="4448,449,4687,549"/>
+<area shape="rect" id="node36" href="_interpenetration_resolver_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionResolution\l/InterpenetrationResolver.h" alt="" coords="4973,449,5212,549"/>
+<area shape="rect" id="node38" href="_velocity_resolver_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionResolution\l/VelocityResolver.h" alt="" coords="4711,449,4949,549"/>
+<area shape="rect" id="node40" href="_i_collision_resolution_filter_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionResolution/ICollisionResolutionFilter.cpp" alt="" coords="4117,457,4423,542"/>
+<area shape="rect" id="node34" href="_collision_resolver_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionResolution/CollisionResolver.cpp" alt="" coords="4430,605,4705,690"/>
+<area shape="rect" id="node35" href="_friction_resolver_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionResolution/FrictionResolver.cpp" alt="" coords="4131,605,4406,690"/>
+<area shape="rect" id="node37" href="_interpenetration_resolver_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionResolution/InterpenetrationResolver.cpp" alt="" coords="5028,605,5331,690"/>
+<area shape="rect" id="node39" href="_velocity_resolver_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionResolution/VelocityResolver.cpp" alt="" coords="4729,605,5003,690"/>
+<area shape="rect" id="node42" href="_collision_resolver_8h.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/include/R3D\l/RigidBodyEngine/CollisionResolution\l/CollisionResolver.h" alt="" coords="3519,449,3757,549"/>
+<area shape="rect" id="node43" href="_i_collision_resolver_access_8cpp.html" title="D:/Library/Documents\l/Job/Forschungsmaster\l/Projekte/SimulationVisualization\l/Rumble3D/Rumble3D/src/RigidBodyEngine\l/CollisionResolution/ICollisionResolverAccess.cpp" alt="" coords="3781,457,4092,542"/>
 </map>
 </div>
 </div>
@@ -130,13 +142,13 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classrum_1_1_contact.html">rum::Contact</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html">r3::Contact</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacerum"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerum.html">rum</a></td></tr>
-<tr class="memdesc:namespacerum"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class for computation interfaces used for particle worlds. <br /></td></tr>
+<tr class="memitem:namespacer3"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer3.html">r3</a></td></tr>
+<tr class="memdesc:namespacer3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class for computation interfaces used for particle worlds. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

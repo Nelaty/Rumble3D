@@ -18,8 +18,6 @@ namespace r3
 
 		real getRadius() const;
 
-		void generateContact(INarrowPhaseFilter* filter, CollisionPrimitive* other) override;
-	
 	protected:
 	
 		real m_radius;

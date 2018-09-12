@@ -1,9 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrum_1_1_particle_force_generator.html" title="Schnittstellen&#45;Klasse für Kraft&#45;Generatoren. " alt="" coords="5,132,192,159"/>
-<area shape="rect" id="node2" href="$classrum_1_1_particle_anchored_spring.html" title="rum::ParticleAnchoredSpring" alt="" coords="240,5,428,32"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle_bungee.html" title="rum::ParticleBungee" alt="" coords="264,56,404,83"/>
-<area shape="rect" id="node4" href="$classrum_1_1_particle_buoyancy.html" title="rum::ParticleBuoyancy" alt="" coords="257,107,411,133"/>
-<area shape="rect" id="node5" href="$classrum_1_1_particle_drag.html" title="rum::ParticleDrag" alt="" coords="273,157,395,184"/>
-<area shape="rect" id="node6" href="$classrum_1_1_particle_gravity.html" title="rum::ParticleGravity" alt="" coords="266,208,402,235"/>
-<area shape="rect" id="node7" href="$classrum_1_1_particle_spring.html" title="rum::ParticleSpring" alt="" coords="267,259,401,285"/>
+<area shape="rect" id="node1" href="$classr3_1_1_particle.html" title="r3::Particle" alt="" coords="5,5,91,32"/>
 </map>

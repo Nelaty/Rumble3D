@@ -3,7 +3,8 @@
 namespace r3
 {
 	CollisionPlane::CollisionPlane(const glm::vec3& normal, const real offset) 
-		: m_normal(normal), 
+		: CollisionPrimitive(R3D_PRIMITIVE_PLANE),
+		m_normal(normal), 
 		m_offset(offset)
 	{
 	}

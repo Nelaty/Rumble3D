@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['broadphasefilter_5fptr',['BroadPhaseFilter_Ptr',['../classrum_1_1_collision_detector.html#a76f794d3db7491b5b21137c6332eccb3',1,'rum::CollisionDetector']]]
+  ['broadphasefilter_5fptr',['BroadPhaseFilter_Ptr',['../classr3_1_1_collision_detector.html#aa8ed51d53c6f6ce545c93ad0e356d6de',1,'r3::CollisionDetector']]]
 ];

@@ -10,7 +10,7 @@ namespace r3
 		explicit BroadPhaseFilter();
 		~BroadPhaseFilter();
 
-		std::vector<BroadPhaseCollision> generateCollisions(
-			const std::vector<RigidBody*>& rigidBodies) override;
+		void generateCollisions(const std::vector<RigidBody*>& rigidBodies,
+								BroadPhaseCollisionData& data) override;
 	};
 }

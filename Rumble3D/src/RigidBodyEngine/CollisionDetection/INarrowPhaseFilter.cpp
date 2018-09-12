@@ -1,5 +1,4 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollision.h"
 
 namespace r3
 {
@@ -8,9 +7,4 @@ namespace r3
 
 	INarrowPhaseFilter::INarrowPhaseFilter()
 	= default;
-
-	void INarrowPhaseFilter::generateCollisionData(CollisionSphere* first, CollisionBox* second)
-	{
-		generateCollisionData(second, first);
-	}
 }

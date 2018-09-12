@@ -1,11 +1,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.h"
-
-#include "R3D/RigidBodyEngine/CollisionDetection/BoxBoxNarrowAlgorithm.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BoxSphereNarrowAlgorithm.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/SphereSphereNarrowAlgorithm.h"
-
-#include "R3D/RigidBodyEngine/CollisionBox.h"
-#include "R3D/RigidBodyEngine/CollisionSphere.h"
+#include "R3D/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.h"
+#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
 
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
@@ -13,8 +9,6 @@ namespace r3
 {
 	NarrowPhaseFilter::NarrowPhaseFilter(const unsigned iterations, 
 										 const unsigned collisionsMax)
-		: m_iterations{iterations},
-		m_collisionsMax{collisionsMax}
 	{
 		init();
 	}
@@ -22,76 +16,31 @@ namespace r3
 	NarrowPhaseFilter::~NarrowPhaseFilter()
 	= default;
 
-	const CollisionData& NarrowPhaseFilter::generateCollisionData(
-		const std::vector<BroadPhaseCollision>& collisions)
+	void NarrowPhaseFilter::generateCollisionData(const BroadPhaseCollisionData& broadPhaseData,
+												  CollisionData& collisions)
 	{
-		initCollisionData();
-
-		for(auto& it : collisions)
+		const auto& data = broadPhaseData.getCollisions();
+		for(auto& it : data)
 		{
-			generateCollisionData(it.m_first, it.m_second);
+			generateCollisionData(it.m_first, it.m_second, collisions);
 		}
-
-		return m_collisionData;
-	}
-
-	void NarrowPhaseFilter::setBoxBoxAlgorithm(Algorithm<IBoxBoxNarrowAlgorithm> algorithm)
-	{
-		m_boxBox = std::move(algorithm);
-	}
-
-	void NarrowPhaseFilter::setBoxSphereAlgorithm(Algorithm<IBoxSphereNarrowAlgorithm> algorithm)
-	{
-		m_boxSphere = std::move(algorithm);
-	}
-
-	void NarrowPhaseFilter::setSphereSphereAlgorithm(Algorithm<ISphereSphereNarrowAlgorithm> algorithm)
-	{
-		m_sphereSphere = std::move(algorithm);
 	}
 
 	void NarrowPhaseFilter::init()
 	{
-		initCollisionData();
-		initAlgorithms();
+		m_algorithms = ServiceLocatorCollisionAlgorithmMatrix::getMatrix();
 	}
 
-	void NarrowPhaseFilter::initCollisionData()
+	void NarrowPhaseFilter::generateCollisionData(RigidBody* first, RigidBody* second, CollisionData& collisions)
 	{
-		m_collisionData.m_contactData.resize(m_collisionsMax);
-		m_collisionData.m_contacts = 0;
-		m_collisionData.m_contactsMax = m_collisionsMax;
-	}
+		const auto firstCollider = first->getCollisionPrimitive();
+		const auto secondCollider = second->getCollisionPrimitive();
 
-	void NarrowPhaseFilter::initAlgorithms()
-	{
-		m_boxBox = std::make_unique<BoxBoxNarrowAlgorithm>();
-		m_boxSphere = std::make_unique<BoxSphereNarrowAlgorithm>();;
-		m_sphereSphere = std::make_unique<SphereSphereNarrowAlgorithm>();;
-	}
+		if(!firstCollider || !secondCollider) return;
 
-	void NarrowPhaseFilter::generateCollisionData(RigidBody* first, RigidBody* second)
-	{
-		auto firstCollisionPrimitive = first->getCollisionPrimitive();
-		auto secondCollisionPrimitive = second->getCollisionPrimitive();
+		auto algorithm = m_algorithms.getAlgorithm(firstCollider->getType(),
+												   secondCollider->getType());
 
-		if(!firstCollisionPrimitive || !secondCollisionPrimitive) return;
-
-		firstCollisionPrimitive->generateContact(this, secondCollisionPrimitive);
-	}
-
-	void NarrowPhaseFilter::generateCollisionData(CollisionBox* first, CollisionBox* second)
-	{
-		m_boxBox->generateContactData(first, second, m_collisionData);
-	}
-
-	void NarrowPhaseFilter::generateCollisionData(CollisionBox* first, CollisionSphere* second)
-	{
-		m_boxSphere->generateContactData(first, second, m_collisionData);
-	}
-
-	void NarrowPhaseFilter::generateCollisionData(CollisionSphere* first, CollisionSphere* second)
-	{
-		m_sphereSphere->generateContactData(first, second, m_collisionData);
+		algorithm->generateContactData(firstCollider, secondCollider, collisions);
 	}
 }

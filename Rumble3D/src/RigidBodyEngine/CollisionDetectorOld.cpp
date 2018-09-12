@@ -72,7 +72,7 @@ namespace r3
 	
 		// Erstellung der Kontaktnormalen und der Kontaktdaten:
 		glm::vec3 normal = midline * (static_cast<real>(1.0f) / size);
-		Contact* contact = data->getContacts();
+		ContactOld* contact = data->getContacts();
 		contact->setContactNormal(normal);
 		contact->setContactPoint(positionOne + midline * static_cast<real>(0.5f));
 		contact->setPenetration((one.getRadius() + two.getRadius() - size));
@@ -109,7 +109,7 @@ namespace r3
 		static constexpr real mults[8][3] = { { 1, 1, 1 }, { -1, 1, 1 }, { 1, -1, 1 }, { -1, -1, 1 },
 		{ 1, 1, -1 }, { -1, 1, -1 }, { 1, -1, -1 }, { -1, -1, -1 } };
 	
-		Contact* contact = data->getContacts();
+		ContactOld* contact = data->getContacts();
 		unsigned contactsUsed = 0;
 		for (unsigned i = 0; i < 8; i++) {
 	
@@ -201,7 +201,7 @@ namespace r3
 		glm::vec3 closestPtWorld = 
 			glm::vec3(box.getTransform() * glm::vec4(closestPt, static_cast<real>(1.0f)));
 	
-		Contact* contact = data->getContacts();
+		ContactOld* contact = data->getContacts();
 		glm::vec3 tmp = (closestPtWorld - centre);
 		tmp = glm::normalize(tmp);
 		contact->setContactNormal(tmp);
@@ -395,7 +395,7 @@ namespace r3
 				bestSingleAxis > 2);
 	
 			// We can fill the contact.
-			Contact* contact = data->getContacts();
+			ContactOld* contact = data->getContacts();
 	
 			contact->setPenetration(pen);
 			contact->setContactNormal(axis);
@@ -416,7 +416,7 @@ namespace r3
 	                                               const unsigned best,
 	                                               const real pen)
 	{
-		Contact* contact = data->getContacts();
+		ContactOld* contact = data->getContacts();
 		glm::vec3 normal = one.getAxis(best);
 		// Richtige Fläche auswählen:
 		if (glm::dot(one.getAxis(best), toCentre) >  static_cast<real>(0.0f))

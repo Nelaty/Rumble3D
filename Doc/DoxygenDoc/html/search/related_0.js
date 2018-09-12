@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['contactresolver',['ContactResolver',['../classrum_1_1_contact.html#a274795e9632d5cb7d5d387fc31136fe5',1,'rum::Contact']]]
+  ['contactresolver',['ContactResolver',['../classr3_1_1_contact_old.html#a274795e9632d5cb7d5d387fc31136fe5',1,'r3::ContactOld']]]
 ];

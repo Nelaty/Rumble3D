@@ -6,7 +6,8 @@ namespace r3
 	CollisionBox::CollisionBox(RigidBody* body, 
 							   const glm::mat4& offset,
 							   const glm::vec3& halfSize)
-		: m_halfSize{halfSize}
+		: CollisionPrimitive(R3D_PRIMITIVE_BOX), 
+		m_halfSize{halfSize}
 	{
 		m_body = body;
 		m_offset = offset;
@@ -36,10 +37,5 @@ namespace r3
 		{
 			vertex = glm::vec3(m_offset * glm::vec4(vertex, static_cast<real>(1.0f)));
 		}
-	}
-
-	void CollisionBox::generateContact(INarrowPhaseFilter* filter, CollisionPrimitive* other)
-	{
-		other->generateContact(filter, this);
 	}
 }

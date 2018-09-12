@@ -6,8 +6,10 @@ var searchData=
   ['iboxspherenarrowalgorithm_2eh',['IBoxSphereNarrowAlgorithm.h',['../_i_box_sphere_narrow_algorithm_8h.html',1,'']]],
   ['ibroadphasefilter_2ecpp',['IBroadPhaseFilter.cpp',['../_i_broad_phase_filter_8cpp.html',1,'']]],
   ['ibroadphasefilter_2eh',['IBroadPhaseFilter.h',['../_i_broad_phase_filter_8h.html',1,'']]],
-  ['icollisionresolver_2ecpp',['ICollisionResolver.cpp',['../_i_collision_resolver_8cpp.html',1,'']]],
-  ['icollisionresolver_2eh',['ICollisionResolver.h',['../_i_collision_resolver_8h.html',1,'']]],
+  ['icollisionresolutionfilter_2ecpp',['ICollisionResolutionFilter.cpp',['../_i_collision_resolution_filter_8cpp.html',1,'']]],
+  ['icollisionresolutionfilter_2eh',['ICollisionResolutionFilter.h',['../_i_collision_resolution_filter_8h.html',1,'']]],
+  ['icollisionresolveraccess_2ecpp',['ICollisionResolverAccess.cpp',['../_i_collision_resolver_access_8cpp.html',1,'']]],
+  ['icollisionresolveraccess_2eh',['ICollisionResolverAccess.h',['../_i_collision_resolver_access_8h.html',1,'']]],
   ['icomputationinterface_2ecpp',['IComputationInterface.cpp',['../_i_computation_interface_8cpp.html',1,'']]],
   ['icomputationinterface_2eh',['IComputationInterface.h',['../_i_computation_interface_8h.html',1,'']]],
   ['iintermediatephasefilter_2ecpp',['IIntermediatePhaseFilter.cpp',['../_i_intermediate_phase_filter_8cpp.html',1,'']]],
@@ -18,6 +20,8 @@ var searchData=
   ['inarrowphasefilter_2eh',['INarrowPhaseFilter.h',['../_i_narrow_phase_filter_8h.html',1,'']]],
   ['inertiatensorgenerator_2ecpp',['InertiaTensorGenerator.cpp',['../_inertia_tensor_generator_8cpp.html',1,'']]],
   ['inertiatensorgenerator_2eh',['InertiaTensorGenerator.h',['../_inertia_tensor_generator_8h.html',1,'']]],
+  ['interpenetrationresolver_2ecpp',['InterpenetrationResolver.cpp',['../_interpenetration_resolver_8cpp.html',1,'']]],
+  ['interpenetrationresolver_2eh',['InterpenetrationResolver.h',['../_interpenetration_resolver_8h.html',1,'']]],
   ['ispherespherenarrowalgorithm_2ecpp',['ISphereSphereNarrowAlgorithm.cpp',['../_i_sphere_sphere_narrow_algorithm_8cpp.html',1,'']]],
   ['ispherespherenarrowalgorithm_2eh',['ISphereSphereNarrowAlgorithm.h',['../_i_sphere_sphere_narrow_algorithm_8h.html',1,'']]]
 ];

@@ -9,29 +9,47 @@
 
 namespace r3
 {
-	CollisionDetector::CollisionDetector(const unsigned int iterations, 
-										 const unsigned contactsMax)
-		: m_contactsMax{contactsMax},
-		m_iterations{iterations}
+	CollisionDetector::CollisionDetector(const unsigned int contactsMax,
+										 const unsigned int iterations)
 	{
+		init(contactsMax, iterations);
 	}
 
 	CollisionDetector::~CollisionDetector()
 	= default;
 
+	void CollisionDetector::init(const unsigned contactsMax,
+	                             const unsigned iterations)
+	{
+		m_contactsMax = contactsMax;
+		m_iterations = iterations;
+
+		m_broadPhaseCollisions.init(contactsMax, iterations);
+		m_collisions.init(contactsMax, iterations);
+	}
+
+	void CollisionDetector::reset()
+	{
+		m_broadPhaseCollisions.reset();
+		m_collisions.reset();
+	}
+
 	const CollisionData& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
 	{
+		reset();
 		if(!m_broadPhaseFilter || !m_narrowPhaseFilter)
 		{
-			return CollisionData();
+			return m_collisions;
 		}
 
-		auto collisions = m_broadPhaseFilter->generateCollisions(rigidBodies);
+		m_broadPhaseFilter->generateCollisions(rigidBodies, m_broadPhaseCollisions);
 		for(auto& it : m_intermediatePhaseFilters)
 		{
-			collisions = it->generateCollisions(collisions);
+			it->generateCollisions(m_broadPhaseCollisions);
 		}
-		return m_narrowPhaseFilter->generateCollisionData(collisions);
+		m_narrowPhaseFilter->generateCollisionData(m_broadPhaseCollisions,
+												   m_collisions);
+		return m_collisions;
 	}
 
 	void CollisionDetector::setBroadPhaseFilter(BroadPhaseFilter_Ptr filter)

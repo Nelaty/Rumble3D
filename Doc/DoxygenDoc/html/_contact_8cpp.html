@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Rumble3D: D:/Library/Documents/Job/Forschungsmaster/Projekte/Rumble3D/Rumble3D/src/RigidBodyEngine/Contact.cpp File Reference</title>
+<title>Rumble3D: D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_4afeb6557afd5c9d89ff3424cab508f4.html">Rumble3D</a></li><li class="navelem"><a class="el" href="dir_87763c576bb3aa7e454688745d4ecc0e.html">src</a></li><li class="navelem"><a class="el" href="dir_c440ac548169dc9555e8988b01bcb93f.html">RigidBodyEngine</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_4afeb6557afd5c9d89ff3424cab508f4.html">Rumble3D</a></li><li class="navelem"><a class="el" href="dir_87763c576bb3aa7e454688745d4ecc0e.html">src</a></li><li class="navelem"><a class="el" href="dir_c440ac548169dc9555e8988b01bcb93f.html">RigidBodyEngine</a></li><li class="navelem"><a class="el" href="dir_90d15f8df0f34447de2e2a9abb5a3ce1.html">CollisionDetection</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -73,26 +73,31 @@ $(function() {
 <div class="title">Contact.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="_contact_8h_source.html">R3D/RigidBodyEngine/Contact.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_contact_8h_source.html">R3D/RigidBodyEngine/CollisionDetection/Contact.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_rigid_body_8h_source.html">R3D/RigidBodyEngine/RigidBody.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for Contact.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="_contact_8cpp__incl.png" border="0" usemap="#_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2src_2_rigid_body_engine_2_contact_8cpp" alt=""/></div>
-<map name="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2src_2_rigid_body_engine_2_contact_8cpp" id="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_rumble3_d_2_rumble3_d_2src_2_rigid_body_engine_2_contact_8cpp">
-<area shape="rect" id="node2" href="_contact_8h.html" title="R3D/RigidBodyEngine\l/Contact.h" alt="" coords="136,124,287,165"/>
-<area shape="rect" id="node9" href="_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="311,124,461,165"/>
-<area shape="rect" id="node3" href="_common_8h.html" title="R3D/Common/Common.h" alt="" coords="254,303,425,329"/>
-<area shape="rect" id="node5" href="_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="5,221,177,247"/>
-<area shape="rect" id="node4" href="_config_8h.html" title="Config.h" alt="" coords="197,377,266,404"/>
-<area shape="rect" id="node10" href="_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="421,213,572,255"/>
+<div class="center"><img src="_contact_8cpp__incl.png" border="0" usemap="#_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2src_2_rigid_body_engine_2_collision_detection_2_contact_8cpp" alt=""/></div>
+<map name="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2src_2_rigid_body_engine_2_collision_detection_2_contact_8cpp" id="_d_1_2_library_2_documents_2_job_2_forschungsmaster_2_projekte_2_simulation_visualization_2_rumble3_d_2_rumble3_d_2src_2_rigid_body_engine_2_collision_detection_2_contact_8cpp">
+<area shape="rect" id="node2" href="_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="73,228,224,284"/>
+<area shape="rect" id="node6" href="_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="612,139,763,180"/>
+<area shape="rect" id="node3" href="_common_8h.html" title="R3D/Common/Common.h" alt="" coords="341,436,511,463"/>
+<area shape="rect" id="node5" href="_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="5,347,111,373"/>
+<area shape="rect" id="node4" href="_config_8h.html" title="Config.h" alt="" coords="557,511,626,537"/>
+<area shape="rect" id="node7" href="_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="725,235,876,277"/>
+<area shape="rect" id="node8" href="_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="792,347,927,373"/>
+<area shape="rect" id="node9" href="_precision_8h.html" title="Common/Precision.h" alt="" coords="771,436,913,463"/>
+<area shape="rect" id="node14" href="_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="187,332,337,388"/>
+<area shape="rect" id="node15" href="_rigid_body_def_8h.html" title="R3D/RigidBodyEngine\l/RigidBodyDef.h" alt="" coords="300,235,451,277"/>
+<area shape="rect" id="node16" href="_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="464,339,615,381"/>
 </map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:namespacerum"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacerum.html">rum</a></td></tr>
-<tr class="memdesc:namespacerum"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class for computation interfaces used for particle worlds. <br /></td></tr>
+<tr class="memitem:namespacer3"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacer3.html">r3</a></td></tr>
+<tr class="memdesc:namespacer3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class for computation interfaces used for particle worlds. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

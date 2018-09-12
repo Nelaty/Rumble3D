@@ -1,11 +1,11 @@
 #pragma once
-#include "Contact.h"
+#include "ContactOld.h"
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
 namespace r3
 {
-	class Contact;
+	class ContactOld;
 
 	class R3D_DECLSPEC CollisionDataOld
 	{
@@ -22,15 +22,15 @@ namespace r3
 		// Indexverwaltung, wenn neue Kontakte hinzukamen.
 		void addContacts(unsigned count);
 		int getContactsLeft() const;
-		Contact* getContacts() const;
+		ContactOld* getContacts() const;
 
 		real getFriction() const;
 		real getRestitution() const;
 		int getContactCount() const;
 
 	protected:
-		Contact* m_contactArray{};   // Erstes Array-Element;
-		Contact* m_contacts{};       // Array-Eintrag;
+		ContactOld* m_contactArray{};   // Erstes Array-Element;
+		ContactOld* m_contacts{};       // Array-Eintrag;
 		int m_contactsLeft{};         // Anzahl der Kontakte, die im Array noch frei sind;
 		unsigned m_contactCount{};    // Anzahl der bereits gefundenen Kontakte;
 		real m_friction = 0.5f;     // Reibung für alle Kontakte;

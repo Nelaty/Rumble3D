@@ -1,8 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classrum_1_1_particle_contact_generator.html" title="rum::ParticleContactGenerator" alt="" coords="5,31,204,57"/>
-<area shape="rect" id="node2" href="$classrum_1_1_particle_constraint.html" title="rum::ParticleConstraint" alt="" coords="252,5,407,32"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle_link.html" title="rum::ParticleLink" alt="" coords="269,56,389,83"/>
-<area shape="rect" id="node4" href="$classrum_1_1_particle_cable.html" title="rum::ParticleCable" alt="" coords="463,5,592,32"/>
-<area shape="rect" id="node5" href="$classrum_1_1_particle_collision.html" title="rum::ParticleCollision" alt="" coords="455,56,600,83"/>
-<area shape="rect" id="node6" href="$classrum_1_1_particle_rod.html" title="rum::ParticleRod" alt="" coords="468,107,587,133"/>
+<area shape="rect" id="node1" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="r3::INarrowPhaseAlgorithm" alt="" coords="5,56,181,83"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_box_box_narrow_algorithm.html" title="r3::IBoxBoxNarrowAlgorithm" alt="" coords="247,5,433,32"/>
+<area shape="rect" id="node4" href="$classr3_1_1_i_box_sphere_narrow_algorithm.html" title="r3::IBoxSphereNarrowAlgorithm" alt="" coords="239,56,441,83"/>
+<area shape="rect" id="node6" href="$classr3_1_1_i_sphere_sphere_narrow_algorithm.html" title="r3::ISphereSphereNarrowAlgorithm" alt="" coords="229,107,451,133"/>
+<area shape="rect" id="node3" href="$classr3_1_1_box_box_narrow_algorithm.html" title="r3::BoxBoxNarrowAlgorithm" alt="" coords="517,5,699,32"/>
+<area shape="rect" id="node5" href="$classr3_1_1_box_sphere_narrow_algorithm.html" title="r3::BoxSphereNarrowAlgorithm" alt="" coords="508,56,708,83"/>
+<area shape="rect" id="node7" href="$classr3_1_1_sphere_sphere_narrow_algorithm.html" title="r3::SphereSphereNarrowAlgorithm" alt="" coords="499,107,717,133"/>
 </map>

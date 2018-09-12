@@ -10,6 +10,7 @@ namespace r3
 		explicit BoxBoxNarrowAlgorithm();
 		~BoxBoxNarrowAlgorithm();
 
+	protected:
 		bool generateContactData(CollisionBox* first,
 								 CollisionBox* second,
 								 CollisionData& collisionData) override;

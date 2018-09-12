@@ -3,14 +3,14 @@
 
 namespace r3
 {
-	class Contact;
+	class ContactOld;
 
 	class R3D_DECLSPEC ContactGenerator
 	{
 	public:
 		virtual ~ContactGenerator();
 		
-		virtual unsigned addContact(Contact *contact, unsigned limit) const;
+		virtual unsigned addContact(ContactOld *contact, unsigned limit) const;
 
 	protected:
 		explicit ContactGenerator();

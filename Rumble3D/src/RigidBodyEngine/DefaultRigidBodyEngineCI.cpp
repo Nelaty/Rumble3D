@@ -6,6 +6,8 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.h"
 
+#include <cmath>
+
 namespace r3
 {
 	DefaultRigidBodyEngineCI::DefaultRigidBodyEngineCI()
@@ -15,15 +17,14 @@ namespace r3
 
 	DefaultRigidBodyEngineCI::~DefaultRigidBodyEngineCI()
 	= default;
-
+	
 	void DefaultRigidBodyEngineCI::onBegin()
 	{
 		assert(m_rigidBodyWorld != nullptr);
 
-		auto rigidBodies = m_rigidBodyWorld->getRigidBodies();
+		auto& rigidBodies = m_rigidBodyWorld->getRigidBodies();
 		for(auto& rb : rigidBodies)
 		{
-			rb->clearAccumulators();
 			rb->calculateDerivedData();
 		}
 	}
@@ -40,7 +41,7 @@ namespace r3
 	{	
 		assert(m_rigidBodyWorld != nullptr);
 
-		auto rigidBodies = m_rigidBodyWorld->getRigidBodies();
+		auto& rigidBodies = m_rigidBodyWorld->getRigidBodies();
 
 		//const auto& collisionData = m_collisionDetector.generateCollisions(rigidBodies);
 		//m_collisionResolver->resolveCollisions(collisionData);
@@ -88,6 +89,12 @@ namespace r3
 	void DefaultRigidBodyEngineCI::onEnd()
 	{
 		assert(m_rigidBodyWorld != nullptr);
+
+		auto& rigidBodies = m_rigidBodyWorld->getRigidBodies();
+		for(auto& rb : rigidBodies)
+		{
+			rb->clearAccumulators();
+		}
 	}
 
 	void DefaultRigidBodyEngineCI::reset()
@@ -97,12 +104,14 @@ namespace r3
 
 	void DefaultRigidBodyEngineCI::init()
 	{
+		// Initialize collision detector
 		auto broadPhaseFilter = std::make_unique<BroadPhaseFilter>();
 		auto narrowPhaseFilter = std::make_unique<NarrowPhaseFilter>();
 
 		m_collisionDetector.setBroadPhaseFilter(std::move(broadPhaseFilter));
 		m_collisionDetector.setNarrowPhaseFilter(std::move(narrowPhaseFilter));
 
+		// Initialize collision resolver
 		m_collisionResolver = std::make_unique<CollisionResolver>();
 	}
 }

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['narrowphasefilter',['NarrowPhaseFilter',['../classrum_1_1_narrow_phase_filter.html',1,'rum']]]
+  ['narrowphasefilter',['NarrowPhaseFilter',['../classr3_1_1_narrow_phase_filter.html',1,'r3']]]
 ];

@@ -35,7 +35,7 @@ namespace r3
 		return m_contactsLeft;
 	}
 	
-	Contact * CollisionDataOld::getContacts() const
+	ContactOld * CollisionDataOld::getContacts() const
 	{
 		return m_contacts;
 	}

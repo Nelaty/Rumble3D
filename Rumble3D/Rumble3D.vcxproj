@@ -161,6 +161,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.cpp" />
     <ClCompile Include="src\IComputationInterface.cpp" />
     <ClCompile Include="src\ParticleEngine\DefaultParticleEngineCI.cpp" />
     <ClCompile Include="src\ParticleEngine\Particle.cpp" />
@@ -194,9 +195,13 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDataOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BoxBoxNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BoxSphereNarrowAlgorithm.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseFilter.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionAlgorithmMatrix.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionData.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionDetector.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionMask.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Contact.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\IBoxBoxNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\IBoxSphereNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\IBroadPhaseFilter.cpp" />
@@ -217,7 +222,7 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\VelocityResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionSphere.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\Contact.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\ContactOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ContactGenerator.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ContactResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\DefaultRigidBodyEngineCI.cpp" />
@@ -231,6 +236,7 @@
     <ClCompile Include="src\RigidBodyEngine\RigidBodyEngineCI.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBodyWorld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\Spring.cpp" />
+    <ClCompile Include="src\ServiceLocator\ServiceLocatorComputationInterface.cpp" />
     <ClCompile Include="src\Transform3D.cpp" />
     <ClCompile Include="src\Utility\InertiaTensorGenerator.cpp" />
     <ClCompile Include="src\Utility\Random.cpp" />
@@ -272,11 +278,14 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDataOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BoxBoxNarrowAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BoxSphereNarrowAlgorithm.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseCollision.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionPair.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseFilter.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionData.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionDetector.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionMask.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionPrimitiveType.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Contact.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\IBoxBoxNarrowAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\IBoxSphereNarrowAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\IBroadPhaseFilter.h" />
@@ -297,7 +306,7 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionSphere.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\Contact.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\ContactOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\ContactGenerator.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\ContactResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\DefaultRigidBodyEngineCI.h" />
@@ -311,9 +320,12 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineCI.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyWorld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\Spring.h" />
+    <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.h" />
+    <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorComputationInterface.h" />
     <ClInclude Include="include\R3D\Transform3D.h" />
     <ClInclude Include="include\R3D\Utility\InertiaTensorGenerator.h" />
     <ClInclude Include="include\R3D\Utility\Random.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionAlgorithmMatrix.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

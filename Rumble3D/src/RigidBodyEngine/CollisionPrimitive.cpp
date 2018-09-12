@@ -3,25 +3,10 @@
 
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
 
-#include "R3D/RigidBodyEngine/CollisionBox.h"
-#include "R3D/RigidBodyEngine/CollisionSphere.h"
-
 namespace r3
 {
 	CollisionPrimitive::~CollisionPrimitive()
-	= default;
-
-	void CollisionPrimitive::generateContact(INarrowPhaseFilter* filter,
-											 CollisionBox* other)
-	{
-		
-	}
-
-	void CollisionPrimitive::generateContact(INarrowPhaseFilter* filter, 
-											 CollisionSphere* other)
-	{
-		
-	}
+		= default;
 
 	void CollisionPrimitive::calculateInternals()
 	{
@@ -43,6 +28,13 @@ namespace r3
 		return m_body;
 	}
 
-	CollisionPrimitive::CollisionPrimitive()
-	= default;
+	CollisionPrimitiveType CollisionPrimitive::getType() const
+	{
+		return m_type;
+	}
+
+	CollisionPrimitive::CollisionPrimitive(const CollisionPrimitiveType type)
+		: m_type(type)
+	{
+	}
 }
