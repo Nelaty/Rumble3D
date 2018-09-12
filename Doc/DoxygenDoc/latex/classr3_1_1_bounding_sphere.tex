@@ -1,0 +1,111 @@
+\hypertarget{classr3_1_1_bounding_sphere}{}\section{r3\+:\+:Bounding\+Sphere Class Reference}
+\label{classr3_1_1_bounding_sphere}\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+
+
+{\ttfamily \#include $<$Bounding\+Sphere.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Bounding\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classr3_1_1_bounding_sphere__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_bounding_sphere_af602a853d8ed0b5ccad8679ee41fe7f8}{Bounding\+Sphere}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_bounding_sphere_a9a9264c19d56b10c9b0def547a369d57}{Bounding\+Sphere}} (const glm\+::vec3 \&center, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} radius)
+\item 
+\mbox{\hyperlink{classr3_1_1_bounding_sphere_a3d461e62b827ad9a30ca8013d451e3da}{Bounding\+Sphere}} (const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&one, const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&two)
+\item 
+\mbox{\hyperlink{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}{$\sim$\+Bounding\+Sphere}} ()
+\item 
+bool \mbox{\hyperlink{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}{overlaps}} (const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} $\ast$other) const
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}{get\+Volume}} () const
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_ac13a86be56c1c52b33a707eb2356daa3}{get\+Growth}} (const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&other) const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_bounding_sphere_a880d9888f25b016c5c38c608e16fa61e}{m\+\_\+center}}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_a37ccefd38d8cea7a0d52b85f771ec7c4}{m\+\_\+radius}} \{\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_af602a853d8ed0b5ccad8679ee41fe7f8}\label{classr3_1_1_bounding_sphere_af602a853d8ed0b5ccad8679ee41fe7f8}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
+\index{Bounding\+Sphere@{Bounding\+Sphere}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily r3\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a9a9264c19d56b10c9b0def547a369d57}\label{classr3_1_1_bounding_sphere_a9a9264c19d56b10c9b0def547a369d57}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
+\index{Bounding\+Sphere@{Bounding\+Sphere}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily r3\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{center,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{radius }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a3d461e62b827ad9a30ca8013d451e3da}\label{classr3_1_1_bounding_sphere_a3d461e62b827ad9a30ca8013d451e3da}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
+\index{Bounding\+Sphere@{Bounding\+Sphere}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily r3\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{one,  }\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{two }\end{DoxyParamCaption})}
+
+Create a bounding sphere which contains both given spheres. \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}\label{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!````~Bounding\+Sphere@{$\sim$\+Bounding\+Sphere}}
+\index{````~Bounding\+Sphere@{$\sim$\+Bounding\+Sphere}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{$\sim$\+Bounding\+Sphere()}{~BoundingSphere()}}
+{\footnotesize\ttfamily r3\+::\+Bounding\+Sphere\+::$\sim$\+Bounding\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_ac13a86be56c1c52b33a707eb2356daa3}\label{classr3_1_1_bounding_sphere_ac13a86be56c1c52b33a707eb2356daa3}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!get\+Growth@{get\+Growth}}
+\index{get\+Growth@{get\+Growth}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Growth()}{getGrowth()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Bounding\+Sphere\+::get\+Growth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{other }\end{DoxyParamCaption}) const}
+
+Gibt einen Wert zurück, der das Wachstum einer Kugel durch eine andere Kugel beschreibt, indem Näherungen der Oberflächen berechnet werden. \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}\label{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!get\+Volume@{get\+Volume}}
+\index{get\+Volume@{get\+Volume}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Volume()}{getVolume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Bounding\+Sphere\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the volume of this bounding sphere. \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}\label{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!overlaps@{overlaps}}
+\index{overlaps@{overlaps}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{overlaps()}{overlaps()}}
+{\footnotesize\ttfamily bool r3\+::\+Bounding\+Sphere\+::overlaps (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} $\ast$}]{other }\end{DoxyParamCaption}) const}
+
+Check if this bounding sphere overlaps with the given bounding sphere \begin{DoxyReturn}{Returns}
+True if they overlap, false otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a880d9888f25b016c5c38c608e16fa61e}\label{classr3_1_1_bounding_sphere_a880d9888f25b016c5c38c608e16fa61e}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!m\+\_\+center@{m\+\_\+center}}
+\index{m\+\_\+center@{m\+\_\+center}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+center}{m\_center}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Bounding\+Sphere\+::m\+\_\+center\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a37ccefd38d8cea7a0d52b85f771ec7c4}\label{classr3_1_1_bounding_sphere_a37ccefd38d8cea7a0d52b85f771ec7c4}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!m\+\_\+radius@{m\+\_\+radius}}
+\index{m\+\_\+radius@{m\+\_\+radius}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+radius}{m\_radius}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Bounding\+Sphere\+::m\+\_\+radius \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_bounding_sphere_8h}{Bounding\+Sphere.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_bounding_sphere_8cpp}{Bounding\+Sphere.\+cpp}}\end{DoxyCompactItemize}

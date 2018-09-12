@@ -1,0 +1,113 @@
+\hypertarget{classr3_1_1_collision_data}{}\section{r3\+:\+:Collision\+Data Class Reference}
+\label{classr3_1_1_collision_data}\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+
+
+{\ttfamily \#include $<$Collision\+Data.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Collision\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classr3_1_1_collision_data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_data_a439100db9ec5b734e2f0b778d2f97cce}{Collision\+Data}} (unsigned int contacts\+Max=1000, int iterations=0)
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_data_a3fd93aed7add6b43bc6b3dca59d638f2}{$\sim$\+Collision\+Data}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_data_a2af69fd6da492254b1a134d4ef82efce}{init}} (int contacts\+Max, int iterations)
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}{reset}} ()
+\item 
+bool \mbox{\hyperlink{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}{is\+Full}} () const
+\item 
+int \mbox{\hyperlink{classr3_1_1_collision_data_a13e8ade4bbbbc63a1437de9371fea879}{get\+Contacts\+Left}} () const
+\item 
+int \mbox{\hyperlink{classr3_1_1_collision_data_aaf0e65914133cd35cc32224df851561e}{get\+Contacts\+Used}} () const
+\item 
+int \mbox{\hyperlink{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}{get\+Size}} () const
+\item 
+\mbox{\hyperlink{classr3_1_1_contact}{Contact}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_data_ad0e0b85004905b48a8faf7be34bdf305}{get\+Available\+Contact}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $>$ \& \mbox{\hyperlink{classr3_1_1_collision_data_acb1bb23e8d0f37f0ebc39e8f7642419f}{get\+Data}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_data_a439100db9ec5b734e2f0b778d2f97cce}\label{classr3_1_1_collision_data_a439100db9ec5b734e2f0b778d2f97cce}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!Collision\+Data@{Collision\+Data}}
+\index{Collision\+Data@{Collision\+Data}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{Collision\+Data()}{CollisionData()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Data\+::\+Collision\+Data (\begin{DoxyParamCaption}\item[{unsigned int}]{contacts\+Max = {\ttfamily 1000},  }\item[{int}]{iterations = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_a3fd93aed7add6b43bc6b3dca59d638f2}\label{classr3_1_1_collision_data_a3fd93aed7add6b43bc6b3dca59d638f2}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!````~Collision\+Data@{$\sim$\+Collision\+Data}}
+\index{````~Collision\+Data@{$\sim$\+Collision\+Data}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Data()}{~CollisionData()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Data\+::$\sim$\+Collision\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_data_ad0e0b85004905b48a8faf7be34bdf305}\label{classr3_1_1_collision_data_ad0e0b85004905b48a8faf7be34bdf305}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Available\+Contact@{get\+Available\+Contact}}
+\index{get\+Available\+Contact@{get\+Available\+Contact}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Available\+Contact()}{getAvailableContact()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $\ast$ r3\+::\+Collision\+Data\+::get\+Available\+Contact (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get the next available contact. Automatically uses it! \begin{DoxyReturn}{Returns}
+nullptr if all contacts are used, a available contact otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_collision_data_a13e8ade4bbbbc63a1437de9371fea879}\label{classr3_1_1_collision_data_a13e8ade4bbbbc63a1437de9371fea879}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Contacts\+Left@{get\+Contacts\+Left}}
+\index{get\+Contacts\+Left@{get\+Contacts\+Left}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Contacts\+Left()}{getContactsLeft()}}
+{\footnotesize\ttfamily int r3\+::\+Collision\+Data\+::get\+Contacts\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check how many contacts can still be inserted. \mbox{\Hypertarget{classr3_1_1_collision_data_aaf0e65914133cd35cc32224df851561e}\label{classr3_1_1_collision_data_aaf0e65914133cd35cc32224df851561e}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Contacts\+Used@{get\+Contacts\+Used}}
+\index{get\+Contacts\+Used@{get\+Contacts\+Used}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Contacts\+Used()}{getContactsUsed()}}
+{\footnotesize\ttfamily int r3\+::\+Collision\+Data\+::get\+Contacts\+Used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check how many contacts have been inserted. \mbox{\Hypertarget{classr3_1_1_collision_data_acb1bb23e8d0f37f0ebc39e8f7642419f}\label{classr3_1_1_collision_data_acb1bb23e8d0f37f0ebc39e8f7642419f}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $>$ \& r3\+::\+Collision\+Data\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Get all contacts (only valid to a certain position) \mbox{\Hypertarget{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}\label{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily int r3\+::\+Collision\+Data\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the maximal number of contacts. \mbox{\Hypertarget{classr3_1_1_collision_data_a2af69fd6da492254b1a134d4ef82efce}\label{classr3_1_1_collision_data_a2af69fd6da492254b1a134d4ef82efce}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!init@{init}}
+\index{init@{init}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Data\+::init (\begin{DoxyParamCaption}\item[{int}]{contacts\+Max,  }\item[{int}]{iterations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}\label{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!is\+Full@{is\+Full}}
+\index{is\+Full@{is\+Full}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{is\+Full()}{isFull()}}
+{\footnotesize\ttfamily bool r3\+::\+Collision\+Data\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check if there is no more room for new contacts. \mbox{\Hypertarget{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}\label{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!reset@{reset}}
+\index{reset@{reset}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Data\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_data_8h}{Collision\+Data.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_data_8cpp}{Collision\+Data.\+cpp}}\end{DoxyCompactItemize}

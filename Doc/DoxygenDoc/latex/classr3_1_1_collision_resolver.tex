@@ -1,0 +1,132 @@
+\hypertarget{classr3_1_1_collision_resolver}{}\section{r3\+:\+:Collision\+Resolver Class Reference}
+\label{classr3_1_1_collision_resolver}\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+
+
+{\ttfamily \#include $<$Collision\+Resolver.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Collision\+Resolver\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classr3_1_1_collision_resolver__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Collision\+Resolver\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classr3_1_1_collision_resolver__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_resolver_a7b90e276403fa8422879228a189432fb}{Collision\+Resolver}} ()
+\item 
+virtual \mbox{\hyperlink{classr3_1_1_collision_resolver_ad172d58efecf5ef38f42020f21746f02}{$\sim$\+Collision\+Resolver}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_resolver_a5eeac10ca33299662b0df8a77f6c25f5}{resolve\+Collisions}} (const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override
+\item 
+\mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}{append\+Filter}} (\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} filter)
+\begin{DoxyCompactList}\small\item\em Insert a new filter, which will be executed after all already inserted filters. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classr3_1_1_collision_resolver_ae56e2125e24982ad368f0d87e9c2a28f}{get\+Filter\+Count}} () const
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_resolver_a1f4e3d97afae66c03581807a529678cd}{clear}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} $>$ \mbox{\hyperlink{classr3_1_1_collision_resolver_abf1234ad45ba7f114b31950c90ccaaff}{m\+\_\+filters}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}\label{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!Filter\+\_\+\+Ptr@{Filter\+\_\+\+Ptr}}
+\index{Filter\+\_\+\+Ptr@{Filter\+\_\+\+Ptr}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{Filter\+\_\+\+Ptr}{Filter\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{r3\+::\+Collision\+Resolver\+::\+Filter\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}}$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_a7b90e276403fa8422879228a189432fb}\label{classr3_1_1_collision_resolver_a7b90e276403fa8422879228a189432fb}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!Collision\+Resolver@{Collision\+Resolver}}
+\index{Collision\+Resolver@{Collision\+Resolver}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{Collision\+Resolver()}{CollisionResolver()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Resolver\+::\+Collision\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_ad172d58efecf5ef38f42020f21746f02}\label{classr3_1_1_collision_resolver_ad172d58efecf5ef38f42020f21746f02}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!````~Collision\+Resolver@{$\sim$\+Collision\+Resolver}}
+\index{````~Collision\+Resolver@{$\sim$\+Collision\+Resolver}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Resolver()}{~CollisionResolver()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Resolver\+::$\sim$\+Collision\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}\label{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!append\+Filter@{append\+Filter}}
+\index{append\+Filter@{append\+Filter}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{append\+Filter()}{appendFilter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ r3\+::\+Collision\+Resolver\+::append\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}}}]{filter }\end{DoxyParamCaption})}
+
+
+
+Insert a new filter, which will be executed after all already inserted filters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filter} & The new filter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The new filter. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_a1f4e3d97afae66c03581807a529678cd}\label{classr3_1_1_collision_resolver_a1f4e3d97afae66c03581807a529678cd}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!clear@{clear}}
+\index{clear@{clear}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Resolver\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Removes all filters from this collision resolver. \mbox{\Hypertarget{classr3_1_1_collision_resolver_ae56e2125e24982ad368f0d87e9c2a28f}\label{classr3_1_1_collision_resolver_ae56e2125e24982ad368f0d87e9c2a28f}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!get\+Filter\+Count@{get\+Filter\+Count}}
+\index{get\+Filter\+Count@{get\+Filter\+Count}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{get\+Filter\+Count()}{getFilterCount()}}
+{\footnotesize\ttfamily unsigned r3\+::\+Collision\+Resolver\+::get\+Filter\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the current number of used filters. \mbox{\Hypertarget{classr3_1_1_collision_resolver_a5eeac10ca33299662b0df8a77f6c25f5}\label{classr3_1_1_collision_resolver_a5eeac10ca33299662b0df8a77f6c25f5}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!resolve\+Collisions@{resolve\+Collisions}}
+\index{resolve\+Collisions@{resolve\+Collisions}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{resolve\+Collisions()}{resolveCollisions()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Resolver\+::resolve\+Collisions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolver_access_a9f7d7bdd46fa4448b3acc5e79a3c724b}{r3\+::\+I\+Collision\+Resolver\+Access}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_abf1234ad45ba7f114b31950c90ccaaff}\label{classr3_1_1_collision_resolver_abf1234ad45ba7f114b31950c90ccaaff}} 
+\index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!m\+\_\+filters@{m\+\_\+filters}}
+\index{m\+\_\+filters@{m\+\_\+filters}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
+\subsubsection{\texorpdfstring{m\+\_\+filters}{m\_filters}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}}$>$ r3\+::\+Collision\+Resolver\+::m\+\_\+filters\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Resolution/\mbox{\hyperlink{_collision_resolver_8h}{Collision\+Resolver.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Resolution/\mbox{\hyperlink{_collision_resolver_8cpp}{Collision\+Resolver.\+cpp}}\end{DoxyCompactItemize}

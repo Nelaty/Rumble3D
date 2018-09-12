@@ -1,0 +1,90 @@
+\hypertarget{classr3_1_1_particle_drag}{}\section{r3\+:\+:Particle\+Drag Class Reference}
+\label{classr3_1_1_particle_drag}\index{r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}}
+
+
+{\ttfamily \#include $<$Particle\+Drag.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Particle\+Drag\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classr3_1_1_particle_drag__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Particle\+Drag\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{classr3_1_1_particle_drag__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_drag_afa05dcc4c6998deac4c67f3c4e4dc612}{Particle\+Drag}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} k1, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} k2)
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_drag_aabb14910dce647dba70ac952bbfda067}{$\sim$\+Particle\+Drag}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_drag_abbfc4f053bb921be0068f8928c300384}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_drag_a9e75bb25289167142a8c8213b2615700}{m\+\_\+k1}}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_drag_a12120a952d08338f0d62779a06f19926}{m\+\_\+k2}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_drag_afa05dcc4c6998deac4c67f3c4e4dc612}\label{classr3_1_1_particle_drag_afa05dcc4c6998deac4c67f3c4e4dc612}} 
+\index{r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}!Particle\+Drag@{Particle\+Drag}}
+\index{Particle\+Drag@{Particle\+Drag}!r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}}
+\subsubsection{\texorpdfstring{Particle\+Drag()}{ParticleDrag()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Drag\+::\+Particle\+Drag (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{k1,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{k2 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_particle_drag_aabb14910dce647dba70ac952bbfda067}\label{classr3_1_1_particle_drag_aabb14910dce647dba70ac952bbfda067}} 
+\index{r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}!````~Particle\+Drag@{$\sim$\+Particle\+Drag}}
+\index{````~Particle\+Drag@{$\sim$\+Particle\+Drag}!r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Drag()}{~ParticleDrag()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Drag\+::$\sim$\+Particle\+Drag (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_drag_abbfc4f053bb921be0068f8928c300384}\label{classr3_1_1_particle_drag_abbfc4f053bb921be0068f8928c300384}} 
+\index{r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}!update\+Force@{update\+Force}}
+\index{update\+Force@{update\+Force}!r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}}
+\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Drag\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Schnittstellen-\/\+Methode, die im speziellen Kraft-\/\+Generator überladen werden muss. Die Methode berechnet und aktualisiert die Kraft, die auf das Teilchen particle in der Zeitscheibe duration wirkt. 
+
+Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526192a67277b8658d825}{r3\+::\+Particle\+Force\+Generator}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_drag_a9e75bb25289167142a8c8213b2615700}\label{classr3_1_1_particle_drag_a9e75bb25289167142a8c8213b2615700}} 
+\index{r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}!m\+\_\+k1@{m\+\_\+k1}}
+\index{m\+\_\+k1@{m\+\_\+k1}!r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}}
+\subsubsection{\texorpdfstring{m\+\_\+k1}{m\_k1}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Drag\+::m\+\_\+k1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_particle_drag_a12120a952d08338f0d62779a06f19926}\label{classr3_1_1_particle_drag_a12120a952d08338f0d62779a06f19926}} 
+\index{r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}!m\+\_\+k2@{m\+\_\+k2}}
+\index{m\+\_\+k2@{m\+\_\+k2}!r3\+::\+Particle\+Drag@{r3\+::\+Particle\+Drag}}
+\subsubsection{\texorpdfstring{m\+\_\+k2}{m\_k2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Drag\+::m\+\_\+k2\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_drag_8h}{Particle\+Drag.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_drag_8cpp}{Particle\+Drag.\+cpp}}\end{DoxyCompactItemize}

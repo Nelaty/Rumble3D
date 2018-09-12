@@ -1,0 +1,128 @@
+\hypertarget{classr3_1_1_collision_primitive}{}\section{r3\+:\+:Collision\+Primitive Class Reference}
+\label{classr3_1_1_collision_primitive}\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+
+
+{\ttfamily \#include $<$Collision\+Primitive.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Collision\+Primitive\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_collision_primitive__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Collision\+Primitive\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_collision_primitive__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classr3_1_1_collision_primitive_adfa75f14067cb33a3f0049895a3db880}{$\sim$\+Collision\+Primitive}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_primitive_ae27cb70a6812491c2d8de97f22c07ac6}{calculate\+Internals}} ()
+\item 
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_primitive_a78c959f5ca0a09a0fc2038ac7f30e45a}{get\+Axis}} (unsigned index) const
+\item 
+const glm\+::mat4 \& \mbox{\hyperlink{classr3_1_1_collision_primitive_acc4e2139c698bab280338db36d7cc586}{get\+Transform}} () const
+\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_primitive_af8dbda90cce34a6262309cbdb75feea7}{get\+Body}} () const
+\item 
+\mbox{\hyperlink{namespacer3_a7079ec5e42c1a55140d3bc093d49e319}{Collision\+Primitive\+Type}} \mbox{\hyperlink{classr3_1_1_collision_primitive_ac7a318fb788d1442e7d3390c8e465e14}{get\+Type}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_primitive_a56f4cef84fcb4d92b0ced2ffcefdb22a}{Collision\+Primitive}} (\mbox{\hyperlink{namespacer3_a7079ec5e42c1a55140d3bc093d49e319}{Collision\+Primitive\+Type}} type)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_primitive_a3ae500c9bd222ec42d86696702e746db}{m\+\_\+body}} \{\}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classr3_1_1_collision_primitive_a15a51c2e72a8c5122a1031d6620a2901}{m\+\_\+offset}}
+\item 
+glm\+::mat4 \mbox{\hyperlink{classr3_1_1_collision_primitive_a0cb28517e7791b9836a5cac5d8550b13}{m\+\_\+transform}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_adfa75f14067cb33a3f0049895a3db880}\label{classr3_1_1_collision_primitive_adfa75f14067cb33a3f0049895a3db880}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!````~Collision\+Primitive@{$\sim$\+Collision\+Primitive}}
+\index{````~Collision\+Primitive@{$\sim$\+Collision\+Primitive}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Primitive()}{~CollisionPrimitive()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Primitive\+::$\sim$\+Collision\+Primitive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_a56f4cef84fcb4d92b0ced2ffcefdb22a}\label{classr3_1_1_collision_primitive_a56f4cef84fcb4d92b0ced2ffcefdb22a}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!Collision\+Primitive@{Collision\+Primitive}}
+\index{Collision\+Primitive@{Collision\+Primitive}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{Collision\+Primitive()}{CollisionPrimitive()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Primitive\+::\+Collision\+Primitive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_a7079ec5e42c1a55140d3bc093d49e319}{Collision\+Primitive\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_ae27cb70a6812491c2d8de97f22c07ac6}\label{classr3_1_1_collision_primitive_ae27cb70a6812491c2d8de97f22c07ac6}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!calculate\+Internals@{calculate\+Internals}}
+\index{calculate\+Internals@{calculate\+Internals}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{calculate\+Internals()}{calculateInternals()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Primitive\+::calculate\+Internals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_a78c959f5ca0a09a0fc2038ac7f30e45a}\label{classr3_1_1_collision_primitive_a78c959f5ca0a09a0fc2038ac7f30e45a}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!get\+Axis@{get\+Axis}}
+\index{get\+Axis@{get\+Axis}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{get\+Axis()}{getAxis()}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Collision\+Primitive\+::get\+Axis (\begin{DoxyParamCaption}\item[{unsigned}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_af8dbda90cce34a6262309cbdb75feea7}\label{classr3_1_1_collision_primitive_af8dbda90cce34a6262309cbdb75feea7}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!get\+Body@{get\+Body}}
+\index{get\+Body@{get\+Body}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{get\+Body()}{getBody()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Collision\+Primitive\+::get\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_acc4e2139c698bab280338db36d7cc586}\label{classr3_1_1_collision_primitive_acc4e2139c698bab280338db36d7cc586}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!get\+Transform@{get\+Transform}}
+\index{get\+Transform@{get\+Transform}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}}
+{\footnotesize\ttfamily const glm\+::mat4 \& r3\+::\+Collision\+Primitive\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_ac7a318fb788d1442e7d3390c8e465e14}\label{classr3_1_1_collision_primitive_ac7a318fb788d1442e7d3390c8e465e14}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_a7079ec5e42c1a55140d3bc093d49e319}{Collision\+Primitive\+Type}} r3\+::\+Collision\+Primitive\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_a3ae500c9bd222ec42d86696702e746db}\label{classr3_1_1_collision_primitive_a3ae500c9bd222ec42d86696702e746db}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!m\+\_\+body@{m\+\_\+body}}
+\index{m\+\_\+body@{m\+\_\+body}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{m\+\_\+body}{m\_body}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}}$\ast$ r3\+::\+Collision\+Primitive\+::m\+\_\+body \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_a15a51c2e72a8c5122a1031d6620a2901}\label{classr3_1_1_collision_primitive_a15a51c2e72a8c5122a1031d6620a2901}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!m\+\_\+offset@{m\+\_\+offset}}
+\index{m\+\_\+offset@{m\+\_\+offset}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{m\+\_\+offset}{m\_offset}}
+{\footnotesize\ttfamily glm\+::mat4 r3\+::\+Collision\+Primitive\+::m\+\_\+offset\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_primitive_a0cb28517e7791b9836a5cac5d8550b13}\label{classr3_1_1_collision_primitive_a0cb28517e7791b9836a5cac5d8550b13}} 
+\index{r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}!m\+\_\+transform@{m\+\_\+transform}}
+\index{m\+\_\+transform@{m\+\_\+transform}!r3\+::\+Collision\+Primitive@{r3\+::\+Collision\+Primitive}}
+\subsubsection{\texorpdfstring{m\+\_\+transform}{m\_transform}}
+{\footnotesize\ttfamily glm\+::mat4 r3\+::\+Collision\+Primitive\+::m\+\_\+transform\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_primitive_8h}{Collision\+Primitive.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_primitive_8cpp}{Collision\+Primitive.\+cpp}}\end{DoxyCompactItemize}

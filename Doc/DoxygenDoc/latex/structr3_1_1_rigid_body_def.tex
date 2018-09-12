@@ -1,0 +1,169 @@
+\hypertarget{structr3_1_1_rigid_body_def}{}\section{r3\+:\+:Rigid\+Body\+Def Struct Reference}
+\label{structr3_1_1_rigid_body_def}\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+
+
+{\ttfamily \#include $<$Rigid\+Body\+Def.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Rigid\+Body\+Def\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structr3_1_1_rigid_body_def__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{structr3_1_1_rigid_body_def_a7b84fd988312a41f84ac0505f6c3de47}{set\+Mass}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} mass)
+\item 
+void \mbox{\hyperlink{structr3_1_1_rigid_body_def_a6912018eac59c46be887cf07e7aadc36}{set\+Mass\+Infinite}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} $\ast$ \mbox{\hyperlink{structr3_1_1_rigid_body_def_aac57d02886c87fe1ed72d0b0794f74e6}{m\+\_\+physics\+Material}} \{\}
+\item 
+\mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} \mbox{\hyperlink{structr3_1_1_rigid_body_def_af5bb8006b04822cc98d4c29992ba29b1}{m\+\_\+collision\+Mask}} \{\}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_rigid_body_def_a8f5ffeb5e6a8f397e63623f7cd03ebe9}{m\+\_\+inverse\+Mass}} \{0.\+0f\}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_rigid_body_def_afe2d4cfd2d576be94dbabdd415883e3b}{m\+\_\+linear\+Damping}} \{0.\+999f\}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_rigid_body_def_a8510aa8449a8657803d41aa0d1560108}{m\+\_\+angular\+Damping}} \{0.\+999f\}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_a3acdc6c652745324b72165c6fc42bc39}{m\+\_\+velocity}} \{0.\+0f\}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_a7f198090401ced879b2e8f8b5baa2a4d}{m\+\_\+acceleration}} \{0.\+0f\}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_a5c23bea5e32b01e7182b633126fe3d98}{m\+\_\+last\+Frame\+Acceleration}} \{0.\+0f\}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_a141b8dc66b5bde2f7bb98894313b2e99}{m\+\_\+rotation}} \{0.\+0f\}
+\item 
+glm\+::mat4 \mbox{\hyperlink{structr3_1_1_rigid_body_def_a5110c4790357fbbfad4d5cc5dd89c4d6}{m\+\_\+transformation\+Matrix}} \{1.\+0f\}
+\item 
+glm\+::mat3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_a74a00d333ee64b54e8481e7733999006}{m\+\_\+inverse\+Inertia\+Tensor}} \{1.\+0f\}
+\item 
+glm\+::mat3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_acf08b5556bde4c822264a7dc6c180e90}{m\+\_\+inverse\+Inertia\+Tensor\+World}} \{1.\+0f\}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_ae3b46fdab5cf6b6d6724794a1d3b3cdb}{m\+\_\+force\+Accumulated}} \{0.\+0f\}
+\item 
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_rigid_body_def_ab12c90dd6547748d3d7f27e53833a9e6}{m\+\_\+torque\+Accumulated}} \{0.\+0f\}
+\item 
+bool \mbox{\hyperlink{structr3_1_1_rigid_body_def_a3d48ea179d5ebc3a906949a623236c5a}{m\+\_\+awake}} \{false\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a7b84fd988312a41f84ac0505f6c3de47}\label{structr3_1_1_rigid_body_def_a7b84fd988312a41f84ac0505f6c3de47}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!set\+Mass@{set\+Mass}}
+\index{set\+Mass@{set\+Mass}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
+{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+Def\+::set\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{mass }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a6912018eac59c46be887cf07e7aadc36}\label{structr3_1_1_rigid_body_def_a6912018eac59c46be887cf07e7aadc36}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!set\+Mass\+Infinite@{set\+Mass\+Infinite}}
+\index{set\+Mass\+Infinite@{set\+Mass\+Infinite}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{set\+Mass\+Infinite()}{setMassInfinite()}}
+{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+Def\+::set\+Mass\+Infinite (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a7f198090401ced879b2e8f8b5baa2a4d}\label{structr3_1_1_rigid_body_def_a7f198090401ced879b2e8f8b5baa2a4d}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+acceleration@{m\+\_\+acceleration}}
+\index{m\+\_\+acceleration@{m\+\_\+acceleration}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+acceleration}{m\_acceleration}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+acceleration \{0.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a8510aa8449a8657803d41aa0d1560108}\label{structr3_1_1_rigid_body_def_a8510aa8449a8657803d41aa0d1560108}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}}
+\index{m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+angular\+Damping}{m\_angularDamping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+Def\+::m\+\_\+angular\+Damping \{0.\+999f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a3d48ea179d5ebc3a906949a623236c5a}\label{structr3_1_1_rigid_body_def_a3d48ea179d5ebc3a906949a623236c5a}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+awake@{m\+\_\+awake}}
+\index{m\+\_\+awake@{m\+\_\+awake}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+awake}{m\_awake}}
+{\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+Def\+::m\+\_\+awake \{false\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_af5bb8006b04822cc98d4c29992ba29b1}\label{structr3_1_1_rigid_body_def_af5bb8006b04822cc98d4c29992ba29b1}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+collision\+Mask@{m\+\_\+collision\+Mask}}
+\index{m\+\_\+collision\+Mask@{m\+\_\+collision\+Mask}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+collision\+Mask}{m\_collisionMask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} r3\+::\+Rigid\+Body\+Def\+::m\+\_\+collision\+Mask \{\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_ae3b46fdab5cf6b6d6724794a1d3b3cdb}\label{structr3_1_1_rigid_body_def_ae3b46fdab5cf6b6d6724794a1d3b3cdb}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+force\+Accumulated@{m\+\_\+force\+Accumulated}}
+\index{m\+\_\+force\+Accumulated@{m\+\_\+force\+Accumulated}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+force\+Accumulated}{m\_forceAccumulated}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+force\+Accumulated \{0.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a74a00d333ee64b54e8481e7733999006}\label{structr3_1_1_rigid_body_def_a74a00d333ee64b54e8481e7733999006}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+inverse\+Inertia\+Tensor@{m\+\_\+inverse\+Inertia\+Tensor}}
+\index{m\+\_\+inverse\+Inertia\+Tensor@{m\+\_\+inverse\+Inertia\+Tensor}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Inertia\+Tensor}{m\_inverseInertiaTensor}}
+{\footnotesize\ttfamily glm\+::mat3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+inverse\+Inertia\+Tensor \{1.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_acf08b5556bde4c822264a7dc6c180e90}\label{structr3_1_1_rigid_body_def_acf08b5556bde4c822264a7dc6c180e90}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+inverse\+Inertia\+Tensor\+World@{m\+\_\+inverse\+Inertia\+Tensor\+World}}
+\index{m\+\_\+inverse\+Inertia\+Tensor\+World@{m\+\_\+inverse\+Inertia\+Tensor\+World}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Inertia\+Tensor\+World}{m\_inverseInertiaTensorWorld}}
+{\footnotesize\ttfamily glm\+::mat3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+inverse\+Inertia\+Tensor\+World \{1.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a8f5ffeb5e6a8f397e63623f7cd03ebe9}\label{structr3_1_1_rigid_body_def_a8f5ffeb5e6a8f397e63623f7cd03ebe9}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}}
+\index{m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+inverse\+Mass}{m\_inverseMass}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+Def\+::m\+\_\+inverse\+Mass \{0.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a5c23bea5e32b01e7182b633126fe3d98}\label{structr3_1_1_rigid_body_def_a5c23bea5e32b01e7182b633126fe3d98}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+last\+Frame\+Acceleration@{m\+\_\+last\+Frame\+Acceleration}}
+\index{m\+\_\+last\+Frame\+Acceleration@{m\+\_\+last\+Frame\+Acceleration}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+last\+Frame\+Acceleration}{m\_lastFrameAcceleration}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+last\+Frame\+Acceleration \{0.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_afe2d4cfd2d576be94dbabdd415883e3b}\label{structr3_1_1_rigid_body_def_afe2d4cfd2d576be94dbabdd415883e3b}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+linear\+Damping@{m\+\_\+linear\+Damping}}
+\index{m\+\_\+linear\+Damping@{m\+\_\+linear\+Damping}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+linear\+Damping}{m\_linearDamping}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+Def\+::m\+\_\+linear\+Damping \{0.\+999f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_aac57d02886c87fe1ed72d0b0794f74e6}\label{structr3_1_1_rigid_body_def_aac57d02886c87fe1ed72d0b0794f74e6}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+physics\+Material@{m\+\_\+physics\+Material}}
+\index{m\+\_\+physics\+Material@{m\+\_\+physics\+Material}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+physics\+Material}{m\_physicsMaterial}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}}$\ast$ r3\+::\+Rigid\+Body\+Def\+::m\+\_\+physics\+Material \{\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a141b8dc66b5bde2f7bb98894313b2e99}\label{structr3_1_1_rigid_body_def_a141b8dc66b5bde2f7bb98894313b2e99}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+rotation@{m\+\_\+rotation}}
+\index{m\+\_\+rotation@{m\+\_\+rotation}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+rotation \{0.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_ab12c90dd6547748d3d7f27e53833a9e6}\label{structr3_1_1_rigid_body_def_ab12c90dd6547748d3d7f27e53833a9e6}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+torque\+Accumulated@{m\+\_\+torque\+Accumulated}}
+\index{m\+\_\+torque\+Accumulated@{m\+\_\+torque\+Accumulated}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+torque\+Accumulated}{m\_torqueAccumulated}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+torque\+Accumulated \{0.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a5110c4790357fbbfad4d5cc5dd89c4d6}\label{structr3_1_1_rigid_body_def_a5110c4790357fbbfad4d5cc5dd89c4d6}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+transformation\+Matrix@{m\+\_\+transformation\+Matrix}}
+\index{m\+\_\+transformation\+Matrix@{m\+\_\+transformation\+Matrix}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+transformation\+Matrix}{m\_transformationMatrix}}
+{\footnotesize\ttfamily glm\+::mat4 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+transformation\+Matrix \{1.\+0f\}}
+
+\mbox{\Hypertarget{structr3_1_1_rigid_body_def_a3acdc6c652745324b72165c6fc42bc39}\label{structr3_1_1_rigid_body_def_a3acdc6c652745324b72165c6fc42bc39}} 
+\index{r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}!m\+\_\+velocity@{m\+\_\+velocity}}
+\index{m\+\_\+velocity@{m\+\_\+velocity}!r3\+::\+Rigid\+Body\+Def@{r3\+::\+Rigid\+Body\+Def}}
+\subsubsection{\texorpdfstring{m\+\_\+velocity}{m\_velocity}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+Def\+::m\+\_\+velocity \{0.\+0f\}}
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_def_8h}{Rigid\+Body\+Def.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_def_8cpp}{Rigid\+Body\+Def.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,115 @@
+\hypertarget{classr3_1_1_narrow_phase_filter}{}\section{r3\+:\+:Narrow\+Phase\+Filter Class Reference}
+\label{classr3_1_1_narrow_phase_filter}\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+
+
+{\ttfamily \#include $<$Narrow\+Phase\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Narrow\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classr3_1_1_narrow_phase_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Narrow\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_narrow_phase_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Algorithm\+Type $>$ }\\using \mbox{\hyperlink{classr3_1_1_narrow_phase_filter_aebe310c944167ad73abf098ccc68ed88}{Algorithm}} = std\+::unique\+\_\+ptr$<$ Algorithm\+Type $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_narrow_phase_filter_ad3696d7d4a1d0cfd1b383802a4504897}{Narrow\+Phase\+Filter}} (unsigned int iterations=10, unsigned int collisions\+Max=1000)
+\item 
+\mbox{\hyperlink{classr3_1_1_narrow_phase_filter_acd99c99da07750756ae37fa5641136cb}{$\sim$\+Narrow\+Phase\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_narrow_phase_filter_a44da84d1dbc12e9f95af46aac270ebb8}{generate\+Collision\+Data}} (const \mbox{\hyperlink{classr3_1_1_broad_phase_collision_data}{Broad\+Phase\+Collision\+Data}} \&broad\+Phase\+Data, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collisions) override
+\item 
+void \mbox{\hyperlink{classr3_1_1_narrow_phase_filter_a567743be66c7e8d118165ec92ed68cdf}{generate\+Collision\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collisions)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classr3_1_1_narrow_phase_filter_a09742dd02960fab328444144fb22b85b}{init}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}} \mbox{\hyperlink{classr3_1_1_narrow_phase_filter_a476cf750e3cd55d9e36a011eb0c447af}{m\+\_\+algorithms}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_aebe310c944167ad73abf098ccc68ed88}\label{classr3_1_1_narrow_phase_filter_aebe310c944167ad73abf098ccc68ed88}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!Algorithm@{Algorithm}}
+\index{Algorithm@{Algorithm}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{Algorithm}{Algorithm}}
+{\footnotesize\ttfamily template$<$class Algorithm\+Type $>$ \\
+using \mbox{\hyperlink{classr3_1_1_narrow_phase_filter_aebe310c944167ad73abf098ccc68ed88}{r3\+::\+Narrow\+Phase\+Filter\+::\+Algorithm}} =  std\+::unique\+\_\+ptr$<$Algorithm\+Type$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_ad3696d7d4a1d0cfd1b383802a4504897}\label{classr3_1_1_narrow_phase_filter_ad3696d7d4a1d0cfd1b383802a4504897}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!Narrow\+Phase\+Filter@{Narrow\+Phase\+Filter}}
+\index{Narrow\+Phase\+Filter@{Narrow\+Phase\+Filter}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{Narrow\+Phase\+Filter()}{NarrowPhaseFilter()}}
+{\footnotesize\ttfamily r3\+::\+Narrow\+Phase\+Filter\+::\+Narrow\+Phase\+Filter (\begin{DoxyParamCaption}\item[{unsigned int}]{iterations = {\ttfamily 10},  }\item[{unsigned int}]{collisions\+Max = {\ttfamily 1000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_acd99c99da07750756ae37fa5641136cb}\label{classr3_1_1_narrow_phase_filter_acd99c99da07750756ae37fa5641136cb}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!````~Narrow\+Phase\+Filter@{$\sim$\+Narrow\+Phase\+Filter}}
+\index{````~Narrow\+Phase\+Filter@{$\sim$\+Narrow\+Phase\+Filter}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+Narrow\+Phase\+Filter()}{~NarrowPhaseFilter()}}
+{\footnotesize\ttfamily r3\+::\+Narrow\+Phase\+Filter\+::$\sim$\+Narrow\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_a44da84d1dbc12e9f95af46aac270ebb8}\label{classr3_1_1_narrow_phase_filter_a44da84d1dbc12e9f95af46aac270ebb8}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void r3\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_broad_phase_collision_data}{Broad\+Phase\+Collision\+Data}} \&}]{broad\+Phase\+Data,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collisions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_filter_a32ae92d18c929adfc5af54449c069d3b}{r3\+::\+I\+Narrow\+Phase\+Filter}}.
+
+\mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_a567743be66c7e8d118165ec92ed68cdf}\label{classr3_1_1_narrow_phase_filter_a567743be66c7e8d118165ec92ed68cdf}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!generate\+Collision\+Data@{generate\+Collision\+Data}}
+\index{generate\+Collision\+Data@{generate\+Collision\+Data}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collision\+Data()}{generateCollisionData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void r3\+::\+Narrow\+Phase\+Filter\+::generate\+Collision\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collisions }\end{DoxyParamCaption})}
+
+Generate collisions between two rigid bodies. \mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_a09742dd02960fab328444144fb22b85b}\label{classr3_1_1_narrow_phase_filter_a09742dd02960fab328444144fb22b85b}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!init@{init}}
+\index{init@{init}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void r3\+::\+Narrow\+Phase\+Filter\+::init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_narrow_phase_filter_a476cf750e3cd55d9e36a011eb0c447af}\label{classr3_1_1_narrow_phase_filter_a476cf750e3cd55d9e36a011eb0c447af}} 
+\index{r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}!m\+\_\+algorithms@{m\+\_\+algorithms}}
+\index{m\+\_\+algorithms@{m\+\_\+algorithms}!r3\+::\+Narrow\+Phase\+Filter@{r3\+::\+Narrow\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{m\+\_\+algorithms}{m\_algorithms}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}} r3\+::\+Narrow\+Phase\+Filter\+::m\+\_\+algorithms\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_narrow_phase_filter_8h}{Narrow\+Phase\+Filter.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_narrow_phase_filter_8cpp}{Narrow\+Phase\+Filter.\+cpp}}\end{DoxyCompactItemize}

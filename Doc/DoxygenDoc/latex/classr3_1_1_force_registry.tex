@@ -1,0 +1,111 @@
+\hypertarget{classr3_1_1_force_registry}{}\section{r3\+:\+:Force\+Registry Class Reference}
+\label{classr3_1_1_force_registry}\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+
+
+{\ttfamily \#include $<$Force\+Registry.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Force\+Registry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classr3_1_1_force_registry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structr3_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_force_registry_a91449a71b1a33d773ef787ae56ae9b2d}{Registry}} = std\+::vector$<$ \mbox{\hyperlink{structr3_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_force_registry_a6830132c53a756ebf3e6621195f51b17}{Force\+Registry}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_force_registry_a322cdf54468a6f59610562a7bfc2e60d}{$\sim$\+Force\+Registry}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_force_registry_a2b86303ed6ac2082606b298301f9957c}{register\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body, \mbox{\hyperlink{classr3_1_1_force_generator}{Force\+Generator}} $\ast$fg)
+\item 
+void \mbox{\hyperlink{classr3_1_1_force_registry_a3a6163fed4266bd6e18ebad2c5c939cd}{unregister\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body, \mbox{\hyperlink{classr3_1_1_force_generator}{Force\+Generator}} $\ast$fg)
+\item 
+void \mbox{\hyperlink{classr3_1_1_force_registry_ab1c31bc403d998af16df97ff5d42c95f}{clear}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_force_registry_a34d6ad7472e2f47dfd3416a703eca78e}{update\+Forces}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_force_registry_a91449a71b1a33d773ef787ae56ae9b2d}{Registry}} \mbox{\hyperlink{classr3_1_1_force_registry_a36847da26301dc4b18e6b6b25fb2fa51}{m\+\_\+registrations}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_force_registry_a91449a71b1a33d773ef787ae56ae9b2d}\label{classr3_1_1_force_registry_a91449a71b1a33d773ef787ae56ae9b2d}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{Registry}{Registry}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_force_registry_a91449a71b1a33d773ef787ae56ae9b2d}{r3\+::\+Force\+Registry\+::\+Registry}} =  std\+::vector$<$\mbox{\hyperlink{structr3_1_1_force_registry_1_1_force_registration_entry}{Force\+Registration\+Entry}}$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_force_registry_a6830132c53a756ebf3e6621195f51b17}\label{classr3_1_1_force_registry_a6830132c53a756ebf3e6621195f51b17}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!Force\+Registry@{Force\+Registry}}
+\index{Force\+Registry@{Force\+Registry}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{Force\+Registry()}{ForceRegistry()}}
+{\footnotesize\ttfamily r3\+::\+Force\+Registry\+::\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_force_registry_a322cdf54468a6f59610562a7bfc2e60d}\label{classr3_1_1_force_registry_a322cdf54468a6f59610562a7bfc2e60d}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!````~Force\+Registry@{$\sim$\+Force\+Registry}}
+\index{````~Force\+Registry@{$\sim$\+Force\+Registry}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{$\sim$\+Force\+Registry()}{~ForceRegistry()}}
+{\footnotesize\ttfamily r3\+::\+Force\+Registry\+::$\sim$\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_force_registry_ab1c31bc403d998af16df97ff5d42c95f}\label{classr3_1_1_force_registry_ab1c31bc403d998af16df97ff5d42c95f}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!clear@{clear}}
+\index{clear@{clear}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void r3\+::\+Force\+Registry\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_force_registry_a2b86303ed6ac2082606b298301f9957c}\label{classr3_1_1_force_registry_a2b86303ed6ac2082606b298301f9957c}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!register\+Force@{register\+Force}}
+\index{register\+Force@{register\+Force}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{register\+Force()}{registerForce()}}
+{\footnotesize\ttfamily void r3\+::\+Force\+Registry\+::register\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body,  }\item[{\mbox{\hyperlink{classr3_1_1_force_generator}{Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_force_registry_a3a6163fed4266bd6e18ebad2c5c939cd}\label{classr3_1_1_force_registry_a3a6163fed4266bd6e18ebad2c5c939cd}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!unregister\+Force@{unregister\+Force}}
+\index{unregister\+Force@{unregister\+Force}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{unregister\+Force()}{unregisterForce()}}
+{\footnotesize\ttfamily void r3\+::\+Force\+Registry\+::unregister\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body,  }\item[{\mbox{\hyperlink{classr3_1_1_force_generator}{Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_force_registry_a34d6ad7472e2f47dfd3416a703eca78e}\label{classr3_1_1_force_registry_a34d6ad7472e2f47dfd3416a703eca78e}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!update\+Forces@{update\+Forces}}
+\index{update\+Forces@{update\+Forces}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{update\+Forces()}{updateForces()}}
+{\footnotesize\ttfamily void r3\+::\+Force\+Registry\+::update\+Forces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_force_registry_a36847da26301dc4b18e6b6b25fb2fa51}\label{classr3_1_1_force_registry_a36847da26301dc4b18e6b6b25fb2fa51}} 
+\index{r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}!m\+\_\+registrations@{m\+\_\+registrations}}
+\index{m\+\_\+registrations@{m\+\_\+registrations}!r3\+::\+Force\+Registry@{r3\+::\+Force\+Registry}}
+\subsubsection{\texorpdfstring{m\+\_\+registrations}{m\_registrations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_force_registry_a91449a71b1a33d773ef787ae56ae9b2d}{Registry}} r3\+::\+Force\+Registry\+::m\+\_\+registrations\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_force_registry_8h}{Force\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_force_registry_8cpp}{Force\+Registry.\+cpp}}\end{DoxyCompactItemize}

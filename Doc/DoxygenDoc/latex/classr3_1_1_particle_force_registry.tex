@@ -1,0 +1,92 @@
+\hypertarget{classr3_1_1_particle_force_registry}{}\section{r3\+:\+:Particle\+Force\+Registry Class Reference}
+\label{classr3_1_1_particle_force_registry}\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+
+
+{\ttfamily \#include $<$Particle\+Force\+Registry.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Particle\+Force\+Registry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classr3_1_1_particle_force_registry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structr3_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_force_registry_ae8aafae43e822c8e5a3ccdde802b8aa9}{add}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classr3_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$fg)
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_force_registry_affea480593835fecf9b262f5b0114912}{remove}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classr3_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$fg)
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_force_registry_ac49c38fa041447278c56e68c6e796d77}{clear}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_force_registry_aff16efc19c65d28e39a38cbc936ede2a}{update\+Forces}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_particle_force_registry_a5529157176d2c10b2afde82e6871c7eb}{Registry}} = std\+::vector$<$ \mbox{\hyperlink{structr3_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}} $>$
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_force_registry_a5529157176d2c10b2afde82e6871c7eb}{Registry}} \mbox{\hyperlink{classr3_1_1_particle_force_registry_aadf01f7d6f670e7b32e3d185a0414c29}{m\+\_\+registrations}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_a5529157176d2c10b2afde82e6871c7eb}\label{classr3_1_1_particle_force_registry_a5529157176d2c10b2afde82e6871c7eb}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!Registry@{Registry}}
+\index{Registry@{Registry}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{Registry}{Registry}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_particle_force_registry_a5529157176d2c10b2afde82e6871c7eb}{r3\+::\+Particle\+Force\+Registry\+::\+Registry}} =  std\+::vector$<$\mbox{\hyperlink{structr3_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}}$>$\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_ae8aafae43e822c8e5a3ccdde802b8aa9}\label{classr3_1_1_particle_force_registry_ae8aafae43e822c8e5a3ccdde802b8aa9}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!add@{add}}
+\index{add@{add}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Force\+Registry\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{classr3_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_ac49c38fa041447278c56e68c6e796d77}\label{classr3_1_1_particle_force_registry_ac49c38fa041447278c56e68c6e796d77}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!clear@{clear}}
+\index{clear@{clear}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Force\+Registry\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_affea480593835fecf9b262f5b0114912}\label{classr3_1_1_particle_force_registry_affea480593835fecf9b262f5b0114912}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!remove@{remove}}
+\index{remove@{remove}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Force\+Registry\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{classr3_1_1_particle_force_generator}{Particle\+Force\+Generator}} $\ast$}]{fg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_aff16efc19c65d28e39a38cbc936ede2a}\label{classr3_1_1_particle_force_registry_aff16efc19c65d28e39a38cbc936ede2a}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!update\+Forces@{update\+Forces}}
+\index{update\+Forces@{update\+Forces}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{update\+Forces()}{updateForces()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Force\+Registry\+::update\+Forces (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_aadf01f7d6f670e7b32e3d185a0414c29}\label{classr3_1_1_particle_force_registry_aadf01f7d6f670e7b32e3d185a0414c29}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!m\+\_\+registrations@{m\+\_\+registrations}}
+\index{m\+\_\+registrations@{m\+\_\+registrations}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{m\+\_\+registrations}{m\_registrations}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle_force_registry_a5529157176d2c10b2afde82e6871c7eb}{Registry}} r3\+::\+Particle\+Force\+Registry\+::m\+\_\+registrations\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8h}{Particle\+Force\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8cpp}{Particle\+Force\+Registry.\+cpp}}\end{DoxyCompactItemize}

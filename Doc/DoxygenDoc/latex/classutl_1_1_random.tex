@@ -1,0 +1,179 @@
+\hypertarget{classutl_1_1_random}{}\section{utl\+:\+:Random Class Reference}
+\label{classutl_1_1_random}\index{utl\+::\+Random@{utl\+::\+Random}}
+
+
+{\ttfamily \#include $<$Random.\+h$>$}
+
+
+
+Collaboration diagram for utl\+:\+:Random\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classutl_1_1_random__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classutl_1_1_random_a49284e0d91bf8f039b03d811e848821f}{seed}} ()
+\item 
+static void \mbox{\hyperlink{classutl_1_1_random_ac91fc644c7437c700f2c1addeb65125a}{seed}} (unsigned int seed)
+\item 
+static unsigned int \mbox{\hyperlink{classutl_1_1_random_a88abb8994dd315ddc0d44707752f4150}{get\+Seed}} ()
+\item 
+static int \mbox{\hyperlink{classutl_1_1_random_a4d2a67cf40ac693462c15bad1c0c8690}{random\+Int}} ()
+\item 
+static int \mbox{\hyperlink{classutl_1_1_random_a61dc7caa999d944c517a9dac8facaab3}{random\+Int}} (int min, int max)
+\item 
+static float \mbox{\hyperlink{classutl_1_1_random_a632e5c126ef9a6c795aacc808b730aa7}{random\+Float}} ()
+\item 
+static float \mbox{\hyperlink{classutl_1_1_random_aade7c16ed40c5ece2306fbcd767029ca}{random\+Float}} (float min, float max)
+\item 
+static float \mbox{\hyperlink{classutl_1_1_random_ad9fa44ac9bcec4e1d906ed6c635dd26b}{random\+Float\+Zero\+One}} ()
+\item 
+static double \mbox{\hyperlink{classutl_1_1_random_a984348e7f72f1e6f57de11ac984c4544}{random\+Double}} ()
+\item 
+static double \mbox{\hyperlink{classutl_1_1_random_a761a64b397ebccb5c0d4dd67ddd7be1d}{random\+Double}} (double min, double max)
+\item 
+static double \mbox{\hyperlink{classutl_1_1_random_ad6d9143574a3f5bdcd20241bc251101d}{random\+Double\+Zero\+One}} ()
+\item 
+static glm\+::vec2 \mbox{\hyperlink{classutl_1_1_random_ac9078b280a84048158127532cbcb0e43}{random\+Vec2}} ()
+\item 
+static glm\+::vec2 \mbox{\hyperlink{classutl_1_1_random_a00632573896ef61e7ba0fdcedcdf3266}{random\+Vec2}} (float min, float max)
+\item 
+static glm\+::vec3 \mbox{\hyperlink{classutl_1_1_random_a6e2aaa6b6117cfe92312af1153adc808}{random\+Vec3}} ()
+\item 
+static glm\+::vec3 \mbox{\hyperlink{classutl_1_1_random_ae52ea617bc38ca85a9eb4cdc029b371c}{random\+Vec3}} (float min, float max)
+\item 
+static glm\+::vec4 \mbox{\hyperlink{classutl_1_1_random_abab1cbc6931823c0449b53210292527f}{random\+Vec4}} ()
+\item 
+static glm\+::vec4 \mbox{\hyperlink{classutl_1_1_random_a38f60c4bd2fca40f4392672d3876b17a}{random\+Vec4}} (float min, float max)
+\item 
+static bool \mbox{\hyperlink{classutl_1_1_random_a946070e88d52bb580038257acfe81b1c}{random\+Bool}} (float chance)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Equally distributed random number generator. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classutl_1_1_random_a88abb8994dd315ddc0d44707752f4150}\label{classutl_1_1_random_a88abb8994dd315ddc0d44707752f4150}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!get\+Seed@{get\+Seed}}
+\index{get\+Seed@{get\+Seed}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{get\+Seed()}{getSeed()}}
+{\footnotesize\ttfamily unsigned int utl\+::\+Random\+::get\+Seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classutl_1_1_random_a946070e88d52bb580038257acfe81b1c}\label{classutl_1_1_random_a946070e88d52bb580038257acfe81b1c}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Bool@{random\+Bool}}
+\index{random\+Bool@{random\+Bool}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Bool()}{randomBool()}}
+{\footnotesize\ttfamily bool utl\+::\+Random\+::random\+Bool (\begin{DoxyParamCaption}\item[{float}]{chance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get a random boolean value. 
+\begin{DoxyParams}{Parameters}
+{\em chance} & The probability of the boolean value to be true. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classutl_1_1_random_a984348e7f72f1e6f57de11ac984c4544}\label{classutl_1_1_random_a984348e7f72f1e6f57de11ac984c4544}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Double@{random\+Double}}
+\index{random\+Double@{random\+Double}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Double()}{randomDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double utl\+::\+Random\+::random\+Double (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate random double value. \mbox{\Hypertarget{classutl_1_1_random_a761a64b397ebccb5c0d4dd67ddd7be1d}\label{classutl_1_1_random_a761a64b397ebccb5c0d4dd67ddd7be1d}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Double@{random\+Double}}
+\index{random\+Double@{random\+Double}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Double()}{randomDouble()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double utl\+::\+Random\+::random\+Double (\begin{DoxyParamCaption}\item[{double}]{min,  }\item[{double}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classutl_1_1_random_ad6d9143574a3f5bdcd20241bc251101d}\label{classutl_1_1_random_ad6d9143574a3f5bdcd20241bc251101d}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Double\+Zero\+One@{random\+Double\+Zero\+One}}
+\index{random\+Double\+Zero\+One@{random\+Double\+Zero\+One}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Double\+Zero\+One()}{randomDoubleZeroOne()}}
+{\footnotesize\ttfamily double utl\+::\+Random\+::random\+Double\+Zero\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classutl_1_1_random_a632e5c126ef9a6c795aacc808b730aa7}\label{classutl_1_1_random_a632e5c126ef9a6c795aacc808b730aa7}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Float@{random\+Float}}
+\index{random\+Float@{random\+Float}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Float()}{randomFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily float utl\+::\+Random\+::random\+Float (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate random float value. \mbox{\Hypertarget{classutl_1_1_random_aade7c16ed40c5ece2306fbcd767029ca}\label{classutl_1_1_random_aade7c16ed40c5ece2306fbcd767029ca}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Float@{random\+Float}}
+\index{random\+Float@{random\+Float}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Float()}{randomFloat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily float utl\+::\+Random\+::random\+Float (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classutl_1_1_random_ad9fa44ac9bcec4e1d906ed6c635dd26b}\label{classutl_1_1_random_ad9fa44ac9bcec4e1d906ed6c635dd26b}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Float\+Zero\+One@{random\+Float\+Zero\+One}}
+\index{random\+Float\+Zero\+One@{random\+Float\+Zero\+One}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Float\+Zero\+One()}{randomFloatZeroOne()}}
+{\footnotesize\ttfamily float utl\+::\+Random\+::random\+Float\+Zero\+One (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classutl_1_1_random_a4d2a67cf40ac693462c15bad1c0c8690}\label{classutl_1_1_random_a4d2a67cf40ac693462c15bad1c0c8690}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Int@{random\+Int}}
+\index{random\+Int@{random\+Int}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Int()}{randomInt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int utl\+::\+Random\+::random\+Int (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate random integer value. \mbox{\Hypertarget{classutl_1_1_random_a61dc7caa999d944c517a9dac8facaab3}\label{classutl_1_1_random_a61dc7caa999d944c517a9dac8facaab3}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Int@{random\+Int}}
+\index{random\+Int@{random\+Int}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Int()}{randomInt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int utl\+::\+Random\+::random\+Int (\begin{DoxyParamCaption}\item[{int}]{min,  }\item[{int}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classutl_1_1_random_ac9078b280a84048158127532cbcb0e43}\label{classutl_1_1_random_ac9078b280a84048158127532cbcb0e43}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Vec2@{random\+Vec2}}
+\index{random\+Vec2@{random\+Vec2}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Vec2()}{randomVec2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily glm\+::vec2 utl\+::\+Random\+::random\+Vec2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a random 2D vector. \mbox{\Hypertarget{classutl_1_1_random_a00632573896ef61e7ba0fdcedcdf3266}\label{classutl_1_1_random_a00632573896ef61e7ba0fdcedcdf3266}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Vec2@{random\+Vec2}}
+\index{random\+Vec2@{random\+Vec2}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Vec2()}{randomVec2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily glm\+::vec2 utl\+::\+Random\+::random\+Vec2 (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a random 2D vector. \mbox{\Hypertarget{classutl_1_1_random_a6e2aaa6b6117cfe92312af1153adc808}\label{classutl_1_1_random_a6e2aaa6b6117cfe92312af1153adc808}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Vec3@{random\+Vec3}}
+\index{random\+Vec3@{random\+Vec3}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Vec3()}{randomVec3()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily glm\+::vec3 utl\+::\+Random\+::random\+Vec3 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a random 3D vector. \mbox{\Hypertarget{classutl_1_1_random_ae52ea617bc38ca85a9eb4cdc029b371c}\label{classutl_1_1_random_ae52ea617bc38ca85a9eb4cdc029b371c}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Vec3@{random\+Vec3}}
+\index{random\+Vec3@{random\+Vec3}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Vec3()}{randomVec3()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily glm\+::vec3 utl\+::\+Random\+::random\+Vec3 (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a random 3D vector. \mbox{\Hypertarget{classutl_1_1_random_abab1cbc6931823c0449b53210292527f}\label{classutl_1_1_random_abab1cbc6931823c0449b53210292527f}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Vec4@{random\+Vec4}}
+\index{random\+Vec4@{random\+Vec4}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Vec4()}{randomVec4()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily glm\+::vec4 utl\+::\+Random\+::random\+Vec4 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a random 4D vector. \mbox{\Hypertarget{classutl_1_1_random_a38f60c4bd2fca40f4392672d3876b17a}\label{classutl_1_1_random_a38f60c4bd2fca40f4392672d3876b17a}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!random\+Vec4@{random\+Vec4}}
+\index{random\+Vec4@{random\+Vec4}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Vec4()}{randomVec4()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily glm\+::vec4 utl\+::\+Random\+::random\+Vec4 (\begin{DoxyParamCaption}\item[{float}]{min,  }\item[{float}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Calculate a random 4D vector. \mbox{\Hypertarget{classutl_1_1_random_a49284e0d91bf8f039b03d811e848821f}\label{classutl_1_1_random_a49284e0d91bf8f039b03d811e848821f}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!seed@{seed}}
+\index{seed@{seed}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{seed()}{seed()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void utl\+::\+Random\+::seed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Seed the random number generator with the current time. \mbox{\Hypertarget{classutl_1_1_random_ac91fc644c7437c700f2c1addeb65125a}\label{classutl_1_1_random_ac91fc644c7437c700f2c1addeb65125a}} 
+\index{utl\+::\+Random@{utl\+::\+Random}!seed@{seed}}
+\index{seed@{seed}!utl\+::\+Random@{utl\+::\+Random}}
+\subsubsection{\texorpdfstring{seed()}{seed()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void utl\+::\+Random\+::seed (\begin{DoxyParamCaption}\item[{unsigned int}]{seed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Seed the random number generator with a given seed. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_random_8h}{Random.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Utility/\mbox{\hyperlink{_random_8cpp}{Random.\+cpp}}\end{DoxyCompactItemize}

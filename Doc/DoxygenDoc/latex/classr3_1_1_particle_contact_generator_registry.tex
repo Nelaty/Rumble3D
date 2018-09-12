@@ -1,0 +1,95 @@
+\hypertarget{classr3_1_1_particle_contact_generator_registry}{}\section{r3\+:\+:Particle\+Contact\+Generator\+Registry Class Reference}
+\label{classr3_1_1_particle_contact_generator_registry}\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+
+
+{\ttfamily \#include $<$Particle\+Contact\+Generator\+Registry.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Particle\+Contact\+Generator\+Registry\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{classr3_1_1_particle_contact_generator_registry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a2c26127b369a7da81d5d29e4734633e6}{Particle\+Contact\+Generator\+Registry}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a26a9ed03c6e050ffa99669bd0928d520}{$\sim$\+Particle\+Contact\+Generator\+Registry}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a34d44783a363a513217dec694f625687}{register\+Contact\+Generator}} (\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$generator)
+\item 
+bool \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}{unregister\+Contact\+Generator}} (\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$generator)
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a8c24a369a980542a769875466eb835d0}{clear}} ()
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$ $>$ \& \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}{get\+Generators}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$ $>$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_abefd730c20539681ed0fac53ccd5f8ab}{m\+\_\+contact\+Generators}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a2c26127b369a7da81d5d29e4734633e6}\label{classr3_1_1_particle_contact_generator_registry_a2c26127b369a7da81d5d29e4734633e6}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!Particle\+Contact\+Generator\+Registry@{Particle\+Contact\+Generator\+Registry}}
+\index{Particle\+Contact\+Generator\+Registry@{Particle\+Contact\+Generator\+Registry}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{Particle\+Contact\+Generator\+Registry()}{ParticleContactGeneratorRegistry()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Contact\+Generator\+Registry\+::\+Particle\+Contact\+Generator\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a26a9ed03c6e050ffa99669bd0928d520}\label{classr3_1_1_particle_contact_generator_registry_a26a9ed03c6e050ffa99669bd0928d520}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!````~Particle\+Contact\+Generator\+Registry@{$\sim$\+Particle\+Contact\+Generator\+Registry}}
+\index{````~Particle\+Contact\+Generator\+Registry@{$\sim$\+Particle\+Contact\+Generator\+Registry}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Contact\+Generator\+Registry()}{~ParticleContactGeneratorRegistry()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Contact\+Generator\+Registry\+::$\sim$\+Particle\+Contact\+Generator\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a8c24a369a980542a769875466eb835d0}\label{classr3_1_1_particle_contact_generator_registry_a8c24a369a980542a769875466eb835d0}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!clear@{clear}}
+\index{clear@{clear}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Generator\+Registry\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Remove all contact generators \mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}\label{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!get\+Generators@{get\+Generators}}
+\index{get\+Generators@{get\+Generators}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{get\+Generators()}{getGenerators()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$ $>$ \& r3\+::\+Particle\+Contact\+Generator\+Registry\+::get\+Generators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a34d44783a363a513217dec694f625687}\label{classr3_1_1_particle_contact_generator_registry_a34d44783a363a513217dec694f625687}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!register\+Contact\+Generator@{register\+Contact\+Generator}}
+\index{register\+Contact\+Generator@{register\+Contact\+Generator}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{register\+Contact\+Generator()}{registerContactGenerator()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Generator\+Registry\+::register\+Contact\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$}]{generator }\end{DoxyParamCaption})}
+
+Add another contact generator \mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}\label{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!unregister\+Contact\+Generator@{unregister\+Contact\+Generator}}
+\index{unregister\+Contact\+Generator@{unregister\+Contact\+Generator}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{unregister\+Contact\+Generator()}{unregisterContactGenerator()}}
+{\footnotesize\ttfamily bool r3\+::\+Particle\+Contact\+Generator\+Registry\+::unregister\+Contact\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$}]{generator }\end{DoxyParamCaption})}
+
+Remove a specific contact generator \begin{DoxyReturn}{Returns}
+True if the given generator was found and removed, false otherwise. 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_abefd730c20539681ed0fac53ccd5f8ab}\label{classr3_1_1_particle_contact_generator_registry_abefd730c20539681ed0fac53ccd5f8ab}} 
+\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!m\+\_\+contact\+Generators@{m\+\_\+contact\+Generators}}
+\index{m\+\_\+contact\+Generators@{m\+\_\+contact\+Generators}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Generators}{m\_contactGenerators}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}}$\ast$$>$ r3\+::\+Particle\+Contact\+Generator\+Registry\+::m\+\_\+contact\+Generators\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_generator_registry_8h}{Particle\+Contact\+Generator\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_generator_registry_8cpp}{Particle\+Contact\+Generator\+Registry.\+cpp}}\end{DoxyCompactItemize}

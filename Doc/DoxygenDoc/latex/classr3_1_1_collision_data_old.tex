@@ -1,0 +1,164 @@
+\hypertarget{classr3_1_1_collision_data_old}{}\section{r3\+:\+:Collision\+Data\+Old Class Reference}
+\label{classr3_1_1_collision_data_old}\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+
+
+{\ttfamily \#include $<$Collision\+Data\+Old.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Collision\+Data\+Old\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_collision_data_old__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_data_old_a707e8f38c09df2da7d7ae6a52e418379}{Collision\+Data\+Old}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_data_old_a7afc80cbab2af8ed71fcce5064dcf518}{$\sim$\+Collision\+Data\+Old}} ()
+\item 
+bool \mbox{\hyperlink{classr3_1_1_collision_data_old_a84bd3d8cbf7b3b2f26f31c8a1e1d6b0e}{has\+Unused\+Contacts}} () const
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_data_old_a30b66c4a32bd509ee6cd72d7a3e41ef0}{reset}} (unsigned max\+Contacts)
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_data_old_ae2b77d8254b53bfa4640ea3ad833370c}{add\+Contacts}} (unsigned count)
+\item 
+int \mbox{\hyperlink{classr3_1_1_collision_data_old_a78d2328616c76e498822df4cb0690832}{get\+Contacts\+Left}} () const
+\item 
+\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_data_old_a5df14bfb6d789df7663b64306756eb96}{get\+Contacts}} () const
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_data_old_af6d03fd7fe8df176e9e8860e7d1d4119}{get\+Friction}} () const
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_data_old_a3546df5d0d82e690c12f0899bc683d35}{get\+Restitution}} () const
+\item 
+int \mbox{\hyperlink{classr3_1_1_collision_data_old_a7bdf6b83595d88f4e716bf74a1a1ab3c}{get\+Contact\+Count}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_data_old_a2100ba5e8b3f49926d09b2ad5ca547f1}{m\+\_\+contact\+Array}} \{\}
+\item 
+\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_data_old_ac0396f857d87d2a209250c9742eb7fb3}{m\+\_\+contacts}} \{\}
+\item 
+int \mbox{\hyperlink{classr3_1_1_collision_data_old_ad18fd7d0136d1e6d80c7c5340652a08d}{m\+\_\+contacts\+Left}} \{\}
+\item 
+unsigned \mbox{\hyperlink{classr3_1_1_collision_data_old_af89be6ec7df393c62d8cfa27bbf27d5f}{m\+\_\+contact\+Count}} \{\}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_data_old_a598bcf57a27bd4ed84eab8f64b334c12}{m\+\_\+friction}} = 0.\+5f
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_data_old_ae4fb8abfc80fdf2637e89bd2ef621aac}{m\+\_\+restitution}} = 0.\+5f
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a707e8f38c09df2da7d7ae6a52e418379}\label{classr3_1_1_collision_data_old_a707e8f38c09df2da7d7ae6a52e418379}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!Collision\+Data\+Old@{Collision\+Data\+Old}}
+\index{Collision\+Data\+Old@{Collision\+Data\+Old}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{Collision\+Data\+Old()}{CollisionDataOld()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Data\+Old\+::\+Collision\+Data\+Old (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a7afc80cbab2af8ed71fcce5064dcf518}\label{classr3_1_1_collision_data_old_a7afc80cbab2af8ed71fcce5064dcf518}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!````~Collision\+Data\+Old@{$\sim$\+Collision\+Data\+Old}}
+\index{````~Collision\+Data\+Old@{$\sim$\+Collision\+Data\+Old}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Data\+Old()}{~CollisionDataOld()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Data\+Old\+::$\sim$\+Collision\+Data\+Old (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_ae2b77d8254b53bfa4640ea3ad833370c}\label{classr3_1_1_collision_data_old_ae2b77d8254b53bfa4640ea3ad833370c}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!add\+Contacts@{add\+Contacts}}
+\index{add\+Contacts@{add\+Contacts}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{add\+Contacts()}{addContacts()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Data\+Old\+::add\+Contacts (\begin{DoxyParamCaption}\item[{unsigned}]{count }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a7bdf6b83595d88f4e716bf74a1a1ab3c}\label{classr3_1_1_collision_data_old_a7bdf6b83595d88f4e716bf74a1a1ab3c}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!get\+Contact\+Count@{get\+Contact\+Count}}
+\index{get\+Contact\+Count@{get\+Contact\+Count}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{get\+Contact\+Count()}{getContactCount()}}
+{\footnotesize\ttfamily int r3\+::\+Collision\+Data\+Old\+::get\+Contact\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a5df14bfb6d789df7663b64306756eb96}\label{classr3_1_1_collision_data_old_a5df14bfb6d789df7663b64306756eb96}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!get\+Contacts@{get\+Contacts}}
+\index{get\+Contacts@{get\+Contacts}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{get\+Contacts()}{getContacts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$ r3\+::\+Collision\+Data\+Old\+::get\+Contacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a78d2328616c76e498822df4cb0690832}\label{classr3_1_1_collision_data_old_a78d2328616c76e498822df4cb0690832}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!get\+Contacts\+Left@{get\+Contacts\+Left}}
+\index{get\+Contacts\+Left@{get\+Contacts\+Left}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{get\+Contacts\+Left()}{getContactsLeft()}}
+{\footnotesize\ttfamily int r3\+::\+Collision\+Data\+Old\+::get\+Contacts\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_af6d03fd7fe8df176e9e8860e7d1d4119}\label{classr3_1_1_collision_data_old_af6d03fd7fe8df176e9e8860e7d1d4119}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!get\+Friction@{get\+Friction}}
+\index{get\+Friction@{get\+Friction}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{get\+Friction()}{getFriction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Data\+Old\+::get\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a3546df5d0d82e690c12f0899bc683d35}\label{classr3_1_1_collision_data_old_a3546df5d0d82e690c12f0899bc683d35}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!get\+Restitution@{get\+Restitution}}
+\index{get\+Restitution@{get\+Restitution}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{get\+Restitution()}{getRestitution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Data\+Old\+::get\+Restitution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a84bd3d8cbf7b3b2f26f31c8a1e1d6b0e}\label{classr3_1_1_collision_data_old_a84bd3d8cbf7b3b2f26f31c8a1e1d6b0e}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!has\+Unused\+Contacts@{has\+Unused\+Contacts}}
+\index{has\+Unused\+Contacts@{has\+Unused\+Contacts}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{has\+Unused\+Contacts()}{hasUnusedContacts()}}
+{\footnotesize\ttfamily bool r3\+::\+Collision\+Data\+Old\+::has\+Unused\+Contacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a30b66c4a32bd509ee6cd72d7a3e41ef0}\label{classr3_1_1_collision_data_old_a30b66c4a32bd509ee6cd72d7a3e41ef0}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!reset@{reset}}
+\index{reset@{reset}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Data\+Old\+::reset (\begin{DoxyParamCaption}\item[{unsigned}]{max\+Contacts }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a2100ba5e8b3f49926d09b2ad5ca547f1}\label{classr3_1_1_collision_data_old_a2100ba5e8b3f49926d09b2ad5ca547f1}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!m\+\_\+contact\+Array@{m\+\_\+contact\+Array}}
+\index{m\+\_\+contact\+Array@{m\+\_\+contact\+Array}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Array}{m\_contactArray}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}}$\ast$ r3\+::\+Collision\+Data\+Old\+::m\+\_\+contact\+Array \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_af89be6ec7df393c62d8cfa27bbf27d5f}\label{classr3_1_1_collision_data_old_af89be6ec7df393c62d8cfa27bbf27d5f}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!m\+\_\+contact\+Count@{m\+\_\+contact\+Count}}
+\index{m\+\_\+contact\+Count@{m\+\_\+contact\+Count}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+contact\+Count}{m\_contactCount}}
+{\footnotesize\ttfamily unsigned r3\+::\+Collision\+Data\+Old\+::m\+\_\+contact\+Count \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_ac0396f857d87d2a209250c9742eb7fb3}\label{classr3_1_1_collision_data_old_ac0396f857d87d2a209250c9742eb7fb3}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!m\+\_\+contacts@{m\+\_\+contacts}}
+\index{m\+\_\+contacts@{m\+\_\+contacts}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+contacts}{m\_contacts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}}$\ast$ r3\+::\+Collision\+Data\+Old\+::m\+\_\+contacts \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_ad18fd7d0136d1e6d80c7c5340652a08d}\label{classr3_1_1_collision_data_old_ad18fd7d0136d1e6d80c7c5340652a08d}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!m\+\_\+contacts\+Left@{m\+\_\+contacts\+Left}}
+\index{m\+\_\+contacts\+Left@{m\+\_\+contacts\+Left}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+contacts\+Left}{m\_contactsLeft}}
+{\footnotesize\ttfamily int r3\+::\+Collision\+Data\+Old\+::m\+\_\+contacts\+Left \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_a598bcf57a27bd4ed84eab8f64b334c12}\label{classr3_1_1_collision_data_old_a598bcf57a27bd4ed84eab8f64b334c12}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!m\+\_\+friction@{m\+\_\+friction}}
+\index{m\+\_\+friction@{m\+\_\+friction}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+friction}{m\_friction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Data\+Old\+::m\+\_\+friction = 0.\+5f\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_old_ae4fb8abfc80fdf2637e89bd2ef621aac}\label{classr3_1_1_collision_data_old_ae4fb8abfc80fdf2637e89bd2ef621aac}} 
+\index{r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}!m\+\_\+restitution@{m\+\_\+restitution}}
+\index{m\+\_\+restitution@{m\+\_\+restitution}!r3\+::\+Collision\+Data\+Old@{r3\+::\+Collision\+Data\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+restitution}{m\_restitution}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Data\+Old\+::m\+\_\+restitution = 0.\+5f\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_data_old_8h}{Collision\+Data\+Old.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_data_old_8cpp}{Collision\+Data\+Old.\+cpp}}\end{DoxyCompactItemize}

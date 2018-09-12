@@ -1,0 +1,112 @@
+\hypertarget{classr3_1_1_rigid_body_engine_c_i}{}\section{r3\+:\+:Rigid\+Body\+Engine\+CI Class Reference}
+\label{classr3_1_1_rigid_body_engine_c_i}\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+
+
+Abstract class for computation interfaces used for rigid body worlds.  
+
+
+
+
+{\ttfamily \#include $<$Rigid\+Body\+Engine\+C\+I.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Rigid\+Body\+Engine\+CI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classr3_1_1_rigid_body_engine_c_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Rigid\+Body\+Engine\+CI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_rigid_body_engine_c_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a9f75c8c49e987206554b09550d93b341}{$\sim$\+Rigid\+Body\+Engine\+CI}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}{set\+Rigid\+Body\+World}} (\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$rigid\+Body\+World)
+\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_affb7b66f769300619e0c61f7d3ab13ee}{get\+Rigid\+Body\+World}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a10d9cbc84de1412abd7798f638831a35}{Rigid\+Body\+Engine\+CI}} (\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$rigid\+Body\+World=nullptr)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_detector}{Collision\+Detector}} \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_adb37ed2c686594f9504680be76c2dcbc}{m\+\_\+collision\+Detector}}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_i_collision_resolver_access}{I\+Collision\+Resolver\+Access}} $>$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a27f09a82ab77919c2fb78869f6d3c035}{m\+\_\+collision\+Resolver}}
+\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_afd7ae3fcba8b88ec6c31f2df56aae3f6}{m\+\_\+rigid\+Body\+World}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract class for computation interfaces used for rigid body worlds. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a9f75c8c49e987206554b09550d93b341}\label{classr3_1_1_rigid_body_engine_c_i_a9f75c8c49e987206554b09550d93b341}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!````~Rigid\+Body\+Engine\+CI@{$\sim$\+Rigid\+Body\+Engine\+CI}}
+\index{````~Rigid\+Body\+Engine\+CI@{$\sim$\+Rigid\+Body\+Engine\+CI}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{$\sim$\+Rigid\+Body\+Engine\+C\+I()}{~RigidBodyEngineCI()}}
+{\footnotesize\ttfamily r3\+::\+Rigid\+Body\+Engine\+C\+I\+::$\sim$\+Rigid\+Body\+Engine\+CI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a10d9cbc84de1412abd7798f638831a35}\label{classr3_1_1_rigid_body_engine_c_i_a10d9cbc84de1412abd7798f638831a35}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!Rigid\+Body\+Engine\+CI@{Rigid\+Body\+Engine\+CI}}
+\index{Rigid\+Body\+Engine\+CI@{Rigid\+Body\+Engine\+CI}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{Rigid\+Body\+Engine\+C\+I()}{RigidBodyEngineCI()}}
+{\footnotesize\ttfamily r3\+::\+Rigid\+Body\+Engine\+C\+I\+::\+Rigid\+Body\+Engine\+CI (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$}]{rigid\+Body\+World = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_affb7b66f769300619e0c61f7d3ab13ee}\label{classr3_1_1_rigid_body_engine_c_i_affb7b66f769300619e0c61f7d3ab13ee}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!get\+Rigid\+Body\+World@{get\+Rigid\+Body\+World}}
+\index{get\+Rigid\+Body\+World@{get\+Rigid\+Body\+World}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{get\+Rigid\+Body\+World()}{getRigidBodyWorld()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$ r3\+::\+Rigid\+Body\+Engine\+C\+I\+::get\+Rigid\+Body\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get the currently used rigid body world. \mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}\label{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!set\+Rigid\+Body\+World@{set\+Rigid\+Body\+World}}
+\index{set\+Rigid\+Body\+World@{set\+Rigid\+Body\+World}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{set\+Rigid\+Body\+World()}{setRigidBodyWorld()}}
+{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+Engine\+C\+I\+::set\+Rigid\+Body\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$}]{rigid\+Body\+World }\end{DoxyParamCaption})}
+
+Set the rigid body world, used for rigid body calculations. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_adb37ed2c686594f9504680be76c2dcbc}\label{classr3_1_1_rigid_body_engine_c_i_adb37ed2c686594f9504680be76c2dcbc}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!m\+\_\+collision\+Detector@{m\+\_\+collision\+Detector}}
+\index{m\+\_\+collision\+Detector@{m\+\_\+collision\+Detector}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{m\+\_\+collision\+Detector}{m\_collisionDetector}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_collision_detector}{Collision\+Detector}} r3\+::\+Rigid\+Body\+Engine\+C\+I\+::m\+\_\+collision\+Detector\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a27f09a82ab77919c2fb78869f6d3c035}\label{classr3_1_1_rigid_body_engine_c_i_a27f09a82ab77919c2fb78869f6d3c035}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!m\+\_\+collision\+Resolver@{m\+\_\+collision\+Resolver}}
+\index{m\+\_\+collision\+Resolver@{m\+\_\+collision\+Resolver}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{m\+\_\+collision\+Resolver}{m\_collisionResolver}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classr3_1_1_i_collision_resolver_access}{I\+Collision\+Resolver\+Access}}$>$ r3\+::\+Rigid\+Body\+Engine\+C\+I\+::m\+\_\+collision\+Resolver\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_afd7ae3fcba8b88ec6c31f2df56aae3f6}\label{classr3_1_1_rigid_body_engine_c_i_afd7ae3fcba8b88ec6c31f2df56aae3f6}} 
+\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!m\+\_\+rigid\+Body\+World@{m\+\_\+rigid\+Body\+World}}
+\index{m\+\_\+rigid\+Body\+World@{m\+\_\+rigid\+Body\+World}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
+\subsubsection{\texorpdfstring{m\+\_\+rigid\+Body\+World}{m\_rigidBodyWorld}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}}$\ast$ r3\+::\+Rigid\+Body\+Engine\+C\+I\+::m\+\_\+rigid\+Body\+World\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_engine_c_i_8h}{Rigid\+Body\+Engine\+C\+I.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_engine_c_i_8cpp}{Rigid\+Body\+Engine\+C\+I.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,3 @@
+<map id="r3::CollisionSphere" name="r3::CollisionSphere">
+<area shape="rect" id="node2" href="$classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n|# m_body\l# m_offset\l# m_transform\l|+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="5,5,153,200"/>
+</map>

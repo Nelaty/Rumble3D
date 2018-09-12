@@ -1,0 +1,135 @@
+\hypertarget{classr3_1_1_default_particle_engine_c_i}{}\section{r3\+:\+:Default\+Particle\+Engine\+CI Class Reference}
+\label{classr3_1_1_default_particle_engine_c_i}\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+
+
+{\ttfamily \#include $<$Default\+Particle\+Engine\+C\+I.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Default\+Particle\+Engine\+CI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classr3_1_1_default_particle_engine_c_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Default\+Particle\+Engine\+CI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classr3_1_1_default_particle_engine_c_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a58fd25bfac329775ac6031a07bd64fbb}{Default\+Particle\+Engine\+CI}} (unsigned int max\+Contacts, unsigned int iterations=0, \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$particle\+World=nullptr)
+\item 
+\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}{$\sim$\+Default\+Particle\+Engine\+CI}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}{on\+Begin}} () override
+\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}{step}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
+\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}{integrate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
+\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}{on\+End}} () override
+\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}{reset}} () override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}{run\+Collision\+Solver}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
+\item 
+unsigned \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c1656d633de4f1bc254020}{generate\+Contacts}} () const
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a58fd25bfac329775ac6031a07bd64fbb}\label{classr3_1_1_default_particle_engine_c_i_a58fd25bfac329775ac6031a07bd64fbb}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!Default\+Particle\+Engine\+CI@{Default\+Particle\+Engine\+CI}}
+\index{Default\+Particle\+Engine\+CI@{Default\+Particle\+Engine\+CI}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{Default\+Particle\+Engine\+C\+I()}{DefaultParticleEngineCI()}}
+{\footnotesize\ttfamily r3\+::\+Default\+Particle\+Engine\+C\+I\+::\+Default\+Particle\+Engine\+CI (\begin{DoxyParamCaption}\item[{unsigned int}]{max\+Contacts,  }\item[{unsigned int}]{iterations = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$}]{particle\+World = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}\label{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!````~Default\+Particle\+Engine\+CI@{$\sim$\+Default\+Particle\+Engine\+CI}}
+\index{````~Default\+Particle\+Engine\+CI@{$\sim$\+Default\+Particle\+Engine\+CI}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{$\sim$\+Default\+Particle\+Engine\+C\+I()}{~DefaultParticleEngineCI()}}
+{\footnotesize\ttfamily r3\+::\+Default\+Particle\+Engine\+C\+I\+::$\sim$\+Default\+Particle\+Engine\+CI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c1656d633de4f1bc254020}\label{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c1656d633de4f1bc254020}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!generate\+Contacts@{generate\+Contacts}}
+\index{generate\+Contacts@{generate\+Contacts}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{generate\+Contacts()}{generateContacts()}}
+{\footnotesize\ttfamily unsigned r3\+::\+Default\+Particle\+Engine\+C\+I\+::generate\+Contacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}\label{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!integrate@{integrate}}
+\index{integrate@{integrate}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::integrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a162250f2b6efbd85460bd0f780d42cff}{r3\+::\+I\+Computation\+Interface}}.
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}\label{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!on\+Begin@{on\+Begin}}
+\index{on\+Begin@{on\+Begin}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{on\+Begin()}{onBegin()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::on\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba064ac6a032ef07edd7}{r3\+::\+I\+Computation\+Interface}}.
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}\label{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!on\+End@{on\+End}}
+\index{on\+End@{on\+End}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{on\+End()}{onEnd()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::on\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414c74fe6f5a8f4a6c7d}{r3\+::\+I\+Computation\+Interface}}.
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}\label{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!reset@{reset}}
+\index{reset@{reset}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd4e714788d0968851007}{r3\+::\+I\+Computation\+Interface}}.
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}\label{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!run\+Collision\+Solver@{run\+Collision\+Solver}}
+\index{run\+Collision\+Solver@{run\+Collision\+Solver}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{run\+Collision\+Solver()}{runCollisionSolver()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::run\+Collision\+Solver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}\label{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!step@{step}}
+\index{step@{step}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{step()}{step()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_aaa12bcc35005f32a1984b38de97696cb}{r3\+::\+I\+Computation\+Interface}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_default_particle_engine_c_i_8h}{Default\+Particle\+Engine\+C\+I.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_default_particle_engine_c_i_8cpp}{Default\+Particle\+Engine\+C\+I.\+cpp}}\end{DoxyCompactItemize}
