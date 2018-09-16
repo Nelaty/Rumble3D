@@ -11,8 +11,9 @@ namespace r3
 		~BoxSphereNarrowAlgorithm();
 
 	protected:
-		bool generateContactData(CollisionBox* first,
-								 CollisionSphere* second,
-								 CollisionData& collisionData) override;
+		bool generateContactDataImpl(RigidBody* rbBox, CollisionBox* box,
+									 RigidBody* rbSphere, CollisionSphere* sphere,
+									 CollisionData& collisionData) override;
+
 	};
 }

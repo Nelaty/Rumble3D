@@ -12,6 +12,11 @@ namespace r3
 
 	void PhysicsEngine::tick(const real timeDelta)
 	{
+		if(m_paused)
+		{
+			return;
+		}
+
 		onBegin();
 		step(timeDelta);
 		integrate(timeDelta);
@@ -55,6 +60,21 @@ namespace r3
 		const auto module = removedModule->second;
 		m_modules.erase(removedModule);
 		return module;
+	}
+
+	bool PhysicsEngine::isPaused() const
+	{
+		return m_paused;
+	}
+
+	void PhysicsEngine::pause()
+	{
+		m_paused = true;
+	}
+
+	void PhysicsEngine::resume()
+	{
+		m_paused = false;
 	}
 
 	void PhysicsEngine::onBegin()

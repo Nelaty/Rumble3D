@@ -9,9 +9,9 @@ namespace r3
 	SphereSphereNarrowAlgorithm::~SphereSphereNarrowAlgorithm()
 	= default;
 
-	bool SphereSphereNarrowAlgorithm::generateContactData(CollisionSphere* first,
-														  CollisionSphere* second,
-														  CollisionData& collisionData)
+	bool SphereSphereNarrowAlgorithm::generateContactDataImpl(RigidBody* rbSphere1, CollisionSphere* sphere1,
+															  RigidBody* rbSphere2, CollisionSphere* sphere2,
+															  CollisionData& collisionData)
 	{
 		/// \todo implement
 		return false;

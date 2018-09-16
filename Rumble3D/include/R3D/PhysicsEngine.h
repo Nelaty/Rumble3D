@@ -10,7 +10,7 @@ namespace r3
 	class PhysicsEngineModule;
 
 	/**
-	 * The PhysicsEngine is the main component of this library and consists
+	 * \brief The PhysicsEngine is the main component of this library and consists
 	 * of multiple PhysicsEngineModule.
 	 */
 	class R3D_DECLSPEC PhysicsEngine
@@ -20,12 +20,12 @@ namespace r3
 		~PhysicsEngine();
 
 		/** 
-		 * Update all enabled physic modules. 
+		 * \brief Update all enabled physic modules. 
 		 */
 		void tick(real timeDelta);
 
 		/** 
-		 * Try to find an existing module.
+		 * \brief Try to find an existing module.
 		 * \return The found module or nullptr if the module doesn't exist.
 		 */
 		PhysicsEngineModule* findModule(const std::string& key) const;
@@ -37,36 +37,51 @@ namespace r3
 		bool isModuleRegistered(const std::string& key) const;
 
 		/** 
-		 * Register a new physics module with a given key. Fails, when a
+		 * \brief Register a new physics module with a given key. Fails, when a
 		 * module with the same key is already registered.
 		 * \return The registered module or an existing module with the same key.
 		 */
 		PhysicsEngineModule* registerModule(PhysicsEngineModule* module, const std::string& key);
 
 		/**
-		 * Unregister an existing physics module. 
+		 * \brief Unregister an existing physics module. 
 		 * \return The unregistered module or nullptr if the module doesn't exist.
 		 */
 		PhysicsEngineModule* unregisterModule(const std::string& key);		
 
+		/**
+		 * \brief Check if the simulation is currently paused.
+		 * \return True if the simulation is paused, false otherwise.
+		 */
+		bool isPaused() const;
+		/**
+		 * \brief Pause the physic simulation.
+		 */
+		void pause();
+		/**
+		 * \brief Resume the physic simulation, if it was paused.
+		 */
+		void resume();
+
 	private:
 		/** 
-		 * Calls onBegin function on every module. 
+		 * \brief Calls onBegin function on every module. 
 		 */
 		void onBegin();
 		/** 
-		 * Calls onEnd function on every module. 
+		 * \brief Calls onEnd function on every module. 
 		 */
 		void onEnd();
 		/** 
-		 * Calls step function on every module. 
+		 * \brief Calls step function on every module. 
 		 */
 		void step(real timeDelta);
 		/** 
-		 * Calls integrate function on every module. 
+		 * \brief Calls integrate function on every module. 
 		 */
 		void integrate(real timeDelta);
 
+		bool m_paused;
 		std::map<std::string, PhysicsEngineModule*> m_modules;
 	};
 

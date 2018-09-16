@@ -7,20 +7,22 @@ namespace r3
 	IBoxSphereNarrowAlgorithm::~IBoxSphereNarrowAlgorithm()
 	= default;
 
-	bool IBoxSphereNarrowAlgorithm::generateContactData(CollisionPrimitive* first, 
-														CollisionPrimitive* second,
+	bool IBoxSphereNarrowAlgorithm::generateContactData(RigidBody* first,
+														RigidBody* second,
 														CollisionData& collisionData)
 	{
-		return generateContactData(static_cast<CollisionBox*>(first),
-								   static_cast<CollisionSphere*>(second),
-								   collisionData);
-	}
+		// Check if the first collision primitive is a sphere
+		bool needSwap = first->getCollisionPrimitive()->getType() == R3D_PRIMITIVE_SPHERE;
 
-	bool IBoxSphereNarrowAlgorithm::generateContactData(CollisionSphere* first,
-														CollisionBox* second,
-														CollisionData& collisionData)
-	{
-		return generateContactData(second, first, collisionData);
+		RigidBody* rbBox = needSwap ? second : first;
+		RigidBody* rbSphere = needSwap ? first : second;
+
+		const auto box = static_cast<CollisionBox*>(rbBox->getCollisionPrimitive());
+		const auto sphere = static_cast<CollisionSphere*>(rbSphere->getCollisionPrimitive());
+
+		return generateContactDataImpl(rbBox, box,
+									   rbSphere, sphere,
+									   collisionData);
 	}
 
 	IBoxSphereNarrowAlgorithm::IBoxSphereNarrowAlgorithm()

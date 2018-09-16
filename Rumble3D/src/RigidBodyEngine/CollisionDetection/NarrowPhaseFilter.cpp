@@ -41,6 +41,6 @@ namespace r3
 		auto algorithm = m_algorithms.getAlgorithm(firstCollider->getType(),
 												   secondCollider->getType());
 
-		algorithm->generateContactData(firstCollider, secondCollider, collisions);
+		algorithm->generateContactData(first, second, collisions);
 	}
 }

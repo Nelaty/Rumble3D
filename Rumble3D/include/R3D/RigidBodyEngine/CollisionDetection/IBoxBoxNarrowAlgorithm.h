@@ -12,14 +12,14 @@ namespace r3
 	public:
 		virtual ~IBoxBoxNarrowAlgorithm();
 
-		bool generateContactData(CollisionPrimitive* first, 
-								 CollisionPrimitive* second,
+		bool generateContactData(RigidBody* first,
+								 RigidBody* second,
 								 CollisionData& collisionData) override final;
 
 	protected:
-		virtual bool generateContactData(CollisionBox* first,
-										 CollisionBox* second,
-										 CollisionData& collisionData) = 0;
+		virtual bool generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1,
+											 RigidBody* rbBox2, CollisionBox* box2,
+											 CollisionData& collisionData) = 0;
 
 		explicit IBoxBoxNarrowAlgorithm();
 	};

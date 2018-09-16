@@ -6,13 +6,16 @@ namespace r3
 	IBoxBoxNarrowAlgorithm::~IBoxBoxNarrowAlgorithm()
 	= default;
 
-	bool IBoxBoxNarrowAlgorithm::generateContactData(CollisionPrimitive* first,
-													 CollisionPrimitive* second,
+	bool IBoxBoxNarrowAlgorithm::generateContactData(RigidBody* first,
+													 RigidBody* second,
 													 CollisionData& collisionData)
 	{
-		return generateContactData(static_cast<CollisionBox*>(first),
-								   static_cast<CollisionBox*>(second),
-								   collisionData);
+		const auto box1 = static_cast<CollisionBox*>(first->getCollisionPrimitive());
+		const auto box2 = static_cast<CollisionBox*>(second->getCollisionPrimitive());
+
+		return generateContactDataImpl(first, box1,
+									   second, box2,
+									   collisionData);
 	}
 
 	IBoxBoxNarrowAlgorithm::IBoxBoxNarrowAlgorithm()

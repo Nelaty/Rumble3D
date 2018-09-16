@@ -11,8 +11,8 @@ namespace r3
 		~BoxBoxNarrowAlgorithm();
 
 	protected:
-		bool generateContactData(CollisionBox* first,
-								 CollisionBox* second,
-								 CollisionData& collisionData) override;
+		bool generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1,
+									 RigidBody* rbBox2, CollisionBox* box2,
+									 CollisionData& collisionData) override;
 	};
 }

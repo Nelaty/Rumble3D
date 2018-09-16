@@ -26,6 +26,9 @@ namespace r3
 		void freeMemory(CollisionPrimitiveType firstShape,
 						CollisionPrimitiveType secondShape);
 
-		std::array<std::array<INarrowPhaseAlgorithm*, R3D_PRIMITIVE_SPHERE>, R3D_PRIMITIVE_SPHERE> m_algorithms;
+		void init();
+
+		static constexpr int s_algCount = R3D_PRIMITIVE_TYPE_COUNT;
+		std::array<std::array<INarrowPhaseAlgorithm*, s_algCount>, s_algCount> m_algorithms{};
 	};
 }

@@ -10,9 +10,9 @@ namespace r3
 	BoxSphereNarrowAlgorithm::~BoxSphereNarrowAlgorithm()
 	= default;
 
-	bool BoxSphereNarrowAlgorithm::generateContactData(CollisionBox* first,
-													   CollisionSphere* second,
-													   CollisionData& collisionData)
+	bool BoxSphereNarrowAlgorithm::generateContactDataImpl(RigidBody* rbBox, CollisionBox* box,
+														   RigidBody* rbSphere, CollisionSphere* sphere, 
+														   CollisionData& collisionData)
 	{
 		/// \todo implement
 		return false;

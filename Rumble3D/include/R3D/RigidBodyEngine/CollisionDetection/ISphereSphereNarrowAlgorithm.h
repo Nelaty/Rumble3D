@@ -12,14 +12,14 @@ namespace r3
 	public:
 		virtual ~ISphereSphereNarrowAlgorithm();
 
-		bool generateContactData(CollisionPrimitive* first,
-								 CollisionPrimitive* second,
+		bool generateContactData(RigidBody* first,
+								 RigidBody* second,
 								 CollisionData& collisionData) override final;
 
 	protected:
-		virtual bool generateContactData(CollisionSphere* first,
-										 CollisionSphere* second,
-										 CollisionData& collisionData) = 0;
+		virtual bool generateContactDataImpl(RigidBody* rbSphere1, CollisionSphere* sphere1,
+											 RigidBody* rbSphere2, CollisionSphere* sphere2,
+											 CollisionData& collisionData) = 0;
 
 		explicit ISphereSphereNarrowAlgorithm();
 	};

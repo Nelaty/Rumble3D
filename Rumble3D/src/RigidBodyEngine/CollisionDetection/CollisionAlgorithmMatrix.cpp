@@ -6,7 +6,9 @@
 namespace r3
 {
 	CollisionAlgorithmMatrix::CollisionAlgorithmMatrix()
-	= default;
+	{
+		init();
+	}
 
 	CollisionAlgorithmMatrix::~CollisionAlgorithmMatrix()
 	= default;
@@ -39,5 +41,16 @@ namespace r3
 		INarrowPhaseAlgorithm* algorithm = nullptr;
 		std::swap(algorithm, m_algorithms[firstShape][secondShape]);
 		delete algorithm;
+	}
+
+	void CollisionAlgorithmMatrix::init()
+	{
+		for(int i = 0; i < s_algCount; ++i)
+		{
+			for(int j = 0; j < s_algCount; ++j)
+			{
+				m_algorithms[i][j] = nullptr;
+			}
+		}
 	}
 }
