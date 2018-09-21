@@ -57,4 +57,26 @@ namespace r3
 	{
 		return m_rotation;
 	}
+
+	glm::vec3 Transform3D::getPointInLocalSpace(const glm::vec3& point) const
+	{
+		glm::vec3 temp = point;
+		temp -= m_position;
+		return inverse(m_rotation) * temp;
+	}
+
+	glm::vec3 Transform3D::getPointInWorldSpace(const glm::vec3& point) const
+	{
+		return m_rotation * point + m_position;
+	}
+
+	glm::vec3 Transform3D::getDirectionInLocalSpace(const glm::vec3& direction) const
+	{
+		return glm::inverse(m_rotation) * direction;
+	}
+
+	glm::vec3 Transform3D::getDirectionInWorldSpace(const glm::vec3& direction) const
+	{
+		return m_rotation * direction;
+	}
 }

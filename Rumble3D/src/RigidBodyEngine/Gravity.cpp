@@ -18,6 +18,6 @@ namespace r3
 			return;
 		}
 	
-		body->addForce(m_gravity * body->getMass() * timeDelta);
+		body->addForce(m_gravity * body->getMass());
 	}
 }

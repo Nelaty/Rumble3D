@@ -9,7 +9,8 @@ namespace r3
 	public:
 		virtual ~ICollisionResolutionFilter();
 
-		virtual void resolve(const CollisionData& collisionData) = 0;
+		virtual void resolve(CollisionData& collisionData,
+							 real timeDelta) = 0;
 
 	protected:
 		explicit ICollisionResolutionFilter();

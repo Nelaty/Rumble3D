@@ -6,14 +6,14 @@ namespace r3
 {
 	class ContactOld;
 
-	class R3D_DECLSPEC ContactResolver
+	class R3D_DECLSPEC ContactResolverOld
 	{
 	public:
 		/**
 		* Creates a new contact resolver with the given number of iterations
 		* per resolution call, and optional epsilon values.
 		*/
-		explicit ContactResolver(unsigned iterations,
+		explicit ContactResolverOld(unsigned iterations,
 								 real velocityEpsilon = real(0.01f),
 								 real positionEpsilon = real(0.01f));
 
@@ -21,7 +21,7 @@ namespace r3
 		* Creates a new contact resolver with the given number of iterations
 		* for each kind of resolution, and optional epsilon values.
 		*/
-		ContactResolver(unsigned velocityIterations,
+		ContactResolverOld(unsigned velocityIterations,
 						unsigned positionIterations,
 						real velocityEpsilon = real(0.01f),
 						real positionEpsilon = real(0.01f));
@@ -90,12 +90,6 @@ namespace r3
 		* last call to resolve contacts.
 		*/
 		unsigned m_positionIterationsUsed;
-
-		/**
-		* Keeps track of whether the internal settings are valid.
-		*/
-		bool m_validSettings;
-		unsigned m_iterations;
 	};
 
 }

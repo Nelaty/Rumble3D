@@ -1,0 +1,164 @@
+\hypertarget{classr3_1_1_contact_resolver_old}{}\section{r3\+:\+:Contact\+Resolver\+Old Class Reference}
+\label{classr3_1_1_contact_resolver_old}\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+
+
+{\ttfamily \#include $<$Contact\+Resolver\+Old.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Contact\+Resolver\+Old\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{classr3_1_1_contact_resolver_old__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_contact_resolver_old_a9b2d9927dcfba2d902d6c8e8f725dfcf}{Contact\+Resolver\+Old}} (unsigned iterations, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} velocity\+Epsilon=\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(0.\+01f), real position\+Epsilon=real(0.\+01f))
+\item 
+\mbox{\hyperlink{classr3_1_1_contact_resolver_old_a9f10b1a0e16f606009acd1b7aa4c323e}{Contact\+Resolver\+Old}} (unsigned velocity\+Iterations, unsigned position\+Iterations, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} velocity\+Epsilon=\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(0.\+01f), real position\+Epsilon=real(0.\+01f))
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a4b113c78a4f91abfac75695f620a8dfb}{set\+Iterations}} (unsigned iterations)
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_ae5e46bdbe789c1930696f2ea291c151f}{set\+Iterations}} (unsigned velocity\+Iterations, unsigned position\+Iterations)
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a972b47bd724a0c276d798a3e933c7aa5}{set\+Epsilon}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} velocity\+Epsilon, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} position\+Epsilon)
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a2b16b59e10be1e9fc64b860bb86d149d}{resolve\+Contacts}} (\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$contacts, unsigned num\+Contacts, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_aec82455efcca455ec890ad434bbdb900}{prepare\+Contacts}} (\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$contacts, unsigned num\+Contacts, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a36ab454cb770c45cba109ee8516d9711}{adjust\+Velocities}} (\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$c, unsigned num\+Contacts, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
+\item 
+void \mbox{\hyperlink{classr3_1_1_contact_resolver_old_ae0e628862589a4075945d0171a05cba4}{adjust\+Positions}} (\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$c, unsigned num\+Contacts, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
+\item 
+bool \mbox{\hyperlink{classr3_1_1_contact_resolver_old_ac5642b09a3e325182c7923a352f8adb4}{is\+Valid}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classr3_1_1_contact_resolver_old_ac2829b208a21c2cb3902cee603e07bdd}{m\+\_\+velocity\+Iterations}}
+\item 
+unsigned \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a3ed5ff0480a616abaf4b2419cd17d914}{m\+\_\+position\+Iterations}}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a13d89abda1eafba06fce820a9216c028}{m\+\_\+velocity\+Epsilon}}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a3c78dc280aa7b4c225efe5ad0c463dba}{m\+\_\+position\+Epsilon}}
+\item 
+unsigned \mbox{\hyperlink{classr3_1_1_contact_resolver_old_ac93418569aaadc1fed711b9d7902ac56}{m\+\_\+velocity\+Iterations\+Used}}
+\item 
+unsigned \mbox{\hyperlink{classr3_1_1_contact_resolver_old_a88dc91918290c9d56f3556c3ecf3f83f}{m\+\_\+position\+Iterations\+Used}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a9b2d9927dcfba2d902d6c8e8f725dfcf}\label{classr3_1_1_contact_resolver_old_a9b2d9927dcfba2d902d6c8e8f725dfcf}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!Contact\+Resolver\+Old@{Contact\+Resolver\+Old}}
+\index{Contact\+Resolver\+Old@{Contact\+Resolver\+Old}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{Contact\+Resolver\+Old()}{ContactResolverOld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily r3\+::\+Contact\+Resolver\+Old\+::\+Contact\+Resolver\+Old (\begin{DoxyParamCaption}\item[{unsigned}]{iterations,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{velocity\+Epsilon = {\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(0.01f)},  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{position\+Epsilon = {\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(0.01f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+Creates a new contact resolver with the given number of iterations per resolution call, and optional epsilon values. \mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a9f10b1a0e16f606009acd1b7aa4c323e}\label{classr3_1_1_contact_resolver_old_a9f10b1a0e16f606009acd1b7aa4c323e}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!Contact\+Resolver\+Old@{Contact\+Resolver\+Old}}
+\index{Contact\+Resolver\+Old@{Contact\+Resolver\+Old}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{Contact\+Resolver\+Old()}{ContactResolverOld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily r3\+::\+Contact\+Resolver\+Old\+::\+Contact\+Resolver\+Old (\begin{DoxyParamCaption}\item[{unsigned}]{velocity\+Iterations,  }\item[{unsigned}]{position\+Iterations,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{velocity\+Epsilon = {\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(0.01f)},  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{position\+Epsilon = {\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(0.01f)} }\end{DoxyParamCaption})}
+
+Creates a new contact resolver with the given number of iterations for each kind of resolution, and optional epsilon values. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_ae0e628862589a4075945d0171a05cba4}\label{classr3_1_1_contact_resolver_old_ae0e628862589a4075945d0171a05cba4}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!adjust\+Positions@{adjust\+Positions}}
+\index{adjust\+Positions@{adjust\+Positions}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{adjust\+Positions()}{adjustPositions()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::adjust\+Positions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$}]{c,  }\item[{unsigned}]{num\+Contacts,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a36ab454cb770c45cba109ee8516d9711}\label{classr3_1_1_contact_resolver_old_a36ab454cb770c45cba109ee8516d9711}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!adjust\+Velocities@{adjust\+Velocities}}
+\index{adjust\+Velocities@{adjust\+Velocities}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{adjust\+Velocities()}{adjustVelocities()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::adjust\+Velocities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$}]{c,  }\item[{unsigned}]{num\+Contacts,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_ac5642b09a3e325182c7923a352f8adb4}\label{classr3_1_1_contact_resolver_old_ac5642b09a3e325182c7923a352f8adb4}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{is\+Valid()}{isValid()}}
+{\footnotesize\ttfamily bool r3\+::\+Contact\+Resolver\+Old\+::is\+Valid (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_aec82455efcca455ec890ad434bbdb900}\label{classr3_1_1_contact_resolver_old_aec82455efcca455ec890ad434bbdb900}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!prepare\+Contacts@{prepare\+Contacts}}
+\index{prepare\+Contacts@{prepare\+Contacts}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{prepare\+Contacts()}{prepareContacts()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::prepare\+Contacts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$}]{contacts,  }\item[{unsigned}]{num\+Contacts,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a2b16b59e10be1e9fc64b860bb86d149d}\label{classr3_1_1_contact_resolver_old_a2b16b59e10be1e9fc64b860bb86d149d}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!resolve\+Contacts@{resolve\+Contacts}}
+\index{resolve\+Contacts@{resolve\+Contacts}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{resolve\+Contacts()}{resolveContacts()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::resolve\+Contacts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_contact_old}{Contact\+Old}} $\ast$}]{contacts,  }\item[{unsigned}]{num\+Contacts,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a972b47bd724a0c276d798a3e933c7aa5}\label{classr3_1_1_contact_resolver_old_a972b47bd724a0c276d798a3e933c7aa5}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!set\+Epsilon@{set\+Epsilon}}
+\index{set\+Epsilon@{set\+Epsilon}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{set\+Epsilon()}{setEpsilon()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::set\+Epsilon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{velocity\+Epsilon,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{position\+Epsilon }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a4b113c78a4f91abfac75695f620a8dfb}\label{classr3_1_1_contact_resolver_old_a4b113c78a4f91abfac75695f620a8dfb}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!set\+Iterations@{set\+Iterations}}
+\index{set\+Iterations@{set\+Iterations}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{set\+Iterations()}{setIterations()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::set\+Iterations (\begin{DoxyParamCaption}\item[{unsigned}]{iterations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_ae5e46bdbe789c1930696f2ea291c151f}\label{classr3_1_1_contact_resolver_old_ae5e46bdbe789c1930696f2ea291c151f}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!set\+Iterations@{set\+Iterations}}
+\index{set\+Iterations@{set\+Iterations}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{set\+Iterations()}{setIterations()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Resolver\+Old\+::set\+Iterations (\begin{DoxyParamCaption}\item[{unsigned}]{velocity\+Iterations,  }\item[{unsigned}]{position\+Iterations }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a3c78dc280aa7b4c225efe5ad0c463dba}\label{classr3_1_1_contact_resolver_old_a3c78dc280aa7b4c225efe5ad0c463dba}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!m\+\_\+position\+Epsilon@{m\+\_\+position\+Epsilon}}
+\index{m\+\_\+position\+Epsilon@{m\+\_\+position\+Epsilon}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+position\+Epsilon}{m\_positionEpsilon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Contact\+Resolver\+Old\+::m\+\_\+position\+Epsilon\hspace{0.3cm}{\ttfamily [protected]}}
+
+To avoid instability penetrations smaller than this value are considered to be not interpenetrating. Too small and the simulation may be unstable, too large and the bodies may interpenetrate visually. A good starting point is the default of0.\+01. \mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a3ed5ff0480a616abaf4b2419cd17d914}\label{classr3_1_1_contact_resolver_old_a3ed5ff0480a616abaf4b2419cd17d914}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!m\+\_\+position\+Iterations@{m\+\_\+position\+Iterations}}
+\index{m\+\_\+position\+Iterations@{m\+\_\+position\+Iterations}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+position\+Iterations}{m\_positionIterations}}
+{\footnotesize\ttfamily unsigned r3\+::\+Contact\+Resolver\+Old\+::m\+\_\+position\+Iterations\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the number of iterations to perform when resolving position. \mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a88dc91918290c9d56f3556c3ecf3f83f}\label{classr3_1_1_contact_resolver_old_a88dc91918290c9d56f3556c3ecf3f83f}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!m\+\_\+position\+Iterations\+Used@{m\+\_\+position\+Iterations\+Used}}
+\index{m\+\_\+position\+Iterations\+Used@{m\+\_\+position\+Iterations\+Used}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+position\+Iterations\+Used}{m\_positionIterationsUsed}}
+{\footnotesize\ttfamily unsigned r3\+::\+Contact\+Resolver\+Old\+::m\+\_\+position\+Iterations\+Used\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores the number of position iterations used in the last call to resolve contacts. \mbox{\Hypertarget{classr3_1_1_contact_resolver_old_a13d89abda1eafba06fce820a9216c028}\label{classr3_1_1_contact_resolver_old_a13d89abda1eafba06fce820a9216c028}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!m\+\_\+velocity\+Epsilon@{m\+\_\+velocity\+Epsilon}}
+\index{m\+\_\+velocity\+Epsilon@{m\+\_\+velocity\+Epsilon}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+velocity\+Epsilon}{m\_velocityEpsilon}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Contact\+Resolver\+Old\+::m\+\_\+velocity\+Epsilon\hspace{0.3cm}{\ttfamily [protected]}}
+
+To avoid instability velocities smaller than this value are considered to be zero. Too small and the simulation may be unstable, too large and the bodies may interpenetrate visually. A good starting point is the default of 0.\+01. \mbox{\Hypertarget{classr3_1_1_contact_resolver_old_ac2829b208a21c2cb3902cee603e07bdd}\label{classr3_1_1_contact_resolver_old_ac2829b208a21c2cb3902cee603e07bdd}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!m\+\_\+velocity\+Iterations@{m\+\_\+velocity\+Iterations}}
+\index{m\+\_\+velocity\+Iterations@{m\+\_\+velocity\+Iterations}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+velocity\+Iterations}{m\_velocityIterations}}
+{\footnotesize\ttfamily unsigned r3\+::\+Contact\+Resolver\+Old\+::m\+\_\+velocity\+Iterations\hspace{0.3cm}{\ttfamily [protected]}}
+
+Holds the number of iterations to perform when resolving velocity. \mbox{\Hypertarget{classr3_1_1_contact_resolver_old_ac93418569aaadc1fed711b9d7902ac56}\label{classr3_1_1_contact_resolver_old_ac93418569aaadc1fed711b9d7902ac56}} 
+\index{r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}!m\+\_\+velocity\+Iterations\+Used@{m\+\_\+velocity\+Iterations\+Used}}
+\index{m\+\_\+velocity\+Iterations\+Used@{m\+\_\+velocity\+Iterations\+Used}!r3\+::\+Contact\+Resolver\+Old@{r3\+::\+Contact\+Resolver\+Old}}
+\subsubsection{\texorpdfstring{m\+\_\+velocity\+Iterations\+Used}{m\_velocityIterationsUsed}}
+{\footnotesize\ttfamily unsigned r3\+::\+Contact\+Resolver\+Old\+::m\+\_\+velocity\+Iterations\+Used\hspace{0.3cm}{\ttfamily [protected]}}
+
+Stores the number of velocity iterations used in the last call to resolve contacts. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_contact_resolver_old_8h}{Contact\+Resolver\+Old.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_contact_resolver_old_8cpp}{Contact\+Resolver\+Old.\+cpp}}\end{DoxyCompactItemize}

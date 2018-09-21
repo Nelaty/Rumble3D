@@ -36,7 +36,7 @@ void \mbox{\hyperlink{classr3_1_1_contact_old_a7ec291b8cb62e1786f981831ce336f43}
 \item 
 void \mbox{\hyperlink{classr3_1_1_contact_old_a48506cebe73d8bac8fadf2cc3d029be8}{calculate\+Contact\+Basis}} ()
 \item 
-glm\+::vec3 \mbox{\hyperlink{classr3_1_1_contact_old_a177b0e77d9343e4bed0aedef6f9db27d}{calculate\+Frictionless\+Impulse}} (glm\+::mat3 $\ast$inverse\+Inertia\+Tensor)
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_contact_old_aeefaeffa952d193238cc47afeaa098e2}{calculate\+Frictionless\+Impulse}} (glm\+::mat3 $\ast$inverse\+Inertia\+Tensor) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -49,9 +49,9 @@ void \mbox{\hyperlink{classr3_1_1_contact_old_a425c2ea555131d0c2c5a74c8aa375e82}
 \item 
 void \mbox{\hyperlink{classr3_1_1_contact_old_a9dedf16b72b57cfa3f5a007bd02ac6ab}{swap\+Bodies}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_contact_old_a1a33c25d1db50bff1c53461af8e743cf}{apply\+Velocity\+Change}} (glm\+::vec3 velocity\+Change\mbox{[}2\mbox{]}, glm\+::vec3 rotation\+Change\mbox{[}2\mbox{]})
+void \mbox{\hyperlink{classr3_1_1_contact_old_a81284d6f3922ccdccff5bfbbf4d9f7de}{apply\+Velocity\+Change}} (glm\+::vec3 velocity\+Change\mbox{[}2\mbox{]}, glm\+::vec3 rotation\+Change\mbox{[}2\mbox{]}) const
 \item 
-void \mbox{\hyperlink{classr3_1_1_contact_old_a2445a059e17a45b754757edefd36d7d6}{apply\+Position\+Change}} (glm\+::vec3 linear\+Change\mbox{[}2\mbox{]}, glm\+::vec3 angular\+Change\mbox{[}2\mbox{]}, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} penetration)
+void \mbox{\hyperlink{classr3_1_1_contact_old_a2f4e9562823687d3f5c3994f21cd3020}{apply\+Position\+Change}} (glm\+::vec3 linear\+Change\mbox{[}2\mbox{]}, glm\+::vec3 angular\+Change\mbox{[}2\mbox{]}, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} penetration) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -84,7 +84,7 @@ static constexpr \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}
 \subsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-class \mbox{\hyperlink{classr3_1_1_contact_old_a274795e9632d5cb7d5d387fc31136fe5}{Contact\+Resolver}}
+class \mbox{\hyperlink{classr3_1_1_contact_old_a5c951b2e25e6d6159b516c3275bdb3cb}{Contact\+Resolver\+Old}}
 \end{DoxyCompactItemize}
 
 
@@ -104,17 +104,17 @@ class \mbox{\hyperlink{classr3_1_1_contact_old_a274795e9632d5cb7d5d387fc31136fe5
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_contact_old_a2445a059e17a45b754757edefd36d7d6}\label{classr3_1_1_contact_old_a2445a059e17a45b754757edefd36d7d6}} 
+\mbox{\Hypertarget{classr3_1_1_contact_old_a2f4e9562823687d3f5c3994f21cd3020}\label{classr3_1_1_contact_old_a2f4e9562823687d3f5c3994f21cd3020}} 
 \index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!apply\+Position\+Change@{apply\+Position\+Change}}
 \index{apply\+Position\+Change@{apply\+Position\+Change}!r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}}
 \subsubsection{\texorpdfstring{apply\+Position\+Change()}{applyPositionChange()}}
-{\footnotesize\ttfamily void r3\+::\+Contact\+Old\+::apply\+Position\+Change (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{linear\+Change\mbox{[}2\mbox{]},  }\item[{glm\+::vec3}]{angular\+Change\mbox{[}2\mbox{]},  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{penetration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Old\+::apply\+Position\+Change (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{linear\+Change\mbox{[}2\mbox{]},  }\item[{glm\+::vec3}]{angular\+Change\mbox{[}2\mbox{]},  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{penetration }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classr3_1_1_contact_old_a1a33c25d1db50bff1c53461af8e743cf}\label{classr3_1_1_contact_old_a1a33c25d1db50bff1c53461af8e743cf}} 
+\mbox{\Hypertarget{classr3_1_1_contact_old_a81284d6f3922ccdccff5bfbbf4d9f7de}\label{classr3_1_1_contact_old_a81284d6f3922ccdccff5bfbbf4d9f7de}} 
 \index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!apply\+Velocity\+Change@{apply\+Velocity\+Change}}
 \index{apply\+Velocity\+Change@{apply\+Velocity\+Change}!r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}}
 \subsubsection{\texorpdfstring{apply\+Velocity\+Change()}{applyVelocityChange()}}
-{\footnotesize\ttfamily void r3\+::\+Contact\+Old\+::apply\+Velocity\+Change (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{velocity\+Change\mbox{[}2\mbox{]},  }\item[{glm\+::vec3}]{rotation\+Change\mbox{[}2\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+Old\+::apply\+Velocity\+Change (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{velocity\+Change\mbox{[}2\mbox{]},  }\item[{glm\+::vec3}]{rotation\+Change\mbox{[}2\mbox{]} }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_contact_old_a48506cebe73d8bac8fadf2cc3d029be8}\label{classr3_1_1_contact_old_a48506cebe73d8bac8fadf2cc3d029be8}} 
 \index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!calculate\+Contact\+Basis@{calculate\+Contact\+Basis}}
@@ -128,11 +128,11 @@ class \mbox{\hyperlink{classr3_1_1_contact_old_a274795e9632d5cb7d5d387fc31136fe5
 \subsubsection{\texorpdfstring{calculate\+Desired\+Delta\+Velocity()}{calculateDesiredDeltaVelocity()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+Old\+::calculate\+Desired\+Delta\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classr3_1_1_contact_old_a177b0e77d9343e4bed0aedef6f9db27d}\label{classr3_1_1_contact_old_a177b0e77d9343e4bed0aedef6f9db27d}} 
+\mbox{\Hypertarget{classr3_1_1_contact_old_aeefaeffa952d193238cc47afeaa098e2}\label{classr3_1_1_contact_old_aeefaeffa952d193238cc47afeaa098e2}} 
 \index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!calculate\+Frictionless\+Impulse@{calculate\+Frictionless\+Impulse}}
 \index{calculate\+Frictionless\+Impulse@{calculate\+Frictionless\+Impulse}!r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}}
 \subsubsection{\texorpdfstring{calculate\+Frictionless\+Impulse()}{calculateFrictionlessImpulse()}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Contact\+Old\+::calculate\+Frictionless\+Impulse (\begin{DoxyParamCaption}\item[{glm\+::mat3 $\ast$}]{inverse\+Inertia\+Tensor }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Contact\+Old\+::calculate\+Frictionless\+Impulse (\begin{DoxyParamCaption}\item[{glm\+::mat3 $\ast$}]{inverse\+Inertia\+Tensor }\end{DoxyParamCaption}) const}
 
 \mbox{\Hypertarget{classr3_1_1_contact_old_a1a14824b3762a34187d68a920e0a4419}\label{classr3_1_1_contact_old_a1a14824b3762a34187d68a920e0a4419}} 
 \index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!calculate\+Internals@{calculate\+Internals}}
@@ -197,11 +197,11 @@ class \mbox{\hyperlink{classr3_1_1_contact_old_a274795e9632d5cb7d5d387fc31136fe5
 
 
 \subsection{Friends And Related Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_contact_old_a274795e9632d5cb7d5d387fc31136fe5}\label{classr3_1_1_contact_old_a274795e9632d5cb7d5d387fc31136fe5}} 
-\index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!Contact\+Resolver@{Contact\+Resolver}}
-\index{Contact\+Resolver@{Contact\+Resolver}!r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}}
-\subsubsection{\texorpdfstring{Contact\+Resolver}{ContactResolver}}
-{\footnotesize\ttfamily friend class \mbox{\hyperlink{classr3_1_1_contact_resolver}{Contact\+Resolver}}\hspace{0.3cm}{\ttfamily [friend]}}
+\mbox{\Hypertarget{classr3_1_1_contact_old_a5c951b2e25e6d6159b516c3275bdb3cb}\label{classr3_1_1_contact_old_a5c951b2e25e6d6159b516c3275bdb3cb}} 
+\index{r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}!Contact\+Resolver\+Old@{Contact\+Resolver\+Old}}
+\index{Contact\+Resolver\+Old@{Contact\+Resolver\+Old}!r3\+::\+Contact\+Old@{r3\+::\+Contact\+Old}}
+\subsubsection{\texorpdfstring{Contact\+Resolver\+Old}{ContactResolverOld}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classr3_1_1_contact_resolver_old}{Contact\+Resolver\+Old}}\hspace{0.3cm}{\ttfamily [friend]}}
 
 
 

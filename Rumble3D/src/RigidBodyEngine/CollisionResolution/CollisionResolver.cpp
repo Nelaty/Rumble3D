@@ -10,11 +10,18 @@ namespace r3
 	CollisionResolver::~CollisionResolver()
 	= default;
 
-	void CollisionResolver::resolveCollisions(const CollisionData& collisionData)
+	void CollisionResolver::resolveCollisions(CollisionData& collisionData,
+	                                          const real timeDelta)
 	{
+		if(collisionData.isEmpty())
+		{
+			return;
+		}
+
+		collisionData.prepareContacts(timeDelta);
 		for(auto& it : m_filters)
 		{
-			it->resolve(collisionData);
+			it->resolve(collisionData, timeDelta);
 		}
 	}
 

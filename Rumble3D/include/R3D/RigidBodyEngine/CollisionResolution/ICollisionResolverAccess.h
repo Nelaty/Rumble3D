@@ -1,5 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
+#include "R3D/Common/Precision.h"
 
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 
@@ -10,7 +11,8 @@ namespace r3
 	public:
 		virtual ~ICollisionResolverAccess();
 
-		virtual void resolveCollisions(const CollisionData& collisionData) = 0;
+		virtual void resolveCollisions(CollisionData& collisionData,
+									   real timeDelta) = 0;
 
 	protected:
 		explicit ICollisionResolverAccess();

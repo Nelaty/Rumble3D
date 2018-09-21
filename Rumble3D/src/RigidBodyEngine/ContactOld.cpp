@@ -101,7 +101,7 @@ namespace r3
 		m_contactToWorld[2] = contactTangent[1];
 	}
 	
-	glm::vec3 ContactOld::calculateFrictionlessImpulse(glm::mat3* inverseInertiaTensor)
+	glm::vec3 ContactOld::calculateFrictionlessImpulse(glm::mat3* inverseInertiaTensor) const
 	{
 		glm::vec3 impulseContact;
 		
@@ -244,7 +244,7 @@ namespace r3
 	}
 	
 	void ContactOld::applyVelocityChange(glm::vec3 velocityChange[2],
-									  glm::vec3 rotationChange[2])
+									  glm::vec3 rotationChange[2]) const
 	{
 		// Zwischenspeichern der inversen Trägheitstensoren in Weltkoordinaten
 		glm::mat3 inverseInertiaTensor[2];
@@ -298,7 +298,7 @@ namespace r3
 	
 	void ContactOld::applyPositionChange(glm::vec3 linearChange[2],
 									  glm::vec3 angularChange[2],
-	                                  const real penetration)
+	                                  const real penetration) const
 	{
 		const auto angularLimit = static_cast<real>(0.2f);
 		real angularMove[2];

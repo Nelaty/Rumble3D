@@ -34,7 +34,7 @@ namespace r3
 		m_collisions.reset();
 	}
 
-	const CollisionData& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
+	CollisionData& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
 	{
 		reset();
 		if(!m_broadPhaseFilter || !m_narrowPhaseFilter)

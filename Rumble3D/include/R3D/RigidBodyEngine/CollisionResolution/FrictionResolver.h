@@ -11,6 +11,7 @@ namespace r3
 		~FrictionResolver();
 
 
-		void resolve(const CollisionData& collisionData) override;
+		void resolve(CollisionData& collisionData,
+					 real timeDelta) override;
 	};
 }

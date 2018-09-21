@@ -15,10 +15,12 @@ var searchData=
   ['interpenetrationresolver',['InterpenetrationResolver',['../classr3_1_1_interpenetration_resolver.html#a6a739e8121bba89238f0db2a573eb272',1,'r3::InterpenetrationResolver']]],
   ['isawake',['isAwake',['../classr3_1_1_rigid_body.html#a162bb9f31e5214001dabb1bdd94a9fbf',1,'r3::RigidBody']]],
   ['isdead',['isDead',['../classr3_1_1_particle.html#aeeb9dd636d0851bc007ff718ef9140e9',1,'r3::Particle']]],
+  ['isempty',['isEmpty',['../classr3_1_1_collision_data.html#a3b97a4828252625e891c939ad7ce0064',1,'r3::CollisionData']]],
   ['isenabled',['isEnabled',['../classr3_1_1_physics_engine_module.html#add8b93ca3e3e3ec0ff045c15610119ea',1,'r3::PhysicsEngineModule']]],
   ['isfull',['isFull',['../classr3_1_1_broad_phase_collision_data.html#a2a553a4971808f372fc4511bdcd8797c',1,'r3::BroadPhaseCollisionData::isFull()'],['../classr3_1_1_collision_data.html#aebb099e77b79235942a9c0166eb66a78',1,'r3::CollisionData::isFull()']]],
   ['isleaf',['isLeaf',['../classr3_1_1_b_v_h_node.html#a517b40f1a91cda371b3cb786f1c7e155',1,'r3::BVHNode']]],
   ['ismoduleregistered',['isModuleRegistered',['../classr3_1_1_physics_engine.html#ad24c27b1288eb3b4d18be70a5e257e4b',1,'r3::PhysicsEngine']]],
+  ['ispaused',['isPaused',['../classr3_1_1_physics_engine.html#a8978c7f4626cb0c69a79456c304323d2',1,'r3::PhysicsEngine']]],
   ['ispherespherenarrowalgorithm',['ISphereSphereNarrowAlgorithm',['../classr3_1_1_i_sphere_sphere_narrow_algorithm.html#ac7efae14951096a647a7d037f275d75b',1,'r3::ISphereSphereNarrowAlgorithm']]],
-  ['isvalid',['isValid',['../classr3_1_1_contact_resolver.html#a7864d5856905dfc9b083931c891dddc6',1,'r3::ContactResolver']]]
+  ['isvalid',['isValid',['../classr3_1_1_contact_resolver_old.html#ac5642b09a3e325182c7923a352f8adb4',1,'r3::ContactResolverOld']]]
 ];

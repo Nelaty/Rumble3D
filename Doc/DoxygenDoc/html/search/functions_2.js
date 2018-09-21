@@ -2,9 +2,9 @@ var searchData=
 [
   ['calculatecontactbasis',['calculateContactBasis',['../classr3_1_1_contact_old.html#a48506cebe73d8bac8fadf2cc3d029be8',1,'r3::ContactOld']]],
   ['calculatederiveddata',['calculateDerivedData',['../classr3_1_1_rigid_body.html#addae07b8e8842e78012c5f3825e5185a',1,'r3::RigidBody']]],
-  ['calculatedesireddeltavelocity',['calculateDesiredDeltaVelocity',['../classr3_1_1_contact_old.html#a425c2ea555131d0c2c5a74c8aa375e82',1,'r3::ContactOld']]],
-  ['calculatefrictionlessimpulse',['calculateFrictionlessImpulse',['../classr3_1_1_contact_old.html#a177b0e77d9343e4bed0aedef6f9db27d',1,'r3::ContactOld']]],
-  ['calculateinternals',['calculateInternals',['../classr3_1_1_collision_primitive.html#ae27cb70a6812491c2d8de97f22c07ac6',1,'r3::CollisionPrimitive::calculateInternals()'],['../classr3_1_1_contact_old.html#a1a14824b3762a34187d68a920e0a4419',1,'r3::ContactOld::calculateInternals()']]],
+  ['calculatedesireddeltavelocity',['calculateDesiredDeltaVelocity',['../classr3_1_1_contact.html#a3f2c146006389bf6273cdd078763b7a3',1,'r3::Contact::calculateDesiredDeltaVelocity()'],['../classr3_1_1_contact_old.html#a425c2ea555131d0c2c5a74c8aa375e82',1,'r3::ContactOld::calculateDesiredDeltaVelocity()']]],
+  ['calculatefrictionlessimpulse',['calculateFrictionlessImpulse',['../classr3_1_1_contact_old.html#aeefaeffa952d193238cc47afeaa098e2',1,'r3::ContactOld']]],
+  ['calculateinternals',['calculateInternals',['../classr3_1_1_contact.html#a4e00a32cb21ff4fc8ec826f163bcddae',1,'r3::Contact::calculateInternals()'],['../classr3_1_1_collision_primitive.html#ae27cb70a6812491c2d8de97f22c07ac6',1,'r3::CollisionPrimitive::calculateInternals()'],['../classr3_1_1_contact_old.html#a1a14824b3762a34187d68a920e0a4419',1,'r3::ContactOld::calculateInternals()']]],
   ['calculatelocalvelocity',['calculateLocalVelocity',['../classr3_1_1_contact_old.html#a887dcd47a9488b70d07d2cfd319a44a9',1,'r3::ContactOld']]],
   ['calculateseparatingvelocity',['calculateSeparatingVelocity',['../classr3_1_1_particle_contact.html#a50956285c7722f209ffa5f851502e6d9',1,'r3::ParticleContact']]],
   ['calculatetransformationmatrix',['calculateTransformationMatrix',['../classr3_1_1_rigid_body.html#ac2a67d810e9923dc125a0300c718a97a',1,'r3::RigidBody']]],
@@ -23,9 +23,8 @@ var searchData=
   ['collisionresolver',['CollisionResolver',['../classr3_1_1_collision_resolver.html#a7b90e276403fa8422879228a189432fb',1,'r3::CollisionResolver']]],
   ['collisionsphere',['CollisionSphere',['../classr3_1_1_collision_sphere.html#a73ec7fdf016b47a7ed233f86d73c368c',1,'r3::CollisionSphere']]],
   ['contact',['Contact',['../classr3_1_1_contact.html#af2648c9a1e37583ac230a40f4fc6b72d',1,'r3::Contact']]],
-  ['contactgenerator',['ContactGenerator',['../classr3_1_1_contact_generator.html#ae71d8c8d7e9e57ba10de178fe12b4084',1,'r3::ContactGenerator']]],
   ['contactold',['ContactOld',['../classr3_1_1_contact_old.html#aceb62b2ac59cc25dac229907570a1258',1,'r3::ContactOld']]],
-  ['contactresolver',['ContactResolver',['../classr3_1_1_contact_resolver.html#a1728aa5f4a167b00b0c138f6aacf3206',1,'r3::ContactResolver::ContactResolver(unsigned iterations, real velocityEpsilon=real(0.01f), real positionEpsilon=real(0.01f))'],['../classr3_1_1_contact_resolver.html#acb2f7f96722326346fbe0e54d05cfdc9',1,'r3::ContactResolver::ContactResolver(unsigned velocityIterations, unsigned positionIterations, real velocityEpsilon=real(0.01f), real positionEpsilon=real(0.01f))']]],
+  ['contactresolverold',['ContactResolverOld',['../classr3_1_1_contact_resolver_old.html#a9b2d9927dcfba2d902d6c8e8f725dfcf',1,'r3::ContactResolverOld::ContactResolverOld(unsigned iterations, real velocityEpsilon=real(0.01f), real positionEpsilon=real(0.01f))'],['../classr3_1_1_contact_resolver_old.html#a9f10b1a0e16f606009acd1b7aa4c323e',1,'r3::ContactResolverOld::ContactResolverOld(unsigned velocityIterations, unsigned positionIterations, real velocityEpsilon=real(0.01f), real positionEpsilon=real(0.01f))']]],
   ['createparticle',['createParticle',['../classr3_1_1_particle_world.html#a5df8f4d242ab19e7e1a9830ef6131c3c',1,'r3::ParticleWorld']]],
   ['createrigidbody',['createRigidBody',['../classr3_1_1_rigid_body_world.html#a647ca787c02a56c230eb5d50080b561d',1,'r3::RigidBodyWorld']]],
   ['currentlength',['currentLength',['../classr3_1_1_particle_constraint.html#a0d466805c43b474d389609faba308cc0',1,'r3::ParticleConstraint::currentLength()'],['../classr3_1_1_particle_link.html#a5ad76e8eb6f9b78e3589c74e5d5013fc',1,'r3::ParticleLink::currentLength()']]]

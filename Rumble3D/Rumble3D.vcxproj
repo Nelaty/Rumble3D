@@ -223,8 +223,7 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\VelocityResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionSphere.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ContactOld.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\ContactGenerator.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\ContactResolver.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\ContactResolverOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\DefaultRigidBodyEngineCI.cpp" />
     <ClCompile Include="src\RigidBodyEngine\DirectedForce.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ForceGenerator.cpp" />
@@ -307,8 +306,7 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionSphere.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\ContactOld.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\ContactGenerator.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\ContactResolver.h" />
+    <ClInclude Include="include\R3D\RigidBodyEngine\ContactResolverOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\DefaultRigidBodyEngineCI.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\DirectedForce.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\ForceGenerator.h" />

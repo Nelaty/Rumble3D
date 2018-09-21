@@ -82,9 +82,9 @@ Inheritance diagram for r3::ICollisionResolutionFilter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_i_collision_resolution_filter__inherit__graph.png" border="0" usemap="#r3_1_1_i_collision_resolution_filter_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_i_collision_resolution_filter_inherit__map" id="r3_1_1_i_collision_resolution_filter_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_friction_resolver.html" title="{r3::FrictionResolver\n||+ FrictionResolver()\l+ ~FrictionResolver()\l+ resolve()\l}" alt="" coords="5,175,148,281"/>
-<area shape="rect" id="node3" href="classr3_1_1_interpenetration_resolver.html" title="{r3::InterpenetrationResolver\n||+ InterpenetrationResolver()\l+ ~InterpenetrationResolver()\l+ resolve()\l}" alt="" coords="172,175,360,281"/>
-<area shape="rect" id="node4" href="classr3_1_1_velocity_resolver.html" title="{r3::VelocityResolver\n||+ VelocityResolver()\l+ ~VelocityResolver()\l+ resolve()\l}" alt="" coords="385,175,531,281"/>
+<area shape="rect" id="node2" href="classr3_1_1_friction_resolver.html" title="{r3::FrictionResolver\n||+ FrictionResolver()\l+ ~FrictionResolver()\l+ resolve()\l}" alt="" coords="5,189,148,296"/>
+<area shape="rect" id="node3" href="classr3_1_1_interpenetration_resolver.html" title="{r3::InterpenetrationResolver\n||+ InterpenetrationResolver()\l+ ~InterpenetrationResolver()\l+ resolve()\l+ setMaxIterations()\l+ setPositionEpsilon()\l}" alt="" coords="172,175,360,311"/>
+<area shape="rect" id="node4" href="classr3_1_1_velocity_resolver.html" title="{r3::VelocityResolver\n||+ VelocityResolver()\l+ ~VelocityResolver()\l+ resolve()\l+ setMaxIterations()\l+ setVelocityEpsilon()\l}" alt="" coords="384,175,535,311"/>
 </map>
 </div>
 <div class="dynheader">
@@ -97,8 +97,8 @@ Collaboration diagram for r3::ICollisionResolutionFilter:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a89b3382d573308a790d436b9713b02ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html#a89b3382d573308a790d436b9713b02ed">~ICollisionResolutionFilter</a> ()</td></tr>
 <tr class="separator:a89b3382d573308a790d436b9713b02ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ae35c07c585500c409459ef87e5ae15"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html#a9ae35c07c585500c409459ef87e5ae15">resolve</a> (const <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData)=0</td></tr>
-<tr class="separator:a9ae35c07c585500c409459ef87e5ae15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87ef2579e2acaaadef4cd8f9a20005ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html#a87ef2579e2acaaadef4cd8f9a20005ce">resolve</a> (<a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)=0</td></tr>
+<tr class="separator:a87ef2579e2acaaadef4cd8f9a20005ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -157,8 +157,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9ae35c07c585500c409459ef87e5ae15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ae35c07c585500c409459ef87e5ae15">&#9670;&nbsp;</a></span>resolve()</h2>
+<a id="a87ef2579e2acaaadef4cd8f9a20005ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87ef2579e2acaaadef4cd8f9a20005ce">&#9670;&nbsp;</a></span>resolve()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -169,9 +169,19 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void r3::ICollisionResolutionFilter::resolve </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;&#160;</td>
-          <td class="paramname"><em>collisionData</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;&#160;</td>
+          <td class="paramname"><em>collisionData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
+          <td class="paramname"><em>timeDelta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -181,7 +191,7 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classr3_1_1_friction_resolver.html#aa6c4e02ba5ec9759eea10900cdcf44f5">r3::FrictionResolver</a>, <a class="el" href="classr3_1_1_interpenetration_resolver.html#a7a5dfd8678e5b056ec0978e857cca0ef">r3::InterpenetrationResolver</a>, and <a class="el" href="classr3_1_1_velocity_resolver.html#ad3fa33c02dfa07c760ca9bc5c89f49c3">r3::VelocityResolver</a>.</p>
+<p>Implemented in <a class="el" href="classr3_1_1_friction_resolver.html#af26a84959e95749088f713176ec3c096">r3::FrictionResolver</a>, <a class="el" href="classr3_1_1_interpenetration_resolver.html#a7c896a7e8e0321c9f26b3d9c616d16ee">r3::InterpenetrationResolver</a>, and <a class="el" href="classr3_1_1_velocity_resolver.html#a93e8859d1ab3407b073328a58b7caeef">r3::VelocityResolver</a>.</p>
 
 </div>
 </div>

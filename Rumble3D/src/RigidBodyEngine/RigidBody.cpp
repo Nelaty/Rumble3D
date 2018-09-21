@@ -23,6 +23,7 @@ namespace r3
 	{
 		m_physicsMaterial = definition.m_physicsMaterial;
 		m_collisionMask = definition.m_collisionMask;
+		m_collisionPrimitive = definition.m_collisionPrimitive;
 
 		m_inverseMass = definition.m_inverseMass;
 
@@ -34,7 +35,6 @@ namespace r3
 		m_lastFrameAcceleration = definition.m_lastFrameAcceleration;
 		m_rotation = definition.m_rotation;
 
-		m_transformationMatrix = definition.m_transformationMatrix;
 		m_inverseInertiaTensor = definition.m_inverseInertiaTensor;
 		m_inverseInertiaTensorWorld = definition.m_inverseInertiaTensorWorld;
 
@@ -117,27 +117,22 @@ namespace r3
 
 	glm::vec3 RigidBody::getPointInLocalSpace(const glm::vec3& point) const
 	{
-		// return m_transformationMatrix.transformInverse(point);
-
-		glm::vec3 temp = point;
-		temp -= glm::vec3(m_transformationMatrix[3]);
-		return inverse(glm::mat3(m_transformationMatrix)) * temp;
+		return m_transform.getPointInLocalSpace(point);
 	}
 
 	glm::vec3 RigidBody::getPointInWorldSpace(const glm::vec3& point) const
 	{
-		return glm::vec3(m_transformationMatrix * glm::vec4(point, static_cast<real>(1.0f)));
+		return m_transform.getPointInWorldSpace(point);
 	}
 
 	glm::vec3 RigidBody::getDirectionInLocalSpace(const glm::vec3& direction) const
 	{
-		// return m_transformationMatrix.transformInverseDirection(direction);
-		return inverse(glm::mat3(m_transformationMatrix)) * direction;
+		return m_transform.getDirectionInLocalSpace(direction);
 	}
 
 	glm::vec3 RigidBody::getDirectionInWorldSpace(const glm::vec3& direction) const
 	{
-		return glm::mat3(m_transformationMatrix) * direction;
+		return m_transform.getDirectionInWorldSpace(direction);
 	}
 
 	void RigidBody::calculateDerivedData()

@@ -20,9 +20,9 @@ namespace r3
 												  CollisionData& collisions)
 	{
 		const auto& data = broadPhaseData.getCollisions();
-		for(auto& it : data)
+		for(auto i = 0; i < broadPhaseData.getCollisionsUsed(); ++i)
 		{
-			generateCollisionData(it.m_first, it.m_second, collisions);
+			generateCollisionData(data[i].m_first, data[i].m_second, collisions);
 		}
 	}
 

@@ -41,7 +41,7 @@ namespace r3
 		 * Generate a number of contacts for the given rigid bodies
 		 * with the help of the current filters.
 		 */
-		const CollisionData& generateCollisions(const std::vector<RigidBody*>& rigidBodies);
+		CollisionData& generateCollisions(const std::vector<RigidBody*>& rigidBodies);
 
 		/** Set the broad phase filter */
 		void setBroadPhaseFilter(BroadPhaseFilter_Ptr filter);

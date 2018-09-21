@@ -5,7 +5,8 @@ namespace r3
 	FrictionResolver::~FrictionResolver()
 	= default;
 
-	void FrictionResolver::resolve(const CollisionData& collisionData)
+	void FrictionResolver::resolve(CollisionData& collisionData,
+								   real timeDelta)
 	{
 	}
 

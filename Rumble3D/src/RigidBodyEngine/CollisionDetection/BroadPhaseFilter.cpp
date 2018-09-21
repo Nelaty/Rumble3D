@@ -13,5 +13,23 @@ namespace r3
 											  BroadPhaseCollisionData& data)
 	{
 		/// \todo use rigid body mask and layout
+		for(auto i = 0; i < rigidBodies.size(); ++i)
+		{
+			auto* first = rigidBodies[i];
+			for(auto j = i + 1; j < rigidBodies.size(); ++j)
+			{
+				auto* second = rigidBodies[j];
+				auto* collision = data.getAvailableCollision();
+				if(collision != nullptr)
+				{
+					collision->m_first = first;
+					collision->m_second = second;
+				}
+				else
+				{
+					return;
+				}
+			}
+		}
 	}
 }

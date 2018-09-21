@@ -1,7 +1,9 @@
 <map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/RigidBodyDef.h" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/RigidBodyDef.h">
-<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="6,243,177,269"/>
-<area shape="rect" id="node4" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="202,146,352,187"/>
-<area shape="rect" id="node8" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="27,139,178,195"/>
-<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="112,317,181,344"/>
-<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="202,243,374,269"/>
+<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="218,347,389,373"/>
+<area shape="rect" id="node4" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="5,250,156,291"/>
+<area shape="rect" id="node8" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="587,139,737,195"/>
+<area shape="rect" id="node9" href="$_collision_primitive_8h.html" title="R3D/RigidBodyEngine\l/CollisionPrimitive.h" alt="" coords="257,146,408,187"/>
+<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="229,421,298,448"/>
+<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="12,347,184,373"/>
+<area shape="rect" id="node10" href="$_collision_primitive_type_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPrimitiveType.h" alt="" coords="231,243,394,299"/>
 </map>

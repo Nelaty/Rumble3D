@@ -26,15 +26,25 @@ void \mbox{\hyperlink{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7
 \item 
 bool \mbox{\hyperlink{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}{is\+Full}} () const
 \item 
+bool \mbox{\hyperlink{classr3_1_1_collision_data_a3b97a4828252625e891c939ad7ce0064}{is\+Empty}} () const
+\item 
 int \mbox{\hyperlink{classr3_1_1_collision_data_a13e8ade4bbbbc63a1437de9371fea879}{get\+Contacts\+Left}} () const
 \item 
 int \mbox{\hyperlink{classr3_1_1_collision_data_aaf0e65914133cd35cc32224df851561e}{get\+Contacts\+Used}} () const
 \item 
 int \mbox{\hyperlink{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}{get\+Size}} () const
 \item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_data_ae610a57c20c504a7bacb4e35f89f530f}{get\+Friction}} () const
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_data_a4fa1a70757353fe8ae2facc3762f5b2b}{get\+Restitution}} () const
+\item 
 \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_data_ad0e0b85004905b48a8faf7be34bdf305}{get\+Available\+Contact}} ()
 \item 
 std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $>$ \& \mbox{\hyperlink{classr3_1_1_collision_data_acb1bb23e8d0f37f0ebc39e8f7642419f}{get\+Data}} ()
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $>$ \& \mbox{\hyperlink{classr3_1_1_collision_data_ab31745ebb708c1d04e22bcfb385e663f}{get\+Data}} () const
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_data_a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9}{prepare\+Contacts}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
 \end{DoxyCompactItemize}
 
 
@@ -78,10 +88,32 @@ Check how many contacts can still be inserted. \mbox{\Hypertarget{classr3_1_1_co
 Check how many contacts have been inserted. \mbox{\Hypertarget{classr3_1_1_collision_data_acb1bb23e8d0f37f0ebc39e8f7642419f}\label{classr3_1_1_collision_data_acb1bb23e8d0f37f0ebc39e8f7642419f}} 
 \index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Data@{get\+Data}}
 \index{get\+Data@{get\+Data}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
-\subsubsection{\texorpdfstring{get\+Data()}{getData()}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $>$ \& r3\+::\+Collision\+Data\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Get all contacts (only valid to a certain position) \mbox{\Hypertarget{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}\label{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}} 
+Get all contacts (only valid to a certain position) \mbox{\Hypertarget{classr3_1_1_collision_data_ab31745ebb708c1d04e22bcfb385e663f}\label{classr3_1_1_collision_data_ab31745ebb708c1d04e22bcfb385e663f}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_contact}{Contact}} $>$ \& r3\+::\+Collision\+Data\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get all contacts (only valid to a certain position) \mbox{\Hypertarget{classr3_1_1_collision_data_ae610a57c20c504a7bacb4e35f89f530f}\label{classr3_1_1_collision_data_ae610a57c20c504a7bacb4e35f89f530f}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Friction@{get\+Friction}}
+\index{get\+Friction@{get\+Friction}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Friction()}{getFriction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Data\+::get\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]use physic material in rigid body instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classr3_1_1_collision_data_a4fa1a70757353fe8ae2facc3762f5b2b}\label{classr3_1_1_collision_data_a4fa1a70757353fe8ae2facc3762f5b2b}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Restitution@{get\+Restitution}}
+\index{get\+Restitution@{get\+Restitution}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{get\+Restitution()}{getRestitution()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Data\+::get\+Restitution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000003}{Todo}}]use physic material in rigid body instead. \end{DoxyRefDesc}
+\mbox{\Hypertarget{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}\label{classr3_1_1_collision_data_ad0898e21e34b4558dbdd68dd115c49d8}} 
 \index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!get\+Size@{get\+Size}}
 \index{get\+Size@{get\+Size}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
 \subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
@@ -93,13 +125,25 @@ Get the maximal number of contacts. \mbox{\Hypertarget{classr3_1_1_collision_dat
 \subsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void r3\+::\+Collision\+Data\+::init (\begin{DoxyParamCaption}\item[{int}]{contacts\+Max,  }\item[{int}]{iterations }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}\label{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}} 
+\mbox{\Hypertarget{classr3_1_1_collision_data_a3b97a4828252625e891c939ad7ce0064}\label{classr3_1_1_collision_data_a3b97a4828252625e891c939ad7ce0064}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{is\+Empty()}{isEmpty()}}
+{\footnotesize\ttfamily bool r3\+::\+Collision\+Data\+::is\+Empty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check if no contacts are used. \mbox{\Hypertarget{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}\label{classr3_1_1_collision_data_aebb099e77b79235942a9c0166eb66a78}} 
 \index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!is\+Full@{is\+Full}}
 \index{is\+Full@{is\+Full}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
 \subsubsection{\texorpdfstring{is\+Full()}{isFull()}}
 {\footnotesize\ttfamily bool r3\+::\+Collision\+Data\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Check if there is no more room for new contacts. \mbox{\Hypertarget{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}\label{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}} 
+Check if there is no more room for new contacts. \mbox{\Hypertarget{classr3_1_1_collision_data_a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9}\label{classr3_1_1_collision_data_a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9}} 
+\index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!prepare\+Contacts@{prepare\+Contacts}}
+\index{prepare\+Contacts@{prepare\+Contacts}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
+\subsubsection{\texorpdfstring{prepare\+Contacts()}{prepareContacts()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Data\+::prepare\+Contacts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}\label{classr3_1_1_collision_data_af74822ca6881f5ab54447a73ac26d7fd}} 
 \index{r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}!reset@{reset}}
 \index{reset@{reset}!r3\+::\+Collision\+Data@{r3\+::\+Collision\+Data}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}

@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>The <a class="el" href="classr3_1_1_physics_engine.html" title="The PhysicsEngine is the main component of this library and consists of multiple PhysicsEngineModule...">PhysicsEngine</a> is the main component of this library and consists of multiple <a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a>.  
+ <a href="classr3_1_1_physics_engine.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_physics_engine_8h_source.html">PhysicsEngine.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::PhysicsEngine:</div>
@@ -89,18 +92,31 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a37558d625c57485a92a8fc46697fd11c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#a37558d625c57485a92a8fc46697fd11c">~PhysicsEngine</a> ()</td></tr>
 <tr class="separator:a37558d625c57485a92a8fc46697fd11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba6b8345f61da6e9e1baa6c745eb1803"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#aba6b8345f61da6e9e1baa6c745eb1803">tick</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)</td></tr>
+<tr class="memdesc:aba6b8345f61da6e9e1baa6c745eb1803"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update all enabled physic modules.  <a href="#aba6b8345f61da6e9e1baa6c745eb1803">More...</a><br /></td></tr>
 <tr class="separator:aba6b8345f61da6e9e1baa6c745eb1803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60779849b362a1b1b43ef2898c90a3ac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#a60779849b362a1b1b43ef2898c90a3ac">findModule</a> (const std::string &amp;key) const</td></tr>
+<tr class="memdesc:a60779849b362a1b1b43ef2898c90a3ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to find an existing module.  <a href="#a60779849b362a1b1b43ef2898c90a3ac">More...</a><br /></td></tr>
 <tr class="separator:a60779849b362a1b1b43ef2898c90a3ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad24c27b1288eb3b4d18be70a5e257e4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#ad24c27b1288eb3b4d18be70a5e257e4b">isModuleRegistered</a> (const std::string &amp;key) const</td></tr>
 <tr class="separator:ad24c27b1288eb3b4d18be70a5e257e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aead3d2707fa52fc65701a55b811b571e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#aead3d2707fa52fc65701a55b811b571e">registerModule</a> (<a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a> *module, const std::string &amp;key)</td></tr>
+<tr class="memdesc:aead3d2707fa52fc65701a55b811b571e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new physics module with a given key. Fails, when a module with the same key is already registered.  <a href="#aead3d2707fa52fc65701a55b811b571e">More...</a><br /></td></tr>
 <tr class="separator:aead3d2707fa52fc65701a55b811b571e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54dfdfda1b3f7eb33e9603d247f45aa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#a54dfdfda1b3f7eb33e9603d247f45aa8">unregisterModule</a> (const std::string &amp;key)</td></tr>
+<tr class="memdesc:a54dfdfda1b3f7eb33e9603d247f45aa8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an existing physics module.  <a href="#a54dfdfda1b3f7eb33e9603d247f45aa8">More...</a><br /></td></tr>
 <tr class="separator:a54dfdfda1b3f7eb33e9603d247f45aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8978c7f4626cb0c69a79456c304323d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#a8978c7f4626cb0c69a79456c304323d2">isPaused</a> () const</td></tr>
+<tr class="memdesc:a8978c7f4626cb0c69a79456c304323d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the simulation is currently paused.  <a href="#a8978c7f4626cb0c69a79456c304323d2">More...</a><br /></td></tr>
+<tr class="separator:a8978c7f4626cb0c69a79456c304323d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ed605620a6f115f014d3940dc2a5487"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#a6ed605620a6f115f014d3940dc2a5487">pause</a> ()</td></tr>
+<tr class="memdesc:a6ed605620a6f115f014d3940dc2a5487"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pause the physic simulation.  <a href="#a6ed605620a6f115f014d3940dc2a5487">More...</a><br /></td></tr>
+<tr class="separator:a6ed605620a6f115f014d3940dc2a5487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a149087534c28ba2d5118a2b6d652491c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine.html#a149087534c28ba2d5118a2b6d652491c">resume</a> ()</td></tr>
+<tr class="memdesc:a149087534c28ba2d5118a2b6d652491c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resume the physic simulation, if it was paused.  <a href="#a149087534c28ba2d5118a2b6d652491c">More...</a><br /></td></tr>
+<tr class="separator:a149087534c28ba2d5118a2b6d652491c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classr3_1_1_physics_engine.html">PhysicsEngine</a> is the main component of this library and consists of multiple <a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a>. </p>
+<div class="textblock"><p>The <a class="el" href="classr3_1_1_physics_engine.html" title="The PhysicsEngine is the main component of this library and consists of multiple PhysicsEngineModule...">PhysicsEngine</a> is the main component of this library and consists of multiple <a class="el" href="classr3_1_1_physics_engine_module.html">PhysicsEngineModule</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a15ef3c7b786475bec9e2afb24d48ffea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a15ef3c7b786475bec9e2afb24d48ffea">&#9670;&nbsp;</a></span>PhysicsEngine()</h2>
@@ -168,7 +184,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Try to find an existing module. </p><dl class="section return"><dt>Returns</dt><dd>The found module or nullptr if the module doesn't exist. </dd></dl>
+
+<p>Try to find an existing module. </p>
+<dl class="section return"><dt>Returns</dt><dd>The found module or nullptr if the module doesn't exist. </dd></dl>
 
 </div>
 </div>
@@ -188,6 +206,45 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Check if a module with the given key is already registered. </p><dl class="section return"><dt>Returns</dt><dd>True if module is registered. </dd></dl>
+
+</div>
+</div>
+<a id="a8978c7f4626cb0c69a79456c304323d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8978c7f4626cb0c69a79456c304323d2">&#9670;&nbsp;</a></span>isPaused()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool r3::PhysicsEngine::isPaused </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if the simulation is currently paused. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the simulation is paused, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="a6ed605620a6f115f014d3940dc2a5487"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ed605620a6f115f014d3940dc2a5487">&#9670;&nbsp;</a></span>pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::PhysicsEngine::pause </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pause the physic simulation. </p>
 
 </div>
 </div>
@@ -216,7 +273,28 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Register a new physics module with a given key. Fails, when a module with the same key is already registered. </p><dl class="section return"><dt>Returns</dt><dd>The registered module or an existing module with the same key. </dd></dl>
+
+<p>Register a new physics module with a given key. Fails, when a module with the same key is already registered. </p>
+<dl class="section return"><dt>Returns</dt><dd>The registered module or an existing module with the same key. </dd></dl>
+
+</div>
+</div>
+<a id="a149087534c28ba2d5118a2b6d652491c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a149087534c28ba2d5118a2b6d652491c">&#9670;&nbsp;</a></span>resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::PhysicsEngine::resume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Resume the physic simulation, if it was paused. </p>
 
 </div>
 </div>
@@ -235,6 +313,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Update all enabled physic modules. </p>
 
 </div>
@@ -254,7 +333,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Unregister an existing physics module. </p><dl class="section return"><dt>Returns</dt><dd>The unregistered module or nullptr if the module doesn't exist. </dd></dl>
+
+<p>Unregister an existing physics module. </p>
+<dl class="section return"><dt>Returns</dt><dd>The unregistered module or nullptr if the module doesn't exist. </dd></dl>
 
 </div>
 </div>

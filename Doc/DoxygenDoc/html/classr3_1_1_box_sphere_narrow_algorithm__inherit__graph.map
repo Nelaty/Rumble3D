@@ -1,4 +1,4 @@
 <map id="r3::BoxSphereNarrowAlgorithm" name="r3::BoxSphereNarrowAlgorithm">
-<area shape="rect" id="node2" href="$classr3_1_1_i_box_sphere_narrow_algorithm.html" title="{r3::IBoxSphereNarrowAlgorithm\n||+ ~IBoxSphereNarrowAlgorithm()\l+ generateContactData()\l# generateContactData()\l# generateContactData()\l# IBoxSphereNarrowAlgorithm()\l}" alt="" coords="5,160,217,296"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_box_sphere_narrow_algorithm.html" title="{r3::IBoxSphereNarrowAlgorithm\n||+ ~IBoxSphereNarrowAlgorithm()\l+ generateContactData()\l# generateContactDataImpl()\l# IBoxSphereNarrowAlgorithm()\l}" alt="" coords="5,160,217,281"/>
 <area shape="rect" id="node3" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="{r3::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l+ generateContactData()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="19,5,204,112"/>
 </map>

@@ -29,7 +29,11 @@ Collaboration diagram for r3\+:\+:Velocity\+Resolver\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classr3_1_1_velocity_resolver_a508677a0bf2d5258ffc1550677517074}{$\sim$\+Velocity\+Resolver}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_velocity_resolver_ad3fa33c02dfa07c760ca9bc5c89f49c3}{resolve}} (const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override
+void \mbox{\hyperlink{classr3_1_1_velocity_resolver_a93e8859d1ab3407b073328a58b7caeef}{resolve}} (\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
+\item 
+void \mbox{\hyperlink{classr3_1_1_velocity_resolver_af0ec50fd4405261fc97b1985c127d3a6}{set\+Max\+Iterations}} (unsigned int iterations)
+\item 
+void \mbox{\hyperlink{classr3_1_1_velocity_resolver_a91b4f4f3c064f11983ae9dbe40232c86}{set\+Velocity\+Epsilon}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} epsilon)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -39,7 +43,7 @@ void \mbox{\hyperlink{classr3_1_1_velocity_resolver_ad3fa33c02dfa07c760ca9bc5c89
 \index{r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}!Velocity\+Resolver@{Velocity\+Resolver}}
 \index{Velocity\+Resolver@{Velocity\+Resolver}!r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}}
 \subsubsection{\texorpdfstring{Velocity\+Resolver()}{VelocityResolver()}}
-{\footnotesize\ttfamily r3\+::\+Velocity\+Resolver\+::\+Velocity\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily r3\+::\+Velocity\+Resolver\+::\+Velocity\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \mbox{\Hypertarget{classr3_1_1_velocity_resolver_a508677a0bf2d5258ffc1550677517074}\label{classr3_1_1_velocity_resolver_a508677a0bf2d5258ffc1550677517074}} 
 \index{r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}!````~Velocity\+Resolver@{$\sim$\+Velocity\+Resolver}}
@@ -50,15 +54,27 @@ void \mbox{\hyperlink{classr3_1_1_velocity_resolver_ad3fa33c02dfa07c760ca9bc5c89
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_velocity_resolver_ad3fa33c02dfa07c760ca9bc5c89f49c3}\label{classr3_1_1_velocity_resolver_ad3fa33c02dfa07c760ca9bc5c89f49c3}} 
+\mbox{\Hypertarget{classr3_1_1_velocity_resolver_a93e8859d1ab3407b073328a58b7caeef}\label{classr3_1_1_velocity_resolver_a93e8859d1ab3407b073328a58b7caeef}} 
 \index{r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}!resolve@{resolve}}
 \index{resolve@{resolve}!r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}}
 \subsubsection{\texorpdfstring{resolve()}{resolve()}}
-{\footnotesize\ttfamily void r3\+::\+Velocity\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Velocity\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a9ae35c07c585500c409459ef87e5ae15}{r3\+::\+I\+Collision\+Resolution\+Filter}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a87ef2579e2acaaadef4cd8f9a20005ce}{r3\+::\+I\+Collision\+Resolution\+Filter}}.
+
+\mbox{\Hypertarget{classr3_1_1_velocity_resolver_af0ec50fd4405261fc97b1985c127d3a6}\label{classr3_1_1_velocity_resolver_af0ec50fd4405261fc97b1985c127d3a6}} 
+\index{r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}!set\+Max\+Iterations@{set\+Max\+Iterations}}
+\index{set\+Max\+Iterations@{set\+Max\+Iterations}!r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}}
+\subsubsection{\texorpdfstring{set\+Max\+Iterations()}{setMaxIterations()}}
+{\footnotesize\ttfamily void r3\+::\+Velocity\+Resolver\+::set\+Max\+Iterations (\begin{DoxyParamCaption}\item[{unsigned int}]{iterations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_velocity_resolver_a91b4f4f3c064f11983ae9dbe40232c86}\label{classr3_1_1_velocity_resolver_a91b4f4f3c064f11983ae9dbe40232c86}} 
+\index{r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}!set\+Velocity\+Epsilon@{set\+Velocity\+Epsilon}}
+\index{set\+Velocity\+Epsilon@{set\+Velocity\+Epsilon}!r3\+::\+Velocity\+Resolver@{r3\+::\+Velocity\+Resolver}}
+\subsubsection{\texorpdfstring{set\+Velocity\+Epsilon()}{setVelocityEpsilon()}}
+{\footnotesize\ttfamily void r3\+::\+Velocity\+Resolver\+::set\+Velocity\+Epsilon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{epsilon }\end{DoxyParamCaption})}
 
 
 

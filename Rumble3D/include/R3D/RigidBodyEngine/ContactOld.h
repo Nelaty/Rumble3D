@@ -10,7 +10,7 @@ namespace r3
 
 	class R3D_DECLSPEC ContactOld
 	{
-		friend class ContactResolver;
+		friend class ContactResolverOld;
 	
 	public:
 		explicit ContactOld();
@@ -27,7 +27,7 @@ namespace r3
 		void setBodyData(RigidBody* one, RigidBody* two,
 						 real friction, real restitution);
 		void calculateContactBasis();
-		glm::vec3 calculateFrictionlessImpulse(glm::mat3* inverseInertiaTensor);
+		glm::vec3 calculateFrictionlessImpulse(glm::mat3* inverseInertiaTensor) const;
 
 	protected:
 		void calculateInternals(real duration);
@@ -38,10 +38,10 @@ namespace r3
 		void swapBodies();
 
 		void applyVelocityChange(glm::vec3 velocityChange[2],
-								 glm::vec3 rotationChange[2]);
+								 glm::vec3 rotationChange[2]) const;
 		void applyPositionChange(glm::vec3 linearChange[2],
 								 glm::vec3 angularChange[2],
-								 real penetration);
+								 real penetration) const;
 
 		/** 
 		 * \brief The two rigid bodies, which are colliding. 

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['add',['add',['../classr3_1_1_particle_force_registry.html#ae8aafae43e822c8e5a3ccdde802b8aa9',1,'r3::ParticleForceRegistry']]],
-  ['addcontact',['addContact',['../classr3_1_1_particle_cable.html#af8024236316ae2cf7bd68a0e906ed7c7',1,'r3::ParticleCable::addContact()'],['../classr3_1_1_particle_collision.html#ab22f6b1c2d95c925c2dd5241be9b8889',1,'r3::ParticleCollision::addContact()'],['../classr3_1_1_particle_contact_generator.html#a3c9c99fb97a4431f0ddf300b30167d03',1,'r3::ParticleContactGenerator::addContact()'],['../classr3_1_1_particle_link.html#a07abe1381e0b5ed7e1597099dc0c072d',1,'r3::ParticleLink::addContact()'],['../classr3_1_1_contact_generator.html#ad72e6b61035d682f3d424cbd0c6d73c3',1,'r3::ContactGenerator::addContact()']]],
+  ['addcontact',['addContact',['../classr3_1_1_particle_cable.html#af8024236316ae2cf7bd68a0e906ed7c7',1,'r3::ParticleCable::addContact()'],['../classr3_1_1_particle_collision.html#ab22f6b1c2d95c925c2dd5241be9b8889',1,'r3::ParticleCollision::addContact()'],['../classr3_1_1_particle_contact_generator.html#a3c9c99fb97a4431f0ddf300b30167d03',1,'r3::ParticleContactGenerator::addContact()'],['../classr3_1_1_particle_link.html#a07abe1381e0b5ed7e1597099dc0c072d',1,'r3::ParticleLink::addContact()']]],
   ['addcontacts',['addContacts',['../classr3_1_1_collision_data_old.html#ae2b77d8254b53bfa4640ea3ad833370c',1,'r3::CollisionDataOld']]],
   ['addforce',['addForce',['../classr3_1_1_particle.html#a18bc9d9ded382879086eb2820ce787c9',1,'r3::Particle::addForce()'],['../classr3_1_1_rigid_body.html#a3ec9e7463d7c9a6607b35a334049a1e3',1,'r3::RigidBody::addForce()']]],
   ['addforceatbodypoint',['addForceAtBodyPoint',['../classr3_1_1_rigid_body.html#abba1067c4db2d246e3f82b6c1bd35c87',1,'r3::RigidBody']]],
@@ -10,10 +10,10 @@ var searchData=
   ['addrotation',['addRotation',['../classr3_1_1_rigid_body.html#aaa3f92c7abc8b733a3dac8841ff41b61',1,'r3::RigidBody']]],
   ['addtorque',['addTorque',['../classr3_1_1_rigid_body.html#a276ac614e4eab3df963d64401112bd36',1,'r3::RigidBody']]],
   ['addvelocity',['addVelocity',['../classr3_1_1_rigid_body.html#aa3303f1eb97e56d75562525b5e317937',1,'r3::RigidBody']]],
-  ['adjustpositions',['adjustPositions',['../classr3_1_1_contact_resolver.html#a5dc41bad46cf659b93488f7c7db74712',1,'r3::ContactResolver']]],
-  ['adjustvelocities',['adjustVelocities',['../classr3_1_1_contact_resolver.html#aa5d26e400938482f47fd5efa760ea9d3',1,'r3::ContactResolver']]],
+  ['adjustpositions',['adjustPositions',['../classr3_1_1_contact_resolver_old.html#ae0e628862589a4075945d0171a05cba4',1,'r3::ContactResolverOld']]],
+  ['adjustvelocities',['adjustVelocities',['../classr3_1_1_contact_resolver_old.html#a36ab454cb770c45cba109ee8516d9711',1,'r3::ContactResolverOld']]],
   ['anchoredspring',['AnchoredSpring',['../classr3_1_1_anchored_spring.html#a944423598dfb2e3f080f9f9850c8aa13',1,'r3::AnchoredSpring']]],
   ['appendfilter',['appendFilter',['../classr3_1_1_collision_resolver.html#a9409413937188dbd5332c3440c2a8834',1,'r3::CollisionResolver']]],
-  ['applypositionchange',['applyPositionChange',['../classr3_1_1_contact_old.html#a2445a059e17a45b754757edefd36d7d6',1,'r3::ContactOld']]],
-  ['applyvelocitychange',['applyVelocityChange',['../classr3_1_1_contact_old.html#a1a33c25d1db50bff1c53461af8e743cf',1,'r3::ContactOld']]]
+  ['applypositionchange',['applyPositionChange',['../classr3_1_1_contact_old.html#a2f4e9562823687d3f5c3994f21cd3020',1,'r3::ContactOld']]],
+  ['applyvelocitychange',['applyVelocityChange',['../classr3_1_1_contact_old.html#a81284d6f3922ccdccff5bfbbf4d9f7de',1,'r3::ContactOld']]]
 ];

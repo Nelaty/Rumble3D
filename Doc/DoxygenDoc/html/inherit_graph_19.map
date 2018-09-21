@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structr3_1_1_force_registry_1_1_force_registration_entry.html" title="r3::ForceRegistry::\lForceRegistrationEntry" alt="" coords="5,5,160,47"/>
+<area shape="rect" id="node1" href="$classr3_1_1_i_broad_phase_filter.html" title="r3::IBroadPhaseFilter" alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node2" href="$classr3_1_1_broad_phase_filter.html" title="r3::BroadPhaseFilter" alt="" coords="197,5,339,32"/>
 </map>

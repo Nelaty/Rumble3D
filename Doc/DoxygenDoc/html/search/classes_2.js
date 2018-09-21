@@ -14,7 +14,6 @@ var searchData=
   ['collisionresolver',['CollisionResolver',['../classr3_1_1_collision_resolver.html',1,'r3']]],
   ['collisionsphere',['CollisionSphere',['../classr3_1_1_collision_sphere.html',1,'r3']]],
   ['contact',['Contact',['../classr3_1_1_contact.html',1,'r3']]],
-  ['contactgenerator',['ContactGenerator',['../classr3_1_1_contact_generator.html',1,'r3']]],
   ['contactold',['ContactOld',['../classr3_1_1_contact_old.html',1,'r3']]],
-  ['contactresolver',['ContactResolver',['../classr3_1_1_contact_resolver.html',1,'r3']]]
+  ['contactresolverold',['ContactResolverOld',['../classr3_1_1_contact_resolver_old.html',1,'r3']]]
 ];

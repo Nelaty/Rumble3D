@@ -51,8 +51,10 @@ namespace r3
 	CollisionPair* BroadPhaseCollisionData::getAvailableCollision()
 	{
 		if(isFull()) return nullptr;
+
+		const auto result = &m_collisions[m_collisionsUsed];
 		++m_collisionsUsed;
-		return &m_collisions[m_collisionsUsed];
+		return result;
 	}
 
 	std::vector<CollisionPair>& BroadPhaseCollisionData::getCollisions()

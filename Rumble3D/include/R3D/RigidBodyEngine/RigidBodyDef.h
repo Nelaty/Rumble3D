@@ -2,14 +2,17 @@
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/PhysicsMaterial.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionMask.h"
+#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 
 #include <glm/glm.hpp>
+
 
 namespace r3
 {
 	struct R3D_DECLSPEC RigidBodyDef
 	{
 		PhysicsMaterial* m_physicsMaterial{};
+		CollisionPrimitive* m_collisionPrimitive{};
 		CollisionMask m_collisionMask{};
 
 		void setMass(real mass);

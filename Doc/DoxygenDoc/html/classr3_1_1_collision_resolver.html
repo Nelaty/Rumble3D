@@ -106,8 +106,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7b90e276403fa8422879228a189432fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad172d58efecf5ef38f42020f21746f02"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#ad172d58efecf5ef38f42020f21746f02">~CollisionResolver</a> ()</td></tr>
 <tr class="separator:ad172d58efecf5ef38f42020f21746f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5eeac10ca33299662b0df8a77f6c25f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a5eeac10ca33299662b0df8a77f6c25f5">resolveCollisions</a> (const <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</td></tr>
-<tr class="separator:a5eeac10ca33299662b0df8a77f6c25f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a134da5221d60b34c568f7de29c9d0a58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a134da5221d60b34c568f7de29c9d0a58">resolveCollisions</a> (<a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta) override</td></tr>
+<tr class="separator:a134da5221d60b34c568f7de29c9d0a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9409413937188dbd5332c3440c2a8834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a9409413937188dbd5332c3440c2a8834">appendFilter</a> (<a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">Filter_Ptr</a> filter)</td></tr>
 <tr class="memdesc:a9409413937188dbd5332c3440c2a8834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new filter, which will be executed after all already inserted filters.  <a href="#a9409413937188dbd5332c3440c2a8834">More...</a><br /></td></tr>
 <tr class="separator:a9409413937188dbd5332c3440c2a8834"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -260,8 +260,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a5eeac10ca33299662b0df8a77f6c25f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5eeac10ca33299662b0df8a77f6c25f5">&#9670;&nbsp;</a></span>resolveCollisions()</h2>
+<a id="a134da5221d60b34c568f7de29c9d0a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a134da5221d60b34c568f7de29c9d0a58">&#9670;&nbsp;</a></span>resolveCollisions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,9 +272,19 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">void r3::CollisionResolver::resolveCollisions </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;&#160;</td>
-          <td class="paramname"><em>collisionData</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;&#160;</td>
+          <td class="paramname"><em>collisionData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
+          <td class="paramname"><em>timeDelta</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -284,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classr3_1_1_i_collision_resolver_access.html#a9f7d7bdd46fa4448b3acc5e79a3c724b">r3::ICollisionResolverAccess</a>.</p>
+<p>Implements <a class="el" href="classr3_1_1_i_collision_resolver_access.html#a266dfbc4c421a7c3429ef474d63fd941">r3::ICollisionResolverAccess</a>.</p>
 
 </div>
 </div>

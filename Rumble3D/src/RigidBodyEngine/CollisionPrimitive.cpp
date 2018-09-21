@@ -2,6 +2,7 @@
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
+#include <glm/gtc/matrix_transform.inl>
 
 namespace r3
 {
@@ -10,7 +11,12 @@ namespace r3
 
 	void CollisionPrimitive::calculateInternals()
 	{
-		m_transform = m_body->getTransformationMatrix() * m_offset;
+		/// \todo use new transform!
+		const auto& transform = m_body->getTransform();
+		glm::mat4 mat = transform.getRotation();
+		mat[3] = glm::vec4(transform.getPosition(), 1.0f);
+
+		m_transform = mat * m_offset;
 	}
 
 	glm::vec3 CollisionPrimitive::getAxis(unsigned index) const

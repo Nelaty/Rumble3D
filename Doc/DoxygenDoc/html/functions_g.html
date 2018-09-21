@@ -72,18 +72,23 @@ $(function() {
 </li>
 <li>generateCollisions()
 : <a class="el" href="classr3_1_1_broad_phase_filter.html#a16b87610362f670906ca7d9a3251815f">r3::BroadPhaseFilter</a>
-, <a class="el" href="classr3_1_1_collision_detector.html#a3eef3be0b84da10dade4d7e6208ebcc1">r3::CollisionDetector</a>
+, <a class="el" href="classr3_1_1_collision_detector.html#a58a1bd9705f241e4c137458bed35f596">r3::CollisionDetector</a>
 , <a class="el" href="classr3_1_1_i_broad_phase_filter.html#a19bfa977243bcdd0ec143a0aca750649">r3::IBroadPhaseFilter</a>
 , <a class="el" href="classr3_1_1_i_intermediate_phase_filter.html#ae5dbed945d15bd980900d15377028348">r3::IIntermediatePhaseFilter</a>
 </li>
 <li>generateContactData()
-: <a class="el" href="classr3_1_1_box_box_narrow_algorithm.html#affa36eb5b3ce937a018bc02f6f5e203c">r3::BoxBoxNarrowAlgorithm</a>
-, <a class="el" href="classr3_1_1_box_sphere_narrow_algorithm.html#a596ead483380185d32cf570eb189314c">r3::BoxSphereNarrowAlgorithm</a>
-, <a class="el" href="classr3_1_1_i_box_box_narrow_algorithm.html#afd4e0f0abf3f2ff2f3b9d045529545ef">r3::IBoxBoxNarrowAlgorithm</a>
-, <a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#a1e363eb4629664d3c7fb6b710c66a3ce">r3::IBoxSphereNarrowAlgorithm</a>
-, <a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html#a082aa21f5c0ef92acf0d214d9357ec41">r3::INarrowPhaseAlgorithm</a>
-, <a class="el" href="classr3_1_1_i_sphere_sphere_narrow_algorithm.html#aa8b2e8c92116966ffc43857a53c813cb">r3::ISphereSphereNarrowAlgorithm</a>
-, <a class="el" href="classr3_1_1_sphere_sphere_narrow_algorithm.html#a9f4413a6441f638e37867045ac3ab429">r3::SphereSphereNarrowAlgorithm</a>
+: <a class="el" href="classr3_1_1_i_box_box_narrow_algorithm.html#a4b06ee2be38c248c59195082db64c3e3">r3::IBoxBoxNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#aeecdb2486c6e6cbae057466f05323bdb">r3::IBoxSphereNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html#a606fe8de5fe81ff45fedb81ca74717c3">r3::INarrowPhaseAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_sphere_sphere_narrow_algorithm.html#acfdb8ae3db8c91843216651768cbd4e2">r3::ISphereSphereNarrowAlgorithm</a>
+</li>
+<li>generateContactDataImpl()
+: <a class="el" href="classr3_1_1_box_box_narrow_algorithm.html#a200098ad4e6e2381f58856002a2d5dec">r3::BoxBoxNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_box_sphere_narrow_algorithm.html#a2fc345fdec27e85f0e569afa0d500865">r3::BoxSphereNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_box_box_narrow_algorithm.html#abc15898100b5ed0537e4c6ccc6610069">r3::IBoxBoxNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#af28bcda3eb527a6ee48a3b624e5d47e0">r3::IBoxSphereNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_sphere_sphere_narrow_algorithm.html#a9e616d04c7ee379d973ec81ea0067cc3">r3::ISphereSphereNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_sphere_sphere_narrow_algorithm.html#a3559238de013b2fb8f3786e365e2ace7">r3::SphereSphereNarrowAlgorithm</a>
 </li>
 <li>generateContacts()
 : <a class="el" href="classr3_1_1_default_particle_engine_c_i.html#a84b1d2f9a9c1656d633de4f1bc254020">r3::DefaultParticleEngineCI</a>
@@ -115,6 +120,7 @@ $(function() {
 </li>
 <li>getBody()
 : <a class="el" href="classr3_1_1_collision_primitive.html#af8dbda90cce34a6262309cbdb75feea7">r3::CollisionPrimitive</a>
+, <a class="el" href="classr3_1_1_contact.html#aaa7c4c676fd8f3b07f81cc18257c48d9">r3::Contact</a>
 </li>
 <li>getBroadPhaseFilter()
 : <a class="el" href="classr3_1_1_collision_detector.html#aa4d1c9560f806496b2215ddc623a1387">r3::CollisionDetector</a>
@@ -146,10 +152,12 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle_world.html#a85fc9fcf5c51a5bbce206a35a82f8ccf">r3::ParticleWorld</a>
 </li>
 <li>getContactNormal()
-: <a class="el" href="classr3_1_1_contact_old.html#affb54494fd3c883cc6acf4f1b9fbc639">r3::ContactOld</a>
+: <a class="el" href="classr3_1_1_contact.html#a2d8f594947a1900fd21e2f707384d9fe">r3::Contact</a>
+, <a class="el" href="classr3_1_1_contact_old.html#affb54494fd3c883cc6acf4f1b9fbc639">r3::ContactOld</a>
 </li>
 <li>getContactPoint()
-: <a class="el" href="classr3_1_1_contact_old.html#a1af4ec25d791c0f14e41747e231fd6ab">r3::ContactOld</a>
+: <a class="el" href="classr3_1_1_contact.html#a9558ff3dd4e2c5331fc05076e4e503a0">r3::Contact</a>
+, <a class="el" href="classr3_1_1_contact_old.html#a1af4ec25d791c0f14e41747e231fd6ab">r3::ContactOld</a>
 </li>
 <li>getContacts()
 : <a class="el" href="classr3_1_1_collision_data_old.html#a5df14bfb6d789df7663b64306756eb96">r3::CollisionDataOld</a>
@@ -161,11 +169,20 @@ $(function() {
 <li>getContactsUsed()
 : <a class="el" href="classr3_1_1_collision_data.html#aaf0e65914133cd35cc32224df851561e">r3::CollisionData</a>
 </li>
+<li>getContactToWorld()
+: <a class="el" href="classr3_1_1_contact.html#a4e9692d870bdba44ff6b627b8c6c6e30">r3::Contact</a>
+</li>
+<li>getContactVelocity()
+: <a class="el" href="classr3_1_1_contact.html#a733cdbf54fe22bdaaa55a55868ad14ac">r3::Contact</a>
+</li>
 <li>getDamping()
 : <a class="el" href="classr3_1_1_particle.html#a6f05d81870e5566701760873082ae1b0">r3::Particle</a>
 </li>
 <li>getData()
 : <a class="el" href="classr3_1_1_collision_data.html#acb1bb23e8d0f37f0ebc39e8f7642419f">r3::CollisionData</a>
+</li>
+<li>getDesiredDeltaVelocity()
+: <a class="el" href="classr3_1_1_contact.html#aff234679aa4302b69b8dd101eb969705">r3::Contact</a>
 </li>
 <li>getDirectionInLocalSpace()
 : <a class="el" href="classr3_1_1_rigid_body.html#a621796b0cd49499e10b158096ae5c938">r3::RigidBody</a>
@@ -191,7 +208,9 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body_world.html#acfdc56e2796e5e0d86dbf71582e1b8c2">r3::RigidBodyWorld</a>
 </li>
 <li>getFriction()
-: <a class="el" href="classr3_1_1_collision_data_old.html#af6d03fd7fe8df176e9e8860e7d1d4119">r3::CollisionDataOld</a>
+: <a class="el" href="classr3_1_1_collision_data.html#ae610a57c20c504a7bacb4e35f89f530f">r3::CollisionData</a>
+, <a class="el" href="classr3_1_1_collision_data_old.html#af6d03fd7fe8df176e9e8860e7d1d4119">r3::CollisionDataOld</a>
+, <a class="el" href="classr3_1_1_contact.html#a1a547c3852733960001cc5fe0fe06790">r3::Contact</a>
 , <a class="el" href="classr3_1_1_physics_material.html#ace861dc19a676ebdb19193076b24a458">r3::PhysicsMaterial</a>
 </li>
 <li>getGenerators()
@@ -253,7 +272,8 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle_engine_c_i.html#af622bfe4b9279ffd5dcff14d43a8887b">r3::ParticleEngineCI</a>
 </li>
 <li>getPenetration()
-: <a class="el" href="classr3_1_1_contact_old.html#a2ef64745c0b7d6370f886ed002697044">r3::ContactOld</a>
+: <a class="el" href="classr3_1_1_contact.html#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd">r3::Contact</a>
+, <a class="el" href="classr3_1_1_contact_old.html#a2ef64745c0b7d6370f886ed002697044">r3::ContactOld</a>
 </li>
 <li>getPhysicsMaterial()
 : <a class="el" href="classr3_1_1_rigid_body.html#a6a4de124959ef45fddb8809d60066ca9">r3::RigidBody</a>
@@ -279,8 +299,13 @@ $(function() {
 <li>getRadius()
 : <a class="el" href="classr3_1_1_collision_sphere.html#aa3b7687165b34ab82b3bedb0884cc65b">r3::CollisionSphere</a>
 </li>
+<li>getRelativeContactPosition()
+: <a class="el" href="classr3_1_1_contact.html#ade5794f7055fb30ff52f9193b92c6bf0">r3::Contact</a>
+</li>
 <li>getRestitution()
-: <a class="el" href="classr3_1_1_collision_data_old.html#a3546df5d0d82e690c12f0899bc683d35">r3::CollisionDataOld</a>
+: <a class="el" href="classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b">r3::CollisionData</a>
+, <a class="el" href="classr3_1_1_collision_data_old.html#a3546df5d0d82e690c12f0899bc683d35">r3::CollisionDataOld</a>
+, <a class="el" href="classr3_1_1_contact.html#a8ec701dcaf82e7fc65bc6c4a2cb6987e">r3::Contact</a>
 , <a class="el" href="classr3_1_1_physics_material.html#a555b73c2bde3679b0e40087455eab61e">r3::PhysicsMaterial</a>
 </li>
 <li>getRigidBodies()
@@ -310,7 +335,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body.html#a8a5111fa2e4bd5f3a2615525da4c2949">r3::RigidBody</a>
 </li>
 <li>getTransform()
-: <a class="el" href="classr3_1_1_collision_object.html#acc41118b9a571e5aa918644aaeda6bfa">r3::CollisionObject</a>
+: <a class="el" href="classr3_1_1_collision_object.html#a79e04809124cad6aeb25a66f11826fee">r3::CollisionObject</a>
 , <a class="el" href="classr3_1_1_collision_primitive.html#acc4e2139c698bab280338db36d7cc586">r3::CollisionPrimitive</a>
 </li>
 <li>getTransformationMatrix()

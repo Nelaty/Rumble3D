@@ -17,7 +17,8 @@ namespace r3
 		explicit CollisionResolver();
 		virtual ~CollisionResolver();
 
-		void resolveCollisions(const CollisionData& collisionData) override;
+		void resolveCollisions(CollisionData& collisionData,
+							   real timeDelta) override;
 
 		/**
 		 * \brief Insert a new filter, which will be executed after all 

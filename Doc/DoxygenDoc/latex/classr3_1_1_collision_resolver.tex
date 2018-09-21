@@ -34,7 +34,7 @@ using \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d2
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_collision_resolver_ad172d58efecf5ef38f42020f21746f02}{$\sim$\+Collision\+Resolver}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_collision_resolver_a5eeac10ca33299662b0df8a77f6c25f5}{resolve\+Collisions}} (const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override
+void \mbox{\hyperlink{classr3_1_1_collision_resolver_a134da5221d60b34c568f7de29c9d0a58}{resolve\+Collisions}} (\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
 \item 
 \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}{append\+Filter}} (\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} filter)
 \begin{DoxyCompactList}\small\item\em Insert a new filter, which will be executed after all already inserted filters. \end{DoxyCompactList}\item 
@@ -105,15 +105,15 @@ Removes all filters from this collision resolver. \mbox{\Hypertarget{classr3_1_1
 \subsubsection{\texorpdfstring{get\+Filter\+Count()}{getFilterCount()}}
 {\footnotesize\ttfamily unsigned r3\+::\+Collision\+Resolver\+::get\+Filter\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the current number of used filters. \mbox{\Hypertarget{classr3_1_1_collision_resolver_a5eeac10ca33299662b0df8a77f6c25f5}\label{classr3_1_1_collision_resolver_a5eeac10ca33299662b0df8a77f6c25f5}} 
+Get the current number of used filters. \mbox{\Hypertarget{classr3_1_1_collision_resolver_a134da5221d60b34c568f7de29c9d0a58}\label{classr3_1_1_collision_resolver_a134da5221d60b34c568f7de29c9d0a58}} 
 \index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!resolve\+Collisions@{resolve\+Collisions}}
 \index{resolve\+Collisions@{resolve\+Collisions}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
 \subsubsection{\texorpdfstring{resolve\+Collisions()}{resolveCollisions()}}
-{\footnotesize\ttfamily void r3\+::\+Collision\+Resolver\+::resolve\+Collisions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Resolver\+::resolve\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolver_access_a9f7d7bdd46fa4448b3acc5e79a3c724b}{r3\+::\+I\+Collision\+Resolver\+Access}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolver_access_a266dfbc4c421a7c3429ef474d63fd941}{r3\+::\+I\+Collision\+Resolver\+Access}}.
 
 
 

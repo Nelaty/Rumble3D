@@ -27,12 +27,12 @@ Collaboration diagram for r3\+:\+:I\+Sphere\+Sphere\+Narrow\+Algorithm\+:\nopage
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_af1abc65f80b07e3af1d3b1c69d6b5db0}{$\sim$\+I\+Sphere\+Sphere\+Narrow\+Algorithm}} ()
 \item 
-bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_aa8b2e8c92116966ffc43857a53c813cb}{generate\+Contact\+Data}} (\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$first, \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override final
+bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_acfdb8ae3db8c91843216651768cbd4e2}{generate\+Contact\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override final
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_a8e9aeb408279b3f1716cdbbd7ae75f3f}{generate\+Contact\+Data}} (\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$first, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data)=0
+virtual bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e616d04c7ee379d973ec81ea0067cc3}{generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Sphere1, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$sphere1, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Sphere2, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$sphere2, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data)=0
 \item 
 \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_ac7efae14951096a647a7d037f275d75b}{I\+Sphere\+Sphere\+Narrow\+Algorithm}} ()
 \end{DoxyCompactItemize}
@@ -54,25 +54,25 @@ virtual bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_a8e9a
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_i_sphere_sphere_narrow_algorithm_aa8b2e8c92116966ffc43857a53c813cb}\label{classr3_1_1_i_sphere_sphere_narrow_algorithm_aa8b2e8c92116966ffc43857a53c813cb}} 
+\mbox{\Hypertarget{classr3_1_1_i_sphere_sphere_narrow_algorithm_acfdb8ae3db8c91843216651768cbd4e2}\label{classr3_1_1_i_sphere_sphere_narrow_algorithm_acfdb8ae3db8c91843216651768cbd4e2}} 
 \index{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}!generate\+Contact\+Data@{generate\+Contact\+Data}}
 \index{generate\+Contact\+Data@{generate\+Contact\+Data}!r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}}
-\subsubsection{\texorpdfstring{generate\+Contact\+Data()}{generateContactData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily bool r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm\+::generate\+Contact\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$}]{second,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+\subsubsection{\texorpdfstring{generate\+Contact\+Data()}{generateContactData()}}
+{\footnotesize\ttfamily bool r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm\+::generate\+Contact\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a082aa21f5c0ef92acf0d214d9357ec41}{r3\+::\+I\+Narrow\+Phase\+Algorithm}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe81ff45fedb81ca74717c3}{r3\+::\+I\+Narrow\+Phase\+Algorithm}}.
 
-\mbox{\Hypertarget{classr3_1_1_i_sphere_sphere_narrow_algorithm_a8e9aeb408279b3f1716cdbbd7ae75f3f}\label{classr3_1_1_i_sphere_sphere_narrow_algorithm_a8e9aeb408279b3f1716cdbbd7ae75f3f}} 
-\index{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}!generate\+Contact\+Data@{generate\+Contact\+Data}}
-\index{generate\+Contact\+Data@{generate\+Contact\+Data}!r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}}
-\subsubsection{\texorpdfstring{generate\+Contact\+Data()}{generateContactData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily virtual bool r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm\+::generate\+Contact\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{second,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+\mbox{\Hypertarget{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e616d04c7ee379d973ec81ea0067cc3}\label{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e616d04c7ee379d973ec81ea0067cc3}} 
+\index{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}!generate\+Contact\+Data\+Impl@{generate\+Contact\+Data\+Impl}}
+\index{generate\+Contact\+Data\+Impl@{generate\+Contact\+Data\+Impl}!r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}}
+\subsubsection{\texorpdfstring{generate\+Contact\+Data\+Impl()}{generateContactDataImpl()}}
+{\footnotesize\ttfamily virtual bool r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm\+::generate\+Contact\+Data\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Sphere1,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{sphere1,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Sphere2,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{sphere2,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classr3_1_1_sphere_sphere_narrow_algorithm_a9f4413a6441f638e37867045ac3ab429}{r3\+::\+Sphere\+Sphere\+Narrow\+Algorithm}}.
+Implemented in \mbox{\hyperlink{classr3_1_1_sphere_sphere_narrow_algorithm_a3559238de013b2fb8f3786e365e2ace7}{r3\+::\+Sphere\+Sphere\+Narrow\+Algorithm}}.
 
 
 

@@ -30,10 +30,8 @@ var searchData=
   ['config_2eh',['Config.h',['../_config_8h.html',1,'']]],
   ['contact_2ecpp',['Contact.cpp',['../_contact_8cpp.html',1,'']]],
   ['contact_2eh',['Contact.h',['../_contact_8h.html',1,'']]],
-  ['contactgenerator_2ecpp',['ContactGenerator.cpp',['../_contact_generator_8cpp.html',1,'']]],
-  ['contactgenerator_2eh',['ContactGenerator.h',['../_contact_generator_8h.html',1,'']]],
   ['contactold_2ecpp',['ContactOld.cpp',['../_contact_old_8cpp.html',1,'']]],
   ['contactold_2eh',['ContactOld.h',['../_contact_old_8h.html',1,'']]],
-  ['contactresolver_2ecpp',['ContactResolver.cpp',['../_contact_resolver_8cpp.html',1,'']]],
-  ['contactresolver_2eh',['ContactResolver.h',['../_contact_resolver_8h.html',1,'']]]
+  ['contactresolverold_2ecpp',['ContactResolverOld.cpp',['../_contact_resolver_old_8cpp.html',1,'']]],
+  ['contactresolverold_2eh',['ContactResolverOld.h',['../_contact_resolver_old_8h.html',1,'']]]
 ];

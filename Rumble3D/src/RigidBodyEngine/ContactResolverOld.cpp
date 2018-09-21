@@ -1,4 +1,4 @@
-#include "R3D/RigidBodyEngine/ContactResolver.h"
+#include "R3D/RigidBodyEngine/ContactResolverOld.h"
 #include "R3D/RigidBodyEngine/ContactOld.h"
 
 #include <glm/glm.hpp>
@@ -6,7 +6,7 @@
 namespace r3
 {
 	
-	ContactResolver::ContactResolver(const unsigned iterations,
+	ContactResolverOld::ContactResolverOld(const unsigned iterations,
 	                                 const real velocityEpsilon,
 	                                 const real positionEpsilon)
 	{
@@ -14,7 +14,7 @@ namespace r3
 		setEpsilon(velocityEpsilon, positionEpsilon);
 	}
 
-	ContactResolver::ContactResolver(const unsigned velocityIterations,
+	ContactResolverOld::ContactResolverOld(const unsigned velocityIterations,
 	                                 const unsigned positionIterations,
 	                                 const real velocityEpsilon,
 	                                 const real positionEpsilon)
@@ -24,26 +24,26 @@ namespace r3
 		setEpsilon(velocityEpsilon, positionEpsilon);
 	}
 	
-	void ContactResolver::setIterations(const unsigned iterations)
+	void ContactResolverOld::setIterations(const unsigned iterations)
 	{
 		setIterations(iterations, iterations);
 	}
 	
-	void ContactResolver::setIterations(const unsigned velocityIterations,
+	void ContactResolverOld::setIterations(const unsigned velocityIterations,
 	                                    const unsigned positionIterations)
 	{
 		m_velocityIterations = velocityIterations;
 		m_positionIterations = positionIterations;
 	}
 	
-	void ContactResolver::setEpsilon(const real velocityEpsilon,
+	void ContactResolverOld::setEpsilon(const real velocityEpsilon,
 	                                 const real positionEpsilon)
 	{
 		m_velocityEpsilon = velocityEpsilon;
 		m_positionEpsilon = positionEpsilon;
 	}
 	
-	void ContactResolver::resolveContacts(ContactOld *contacts,
+	void ContactResolverOld::resolveContacts(ContactOld *contacts,
 	                                      const unsigned numContacts,
 	                                      const real timeDelta)
 	{
@@ -66,7 +66,7 @@ namespace r3
 		adjustVelocities(contacts, numContacts, timeDelta);
 	}
 	
-	void ContactResolver::prepareContacts(ContactOld* contacts,
+	void ContactResolverOld::prepareContacts(ContactOld* contacts,
 	                                      const unsigned numContacts,
 	                                      const real timeDelta)
 	{
@@ -79,7 +79,7 @@ namespace r3
 		}
 	}
 	
-	void ContactResolver::adjustVelocities(ContactOld *c,
+	void ContactResolverOld::adjustVelocities(ContactOld *c,
 	                                       const unsigned numContacts,
 	                                       const real timeDelta)
 	{
@@ -140,7 +140,7 @@ namespace r3
 		}
 	}
 	
-	void ContactResolver::adjustPositions(ContactOld *c,
+	void ContactResolverOld::adjustPositions(ContactOld *c,
 	                                      const unsigned numContacts,
 										  real timeDelta)
 	{
@@ -204,7 +204,7 @@ namespace r3
 		}
 	}
 	
-	bool ContactResolver::isValid() const
+	bool ContactResolverOld::isValid() const
 	{
 		return (m_velocityIterations > 0) &&
 			(m_positionIterations > 0) &&

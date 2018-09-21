@@ -34,6 +34,11 @@ namespace r3
 		return m_contactsUsed == m_contactsMax;
 	}
 
+	bool CollisionData::isEmpty() const
+	{
+		return m_contactsUsed == 0;
+	}
+
 	int CollisionData::getContactsLeft() const
 	{
 		return m_contactsMax - m_contactsUsed;
@@ -53,7 +58,7 @@ namespace r3
 	{
 		if(isFull()) return nullptr;
 
-		auto* result = &m_data[m_contactsUsed];
+		const auto result = &m_data[m_contactsUsed];
 		++m_contactsUsed;
 		return result;
 	}
@@ -61,5 +66,18 @@ namespace r3
 	std::vector<Contact>& CollisionData::getData()
 	{
 		return m_data;
+	}
+
+	const std::vector<Contact>& CollisionData::getData() const
+	{
+		return m_data;
+	}
+
+	void CollisionData::prepareContacts(const real timeDelta)
+	{
+		for(int i = 0; i < m_contactsUsed; ++i)
+		{
+			m_data[i].calculateInternals(timeDelta);
+		}
 	}
 }

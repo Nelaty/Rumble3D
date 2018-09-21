@@ -29,7 +29,11 @@ Collaboration diagram for r3\+:\+:Interpenetration\+Resolver\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a2c0f47fd620356e06fb9e16387b7e83b}{$\sim$\+Interpenetration\+Resolver}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a7a5dfd8678e5b056ec0978e857cca0ef}{resolve}} (const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override
+void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a7c896a7e8e0321c9f26b3d9c616d16ee}{resolve}} (\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
+\item 
+void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a8250baac4ce0ed634002ed3be4515519}{set\+Max\+Iterations}} (unsigned int iterations)
+\item 
+void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_ad70802061f5f8868622cc5024a10f8cf}{set\+Position\+Epsilon}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} epsilon)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -39,7 +43,7 @@ void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a7a5dfd8678e5b056ec0
 \index{r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}!Interpenetration\+Resolver@{Interpenetration\+Resolver}}
 \index{Interpenetration\+Resolver@{Interpenetration\+Resolver}!r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}}
 \subsubsection{\texorpdfstring{Interpenetration\+Resolver()}{InterpenetrationResolver()}}
-{\footnotesize\ttfamily r3\+::\+Interpenetration\+Resolver\+::\+Interpenetration\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+{\footnotesize\ttfamily r3\+::\+Interpenetration\+Resolver\+::\+Interpenetration\+Resolver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \mbox{\Hypertarget{classr3_1_1_interpenetration_resolver_a2c0f47fd620356e06fb9e16387b7e83b}\label{classr3_1_1_interpenetration_resolver_a2c0f47fd620356e06fb9e16387b7e83b}} 
 \index{r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}!````~Interpenetration\+Resolver@{$\sim$\+Interpenetration\+Resolver}}
@@ -50,15 +54,27 @@ void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a7a5dfd8678e5b056ec0
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_interpenetration_resolver_a7a5dfd8678e5b056ec0978e857cca0ef}\label{classr3_1_1_interpenetration_resolver_a7a5dfd8678e5b056ec0978e857cca0ef}} 
+\mbox{\Hypertarget{classr3_1_1_interpenetration_resolver_a7c896a7e8e0321c9f26b3d9c616d16ee}\label{classr3_1_1_interpenetration_resolver_a7c896a7e8e0321c9f26b3d9c616d16ee}} 
 \index{r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}!resolve@{resolve}}
 \index{resolve@{resolve}!r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}}
 \subsubsection{\texorpdfstring{resolve()}{resolve()}}
-{\footnotesize\ttfamily void r3\+::\+Interpenetration\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Interpenetration\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a9ae35c07c585500c409459ef87e5ae15}{r3\+::\+I\+Collision\+Resolution\+Filter}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a87ef2579e2acaaadef4cd8f9a20005ce}{r3\+::\+I\+Collision\+Resolution\+Filter}}.
+
+\mbox{\Hypertarget{classr3_1_1_interpenetration_resolver_a8250baac4ce0ed634002ed3be4515519}\label{classr3_1_1_interpenetration_resolver_a8250baac4ce0ed634002ed3be4515519}} 
+\index{r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}!set\+Max\+Iterations@{set\+Max\+Iterations}}
+\index{set\+Max\+Iterations@{set\+Max\+Iterations}!r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}}
+\subsubsection{\texorpdfstring{set\+Max\+Iterations()}{setMaxIterations()}}
+{\footnotesize\ttfamily void r3\+::\+Interpenetration\+Resolver\+::set\+Max\+Iterations (\begin{DoxyParamCaption}\item[{unsigned int}]{iterations }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_interpenetration_resolver_ad70802061f5f8868622cc5024a10f8cf}\label{classr3_1_1_interpenetration_resolver_ad70802061f5f8868622cc5024a10f8cf}} 
+\index{r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}!set\+Position\+Epsilon@{set\+Position\+Epsilon}}
+\index{set\+Position\+Epsilon@{set\+Position\+Epsilon}!r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}}
+\subsubsection{\texorpdfstring{set\+Position\+Epsilon()}{setPositionEpsilon()}}
+{\footnotesize\ttfamily void r3\+::\+Interpenetration\+Resolver\+::set\+Position\+Epsilon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{epsilon }\end{DoxyParamCaption})}
 
 
 
