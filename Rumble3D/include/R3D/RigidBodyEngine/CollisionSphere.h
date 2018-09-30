@@ -13,7 +13,7 @@ namespace r3
 	class R3D_DECLSPEC CollisionSphere : public CollisionPrimitive
 	{
 	public:
-		CollisionSphere(RigidBody* body, const glm::mat4& offset, real radius); 
+		CollisionSphere(RigidBody* body, real radius, const glm::mat4& offset = glm::mat4(1));
 		~CollisionSphere();
 
 		real getRadius() const;

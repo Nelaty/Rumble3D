@@ -3,7 +3,7 @@
 
 namespace r3
 {
-	CollisionSphere::CollisionSphere(RigidBody* body, const glm::mat4& offset, const real radius) 
+	CollisionSphere::CollisionSphere(RigidBody* body, const real radius, const glm::mat4& offset)
 		: CollisionPrimitive(R3D_PRIMITIVE_SPHERE),
 		m_radius{radius}
 	{

@@ -13,9 +13,9 @@ namespace r3
 	class R3D_DECLSPEC CollisionBox : public CollisionPrimitive
 	{
 	public:
-		explicit CollisionBox(RigidBody* body,
-							  const glm::mat4& offset, 
-							  const glm::vec3& halfSize);
+		explicit CollisionBox(RigidBody* body, 
+							  const glm::vec3& halfSize,
+							  const glm::mat4& offset = glm::mat4(1));
 		~CollisionBox();
 
 		glm::vec3 getHalfSize() const;

@@ -25,7 +25,7 @@ namespace r3
 		m_collisionMask = definition.m_collisionMask;
 		m_collisionPrimitive = definition.m_collisionPrimitive;
 
-		m_inverseMass = definition.m_inverseMass;
+		setInverseMass(definition.m_inverseMass);
 
 		m_linearDamping = definition.m_linearDamping;
 		m_angularDamping = definition.m_angularDamping;
@@ -156,21 +156,19 @@ namespace r3
 
 	void RigidBody::setMass(const real mass)
 	{
-		assert(mass != 0);
+		assert(mass > 0.0f);
+		m_mass = mass;
 		m_inverseMass = static_cast<real>(1.0f) / mass;
 	}
 
 	real RigidBody::getMass() const
 	{
-		if (m_inverseMass == 0)
-		{
-			return R3D_REAL_MAX;
-		}
-		return static_cast<real>(1.0f) / m_inverseMass;
+		return m_mass;
 	}
 
 	void RigidBody::setInverseMass(const real inverseMass)
 	{
+		m_mass = inverseMass != 0.0f ? 1.0f / inverseMass : R3D_REAL_MAX;
 		m_inverseMass = inverseMass;
 	}
 
@@ -363,7 +361,7 @@ namespace r3
 		m_lastFrameAcceleration += m_inverseMass * m_forceAccumulated;
 
 		// Winkelbeschleunigung aus Drehmoment:
-		const auto angularAcceleration = m_inverseInertiaTensorWorld * m_torqueAccumulated;
+		const auto angularAcceleration = m_inverseMass * m_inverseInertiaTensorWorld * m_torqueAccumulated;
 
 		// Lineare Geschwindigkeit aus Beschleunigung und Impuls:
 		m_velocity += duration * m_lastFrameAcceleration;

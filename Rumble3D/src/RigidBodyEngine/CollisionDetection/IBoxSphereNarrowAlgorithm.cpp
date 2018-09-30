@@ -12,7 +12,7 @@ namespace r3
 														CollisionData& collisionData)
 	{
 		// Check if the first collision primitive is a sphere
-		bool needSwap = first->getCollisionPrimitive()->getType() == R3D_PRIMITIVE_SPHERE;
+		const bool needSwap = first->getCollisionPrimitive()->getType() == R3D_PRIMITIVE_SPHERE;
 
 		RigidBody* rbBox = needSwap ? second : first;
 		RigidBody* rbSphere = needSwap ? first : second;

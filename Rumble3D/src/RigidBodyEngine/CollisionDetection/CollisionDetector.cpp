@@ -9,22 +9,25 @@
 
 namespace r3
 {
-	CollisionDetector::CollisionDetector(const unsigned int contactsMax,
+	CollisionDetector::CollisionDetector(const unsigned int broadPhaseCollisions,
+										 const unsigned int contactsMax,
 										 const unsigned int iterations)
 	{
-		init(contactsMax, iterations);
+		init(broadPhaseCollisions, contactsMax, iterations);
 	}
 
 	CollisionDetector::~CollisionDetector()
 	= default;
 
-	void CollisionDetector::init(const unsigned contactsMax,
+	void CollisionDetector::init(const unsigned int broadPhaseCollisions,
+								 const unsigned contactsMax,
 	                             const unsigned iterations)
 	{
+		m_broadPhaseCollisionsMax = broadPhaseCollisions;
 		m_contactsMax = contactsMax;
 		m_iterations = iterations;
 
-		m_broadPhaseCollisions.init(contactsMax, iterations);
+		m_broadPhaseCollisions.init(broadPhaseCollisions, iterations);
 		m_collisions.init(contactsMax, iterations);
 	}
 
@@ -32,6 +35,25 @@ namespace r3
 	{
 		m_broadPhaseCollisions.reset();
 		m_collisions.reset();
+	}
+
+	void CollisionDetector::setBroadPhaseCollisionsMax(const int count)
+	{
+		m_broadPhaseCollisionsMax = count;
+		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax, m_iterations);
+	}
+
+	void CollisionDetector::setContactsMax(const int count)
+	{
+		m_contactsMax = count;
+		m_collisions.init(m_contactsMax, m_iterations);
+	}
+
+	void CollisionDetector::setIterations(const int iterations)
+	{
+		m_iterations = iterations;
+		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax, m_iterations);
+		m_collisions.init(m_contactsMax, m_iterations);
 	}
 
 	CollisionData& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)

@@ -122,7 +122,9 @@ namespace r3
 		PhysicsMaterial* m_physicsMaterial{};
 		CollisionMask m_collisionMask;
 
+		real m_mass;
 		real m_inverseMass{};
+		
 		real m_linearDamping{};
 		real m_angularDamping{};
 

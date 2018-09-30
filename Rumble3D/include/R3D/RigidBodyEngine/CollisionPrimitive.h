@@ -22,6 +22,7 @@ namespace r3
 		// Rückgabe der i-ten Spalte der Transformationsmatrix:
 		glm::vec3 getAxis(unsigned index) const;
 		const glm::mat4 & getTransform() const;
+		
 		RigidBody* getBody() const;
 
 		CollisionPrimitiveType getType() const;

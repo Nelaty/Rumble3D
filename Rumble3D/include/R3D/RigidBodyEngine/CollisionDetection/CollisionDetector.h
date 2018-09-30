@@ -27,15 +27,29 @@ namespace r3
 		using IntermediatePhaseFilter_Ptr = std::unique_ptr<IIntermediatePhaseFilter>;
 		using NarrowPhaseFilter_Ptr = std::unique_ptr<INarrowPhaseFilter>;
 
-		explicit CollisionDetector(unsigned int contactsMax = 1000, unsigned int iterations = 0);
+		explicit CollisionDetector(unsigned int broadPhaseCollisions = 1000000,
+								   unsigned int contactsMax = 1000, 
+								   unsigned int iterations = 2000);
 		CollisionDetector(const CollisionDetector&) = delete;
 		~CollisionDetector();
 
 		/** Set the number of used contacts and iterations. */
-		void init(unsigned int contactsMax = 1000, unsigned int iterations = 0);
+		void init(unsigned int broadPhaseCollisions = 1000000,
+				  unsigned int contactsMax = 1000, 
+				  unsigned int iterations = 2000);
 
 		/** Reset previously calculated collisions. */
 		void reset();
+
+		/** 
+		 * Set the maximal number of collision pairs created in the broad
+		 * and intermediate phases.
+		 */
+		void setBroadPhaseCollisionsMax(int count);
+		/** Set the maximal number of contacts created in the narrow phase. */
+		void setContactsMax(int count);
+		/** Set the maximal number of iterations used. */
+		void setIterations(int iterations);
 
 		/** 
 		 * Generate a number of contacts for the given rigid bodies
@@ -72,6 +86,8 @@ namespace r3
 		INarrowPhaseFilter* getNarrowPhaseFilter() const;
 
 	private:
+		unsigned int m_broadPhaseCollisionsMax;
+		
 		unsigned int m_contactsMax;
 		unsigned int m_iterations;
 

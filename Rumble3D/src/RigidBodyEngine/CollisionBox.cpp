@@ -3,9 +3,9 @@
 
 namespace r3
 {
-	CollisionBox::CollisionBox(RigidBody* body, 
-							   const glm::mat4& offset,
-							   const glm::vec3& halfSize)
+	CollisionBox::CollisionBox(RigidBody* body,
+							   const glm::vec3& halfSize,
+							   const glm::mat4& offset)
 		: CollisionPrimitive(R3D_PRIMITIVE_BOX), 
 		m_halfSize{halfSize}
 	{

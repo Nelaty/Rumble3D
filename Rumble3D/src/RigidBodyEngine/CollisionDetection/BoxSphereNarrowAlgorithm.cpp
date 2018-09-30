@@ -39,7 +39,7 @@ namespace r3
 		   abs(relCentre.y) - sphere->getRadius() > boxDim.y ||
 		   abs(relCentre.z) - sphere->getRadius() > boxDim.z)
 		{
-			return 0;
+			return false;
 		}
 
 		// Clamp each coordinate to the box.
