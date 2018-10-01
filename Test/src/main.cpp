@@ -1,6 +1,7 @@
 #include "UnitTest++/UnitTest++.h"
 #include "R3D/PhysicsEngine.h"
-#include "../../../EyeCandy3D/External/unittest-cpp-master/UnitTest++/TestRunner.h"
+
+#include <stdio.h>
 
 TEST(mySuccessfulTest)
 {
