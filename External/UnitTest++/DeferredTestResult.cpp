@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 #include "Config.h"
 #ifndef UNITTEST_NO_DEFERRED_REPORTER
 

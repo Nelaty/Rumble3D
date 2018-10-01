@@ -1,5 +1,0 @@
-D:/Library/Documents/Job/Forschungsmaster/Projekte/EyeCandy3D/External/unittest-cpp-master/builds/CMakeFiles/TestUnitTest++.dir
-D:/Library/Documents/Job/Forschungsmaster/Projekte/EyeCandy3D/External/unittest-cpp-master/builds/CMakeFiles/UnitTest++.dir
-D:/Library/Documents/Job/Forschungsmaster/Projekte/EyeCandy3D/External/unittest-cpp-master/builds/CMakeFiles/INSTALL.dir
-D:/Library/Documents/Job/Forschungsmaster/Projekte/EyeCandy3D/External/unittest-cpp-master/builds/CMakeFiles/ALL_BUILD.dir
-D:/Library/Documents/Job/Forschungsmaster/Projekte/EyeCandy3D/External/unittest-cpp-master/builds/CMakeFiles/ZERO_CHECK.dir
