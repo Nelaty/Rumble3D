@@ -1,4 +1,4 @@
-#include "R3D/RigidBodyEngine/CollisionDetection/BoxSphereNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 

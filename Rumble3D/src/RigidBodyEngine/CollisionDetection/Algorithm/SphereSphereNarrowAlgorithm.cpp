@@ -1,5 +1,7 @@
-#include "R3D/RigidBodyEngine/CollisionDetection/SphereSphereNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
+
+#include <glm/glm.hpp>
 
 namespace r3
 {

@@ -2,6 +2,8 @@
 #include "R3D/Common/Common.h"
 #include "IBoxBoxNarrowAlgorithm.h"
 
+#include <glm/glm.hpp>
+
 namespace r3
 {
 	class R3D_DECLSPEC BoxBoxNarrowAlgorithm : public IBoxBoxNarrowAlgorithm

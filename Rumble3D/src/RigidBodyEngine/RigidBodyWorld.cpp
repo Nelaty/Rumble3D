@@ -32,11 +32,11 @@ namespace r3
 		return rigidBody;
 	}
 
-	bool RigidBodyWorld::destroyRigidBody(RigidBody* particle)
+	bool RigidBodyWorld::destroyRigidBody(RigidBody* rigidBody)
 	{
 		const auto removedBody = std::remove(m_rigidBodies.begin(),
 											 m_rigidBodies.end(),
-											 particle);
+											 rigidBody);
 
 		if(removedBody != m_rigidBodies.end())
 		{

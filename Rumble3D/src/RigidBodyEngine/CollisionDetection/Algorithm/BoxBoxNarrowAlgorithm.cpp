@@ -1,7 +1,8 @@
-#include "R3D/RigidBodyEngine/CollisionDetection/BoxBoxNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
-#include <glm/gtx/norm.inl>
 #include "R3D/RigidBodyEngine/ContactOld.h"
+
+#include <glm/gtx/norm.inl>
 
 namespace r3
 {
@@ -15,7 +16,7 @@ namespace r3
 														RigidBody* rbBox2, CollisionBox* box2,
 														CollisionData& collisionData)
 	{
-		return false;
+		//return false;
 
 		// Check if there is still a contact left
 		if(collisionData.isFull())
@@ -89,6 +90,9 @@ namespace r3
 			fillPointFaceBoxBox(box2, box1, -toCentre, contact, best - 3, pen);
 			return 1;
 		}
+
+		/// \todo: crash -> best stays 0xffffff
+		if(best > 8) return false;
 
 		// Im Fall Kante-Kante suche die SAT-Achse:
 		best -= 6; // damit nur noch 0..8

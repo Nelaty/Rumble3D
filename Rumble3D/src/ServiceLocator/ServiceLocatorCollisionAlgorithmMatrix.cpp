@@ -1,9 +1,12 @@
 #include "R3D/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.h"
 
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BoxBoxNarrowAlgorithm.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BoxSphereNarrowAlgorithm.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/SphereSphereNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.h"
 
 namespace r3
 {
@@ -21,6 +24,19 @@ namespace r3
 		matrix.setAlgorithm(new SphereSphereNarrowAlgorithm(),
 							R3D_PRIMITIVE_SPHERE,
 							R3D_PRIMITIVE_SPHERE);
+
+		matrix.setAlgorithm(new PlanePlaneCollisionAlgorithm(),
+							R3D_PRIMITIVE_PLANE,
+							R3D_PRIMITIVE_PLANE);
+
+		matrix.setAlgorithm(new PlaneBoxCollisionAlgorithm(),
+							R3D_PRIMITIVE_PLANE,
+							R3D_PRIMITIVE_BOX);
+
+		matrix.setAlgorithm(new PlaneSphereCollisionAlgorithm(),
+							R3D_PRIMITIVE_PLANE,
+							R3D_PRIMITIVE_SPHERE);
+
 		return matrix;
 	}
 

@@ -23,21 +23,10 @@ namespace r3
 										   const CollisionPlane &plane,
 										   CollisionDataOld *data);
 
-		static unsigned sphereAndSphere(const CollisionSphere &one,
-										const CollisionSphere &two,
-										CollisionDataOld *data);
-
 		static unsigned boxAndHalfSpace(const CollisionBox &box,
 										const CollisionPlane &plane,
 										CollisionDataOld *data);
 
-		static unsigned boxAndSphere(const CollisionBox &box,
-									 const CollisionSphere &sphere,
-									 CollisionDataOld *data);
-
-		static unsigned boxAndBox(const CollisionBox &one,
-								  const CollisionBox &two,
-								  CollisionDataOld *data);
 
 	private:
 		static real transformToAxis(const CollisionBox &box,

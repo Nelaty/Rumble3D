@@ -1,4 +1,4 @@
-#include "R3D/RigidBodyEngine/CollisionDetection/IBoxBoxNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 
 namespace r3

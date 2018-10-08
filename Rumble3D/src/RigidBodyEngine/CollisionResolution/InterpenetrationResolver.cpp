@@ -101,19 +101,19 @@ namespace r3
 		const auto penetration = contact.getPenetration();
 
 		const auto angularLimit = static_cast<real>(0.2f);
-		real angularMove[2];
-		real linearMove[2];
+		real angularMove[2] = {0.0f, 0.0f};
+		real linearMove[2] = {0.0f, 0.0f};
 
-		real totalInertia = 0;
-		real linearInertia[2];
-		real angularInertia[2];
+		real totalInertia = 0.0f;
+		real linearInertia[2] = {0.0f, 0.0f};
+		real angularInertia[2] = {0.0f, 0.0f};
 
 		// We need to work out the inertia of each object in the direction
 		// of the contact normal, due to angular inertia only.
 		for (unsigned i = 0; i < 2; i++)
 		{
 			auto* body = contact.getBody(i);
-			if (body)
+			if (body->hasFiniteMass())
 			{
 				glm::mat3 inverseInertiaTensor;
 				body->getInverseInertiaTensorWorld(&inverseInertiaTensor);

@@ -35,10 +35,10 @@ namespace r3
 		RigidBody* createRigidBody(RigidBodyDef definition = RigidBodyDef());
 		/**
 		* \brief Free memory of a given rigid body.
-		* \param particle The rigid body to destroy.
+		* \param rigidBody The rigid body to destroy.
 		* \return True if the rigid body was found, false otherwise.
 		*/
-		bool destroyRigidBody(RigidBody* particle);
+		bool destroyRigidBody(RigidBody* rigidBody);
 		/**
 		* \brief Free memory of all rigid bodies.
 		*/

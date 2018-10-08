@@ -1,4 +1,4 @@
-#include "R3D/RigidBodyEngine/CollisionDetection/ISphereSphereNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 
 namespace r3
