@@ -2,10 +2,15 @@
 
 namespace r3
 {
-	CollisionPlane::CollisionPlane(const glm::vec3& normal, const real offset) 
+	CollisionPlane::CollisionPlane(const glm::vec3& normal, 
+								   const real offset,
+								   const glm::vec2& halfSizes,
+	                               const bool isHalfSpace)
 		: CollisionPrimitive(R3D_PRIMITIVE_PLANE),
 		m_normal(normal), 
-		m_offset(offset)
+		m_offset(offset),
+		m_halfSizes(halfSizes),
+		m_isHalfSpace(isHalfSpace)
 	{
 	}
 	
@@ -30,5 +35,15 @@ namespace r3
 	void CollisionPlane::setNormal(const glm::vec3 & normal)
 	{
 		m_normal = normal;
+	}
+
+	bool CollisionPlane::isHalfSpace() const
+	{
+		return m_isHalfSpace;
+	}
+
+	const glm::vec2& CollisionPlane::getHalfSizes() const
+	{
+		return m_halfSizes;
 	}
 }

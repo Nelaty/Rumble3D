@@ -70,7 +70,8 @@ namespace r3
 	void VelocityResolver::adjustVelocities(CollisionData& collisionData,
 	                                        const real duration)
 	{
-		glm::vec3 velocityChange[2], rotationChange[2];
+		glm::vec3 velocityChange[2]{};
+		glm::vec3 rotationChange[2]{};
 
 		// iteratively handle impacts in order of severity.
 		m_iterationsUsed = 0;

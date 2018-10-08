@@ -48,9 +48,9 @@ namespace r3
 		if(checkOverlap(rotationOne[1], 1)) return false;
 		if(checkOverlap(rotationOne[2], 2)) return false;
 
-		if(checkOverlap(rotationTwo[0], 0)) return false;
-		if(checkOverlap(rotationTwo[1], 1)) return false;
-		if(checkOverlap(rotationTwo[2], 2)) return false;
+		if(checkOverlap(rotationTwo[0], 3)) return false;
+		if(checkOverlap(rotationTwo[1], 4)) return false;
+		if(checkOverlap(rotationTwo[2], 5)) return false;
 
 		// Beste Werte zwischenspeichern, falls es nur noch
 		// fast parallele Kanten gibt, die uns keine Aussage
@@ -71,6 +71,9 @@ namespace r3
 
 		// Make sure we've got a result.
 		// assert(best != 0xffffff);
+		
+		/// \todo: crash -> best stays 0xffffff
+		if(best > 8) return false;
 
 		Contact* contact = collisionData.getAvailableContact();
 
@@ -90,9 +93,6 @@ namespace r3
 			fillPointFaceBoxBox(box2, box1, -toCentre, contact, best - 3, pen);
 			return 1;
 		}
-
-		/// \todo: crash -> best stays 0xffffff
-		if(best > 8) return false;
 
 		// Im Fall Kante-Kante suche die SAT-Achse:
 		best -= 6; // damit nur noch 0..8
@@ -151,6 +151,7 @@ namespace r3
 			bestSingleAxis > 2);
 
 		// We can fill the contact.
+		
 		contact->setPenetration(pen);
 		contact->setContactNormal(axis);
 		contact->setContactPoint(vertex);
