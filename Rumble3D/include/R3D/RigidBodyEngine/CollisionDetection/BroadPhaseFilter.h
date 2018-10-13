@@ -12,5 +12,10 @@ namespace r3
 
 		void generateCollisions(const std::vector<RigidBody*>& rigidBodies,
 								BroadPhaseCollisionData& data) override;
+
+	private:
+		bool createBroadPhaseCollision(RigidBody* first,
+									   RigidBody* second,
+									   BroadPhaseCollisionData& data);
 	};
 }

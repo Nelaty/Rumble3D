@@ -3,6 +3,7 @@
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 
 #include <cassert>
+#include <glm/gtc/matrix_transform.inl>
 
 namespace r3
 {
@@ -48,7 +49,9 @@ namespace r3
 	                                              const glm::mat3& orientation)
 	{
 		transformationMatrix = orientation;
-		transformationMatrix[3] += glm::vec4(position, static_cast<real>(1.0f));
+		transformationMatrix = glm::translate(transformationMatrix, position);
+
+		//transformationMatrix[3] += glm::vec4(position, static_cast<real>(1.0f));
 	}
 
 	void RigidBody::transformInertiaTensor(glm::mat3& iitWorld,

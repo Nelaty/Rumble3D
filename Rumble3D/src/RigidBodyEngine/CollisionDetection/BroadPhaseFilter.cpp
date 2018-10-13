@@ -19,17 +19,43 @@ namespace r3
 			for(auto j = i + 1; j < rigidBodies.size(); ++j)
 			{
 				auto* second = rigidBodies[j];
-				auto* collision = data.getAvailableCollision();
-				if(collision != nullptr)
-				{
-					collision->m_first = first;
-					collision->m_second = second;
-				}
-				else
+				if(!createBroadPhaseCollision(first, second, data))
 				{
 					return;
 				}
 			}
+		}
+	}
+
+	bool BroadPhaseFilter::createBroadPhaseCollision(RigidBody* first, 
+													 RigidBody* second, 
+													 BroadPhaseCollisionData& data)
+	{
+		if(!first->hasFiniteMass())
+		{
+			if(!second->hasFiniteMass())
+			{
+				return true;
+			}
+			else
+			{
+				std::swap(first, second);
+			}
+		}
+
+		if(!data.isFull())
+		{
+			auto* collision = data.getAvailableCollision();
+			if(collision != nullptr)
+			{
+				collision->m_first = first;
+				collision->m_second = second;
+				return true;
+			}
+		}
+		else
+		{
+			return false;
 		}
 	}
 }
