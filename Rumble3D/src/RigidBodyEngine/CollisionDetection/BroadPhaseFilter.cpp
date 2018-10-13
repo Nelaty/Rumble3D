@@ -4,10 +4,10 @@
 namespace r3
 {
 	BroadPhaseFilter::BroadPhaseFilter()
-	= default;
+		= default;
 
 	BroadPhaseFilter::~BroadPhaseFilter()
-	= default;
+		= default;
 
 	void BroadPhaseFilter::generateCollisions(const std::vector<RigidBody*>& rigidBodies,
 											  BroadPhaseCollisionData& data)
@@ -27,35 +27,25 @@ namespace r3
 		}
 	}
 
-	bool BroadPhaseFilter::createBroadPhaseCollision(RigidBody* first, 
-													 RigidBody* second, 
+	bool BroadPhaseFilter::createBroadPhaseCollision(RigidBody* first,
+													 RigidBody* second,
 													 BroadPhaseCollisionData& data)
 	{
-		if(!first->hasFiniteMass())
+		if(!first->hasFiniteMass() && !second->hasFiniteMass())
 		{
-			if(!second->hasFiniteMass())
-			{
-				return true;
-			}
-			else
-			{
-				std::swap(first, second);
-			}
+			return true;
 		}
-
-		if(!data.isFull())
-		{
-			auto* collision = data.getAvailableCollision();
-			if(collision != nullptr)
-			{
-				collision->m_first = first;
-				collision->m_second = second;
-				return true;
-			}
-		}
-		else
+		if(data.isFull())
 		{
 			return false;
+		}
+
+		auto* collision = data.getAvailableCollision();
+		if(collision != nullptr)
+		{
+			collision->m_first = first;
+			collision->m_second = second;
+			return true;
 		}
 	}
 }

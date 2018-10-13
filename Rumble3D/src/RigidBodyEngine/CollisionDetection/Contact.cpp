@@ -67,6 +67,12 @@ namespace r3
 		m_pair.m_first = first;
 		m_pair.m_second = second;
 
+		/*m_friction = first->getPhysicsMaterial()->getFriction() +
+			second->getPhysicsMaterial()->getFriction();
+		m_restitution = first->getPhysicsMaterial()->getRestitution() +
+			second->getPhysicsMaterial()->getRestitution();*/
+
+
 		m_friction = friction;
 		m_restitution = restitution;
 	}
@@ -98,6 +104,10 @@ namespace r3
 
 	void Contact::calculateInternals(const real duration)
 	{
+		if(!m_pair.m_first->hasFiniteMass())
+		{
+			swapBodies();
+		}
 		// Calculate an set of axis at the contact point.
 		calculateContactBasis();
 
@@ -106,11 +116,17 @@ namespace r3
 
 		// Store the relative position of the contact relative to each body
 		m_relativeContactPosition[0] = m_contactPoint - first->getCenterOfMass();
-		m_relativeContactPosition[1] = m_contactPoint - second->getCenterOfMass();
-
+		if(m_pair.m_second->hasFiniteMass())
+		{
+			m_relativeContactPosition[1] = m_contactPoint - second->getCenterOfMass();
+		}
+		
 		// Find the relative velocity of the bodies at the contact point.
 		m_contactVelocity = calculateLocalVelocity(0, duration);
-		m_contactVelocity -= calculateLocalVelocity(1, duration);
+		if(m_pair.m_second->hasFiniteMass())
+		{
+			m_contactVelocity -= calculateLocalVelocity(1, duration);
+		}
 
 		// Calculate the desired change in velocity for resolution
 		calculateDesiredDeltaVelocity(duration);
@@ -247,5 +263,11 @@ namespace r3
 		m_contactToWorld[0] = m_contactNormal;
 		m_contactToWorld[1] = contactTangent[0];
 		m_contactToWorld[2] = contactTangent[1];
+	}
+
+	void Contact::swapBodies()
+	{
+		m_contactNormal *= -1;
+		std::swap(m_pair.m_first, m_pair.m_second);
 	}
 }

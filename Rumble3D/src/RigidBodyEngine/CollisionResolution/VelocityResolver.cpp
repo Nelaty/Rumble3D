@@ -45,7 +45,7 @@ namespace r3
 		// Addition der linearen Komponente der Geschwindigkeitsänderung:
 		deltaVelocity += first->getInverseMass();
 
-		if(second)
+		if(second->hasFiniteMass())
 		{
 			// Gleiche Transformation:
 			glm::vec3 deltaVelWorld = glm::cross(contact.getRelativeContactPosition(1),
@@ -151,7 +151,10 @@ namespace r3
 		// Zwischenspeichern der inversen Trägheitstensoren in Weltkoordinaten
 		glm::mat3 inverseInertiaTensor[2];
 		first->getInverseInertiaTensorWorld(&inverseInertiaTensor[0]);
-		second->getInverseInertiaTensorWorld(&inverseInertiaTensor[1]);
+		if(second->hasFiniteMass())
+		{
+			second->getInverseInertiaTensorWorld(&inverseInertiaTensor[1]);
+		}
 
 		// Berechnung des Impulses
 		glm::vec3 impulseContact;
@@ -183,16 +186,19 @@ namespace r3
 		first->addVelocity(velocityChange[0]);
 		first->addRotation(rotationChange[0]);
 
-		// Für zweiten Körper; Drehmoment negativ; 
-		// erreicht durch Operandentausch imKreuzprodukt:
-		impulsiveTorque = glm::cross(impulse, contact.getRelativeContactPosition(1));
-		rotationChange[1] = inverseInertiaTensor[1] * impulsiveTorque;
-		velocityChange[1] = glm::vec3(static_cast<real>(0.0f));
-		velocityChange[1] += -second->getInverseMass() * impulse;
+		if(second->hasFiniteMass())
+		{
+			// Für zweiten Körper; Drehmoment negativ; 
+			// erreicht durch Operandentausch imKreuzprodukt:
+			impulsiveTorque = glm::cross(impulse, contact.getRelativeContactPosition(1));
+			rotationChange[1] = inverseInertiaTensor[1] * impulsiveTorque;
+			velocityChange[1] = glm::vec3(static_cast<real>(0.0f));
+			velocityChange[1] += -second->getInverseMass() * impulse;
 
-		// Anwendung:
-		second->addVelocity(velocityChange[1]);
-		second->addRotation(rotationChange[1]);
+			// Anwendung:
+			second->addVelocity(velocityChange[1]);
+			second->addRotation(rotationChange[1]);
+		}
 	}
 
 	VelocityResolver::VelocityResolver()

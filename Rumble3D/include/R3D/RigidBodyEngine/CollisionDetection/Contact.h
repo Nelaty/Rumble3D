@@ -69,6 +69,7 @@ namespace r3
 		
 		void calculateContactBasis();
 
+		void swapBodies();
 
 		CollisionPair m_pair{};
 

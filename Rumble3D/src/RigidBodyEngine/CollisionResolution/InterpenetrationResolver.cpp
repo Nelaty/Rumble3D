@@ -70,7 +70,7 @@ namespace r3
 				for (auto b = 0; b < 2; b++)
 				{
 					auto* first = b == 0 ? it.getFirst() : it.getSecond();
-					if (!first) continue;
+					if (!first->hasFiniteMass()) continue;
 
 					for (auto d = 0; d < 2; ++d)
 					{
@@ -142,7 +142,7 @@ namespace r3
 		for (unsigned i = 0; i < 2; i++)
 		{
 			auto* body = contact.getBody(i);
-			if (body)
+			if (body->hasFiniteMass())
 			{
 				// The linear and angular movements required are in proportion to
 				// the two inverse inertias.
