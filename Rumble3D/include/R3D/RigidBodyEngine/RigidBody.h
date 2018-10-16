@@ -20,18 +20,31 @@ namespace r3
 		explicit RigidBody();
 		explicit RigidBody(const RigidBodyDef& def);
 		~RigidBody();
-
+	
+		/** Initialize all attributes of this rigid body. */
 		void init(const RigidBodyDef& definition);
 
 		void calculateDerivedData();
 		void setInertiaTensor(const glm::mat3& inertiaTensor);
 		glm::mat3 getInverseTensor() const;
 
-		/* (Inverse) Mass access */
+		/**
+		 * Set the mass of this rigid body.
+		 * Implicitly sets the inverse mass.
+		 */
 		void setMass(real mass);
+		/** Get the mass of this rigid body. */
 		real getMass() const;
+		/**
+		 * Set the inverse mass of this rigid body.
+		 * Implicitly sets the mass.
+		 * \param inverseMass An inverse mass of zero equals a rigid body
+		 * with infinite mass.
+		 */
 		void setInverseMass(real inverseMass);
+		/** Get the inverse mass */
 		real getInverseMass() const;
+		/** Check if this rigid body has infinite mass */
 		bool hasFiniteMass() const;
 
 		/* Force and torque accumulator access */

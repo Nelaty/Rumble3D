@@ -25,7 +25,7 @@ Collaboration diagram for r3\+:\+:Collision\+Plane\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classr3_1_1_collision_plane_add1bd6bbc252e0d021a6890205a05e56}{Collision\+Plane}} (const glm\+::vec3 \&normal, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} offset)
+\mbox{\hyperlink{classr3_1_1_collision_plane_ae3f8642b62667018e4a4c3120880fd0f}{Collision\+Plane}} (const glm\+::vec3 \&normal, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} offset, const glm\+::vec2 \&half\+Sizes=glm\+::vec2(1.\+0f, 1.\+0f), bool is\+Half\+Space=false)
 \item 
 \mbox{\hyperlink{classr3_1_1_collision_plane_a4c83b51c544a5fda9d949baced5cea02}{$\sim$\+Collision\+Plane}} ()
 \item 
@@ -36,6 +36,10 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_plane_aa6605acf447da4e45084e6
 void \mbox{\hyperlink{classr3_1_1_collision_plane_ae37e09e6b807cdd800671daa5623b073}{set\+Offset}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} offset)
 \item 
 void \mbox{\hyperlink{classr3_1_1_collision_plane_a1fa140b6648f14bef9720ac0d4eefc99}{set\+Normal}} (const glm\+::vec3 \&normal)
+\item 
+bool \mbox{\hyperlink{classr3_1_1_collision_plane_a87f5071d181b4c643b42cb2448464be2}{is\+Half\+Space}} () const
+\item 
+const glm\+::vec2 \& \mbox{\hyperlink{classr3_1_1_collision_plane_ab48030fbf5bc17cd5ad81e5eb654a4b4}{get\+Half\+Sizes}} () const
 \end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -43,16 +47,20 @@ void \mbox{\hyperlink{classr3_1_1_collision_plane_a1fa140b6648f14bef9720ac0d4eef
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_plane_ab65e832434d2da433e79c93ac12f4b43}{m\+\_\+normal}}
 \item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_collision_plane_a8ae3c28197b05088e405ff9944632f74}{m\+\_\+offset}}
+\item 
+glm\+::vec2 \mbox{\hyperlink{classr3_1_1_collision_plane_a8e642d9075ceebd029f3869ace65dd5f}{m\+\_\+half\+Sizes}}
+\item 
+bool \mbox{\hyperlink{classr3_1_1_collision_plane_a6d560c5f7627efec1d094905ec4e7d60}{m\+\_\+is\+Half\+Space}}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_plane_add1bd6bbc252e0d021a6890205a05e56}\label{classr3_1_1_collision_plane_add1bd6bbc252e0d021a6890205a05e56}} 
+\mbox{\Hypertarget{classr3_1_1_collision_plane_ae3f8642b62667018e4a4c3120880fd0f}\label{classr3_1_1_collision_plane_ae3f8642b62667018e4a4c3120880fd0f}} 
 \index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!Collision\+Plane@{Collision\+Plane}}
 \index{Collision\+Plane@{Collision\+Plane}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
 \subsubsection{\texorpdfstring{Collision\+Plane()}{CollisionPlane()}}
-{\footnotesize\ttfamily r3\+::\+Collision\+Plane\+::\+Collision\+Plane (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{normal,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{offset }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily r3\+::\+Collision\+Plane\+::\+Collision\+Plane (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{normal,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{offset,  }\item[{const glm\+::vec2 \&}]{half\+Sizes = {\ttfamily glm\+:\+:vec2(1.0f,~1.0f)},  }\item[{bool}]{is\+Half\+Space = {\ttfamily false} }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classr3_1_1_collision_plane_a4c83b51c544a5fda9d949baced5cea02}\label{classr3_1_1_collision_plane_a4c83b51c544a5fda9d949baced5cea02}} 
 \index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!````~Collision\+Plane@{$\sim$\+Collision\+Plane}}
@@ -63,7 +71,13 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_plane_ab65e832434d2da433e79c9
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_plane_aa6605acf447da4e45084e6d25c1067ad}\label{classr3_1_1_collision_plane_aa6605acf447da4e45084e6d25c1067ad}} 
+\mbox{\Hypertarget{classr3_1_1_collision_plane_ab48030fbf5bc17cd5ad81e5eb654a4b4}\label{classr3_1_1_collision_plane_ab48030fbf5bc17cd5ad81e5eb654a4b4}} 
+\index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!get\+Half\+Sizes@{get\+Half\+Sizes}}
+\index{get\+Half\+Sizes@{get\+Half\+Sizes}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
+\subsubsection{\texorpdfstring{get\+Half\+Sizes()}{getHalfSizes()}}
+{\footnotesize\ttfamily const glm\+::vec2 \& r3\+::\+Collision\+Plane\+::get\+Half\+Sizes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Get scaling in x-\/z directions \mbox{\Hypertarget{classr3_1_1_collision_plane_aa6605acf447da4e45084e6d25c1067ad}\label{classr3_1_1_collision_plane_aa6605acf447da4e45084e6d25c1067ad}} 
 \index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!get\+Normal@{get\+Normal}}
 \index{get\+Normal@{get\+Normal}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
 \subsubsection{\texorpdfstring{get\+Normal()}{getNormal()}}
@@ -75,7 +89,13 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_plane_ab65e832434d2da433e79c9
 \subsubsection{\texorpdfstring{get\+Offset()}{getOffset()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Collision\+Plane\+::get\+Offset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classr3_1_1_collision_plane_a1fa140b6648f14bef9720ac0d4eefc99}\label{classr3_1_1_collision_plane_a1fa140b6648f14bef9720ac0d4eefc99}} 
+\mbox{\Hypertarget{classr3_1_1_collision_plane_a87f5071d181b4c643b42cb2448464be2}\label{classr3_1_1_collision_plane_a87f5071d181b4c643b42cb2448464be2}} 
+\index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!is\+Half\+Space@{is\+Half\+Space}}
+\index{is\+Half\+Space@{is\+Half\+Space}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
+\subsubsection{\texorpdfstring{is\+Half\+Space()}{isHalfSpace()}}
+{\footnotesize\ttfamily bool r3\+::\+Collision\+Plane\+::is\+Half\+Space (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Check if this plane defines a half space. If this is the case, the normal will point away from this half space. \mbox{\Hypertarget{classr3_1_1_collision_plane_a1fa140b6648f14bef9720ac0d4eefc99}\label{classr3_1_1_collision_plane_a1fa140b6648f14bef9720ac0d4eefc99}} 
 \index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!set\+Normal@{set\+Normal}}
 \index{set\+Normal@{set\+Normal}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
 \subsubsection{\texorpdfstring{set\+Normal()}{setNormal()}}
@@ -90,6 +110,18 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_plane_ab65e832434d2da433e79c9
 
 
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_plane_a8e642d9075ceebd029f3869ace65dd5f}\label{classr3_1_1_collision_plane_a8e642d9075ceebd029f3869ace65dd5f}} 
+\index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!m\+\_\+half\+Sizes@{m\+\_\+half\+Sizes}}
+\index{m\+\_\+half\+Sizes@{m\+\_\+half\+Sizes}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
+\subsubsection{\texorpdfstring{m\+\_\+half\+Sizes}{m\_halfSizes}}
+{\footnotesize\ttfamily glm\+::vec2 r3\+::\+Collision\+Plane\+::m\+\_\+half\+Sizes\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_plane_a6d560c5f7627efec1d094905ec4e7d60}\label{classr3_1_1_collision_plane_a6d560c5f7627efec1d094905ec4e7d60}} 
+\index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!m\+\_\+is\+Half\+Space@{m\+\_\+is\+Half\+Space}}
+\index{m\+\_\+is\+Half\+Space@{m\+\_\+is\+Half\+Space}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
+\subsubsection{\texorpdfstring{m\+\_\+is\+Half\+Space}{m\_isHalfSpace}}
+{\footnotesize\ttfamily bool r3\+::\+Collision\+Plane\+::m\+\_\+is\+Half\+Space\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{classr3_1_1_collision_plane_ab65e832434d2da433e79c93ac12f4b43}\label{classr3_1_1_collision_plane_ab65e832434d2da433e79c93ac12f4b43}} 
 \index{r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}!m\+\_\+normal@{m\+\_\+normal}}
 \index{m\+\_\+normal@{m\+\_\+normal}!r3\+::\+Collision\+Plane@{r3\+::\+Collision\+Plane}}
@@ -106,5 +138,5 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_plane_ab65e832434d2da433e79c9
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_plane_8h}{Collision\+Plane.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_plane_8cpp}{Collision\+Plane.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_plane_8h}{Collision\+Plane.\+h}}\item 
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_plane_8cpp}{Collision\+Plane.\+cpp}}\end{DoxyCompactItemize}

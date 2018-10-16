@@ -80,6 +80,9 @@ $(function() {
 : <a class="el" href="classr3_1_1_i_box_box_narrow_algorithm.html#a4b06ee2be38c248c59195082db64c3e3">r3::IBoxBoxNarrowAlgorithm</a>
 , <a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#aeecdb2486c6e6cbae057466f05323bdb">r3::IBoxSphereNarrowAlgorithm</a>
 , <a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html#a606fe8de5fe81ff45fedb81ca74717c3">r3::INarrowPhaseAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_plane_box_collision_algorithm.html#aacbbfc59a3cb174876bd5cffad22f1fc">r3::IPlaneBoxCollisionAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_plane_plane_collision_algorithm.html#a910587be6f6537f86bbcc5e3a9b40223">r3::IPlanePlaneCollisionAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_plane_sphere_collision_algorithm.html#a5b1c334d90d381e089d59cb59a7714c5">r3::IPlaneSphereCollisionAlgorithm</a>
 , <a class="el" href="classr3_1_1_i_sphere_sphere_narrow_algorithm.html#acfdb8ae3db8c91843216651768cbd4e2">r3::ISphereSphereNarrowAlgorithm</a>
 </li>
 <li>generateContactDataImpl()
@@ -87,7 +90,13 @@ $(function() {
 , <a class="el" href="classr3_1_1_box_sphere_narrow_algorithm.html#a2fc345fdec27e85f0e569afa0d500865">r3::BoxSphereNarrowAlgorithm</a>
 , <a class="el" href="classr3_1_1_i_box_box_narrow_algorithm.html#abc15898100b5ed0537e4c6ccc6610069">r3::IBoxBoxNarrowAlgorithm</a>
 , <a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#af28bcda3eb527a6ee48a3b624e5d47e0">r3::IBoxSphereNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_plane_box_collision_algorithm.html#a48f6ca7613a0cc7c64d8e0cfe34674e8">r3::IPlaneBoxCollisionAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_plane_plane_collision_algorithm.html#a708dec70f58b4476976dfea9921d1524">r3::IPlanePlaneCollisionAlgorithm</a>
+, <a class="el" href="classr3_1_1_i_plane_sphere_collision_algorithm.html#a92ddfd3ba00ed53b183a6aef41b04a60">r3::IPlaneSphereCollisionAlgorithm</a>
 , <a class="el" href="classr3_1_1_i_sphere_sphere_narrow_algorithm.html#a9e616d04c7ee379d973ec81ea0067cc3">r3::ISphereSphereNarrowAlgorithm</a>
+, <a class="el" href="classr3_1_1_plane_box_collision_algorithm.html#a529c85973e9dab38e7427cdf9177d9ba">r3::PlaneBoxCollisionAlgorithm</a>
+, <a class="el" href="classr3_1_1_plane_plane_collision_algorithm.html#a33400ba57a8c0550ada0778bb92eeb69">r3::PlanePlaneCollisionAlgorithm</a>
+, <a class="el" href="classr3_1_1_plane_sphere_collision_algorithm.html#a6823dc80b23ce77beabd26a9c2a9d9ed">r3::PlaneSphereCollisionAlgorithm</a>
 , <a class="el" href="classr3_1_1_sphere_sphere_narrow_algorithm.html#a3559238de013b2fb8f3786e365e2ace7">r3::SphereSphereNarrowAlgorithm</a>
 </li>
 <li>generateContacts()
@@ -179,7 +188,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle.html#a6f05d81870e5566701760873082ae1b0">r3::Particle</a>
 </li>
 <li>getData()
-: <a class="el" href="classr3_1_1_collision_data.html#acb1bb23e8d0f37f0ebc39e8f7642419f">r3::CollisionData</a>
+: <a class="el" href="classr3_1_1_collision_data.html#ab31745ebb708c1d04e22bcfb385e663f">r3::CollisionData</a>
 </li>
 <li>getDesiredDeltaVelocity()
 : <a class="el" href="classr3_1_1_contact.html#aff234679aa4302b69b8dd101eb969705">r3::Contact</a>
@@ -205,7 +214,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle.html#a81fe0cfac976df7da6337dabc8f73313">r3::Particle</a>
 </li>
 <li>getForceRegistry()
-: <a class="el" href="classr3_1_1_rigid_body_world.html#acfdc56e2796e5e0d86dbf71582e1b8c2">r3::RigidBodyWorld</a>
+: <a class="el" href="classr3_1_1_rigid_body_world.html#a5ec345de8bdc6e910797434de918dbc2">r3::RigidBodyWorld</a>
 </li>
 <li>getFriction()
 : <a class="el" href="classr3_1_1_collision_data.html#ae610a57c20c504a7bacb4e35f89f530f">r3::CollisionData</a>
@@ -222,6 +231,9 @@ $(function() {
 </li>
 <li>getHalfSize()
 : <a class="el" href="classr3_1_1_collision_box.html#a6d35bfc27fd291409cb5e90ae2464179">r3::CollisionBox</a>
+</li>
+<li>getHalfSizes()
+: <a class="el" href="classr3_1_1_collision_plane.html#ab48030fbf5bc17cd5ad81e5eb654a4b4">r3::CollisionPlane</a>
 </li>
 <li>getInverseInertiaTensorWorld()
 : <a class="el" href="classr3_1_1_rigid_body.html#ae9057a0acbb7dd552a23557ed773b3d5">r3::RigidBody</a>

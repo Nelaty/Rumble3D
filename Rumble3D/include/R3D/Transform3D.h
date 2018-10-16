@@ -11,7 +11,7 @@ namespace r3
 	{
 	public:
 		explicit Transform3D(const glm::vec3& position = glm::vec3(0.0),
-							 const glm::mat3& rotation = glm::mat3(1));
+		                     const glm::mat3& rotation = glm::mat3(1));
 		~Transform3D();
 
 		/** Set the current position. */
@@ -21,21 +21,30 @@ namespace r3
 		/** Get the current position. */
 		const glm::vec3& getPosition() const;
 
+		/** Translate */
 		void translate(const glm::vec3& delta);
+		/** Translate */
+		void translate(real x, real y, real z);
 
+		/** Rotate */
 		void rotate(const glm::quat& rot);
+		/** Rotate */
+		void rotate(const glm::mat3& rot);
+
 		/** Set the current rotation. */
 		void setRotation(float w, float x, float y, float z);
 		/** Set the current rotation. */
 		void setRotation(const glm::quat& orientation);
+		/** Set the current rotation */
+		void setRotation(const glm::mat3& rot);
 		/** Get the current rotation. */
 		const glm::mat3& getRotation() const;
 
 
-		glm::vec3 getPointInLocalSpace(const glm::vec3 &point) const;
-		glm::vec3 getPointInWorldSpace(const glm::vec3 &point) const;
-		glm::vec3 getDirectionInLocalSpace(const glm::vec3 &direction) const;
-		glm::vec3 getDirectionInWorldSpace(const glm::vec3 &direction) const;
+		glm::vec3 getPointInLocalSpace(const glm::vec3& point) const;
+		glm::vec3 getPointInWorldSpace(const glm::vec3& point) const;
+		glm::vec3 getDirectionInLocalSpace(const glm::vec3& direction) const;
+		glm::vec3 getDirectionInWorldSpace(const glm::vec3& direction) const;
 
 	private:
 		glm::mat3 m_rotation;

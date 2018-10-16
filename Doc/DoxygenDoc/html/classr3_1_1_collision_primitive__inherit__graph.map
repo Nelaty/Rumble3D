@@ -1,5 +1,5 @@
 <map id="r3::CollisionPrimitive" name="r3::CollisionPrimitive">
-<area shape="rect" id="node2" href="$classr3_1_1_collision_box.html" title="{r3::CollisionBox\n|# m_halfSize\l|+ CollisionBox()\l+ ~CollisionBox()\l+ getHalfSize()\l}" alt="" coords="5,277,128,384"/>
-<area shape="rect" id="node3" href="$classr3_1_1_collision_plane.html" title="{r3::CollisionPlane\n|# m_normal\l# m_offset\l|+ CollisionPlane()\l+ ~CollisionPlane()\l+ getOffset()\l+ getNormal()\l+ setOffset()\l+ setNormal()\l}" alt="" coords="153,248,285,413"/>
-<area shape="rect" id="node4" href="$classr3_1_1_collision_sphere.html" title="{r3::CollisionSphere\n|# m_radius\l|+ CollisionSphere()\l+ ~CollisionSphere()\l+ getRadius()\l}" alt="" coords="309,277,449,384"/>
+<area shape="rect" id="node2" href="$classr3_1_1_collision_box.html" title="{r3::CollisionBox\n|# m_halfSize\l|+ CollisionBox()\l+ ~CollisionBox()\l+ getHalfSize()\l}" alt="" coords="5,307,128,413"/>
+<area shape="rect" id="node3" href="$classr3_1_1_collision_plane.html" title="{r3::CollisionPlane\n|# m_normal\l# m_offset\l# m_halfSizes\l# m_isHalfSpace\l|+ CollisionPlane()\l+ ~CollisionPlane()\l+ getOffset()\l+ getNormal()\l+ setOffset()\l+ setNormal()\l+ isHalfSpace()\l+ getHalfSizes()\l}" alt="" coords="153,248,285,472"/>
+<area shape="rect" id="node4" href="$classr3_1_1_collision_sphere.html" title="{r3::CollisionSphere\n|# m_radius\l|+ CollisionSphere()\l+ ~CollisionSphere()\l+ getRadius()\l}" alt="" coords="309,307,449,413"/>
 </map>

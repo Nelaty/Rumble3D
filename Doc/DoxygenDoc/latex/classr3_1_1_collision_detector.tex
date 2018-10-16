@@ -10,7 +10,7 @@ Collaboration diagram for r3\+:\+:Collision\+Detector\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=245pt]{classr3_1_1_collision_detector__coll__graph}
+\includegraphics[width=239pt]{classr3_1_1_collision_detector__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
@@ -25,15 +25,21 @@ using \mbox{\hyperlink{classr3_1_1_collision_detector_a094cc287cba14d5a063cfca41
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classr3_1_1_collision_detector_ad5754f8b7105f7d0c2a534bee681cd6d}{Collision\+Detector}} (unsigned int contacts\+Max=1000, unsigned int iterations=0)
+\mbox{\hyperlink{classr3_1_1_collision_detector_a47ab392bc5215133e29cd678ef915108}{Collision\+Detector}} (unsigned int broad\+Phase\+Collisions=1000000, unsigned int contacts\+Max=1000, unsigned int iterations=2000)
 \item 
 \mbox{\hyperlink{classr3_1_1_collision_detector_ad44d67dd15e661d0e135016c89a7c9a4}{Collision\+Detector}} (const \mbox{\hyperlink{classr3_1_1_collision_detector}{Collision\+Detector}} \&)=delete
 \item 
 \mbox{\hyperlink{classr3_1_1_collision_detector_ab45ac57f6ab9bcab367e104e9423722a}{$\sim$\+Collision\+Detector}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_collision_detector_acaa771728b3edcf398724f0295151eb4}{init}} (unsigned int contacts\+Max=1000, unsigned int iterations=0)
+void \mbox{\hyperlink{classr3_1_1_collision_detector_a396e4c5db21eddfadb52533bdc7db08a}{init}} (unsigned int broad\+Phase\+Collisions=1000000, unsigned int contacts\+Max=1000, unsigned int iterations=2000)
 \item 
 void \mbox{\hyperlink{classr3_1_1_collision_detector_a8f9f9e0ecc67d950e79d024803dc916b}{reset}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_detector_a386e4e4027a98c154423c8aea9079138}{set\+Broad\+Phase\+Collisions\+Max}} (int count)
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_detector_a1920971e75d79df7806a8d803a010e62}{set\+Contacts\+Max}} (int count)
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_detector_a4d6081592ca35150cd6c8fe0d551c64d}{set\+Iterations}} (int iterations)
 \item 
 \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \& \mbox{\hyperlink{classr3_1_1_collision_detector_a58a1bd9705f241e4c137458bed35f596}{generate\+Collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&rigid\+Bodies)
 \item 
@@ -78,11 +84,11 @@ The \mbox{\hyperlink{classr3_1_1_collision_detector}{Collision\+Detector}} acts 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_detector_ad5754f8b7105f7d0c2a534bee681cd6d}\label{classr3_1_1_collision_detector_ad5754f8b7105f7d0c2a534bee681cd6d}} 
+\mbox{\Hypertarget{classr3_1_1_collision_detector_a47ab392bc5215133e29cd678ef915108}\label{classr3_1_1_collision_detector_a47ab392bc5215133e29cd678ef915108}} 
 \index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!Collision\+Detector@{Collision\+Detector}}
 \index{Collision\+Detector@{Collision\+Detector}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
 \subsubsection{\texorpdfstring{Collision\+Detector()}{CollisionDetector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily r3\+::\+Collision\+Detector\+::\+Collision\+Detector (\begin{DoxyParamCaption}\item[{unsigned int}]{contacts\+Max = {\ttfamily 1000},  }\item[{unsigned int}]{iterations = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Detector\+::\+Collision\+Detector (\begin{DoxyParamCaption}\item[{unsigned int}]{broad\+Phase\+Collisions = {\ttfamily 1000000},  }\item[{unsigned int}]{contacts\+Max = {\ttfamily 1000},  }\item[{unsigned int}]{iterations = {\ttfamily 2000} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \mbox{\Hypertarget{classr3_1_1_collision_detector_ad44d67dd15e661d0e135016c89a7c9a4}\label{classr3_1_1_collision_detector_ad44d67dd15e661d0e135016c89a7c9a4}} 
 \index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!Collision\+Detector@{Collision\+Detector}}
@@ -126,11 +132,11 @@ Get the currently used broad phase filter. \mbox{\Hypertarget{classr3_1_1_collis
 \subsubsection{\texorpdfstring{get\+Narrow\+Phase\+Filter()}{getNarrowPhaseFilter()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_i_narrow_phase_filter}{I\+Narrow\+Phase\+Filter}} $\ast$ r3\+::\+Collision\+Detector\+::get\+Narrow\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the currently used narrow phase filter \mbox{\Hypertarget{classr3_1_1_collision_detector_acaa771728b3edcf398724f0295151eb4}\label{classr3_1_1_collision_detector_acaa771728b3edcf398724f0295151eb4}} 
+Get the currently used narrow phase filter \mbox{\Hypertarget{classr3_1_1_collision_detector_a396e4c5db21eddfadb52533bdc7db08a}\label{classr3_1_1_collision_detector_a396e4c5db21eddfadb52533bdc7db08a}} 
 \index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!init@{init}}
 \index{init@{init}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
 \subsubsection{\texorpdfstring{init()}{init()}}
-{\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::init (\begin{DoxyParamCaption}\item[{unsigned int}]{contacts\+Max = {\ttfamily 1000},  }\item[{unsigned int}]{iterations = {\ttfamily 0} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::init (\begin{DoxyParamCaption}\item[{unsigned int}]{broad\+Phase\+Collisions = {\ttfamily 1000000},  }\item[{unsigned int}]{contacts\+Max = {\ttfamily 1000},  }\item[{unsigned int}]{iterations = {\ttfamily 2000} }\end{DoxyParamCaption})}
 
 Set the number of used contacts and iterations. \mbox{\Hypertarget{classr3_1_1_collision_detector_a780e977afd65d4a41863e712f9acb63f}\label{classr3_1_1_collision_detector_a780e977afd65d4a41863e712f9acb63f}} 
 \index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!remove\+All\+Intermediate\+Phase\+Filters@{remove\+All\+Intermediate\+Phase\+Filters}}
@@ -153,13 +159,31 @@ True if the given filter was found and removed, false otherwise.
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Reset previously calculated collisions. \mbox{\Hypertarget{classr3_1_1_collision_detector_a2184ca2db73a6446cf028e3b742c7cc4}\label{classr3_1_1_collision_detector_a2184ca2db73a6446cf028e3b742c7cc4}} 
+Reset previously calculated collisions. \mbox{\Hypertarget{classr3_1_1_collision_detector_a386e4e4027a98c154423c8aea9079138}\label{classr3_1_1_collision_detector_a386e4e4027a98c154423c8aea9079138}} 
+\index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!set\+Broad\+Phase\+Collisions\+Max@{set\+Broad\+Phase\+Collisions\+Max}}
+\index{set\+Broad\+Phase\+Collisions\+Max@{set\+Broad\+Phase\+Collisions\+Max}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
+\subsubsection{\texorpdfstring{set\+Broad\+Phase\+Collisions\+Max()}{setBroadPhaseCollisionsMax()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::set\+Broad\+Phase\+Collisions\+Max (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Set the maximal number of collision pairs created in the broad and intermediate phases. \mbox{\Hypertarget{classr3_1_1_collision_detector_a2184ca2db73a6446cf028e3b742c7cc4}\label{classr3_1_1_collision_detector_a2184ca2db73a6446cf028e3b742c7cc4}} 
 \index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!set\+Broad\+Phase\+Filter@{set\+Broad\+Phase\+Filter}}
 \index{set\+Broad\+Phase\+Filter@{set\+Broad\+Phase\+Filter}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
 \subsubsection{\texorpdfstring{set\+Broad\+Phase\+Filter()}{setBroadPhaseFilter()}}
 {\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::set\+Broad\+Phase\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_detector_aa8ed51d53c6f6ce545c93ad0e356d6de}{Broad\+Phase\+Filter\+\_\+\+Ptr}}}]{filter }\end{DoxyParamCaption})}
 
-Set the broad phase filter \mbox{\Hypertarget{classr3_1_1_collision_detector_a98f6ab749622d7fcffbdc0dcf59cfa75}\label{classr3_1_1_collision_detector_a98f6ab749622d7fcffbdc0dcf59cfa75}} 
+Set the broad phase filter \mbox{\Hypertarget{classr3_1_1_collision_detector_a1920971e75d79df7806a8d803a010e62}\label{classr3_1_1_collision_detector_a1920971e75d79df7806a8d803a010e62}} 
+\index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!set\+Contacts\+Max@{set\+Contacts\+Max}}
+\index{set\+Contacts\+Max@{set\+Contacts\+Max}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
+\subsubsection{\texorpdfstring{set\+Contacts\+Max()}{setContactsMax()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::set\+Contacts\+Max (\begin{DoxyParamCaption}\item[{int}]{count }\end{DoxyParamCaption})}
+
+Set the maximal number of contacts created in the narrow phase. \mbox{\Hypertarget{classr3_1_1_collision_detector_a4d6081592ca35150cd6c8fe0d551c64d}\label{classr3_1_1_collision_detector_a4d6081592ca35150cd6c8fe0d551c64d}} 
+\index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!set\+Iterations@{set\+Iterations}}
+\index{set\+Iterations@{set\+Iterations}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
+\subsubsection{\texorpdfstring{set\+Iterations()}{setIterations()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Detector\+::set\+Iterations (\begin{DoxyParamCaption}\item[{int}]{iterations }\end{DoxyParamCaption})}
+
+Set the maximal number of iterations used. \mbox{\Hypertarget{classr3_1_1_collision_detector_a98f6ab749622d7fcffbdc0dcf59cfa75}\label{classr3_1_1_collision_detector_a98f6ab749622d7fcffbdc0dcf59cfa75}} 
 \index{r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}!set\+Narrow\+Phase\+Filter@{set\+Narrow\+Phase\+Filter}}
 \index{set\+Narrow\+Phase\+Filter@{set\+Narrow\+Phase\+Filter}!r3\+::\+Collision\+Detector@{r3\+::\+Collision\+Detector}}
 \subsubsection{\texorpdfstring{set\+Narrow\+Phase\+Filter()}{setNarrowPhaseFilter()}}
@@ -169,5 +193,5 @@ Set the narrow phase filter
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_detector_8h}{Collision\+Detector.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_detector_8cpp}{Collision\+Detector.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_detector_8h}{Collision\+Detector.\+h}}\item 
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_detector_8cpp}{Collision\+Detector.\+cpp}}\end{DoxyCompactItemize}

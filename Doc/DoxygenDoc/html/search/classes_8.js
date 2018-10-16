@@ -26,5 +26,8 @@ var searchData=
   ['physicsenginemodule',['PhysicsEngineModule',['../classr3_1_1_physics_engine_module.html',1,'r3']]],
   ['physicsmaterial',['PhysicsMaterial',['../classr3_1_1_physics_material.html',1,'r3']]],
   ['physicsmaterialdef',['PhysicsMaterialDef',['../structr3_1_1_physics_material_def.html',1,'r3']]],
+  ['planeboxcollisionalgorithm',['PlaneBoxCollisionAlgorithm',['../classr3_1_1_plane_box_collision_algorithm.html',1,'r3']]],
+  ['planeplanecollisionalgorithm',['PlanePlaneCollisionAlgorithm',['../classr3_1_1_plane_plane_collision_algorithm.html',1,'r3']]],
+  ['planespherecollisionalgorithm',['PlaneSphereCollisionAlgorithm',['../classr3_1_1_plane_sphere_collision_algorithm.html',1,'r3']]],
   ['potentialcontacts',['PotentialContacts',['../structr3_1_1_potential_contacts.html',1,'r3']]]
 ];

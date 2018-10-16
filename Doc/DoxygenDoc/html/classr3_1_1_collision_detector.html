@@ -94,16 +94,22 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad5754f8b7105f7d0c2a534bee681cd6d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#ad5754f8b7105f7d0c2a534bee681cd6d">CollisionDetector</a> (unsigned int contactsMax=1000, unsigned int iterations=0)</td></tr>
-<tr class="separator:ad5754f8b7105f7d0c2a534bee681cd6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ab392bc5215133e29cd678ef915108"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a47ab392bc5215133e29cd678ef915108">CollisionDetector</a> (unsigned int broadPhaseCollisions=1000000, unsigned int contactsMax=1000, unsigned int iterations=2000)</td></tr>
+<tr class="separator:a47ab392bc5215133e29cd678ef915108"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad44d67dd15e661d0e135016c89a7c9a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#ad44d67dd15e661d0e135016c89a7c9a4">CollisionDetector</a> (const <a class="el" href="classr3_1_1_collision_detector.html">CollisionDetector</a> &amp;)=delete</td></tr>
 <tr class="separator:ad44d67dd15e661d0e135016c89a7c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab45ac57f6ab9bcab367e104e9423722a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#ab45ac57f6ab9bcab367e104e9423722a">~CollisionDetector</a> ()</td></tr>
 <tr class="separator:ab45ac57f6ab9bcab367e104e9423722a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acaa771728b3edcf398724f0295151eb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#acaa771728b3edcf398724f0295151eb4">init</a> (unsigned int contactsMax=1000, unsigned int iterations=0)</td></tr>
-<tr class="separator:acaa771728b3edcf398724f0295151eb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a396e4c5db21eddfadb52533bdc7db08a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a396e4c5db21eddfadb52533bdc7db08a">init</a> (unsigned int broadPhaseCollisions=1000000, unsigned int contactsMax=1000, unsigned int iterations=2000)</td></tr>
+<tr class="separator:a396e4c5db21eddfadb52533bdc7db08a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f9f9e0ecc67d950e79d024803dc916b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a8f9f9e0ecc67d950e79d024803dc916b">reset</a> ()</td></tr>
 <tr class="separator:a8f9f9e0ecc67d950e79d024803dc916b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386e4e4027a98c154423c8aea9079138"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a386e4e4027a98c154423c8aea9079138">setBroadPhaseCollisionsMax</a> (int count)</td></tr>
+<tr class="separator:a386e4e4027a98c154423c8aea9079138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1920971e75d79df7806a8d803a010e62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a1920971e75d79df7806a8d803a010e62">setContactsMax</a> (int count)</td></tr>
+<tr class="separator:a1920971e75d79df7806a8d803a010e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d6081592ca35150cd6c8fe0d551c64d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a4d6081592ca35150cd6c8fe0d551c64d">setIterations</a> (int iterations)</td></tr>
+<tr class="separator:a4d6081592ca35150cd6c8fe0d551c64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58a1bd9705f241e4c137458bed35f596"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a58a1bd9705f241e4c137458bed35f596">generateCollisions</a> (const std::vector&lt; <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&gt; &amp;rigidBodies)</td></tr>
 <tr class="separator:a58a1bd9705f241e4c137458bed35f596"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2184ca2db73a6446cf028e3b742c7cc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_detector.html#a2184ca2db73a6446cf028e3b742c7cc4">setBroadPhaseFilter</a> (<a class="el" href="classr3_1_1_collision_detector.html#aa8ed51d53c6f6ce545c93ad0e356d6de">BroadPhaseFilter_Ptr</a> filter)</td></tr>
@@ -167,8 +173,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad5754f8b7105f7d0c2a534bee681cd6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5754f8b7105f7d0c2a534bee681cd6d">&#9670;&nbsp;</a></span>CollisionDetector() <span class="overload">[1/2]</span></h2>
+<a id="a47ab392bc5215133e29cd678ef915108"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47ab392bc5215133e29cd678ef915108">&#9670;&nbsp;</a></span>CollisionDetector() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -180,13 +186,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">r3::CollisionDetector::CollisionDetector </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>broadPhaseCollisions</em> = <code>1000000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>contactsMax</em> = <code>1000</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>iterations</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>iterations</em> = <code>2000</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -329,8 +341,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="acaa771728b3edcf398724f0295151eb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acaa771728b3edcf398724f0295151eb4">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a396e4c5db21eddfadb52533bdc7db08a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a396e4c5db21eddfadb52533bdc7db08a">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,13 +351,19 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void r3::CollisionDetector::init </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>broadPhaseCollisions</em> = <code>1000000</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>contactsMax</em> = <code>1000</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>iterations</em> = <code>0</code>&#160;</td>
+          <td class="paramname"><em>iterations</em> = <code>2000</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -413,6 +431,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a386e4e4027a98c154423c8aea9079138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a386e4e4027a98c154423c8aea9079138">&#9670;&nbsp;</a></span>setBroadPhaseCollisionsMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::CollisionDetector::setBroadPhaseCollisionsMax </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the maximal number of collision pairs created in the broad and intermediate phases. </p>
+
+</div>
+</div>
 <a id="a2184ca2db73a6446cf028e3b742c7cc4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2184ca2db73a6446cf028e3b742c7cc4">&#9670;&nbsp;</a></span>setBroadPhaseFilter()</h2>
 
@@ -429,6 +466,44 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Set the broad phase filter </p>
+
+</div>
+</div>
+<a id="a1920971e75d79df7806a8d803a010e62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1920971e75d79df7806a8d803a010e62">&#9670;&nbsp;</a></span>setContactsMax()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::CollisionDetector::setContactsMax </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the maximal number of contacts created in the narrow phase. </p>
+
+</div>
+</div>
+<a id="a4d6081592ca35150cd6c8fe0d551c64d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d6081592ca35150cd6c8fe0d551c64d">&#9670;&nbsp;</a></span>setIterations()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::CollisionDetector::setIterations </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iterations</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set the maximal number of iterations used. </p>
 
 </div>
 </div>
@@ -452,8 +527,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_detector_8h_source.html">CollisionDetector.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_detector_8cpp.html">CollisionDetector.cpp</a></li>
+<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_detector_8h_source.html">CollisionDetector.h</a></li>
+<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_detector_8cpp.html">CollisionDetector.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

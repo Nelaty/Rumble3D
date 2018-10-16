@@ -58,6 +58,7 @@ namespace r3
 	                                       const glm::mat3& iit,
 	                                       const glm::mat4& rotMat)
 	{
+		/// \todo: refactor
 		// Der folgende Code wurde von Millington direkt übernommen,
 		// der behauptet, er wäre automatisch optimiert worden:		
 		real t4 = rotMat[0][0] * iit[0][0] +

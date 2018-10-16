@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a647ca787c02a56c230eb5d50080b561d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a647ca787c02a56c230eb5d50080b561d">createRigidBody</a> (<a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a> definition=<a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a>())</td></tr>
 <tr class="memdesc:a647ca787c02a56c230eb5d50080b561d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for a new rigid body and register it.  <a href="#a647ca787c02a56c230eb5d50080b561d">More...</a><br /></td></tr>
 <tr class="separator:a647ca787c02a56c230eb5d50080b561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a127ed4f7db52e7f24d6c84cab06fd187"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a127ed4f7db52e7f24d6c84cab06fd187">destroyRigidBody</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *particle)</td></tr>
-<tr class="memdesc:a127ed4f7db52e7f24d6c84cab06fd187"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of a given rigid body.  <a href="#a127ed4f7db52e7f24d6c84cab06fd187">More...</a><br /></td></tr>
-<tr class="separator:a127ed4f7db52e7f24d6c84cab06fd187"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a203fb9675eba999e0f59c23e597111"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a1a203fb9675eba999e0f59c23e597111">destroyRigidBody</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rigidBody)</td></tr>
+<tr class="memdesc:a1a203fb9675eba999e0f59c23e597111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of a given rigid body.  <a href="#a1a203fb9675eba999e0f59c23e597111">More...</a><br /></td></tr>
+<tr class="separator:a1a203fb9675eba999e0f59c23e597111"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdfd6a392a98366cd8414f7f6f50917f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#acdfd6a392a98366cd8414f7f6f50917f">destroyAllRigidBodies</a> ()</td></tr>
 <tr class="memdesc:acdfd6a392a98366cd8414f7f6f50917f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of all rigid bodies.  <a href="#acdfd6a392a98366cd8414f7f6f50917f">More...</a><br /></td></tr>
 <tr class="separator:acdfd6a392a98366cd8414f7f6f50917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -256,8 +256,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="a127ed4f7db52e7f24d6c84cab06fd187"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a127ed4f7db52e7f24d6c84cab06fd187">&#9670;&nbsp;</a></span>destroyRigidBody()</h2>
+<a id="a1a203fb9675eba999e0f59c23e597111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a203fb9675eba999e0f59c23e597111">&#9670;&nbsp;</a></span>destroyRigidBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -266,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">bool r3::RigidBodyWorld::destroyRigidBody </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td>
-          <td class="paramname"><em>particle</em></td><td>)</td>
+          <td class="paramname"><em>rigidBody</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -275,7 +275,7 @@ Additional Inherited Members</h2></td></tr>
 <p>Free memory of a given rigid body. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">particle</td><td>The rigid body to destroy. </td></tr>
+    <tr><td class="paramname">rigidBody</td><td>The rigid body to destroy. </td></tr>
   </table>
   </dd>
 </dl>
@@ -403,8 +403,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_rigid_body_world_8h_source.html">RigidBodyWorld.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_rigid_body_world_8cpp.html">RigidBodyWorld.cpp</a></li>
+<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_rigid_body_world_8h_source.html">RigidBodyWorld.h</a></li>
+<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_rigid_body_world_8cpp.html">RigidBodyWorld.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -38,9 +38,21 @@ namespace r3
 		m_position += delta;
 	}
 
+	void Transform3D::translate(real x, real y, real z)
+	{
+		m_position.x += x;
+		m_position.y += y;
+		m_position.z += z;
+	}
+
 	void Transform3D::rotate(const glm::quat& rot)
 	{
 		m_rotation = m_rotation * glm::toMat3(rot);
+	}
+
+	void Transform3D::rotate(const glm::mat3& rot)
+	{
+		m_rotation = rot * m_rotation;
 	}
 
 	void Transform3D::setRotation(const float w, const float x, const float y, const float z)
@@ -51,6 +63,11 @@ namespace r3
 	void Transform3D::setRotation(const glm::quat& orientation)
 	{
 		m_rotation = glm::toMat3(orientation);
+	}
+
+	void Transform3D::setRotation(const glm::mat3& rot)
+	{
+		m_rotation = rot;
 	}
 
 	const glm::mat3& Transform3D::getRotation() const

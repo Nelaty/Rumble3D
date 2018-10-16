@@ -2,9 +2,7 @@ var searchData=
 [
   ['boundingbox',['BoundingBox',['../classr3_1_1_bounding_box.html#a088852419e2b7af17f2e94d672a70bcf',1,'r3::BoundingBox::BoundingBox()'],['../classr3_1_1_bounding_box.html#abb61e82e1d736772f92b4f5b519c755d',1,'r3::BoundingBox::BoundingBox(const glm::vec3 &amp;center, const glm::vec3 &amp;bounds)'],['../classr3_1_1_bounding_box.html#a23750f8e74b918e0b39ce2c2fe609574',1,'r3::BoundingBox::BoundingBox(const BoundingBox &amp;one, const BoundingBox &amp;two)']]],
   ['boundingsphere',['BoundingSphere',['../classr3_1_1_bounding_sphere.html#af602a853d8ed0b5ccad8679ee41fe7f8',1,'r3::BoundingSphere::BoundingSphere()'],['../classr3_1_1_bounding_sphere.html#a9a9264c19d56b10c9b0def547a369d57',1,'r3::BoundingSphere::BoundingSphere(const glm::vec3 &amp;center, real radius)'],['../classr3_1_1_bounding_sphere.html#a3d461e62b827ad9a30ca8013d451e3da',1,'r3::BoundingSphere::BoundingSphere(const BoundingSphere &amp;one, const BoundingSphere &amp;two)']]],
-  ['boxandbox',['boxAndBox',['../classr3_1_1_collision_detector_old.html#afd98d9fbaa8ace5bb239a2a2da08aace',1,'r3::CollisionDetectorOld']]],
   ['boxandhalfspace',['boxAndHalfSpace',['../classr3_1_1_collision_detector_old.html#ad1fa9c247235130c96432fc3f5524e8f',1,'r3::CollisionDetectorOld']]],
-  ['boxandsphere',['boxAndSphere',['../classr3_1_1_collision_detector_old.html#a16fabd7a2ded98f3cb7694f853724541',1,'r3::CollisionDetectorOld']]],
   ['boxboxnarrowalgorithm',['BoxBoxNarrowAlgorithm',['../classr3_1_1_box_box_narrow_algorithm.html#a3c801622b4235a4738d18fef0eda9949',1,'r3::BoxBoxNarrowAlgorithm']]],
   ['boxspherenarrowalgorithm',['BoxSphereNarrowAlgorithm',['../classr3_1_1_box_sphere_narrow_algorithm.html#a0184c33ce7da891240781ad7c78bd9a2',1,'r3::BoxSphereNarrowAlgorithm']]],
   ['broadphasecollisiondata',['BroadPhaseCollisionData',['../classr3_1_1_broad_phase_collision_data.html#a435ccad13c2e1d67f1550e11faf7fa3f',1,'r3::BroadPhaseCollisionData']]],

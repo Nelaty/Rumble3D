@@ -1,0 +1,4 @@
+<map id="r3::IPlanePlaneCollisionAlgorithm" name="r3::IPlanePlaneCollisionAlgorithm">
+<area shape="rect" id="node3" href="$classr3_1_1_plane_plane_collision_algorithm.html" title="{r3::PlanePlaneCollisionAlgorithm\n||+ PlanePlaneCollisionAlgorithm()\l+ ~PlanePlaneCollisionAlgorithm()\l# generateContactDataImpl()\l}" alt="" coords="7,344,227,451"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="{r3::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l+ generateContactData()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="24,5,209,112"/>
+</map>
