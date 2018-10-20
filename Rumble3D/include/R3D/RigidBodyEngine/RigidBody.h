@@ -25,7 +25,9 @@ namespace r3
 		void init(const RigidBodyDef& definition);
 
 		void calculateDerivedData();
+		/** Set the current inertia tensor. */
 		void setInertiaTensor(const glm::mat3& inertiaTensor);
+		/** Get the current inverted inertia tensor. */
 		glm::mat3 getInverseTensor() const;
 
 		/**
@@ -51,37 +53,45 @@ namespace r3
 		glm::vec3 getForceAccumulated() const;
 		glm::vec3 getTorqueAccumulated() const;
 
-		/* Position access */
+		/** Set the position of this rigid body. */
 		void setCenterOfMass(const glm::vec3& centerOfMass);
+		/** Set the position of this rigid body. */
 		void setCenterOfMass(real x, real y, real z);
+		/** Get the current position. */
 		glm::vec3 getCenterOfMass() const;
 
 		void setOrientation(const glm::quat& orientation);
 		void setOrientation(real r, real i, real j, real k);
 		glm::quat getOrientation() const;
 
-		/* Velocity access */
+		/** Set the current velocity. */
 		void setVelocity(const glm::vec3& velocity);
+		/** Set the current velocity. */
 		void setVelocity(real x, real y, real z);
+		/** Get the current velocity. */
 		glm::vec3 getVelocity() const;
 
-		/* Acceleration access */
+		/** Set the current acceleration. */
 		void setAcceleration(const glm::vec3& acceleration);
+		/** Set the current acceleration. */
 		void setAcceleration(real x, real y, real z);
+		/** Get the current acceleration. */
 		glm::vec3 getAcceleration() const;
 
-		/* Linear and angular damping access */
+		/** Set the linear damping factor. */
 		void setLinearDamping(real linearDamping);
+		/** Get the linear damping factor. */
 		real getLinearDamping() const;
+		/** Get the angular damping factor. */
 		void setAngularDamping(real angularDamping);
+		/** Get the angular damping factor. */
 		real getAngularDamping() const;
-
-		
 
 		void setRotation(const glm::vec3& rotation);
 		void setRotation(real x, real y, real z);
 		glm::vec3 getRotation() const;
 
+		/** Get the current transformation. */
 		glm::mat4 getTransformationMatrix() const;
 		void getInverseInertiaTensorWorld(glm::mat3* inverseInertiaTensorWorld) const;
 
