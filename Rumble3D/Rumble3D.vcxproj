@@ -199,7 +199,6 @@
     <ClCompile Include="src\RigidBodyEngine\BoundingSphere.cpp" />
     <ClCompile Include="src\RigidBodyEngine\BVHNode.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionBox.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\CollisionDataOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\BoxBoxNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\BoxSphereNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.cpp" />
@@ -218,7 +217,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\ISphereSphereNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\NarrowPhaseFilter.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\SphereSphereNarrowAlgorithm.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\CollisionDetectorOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionObject.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionPlane.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionPrimitive.cpp" />
@@ -229,8 +227,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\VelocityResolver.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionSphere.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\ContactOld.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\ContactResolverOld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\DefaultRigidBodyEngineCI.cpp" />
     <ClCompile Include="src\RigidBodyEngine\DirectedForce.cpp" />
     <ClCompile Include="src\RigidBodyEngine\ForceGenerator.cpp" />
@@ -281,7 +277,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\BoundingSphere.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\BVHNode.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionBox.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDataOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\IPlanePlaneCollisionAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneSphereCollisionAlgorithm.h" />
@@ -307,7 +302,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\NarrowPhaseFilter.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\ISphereSphereNarrowAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\SphereSphereNarrowAlgorithm.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetectorOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionObject.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionPlane.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionPrimitive.h" />
@@ -318,8 +312,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\InterpenetrationResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\VelocityResolver.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionSphere.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\ContactOld.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\ContactResolverOld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\DefaultRigidBodyEngineCI.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\DirectedForce.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\ForceGenerator.h" />
@@ -334,11 +326,13 @@
     <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.h" />
     <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorComputationInterface.h" />
     <ClInclude Include="include\R3D\Transform3D.h" />
+    <ClInclude Include="include\R3D\Utility\FixedSizeContainer.h" />
     <ClInclude Include="include\R3D\Utility\InertiaTensorGenerator.h" />
     <ClInclude Include="include\R3D\Utility\Random.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionAlgorithmMatrix.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="include\R3D\Utility\FixedSizeContainer.inl" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

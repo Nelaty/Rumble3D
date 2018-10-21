@@ -2,6 +2,8 @@
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
+#include "R3D/Utility/FixedSizeContainer.h"
+
 namespace r3
 {
 	class ParticleContact;
@@ -21,14 +23,12 @@ namespace r3
 		 */
 		void setIterationsMax(unsigned int iterations);
 	
-		/** 
-		 * \brief Resolve collision and penetration. 
-		 * \param contactArray The contacts to be resolved.
-		 * \param numberOfContacts Number of contacts in the array.
-		 * \param duration Time step used for this update.
-		 */
-		void resolveContacts(ParticleContact* contactArray,
-							 unsigned int numberOfContacts,
+		/**
+		* \brief Resolve collision and penetration. 
+		* \param contactData The contacts to be resolved.
+		* \param duration Time step used for this update.
+		*/
+		void resolveContacts(FixedSizeContainer<ParticleContact>& contactData,
 							 real duration);
 
 	protected:

@@ -1,5 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
+#include "R3D/Utility/FixedSizeContainer.h"
 
 namespace r3 
 {
@@ -19,7 +20,13 @@ namespace r3
 		 * \param limit Maximal number, which the array can hold.
 		 * \return The number of newly generated contacts.
 		 */
-		virtual unsigned addContact(ParticleContact* contact, unsigned int limit) const = 0;
+		//virtual unsigned addContact(ParticleContact* contact, unsigned int limit) const = 0;
+
+		/**
+		* \brief Generate new contacts.
+		* \param contactData Out parameter in which new contacts are added.
+		*/
+		virtual void addContact(FixedSizeContainer<ParticleContact>& contactData) const = 0;
 
 	protected:
 		explicit ParticleContactGenerator();

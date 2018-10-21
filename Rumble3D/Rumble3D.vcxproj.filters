@@ -135,9 +135,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\IIntermediatePhaseFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\CollisionDetectorOld.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionDetector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -192,9 +189,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionResolution\ICollisionResolverAccess.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\CollisionDataOld.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\ParticleEngine\Particle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -213,9 +207,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\ContactOld.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Contact.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -223,9 +214,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\ContactResolverOld.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.cpp">
@@ -401,9 +389,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\IIntermediatePhaseFilter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetectorOld.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionDetector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -461,9 +446,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionResolution\ICollisionResolverAccess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDataOld.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\R3D\ParticleEngine\Particle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -482,9 +464,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\ContactOld.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Contact.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -495,9 +474,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\ContactResolverOld.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.h">
@@ -539,8 +515,14 @@
     <ClInclude Include="include\R3D\ParticleEngine\IParticleForceGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\R3D\Utility\FixedSizeContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="include\R3D\Utility\FixedSizeContainer.inl">
+      <Filter>Header Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

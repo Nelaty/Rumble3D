@@ -35,14 +35,14 @@ namespace r3
 		return m_data[1];
 	}
 
-	void CollisionPair::setFirst(RigidBody* rigidBody)
+	void CollisionPair::setFirst(RigidBody* first)
 	{
-		m_data[0] = rigidBody;
+		m_data[0] = first;
 	}
 
-	void CollisionPair::setSecond(RigidBody* rigidBody)
+	void CollisionPair::setSecond(RigidBody* second)
 	{
-		m_data[1] = rigidBody;
+		m_data[1] = second;
 	}
 
 	void CollisionPair::swapBodies()

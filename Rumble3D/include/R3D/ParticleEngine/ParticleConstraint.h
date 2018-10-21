@@ -5,15 +5,16 @@
 
 #include <glm/glm.hpp>
 
-/*
-*  Abstract class which links a particle with a static
-*  position.
-*/
+
 
 namespace r3
 {
 	class Particle;
 
+	/**
+	 * \brief Abstract class, which links a particle with a static
+	 * position.
+	 */
 	class R3D_DECLSPEC ParticleConstraint : public ParticleContactGenerator
 	{
 	public:
@@ -22,6 +23,11 @@ namespace r3
 	protected:
 		explicit ParticleConstraint();
 
+		/**
+		 * \brief Get the distance between the anchor point and the
+		 * particle.
+		 * \return The distance.
+		 */
 		real currentLength() const;
 
 		glm::vec3 m_anchor;

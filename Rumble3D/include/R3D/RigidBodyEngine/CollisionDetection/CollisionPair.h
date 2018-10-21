@@ -43,22 +43,22 @@ namespace r3
 		RigidBody* getFirst() const;
 		/**
 		 * \brief Set the first rigid body
-		 * \param rigidBody A rigid body, which might collide with the
+		 * \param first A rigid body, which might collide with the
 		 * second one.
 		 */
-		void setFirst(RigidBody* rigidBody);
+		void setFirst(RigidBody* first);
 
 		/**
 		 * \brief Get the second rigid body.
-		 * \param The second rigid body
+		 * \return The second rigid body
 		 */
 		RigidBody* getSecond() const;
 		/**
 		 * \brief Set the second rigid body.
-		 * \param rigidBody A rigid body, which might collide with the
+		 * \param second A rigid body, which might collide with the
 		 * first one.
 		 */
-		void setSecond(RigidBody* rigidBody);
+		void setSecond(RigidBody* second);
 
 		/**
 		 * \brief Swap first and second rigid body.

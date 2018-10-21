@@ -32,7 +32,7 @@ Collaboration diagram for r3\+:\+:Particle\+Link\+:\nopagebreak
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_particle_link_a4477af9dbe9041010985492df2656e55}{$\sim$\+Particle\+Link}} ()
 \item 
-unsigned int \mbox{\hyperlink{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099dc0c072d}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned int limit) const override=0
+unsigned int \mbox{\hyperlink{classr3_1_1_particle_link_ace50b4019999af62cb9c49ddd64c7a4d}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned limit) const override=0
 \begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_link_a6c199dcab0ac23674e0069e54bd841c4}{set\+Particles}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$first, \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$second)
 \begin{DoxyCompactList}\small\item\em Change the referenced particles. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -69,11 +69,11 @@ Abstract class. A \mbox{\hyperlink{classr3_1_1_particle_link}{Particle\+Link}} l
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099dc0c072d}\label{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099dc0c072d}} 
+\mbox{\Hypertarget{classr3_1_1_particle_link_ace50b4019999af62cb9c49ddd64c7a4d}\label{classr3_1_1_particle_link_ace50b4019999af62cb9c49ddd64c7a4d}} 
 \index{r3\+::\+Particle\+Link@{r3\+::\+Particle\+Link}!add\+Contact@{add\+Contact}}
 \index{add\+Contact@{add\+Contact}!r3\+::\+Particle\+Link@{r3\+::\+Particle\+Link}}
 \subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
-{\footnotesize\ttfamily unsigned int r3\+::\+Particle\+Link\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned int}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily unsigned int r3\+::\+Particle\+Link\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
 
 
 
@@ -91,11 +91,7 @@ The number of newly generated contacts.
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a3c9c99fb97a4431f0ddf300b30167d03}{r3\+::\+Particle\+Contact\+Generator}}.
-
-
-
-Implemented in \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a0e906ed7c7}{r3\+::\+Particle\+Cable}}.
+Implemented in \mbox{\hyperlink{classr3_1_1_particle_collision_ab22f6b1c2d95c925c2dd5241be9b8889}{r3\+::\+Particle\+Collision}}, and \mbox{\hyperlink{classr3_1_1_particle_cable_ac259f6edbf788c0790e6ab72f2fb6800}{r3\+::\+Particle\+Cable}}.
 
 \mbox{\Hypertarget{classr3_1_1_particle_link_a5ad76e8eb6f9b78e3589c74e5d5013fc}\label{classr3_1_1_particle_link_a5ad76e8eb6f9b78e3589c74e5d5013fc}} 
 \index{r3\+::\+Particle\+Link@{r3\+::\+Particle\+Link}!current\+Length@{current\+Length}}

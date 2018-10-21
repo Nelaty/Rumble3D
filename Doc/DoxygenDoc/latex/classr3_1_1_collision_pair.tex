@@ -31,11 +31,11 @@ void \mbox{\hyperlink{classr3_1_1_collision_pair_a7e64e731162cfdc3222d8f02b7c886
 \begin{DoxyCompactList}\small\item\em Initialize the pair with two potentially colliding rigid bodies. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_pair_a603f9437f7fa4aa5253ad26247ee75ae}{get\+First}} () const
 \begin{DoxyCompactList}\small\item\em Get the first rigid body. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_collision_pair_aed434b37e17c828ac66b69d0f5655fab}{set\+First}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body)
+void \mbox{\hyperlink{classr3_1_1_collision_pair_ac900e6382810b6820dc3f4ecf832bb6b}{set\+First}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first)
 \begin{DoxyCompactList}\small\item\em Set the first rigid body. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_pair_a218a4ee7500ed53c3ba5384833afff5a}{get\+Second}} () const
 \begin{DoxyCompactList}\small\item\em Get the second rigid body. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_collision_pair_a74c24660f8c0e6553494f419c3cf9ae4}{set\+Second}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body)
+void \mbox{\hyperlink{classr3_1_1_collision_pair_acb8c2f4a2c44eeffb8a3d76023db985b}{set\+Second}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second)
 \begin{DoxyCompactList}\small\item\em Set the second rigid body. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_collision_pair_a8ef5b5bae7be7db3ed2574ecd9e5bf9a}{swap\+Bodies}} ()
 \begin{DoxyCompactList}\small\item\em Swap first and second rigid body. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -94,11 +94,9 @@ The first rigid body
 
 Get the second rigid body. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em The} & second rigid body \\
-\hline
-\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The second rigid body 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_collision_pair_a7e64e731162cfdc3222d8f02b7c886b1}\label{classr3_1_1_collision_pair_a7e64e731162cfdc3222d8f02b7c886b1}} 
 \index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!init@{init}}
 \index{init@{init}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
@@ -134,11 +132,11 @@ Get a rigid body by index.
 \begin{DoxyReturn}{Returns}
 First or second rigid body. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_collision_pair_aed434b37e17c828ac66b69d0f5655fab}\label{classr3_1_1_collision_pair_aed434b37e17c828ac66b69d0f5655fab}} 
+\mbox{\Hypertarget{classr3_1_1_collision_pair_ac900e6382810b6820dc3f4ecf832bb6b}\label{classr3_1_1_collision_pair_ac900e6382810b6820dc3f4ecf832bb6b}} 
 \index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!set\+First@{set\+First}}
 \index{set\+First@{set\+First}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
 \subsubsection{\texorpdfstring{set\+First()}{setFirst()}}
-{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::set\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::set\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first }\end{DoxyParamCaption})}
 
 
 
@@ -146,14 +144,14 @@ Set the first rigid body.
 
 
 \begin{DoxyParams}{Parameters}
-{\em rigid\+Body} & A rigid body, which might collide with the second one. \\
+{\em first} & A rigid body, which might collide with the second one. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_collision_pair_a74c24660f8c0e6553494f419c3cf9ae4}\label{classr3_1_1_collision_pair_a74c24660f8c0e6553494f419c3cf9ae4}} 
+\mbox{\Hypertarget{classr3_1_1_collision_pair_acb8c2f4a2c44eeffb8a3d76023db985b}\label{classr3_1_1_collision_pair_acb8c2f4a2c44eeffb8a3d76023db985b}} 
 \index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!set\+Second@{set\+Second}}
 \index{set\+Second@{set\+Second}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
 \subsubsection{\texorpdfstring{set\+Second()}{setSecond()}}
-{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::set\+Second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::set\+Second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second }\end{DoxyParamCaption})}
 
 
 
@@ -161,7 +159,7 @@ Set the second rigid body.
 
 
 \begin{DoxyParams}{Parameters}
-{\em rigid\+Body} & A rigid body, which might collide with the first one. \\
+{\em second} & A rigid body, which might collide with the first one. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_collision_pair_a8ef5b5bae7be7db3ed2574ecd9e5bf9a}\label{classr3_1_1_collision_pair_a8ef5b5bae7be7db3ed2574ecd9e5bf9a}} 

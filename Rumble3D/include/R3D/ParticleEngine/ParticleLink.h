@@ -16,10 +16,6 @@ namespace r3
 	public:
 		virtual ~ParticleLink();
 
-		// geerbte abstrakte Methode addContact zur 
-		// Erinnerung auch hierher kopiert:
-		unsigned int addContact(ParticleContact* contact, unsigned int limit) const override = 0;
-
 		/**
 		 * \brief Change the referenced particles
 		 * \param first First particle

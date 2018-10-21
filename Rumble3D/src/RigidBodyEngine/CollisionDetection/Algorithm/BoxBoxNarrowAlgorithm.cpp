@@ -1,6 +1,5 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
-#include "R3D/RigidBodyEngine/ContactOld.h"
 
 #include <glm/gtx/norm.inl>
 

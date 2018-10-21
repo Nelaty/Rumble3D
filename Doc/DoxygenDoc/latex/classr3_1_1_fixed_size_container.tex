@@ -1,0 +1,215 @@
+\hypertarget{classr3_1_1_fixed_size_container}{}\section{r3\+:\+:Fixed\+Size\+Container$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$ Class Template Reference}
+\label{classr3_1_1_fixed_size_container}\index{r3\+::\+Fixed\+Size\+Container$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$@{r3\+::\+Fixed\+Size\+Container$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$}}
+
+
+Template class for a container, which can be resized, with random access (dependent on Container\+\_\+\+Type) and can be filled similar to a stack. Its size in memory will stay the same at all times. Elements can not be erased from it.  
+
+
+
+
+{\ttfamily \#include $<$Fixed\+Size\+Container.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Fixed\+Size\+Container$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{classr3_1_1_fixed_size_container__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_fixed_size_container_a9396266faf0a5d5d75ea50f0d74d5267}{Fixed\+Size\+Container}} (int size)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classr3_1_1_fixed_size_container_af235a796be8de5a9e96c788b676b59fa}{$\sim$\+Fixed\+Size\+Container}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_fixed_size_container_a75dddd29ba901e97ba6133a6c388b357}{init}} (int size)
+\begin{DoxyCompactList}\small\item\em Initialize the container size. This will reset the container. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_fixed_size_container_a56aa3725cacf135fc1eacddbf424c868}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset the number of used entries. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classr3_1_1_fixed_size_container_ae3beb2a45a67d3bd4f6cb32f39805889}{is\+Full}} () const
+\begin{DoxyCompactList}\small\item\em Check if the maximal number of usable entries has been reached. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classr3_1_1_fixed_size_container_a5d21f93fcf7117df372d321c0d9102fa}{get\+Entries\+Left}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of elements, which can still fit in the container. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classr3_1_1_fixed_size_container_a4ec349530e78e78244f739139ed58b49}{get\+Entries\+Used}} () const
+\begin{DoxyCompactList}\small\item\em Get the number of elements, which are already stored in the container. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classr3_1_1_fixed_size_container_a984b90ac15df32a41011e665e3059e17}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the maximal number of elements, which can fit in this container. \end{DoxyCompactList}\item 
+Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container_a7903fc6d43600195b97218aead60a99a}{get\+Available\+Entry}} ()
+\begin{DoxyCompactList}\small\item\em Get the next available element. \end{DoxyCompactList}\item 
+Container\+\_\+\+Type \& \mbox{\hyperlink{classr3_1_1_fixed_size_container_adbf383734c597677d4221278000886a3}{get\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get the internal container. \end{DoxyCompactList}\item 
+const Container\+\_\+\+Type \& \mbox{\hyperlink{classr3_1_1_fixed_size_container_acd837bc4730c98aa4346819726620842}{get\+Data}} () const
+\begin{DoxyCompactList}\small\item\em Get the internal container. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Element\+\_\+\+Type, class Container\+\_\+\+Type = std\+::vector$<$\+Element\+\_\+\+Type$>$$>$\newline
+class r3\+::\+Fixed\+Size\+Container$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$}
+
+Template class for a container, which can be resized, with random access (dependent on Container\+\_\+\+Type) and can be filled similar to a stack. Its size in memory will stay the same at all times. Elements can not be erased from it. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Element\+\_\+\+Type} & Type of the elements, saved in this container. \\
+\hline
+{\em Container\+\_\+\+Type} & Container type used for storing elements. Needs to have a \char`\"{}void resize(unsigned)\char`\"{} function and must be able to store elements of type Element\+\_\+\+Type \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a9396266faf0a5d5d75ea50f0d74d5267}\label{classr3_1_1_fixed_size_container_a9396266faf0a5d5d75ea50f0d74d5267}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!Fixed\+Size\+Container@{Fixed\+Size\+Container}}
+\index{Fixed\+Size\+Container@{Fixed\+Size\+Container}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{Fixed\+Size\+Container()}{FixedSizeContainer()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+\mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}} (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}} constructor. 
+
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_af235a796be8de5a9e96c788b676b59fa}\label{classr3_1_1_fixed_size_container_af235a796be8de5a9e96c788b676b59fa}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!````~Fixed\+Size\+Container@{$\sim$\+Fixed\+Size\+Container}}
+\index{````~Fixed\+Size\+Container@{$\sim$\+Fixed\+Size\+Container}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{$\sim$\+Fixed\+Size\+Container()}{~FixedSizeContainer()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+\mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::$\sim$\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a7903fc6d43600195b97218aead60a99a}\label{classr3_1_1_fixed_size_container_a7903fc6d43600195b97218aead60a99a}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Available\+Entry@{get\+Available\+Entry}}
+\index{get\+Available\+Entry@{get\+Available\+Entry}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{get\+Available\+Entry()}{getAvailableEntry()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::get\+Available\+Entry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the next available element. 
+
+\begin{DoxyReturn}{Returns}
+A free element if there are free entries left, nullptr otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_adbf383734c597677d4221278000886a3}\label{classr3_1_1_fixed_size_container_adbf383734c597677d4221278000886a3}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+Container\+\_\+\+Type \& \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the internal container. 
+
+\begin{DoxyReturn}{Returns}
+All data. Only the first m\+\_\+entries\+Used entries are valid! 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_acd837bc4730c98aa4346819726620842}\label{classr3_1_1_fixed_size_container_acd837bc4730c98aa4346819726620842}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Data@{get\+Data}}
+\index{get\+Data@{get\+Data}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{get\+Data()}{getData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+const Container\+\_\+\+Type \& \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the internal container. 
+
+\begin{DoxyReturn}{Returns}
+All data. Only the first m\+\_\+entries\+Used entries are valid! 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a5d21f93fcf7117df372d321c0d9102fa}\label{classr3_1_1_fixed_size_container_a5d21f93fcf7117df372d321c0d9102fa}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Entries\+Left@{get\+Entries\+Left}}
+\index{get\+Entries\+Left@{get\+Entries\+Left}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{get\+Entries\+Left()}{getEntriesLeft()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+int \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::get\+Entries\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of elements, which can still fit in the container. 
+
+\begin{DoxyReturn}{Returns}
+The count of free entries. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a4ec349530e78e78244f739139ed58b49}\label{classr3_1_1_fixed_size_container_a4ec349530e78e78244f739139ed58b49}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Entries\+Used@{get\+Entries\+Used}}
+\index{get\+Entries\+Used@{get\+Entries\+Used}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{get\+Entries\+Used()}{getEntriesUsed()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+int \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::get\+Entries\+Used (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the number of elements, which are already stored in the container. 
+
+\begin{DoxyReturn}{Returns}
+The number of used entries. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a984b90ac15df32a41011e665e3059e17}\label{classr3_1_1_fixed_size_container_a984b90ac15df32a41011e665e3059e17}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Size@{get\+Size}}
+\index{get\+Size@{get\+Size}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{get\+Size()}{getSize()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+int \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the maximal number of elements, which can fit in this container. 
+
+\begin{DoxyReturn}{Returns}
+The maximal number of elements. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a75dddd29ba901e97ba6133a6c388b357}\label{classr3_1_1_fixed_size_container_a75dddd29ba901e97ba6133a6c388b357}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!init@{init}}
+\index{init@{init}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+void \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::init (\begin{DoxyParamCaption}\item[{int}]{size }\end{DoxyParamCaption})}
+
+
+
+Initialize the container size. This will reset the container. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The new size of the container. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_ae3beb2a45a67d3bd4f6cb32f39805889}\label{classr3_1_1_fixed_size_container_ae3beb2a45a67d3bd4f6cb32f39805889}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!is\+Full@{is\+Full}}
+\index{is\+Full@{is\+Full}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{is\+Full()}{isFull()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+bool \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::is\+Full (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Check if the maximal number of usable entries has been reached. 
+
+\begin{DoxyReturn}{Returns}
+True if the container is full, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a56aa3725cacf135fc1eacddbf424c868}\label{classr3_1_1_fixed_size_container_a56aa3725cacf135fc1eacddbf424c868}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!reset@{reset}}
+\index{reset@{reset}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+void \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reset the number of used entries. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_fixed_size_container_8h}{Fixed\+Size\+Container.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_fixed_size_container_8inl}{Fixed\+Size\+Container.\+inl}}\end{DoxyCompactItemize}
