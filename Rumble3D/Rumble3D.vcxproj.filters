@@ -201,9 +201,6 @@
     <ClCompile Include="src\ServiceLocator\ServiceLocatorComputationInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -456,9 +453,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionPair.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionData.h">

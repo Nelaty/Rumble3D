@@ -38,6 +38,11 @@ namespace r3
 		void reset();
 
 		/**
+		 * \brief Check if no entries are in use.
+		 * \return True if no entries are in use, false otherwise.
+		 */
+		bool isEmpty() const;
+		/**
 		 * \brief Check if the maximal number of usable entries has been
 		 * reached.
 		 * \return True if the container is full, false otherwise.

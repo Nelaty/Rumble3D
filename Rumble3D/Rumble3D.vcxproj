@@ -201,7 +201,6 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionBox.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\BoxBoxNarrowAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\BoxSphereNarrowAlgorithm.cpp" />
-    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\BroadPhaseFilter.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionAlgorithmMatrix.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionData.cpp" />
@@ -285,7 +284,6 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\PlaneBoxCollisionAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\PlanePlaneCollisionAlgorithm.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\PlaneSphereCollisionAlgorithm.h" />
-    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseCollisionData.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionPair.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\BroadPhaseFilter.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionData.h" />

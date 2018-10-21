@@ -1,3 +1,5 @@
+#pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 #include "R3D/RigidBodyEngine/CollisionPlane.h"
@@ -5,7 +7,7 @@
 
 namespace r3
 {
-	class IPlaneBoxCollisionAlgorithm : public INarrowPhaseAlgorithm
+	class R3D_DECLSPEC IPlaneBoxCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
 		virtual ~IPlaneBoxCollisionAlgorithm();

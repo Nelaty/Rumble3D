@@ -10,7 +10,7 @@ namespace r3
 		= default;
 
 	void BroadPhaseFilter::generateCollisions(const std::vector<RigidBody*>& rigidBodies,
-											  BroadPhaseCollisionData& data)
+											  FixedSizeContainer<CollisionPair>& data)
 	{
 		/// \todo use rigid body mask and layout
 		for(auto i = 0; i < rigidBodies.size(); ++i)
@@ -29,7 +29,7 @@ namespace r3
 
 	bool BroadPhaseFilter::createBroadPhaseCollision(RigidBody* first,
 													 RigidBody* second,
-													 BroadPhaseCollisionData& data)
+													 FixedSizeContainer<CollisionPair>& data)
 	{
 		if(!first->hasFiniteMass() && !second->hasFiniteMass())
 		{
@@ -40,7 +40,7 @@ namespace r3
 			return false;
 		}
 
-		auto* collision = data.getAvailableCollision();
+		auto* collision = data.getAvailableEntry();
 		if(collision != nullptr)
 		{
 			collision->init(first, second);

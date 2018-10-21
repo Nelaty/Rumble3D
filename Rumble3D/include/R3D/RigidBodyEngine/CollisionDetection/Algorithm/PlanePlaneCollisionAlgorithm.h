@@ -1,9 +1,11 @@
 #pragma once
 #include "IPlanePlaneCollisionAlgorithm.h"
 
+#include "R3D/Common/Common.h"
+
 namespace r3
 {
-	class PlanePlaneCollisionAlgorithm : public IPlanePlaneCollisionAlgorithm
+	class R3D_DECLSPEC PlanePlaneCollisionAlgorithm : public IPlanePlaneCollisionAlgorithm
 	{
 	public:
 		explicit PlanePlaneCollisionAlgorithm();

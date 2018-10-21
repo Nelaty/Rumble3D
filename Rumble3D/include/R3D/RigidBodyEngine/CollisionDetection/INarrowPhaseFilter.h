@@ -1,7 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollisionData.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h"
+#include "R3D/Utility/FixedSizeContainer.h"
 
 namespace r3
 {
@@ -15,7 +16,7 @@ namespace r3
 	public:
 		virtual ~INarrowPhaseFilter();
 
-		virtual void generateCollisionData(const BroadPhaseCollisionData& broadPhaseData,
+		virtual void generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
 										   CollisionData& collisions) = 0;
 
 	protected:

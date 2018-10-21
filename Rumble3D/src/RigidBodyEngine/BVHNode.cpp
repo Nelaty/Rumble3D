@@ -10,7 +10,8 @@ namespace r3
 	= default;
 
 	template<class BoundingVolumeClass>
-	BVHNode<BoundingVolumeClass>::BVHNode(BVHNode<BoundingVolumeClass> *parent, const BoundingVolumeClass &volume,
+	BVHNode<BoundingVolumeClass>::BVHNode(BVHNode<BoundingVolumeClass> *parent, 
+										  const BoundingVolumeClass &volume,
 										  RigidBody* body)
 		: m_parent(parent),
 		m_body(body),
@@ -74,8 +75,8 @@ namespace r3
 	}
 
 	template<class BoundingVolumeClass>
-	unsigned int BVHNode<BoundingVolumeClass>::getPotentialContacts(PotentialContacts * contacts,
-																	unsigned int limit) const
+	unsigned BVHNode<BoundingVolumeClass>::getPotentialContacts(CollisionPair* contacts,
+																	unsigned limit) const
 	{
 		// Ende, wenn Blatt, oder Limit erreicht.
 		if(isLeaf() || limit == 0)
@@ -94,10 +95,9 @@ namespace r3
 	}
 
 	template<class BoundingVolumeClass>
-	unsigned BVHNode<BoundingVolumeClass>::getPotentialContactsWith(
-		BVHNode<BoundingVolumeClass> * other,
-		PotentialContacts * contacts,
-		unsigned limit) const{
+	unsigned BVHNode<BoundingVolumeClass>::getPotentialContactsWith(BVHNode<BoundingVolumeClass>* other,
+																	CollisionPair* contacts,
+																	unsigned limit) const{
 
 		// Ende, wenn Blatt, oder Limit erreicht.
 		if(!overlaps(other) || limit == 0)
@@ -108,8 +108,7 @@ namespace r3
 		// Wenn beides Blätter, dann potentieller Kontakt:
 		if(isLeaf() && other->isLeaf())
 		{
-			contacts->m_bodies[0] = m_body;
-			contacts->m_bodies[1] = other->m_body;
+			contacts->init(m_body, other->m_body);
 			return 1;
 		}
 
@@ -163,9 +162,8 @@ namespace r3
 	}
 
 	template<class BoundingVolumeClass>
-	void BVHNode<BoundingVolumeClass>::insert(
-		RigidBody* newBody, const BoundingVolumeClass &newVolume
-	)
+	void BVHNode<BoundingVolumeClass>::insert(RigidBody* newBody, 
+											  const BoundingVolumeClass &newVolume)
 	{
 		// Wenn this ein Blatt ist, brauchen wir zwei Kinder, eines
 		// mit this und das andere mit newBody

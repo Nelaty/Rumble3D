@@ -1,14 +1,11 @@
 #pragma once
 #include "R3D/Common/Common.h"
 
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h"
+
 namespace r3
 {
 	class RigidBody;
-
-	struct PotentialContacts
-	{
-		RigidBody* m_bodies[2];
-	};
 	
 	template<class BoundingVolumeClass>
 	class R3D_DECLSPEC BVHNode
@@ -20,25 +17,27 @@ namespace r3
 				RigidBody* body = nullptr);
 		~BVHNode();
 
-		/** Check if this node is a leaf node (= has no child nodes) */
+		/** 
+		 * \brief Check if this node is a leaf node (= has no child nodes).
+		 * \return True if it is a leaf node, false otherwise.
+		 */
 		bool isLeaf() const;
 		// Identifiziert die möglichen Kontakte von diesem Knoten abwärts
 		// im Baum. Diese werden in das array contacts geschrieben (bis
 		// Anzahl = limit). Rückgabe ist die Anzahl der gefundenen Kontakte.
-		unsigned int getPotentialContacts(PotentialContacts* contacts, 
-										  unsigned int limit) const;
+		unsigned getPotentialContacts(CollisionPair* contacts,
+									  unsigned limit) const;
 	protected:
 		// Gibt true zurück, wenn das eigene Volume mit dem Volume von other
 		// überlappt, und false sonst.
-		bool overlaps(BVHNode<BoundingVolumeClass> * other) const;
+		bool overlaps(BVHNode<BoundingVolumeClass>* other) const;
 		// Rekursiver Teil des Algorithmus auf den Kindern der Wurzel und 
 		// deren Kinder.
-		unsigned getPotentialContactsWith(
-			BVHNode<BoundingVolumeClass> * other,
-			PotentialContacts * contacts,
-			unsigned limit) const;
+		unsigned getPotentialContactsWith(BVHNode<BoundingVolumeClass>* other,
+										  CollisionPair* contacts,
+										  unsigned limit) const;
 		void recalculateBoundingVolume();
-		void insert(RigidBody* newBody, const BoundingVolumeClass &newVolume);
+		void insert(RigidBody* newBody, const BoundingVolumeClass& newVolume);
 
 		BVHNode* m_parent;
 		BVHNode* m_children[2];

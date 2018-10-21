@@ -1,6 +1,7 @@
 #pragma once
-#include "R3D/Common/Common.h"
 #include "IBroadPhaseFilter.h"
+
+#include "R3D/Common/Common.h"
 
 namespace r3
 {
@@ -11,11 +12,11 @@ namespace r3
 		~BroadPhaseFilter();
 
 		void generateCollisions(const std::vector<RigidBody*>& rigidBodies,
-								BroadPhaseCollisionData& data) override;
+								FixedSizeContainer<CollisionPair>& data) override;
 
 	private:
 		bool createBroadPhaseCollision(RigidBody* first,
 									   RigidBody* second,
-									   BroadPhaseCollisionData& data);
+									   FixedSizeContainer<CollisionPair>& data);
 	};
 }

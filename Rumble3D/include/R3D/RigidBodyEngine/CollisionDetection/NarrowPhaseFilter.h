@@ -4,7 +4,6 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.h"
 
-#include <vector>
 #include <memory>
 
 namespace r3
@@ -20,7 +19,7 @@ namespace r3
 		explicit NarrowPhaseFilter(unsigned int iterations = 10, unsigned int collisionsMax = 1000);
 		~NarrowPhaseFilter();
 
-		void generateCollisionData(const BroadPhaseCollisionData& broadPhaseData,
+		void generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
 								   CollisionData& collisions) override;
 
 		/** Generate collisions between two rigid bodies. */

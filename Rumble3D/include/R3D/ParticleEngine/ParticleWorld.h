@@ -16,8 +16,8 @@ namespace r3
 	class ParticleEngineCI; 
 
 	/**
-	 * \brief A ParticleWorld holds a number of particles and contact generators.
-	 * It uses its ParticleEngineCI to manipulate those particles.
+	 * \brief A ParticleWorld is a physics engine module, used to
+	 * simulate particles.
 	 */
 	class R3D_DECLSPEC ParticleWorld : public PhysicsEngineModule
 	{
@@ -44,7 +44,7 @@ namespace r3
 		 * \param definition Construction information for the new particle.
 		 * \return The new particle.
 		 */
-		Particle* createParticle(ParticleDef definition);
+		Particle* createParticle(ParticleDef definition = ParticleDef());
 		/**
 		 * \brief Free memory of a particle.
 		 * \param particle The particle to destroy.

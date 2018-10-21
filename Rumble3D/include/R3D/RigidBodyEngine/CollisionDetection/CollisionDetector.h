@@ -1,7 +1,8 @@
 #pragma once
-#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollisionData.h"
+#include "R3D/Utility/FixedSizeContainer.h"
+
+#include "R3D/Common/Common.h"
 
 #include <memory>
 #include <list>
@@ -91,7 +92,7 @@ namespace r3
 		unsigned int m_contactsMax;
 		unsigned int m_iterations;
 
-		BroadPhaseCollisionData m_broadPhaseCollisions;
+		FixedSizeContainer<CollisionPair> m_broadPhaseCollisions;
 		CollisionData m_collisions;
 
 		BroadPhaseFilter_Ptr m_broadPhaseFilter;

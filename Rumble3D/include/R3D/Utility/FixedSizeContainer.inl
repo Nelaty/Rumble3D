@@ -15,7 +15,7 @@ namespace r3
 	template <class Element_Type, class Container_Type>
 	void FixedSizeContainer<Element_Type, Container_Type>::init(const int size)
 	{
-		assert(size > 0);
+		assert(size >= 0);
 
 		m_data.resize(size);
 		m_size = size;
@@ -27,6 +27,12 @@ namespace r3
 	void FixedSizeContainer<Element_Type, Container_Type>::reset()
 	{
 		m_entriesUsed = 0;
+	}
+
+	template<class Element_Type, class Container_Type>
+	bool FixedSizeContainer<Element_Type, Container_Type>::isEmpty() const
+	{
+		return m_entriesUsed == 0;
 	}
 
 	template <class Element_Type, class Container_Type>

@@ -3,7 +3,7 @@
 
 namespace r3
 {
-	enum CollisionPrimitiveType
+	enum R3D_DECLSPEC CollisionPrimitiveType
 	{
 		R3D_PRIMITIVE_BOX = 0,
 		R3D_PRIMITIVE_SPHERE,
