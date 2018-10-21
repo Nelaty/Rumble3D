@@ -8,7 +8,9 @@ namespace r3
 	class Particle;
 	class ParticleContact;
 
-	// Speichert zwei verbundene Teilchen.
+	/**
+	 * \brief Abstract class. A ParticleLink links two particles.
+	 */
 	class R3D_DECLSPEC ParticleLink : public ParticleContactGenerator
 	{
 	public:
@@ -17,13 +19,21 @@ namespace r3
 		// geerbte abstrakte Methode addContact zur 
 		// Erinnerung auch hierher kopiert:
 		unsigned int addContact(ParticleContact* contact, unsigned int limit) const override = 0;
-		// Referenzen auf Teilchen übergeben:
-		void setParticles(Particle* particle0, Particle* particle1 = nullptr);
+
+		/**
+		 * \brief Change the referenced particles
+		 * \param first First particle
+		 * \param second Second particle
+		 */
+		void setParticles(Particle* first, Particle* second);
 	
 	protected:
 		explicit ParticleLink();
 
-		// Abstand zwischen den verbundenen Teilchen.
+		/**
+		 * \brief Calculate the length between the current particles.
+		 * \return The calculated length.
+		 */
 		real currentLength() const;
 
 		Particle* m_particles[2]{};		

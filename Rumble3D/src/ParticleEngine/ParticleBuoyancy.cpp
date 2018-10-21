@@ -5,7 +5,10 @@
 
 namespace r3
 {
-	ParticleBuoyancy::ParticleBuoyancy(real maxDepth, real volume, real liquidHeight, real liquidDensity)
+	ParticleBuoyancy::ParticleBuoyancy(const real maxDepth,
+									   const real volume,
+									   const real liquidHeight,
+									   const real liquidDensity)
 	{
 		m_maxDepth = maxDepth;
 		m_volume = volume;
@@ -13,14 +16,13 @@ namespace r3
 		m_liquidDensity = liquidDensity;
 	}
 	
-	
 	ParticleBuoyancy::~ParticleBuoyancy()
 	= default;
 
 	void ParticleBuoyancy::updateForce(Particle* particle, real duration)
 	{
-		real depth = particle->getPosition().y;
-		real halfMaxDepth = m_maxDepth / 2;
+		const auto depth = particle->getPosition().y;
+		const auto halfMaxDepth = m_maxDepth / 2;
 	
 		// Above water surface
 		if(depth >= m_liquidHeight + halfMaxDepth) 
@@ -29,16 +31,19 @@ namespace r3
 		}
 	
 		// Completely submerged
+		const auto verticalForce = m_liquidDensity * m_volume * s_gravity;
+
 		glm::vec3 force(real(0.0f));
 		if (depth <= m_liquidHeight - halfMaxDepth) 
 		{
-			force.y = m_liquidDensity * m_volume * 9.81f;
+			force.y = verticalForce;
 			particle->addForce(force);
 			return;
 		}
 	
 		// Partly submerged
-		force.y = (m_liquidDensity * m_volume * 9.81 * (m_liquidHeight - depth + halfMaxDepth) / m_maxDepth);
+		const auto submergedDistance = m_liquidHeight - depth + halfMaxDepth;
+		force.y = verticalForce * submergedDistance / m_maxDepth;
 		particle->addForce(force);
 	}
 }

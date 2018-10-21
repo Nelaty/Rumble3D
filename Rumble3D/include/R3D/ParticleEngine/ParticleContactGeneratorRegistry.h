@@ -7,22 +7,35 @@ namespace r3
 {
 	class ParticleContactGenerator;
 
+	/**
+	 * \brief Registry for ParticleContactGenerators.
+	 */
 	class R3D_DECLSPEC ParticleContactGeneratorRegistry
 	{
 	public:
 		explicit ParticleContactGeneratorRegistry();
 		~ParticleContactGeneratorRegistry();
 
-		/** Add another contact generator */
+		/** 
+		 * \brief Register a contact generator.
+		 * \param generator The generator to be registered.
+		 */
 		void registerContactGenerator(ParticleContactGenerator* generator);
 		/** 
-		 * Remove a specific contact generator 
+		 * \brief Unregister a contact generator.
+		 * \param generator The generator, which will be unregistered.
 		 * \return True if the given generator was found and removed, false otherwise.
 		 */
 		bool unregisterContactGenerator(ParticleContactGenerator* generator);
-		/** Remove all contact generators */
+		/** 
+		 * \brief Unregister all previously registered contact generators.
+		 */
 		void clear();
 
+		/**
+		 * \brief Get all generators in this registry.
+		 * \return All registered generators.
+		 */
 		const std::vector<ParticleContactGenerator*>& getGenerators() const;
 		
 	protected:

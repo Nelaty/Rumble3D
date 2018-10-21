@@ -76,7 +76,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classr3_1_1_particle_world.html" title="ParticleWorld holds a number of particles and contact generators. ">ParticleWorld</a> holds a number of particles and contact generators.  
+<p>A <a class="el" href="classr3_1_1_particle_world.html" title="A ParticleWorld holds a number of particles and contact generators. It uses its ParticleEngineCI to m...">ParticleWorld</a> holds a number of particles and contact generators. It uses its <a class="el" href="classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. ">ParticleEngineCI</a> to manipulate those particles.  
  <a href="classr3_1_1_particle_world.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_particle_world_8h_source.html">ParticleWorld.h</a>&gt;</code></p>
@@ -111,8 +111,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a3a6d6f87b726156c41d4282c6dbb1e48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a3a6d6f87b726156c41d4282c6dbb1e48">~ParticleWorld</a> ()</td></tr>
 <tr class="separator:a3a6d6f87b726156c41d4282c6dbb1e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5630d53659e9ced254d33990f15a9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#adf5630d53659e9ced254d33990f15a9d">setComputationInterface</a> (<a class="el" href="classr3_1_1_particle_engine_c_i.html">ParticleEngineCI</a> *computationInterface)</td></tr>
+<tr class="memdesc:adf5630d53659e9ced254d33990f15a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the computation interface, used by the module.  <a href="#adf5630d53659e9ced254d33990f15a9d">More...</a><br /></td></tr>
 <tr class="separator:adf5630d53659e9ced254d33990f15a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e806bf89ec6445a54b9534f1efc081f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_computation_interface.html">IComputationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a1e806bf89ec6445a54b9534f1efc081f">getComputationInterface</a> () const override</td></tr>
+<tr class="memdesc:a1e806bf89ec6445a54b9534f1efc081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's computation interface.  <a href="#a1e806bf89ec6445a54b9534f1efc081f">More...</a><br /></td></tr>
 <tr class="separator:a1e806bf89ec6445a54b9534f1efc081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5df8f4d242ab19e7e1a9830ef6131c3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a5df8f4d242ab19e7e1a9830ef6131c3c">createParticle</a> (<a class="el" href="structr3_1_1_particle_def.html">ParticleDef</a> definition)</td></tr>
 <tr class="memdesc:a5df8f4d242ab19e7e1a9830ef6131c3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for a new particle and register it.  <a href="#a5df8f4d242ab19e7e1a9830ef6131c3c">More...</a><br /></td></tr>
@@ -124,16 +126,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa061b4eab09216fb7e3a8d08cbdb6dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of all particles.  <a href="#aa061b4eab09216fb7e3a8d08cbdb6dd2">More...</a><br /></td></tr>
 <tr class="separator:aa061b4eab09216fb7e3a8d08cbdb6dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3f952fdfd8862673d41afa078245bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle_force_registry.html">ParticleForceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#aaa3f952fdfd8862673d41afa078245bf">getParticleForceRegistry</a> ()</td></tr>
+<tr class="memdesc:aaa3f952fdfd8862673d41afa078245bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particle force registry.  <a href="#aaa3f952fdfd8862673d41afa078245bf">More...</a><br /></td></tr>
 <tr class="separator:aaa3f952fdfd8862673d41afa078245bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add0e006264e25065ff226eafc0c1a29d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classr3_1_1_particle_force_registry.html">ParticleForceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#add0e006264e25065ff226eafc0c1a29d">getParticleForceRegistry</a> () const</td></tr>
+<tr class="memdesc:add0e006264e25065ff226eafc0c1a29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particle force registry.  <a href="#add0e006264e25065ff226eafc0c1a29d">More...</a><br /></td></tr>
 <tr class="separator:add0e006264e25065ff226eafc0c1a29d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00a5014002f28e35ebb59a3f8175db3c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle_world.html#aa354f6786c0837674fe8286f00465631">Particle_Container</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a00a5014002f28e35ebb59a3f8175db3c">getParticles</a> ()</td></tr>
+<tr class="memdesc:a00a5014002f28e35ebb59a3f8175db3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particles.  <a href="#a00a5014002f28e35ebb59a3f8175db3c">More...</a><br /></td></tr>
 <tr class="separator:a00a5014002f28e35ebb59a3f8175db3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab816d6bca8b42fdf16170275087008f0"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classr3_1_1_particle_world.html#aa354f6786c0837674fe8286f00465631">Particle_Container</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#ab816d6bca8b42fdf16170275087008f0">getParticles</a> () const</td></tr>
+<tr class="memdesc:ab816d6bca8b42fdf16170275087008f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particles.  <a href="#ab816d6bca8b42fdf16170275087008f0">More...</a><br /></td></tr>
 <tr class="separator:ab816d6bca8b42fdf16170275087008f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85fc9fcf5c51a5bbce206a35a82f8ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html">ParticleContactGeneratorRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a85fc9fcf5c51a5bbce206a35a82f8ccf">getContactGeneratorRegistry</a> ()</td></tr>
+<tr class="memdesc:a85fc9fcf5c51a5bbce206a35a82f8ccf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particle contact generator registry.  <a href="#a85fc9fcf5c51a5bbce206a35a82f8ccf">More...</a><br /></td></tr>
 <tr class="separator:a85fc9fcf5c51a5bbce206a35a82f8ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5cd3adaed73294927de72f3293b0709"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classr3_1_1_particle_contact_generator_registry.html">ParticleContactGeneratorRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#ab5cd3adaed73294927de72f3293b0709">getContactGeneratorRegistry</a> () const</td></tr>
+<tr class="memdesc:ab5cd3adaed73294927de72f3293b0709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particle contact generator registry.  <a href="#ab5cd3adaed73294927de72f3293b0709">More...</a><br /></td></tr>
 <tr class="separator:ab5cd3adaed73294927de72f3293b0709"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_physics_engine_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_physics_engine_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_physics_engine_module.html">r3::PhysicsEngineModule</a></td></tr>
 <tr class="memitem:af2b491daa564a15ec5362780c885e2ca inherit pub_methods_classr3_1_1_physics_engine_module"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#af2b491daa564a15ec5362780c885e2ca">~PhysicsEngineModule</a> ()</td></tr>
@@ -153,7 +161,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a9697a77e77dc5dd5990b16876ad413bf inherit pro_attribs_classr3_1_1_physics_engine_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classr3_1_1_particle_world.html" title="ParticleWorld holds a number of particles and contact generators. ">ParticleWorld</a> holds a number of particles and contact generators. </p>
+<div class="textblock"><p>A <a class="el" href="classr3_1_1_particle_world.html" title="A ParticleWorld holds a number of particles and contact generators. It uses its ParticleEngineCI to m...">ParticleWorld</a> holds a number of particles and contact generators. It uses its <a class="el" href="classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. ">ParticleEngineCI</a> to manipulate those particles. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="aa354f6786c0837674fe8286f00465631"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa354f6786c0837674fe8286f00465631">&#9670;&nbsp;</a></span>Particle_Container</h2>
@@ -330,7 +338,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the computation interface of this module. </p>
+
+<p>Get the module's computation interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>The currently used computation interface. </dd></dl>
 
 <p>Implements <a class="el" href="classr3_1_1_physics_engine_module.html#a3b1d0d9bea0a82534f367f6d728312d3">r3::PhysicsEngineModule</a>.</p>
 
@@ -350,7 +360,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the registry which holds all currently active contact generators. </p>
+
+<p>Get the module's particle contact generator registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>The particle contact generator registry </dd></dl>
 
 </div>
 </div>
@@ -368,7 +380,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the registry which holds all currently active contact generators. </p>
+
+<p>Get the module's particle contact generator registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>The particle contact generator registry </dd></dl>
 
 </div>
 </div>
@@ -386,7 +400,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Needed to bind particles to particle force generators </p>
+
+<p>Get the module's particle force registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>The particle force registry </dd></dl>
 
 </div>
 </div>
@@ -404,7 +420,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Needed to bind particles to particle force generators </p>
+
+<p>Get the module's particle force registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>The particle force registry </dd></dl>
 
 </div>
 </div>
@@ -422,7 +440,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get all currently registered particles. </p>
+
+<p>Get the module's particles. </p>
+<dl class="section return"><dt>Returns</dt><dd>All currently registered particles. </dd></dl>
 
 </div>
 </div>
@@ -440,7 +460,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get all currently registered particles. </p>
+
+<p>Get the module's particles. </p>
+<dl class="section return"><dt>Returns</dt><dd>All currently registered particles. </dd></dl>
 
 </div>
 </div>
@@ -460,11 +482,19 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Change the computation interface, used by the module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">computationInterface</td><td>The new computation interface. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_world_8h_source.html">ParticleWorld.h</a></li>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_world_8cpp.html">ParticleWorld.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_world_8h_source.html">ParticleWorld.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_world_8cpp.html">ParticleWorld.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_buoyancy}\index{r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}}
 
 
+A \mbox{\hyperlink{classr3_1_1_particle_buoyancy}{Particle\+Buoyancy}} is a particle force generator, which can simulate buoyancy.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Buoyancy.\+h$>$}
 
 
@@ -10,7 +15,7 @@ Inheritance diagram for r3\+:\+:Particle\+Buoyancy\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=218pt]{classr3_1_1_particle_buoyancy__inherit__graph}
+\includegraphics[width=220pt]{classr3_1_1_particle_buoyancy__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,18 +24,18 @@ Collaboration diagram for r3\+:\+:Particle\+Buoyancy\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=312pt]{classr3_1_1_particle_buoyancy__coll__graph}
+\includegraphics[width=316pt]{classr3_1_1_particle_buoyancy__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classr3_1_1_particle_buoyancy_a795f5efdd69ec210647573ba18a6c4a4}{Particle\+Buoyancy}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} max\+Depth, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} volume, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} liquid\+Height, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} liquid\+Density=\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(1000.\+0f))
-\item 
+\mbox{\hyperlink{classr3_1_1_particle_buoyancy_ae47508b0082fd01797764cd3c85d67e7}{Particle\+Buoyancy}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} max\+Depth, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} volume, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} liquid\+Height, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} liquid\+Density=static\+\_\+cast$<$ \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} $>$(1000))
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_buoyancy}{Particle\+Buoyancy}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_buoyancy_a9ebaf421f758cf01ce164f679cb5c4c0}{$\sim$\+Particle\+Buoyancy}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_buoyancy_ad1249e51508770fd9b1775c8e22eb51a}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -42,16 +47,41 @@ void \mbox{\hyperlink{classr3_1_1_particle_buoyancy_ad1249e51508770fd9b1775c8e22
 \item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_buoyancy_a6a62107ee9e97a640371bf3a1aaf92cc}{m\+\_\+liquid\+Density}}
 \end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static constexpr \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_buoyancy_a15857a4724e0e91efd9ce45831d00cbd}{s\+\_\+gravity}} = static\+\_\+cast$<$\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}$>$(9.\+81)
+\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_particle_buoyancy}{Particle\+Buoyancy}} is a particle force generator, which can simulate buoyancy. 
+
+It can only simulate buoyancy in an axis aligned half space perpendicular to the y-\/axis. 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_buoyancy_a795f5efdd69ec210647573ba18a6c4a4}\label{classr3_1_1_particle_buoyancy_a795f5efdd69ec210647573ba18a6c4a4}} 
+\mbox{\Hypertarget{classr3_1_1_particle_buoyancy_ae47508b0082fd01797764cd3c85d67e7}\label{classr3_1_1_particle_buoyancy_ae47508b0082fd01797764cd3c85d67e7}} 
 \index{r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}!Particle\+Buoyancy@{Particle\+Buoyancy}}
 \index{Particle\+Buoyancy@{Particle\+Buoyancy}!r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}}
 \subsubsection{\texorpdfstring{Particle\+Buoyancy()}{ParticleBuoyancy()}}
-{\footnotesize\ttfamily r3\+::\+Particle\+Buoyancy\+::\+Particle\+Buoyancy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{max\+Depth,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{volume,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{liquid\+Height,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{liquid\+Density = {\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}(1000.0f)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Buoyancy\+::\+Particle\+Buoyancy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{max\+Depth,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{volume,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{liquid\+Height,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{liquid\+Density = {\ttfamily static\+\_\+cast$<$\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}$>$(1000)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_particle_buoyancy}{Particle\+Buoyancy}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Depth} & Depth in \mbox{[}m\mbox{]} at which the body is completely submerged. \\
+\hline
+{\em volume} & Volume of the body in \mbox{[}m$^\wedge$3\mbox{]}. \\
+\hline
+{\em liquid\+Height} & Height of the liquid in \mbox{[}m\mbox{]}. \\
+\hline
+{\em liquid\+Density} & Density of the volume in \mbox{[}kg/m$^\wedge$3\mbox{]}. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_buoyancy_a9ebaf421f758cf01ce164f679cb5c4c0}\label{classr3_1_1_particle_buoyancy_a9ebaf421f758cf01ce164f679cb5c4c0}} 
 \index{r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}!````~Particle\+Buoyancy@{$\sim$\+Particle\+Buoyancy}}
 \index{````~Particle\+Buoyancy@{$\sim$\+Particle\+Buoyancy}!r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}}
@@ -67,9 +97,20 @@ void \mbox{\hyperlink{classr3_1_1_particle_buoyancy_ad1249e51508770fd9b1775c8e22
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Buoyancy\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Schnittstellen-\/\+Methode, die im speziellen Kraft-\/\+Generator überladen werden muss. Die Methode berechnet und aktualisiert die Kraft, die auf das Teilchen particle in der Zeitscheibe duration wirkt. 
 
-Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526192a67277b8658d825}{r3\+::\+Particle\+Force\+Generator}}.
+
+Calculates and changes the force in the force accumulator of a particle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle} & The particle, on which the force should be applied to. \\
+\hline
+{\em duration} & The duration for which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{r3\+::\+I\+Particle\+Force\+Generator}}.
 
 
 
@@ -98,9 +139,17 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526
 \subsubsection{\texorpdfstring{m\+\_\+volume}{m\_volume}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Buoyancy\+::m\+\_\+volume\hspace{0.3cm}{\ttfamily [protected]}}
 
+\mbox{\Hypertarget{classr3_1_1_particle_buoyancy_a15857a4724e0e91efd9ce45831d00cbd}\label{classr3_1_1_particle_buoyancy_a15857a4724e0e91efd9ce45831d00cbd}} 
+\index{r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}!s\+\_\+gravity@{s\+\_\+gravity}}
+\index{s\+\_\+gravity@{s\+\_\+gravity}!r3\+::\+Particle\+Buoyancy@{r3\+::\+Particle\+Buoyancy}}
+\subsubsection{\texorpdfstring{s\+\_\+gravity}{s\_gravity}}
+{\footnotesize\ttfamily constexpr \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Buoyancy\+::s\+\_\+gravity = static\+\_\+cast$<$\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}$>$(9.\+81)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000001}{Todo}}]\+: refactor this \end{DoxyRefDesc}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_buoyancy_8h}{Particle\+Buoyancy.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_buoyancy_8cpp}{Particle\+Buoyancy.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_buoyancy_8h}{Particle\+Buoyancy.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_buoyancy_8cpp}{Particle\+Buoyancy.\+cpp}}\end{DoxyCompactItemize}

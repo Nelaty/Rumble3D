@@ -167,6 +167,7 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\PlaneBoxCollisionAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\PlanePlaneCollisionAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\PlaneSphereCollisionAlgorithm.cpp" />
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionPair.cpp" />
     <ClCompile Include="src\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.cpp" />
     <ClCompile Include="src\IComputationInterface.cpp" />
     <ClCompile Include="src\ParticleEngine\DefaultParticleEngineCI.cpp" />
@@ -184,7 +185,7 @@
     <ClCompile Include="src\ParticleEngine\ParticleDef.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleDrag.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleEngineCI.cpp" />
-    <ClCompile Include="src\ParticleEngine\ParticleForceGenerator.cpp" />
+    <ClCompile Include="src\ParticleEngine\IParticleForceGenerator.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleForceRegistry.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleGravity.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticleLink.cpp" />
@@ -266,7 +267,7 @@
     <ClInclude Include="include\R3D\ParticleEngine\ParticleDef.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleDrag.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleEngineCI.h" />
-    <ClInclude Include="include\R3D\ParticleEngine\ParticleForceGenerator.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\IParticleForceGenerator.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleForceRegistry.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleGravity.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleLink.h" />

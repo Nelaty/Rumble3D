@@ -234,7 +234,7 @@ namespace r3
 			- thisRestitution * m_contactVelocity.x; //- velocityFromAcc);
 	
 	
-		// -thisRestitution * m_contactVelocity.x - velocityFromAcc);
+		// -thisRestitution * m_closingVelocity.x - velocityFromAcc);
 	}
 	
 	void ContactOld::swapBodies()

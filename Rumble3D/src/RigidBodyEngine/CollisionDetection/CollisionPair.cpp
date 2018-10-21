@@ -1,0 +1,52 @@
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h"
+
+#include <algorithm>
+#include <cassert>
+
+namespace r3
+{
+	CollisionPair::CollisionPair(RigidBody* first, RigidBody* second)
+	{
+		init(first, second);
+	}
+
+	CollisionPair::~CollisionPair()
+	= default;
+
+	RigidBody* CollisionPair::operator[](const int index) const
+	{
+		assert(index == 0 || index == 1);
+		return m_data[index];
+	}
+
+	void CollisionPair::init(RigidBody* first, RigidBody* second)
+	{
+		m_data[0] = first;
+		m_data[1] = second;
+	}
+
+	RigidBody* CollisionPair::getFirst() const
+	{
+		return m_data[0];
+	}
+
+	RigidBody* CollisionPair::getSecond() const
+	{
+		return m_data[1];
+	}
+
+	void CollisionPair::setFirst(RigidBody* rigidBody)
+	{
+		m_data[0] = rigidBody;
+	}
+
+	void CollisionPair::setSecond(RigidBody* rigidBody)
+	{
+		m_data[1] = rigidBody;
+	}
+
+	void CollisionPair::swapBodies()
+	{
+		std::swap(m_data[0], m_data[1]);
+	}
+}

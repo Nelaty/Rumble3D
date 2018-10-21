@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_link}\index{r3\+::\+Particle\+Link@{r3\+::\+Particle\+Link}}
 
 
+Abstract class. A \mbox{\hyperlink{classr3_1_1_particle_link}{Particle\+Link}} links two particles.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Link.\+h$>$}
 
 
@@ -28,22 +33,25 @@ Collaboration diagram for r3\+:\+:Particle\+Link\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_particle_link_a4477af9dbe9041010985492df2656e55}{$\sim$\+Particle\+Link}} ()
 \item 
 unsigned int \mbox{\hyperlink{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099dc0c072d}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned int limit) const override=0
-\item 
-void \mbox{\hyperlink{classr3_1_1_particle_link_ab3f21ea864e8e2709ef7672a9c417fa1}{set\+Particles}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle0, \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle1=nullptr)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_link_a6c199dcab0ac23674e0069e54bd841c4}{set\+Particles}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$first, \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$second)
+\begin{DoxyCompactList}\small\item\em Change the referenced particles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_link_adc17e9225ff4f49803f5d5fe0a117af2}{Particle\+Link}} ()
 \item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_link_a5ad76e8eb6f9b78e3589c74e5d5013fc}{current\+Length}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculate the length between the current particles. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$ \mbox{\hyperlink{classr3_1_1_particle_link_a2794d7fe45d905d9c11bb79be3d8e3c8}{m\+\_\+particles}} \mbox{[}2\mbox{]} \{\}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Abstract class. A \mbox{\hyperlink{classr3_1_1_particle_link}{Particle\+Link}} links two particles. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_link_a4477af9dbe9041010985492df2656e55}\label{classr3_1_1_particle_link_a4477af9dbe9041010985492df2656e55}} 
@@ -69,6 +77,20 @@ void \mbox{\hyperlink{classr3_1_1_particle_link_ab3f21ea864e8e2709ef7672a9c417fa
 
 
 
+Generate new contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact} & \mbox{\hyperlink{classr3_1_1_contact}{Contact}} array which points to first element in the array. \\
+\hline
+{\em limit} & Maximal number, which the array can hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of newly generated contacts. 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a3c9c99fb97a4431f0ddf300b30167d03}{r3\+::\+Particle\+Contact\+Generator}}.
 
 
@@ -81,12 +103,30 @@ Implemented in \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd6
 \subsubsection{\texorpdfstring{current\+Length()}{currentLength()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Link\+::current\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classr3_1_1_particle_link_ab3f21ea864e8e2709ef7672a9c417fa1}\label{classr3_1_1_particle_link_ab3f21ea864e8e2709ef7672a9c417fa1}} 
+
+
+Calculate the length between the current particles. 
+
+\begin{DoxyReturn}{Returns}
+The calculated length. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_link_a6c199dcab0ac23674e0069e54bd841c4}\label{classr3_1_1_particle_link_a6c199dcab0ac23674e0069e54bd841c4}} 
 \index{r3\+::\+Particle\+Link@{r3\+::\+Particle\+Link}!set\+Particles@{set\+Particles}}
 \index{set\+Particles@{set\+Particles}!r3\+::\+Particle\+Link@{r3\+::\+Particle\+Link}}
 \subsubsection{\texorpdfstring{set\+Particles()}{setParticles()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+Link\+::set\+Particles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle0,  }\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle1 = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Link\+::set\+Particles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{second }\end{DoxyParamCaption})}
 
+
+
+Change the referenced particles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & First particle \\
+\hline
+{\em second} & Second particle \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Data Documentation}
@@ -100,5 +140,5 @@ Implemented in \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd6
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_link_8h}{Particle\+Link.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_link_8cpp}{Particle\+Link.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_link_8h}{Particle\+Link.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_link_8cpp}{Particle\+Link.\+cpp}}\end{DoxyCompactItemize}

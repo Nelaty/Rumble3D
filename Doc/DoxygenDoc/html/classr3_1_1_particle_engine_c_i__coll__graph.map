@@ -1,5 +1,5 @@
 <map id="r3::ParticleEngineCI" name="r3::ParticleEngineCI">
 <area shape="rect" id="node2" href="$classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,375,180,540"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_world.html" title="ParticleWorld holds a number of particles and contact generators. " alt="" coords="205,331,415,584"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_world.html" title="A ParticleWorld holds a number of particles and contact generators. It uses its ParticleEngineCI to m..." alt="" coords="205,331,415,584"/>
 <area shape="rect" id="node4" href="$classr3_1_1_physics_engine_module.html" title="{r3::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="219,145,401,281"/>
 </map>

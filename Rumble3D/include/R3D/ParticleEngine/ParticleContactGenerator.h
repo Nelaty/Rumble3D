@@ -5,18 +5,20 @@ namespace r3
 {
 	class ParticleContact;
 
+	/**
+	 * \brief Interface for contact generators for particles.
+	 */
 	class R3D_DECLSPEC ParticleContactGenerator
 	{
 	public:
 		virtual ~ParticleContactGenerator();
 
-		// Speichert in contact die Attribute für einen 
-		// erkannten Kontakt. Der Zeiger contact zeigt 
-		// auf das erste Element eines Arrays von Kontakten.
-		// limit ist die Anzahl der beschreibbaren Elemente 
-		// im Array.
-		// Rückgabewert ist die Anzahl der Kontakte, die in 
-		// den Array geschrieben wurden.
+		/**
+		 * \brief Generate new contacts.
+		 * \param contact Contact array which points to first element in the array.
+		 * \param limit Maximal number, which the array can hold.
+		 * \return The number of newly generated contacts.
+		 */
 		virtual unsigned addContact(ParticleContact* contact, unsigned int limit) const = 0;
 
 	protected:

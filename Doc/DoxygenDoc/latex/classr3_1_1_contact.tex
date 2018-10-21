@@ -2,6 +2,11 @@
 \label{classr3_1_1_contact}\index{r3\+::\+Contact@{r3\+::\+Contact}}
 
 
+A \mbox{\hyperlink{classr3_1_1_contact}{Contact}} represents a point in space at which two rigid bodies collide. It is not a point in world space but rather knows the relative offsets to the points of mass of both rigid bodies.  
+
+
+
+
 {\ttfamily \#include $<$Contact.\+h$>$}
 
 
@@ -21,44 +26,47 @@ Collaboration diagram for r3\+:\+:Contact\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_contact_a011905bfa1cfa3ed459650796b105c6a}{$\sim$\+Contact}} ()
 \item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_contact_adf157981ebfd1552521afe7b25e9239c}{get\+First}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the first colliding rigid body. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_contact_a90af8f5c7cba65a6a84c57b5a6ef6d70}{get\+Second}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the second colliding rigid body. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_contact_aaa7c4c676fd8f3b07f81cc18257c48d9}{get\+Body}} (int index) const
 \item 
 void \mbox{\hyperlink{classr3_1_1_contact_aedd044892a1adf0692b7cc9f81b4436a}{set\+Contact\+Point}} (const glm\+::vec3 \&contact\+Point)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the contact point. \end{DoxyCompactList}\item 
 const glm\+::vec3 \& \mbox{\hyperlink{classr3_1_1_contact_a9558ff3dd4e2c5331fc05076e4e503a0}{get\+Contact\+Point}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the point, where the collision took place. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_contact_af7866e211b169ce6565d3f37af8ef8d7}{set\+Contact\+Normal}} (const glm\+::vec3 \&contact\+Normal)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the contact normal. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_contact_a2d8f594947a1900fd21e2f707384d9fe}{get\+Contact\+Normal}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the contact normal. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_contact_a828feb22ff02fe787739eb5d87cfec38}{set\+Penetration}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} penetration)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the amount of interpenetration. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_afe0f0a9a42b4b1f8bd8a61f0b6a4afdd}{get\+Penetration}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the amount of interpenetration. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}{set\+Body\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} friction, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} restitution)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize this contact. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_a1a547c3852733960001cc5fe0fe06790}{get\+Friction}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the friction constant used for the bodies in this contact. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_a8ec701dcaf82e7fc65bc6c4a2cb6987e}{get\+Restitution}} () const
-\item 
-glm\+::vec3 \mbox{\hyperlink{classr3_1_1_contact_a733cdbf54fe22bdaaa55a55868ad14ac}{get\+Contact\+Velocity}} () const
-\item 
-void \mbox{\hyperlink{classr3_1_1_contact_a7ccc2c56a4dcc5b16967f9832fea87ab}{set\+Contact\+Velocity}} (const glm\+::vec3 \&velocity)
-\item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_aff234679aa4302b69b8dd101eb969705}{get\+Desired\+Delta\+Velocity}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the restitution constant used for the bodies in this contact. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_contact_a4c02edbc7514fbc84cd1b7d70797619c}{get\+Closing\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em Get the direction and magnitude of the velocity at which both bodies collided. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_contact_a7b837cd82d64d93ce1a98cdd172dd868}{set\+Closing\+Velocity}} (const glm\+::vec3 \&velocity)
+\begin{DoxyCompactList}\small\item\em Set the closing velocity at which both bodies collide. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_contact_a4e00a32cb21ff4fc8ec826f163bcddae}{calculate\+Internals}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
-\item 
+\begin{DoxyCompactList}\small\item\em Prepares this contact for collision resolution. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_contact_a3f2c146006389bf6273cdd078763b7a3}{calculate\+Desired\+Delta\+Velocity}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
-\item 
+\begin{DoxyCompactList}\small\item\em Calculate the needed velocity for this contact to combat vibrations. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_aff234679aa4302b69b8dd101eb969705}{get\+Desired\+Delta\+Velocity}} () const
+\begin{DoxyCompactList}\small\item\em Get the needed velocity for this contact to combat vibrations. \end{DoxyCompactList}\item 
 const glm\+::vec3 \& \mbox{\hyperlink{classr3_1_1_contact_ade5794f7055fb30ff52f9193b92c6bf0}{get\+Relative\+Contact\+Position}} (int index) const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the contact position relative to the first or the second rigid body. \end{DoxyCompactList}\item 
 const glm\+::mat3 \& \mbox{\hyperlink{classr3_1_1_contact_a4e9692d870bdba44ff6b627b8c6c6e30}{get\+Contact\+To\+World}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the rotation matrix, which transforms this contact to world orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_contact}{Contact}} represents a point in space at which two rigid bodies collide. It is not a point in world space but rather knows the relative offsets to the points of mass of both rigid bodies. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_contact_af2648c9a1e37583ac230a40f4fc6b72d}\label{classr3_1_1_contact_af2648c9a1e37583ac230a40f4fc6b72d}} 
@@ -82,13 +90,21 @@ const glm\+::mat3 \& \mbox{\hyperlink{classr3_1_1_contact_a4e9692d870bdba44ff6b6
 \subsubsection{\texorpdfstring{calculate\+Desired\+Delta\+Velocity()}{calculateDesiredDeltaVelocity()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+::calculate\+Desired\+Delta\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})}
 
+
+
+Calculate the needed velocity for this contact to combat vibrations. 
+
 \mbox{\Hypertarget{classr3_1_1_contact_a4e00a32cb21ff4fc8ec826f163bcddae}\label{classr3_1_1_contact_a4e00a32cb21ff4fc8ec826f163bcddae}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!calculate\+Internals@{calculate\+Internals}}
 \index{calculate\+Internals@{calculate\+Internals}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{calculate\+Internals()}{calculateInternals()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+::calculate\+Internals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{classr3_1_1_contact_aaa7c4c676fd8f3b07f81cc18257c48d9}\label{classr3_1_1_contact_aaa7c4c676fd8f3b07f81cc18257c48d9}} 
+
+
+Prepares this contact for collision resolution. 
+
+Assures that the first rigid body has no infinite mass and swaps it with the second one if necessary. It also calculates the desired delta velocity for this contact as well as the contact velocity and relative contact positions. \mbox{\Hypertarget{classr3_1_1_contact_aaa7c4c676fd8f3b07f81cc18257c48d9}\label{classr3_1_1_contact_aaa7c4c676fd8f3b07f81cc18257c48d9}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Body@{get\+Body}}
 \index{get\+Body@{get\+Body}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Body()}{getBody()}}
@@ -97,105 +113,238 @@ const glm\+::mat3 \& \mbox{\hyperlink{classr3_1_1_contact_a4e9692d870bdba44ff6b6
 Get a rigid body by index. \begin{DoxyReturn}{Returns}
 The first body if index == 0, the second one if index == 1. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_a4c02edbc7514fbc84cd1b7d70797619c}\label{classr3_1_1_contact_a4c02edbc7514fbc84cd1b7d70797619c}} 
+\index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Closing\+Velocity@{get\+Closing\+Velocity}}
+\index{get\+Closing\+Velocity@{get\+Closing\+Velocity}!r3\+::\+Contact@{r3\+::\+Contact}}
+\subsubsection{\texorpdfstring{get\+Closing\+Velocity()}{getClosingVelocity()}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Contact\+::get\+Closing\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the direction and magnitude of the velocity at which both bodies collided. 
+
+\begin{DoxyReturn}{Returns}
+The closing velocity 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_contact_a2d8f594947a1900fd21e2f707384d9fe}\label{classr3_1_1_contact_a2d8f594947a1900fd21e2f707384d9fe}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Contact\+Normal@{get\+Contact\+Normal}}
 \index{get\+Contact\+Normal@{get\+Contact\+Normal}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Contact\+Normal()}{getContactNormal()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Contact\+::get\+Contact\+Normal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the direction of the collision at the contact point. \mbox{\Hypertarget{classr3_1_1_contact_a9558ff3dd4e2c5331fc05076e4e503a0}\label{classr3_1_1_contact_a9558ff3dd4e2c5331fc05076e4e503a0}} 
+
+
+Get the contact normal. 
+
+\begin{DoxyReturn}{Returns}
+The direction of the collision at the contact point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_a9558ff3dd4e2c5331fc05076e4e503a0}\label{classr3_1_1_contact_a9558ff3dd4e2c5331fc05076e4e503a0}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Contact\+Point@{get\+Contact\+Point}}
 \index{get\+Contact\+Point@{get\+Contact\+Point}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Contact\+Point()}{getContactPoint()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Contact\+::get\+Contact\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the point, where the collision took place. \mbox{\Hypertarget{classr3_1_1_contact_a4e9692d870bdba44ff6b627b8c6c6e30}\label{classr3_1_1_contact_a4e9692d870bdba44ff6b627b8c6c6e30}} 
+
+
+Get the point, where the collision took place. 
+
+\begin{DoxyReturn}{Returns}
+The contact point 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_a4e9692d870bdba44ff6b627b8c6c6e30}\label{classr3_1_1_contact_a4e9692d870bdba44ff6b627b8c6c6e30}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Contact\+To\+World@{get\+Contact\+To\+World}}
 \index{get\+Contact\+To\+World@{get\+Contact\+To\+World}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Contact\+To\+World()}{getContactToWorld()}}
 {\footnotesize\ttfamily const glm\+::mat3 \& r3\+::\+Contact\+::get\+Contact\+To\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classr3_1_1_contact_a733cdbf54fe22bdaaa55a55868ad14ac}\label{classr3_1_1_contact_a733cdbf54fe22bdaaa55a55868ad14ac}} 
-\index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Contact\+Velocity@{get\+Contact\+Velocity}}
-\index{get\+Contact\+Velocity@{get\+Contact\+Velocity}!r3\+::\+Contact@{r3\+::\+Contact}}
-\subsubsection{\texorpdfstring{get\+Contact\+Velocity()}{getContactVelocity()}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Contact\+::get\+Contact\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+Get the rotation matrix, which transforms this contact to world orientation. 
+
+\begin{DoxyReturn}{Returns}
+The rotation matrix 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_contact_aff234679aa4302b69b8dd101eb969705}\label{classr3_1_1_contact_aff234679aa4302b69b8dd101eb969705}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Desired\+Delta\+Velocity@{get\+Desired\+Delta\+Velocity}}
 \index{get\+Desired\+Delta\+Velocity@{get\+Desired\+Delta\+Velocity}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Desired\+Delta\+Velocity()}{getDesiredDeltaVelocity()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Contact\+::get\+Desired\+Delta\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Get the needed velocity for this contact to combat vibrations. 
+
+\begin{DoxyReturn}{Returns}
+The desired velocity difference. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_contact_adf157981ebfd1552521afe7b25e9239c}\label{classr3_1_1_contact_adf157981ebfd1552521afe7b25e9239c}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+First@{get\+First}}
 \index{get\+First@{get\+First}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+First()}{getFirst()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Contact\+::get\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the first colliding rigid body. \mbox{\Hypertarget{classr3_1_1_contact_a1a547c3852733960001cc5fe0fe06790}\label{classr3_1_1_contact_a1a547c3852733960001cc5fe0fe06790}} 
+
+
+Get the first colliding rigid body. 
+
+\begin{DoxyReturn}{Returns}
+The first rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_a1a547c3852733960001cc5fe0fe06790}\label{classr3_1_1_contact_a1a547c3852733960001cc5fe0fe06790}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Friction@{get\+Friction}}
 \index{get\+Friction@{get\+Friction}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Friction()}{getFriction()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Contact\+::get\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the friction constant. \mbox{\Hypertarget{classr3_1_1_contact_afe0f0a9a42b4b1f8bd8a61f0b6a4afdd}\label{classr3_1_1_contact_afe0f0a9a42b4b1f8bd8a61f0b6a4afdd}} 
+
+
+Get the friction constant used for the bodies in this contact. 
+
+\begin{DoxyReturn}{Returns}
+The friction constant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_afe0f0a9a42b4b1f8bd8a61f0b6a4afdd}\label{classr3_1_1_contact_afe0f0a9a42b4b1f8bd8a61f0b6a4afdd}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Penetration@{get\+Penetration}}
 \index{get\+Penetration@{get\+Penetration}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Penetration()}{getPenetration()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Contact\+::get\+Penetration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the amount of interpenetration. \mbox{\Hypertarget{classr3_1_1_contact_ade5794f7055fb30ff52f9193b92c6bf0}\label{classr3_1_1_contact_ade5794f7055fb30ff52f9193b92c6bf0}} 
+
+
+Get the amount of interpenetration. 
+
+\begin{DoxyReturn}{Returns}
+The amount of interpenetration 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_ade5794f7055fb30ff52f9193b92c6bf0}\label{classr3_1_1_contact_ade5794f7055fb30ff52f9193b92c6bf0}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Relative\+Contact\+Position@{get\+Relative\+Contact\+Position}}
 \index{get\+Relative\+Contact\+Position@{get\+Relative\+Contact\+Position}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Relative\+Contact\+Position()}{getRelativeContactPosition()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Contact\+::get\+Relative\+Contact\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
 
+
+
+Get the contact position relative to the first or the second rigid body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Either 0 (first body) or 1 (second body) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The relative contact position 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_contact_a8ec701dcaf82e7fc65bc6c4a2cb6987e}\label{classr3_1_1_contact_a8ec701dcaf82e7fc65bc6c4a2cb6987e}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Restitution@{get\+Restitution}}
 \index{get\+Restitution@{get\+Restitution}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Restitution()}{getRestitution()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Contact\+::get\+Restitution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the restitution constant. \mbox{\Hypertarget{classr3_1_1_contact_a90af8f5c7cba65a6a84c57b5a6ef6d70}\label{classr3_1_1_contact_a90af8f5c7cba65a6a84c57b5a6ef6d70}} 
+
+
+Get the restitution constant used for the bodies in this contact. 
+
+\begin{DoxyReturn}{Returns}
+The restitution constant 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_a90af8f5c7cba65a6a84c57b5a6ef6d70}\label{classr3_1_1_contact_a90af8f5c7cba65a6a84c57b5a6ef6d70}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!get\+Second@{get\+Second}}
 \index{get\+Second@{get\+Second}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{get\+Second()}{getSecond()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Contact\+::get\+Second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the second colliding rigid body. \mbox{\Hypertarget{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}\label{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}} 
+
+
+Get the second colliding rigid body. 
+
+\begin{DoxyReturn}{Returns}
+The second rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}\label{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Body\+Data@{set\+Body\+Data}}
 \index{set\+Body\+Data@{set\+Body\+Data}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{set\+Body\+Data()}{setBodyData()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Body\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{friction,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{restitution }\end{DoxyParamCaption})}
 
-Set involved rigid bodies, friction and restitution coefficients. \mbox{\Hypertarget{classr3_1_1_contact_af7866e211b169ce6565d3f37af8ef8d7}\label{classr3_1_1_contact_af7866e211b169ce6565d3f37af8ef8d7}} 
+
+
+Initialize this contact. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & First colliding body \\
+\hline
+{\em second} & Second colliding body \\
+\hline
+{\em friction} & Friction constant used for the bodies \\
+\hline
+{\em restitution} & Restitution used for the bodies \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_contact_a7b837cd82d64d93ce1a98cdd172dd868}\label{classr3_1_1_contact_a7b837cd82d64d93ce1a98cdd172dd868}} 
+\index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Closing\+Velocity@{set\+Closing\+Velocity}}
+\index{set\+Closing\+Velocity@{set\+Closing\+Velocity}!r3\+::\+Contact@{r3\+::\+Contact}}
+\subsubsection{\texorpdfstring{set\+Closing\+Velocity()}{setClosingVelocity()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Closing\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Set the closing velocity at which both bodies collide. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em velocity} & The closing velocity \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_contact_af7866e211b169ce6565d3f37af8ef8d7}\label{classr3_1_1_contact_af7866e211b169ce6565d3f37af8ef8d7}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Contact\+Normal@{set\+Contact\+Normal}}
 \index{set\+Contact\+Normal@{set\+Contact\+Normal}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{set\+Contact\+Normal()}{setContactNormal()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Contact\+Normal (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{contact\+Normal }\end{DoxyParamCaption})}
 
-Set the direction of the collision at the contact point. \mbox{\Hypertarget{classr3_1_1_contact_aedd044892a1adf0692b7cc9f81b4436a}\label{classr3_1_1_contact_aedd044892a1adf0692b7cc9f81b4436a}} 
+
+
+Set the contact normal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact\+Normal} & Direction of the collision at the contact point \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_contact_aedd044892a1adf0692b7cc9f81b4436a}\label{classr3_1_1_contact_aedd044892a1adf0692b7cc9f81b4436a}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Contact\+Point@{set\+Contact\+Point}}
 \index{set\+Contact\+Point@{set\+Contact\+Point}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{set\+Contact\+Point()}{setContactPoint()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Contact\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{contact\+Point }\end{DoxyParamCaption})}
 
-Set the point, where the collision took place. \mbox{\Hypertarget{classr3_1_1_contact_a7ccc2c56a4dcc5b16967f9832fea87ab}\label{classr3_1_1_contact_a7ccc2c56a4dcc5b16967f9832fea87ab}} 
-\index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Contact\+Velocity@{set\+Contact\+Velocity}}
-\index{set\+Contact\+Velocity@{set\+Contact\+Velocity}!r3\+::\+Contact@{r3\+::\+Contact}}
-\subsubsection{\texorpdfstring{set\+Contact\+Velocity()}{setContactVelocity()}}
-{\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Contact\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
 
+
+Set the contact point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact\+Point} & Point, where the collision took place. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_contact_a828feb22ff02fe787739eb5d87cfec38}\label{classr3_1_1_contact_a828feb22ff02fe787739eb5d87cfec38}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Penetration@{set\+Penetration}}
 \index{set\+Penetration@{set\+Penetration}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{set\+Penetration()}{setPenetration()}}
 {\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Penetration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{penetration }\end{DoxyParamCaption})}
 
-Set the amount of interpenetration along the contact normal. 
+
+
+Set the amount of interpenetration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em penetration} & Interpenetration along the contact normal \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8h}{Contact.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8cpp}{Contact.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8h}{Contact.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8cpp}{Contact.\+cpp}}\end{DoxyCompactItemize}

@@ -1,6 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "ParticleForceGenerator.h"
+#include "IParticleForceGenerator.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
@@ -9,12 +9,26 @@ namespace r3
 {
 	class Particle;
 
-	class R3D_DECLSPEC ParticleGravity : public ParticleForceGenerator
+	/**
+	 * \brief A ParticleGravity is a particle force generator, which
+	 * applies a constant given force to particles.
+	 */
+	class R3D_DECLSPEC ParticleGravity : public IParticleForceGenerator
 	{
 	public:
+		/**
+		 * \brief ParticleGravity constructor
+		 * \param gravity A constant force
+		 */
 		explicit ParticleGravity(const glm::vec3& gravity);
 		~ParticleGravity();
 
+		/**
+		* \brief Calculates and changes the force in the force accumulator
+		* of a particle.
+		* \param particle The particle, on which the force should be applied to.
+		* \param duration The duration for which the force acts.
+		*/
 		void updateForce(Particle* particle, real duration) override;
 
 	protected:

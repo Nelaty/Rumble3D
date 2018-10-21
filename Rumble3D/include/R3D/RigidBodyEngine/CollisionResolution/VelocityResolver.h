@@ -28,6 +28,6 @@ namespace r3
 		real m_epsilon;
 
 		unsigned int m_iterationsUsed;
-		unsigned int m_iterations;
+		unsigned int m_iterationsMax;
 	};
 }

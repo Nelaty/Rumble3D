@@ -24,14 +24,13 @@ namespace r3
 			return 0;
 		}
 		
-		contact->m_particles[0] = m_particles[0];
 		if (m_particles[1]->hasFiniteMass()) 
 		{
-			contact->m_particles[1] = m_particles[1];
+			contact->init(m_particles[0], m_particles[1]);
 		}
 		else 
 		{
-			contact->m_particles[1] = nullptr;
+			contact->init(m_particles[0], nullptr);
 		}
 		
 		// Negative Kontaktnormale:

@@ -69,7 +69,7 @@ namespace r3
 		{
 			if(m_calculateIterations)
 			{
-				m_resolver.setIterations(usedContacts * 2);
+				m_resolver.setIterationsMax(usedContacts * 2);
 			}
 			
 			m_resolver.resolveContacts(m_contacts, usedContacts, timeDelta);

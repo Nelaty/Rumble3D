@@ -7,6 +7,9 @@ namespace r3
 {
 	class ParticleContact;
 
+	/**
+	 * Default implementation of the particle computation interface.
+	 */
 	class R3D_DECLSPEC DefaultParticleEngineCI : public ParticleEngineCI
 	{
 	public:

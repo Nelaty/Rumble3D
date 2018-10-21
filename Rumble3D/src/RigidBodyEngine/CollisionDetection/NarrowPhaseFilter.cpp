@@ -22,7 +22,7 @@ namespace r3
 		const auto& data = broadPhaseData.getCollisions();
 		for(auto i = 0; i < broadPhaseData.getCollisionsUsed(); ++i)
 		{
-			generateCollisionData(data[i].m_first, data[i].m_second, collisions);
+			generateCollisionData(data[i].getFirst(), data[i].getSecond(), collisions);
 		}
 	}
 

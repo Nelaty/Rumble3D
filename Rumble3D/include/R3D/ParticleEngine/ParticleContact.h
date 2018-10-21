@@ -8,42 +8,108 @@ namespace r3
 {
 	class Particle;
 
+	/**
+	 * \brief A ParticleContact contains contact information of two
+	 * particles.
+	 */
 	class R3D_DECLSPEC ParticleContact
 	{
-		// Die Resolver-Klasse muss ohne Unterlass die Attribute von ParticleContact
-		// lesen und verändern. Der Code im Resolver würde mit gettern und settern
-		// sehr unleserlich und schwer zu warten.
-		friend class ParticleContactResolver;
-
-	//protected: zu debugging zwecken!!!
 	public:
 		explicit ParticleContact();
 		~ParticleContact();
 
-		//Berechnung der Trennungsgeschwindigkeit für diesen Kontakt.
+		/**
+		 * \brief Initialize the contact.
+		 * \param first First particle of the contact.
+		 * \param second Second particle of the contact.
+		 */
+		void init(Particle* first, Particle* second);
+
+		/**
+		 * \brief Calculate the separating velocity.
+		 * \return The separating velocity.
+		 */
 		real calculateSeparatingVelocity() const;
 
-		// Behandlung der Geschwindigkeit und des Durchdringens.
+		/**
+		 * \brief Resolve velocity and interpenetration.
+		 * \param duration The amount of time, which has passed.
+		 */
 		void resolve(real duration);
 
-		// Gib den Array mit den Partikeln zurück:
-		Particle * getParticles();
-		void setContactNormal(glm::vec3 normal);
+		/** 
+		 * \brief Get the contact's particles.
+		 * \return The particles.
+		 */
+		Particle* getParticles();
+
+		/**
+		 * \brief Set the contact's contact normal.
+		 * \param normal The contact normal.
+		 */
+		void setContactNormal(const glm::vec3& normal);
+		/**
+		 * \brief Get the contact's contact normal.
+		 * \return The current contact normal.
+		 */
+		const glm::vec3& getContactNormal() const;
+
+		/**
+		 * \brief Set the contact's restitution.
+		 * \param restitution The restitution.
+		 */
 		void setRestitution(real restitution);
+		/**
+		 * \brief Get the contact's restitution.
+		 * \return The current restitution.
+		 */
+		real getRestitution() const;
+
+		/**
+		 * \brief Set the contact's penetration.
+		 * \param penetration The penetration.
+		 */
 		void setPenetration(real penetration);
+		/**
+		 * \brief Change the contact's penetration
+		 * \
+		 */
+		void addToPenetration(real summand);
+		/**
+		 * \brief Get the contact's penetration.
+		 * \return The current penetration.
+		 */
+		real getPenetration() const;
 
+		/**
+		 * \brief Access to the first particle.
+		 * \return The first particle.
+		 */
+		Particle* getFirst() const;
+		/**
+		 * \brief Access to the second particle.
+		 * \return The second particle.
+		 */
+		Particle* getSecond() const;
 
+		const glm::vec3* getParticleMovement() const;
 
-		Particle* m_particles[2]{};      // Die beiden am Kontakt beteiligten Teilchen.
-		real m_restitution{};             // Wiederherstellungskoeffizient.
-		glm::vec3 m_contactNormal;       // Kontaktnormale.
-		real m_penetration{};             // Durchdringung bis zum Ende des Ticks.
-		glm::vec3 m_particlesMovement[2];// Bewegung der Teilchen nach Durchdringung
-		
 	private:
-		// Behandlung der Geschwindigkeit für diesen Kontakt.
+		/**
+		 * \brief Resolve the velocity for the particles.
+		 * \param duration Time step of this update.
+		 */
 		void resolveVelocity(real duration);
-		// Behandlung der Durchdringung für diesen Kontakt.
+		/**
+		 * \brief Resolve the interpenetration of the particles.
+		 * \param duration Time step of this update.
+		 */
 		void resolveInterpenetration(real duration);
+
+		Particle* m_particles[2]{};
+		real m_restitution{};
+		glm::vec3 m_contactNormal;
+		real m_penetration{};
+		glm::vec3 m_particlesMovement[2];
 	};
 }

@@ -1,7 +1,7 @@
 <map id="r3::ParticleContactGenerator" name="r3::ParticleContactGenerator">
 <area shape="rect" id="node2" href="$classr3_1_1_particle_constraint.html" title="{r3::ParticleConstraint\n|# m_anchor\l# m_particle\l|+ ~ParticleConstraint()\l# ParticleConstraint()\l# currentLength()\l}" alt="" coords="5,167,159,289"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="{r3::ParticleLink\n|# m_particles\l|+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="183,160,303,296"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="183,160,303,296"/>
 <area shape="rect" id="node4" href="$classr3_1_1_particle_cable.html" title="{r3::ParticleCable\n|# m_maxLength\l# m_restitution\l|+ ParticleCable()\l+ ~ParticleCable()\l+ addContact()\l+ setMaxLength()\l+ setRestitution()\l}" alt="" coords="21,344,148,495"/>
 <area shape="rect" id="node5" href="$classr3_1_1_particle_collision.html" title="{r3::ParticleCollision\n|# m_restitution\l# m_distance\l# m_penetration\l|+ ParticleCollision()\l+ ~ParticleCollision()\l+ addContact()\l}" alt="" coords="172,351,315,487"/>
-<area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="{r3::ParticleRod\n|# m_length\l|+ ~ParticleRod()\l# ParticleRod()\l}" alt="" coords="339,373,457,465"/>
+<area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="339,373,457,465"/>
 </map>

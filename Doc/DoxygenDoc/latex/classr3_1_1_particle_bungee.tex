@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_bungee}\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
 
 
+A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle force generator, which simulates a bungee cord and connects two particles.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Bungee.\+h$>$}
 
 
@@ -10,7 +15,7 @@ Inheritance diagram for r3\+:\+:Particle\+Bungee\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=218pt]{classr3_1_1_particle_bungee__inherit__graph}
+\includegraphics[width=220pt]{classr3_1_1_particle_bungee__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -26,11 +31,11 @@ Collaboration diagram for r3\+:\+:Particle\+Bungee\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_bungee_aab8cdf8541433de21bc3d31db0434b6e}{Particle\+Bungee}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$other, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_bungee_a54b12a4381fdcaeaba38a743c96b2bdc}{$\sim$\+Particle\+Bungee}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384b96}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -43,6 +48,9 @@ void \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle force generator, which simulates a bungee cord and connects two particles. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_bungee_aab8cdf8541433de21bc3d31db0434b6e}\label{classr3_1_1_particle_bungee_aab8cdf8541433de21bc3d31db0434b6e}} 
 \index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!Particle\+Bungee@{Particle\+Bungee}}
@@ -50,6 +58,19 @@ void \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384
 \subsubsection{\texorpdfstring{Particle\+Bungee()}{ParticleBungee()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Bungee\+::\+Particle\+Bungee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{other,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other particle, connected to this bungee cord. \\
+\hline
+{\em spring\+Constant} & Defines the hardness of the bungee cord. \\
+\hline
+{\em rest\+Length} & The threshold at which forces will be applied. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_bungee_a54b12a4381fdcaeaba38a743c96b2bdc}\label{classr3_1_1_particle_bungee_a54b12a4381fdcaeaba38a743c96b2bdc}} 
 \index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!````~Particle\+Bungee@{$\sim$\+Particle\+Bungee}}
 \index{````~Particle\+Bungee@{$\sim$\+Particle\+Bungee}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
@@ -65,9 +86,20 @@ void \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Bungee\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Schnittstellen-\/\+Methode, die im speziellen Kraft-\/\+Generator überladen werden muss. Die Methode berechnet und aktualisiert die Kraft, die auf das Teilchen particle in der Zeitscheibe duration wirkt. 
 
-Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526192a67277b8658d825}{r3\+::\+Particle\+Force\+Generator}}.
+
+Calculates and changes the force in the force accumulator of a particle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle} & The particle, on which the force should be applied to. \\
+\hline
+{\em duration} & The duration for which the force acts \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{r3\+::\+I\+Particle\+Force\+Generator}}.
 
 
 
@@ -94,5 +126,5 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8h}{Particle\+Bungee.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8cpp}{Particle\+Bungee.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8h}{Particle\+Bungee.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8cpp}{Particle\+Bungee.\+cpp}}\end{DoxyCompactItemize}

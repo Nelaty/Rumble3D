@@ -5,10 +5,12 @@
 
 namespace r3
 {
-	ParticleSpring::ParticleSpring(Particle* other, const real springConstant, const real restLength)
-		: m_other{other},
-		m_springConstant{springConstant},
-		m_restLength{restLength}
+	ParticleSpring::ParticleSpring(Particle* other, 
+								   const real springConstant,
+								   const real restLength)
+		: m_springConstant{springConstant},
+		m_restLength{restLength},
+		m_other{other}
 	{
 	}
 	

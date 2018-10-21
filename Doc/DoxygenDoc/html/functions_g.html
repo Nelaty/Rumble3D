@@ -137,6 +137,9 @@ $(function() {
 <li>getCenterOfMass()
 : <a class="el" href="classr3_1_1_rigid_body.html#a9b802fe5774292fbc6ce80cccab15151">r3::RigidBody</a>
 </li>
+<li>getClosingVelocity()
+: <a class="el" href="classr3_1_1_contact.html#a4c02edbc7514fbc84cd1b7d70797619c">r3::Contact</a>
+</li>
 <li>getCollisionPrimitive()
 : <a class="el" href="classr3_1_1_collision_object.html#aabb0d7173dacef5ffc02163557f55fa4">r3::CollisionObject</a>
 </li>
@@ -163,6 +166,7 @@ $(function() {
 <li>getContactNormal()
 : <a class="el" href="classr3_1_1_contact.html#a2d8f594947a1900fd21e2f707384d9fe">r3::Contact</a>
 , <a class="el" href="classr3_1_1_contact_old.html#affb54494fd3c883cc6acf4f1b9fbc639">r3::ContactOld</a>
+, <a class="el" href="classr3_1_1_particle_contact.html#a35b1266f0ebc69fe67dbceaf4ad4c2a0">r3::ParticleContact</a>
 </li>
 <li>getContactPoint()
 : <a class="el" href="classr3_1_1_contact.html#a9558ff3dd4e2c5331fc05076e4e503a0">r3::Contact</a>
@@ -181,14 +185,11 @@ $(function() {
 <li>getContactToWorld()
 : <a class="el" href="classr3_1_1_contact.html#a4e9692d870bdba44ff6b627b8c6c6e30">r3::Contact</a>
 </li>
-<li>getContactVelocity()
-: <a class="el" href="classr3_1_1_contact.html#a733cdbf54fe22bdaaa55a55868ad14ac">r3::Contact</a>
-</li>
 <li>getDamping()
-: <a class="el" href="classr3_1_1_particle.html#a6f05d81870e5566701760873082ae1b0">r3::Particle</a>
+: <a class="el" href="classr3_1_1_particle.html#a5e8544a8ac8e4765a9021f9112209eba">r3::Particle</a>
 </li>
 <li>getData()
-: <a class="el" href="classr3_1_1_collision_data.html#ab31745ebb708c1d04e22bcfb385e663f">r3::CollisionData</a>
+: <a class="el" href="classr3_1_1_collision_data.html#acb1bb23e8d0f37f0ebc39e8f7642419f">r3::CollisionData</a>
 </li>
 <li>getDesiredDeltaVelocity()
 : <a class="el" href="classr3_1_1_contact.html#aff234679aa4302b69b8dd101eb969705">r3::Contact</a>
@@ -205,7 +206,9 @@ $(function() {
 : <a class="el" href="classr3_1_1_collision_resolver.html#ae56e2125e24982ad368f0d87e9c2a28f">r3::CollisionResolver</a>
 </li>
 <li>getFirst()
-: <a class="el" href="classr3_1_1_contact.html#adf157981ebfd1552521afe7b25e9239c">r3::Contact</a>
+: <a class="el" href="classr3_1_1_collision_pair.html#a603f9437f7fa4aa5253ad26247ee75ae">r3::CollisionPair</a>
+, <a class="el" href="classr3_1_1_contact.html#adf157981ebfd1552521afe7b25e9239c">r3::Contact</a>
+, <a class="el" href="classr3_1_1_particle_contact.html#a4f82d0a6a21ea6582be9cec146fc7234">r3::ParticleContact</a>
 </li>
 <li>getForceAccumulated()
 : <a class="el" href="classr3_1_1_rigid_body.html#ae15bce9cc4aa2db577bdfb61464d26c0">r3::RigidBody</a>
@@ -214,7 +217,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle.html#a81fe0cfac976df7da6337dabc8f73313">r3::Particle</a>
 </li>
 <li>getForceRegistry()
-: <a class="el" href="classr3_1_1_rigid_body_world.html#a5ec345de8bdc6e910797434de918dbc2">r3::RigidBodyWorld</a>
+: <a class="el" href="classr3_1_1_rigid_body_world.html#acfdc56e2796e5e0d86dbf71582e1b8c2">r3::RigidBodyWorld</a>
 </li>
 <li>getFriction()
 : <a class="el" href="classr3_1_1_collision_data.html#ae610a57c20c504a7bacb4e35f89f530f">r3::CollisionData</a>
@@ -239,7 +242,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body.html#ae9057a0acbb7dd552a23557ed773b3d5">r3::RigidBody</a>
 </li>
 <li>getInverseMass()
-: <a class="el" href="classr3_1_1_particle.html#ac495537e7d4089fa394abb3fed213b93">r3::Particle</a>
+: <a class="el" href="classr3_1_1_particle.html#a6924e65c0aacb7e50057e43be134156b">r3::Particle</a>
 , <a class="el" href="classr3_1_1_rigid_body.html#a9a994b91ccc980c1dcc4ed43f71b6913">r3::RigidBody</a>
 </li>
 <li>getInverseTensor()
@@ -249,7 +252,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body.html#ab48c055a703f1d3d84b9f1977ef504e6">r3::RigidBody</a>
 </li>
 <li>getMass()
-: <a class="el" href="classr3_1_1_particle.html#a589224b38f870653d35fc2fa0aae1e25">r3::Particle</a>
+: <a class="el" href="classr3_1_1_particle.html#ade86b59933d1acc8d33f79a8735d8f3d">r3::Particle</a>
 , <a class="el" href="classr3_1_1_rigid_body.html#a171ee8190ba1c7c2a40c5faf8d654170">r3::RigidBody</a>
 </li>
 <li>getMaterialDef()
@@ -274,7 +277,10 @@ $(function() {
 : <a class="el" href="classr3_1_1_service_locator_computation_interface.html#abc0c31a51308c4db9932763325c0cb08">r3::ServiceLocatorComputationInterface</a>
 </li>
 <li>getParticleForceRegistry()
-: <a class="el" href="classr3_1_1_particle_world.html#aaa3f952fdfd8862673d41afa078245bf">r3::ParticleWorld</a>
+: <a class="el" href="classr3_1_1_particle_world.html#add0e006264e25065ff226eafc0c1a29d">r3::ParticleWorld</a>
+</li>
+<li>getParticleMovement()
+: <a class="el" href="classr3_1_1_particle_contact.html#af56ceb020653556811766410119351fa">r3::ParticleContact</a>
 </li>
 <li>getParticles()
 : <a class="el" href="classr3_1_1_particle_contact.html#aeeacfbf5cbed36cf2be65775066e8f14">r3::ParticleContact</a>
@@ -286,6 +292,7 @@ $(function() {
 <li>getPenetration()
 : <a class="el" href="classr3_1_1_contact.html#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd">r3::Contact</a>
 , <a class="el" href="classr3_1_1_contact_old.html#a2ef64745c0b7d6370f886ed002697044">r3::ContactOld</a>
+, <a class="el" href="classr3_1_1_particle_contact.html#a9bff741e1a56b01dc43013cab0b9ae08">r3::ParticleContact</a>
 </li>
 <li>getPhysicsMaterial()
 : <a class="el" href="classr3_1_1_rigid_body.html#a6a4de124959ef45fddb8809d60066ca9">r3::RigidBody</a>
@@ -318,10 +325,11 @@ $(function() {
 : <a class="el" href="classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b">r3::CollisionData</a>
 , <a class="el" href="classr3_1_1_collision_data_old.html#a3546df5d0d82e690c12f0899bc683d35">r3::CollisionDataOld</a>
 , <a class="el" href="classr3_1_1_contact.html#a8ec701dcaf82e7fc65bc6c4a2cb6987e">r3::Contact</a>
+, <a class="el" href="classr3_1_1_particle_contact.html#a89c8382938e10cff1846085f16e8b4a2">r3::ParticleContact</a>
 , <a class="el" href="classr3_1_1_physics_material.html#a555b73c2bde3679b0e40087455eab61e">r3::PhysicsMaterial</a>
 </li>
 <li>getRigidBodies()
-: <a class="el" href="classr3_1_1_rigid_body_world.html#abf3bfd4b5d7ed2e843362e555b9eebb2">r3::RigidBodyWorld</a>
+: <a class="el" href="classr3_1_1_rigid_body_world.html#a31e9a0ddd26c25327aa21b3460c52893">r3::RigidBodyWorld</a>
 </li>
 <li>getRigidBodyEngineCI()
 : <a class="el" href="classr3_1_1_service_locator_computation_interface.html#a01d7434be386277d9a9a26d6859472c3">r3::ServiceLocatorComputationInterface</a>
@@ -334,7 +342,9 @@ $(function() {
 , <a class="el" href="classr3_1_1_transform3_d.html#a1bad817e81d93f275ac71864fae763aa">r3::Transform3D</a>
 </li>
 <li>getSecond()
-: <a class="el" href="classr3_1_1_contact.html#a90af8f5c7cba65a6a84c57b5a6ef6d70">r3::Contact</a>
+: <a class="el" href="classr3_1_1_collision_pair.html#a218a4ee7500ed53c3ba5384833afff5a">r3::CollisionPair</a>
+, <a class="el" href="classr3_1_1_contact.html#a90af8f5c7cba65a6a84c57b5a6ef6d70">r3::Contact</a>
+, <a class="el" href="classr3_1_1_particle_contact.html#ad2002c182f5a4716a35dd0110af7c476">r3::ParticleContact</a>
 </li>
 <li>getSeed()
 : <a class="el" href="classutl_1_1_random.html#a88abb8994dd315ddc0d44707752f4150">utl::Random</a>

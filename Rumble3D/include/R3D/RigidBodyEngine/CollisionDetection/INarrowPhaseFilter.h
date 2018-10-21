@@ -5,7 +5,7 @@
 
 namespace r3
 {
-	struct CollisionPair;
+	class CollisionPair;
 
 	class CollisionBox;
 	class CollisionSphere;

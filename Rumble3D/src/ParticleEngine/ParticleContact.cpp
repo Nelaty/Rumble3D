@@ -17,6 +17,12 @@ namespace r3
 	ParticleContact::~ParticleContact()
 	= default;
 
+	void ParticleContact::init(Particle* first, Particle* second)
+	{
+		m_particles[0] = first;
+		m_particles[1] = second;
+	}
+
 	real ParticleContact::calculateSeparatingVelocity() const
 	{
 		// v_s = (\dot{p_a} - \dot{p_b}) * (\hat{p_a -p_b})
@@ -28,9 +34,9 @@ namespace r3
 		return glm::dot(relativeVelocity, m_contactNormal);
 	}
 
-	void ParticleContact::resolveVelocity(real duration)
+	void ParticleContact::resolveVelocity(const real duration)
 	{
-		real separatingVelocity = calculateSeparatingVelocity();
+		const real separatingVelocity = calculateSeparatingVelocity();
 		if (separatingVelocity > 0) 
 		{
 			return;
@@ -64,7 +70,7 @@ namespace r3
 		}
 
 		// Geschwindigkeit des Gesamtsystems
-		real deltaVelocity = newSeparatingVelocity - separatingVelocity;
+		const real deltaVelocity = newSeparatingVelocity - separatingVelocity;
 
 		// Veraenderung der Geschwindigkeit in Abh. der Massen der Teilchen
 		real totalInverseMass = m_particles[0]->getInverseMass();
@@ -80,10 +86,10 @@ namespace r3
 			return;
 		}
 		// Gesamtimpuls g = (m_1 + m_2) * v 
-		real impulse = deltaVelocity / totalInverseMass;
+		const real impulse = deltaVelocity / totalInverseMass;
 
 		// Impuls / inverse Masse in Richtung der Kontaktnormalen
-		glm::vec3 impulsePerMass = m_contactNormal * impulse;
+		const glm::vec3 impulsePerMass = m_contactNormal * impulse;
 
 		// Anwendung des Impulses je Teilchen proportional zu den inversen Massen:
 		// \prime{\hat{p}} = \dot{p} + 1/m * g
@@ -122,7 +128,7 @@ namespace r3
 		glm::vec3 dn = m_contactNormal * m_penetration;
 
 		// Berechne 1/(m_a + m_b) * d * n
-		glm::vec3 movePerInverseMass = dn * ((real)1.0 / totalMass);
+		glm::vec3 movePerInverseMass = dn * (static_cast<real>(1.0) / totalMass);
 
 		// Berechnung von Delta-p_a und Delta-p_b
 		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->getMass();
@@ -132,7 +138,7 @@ namespace r3
 		}
 		else 
 		{
-			m_particlesMovement[1] = glm::vec3(0.0f);
+			m_particlesMovement[1] = glm::vec3(0);
 		}
 
 		// Anwendung der Aufloesung der Durchdringung:
@@ -148,9 +154,14 @@ namespace r3
 		return m_particles[0];
 	}
 
-	void ParticleContact::setContactNormal(const glm::vec3 normal)
+	void ParticleContact::setContactNormal(const glm::vec3& normal)
 	{
 		m_contactNormal = normal;
+	}
+
+	const glm::vec3& ParticleContact::getContactNormal() const
+	{
+		return m_contactNormal;
 	}
 
 	void ParticleContact::setRestitution(const real restitution)
@@ -158,8 +169,38 @@ namespace r3
 		m_restitution = restitution;
 	}
 
+	real ParticleContact::getRestitution() const
+	{
+		return m_restitution;
+	}
+
 	void ParticleContact::setPenetration(const real penetration)
 	{
 		m_penetration = penetration;
+	}
+
+	void ParticleContact::addToPenetration(const real summand)
+	{
+		m_penetration += summand;
+	}
+
+	real ParticleContact::getPenetration() const
+	{
+		return m_penetration;
+	}
+
+	Particle* ParticleContact::getFirst() const
+	{
+		return m_particles[0];
+	}
+
+	Particle* ParticleContact::getSecond() const
+	{
+		return m_particles[1];
+	}
+
+	const glm::vec3* ParticleContact::getParticleMovement() const
+	{
+		return m_particlesMovement;
 	}
 }

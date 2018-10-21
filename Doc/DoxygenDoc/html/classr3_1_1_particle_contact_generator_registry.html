@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Registry for ParticleContactGenerators.  
+ <a href="classr3_1_1_particle_contact_generator_registry.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_particle_contact_generator_registry_8h_source.html">ParticleContactGeneratorRegistry.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::ParticleContactGeneratorRegistry:</div>
@@ -90,12 +93,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a26a9ed03c6e050ffa99669bd0928d520"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html#a26a9ed03c6e050ffa99669bd0928d520">~ParticleContactGeneratorRegistry</a> ()</td></tr>
 <tr class="separator:a26a9ed03c6e050ffa99669bd0928d520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34d44783a363a513217dec694f625687"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html#a34d44783a363a513217dec694f625687">registerContactGenerator</a> (<a class="el" href="classr3_1_1_particle_contact_generator.html">ParticleContactGenerator</a> *generator)</td></tr>
+<tr class="memdesc:a34d44783a363a513217dec694f625687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a contact generator.  <a href="#a34d44783a363a513217dec694f625687">More...</a><br /></td></tr>
 <tr class="separator:a34d44783a363a513217dec694f625687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8de6dd84335777644f7eac93b82ba1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html#ae8de6dd84335777644f7eac93b82ba1e">unregisterContactGenerator</a> (<a class="el" href="classr3_1_1_particle_contact_generator.html">ParticleContactGenerator</a> *generator)</td></tr>
+<tr class="memdesc:ae8de6dd84335777644f7eac93b82ba1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a contact generator.  <a href="#ae8de6dd84335777644f7eac93b82ba1e">More...</a><br /></td></tr>
 <tr class="separator:ae8de6dd84335777644f7eac93b82ba1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c24a369a980542a769875466eb835d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html#a8c24a369a980542a769875466eb835d0">clear</a> ()</td></tr>
+<tr class="memdesc:a8c24a369a980542a769875466eb835d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister all previously registered contact generators.  <a href="#a8c24a369a980542a769875466eb835d0">More...</a><br /></td></tr>
 <tr class="separator:a8c24a369a980542a769875466eb835d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31b80b662b52afd910ba3d4d07fd8649"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="classr3_1_1_particle_contact_generator.html">ParticleContactGenerator</a> * &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html#a31b80b662b52afd910ba3d4d07fd8649">getGenerators</a> () const</td></tr>
+<tr class="memdesc:a31b80b662b52afd910ba3d4d07fd8649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get all generators in this registry.  <a href="#a31b80b662b52afd910ba3d4d07fd8649">More...</a><br /></td></tr>
 <tr class="separator:a31b80b662b52afd910ba3d4d07fd8649"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -103,7 +110,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:abefd730c20539681ed0fac53ccd5f8ab"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classr3_1_1_particle_contact_generator.html">ParticleContactGenerator</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator_registry.html#abefd730c20539681ed0fac53ccd5f8ab">m_contactGenerators</a></td></tr>
 <tr class="separator:abefd730c20539681ed0fac53ccd5f8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Registry for ParticleContactGenerators. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2c26127b369a7da81d5d29e4734633e6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c26127b369a7da81d5d29e4734633e6">&#9670;&nbsp;</a></span>ParticleContactGeneratorRegistry()</h2>
 
@@ -169,7 +178,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove all contact generators </p>
+
+<p>Unregister all previously registered contact generators. </p>
 
 </div>
 </div>
@@ -188,6 +198,9 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get all generators in this registry. </p>
+<dl class="section return"><dt>Returns</dt><dd>All registered generators. </dd></dl>
+
 </div>
 </div>
 <a id="a34d44783a363a513217dec694f625687"></a>
@@ -205,7 +218,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Add another contact generator </p>
+
+<p>Register a contact generator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">generator</td><td>The generator to be registered. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -224,7 +244,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Remove a specific contact generator </p><dl class="section return"><dt>Returns</dt><dd>True if the given generator was found and removed, false otherwise. </dd></dl>
+
+<p>Unregister a contact generator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">generator</td><td>The generator, which will be unregistered. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given generator was found and removed, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -252,8 +280,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_contact_generator_registry_8h_source.html">ParticleContactGeneratorRegistry.h</a></li>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_contact_generator_registry_8cpp.html">ParticleContactGeneratorRegistry.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_contact_generator_registry_8h_source.html">ParticleContactGeneratorRegistry.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_contact_generator_registry_8cpp.html">ParticleContactGeneratorRegistry.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

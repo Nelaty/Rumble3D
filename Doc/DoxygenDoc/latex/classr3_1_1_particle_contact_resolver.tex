@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_contact_resolver}\index{r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}}
 
 
+A \mbox{\hyperlink{classr3_1_1_particle_contact_resolver}{Particle\+Contact\+Resolver}} resolves a given number of contacts.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Contact\+Resolver.\+h$>$}
 
 
@@ -10,7 +15,7 @@ Collaboration diagram for r3\+:\+:Particle\+Contact\+Resolver\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=236pt]{classr3_1_1_particle_contact_resolver__coll__graph}
+\includegraphics[width=233pt]{classr3_1_1_particle_contact_resolver__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -20,18 +25,21 @@ Collaboration diagram for r3\+:\+:Particle\+Contact\+Resolver\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_ae7754eccf43c97727f1ecfac643cbd5b}{$\sim$\+Particle\+Contact\+Resolver}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_ae82964d26967cb4a3bf73f0c360aa01e}{set\+Iterations}} (unsigned int iterations)
-\item 
+void \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_a631df60543a1709a7c48dcf56490b3d2}{set\+Iterations\+Max}} (unsigned int iterations)
+\begin{DoxyCompactList}\small\item\em Set maximal number of iterations used. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_a28fd96ffc247fc5f925674dd1757235e}{resolve\+Contacts}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact\+Array, unsigned int number\+Of\+Contacts, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resolve collision and penetration. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-unsigned \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_ae8b844211cf1c0f5e99191cee9f4a88f}{m\+\_\+iterations}}
+unsigned \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_a4533db9c8dc455ad5b8c8f9e37db5392}{m\+\_\+iterations\+Max}}
 \item 
 unsigned \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_a07536069a9a6a73c45794baf8579b845}{m\+\_\+iterations\+Used}}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_particle_contact_resolver}{Particle\+Contact\+Resolver}} resolves a given number of contacts. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_contact_resolver_a37050bf25f0607a9290444121c56ee8f}\label{classr3_1_1_particle_contact_resolver_a37050bf25f0607a9290444121c56ee8f}} 
@@ -55,20 +63,42 @@ unsigned \mbox{\hyperlink{classr3_1_1_particle_contact_resolver_a07536069a9a6a73
 \subsubsection{\texorpdfstring{resolve\+Contacts()}{resolveContacts()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Resolver\+::resolve\+Contacts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact\+Array,  }\item[{unsigned int}]{number\+Of\+Contacts,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})}
 
-Resolve collision and penetration. \mbox{\Hypertarget{classr3_1_1_particle_contact_resolver_ae82964d26967cb4a3bf73f0c360aa01e}\label{classr3_1_1_particle_contact_resolver_ae82964d26967cb4a3bf73f0c360aa01e}} 
-\index{r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}!set\+Iterations@{set\+Iterations}}
-\index{set\+Iterations@{set\+Iterations}!r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}}
-\subsubsection{\texorpdfstring{set\+Iterations()}{setIterations()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Resolver\+::set\+Iterations (\begin{DoxyParamCaption}\item[{unsigned int}]{iterations }\end{DoxyParamCaption})}
 
-Set the number of iterations after creation. 
+
+Resolve collision and penetration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact\+Array} & The contacts to be resolved. \\
+\hline
+{\em number\+Of\+Contacts} & Number of contacts in the array. \\
+\hline
+{\em duration} & Time step used for this update. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_particle_contact_resolver_a631df60543a1709a7c48dcf56490b3d2}\label{classr3_1_1_particle_contact_resolver_a631df60543a1709a7c48dcf56490b3d2}} 
+\index{r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}!set\+Iterations\+Max@{set\+Iterations\+Max}}
+\index{set\+Iterations\+Max@{set\+Iterations\+Max}!r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}}
+\subsubsection{\texorpdfstring{set\+Iterations\+Max()}{setIterationsMax()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Resolver\+::set\+Iterations\+Max (\begin{DoxyParamCaption}\item[{unsigned int}]{iterations }\end{DoxyParamCaption})}
+
+
+
+Set maximal number of iterations used. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iterations} & The new maximal number of iterations. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_contact_resolver_ae8b844211cf1c0f5e99191cee9f4a88f}\label{classr3_1_1_particle_contact_resolver_ae8b844211cf1c0f5e99191cee9f4a88f}} 
-\index{r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}!m\+\_\+iterations@{m\+\_\+iterations}}
-\index{m\+\_\+iterations@{m\+\_\+iterations}!r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}}
-\subsubsection{\texorpdfstring{m\+\_\+iterations}{m\_iterations}}
-{\footnotesize\ttfamily unsigned r3\+::\+Particle\+Contact\+Resolver\+::m\+\_\+iterations\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classr3_1_1_particle_contact_resolver_a4533db9c8dc455ad5b8c8f9e37db5392}\label{classr3_1_1_particle_contact_resolver_a4533db9c8dc455ad5b8c8f9e37db5392}} 
+\index{r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}!m\+\_\+iterations\+Max@{m\+\_\+iterations\+Max}}
+\index{m\+\_\+iterations\+Max@{m\+\_\+iterations\+Max}!r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}}
+\subsubsection{\texorpdfstring{m\+\_\+iterations\+Max}{m\_iterationsMax}}
+{\footnotesize\ttfamily unsigned r3\+::\+Particle\+Contact\+Resolver\+::m\+\_\+iterations\+Max\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_contact_resolver_a07536069a9a6a73c45794baf8579b845}\label{classr3_1_1_particle_contact_resolver_a07536069a9a6a73c45794baf8579b845}} 
 \index{r3\+::\+Particle\+Contact\+Resolver@{r3\+::\+Particle\+Contact\+Resolver}!m\+\_\+iterations\+Used@{m\+\_\+iterations\+Used}}
@@ -80,5 +110,5 @@ Set the number of iterations after creation.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_resolver_8h}{Particle\+Contact\+Resolver.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_resolver_8cpp}{Particle\+Contact\+Resolver.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_resolver_8h}{Particle\+Contact\+Resolver.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_resolver_8cpp}{Particle\+Contact\+Resolver.\+cpp}}\end{DoxyCompactItemize}

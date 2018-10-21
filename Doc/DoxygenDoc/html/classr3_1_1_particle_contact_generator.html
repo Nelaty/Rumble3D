@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for contact generators for particles.  
+ <a href="classr3_1_1_particle_contact_generator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_particle_contact_generator_8h_source.html">ParticleContactGenerator.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::ParticleContactGenerator:</div>
@@ -83,10 +86,10 @@ Inheritance diagram for r3::ParticleContactGenerator:</div>
 <div class="center"><img src="classr3_1_1_particle_contact_generator__inherit__graph.png" border="0" usemap="#r3_1_1_particle_contact_generator_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_particle_contact_generator_inherit__map" id="r3_1_1_particle_contact_generator_inherit__map">
 <area shape="rect" id="node2" href="classr3_1_1_particle_constraint.html" title="{r3::ParticleConstraint\n|# m_anchor\l# m_particle\l|+ ~ParticleConstraint()\l# ParticleConstraint()\l# currentLength()\l}" alt="" coords="5,167,159,289"/>
-<area shape="rect" id="node3" href="classr3_1_1_particle_link.html" title="{r3::ParticleLink\n|# m_particles\l|+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="183,160,303,296"/>
+<area shape="rect" id="node3" href="classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="183,160,303,296"/>
 <area shape="rect" id="node4" href="classr3_1_1_particle_cable.html" title="{r3::ParticleCable\n|# m_maxLength\l# m_restitution\l|+ ParticleCable()\l+ ~ParticleCable()\l+ addContact()\l+ setMaxLength()\l+ setRestitution()\l}" alt="" coords="21,344,148,495"/>
 <area shape="rect" id="node5" href="classr3_1_1_particle_collision.html" title="{r3::ParticleCollision\n|# m_restitution\l# m_distance\l# m_penetration\l|+ ParticleCollision()\l+ ~ParticleCollision()\l+ addContact()\l}" alt="" coords="172,351,315,487"/>
-<area shape="rect" id="node6" href="classr3_1_1_particle_rod.html" title="{r3::ParticleRod\n|# m_length\l|+ ~ParticleRod()\l# ParticleRod()\l}" alt="" coords="339,373,457,465"/>
+<area shape="rect" id="node6" href="classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="339,373,457,465"/>
 </map>
 </div>
 <div class="dynheader">
@@ -100,6 +103,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af258aa3e7d7fb8e9c9ca7eb545d27738"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#af258aa3e7d7fb8e9c9ca7eb545d27738">~ParticleContactGenerator</a> ()</td></tr>
 <tr class="separator:af258aa3e7d7fb8e9c9ca7eb545d27738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c9c99fb97a4431f0ddf300b30167d03"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#a3c9c99fb97a4431f0ddf300b30167d03">addContact</a> (<a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> *contact, unsigned int limit) const =0</td></tr>
+<tr class="memdesc:a3c9c99fb97a4431f0ddf300b30167d03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate new contacts.  <a href="#a3c9c99fb97a4431f0ddf300b30167d03">More...</a><br /></td></tr>
 <tr class="separator:a3c9c99fb97a4431f0ddf300b30167d03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -107,7 +111,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a3cfeb03fe6fb6a82a64746c0dd9b89f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#a3cfeb03fe6fb6a82a64746c0dd9b89f2">ParticleContactGenerator</a> ()</td></tr>
 <tr class="separator:a3cfeb03fe6fb6a82a64746c0dd9b89f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for contact generators for particles. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af258aa3e7d7fb8e9c9ca7eb545d27738"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af258aa3e7d7fb8e9c9ca7eb545d27738">&#9670;&nbsp;</a></span>~ParticleContactGenerator()</h2>
 
@@ -193,13 +199,23 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Generate new contacts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contact</td><td><a class="el" href="classr3_1_1_contact.html" title="A Contact represents a point in space at which two rigid bodies collide. It is not a point in world s...">Contact</a> array which points to first element in the array. </td></tr>
+    <tr><td class="paramname">limit</td><td>Maximal number, which the array can hold. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of newly generated contacts. </dd></dl>
+
 <p>Implemented in <a class="el" href="classr3_1_1_particle_link.html#a07abe1381e0b5ed7e1597099dc0c072d">r3::ParticleLink</a>, and <a class="el" href="classr3_1_1_particle_cable.html#af8024236316ae2cf7bd68a0e906ed7c7">r3::ParticleCable</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_contact_generator_8h_source.html">ParticleContactGenerator.h</a></li>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_contact_generator_8cpp.html">ParticleContactGenerator.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_contact_generator_8h_source.html">ParticleContactGenerator.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_contact_generator_8cpp.html">ParticleContactGenerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

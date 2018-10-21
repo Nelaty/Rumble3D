@@ -43,8 +43,7 @@ namespace r3
 		auto* collision = data.getAvailableCollision();
 		if(collision != nullptr)
 		{
-			collision->m_first = first;
-			collision->m_second = second;
+			collision->init(first, second);
 			return true;
 		}
 	}

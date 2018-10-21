@@ -13,7 +13,7 @@ var searchData=
   ['registercontactgenerator',['registerContactGenerator',['../classr3_1_1_particle_contact_generator_registry.html#a34d44783a363a513217dec694f625687',1,'r3::ParticleContactGeneratorRegistry']]],
   ['registerforce',['registerForce',['../classr3_1_1_force_registry.html#a2b86303ed6ac2082606b298301f9957c',1,'r3::ForceRegistry']]],
   ['registermodule',['registerModule',['../classr3_1_1_physics_engine.html#aead3d2707fa52fc65701a55b811b571e',1,'r3::PhysicsEngine']]],
-  ['remove',['remove',['../classr3_1_1_particle_force_registry.html#affea480593835fecf9b262f5b0114912',1,'r3::ParticleForceRegistry']]],
+  ['remove',['remove',['../classr3_1_1_particle_force_registry.html#adadb8aa711eea04ae1466a69b008aa83',1,'r3::ParticleForceRegistry']]],
   ['removeallintermediatephasefilters',['removeAllIntermediatePhaseFilters',['../classr3_1_1_collision_detector.html#a780e977afd65d4a41863e712f9acb63f',1,'r3::CollisionDetector']]],
   ['removeintermediatephasefilter',['removeIntermediatePhaseFilter',['../classr3_1_1_collision_detector.html#aff67a43ffc0f74ada2193f46aa3ea1fd',1,'r3::CollisionDetector']]],
   ['reset',['reset',['../classr3_1_1_i_computation_interface.html#a6069989c54ffd4e714788d0968851007',1,'r3::IComputationInterface::reset()'],['../classr3_1_1_default_particle_engine_c_i.html#a97757c62b4cb1266da29e2b5625bb9d3',1,'r3::DefaultParticleEngineCI::reset()'],['../classr3_1_1_collision_data_old.html#a30b66c4a32bd509ee6cd72d7a3e41ef0',1,'r3::CollisionDataOld::reset()'],['../classr3_1_1_broad_phase_collision_data.html#a258a014684e0c480929e8980a40a5ab9',1,'r3::BroadPhaseCollisionData::reset()'],['../classr3_1_1_collision_data.html#af74822ca6881f5ab54447a73ac26d7fd',1,'r3::CollisionData::reset()'],['../classr3_1_1_collision_detector.html#a8f9f9e0ecc67d950e79d024803dc916b',1,'r3::CollisionDetector::reset()'],['../classr3_1_1_default_rigid_body_engine_c_i.html#a06bd27e94b26017e7960e01f6e884e33',1,'r3::DefaultRigidBodyEngineCI::reset()']]],
@@ -24,6 +24,6 @@ var searchData=
   ['rigidbody',['RigidBody',['../classr3_1_1_rigid_body.html#a8acb625440a10d83a87e9139bc9429d5',1,'r3::RigidBody::RigidBody()'],['../classr3_1_1_rigid_body.html#a5d12d73e66bca3b95a9597f064fa9d56',1,'r3::RigidBody::RigidBody(const RigidBodyDef &amp;def)']]],
   ['rigidbodyengineci',['RigidBodyEngineCI',['../classr3_1_1_rigid_body_engine_c_i.html#a10d9cbc84de1412abd7798f638831a35',1,'r3::RigidBodyEngineCI']]],
   ['rigidbodyworld',['RigidBodyWorld',['../classr3_1_1_rigid_body_world.html#ae9358def6c2b1ea21d38059242fec505',1,'r3::RigidBodyWorld']]],
-  ['rotate',['rotate',['../classr3_1_1_transform3_d.html#aaf633209948d35ca4b90422614a84478',1,'r3::Transform3D']]],
+  ['rotate',['rotate',['../classr3_1_1_transform3_d.html#aaf633209948d35ca4b90422614a84478',1,'r3::Transform3D::rotate(const glm::quat &amp;rot)'],['../classr3_1_1_transform3_d.html#a802314a0dee26e4a5fb96666cd39741c',1,'r3::Transform3D::rotate(const glm::mat3 &amp;rot)']]],
   ['runcollisionsolver',['runCollisionSolver',['../classr3_1_1_default_particle_engine_c_i.html#a19138f7707e948b7e8e05647bcba52fe',1,'r3::DefaultParticleEngineCI']]]
 ];

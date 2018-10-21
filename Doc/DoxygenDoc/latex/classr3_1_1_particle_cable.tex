@@ -30,7 +30,7 @@ Collaboration diagram for r3\+:\+:Particle\+Cable\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_particle_cable_a4ba107749641635a5d7b670eab78c371}{$\sim$\+Particle\+Cable}} ()
 \item 
 unsigned int \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a0e906ed7c7}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned int limit) const override
-\item 
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_cable_a6cf3d6cff00fa5a7eeb1df8975cd59de}{set\+Max\+Length}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} max\+Length)
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c42c}{set\+Restitution}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} restitution)
@@ -69,6 +69,20 @@ void \mbox{\hyperlink{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c4
 
 
 
+Generate new contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact} & \mbox{\hyperlink{classr3_1_1_contact}{Contact}} array which points to first element in the array. \\
+\hline
+{\em limit} & Maximal number, which the array can hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of newly generated contacts. 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099dc0c072d}{r3\+::\+Particle\+Link}}.
 
 \mbox{\Hypertarget{classr3_1_1_particle_cable_a6cf3d6cff00fa5a7eeb1df8975cd59de}\label{classr3_1_1_particle_cable_a6cf3d6cff00fa5a7eeb1df8975cd59de}} 
@@ -102,5 +116,5 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099d
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8h}{Particle\+Cable.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8cpp}{Particle\+Cable.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8h}{Particle\+Cable.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8cpp}{Particle\+Cable.\+cpp}}\end{DoxyCompactItemize}

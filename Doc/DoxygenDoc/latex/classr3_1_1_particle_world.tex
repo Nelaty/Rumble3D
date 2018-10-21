@@ -2,7 +2,7 @@
 \label{classr3_1_1_particle_world}\index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 
 
-\mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} holds a number of particles and contact generators.  
+A \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} holds a number of particles and contact generators. It uses its \mbox{\hyperlink{classr3_1_1_particle_engine_c_i}{Particle\+Engine\+CI}} to manipulate those particles.  
 
 
 
@@ -42,9 +42,9 @@ using \mbox{\hyperlink{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465
 \mbox{\hyperlink{classr3_1_1_particle_world_a3a6d6f87b726156c41d4282c6dbb1e48}{$\sim$\+Particle\+World}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}{set\+Computation\+Interface}} (\mbox{\hyperlink{classr3_1_1_particle_engine_c_i}{Particle\+Engine\+CI}} $\ast$computation\+Interface)
-\item 
+\begin{DoxyCompactList}\small\item\em Change the computation interface, used by the module. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}} $\ast$ \mbox{\hyperlink{classr3_1_1_particle_world_a1e806bf89ec6445a54b9534f1efc081f}{get\+Computation\+Interface}} () const override
-\item 
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s computation interface. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$ \mbox{\hyperlink{classr3_1_1_particle_world_a5df8f4d242ab19e7e1a9830ef6131c3c}{create\+Particle}} (\mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}} definition)
 \begin{DoxyCompactList}\small\item\em Allocate space for a new particle and register it. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classr3_1_1_particle_world_a1802231868ed6d99dd677ef71328781a}{destroy\+Particle}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle)
@@ -52,22 +52,22 @@ bool \mbox{\hyperlink{classr3_1_1_particle_world_a1802231868ed6d99dd677ef7132878
 void \mbox{\hyperlink{classr3_1_1_particle_world_aa061b4eab09216fb7e3a8d08cbdb6dd2}{destroy\+All\+Particles}} ()
 \begin{DoxyCompactList}\small\item\em Free memory of all particles. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_force_registry}{Particle\+Force\+Registry}} \& \mbox{\hyperlink{classr3_1_1_particle_world_aaa3f952fdfd8862673d41afa078245bf}{get\+Particle\+Force\+Registry}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particle force registry. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classr3_1_1_particle_force_registry}{Particle\+Force\+Registry}} \& \mbox{\hyperlink{classr3_1_1_particle_world_add0e006264e25065ff226eafc0c1a29d}{get\+Particle\+Force\+Registry}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particle force registry. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465631}{Particle\+\_\+\+Container}} \& \mbox{\hyperlink{classr3_1_1_particle_world_a00a5014002f28e35ebb59a3f8175db3c}{get\+Particles}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particles. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465631}{Particle\+\_\+\+Container}} \& \mbox{\hyperlink{classr3_1_1_particle_world_ab816d6bca8b42fdf16170275087008f0}{get\+Particles}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particles. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry}{Particle\+Contact\+Generator\+Registry}} \& \mbox{\hyperlink{classr3_1_1_particle_world_a85fc9fcf5c51a5bbce206a35a82f8ccf}{get\+Contact\+Generator\+Registry}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particle contact generator registry. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry}{Particle\+Contact\+Generator\+Registry}} \& \mbox{\hyperlink{classr3_1_1_particle_world_ab5cd3adaed73294927de72f3293b0709}{get\+Contact\+Generator\+Registry}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particle contact generator registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-\mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} holds a number of particles and contact generators. 
+A \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} holds a number of particles and contact generators. It uses its \mbox{\hyperlink{classr3_1_1_particle_engine_c_i}{Particle\+Engine\+CI}} to manipulate those particles. 
 
 \subsection{Member Typedef Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465631}\label{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465631}} 
@@ -152,7 +152,14 @@ True if the particle was found, false otherwise.
 \subsubsection{\texorpdfstring{get\+Computation\+Interface()}{getComputationInterface()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}} $\ast$ r3\+::\+Particle\+World\+::get\+Computation\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Get the computation interface of this module. 
+
+
+Get the module\textquotesingle{}s computation interface. 
+
+\begin{DoxyReturn}{Returns}
+The currently used computation interface. 
+\end{DoxyReturn}
+
 
 Implements \mbox{\hyperlink{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534f367f6d728312d3}{r3\+::\+Physics\+Engine\+Module}}.
 
@@ -162,37 +169,79 @@ Implements \mbox{\hyperlink{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534
 \subsubsection{\texorpdfstring{get\+Contact\+Generator\+Registry()}{getContactGeneratorRegistry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry}{Particle\+Contact\+Generator\+Registry}} \& r3\+::\+Particle\+World\+::get\+Contact\+Generator\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Get the registry which holds all currently active contact generators. \mbox{\Hypertarget{classr3_1_1_particle_world_ab5cd3adaed73294927de72f3293b0709}\label{classr3_1_1_particle_world_ab5cd3adaed73294927de72f3293b0709}} 
+
+
+Get the module\textquotesingle{}s particle contact generator registry. 
+
+\begin{DoxyReturn}{Returns}
+The particle contact generator registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_ab5cd3adaed73294927de72f3293b0709}\label{classr3_1_1_particle_world_ab5cd3adaed73294927de72f3293b0709}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!get\+Contact\+Generator\+Registry@{get\+Contact\+Generator\+Registry}}
 \index{get\+Contact\+Generator\+Registry@{get\+Contact\+Generator\+Registry}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 \subsubsection{\texorpdfstring{get\+Contact\+Generator\+Registry()}{getContactGeneratorRegistry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry}{Particle\+Contact\+Generator\+Registry}} \& r3\+::\+Particle\+World\+::get\+Contact\+Generator\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the registry which holds all currently active contact generators. \mbox{\Hypertarget{classr3_1_1_particle_world_aaa3f952fdfd8862673d41afa078245bf}\label{classr3_1_1_particle_world_aaa3f952fdfd8862673d41afa078245bf}} 
+
+
+Get the module\textquotesingle{}s particle contact generator registry. 
+
+\begin{DoxyReturn}{Returns}
+The particle contact generator registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_aaa3f952fdfd8862673d41afa078245bf}\label{classr3_1_1_particle_world_aaa3f952fdfd8862673d41afa078245bf}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!get\+Particle\+Force\+Registry@{get\+Particle\+Force\+Registry}}
 \index{get\+Particle\+Force\+Registry@{get\+Particle\+Force\+Registry}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 \subsubsection{\texorpdfstring{get\+Particle\+Force\+Registry()}{getParticleForceRegistry()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle_force_registry}{r3\+::\+Particle\+Force\+Registry}} \& r3\+::\+Particle\+World\+::get\+Particle\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Needed to bind particles to particle force generators \mbox{\Hypertarget{classr3_1_1_particle_world_add0e006264e25065ff226eafc0c1a29d}\label{classr3_1_1_particle_world_add0e006264e25065ff226eafc0c1a29d}} 
+
+
+Get the module\textquotesingle{}s particle force registry. 
+
+\begin{DoxyReturn}{Returns}
+The particle force registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_add0e006264e25065ff226eafc0c1a29d}\label{classr3_1_1_particle_world_add0e006264e25065ff226eafc0c1a29d}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!get\+Particle\+Force\+Registry@{get\+Particle\+Force\+Registry}}
 \index{get\+Particle\+Force\+Registry@{get\+Particle\+Force\+Registry}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 \subsubsection{\texorpdfstring{get\+Particle\+Force\+Registry()}{getParticleForceRegistry()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classr3_1_1_particle_force_registry}{Particle\+Force\+Registry}} \& r3\+::\+Particle\+World\+::get\+Particle\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Needed to bind particles to particle force generators \mbox{\Hypertarget{classr3_1_1_particle_world_a00a5014002f28e35ebb59a3f8175db3c}\label{classr3_1_1_particle_world_a00a5014002f28e35ebb59a3f8175db3c}} 
+
+
+Get the module\textquotesingle{}s particle force registry. 
+
+\begin{DoxyReturn}{Returns}
+The particle force registry 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_a00a5014002f28e35ebb59a3f8175db3c}\label{classr3_1_1_particle_world_a00a5014002f28e35ebb59a3f8175db3c}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!get\+Particles@{get\+Particles}}
 \index{get\+Particles@{get\+Particles}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 \subsubsection{\texorpdfstring{get\+Particles()}{getParticles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465631}{Particle\+World\+::\+Particle\+\_\+\+Container}} \& r3\+::\+Particle\+World\+::get\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Get all currently registered particles. \mbox{\Hypertarget{classr3_1_1_particle_world_ab816d6bca8b42fdf16170275087008f0}\label{classr3_1_1_particle_world_ab816d6bca8b42fdf16170275087008f0}} 
+
+
+Get the module\textquotesingle{}s particles. 
+
+\begin{DoxyReturn}{Returns}
+All currently registered particles. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_ab816d6bca8b42fdf16170275087008f0}\label{classr3_1_1_particle_world_ab816d6bca8b42fdf16170275087008f0}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!get\+Particles@{get\+Particles}}
 \index{get\+Particles@{get\+Particles}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 \subsubsection{\texorpdfstring{get\+Particles()}{getParticles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classr3_1_1_particle_world_aa354f6786c0837674fe8286f00465631}{Particle\+World\+::\+Particle\+\_\+\+Container}} \& r3\+::\+Particle\+World\+::get\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get all currently registered particles. \mbox{\Hypertarget{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}\label{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}} 
+
+
+Get the module\textquotesingle{}s particles. 
+
+\begin{DoxyReturn}{Returns}
+All currently registered particles. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}\label{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!set\+Computation\+Interface@{set\+Computation\+Interface}}
 \index{set\+Computation\+Interface@{set\+Computation\+Interface}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
 \subsubsection{\texorpdfstring{set\+Computation\+Interface()}{setComputationInterface()}}
@@ -200,7 +249,16 @@ Get all currently registered particles. \mbox{\Hypertarget{classr3_1_1_particle_
 
 
 
+Change the computation interface, used by the module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em computation\+Interface} & The new computation interface. \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8h}{Particle\+World.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8cpp}{Particle\+World.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8h}{Particle\+World.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8cpp}{Particle\+World.\+cpp}}\end{DoxyCompactItemize}
