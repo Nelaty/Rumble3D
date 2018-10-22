@@ -9,30 +9,44 @@ namespace r3
 	class RigidBody;
 	class ForceGenerator;
 
+	/**
+	 * \brief Pairs force generators with rigid bodies. It uses the
+	 * force generators to update forces of linked rigid bodies.
+	 */
 	class R3D_DECLSPEC ForceRegistry
 	{
 	public:
-		/** A entry of the ForceRegistry. */
 		struct ForceRegistrationEntry
 		{
 			RigidBody* m_rigidBody;
 			ForceGenerator* m_forceGenerator;
 		};
-
 		using Registry = std::vector<ForceRegistrationEntry>;
 
 		explicit ForceRegistry();
 		~ForceRegistry();
 
-		// Registriert ein Paar aus Teilchen und Kraftgenerator, der
-		// auf dem Teilchen wirkt.
-		void registerForce(RigidBody* rigidBody, ForceGenerator * fg);
-		// Löscht einen Eintrag aus der Registry.
-		void unregisterForce(RigidBody* rigidBody, ForceGenerator * fg);
-		// Löscht alle Einträge aus der Registry.
+		/**
+		 * \brief Register a pair of rigid body and force generator.
+		 * \param rigidBody The rigid body part of the pair.
+		 * \param generator The force generator part of the pair.
+		 */
+		void registerForce(RigidBody* rigidBody, ForceGenerator* generator);
+		/**
+		 * \brief Remove a force registration entry from the registry.
+		 * \param rigidBody The rigid body part of the entry.
+		 * \param generator The generator part of the entry.
+		 */
+		void unregisterForce(RigidBody* rigidBody, ForceGenerator* generator);
+		/**
+		 * \brief Remove all entries from the registry.
+		 */
 		void clear();
-		// Ruft alle Kraft-Generatoren auf, so dass diese die Kräfte
-		// der zugehörenden Teilchen aktualisieren können.
+		/**
+		 * \brief Use registered force generators to apply forces to
+		 * rigid bodies, which they are paired up with.
+		 * \param duration Time step of the simulation update.
+		 */
 		void updateForces(real duration);
 
 	protected:	

@@ -16,22 +16,53 @@ namespace r3
 		real m_restitution{s_defaultRestitution};
 	};
 
+	/**
+	 * \brief Contains physical properties of a material.
+	 */
 	class R3D_DECLSPEC PhysicsMaterial
 	{
 	public:
 		explicit PhysicsMaterial();
+		/**
+		 * \brief PhysicsMaterial constructor
+		 * \param definition The construction information.
+		 */
 		explicit PhysicsMaterial(const PhysicsMaterialDef& definition);
 		PhysicsMaterial& operator=(const PhysicsMaterial&) = default;
 		~PhysicsMaterial();
 
+		/**
+		 * \brief Initialize all attributes.
+		 * \param definition The construction information.
+		 */
 		void init(const PhysicsMaterialDef& definition);
 
+		/**
+		 * \brief Set the friction coefficient.
+		 * \param friction The new friction coefficient.
+		 */
 		void setFriction(real friction);
+		/**
+		 * \brief Get the current friction coefficient.
+		 * \return The friction coefficient.
+		 */
 		real getFriction() const;
 
+		/**
+		 * \brief Set the current restitution coefficient.
+		 * \param restitution The new restitution coefficient.
+		 */
 		void setRestitution(real restitution);
+		/**
+		 * \brief Get the current restitution coefficient.
+		 * \return The restitution coefficient.
+		 */
 		real getRestitution() const;
 
+		/**
+		 * \brief Get a collection of all attributes.
+		 * \return The material definition.
+		 */
 		const PhysicsMaterialDef& getMaterialDef() const;
 
 	private:

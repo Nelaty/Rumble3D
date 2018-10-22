@@ -7,43 +7,114 @@
 
 namespace r3
 {
+	/**
+	 * \brief Encapsulates translation and rotation and manipulation
+	 * functions on them.
+	 */
 	class R3D_DECLSPEC Transform3D
 	{
 	public:
+		/**
+		 * \brief Transform3D constructor.
+		 * \param position Initial position.
+		 * \param rotation Initial rotation.
+		 */
 		explicit Transform3D(const glm::vec3& position = glm::vec3(0.0),
 		                     const glm::mat3& rotation = glm::mat3(1));
 		~Transform3D();
 
-		/** Set the current position. */
+		/** 
+		 * \brief Set the current position. 
+		 * \param position The new position.
+		 */
 		void setPosition(const glm::vec3& position);
-		/** Set the current position. */
+		/** 
+		 * \brief Set the current position. 
+		 * \param x The x-component of the new position.
+		 * \param y The y-component of the new position.
+		 * \param z The z-component of the new position.
+		 */
 		void setPosition(real x, real y, real z);
-		/** Get the current position. */
+		/** 
+		 * \brief Get the current position. 
+		 * \return The position.
+		 */
 		const glm::vec3& getPosition() const;
 
-		/** Translate */
+		/** 
+		 * \brief Additively change the current position. 
+		 * \param delta The summand.
+		 */
 		void translate(const glm::vec3& delta);
-		/** Translate */
+		/** 
+		 * \brief Additively change the current position.
+		 * \param x The x-component of the summand.
+		 * \param y The y-component of the summand.
+		 * \param z The z-component of the summand.
+		 */
 		void translate(real x, real y, real z);
 
-		/** Rotate */
+		/**
+		 * \brief Multiplicative change of the current rotation.
+		 * \param rot The factor.
+		 */
 		void rotate(const glm::quat& rot);
-		/** Rotate */
+		/** 
+		 * \brief Multiplicative change of the current rotation.
+		 * \param rot The factor.
+		 */
 		void rotate(const glm::mat3& rot);
 
-		/** Set the current rotation. */
+		/** 
+		 * \brief Set the current rotation. 
+		 * \param w Rotation in radians.
+		 * \param x The x-component of the axis.
+		 * \param y The y-component of the axis.
+		 * \param z The z-component of the axis.
+		 */
 		void setRotation(float w, float x, float y, float z);
-		/** Set the current rotation. */
+		/** s
+		 * \brief Set the current rotation. 
+		 * \param orientation The new orientation.
+		 */
 		void setRotation(const glm::quat& orientation);
-		/** Set the current rotation */
+		/**
+		 * \brief Set the current rotation.
+		 * \param rot The new rotation.
+		 */
 		void setRotation(const glm::mat3& rot);
-		/** Get the current rotation. */
+		/** 
+		 * \brief Get the current rotation. 
+		 * \return The rotation.
+		 */
 		const glm::mat3& getRotation() const;
 
-
+		/**
+		 * \brief Convert a point into local body space.
+		 * \param point The point to convert.
+		 * \return The point in local body space.
+		 */
 		glm::vec3 getPointInLocalSpace(const glm::vec3& point) const;
+		/**
+		 * \brief Convert a point from local body space into world
+		 * space.
+		 * \param point A point in local body space.
+		 * \return The converted point in world space.
+		 */
 		glm::vec3 getPointInWorldSpace(const glm::vec3& point) const;
+		/**
+		 * \brief Convert a direction from world space into local
+		 * space.
+		 * \param direction The direction in world space.
+		 * \return The direction in local space.
+		 */
 		glm::vec3 getDirectionInLocalSpace(const glm::vec3& direction) const;
+		/**
+		 * \brief Convert a direction from local body space into
+		 * world space.
+		 * \param direction The direction in local body space.
+		 * \return The direction in world space.
+		 */
 		glm::vec3 getDirectionInWorldSpace(const glm::vec3& direction) const;
 
 	private:

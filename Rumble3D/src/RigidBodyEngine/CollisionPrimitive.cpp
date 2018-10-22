@@ -1,8 +1,9 @@
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-#include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
 #include <glm/gtc/matrix_transform.inl>
+
+#include <cassert>
 
 namespace r3
 {
@@ -19,8 +20,9 @@ namespace r3
 		m_transform = mat * m_offset;
 	}
 
-	glm::vec3 CollisionPrimitive::getAxis(unsigned index) const
+	glm::vec3 CollisionPrimitive::getAxis(const unsigned index) const
 	{
+		assert(index >= 0 && index <= 3);
 		return m_transform[index];
 	}
 
@@ -40,8 +42,8 @@ namespace r3
 	}
 
 	CollisionPrimitive::CollisionPrimitive(const CollisionPrimitiveType type)
-		: m_type(type),
-		m_body{nullptr}
+		: m_body{nullptr},
+		m_type(type)
 	{
 	}
 }

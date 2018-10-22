@@ -4,12 +4,12 @@
 
 namespace r3
 {
-	void ForceRegistry::unregisterForce(RigidBody* rigidBody, ForceGenerator* fg)
-	{
-		auto i = m_registrations.begin();
-		for (; i != m_registrations.end(); ++i)
+	void ForceRegistry::unregisterForce(RigidBody* rigidBody, ForceGenerator* generator)
+	{		
+		for (auto i = m_registrations.begin(); i != m_registrations.end(); ++i)
 		{
-			if (i->m_rigidBody == rigidBody && i->m_forceGenerator == fg)
+			if (i->m_rigidBody == rigidBody && 
+				i->m_forceGenerator == generator)
 			{
 				m_registrations.erase(i);
 			}
@@ -27,11 +27,11 @@ namespace r3
 	ForceRegistry::~ForceRegistry()
 	= default;
 
-	void ForceRegistry::registerForce(RigidBody* rigidBody, ForceGenerator* fg)
+	void ForceRegistry::registerForce(RigidBody* rigidBody, ForceGenerator* generator)
 	{
 		ForceRegistrationEntry registration{};
 		registration.m_rigidBody = rigidBody;
-		registration.m_forceGenerator = fg;
+		registration.m_forceGenerator = generator;
 		m_registrations.push_back(registration);
 	}
 	

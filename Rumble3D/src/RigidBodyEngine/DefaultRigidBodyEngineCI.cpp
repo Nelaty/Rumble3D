@@ -43,10 +43,8 @@ namespace r3
 
 		auto& rigidBodies = m_rigidBodyWorld->getRigidBodies();
 
-		/**/
 		auto& collisionData = m_collisionDetector.generateCollisions(rigidBodies);
 		m_collisionResolver->resolveCollisions(collisionData, timeDelta);
-		/**/
 
 		for(auto& rb : rigidBodies)
 		{

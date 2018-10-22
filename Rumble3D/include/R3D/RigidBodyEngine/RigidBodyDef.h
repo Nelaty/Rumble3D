@@ -27,7 +27,7 @@ namespace r3
 
 		glm::vec3 m_velocity{0.0f};
 		glm::vec3 m_acceleration{0.0f};
-		glm::vec3 m_lastFrameAcceleration{0.0f}; // Beschleunigung im letzten Frame ???
+		glm::vec3 m_lastFrameAcceleration{0.0f};
 		glm::vec3 m_rotation{0.0f};
 
 		glm::mat4 m_transformationMatrix{1.0f};

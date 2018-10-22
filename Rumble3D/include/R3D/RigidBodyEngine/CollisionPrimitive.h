@@ -7,33 +7,65 @@
 namespace r3
 {
 	class RigidBody;
-	class INarrowPhaseFilter;
 
 	class CollisionBox;
 	class CollisionSphere;
 
+	/**
+	 * \brief Abstract collision shape, which can collide with
+	 * other collision primitives.
+	 */
 	class R3D_DECLSPEC CollisionPrimitive
 	{
 	public:
 		virtual ~CollisionPrimitive();	
 
-		// Berechnet die Transformation:
+		/**
+		 * \brief Calculates its transformation.
+		 */
 		void calculateInternals();
-		// Rückgabe der i-ten Spalte der Transformationsmatrix:
+		/**
+		 * \brief Get an axis from the transformation matrix.
+		 * \param index The index of the axis.
+		 * \return The axis;
+		 */
 		glm::vec3 getAxis(unsigned index) const;
-		const glm::mat4 & getTransform() const;
-		
+		/**
+		 * \brief Get the transform of this primitive.
+		 * \return The transform.
+		 */
+		const glm::mat4& getTransform() const;
+
+		/**
+		 * \brief Get the rigid body, which uses this collision
+		 * primitive.
+		 * \return The rigid body.
+		 */
 		RigidBody* getBody() const;
 
+		/**
+		 * \brief Get the type of this primitive.
+		 * \return The primitive specific type.
+		 */
 		CollisionPrimitiveType getType() const;
 
 	protected:
+		/**
+		 * \brief CollisionPrimitive constructor.
+		 * \param type The type of the primitive.
+		 */
 		explicit CollisionPrimitive(CollisionPrimitiveType type);
 
-		// Festkörper, der duch das Objekt repräsentiert wird.
+		/**
+		 * \brief The rigid body this collision primitive represents.
+		 */
 		RigidBody* m_body{};
-		// Offset gegenüber dem repräsentierten Festkörper.
+
+		/**
+		 * \brief Offset from the represented rigid body.
+		 */
 		glm::mat4 m_offset;
+
 		glm::mat4 m_transform;
 
 	private:

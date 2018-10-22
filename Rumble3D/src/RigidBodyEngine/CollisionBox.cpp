@@ -11,6 +11,8 @@ namespace r3
 	{
 		m_body = body;
 		m_offset = offset;
+
+		initVertices();
 	}
 	
 	CollisionBox::~CollisionBox()

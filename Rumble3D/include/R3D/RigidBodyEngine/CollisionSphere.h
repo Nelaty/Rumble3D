@@ -10,12 +10,27 @@ namespace r3
 {
 	class RigidBody;
 
+	/**
+	 * \brief CollisionPrimitive, which represents a sphere.
+	 */
 	class R3D_DECLSPEC CollisionSphere : public CollisionPrimitive
 	{
 	public:
-		CollisionSphere(RigidBody* body, real radius, const glm::mat4& offset = glm::mat4(1));
+		/**
+		 * \brief CollisionSphere constructor.
+		 * \param body The rigid body this collision sphere represents.
+		 * \param radius The radius of the collision sphere.
+		 * \param offset Offset from the represented rigid body.
+		 */
+		CollisionSphere(RigidBody* body,
+						real radius, 
+						const glm::mat4& offset = glm::mat4(1));
 		~CollisionSphere();
 
+		/**
+		 * \brief Get the radius of the collision sphere.
+		 * \return The radius of the sphere.
+		 */
 		real getRadius() const;
 
 	protected:

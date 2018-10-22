@@ -305,8 +305,6 @@ namespace r3
 		 * \return The direction in world space.
 		 */
 		glm::vec3 getDirectionInWorldSpace(const glm::vec3 &direction) const;
-
-		/** Bestimmung des neuen Ortes für das Teilchen. */
 		/**
 		 * \brief Resolve position and rotation
 		 * \param duration The duration to integrate over.
@@ -340,10 +338,20 @@ namespace r3
 		glm::vec3 m_torqueAccumulated;
 		bool m_awake = false;
 
+		/**
+		 * \brief Calculate a transformation matrix from given parameters.
+		 * \param[out] transformationMatrix The calculated transformation
+		 * matrix.
+		 * \param position The translation applied to the matrix.
+		 * \param orientation The orientation applied to the matrix.
+		 */
 		static void calculateTransformationMatrix(glm::mat4& transformationMatrix,
 												  const glm::vec3& position,
 												  const glm::mat3& orientation);
 
+		/**
+		 * \brief \todo: Refactor names and function implementation.
+		 */
 		static void transformInertiaTensor(glm::mat3& iitWorld,
 										   const glm::mat3& iit,
 										   const glm::mat4& rotMat);
