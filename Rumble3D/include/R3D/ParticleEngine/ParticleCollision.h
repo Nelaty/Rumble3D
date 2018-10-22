@@ -6,15 +6,30 @@
 namespace r3
 {
 	class ParticleContact;
-
-	class R3D_DECLSPEC ParticleCollision : public ParticleLink
-	{
 	
+	/**
+	 * \brief A ParticleCollision can maintains a certain distance
+	 * between two particles. A contact will be generated if those
+	 * particles are too close together.
+	 */
+	class R3D_DECLSPEC ParticleCollision : public ParticleLink
+	{	
 	public:
+		/**
+		 * \brief ParticleCollision constructor.
+		 * \param restitution The restitution of generated contacts.
+		 * \param distance The minimal distance, which should be
+		 * maintained.
+		 * \param penetration \todo Why does this even exist? Just calculate interpenetration in contact generation.
+		 */
 		explicit ParticleCollision(real restitution, real distance, real penetration);
 		~ParticleCollision();
 
-		unsigned int addContact(ParticleContact* contact, unsigned limit) const override;
+		/**
+		* \brief Generate new contacts.
+		* \param contactData Out parameter in which new contacts are added.
+		*/
+		void addContact(FixedSizeContainer<ParticleContact>& contactData) const override;
 	
 	protected:
 		real m_restitution;

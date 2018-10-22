@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_gravity}\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
 
 
+A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a particle force generator, which applies a constant given force to particles.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Gravity.\+h$>$}
 
 
@@ -10,7 +15,7 @@ Inheritance diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=218pt]{classr3_1_1_particle_gravity__inherit__graph}
+\includegraphics[width=220pt]{classr3_1_1_particle_gravity__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -19,18 +24,18 @@ Collaboration diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=279pt]{classr3_1_1_particle_gravity__coll__graph}
+\includegraphics[width=281pt]{classr3_1_1_particle_gravity__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_gravity_a698440df6351766d4c5c3c7704bdead6}{Particle\+Gravity}} (const glm\+::vec3 \&gravity)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}{$\sim$\+Particle\+Gravity}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +44,9 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_particle_gravity_a4e21b444ed08aa8c66ca4
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a particle force generator, which applies a constant given force to particles. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_gravity_a698440df6351766d4c5c3c7704bdead6}\label{classr3_1_1_particle_gravity_a698440df6351766d4c5c3c7704bdead6}} 
 \index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!Particle\+Gravity@{Particle\+Gravity}}
@@ -46,6 +54,15 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_particle_gravity_a4e21b444ed08aa8c66ca4
 \subsubsection{\texorpdfstring{Particle\+Gravity()}{ParticleGravity()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Gravity\+::\+Particle\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gravity} & A constant force \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}\label{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}} 
 \index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!````~Particle\+Gravity@{$\sim$\+Particle\+Gravity}}
 \index{````~Particle\+Gravity@{$\sim$\+Particle\+Gravity}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
@@ -61,9 +78,20 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_particle_gravity_a4e21b444ed08aa8c66ca4
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
-Schnittstellen-\/\+Methode, die im speziellen Kraft-\/\+Generator überladen werden muss. Die Methode berechnet und aktualisiert die Kraft, die auf das Teilchen particle in der Zeitscheibe duration wirkt. 
 
-Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526192a67277b8658d825}{r3\+::\+Particle\+Force\+Generator}}.
+
+Calculates and changes the force in the force accumulator of a particle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle} & The particle, on which the force should be applied to. \\
+\hline
+{\em duration} & The duration for which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{r3\+::\+I\+Particle\+Force\+Generator}}.
 
 
 
@@ -78,5 +106,5 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_force_generator_afd25defcaa1526
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}

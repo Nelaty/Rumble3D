@@ -7,35 +7,48 @@
 namespace r3
 {
 	class Particle;
-	class ParticleForceGenerator;
+	class IParticleForceGenerator;
 
-	// Speichert alle Kraft-Generatoren und die Teilchen, auf denen
-	// sie wirken.
+	/**
+	 * \brief A ParticleForceRegistry contains a set of 
+	 * ParticleForceGenerators and Particles they act on.
+	 */
 	class R3D_DECLSPEC ParticleForceRegistry
 	{	
 	public:
-		// Registriert ein Paar aus Teilchen und Kraftgenerator, der
-		// auf dem Teilchen wirkt.
-		void add(Particle* particle, ParticleForceGenerator* fg);
-		// Löscht einen Eintrag aus der Registry.
-		void remove(Particle* particle, ParticleForceGenerator* fg);
-		// Löscht alle Einträge aus der Registry.
-		void clear();
-		// Ruft alle Kraft-Generatoren auf, so dass diese die Kräfte
-		// der zugehörenden Teilchen aktualisieren können.
-		void updateForces(real duration);
-
-	protected:
-		// Ein Eintrag in der Registry:
 		struct ParticleForceRegistrationEntry
 		{
 			Particle* m_particle;
-			ParticleForceGenerator* m_forceGenerator;
+			IParticleForceGenerator* m_forceGenerator;
 		};
+		using Registry_Type = std::vector<ParticleForceRegistrationEntry>;
 
-		// Die Registry:
-		using Registry = std::vector<ParticleForceRegistrationEntry>;
-		Registry m_registrations;
+		/**
+		 * \brief Register a force generator with a particle it acts on.
+		 * \param particle The particle, which will receive forces.
+		 * \param generator The force generator, which will act forces on
+		 * the particle.
+		 */
+		void add(Particle* particle, IParticleForceGenerator* generator);
+		/**
+		 * \brief Remove an existing entry.
+		 * \param particle The particle stored in the entry.
+		 * \param generator The force generator stored in the entry.
+		 */
+		void remove(Particle* particle, IParticleForceGenerator* generator);
+		/**
+		 * \brief Remove all entries.
+		 */
+		void clear();
+		/**
+		 * \brief Let all registered force generators act forces on
+		 * their linked particle(s).
+		 * \param duration How long forces will act on particles.
+		 */
+		void updateForces(real duration);
+
+	protected:
+		Registry_Type m_registrations;
 	};
 }
 

@@ -75,7 +75,7 @@ namespace r3
 
 	void CollisionData::prepareContacts(const real timeDelta)
 	{
-		for(int i = 0; i < m_contactsUsed; ++i)
+		for(unsigned i = 0; i < m_contactsUsed; ++i)
 		{
 			m_data[i].calculateInternals(timeDelta);
 		}

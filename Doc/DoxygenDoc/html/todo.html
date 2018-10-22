@@ -68,6 +68,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classr3_1_1_box_box_narrow_algorithm.html#a200098ad4e6e2381f58856002a2d5dec">r3::BoxBoxNarrowAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbBox1, <a class="el" href="classr3_1_1_collision_box.html">CollisionBox</a> *box1, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbBox2, <a class="el" href="classr3_1_1_collision_box.html">CollisionBox</a> *box2, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
 <dd><p class="startdd">variable is never set??? </p>
@@ -81,18 +82,34 @@ $(function() {
 </dd>
 <dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="classr3_1_1_broad_phase_filter.html#a0435dc6468401e32bf151f84f52e80f8">r3::BroadPhaseFilter::generateCollisions</a>  (const std::vector&lt; RigidBody *&gt; &amp;rigidBodies, FixedSizeContainer&lt; CollisionPair &gt; &amp;data) override</dt>
 >>>>>>> Stashed changes
+=======
+<dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="classr3_1_1_box_box_narrow_algorithm.html#a200098ad4e6e2381f58856002a2d5dec">r3::BoxBoxNarrowAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbBox1, <a class="el" href="classr3_1_1_collision_box.html">CollisionBox</a> *box1, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbBox2, <a class="el" href="classr3_1_1_collision_box.html">CollisionBox</a> *box2, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
+<dd><p class="startdd">variable is never set??? </p>
+<p class="enddd">: crash -&gt; best stays 0xffffff  </p>
+</dd>
+<dt><a class="anchor" id="_todo000011"></a>Member <a class="el" href="classr3_1_1_broad_phase_filter.html#a16b87610362f670906ca7d9a3251815f">r3::BroadPhaseFilter::generateCollisions</a>  (const std::vector&lt; RigidBody *&gt; &amp;rigidBodies, <a class="el" href="classr3_1_1_broad_phase_collision_data.html">BroadPhaseCollisionData</a> &amp;data) override</dt>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 <dd>use rigid body mask and layout  </dd>
-<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="classr3_1_1_collision_data.html#ae610a57c20c504a7bacb4e35f89f530f">r3::CollisionData::getFriction</a>  () const</dt>
+<dt><a class="anchor" id="_todo000004"></a>Member <a class="el" href="classr3_1_1_collision_data.html#ae610a57c20c504a7bacb4e35f89f530f">r3::CollisionData::getFriction</a>  () const</dt>
 <dd>use physic material in rigid body instead.  </dd>
-<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b">r3::CollisionData::getRestitution</a>  () const</dt>
+<dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b">r3::CollisionData::getRestitution</a>  () const</dt>
 <dd>use physic material in rigid body instead.  </dd>
-<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="classr3_1_1_collision_primitive.html#ae27cb70a6812491c2d8de97f22c07ac6">r3::CollisionPrimitive::calculateInternals</a>  ()</dt>
+<dt><a class="anchor" id="_todo000012"></a>Member <a class="el" href="classr3_1_1_collision_primitive.html#ae27cb70a6812491c2d8de97f22c07ac6">r3::CollisionPrimitive::calculateInternals</a>  ()</dt>
 <dd>use new transform!  </dd>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <dt><a class="anchor" id="_todo000006"></a>Member <a class="el" href="classr3_1_1_plane_box_collision_algorithm.html#a529c85973e9dab38e7427cdf9177d9ba">r3::PlaneBoxCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbBox, <a class="el" href="classr3_1_1_collision_box.html">CollisionBox</a> *box, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
+=======
+<dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="classr3_1_1_particle_buoyancy.html#a15857a4724e0e91efd9ce45831d00cbd">r3::ParticleBuoyancy::s_gravity</a>  </dt>
+<dd>: refactor this  </dd>
+<dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="classr3_1_1_particle_collision.html#af3c52ed10e7495207bf20f3263175098">r3::ParticleCollision::ParticleCollision</a>  (real restitution, real distance, real penetration)</dt>
+<dd>Why does this even exist? Just calculate interpenetration in contact generation.  </dd>
+<dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="classr3_1_1_plane_box_collision_algorithm.html#a529c85973e9dab38e7427cdf9177d9ba">r3::PlaneBoxCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbBox, <a class="el" href="classr3_1_1_collision_box.html">CollisionBox</a> *box, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 <dd>: implement  </dd>
-<dt><a class="anchor" id="_todo000007"></a>Member <a class="el" href="classr3_1_1_plane_plane_collision_algorithm.html#a33400ba57a8c0550ada0778bb92eeb69">r3::PlanePlaneCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane1, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane1, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane2, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane2, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
+<dt><a class="anchor" id="_todo000009"></a>Member <a class="el" href="classr3_1_1_plane_plane_collision_algorithm.html#a33400ba57a8c0550ada0778bb92eeb69">r3::PlanePlaneCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane1, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane1, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane2, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane2, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
 <dd>: implement  </dd>
+<<<<<<< HEAD
 <dt><a class="anchor" id="_todo000008"></a>Member <a class="el" href="classr3_1_1_plane_sphere_collision_algorithm.html#a6823dc80b23ce77beabd26a9c2a9d9ed">r3::PlaneSphereCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbSphere, <a class="el" href="classr3_1_1_collision_sphere.html">CollisionSphere</a> *sphere, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
 =======
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="classr3_1_1_particle_buoyancy.html#a15857a4724e0e91efd9ce45831d00cbd">r3::ParticleBuoyancy::s_gravity</a>  </dt>
@@ -105,8 +122,13 @@ $(function() {
 <dd>: implement  </dd>
 <dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="classr3_1_1_plane_sphere_collision_algorithm.html#a6823dc80b23ce77beabd26a9c2a9d9ed">r3::PlaneSphereCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. ">RigidBody</a> *rbPlane, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane, <a class="el" href="classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. ">RigidBody</a> *rbSphere, <a class="el" href="classr3_1_1_collision_sphere.html">CollisionSphere</a> *sphere, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
 >>>>>>> Stashed changes
+=======
+<dt><a class="anchor" id="_todo000010"></a>Member <a class="el" href="classr3_1_1_plane_sphere_collision_algorithm.html#a6823dc80b23ce77beabd26a9c2a9d9ed">r3::PlaneSphereCollisionAlgorithm::generateContactDataImpl</a>  (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbPlane, <a class="el" href="classr3_1_1_collision_plane.html">CollisionPlane</a> *plane, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rbSphere, <a class="el" href="classr3_1_1_collision_sphere.html">CollisionSphere</a> *sphere, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override</dt>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 <dd>: implement -&gt; plane is not half space  </dd>
-<dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="classr3_1_1_test_class.html">r3::TestClass</a>  </dt>
+<dt><a class="anchor" id="_todo000013"></a>Member <a class="el" href="classr3_1_1_rigid_body.html#a59d331a52a0110415b38bfa89cf0f804">r3::RigidBody::transformInertiaTensor</a>  (glm::mat3 &amp;iitWorld, const glm::mat3 &amp;iit, const glm::mat4 &amp;rotMat)</dt>
+<dd>: refactor  </dd>
+<dt><a class="anchor" id="_todo000003"></a>Class <a class="el" href="classr3_1_1_test_class.html">r3::TestClass</a>  </dt>
 <dd>REMOVE <a class="el" href="classr3_1_1_test_class.html">TestClass</a> </dd>
 </dl>
 </div></div><!-- contents -->

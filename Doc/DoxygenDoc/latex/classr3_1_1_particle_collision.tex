@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_collision}\index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
 
 
+A \mbox{\hyperlink{classr3_1_1_particle_collision}{Particle\+Collision}} can maintains a certain distance between two particles. A contact will be generated if those particles are too close together.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Collision.\+h$>$}
 
 
@@ -26,16 +31,20 @@ Collaboration diagram for r3\+:\+:Particle\+Collision\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_collision_af3c52ed10e7495207bf20f3263175098}{Particle\+Collision}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} restitution, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} distance, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} penetration)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_collision}{Particle\+Collision}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_collision_a7227b004e41a96aafd5f9a54e3b6b97e}{$\sim$\+Particle\+Collision}} ()
 \item 
 <<<<<<< Updated upstream
 unsigned int \mbox{\hyperlink{classr3_1_1_particle_collision_ab22f6b1c2d95c925c2dd5241be9b8889}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned limit) const override
+<<<<<<< HEAD
 \end{DoxyCompactItemize}
 =======
 void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb2e6719}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&contact\+Data) const override
 \begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 >>>>>>> Stashed changes
+=======
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,6 +57,9 @@ void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_particle_collision}{Particle\+Collision}} can maintains a certain distance between two particles. A contact will be generated if those particles are too close together. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_collision_af3c52ed10e7495207bf20f3263175098}\label{classr3_1_1_particle_collision_af3c52ed10e7495207bf20f3263175098}} 
 \index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!Particle\+Collision@{Particle\+Collision}}
@@ -55,6 +67,19 @@ void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb
 \subsubsection{\texorpdfstring{Particle\+Collision()}{ParticleCollision()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Collision\+::\+Particle\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{restitution,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{distance,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{penetration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_particle_collision}{Particle\+Collision}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restitution} & The restitution of generated contacts. \\
+\hline
+{\em distance} & The minimal distance, which should be maintained. \\
+\hline
+{\em penetration} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_collision_a7227b004e41a96aafd5f9a54e3b6b97e}\label{classr3_1_1_particle_collision_a7227b004e41a96aafd5f9a54e3b6b97e}} 
 \index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!````~Particle\+Collision@{$\sim$\+Particle\+Collision}}
 \index{````~Particle\+Collision@{$\sim$\+Particle\+Collision}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
@@ -68,10 +93,14 @@ void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb
 \index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!add\+Contact@{add\+Contact}}
 \index{add\+Contact@{add\+Contact}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
 \subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 {\footnotesize\ttfamily unsigned int r3\+::\+Particle\+Collision\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
 =======
 {\footnotesize\ttfamily void r3\+::\+Particle\+Collision\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&}]{contact\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+=======
+{\footnotesize\ttfamily unsigned int r3\+::\+Particle\+Collision\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 
 
 
@@ -79,6 +108,7 @@ Generate new contacts.
 
 
 \begin{DoxyParams}{Parameters}
+<<<<<<< HEAD
 {\em contact\+Data} & Out parameter in which new contacts are added. \\
 \hline
 \end{DoxyParams}
@@ -86,6 +116,19 @@ Generate new contacts.
 
 Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}{r3\+::\+Particle\+Contact\+Generator}}.
 >>>>>>> Stashed changes
+=======
+{\em contact} & \mbox{\hyperlink{classr3_1_1_contact}{Contact}} array which points to first element in the array. \\
+\hline
+{\em limit} & Maximal number, which the array can hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of newly generated contacts. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_particle_link_ace50b4019999af62cb9c49ddd64c7a4d}{r3\+::\+Particle\+Link}}.
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 
 
 
@@ -112,5 +155,5 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b3
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8h}{Particle\+Collision.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8cpp}{Particle\+Collision.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8h}{Particle\+Collision.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8cpp}{Particle\+Collision.\+cpp}}\end{DoxyCompactItemize}

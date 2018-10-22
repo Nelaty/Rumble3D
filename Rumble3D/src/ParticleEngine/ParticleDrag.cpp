@@ -5,21 +5,27 @@
 
 namespace r3
 {
-	ParticleDrag::ParticleDrag(const real k1, const real k2)
+	ParticleDrag::ParticleDrag(const real crossSectionalArea,
+							   const real dragCoefficient, 
+							   const real mediumDensity)
+		: m_crossSectionalArea(crossSectionalArea),
+		m_dragCoefficient(dragCoefficient),
+		m_mediumDensity(mediumDensity)
 	{
-		m_k1 = k1;
-		m_k2 = k2;
 	}
-	
+
 	ParticleDrag::~ParticleDrag()
 	= default;
 
-	void ParticleDrag::updateForce(Particle * particle, real duration)
+	void ParticleDrag::updateForce(Particle* particle, 
+								   const real duration)
 	{
-		glm::vec3 force = particle->getVelocity();
-	
-		real dragCoefficient = glm::length(force);
-		dragCoefficient = m_k1 * dragCoefficient + m_k2 * dragCoefficient * dragCoefficient;
+		auto force = particle->getVelocity();
+
+		const auto magnitude = glm::length(force);
+		const auto dragCoefficient = 
+			static_cast<real>(0.5) * m_crossSectionalArea * 
+			m_dragCoefficient * m_mediumDensity * magnitude * magnitude;
 	
 		force = glm::normalize(force);
 		force *= -dragCoefficient;

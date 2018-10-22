@@ -1,7 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <area shape="rect" id="node1" href="$classr3_1_1_service_locator_collision_algorithm_matrix.html" title="r3::ServiceLocatorCollision\lAlgorithmMatrix" alt="" coords="5,5,180,47"/>
 =======
 <area shape="rect" id="node1" href="$classr3_1_1_transform3_d.html" title="r3::Transform3D" alt="" coords="5,5,120,32"/>
 >>>>>>> Stashed changes
+=======
+<area shape="rect" id="node1" href="$structr3_1_1_rigid_body_def.html" title="r3::RigidBodyDef" alt="" coords="5,5,124,32"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

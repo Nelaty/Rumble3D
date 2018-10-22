@@ -13,33 +13,29 @@ namespace r3
 	{
 	}
 	
-	
 	ParticleCollision::~ParticleCollision()
 	= default;
 
-	unsigned int ParticleCollision::addContact(ParticleContact* contact, unsigned limit) const 
+	void ParticleCollision::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
-		// Entfernung der Teilchen:
-		const real length = currentLength();
-	
 		// Wenn wir nicht zu nah sind, nichts tun:
-		if (length > m_distance) { 
-			return 0;
+		if (currentLength() > m_distance)
+		{
+			return;
 		}
-	
+
+		auto contact = contactData.getAvailableEntry();
+
 		// Sonst Kontakt erzeugen und einfügen:
-		contact->m_particles[0] = m_particles[0];
-		contact->m_particles[1] = m_particles[1];
-	
+		contact->init(m_particles[0], m_particles[1]);
+
 		// Negative Kontaktnormale:
 		glm::vec3 normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
-		normal *= (-1);
+		normal *= static_cast<real>(-1);
 		normal = glm::normalize(normal);
-	
+
 		contact->setContactNormal(normal);
 		contact->setPenetration(m_penetration);
 		contact->setRestitution(m_restitution);
-	
-		return 1;
 	}
 }

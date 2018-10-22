@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_cable}\index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}}
 
 
+A \mbox{\hyperlink{classr3_1_1_particle_cable}{Particle\+Cable}} is a contact generator, which will generate a contact if particles are too far apart.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Cable.\+h$>$}
 
 
@@ -26,9 +31,10 @@ Collaboration diagram for r3\+:\+:Particle\+Cable\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_cable_afcb568750f7430ec94e34942f766e087}{Particle\+Cable}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} max\+Length=1.\+0f, real restitution=0.\+0f)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_cable}{Particle\+Cable}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_cable_a4ba107749641635a5d7b670eab78c371}{$\sim$\+Particle\+Cable}} ()
 \item 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 unsigned int \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a0e906ed7c7}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned int limit) const override
 \item 
@@ -36,10 +42,14 @@ unsigned int \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a
 void \mbox{\hyperlink{classr3_1_1_particle_cable_a5187ee9d99fb41cf6e719c22c9b30a7c}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&contact\+Data) const override
 \begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
 >>>>>>> Stashed changes
+=======
+unsigned int \mbox{\hyperlink{classr3_1_1_particle_cable_ac259f6edbf788c0790e6ab72f2fb6800}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned limit) const override
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 void \mbox{\hyperlink{classr3_1_1_particle_cable_a6cf3d6cff00fa5a7eeb1df8975cd59de}{set\+Max\+Length}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} max\+Length)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the threshold at which contacts will be generated.  The maximal length of the cable. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c42c}{set\+Restitution}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} restitution)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the restitution of generated contacts.  The restitution coefficient. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -50,6 +60,9 @@ void \mbox{\hyperlink{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c4
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_particle_cable}{Particle\+Cable}} is a contact generator, which will generate a contact if particles are too far apart. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_cable_afcb568750f7430ec94e34942f766e087}\label{classr3_1_1_particle_cable_afcb568750f7430ec94e34942f766e087}} 
 \index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}!Particle\+Cable@{Particle\+Cable}}
@@ -57,6 +70,17 @@ void \mbox{\hyperlink{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c4
 \subsubsection{\texorpdfstring{Particle\+Cable()}{ParticleCable()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Cable\+::\+Particle\+Cable (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{max\+Length = {\ttfamily 1.0f},  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{restitution = {\ttfamily 0.0f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_particle_cable}{Particle\+Cable}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Length} & The maximal length of the cable. \\
+\hline
+{\em restitution} & The restitution coefficient of generated contacts. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_cable_a4ba107749641635a5d7b670eab78c371}\label{classr3_1_1_particle_cable_a4ba107749641635a5d7b670eab78c371}} 
 \index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}!````~Particle\+Cable@{$\sim$\+Particle\+Cable}}
 \index{````~Particle\+Cable@{$\sim$\+Particle\+Cable}!r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}}
@@ -66,6 +90,7 @@ void \mbox{\hyperlink{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c4
 
 
 \subsection{Member Function Documentation}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 \mbox{\Hypertarget{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a0e906ed7c7}\label{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a0e906ed7c7}} 
 \index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}!add\+Contact@{add\+Contact}}
@@ -95,6 +120,31 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099d
 
 Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}{r3\+::\+Particle\+Contact\+Generator}}.
 >>>>>>> Stashed changes
+=======
+\mbox{\Hypertarget{classr3_1_1_particle_cable_ac259f6edbf788c0790e6ab72f2fb6800}\label{classr3_1_1_particle_cable_ac259f6edbf788c0790e6ab72f2fb6800}} 
+\index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}!add\+Contact@{add\+Contact}}
+\index{add\+Contact@{add\+Contact}!r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}}
+\subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
+{\footnotesize\ttfamily unsigned int r3\+::\+Particle\+Cable\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generate new contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact} & \mbox{\hyperlink{classr3_1_1_contact}{Contact}} array which points to first element in the array. \\
+\hline
+{\em limit} & Maximal number, which the array can hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of newly generated contacts. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_particle_link_ace50b4019999af62cb9c49ddd64c7a4d}{r3\+::\+Particle\+Link}}.
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 
 \mbox{\Hypertarget{classr3_1_1_particle_cable_a6cf3d6cff00fa5a7eeb1df8975cd59de}\label{classr3_1_1_particle_cable_a6cf3d6cff00fa5a7eeb1df8975cd59de}} 
 \index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}!set\+Max\+Length@{set\+Max\+Length}}
@@ -102,11 +152,19 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b3
 \subsubsection{\texorpdfstring{set\+Max\+Length()}{setMaxLength()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Cable\+::set\+Max\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{max\+Length }\end{DoxyParamCaption})}
 
+
+
+Set the threshold at which contacts will be generated.  The maximal length of the cable. 
+
 \mbox{\Hypertarget{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c42c}\label{classr3_1_1_particle_cable_a070f8df68fbf2b7a7b758f1c5b22c42c}} 
 \index{r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}!set\+Restitution@{set\+Restitution}}
 \index{set\+Restitution@{set\+Restitution}!r3\+::\+Particle\+Cable@{r3\+::\+Particle\+Cable}}
 \subsubsection{\texorpdfstring{set\+Restitution()}{setRestitution()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Cable\+::set\+Restitution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{restitution }\end{DoxyParamCaption})}
+
+
+
+Set the restitution of generated contacts.  The restitution coefficient. 
 
 
 
@@ -127,5 +185,5 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b3
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8h}{Particle\+Cable.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8cpp}{Particle\+Cable.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8h}{Particle\+Cable.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_cable_8cpp}{Particle\+Cable.\+cpp}}\end{DoxyCompactItemize}

@@ -11,27 +11,31 @@ namespace r3
 	class RigidBodyWorld;
 
 	/**
-	* \brief Abstract class for computation interfaces used for rigid body
-	* worlds.
-	*/
+	 * \brief Abstract class for computation interfaces used by rigid
+	 * body worlds.
+	 */
 	class R3D_DECLSPEC RigidBodyEngineCI : public IComputationInterface
 	{
 	public:
 		virtual ~RigidBodyEngineCI();
 
-		/** Set the rigid body world, used for rigid body calculations. */
+		/** 
+		 * \brief Set the rigid body world, used for rigid body
+		 * calculations. 
+		 * \param rigidBodyWorld The related rigid body world.
+		 */
 		void setRigidBodyWorld(RigidBodyWorld* rigidBodyWorld);
-<<<<<<< Updated upstream
-		/** Get the currently used rigid body world. */
-=======
 		/** 
 		 * \brief Get the currently used rigid body world. 
-		 * \return The rigid body world.
+		 * 
 		 */
->>>>>>> Stashed changes
 		RigidBodyWorld* getRigidBodyWorld() const;
 
 	protected:
+		/**
+		 * \brief RigidBodyEngineCI constructor
+		 * \param rigidBodyWorld The world used for rigid body calculations.
+		 */
 		explicit RigidBodyEngineCI(RigidBodyWorld* rigidBodyWorld = nullptr);
 
 		CollisionDetector m_collisionDetector;

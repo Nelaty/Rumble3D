@@ -1,7 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <area shape="rect" id="node1" href="$classr3_1_1_particle.html" title="r3::Particle" alt="" coords="5,5,91,32"/>
 =======
 <area shape="rect" id="node1" href="$classr3_1_1_particle_contact.html" title="A ParticleContact contains contact information of two particles. " alt="" coords="5,5,136,32"/>
 >>>>>>> Stashed changes
+=======
+<area shape="rect" id="node1" href="$classr3_1_1_inertia_tensor_generator.html" title="r3::InertiaTensorGenerator" alt="" coords="5,5,177,32"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

@@ -21,3 +21,9 @@ Additional dependencies:
 ## 3. Documentation
 * [Doxygen](https://nelaty.github.io/Rumble3D/Doc/DoxygenDoc/html/index.html)
 * [User manual](https://nelaty.github.io/Rumble3D/Doc/UserManual/Rumble3D_UserManual.pdf)
+
+
+**Doxygen note:**
+
+1. To generate you're own documentation with doxygen, you need to have "Dot" installed (included in the graphviz package). Otherwise collaboration graphs will not be generated!
+* Navigate to ./Docs/ and execute the command: "doxygen Doxyfile"

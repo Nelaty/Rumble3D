@@ -1,4 +1,5 @@
 <map id="r3::ParticleLink" name="r3::ParticleLink">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <area shape="rect" id="node3" href="$classr3_1_1_particle_cable.html" title="{r3::ParticleCable\n|# m_maxLength\l# m_restitution\l|+ ParticleCable()\l+ ~ParticleCable()\l+ addContact()\l+ setMaxLength()\l+ setRestitution()\l}" alt="" coords="5,344,132,495"/>
 <area shape="rect" id="node4" href="$classr3_1_1_particle_collision.html" title="{r3::ParticleCollision\n|# m_restitution\l# m_distance\l# m_penetration\l|+ ParticleCollision()\l+ ~ParticleCollision()\l+ addContact()\l}" alt="" coords="156,351,299,487"/>
@@ -10,4 +11,10 @@
 <area shape="rect" id="node5" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="323,359,441,451"/>
 <area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="129,5,325,112"/>
 >>>>>>> Stashed changes
+=======
+<area shape="rect" id="node3" href="$classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart..." alt="" coords="5,344,132,495"/>
+<area shape="rect" id="node4" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="156,351,299,487"/>
+<area shape="rect" id="node5" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="323,373,441,465"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="129,5,325,112"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

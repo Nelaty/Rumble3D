@@ -1,6 +1,7 @@
 #pragma once
-#include "R3D/Common/Common.h"
 #include "ISphereSphereNarrowAlgorithm.h"
+
+#include "R3D/Common/Common.h"
 
 namespace r3
 {

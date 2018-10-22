@@ -10,17 +10,16 @@
 
 namespace r3
 {
-	DefaultParticleEngineCI::DefaultParticleEngineCI(const unsigned maxContacts, 
-																 const unsigned iterations,
-																 ParticleWorld* particleWorld)
+	DefaultParticleEngineCI::DefaultParticleEngineCI(const unsigned contactsMax,
+													 const unsigned iterations,
+													 ParticleWorld* particleWorld)
 		: ParticleEngineCI(particleWorld),
-		m_resolver{iterations},
-		m_maxContacts{maxContacts},
-		m_calculateIterations{true},
-		m_iterations{iterations}
+		m_resolver(iterations),
+		m_contactData(contactsMax),
+		m_contactsMax(contactsMax),
+		m_iterations(iterations)
 	{
-		m_contacts = new ParticleContact[m_maxContacts];
-		m_calculateIterations = iterations == 0;
+		reset();
 	}
 
 	DefaultParticleEngineCI::~DefaultParticleEngineCI()
@@ -60,49 +59,50 @@ namespace r3
 		{
 			it->clearAccumulator();
 		}
+		m_contactData.reset();
 	}
 
 	void DefaultParticleEngineCI::runCollisionSolver(const real timeDelta)
 	{
-		const auto usedContacts = generateContacts();
-		if(usedContacts)
+		generateContacts();
+		const auto usedContacts = m_contactData.getEntriesUsed();
+		if(m_contactData.getEntriesUsed() != 0)
 		{
 			if(m_calculateIterations)
 			{
-				m_resolver.setIterations(usedContacts * 2);
+				m_resolver.setIterationsMax(usedContacts * 2);
 			}
-			
-			m_resolver.resolveContacts(m_contacts, usedContacts, timeDelta);
+			m_resolver.resolveContacts(m_contactData, timeDelta);
 		}
 	}
 
-	unsigned DefaultParticleEngineCI::generateContacts() const
+	void DefaultParticleEngineCI::generateContacts()
 	{
-		auto contactRegistry = m_particleWorld->getContactGeneratorRegistry();
-		auto contactGenerators = contactRegistry.getGenerators();
+		const auto& contactRegistry = m_particleWorld->getContactGeneratorRegistry();
+		const auto& contactGenerators = contactRegistry.getGenerators();
 
-		auto limit = m_maxContacts;
-		auto* nextContact = m_contacts; // erstes Element;
-		for (auto& it : contactGenerators)
+		for(const auto& it : contactGenerators)
 		{
-			const auto used = it->addContact(nextContact, limit);
-			limit -= used;
-			nextContact += used;
-			if(limit <= 0)
+			if(m_contactData.isFull())
 			{
-				break; // Contacts are missing!
+				break;
 			}
+
+			it->addContact(m_contactData);
 		}
-		return m_maxContacts - limit;
 	}
 	
 	void DefaultParticleEngineCI::reset()
 	{
-		delete[] m_contacts;
-		m_contacts = new ParticleContact[m_maxContacts];
+		m_contactData.reset();
 
-		m_calculateIterations = true;
 		m_calculateIterations = (m_iterations == 0);
-		m_resolver = ParticleContactResolver(m_iterations);
+		m_resolver.setIterationsMax(m_iterations);
+	}
+
+	void DefaultParticleEngineCI::setContactsMax(const unsigned contactsMax)
+	{
+		m_contactsMax = contactsMax;
+		m_contactData.init(contactsMax);
 	}
 }

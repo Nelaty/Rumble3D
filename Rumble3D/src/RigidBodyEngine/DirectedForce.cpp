@@ -5,7 +5,8 @@
 
 namespace r3
 {
-	DirectedForce::DirectedForce(glm::vec3 localPosition, glm::vec3 force)
+	DirectedForce::DirectedForce(const glm::vec3& localPosition, 
+								 const glm::vec3& force)
 		: m_force{force},
 		m_localPosition{localPosition}
 	{

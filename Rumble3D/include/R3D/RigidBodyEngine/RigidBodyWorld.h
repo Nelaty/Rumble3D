@@ -14,6 +14,10 @@ namespace r3
 
 	class RigidBodyEngineCI;
 
+	/**
+	 * \brief A RigidBodyWorld is a physics engine module, used to
+	 * simulate rigid bodies.
+	 */
 	class R3D_DECLSPEC RigidBodyWorld : public PhysicsEngineModule
 	{
 	public:
@@ -22,9 +26,15 @@ namespace r3
 		RigidBodyWorld();
 		~RigidBodyWorld();
 
-		/** Set the computation interface, which simulates the rigid bodies. */
+		/** 
+		 * \brief Set the computation interface, which simulates the rigid bodies.
+		 * \param computationInterface The new computation interface.
+		 */
 		void setComputationInterface(RigidBodyEngineCI* computationInterface);
-		/** Get the currently used computation interface. */
+		/** 
+		 * \brief Get the world's computation interface. 
+		 * \return The current computation interface.
+		 */
 		IComputationInterface* getComputationInterface() const override;
 
 		/**
@@ -44,19 +54,27 @@ namespace r3
 		*/
 		void destroyAllRigidBodies();
 
-		/** Get all currently registered rigid bodies. */
+		/** 
+		 * \brief Get the world's rigid bodies. 
+		 * \return All currently registered rigid bodies.
+		 */
 		RigidBody_Container& getRigidBodies();
-		/** Get all currently registered rigid bodies. */
+		/**
+		* \brief Get the world's rigid bodies.
+		* \return All currently registered rigid bodies.
+		*/
 		const RigidBody_Container& getRigidBodies() const;
 
 		/** 
-		 * Get the force registry, which holds all currently active force
-		 * generators.
+		 * \brief Get the force registry, which holds all currently 
+		 * active force generators.
+		 * \return The force registry.
 		 */
 		ForceRegistry& getForceRegistry();
 		/**
-		* Get the force registry, which holds all currently active force
-		* generators.
+		* \brief Get the force registry, which holds all currently
+		* active force generators.
+		* \return The force registry.
 		*/
 		const ForceRegistry& getForceRegistry() const;
 

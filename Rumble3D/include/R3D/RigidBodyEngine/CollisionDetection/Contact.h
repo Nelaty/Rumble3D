@@ -9,15 +9,26 @@ namespace r3
 {
 	class RigidBody;
 
+	/**
+	 * \brief A Contact represents a point in space at which two rigid bodies
+	 * collide. It is not a point in world space but rather knows the
+	 * relative offsets to the points of mass of both rigid bodies.
+	 */
 	class R3D_DECLSPEC Contact
 	{
 	public:
 		explicit Contact();
 		~Contact();
 
-		/** Get the first colliding rigid body. */
+		/** 
+		 * \brief Get the first colliding rigid body. 
+		 * \return The first rigid body
+		 */
 		RigidBody* getFirst() const;
-		/** Get the second colliding rigid body. */
+		/**
+		 * \brief Get the second colliding rigid body. 
+		 * \return The second rigid body
+		 */
 		RigidBody* getSecond() const;
 
 		/** 
@@ -26,49 +37,121 @@ namespace r3
 		 */
 		RigidBody* getBody(int index) const;
 
-		/** Set the point, where the collision took place. */
+		/** 
+		 * \brief Set the contact point.
+		 * \param contactPoint Point, where the collision took place.
+		 */
 		void setContactPoint(const glm::vec3& contactPoint);
-		/** Get the point, where the collision took place. */
+		/** 
+		 * \brief Get the point, where the collision took place. 
+		 * \return The contact point
+		 */
 		const glm::vec3& getContactPoint() const;
 
-		/** Set the direction of the collision at the contact point. */
+		/** 
+		 * \brief Set the contact normal.
+		 * \param contactNormal Direction of the collision at the contact point
+		 */
 		void setContactNormal(const glm::vec3& contactNormal);
-		/** Get the direction of the collision at the contact point. */
+		/**
+		 * \brief Get the contact normal.
+		 * \return The direction of the collision at the contact point
+		 */
 		glm::vec3 getContactNormal() const;
 
-		/** Set the amount of interpenetration along the contact normal. */
+		/** 
+		 * \brief Set the amount of interpenetration.
+		 * \param penetration Interpenetration along the contact normal 
+		 */
 		void setPenetration(real penetration);
-		/** Get the amount of interpenetration. */
+		/** 
+		 * \brief Get the amount of interpenetration. 
+		 * \return The amount of interpenetration
+		 */
 		real getPenetration() const;
 
-		/** Set involved rigid bodies, friction and restitution coefficients. */
+		/**
+		 * \brief Initialize this contact 
+		 * \param first First colliding body
+		 * \param second Second colliding body
+		 * \param friction Friction constant used for the bodies
+		 * \param restitution Restitution used for the bodies
+		 */
 		void setBodyData(RigidBody* first, RigidBody* second,
 						 real friction, real restitution);
 
-		/** Get the friction constant. */
+		/** 
+		 * \brief Get the friction constant used for the bodies in 
+		 * this contact. 
+		 * \return The friction constant
+		 */
 		real getFriction() const;
-		/** Get the restitution constant. */
+		/**
+		 * \brief Get the restitution constant used for the bodies in
+		 * this contact.
+		 * \return The restitution constant
+		 */
 		real getRestitution() const;
 
-		/** */
-		glm::vec3 getContactVelocity() const;
-		void setContactVelocity(const glm::vec3& velocity);
+		/** 
+		 * \brief Get the direction and magnitude of the velocity at 
+		 * which both bodies collided.
+		 * \return The closing velocity
+		 */
+		glm::vec3 getClosingVelocity() const;
+		/**  
+		 * \brief Set the closing velocity at which both bodies collide.
+		 * \param velocity The closing velocity
+		 */
+		void setClosingVelocity(const glm::vec3& velocity);
 
-		/**  */
-		real getDesiredDeltaVelocity() const;
-
+		/**
+		 * \brief Prepares this contact for collision resolution
+		 * \details Assures that the first rigid body has no infinite
+		 * mass and swaps it with the second one if necessary. It also
+		 * calculates the desired delta velocity for this contact
+		 * as well as the contact velocity and relative contact positions.
+		 */
 		void calculateInternals(real duration);
+		/**
+		 * \brief Calculate the needed velocity for this contact to
+		 * combat vibrations.
+		 */
 		void calculateDesiredDeltaVelocity(real duration);
 
+		/** 
+		 * \brief Get the needed velocity for this contact to combat 
+		 * vibrations.
+		 * \return The desired velocity difference. 
+		 */
+		real getDesiredDeltaVelocity() const;
+		/**
+		 * \brief Get the contact position relative to the first or the
+		 * second rigid body.
+		 * \param index Either 0 (first body) or 1 (second body)
+		 * \return The relative contact position
+		 */
 		const glm::vec3& getRelativeContactPosition(int index) const;
 
+		/**
+		 * \brief Get the rotation matrix, which transforms this contact to
+		 * world orientation.
+		 * \return The rotation matrix
+		 */
 		const glm::mat3& getContactToWorld() const;
 
 	private:
 		glm::vec3 calculateLocalVelocity(unsigned bodyIndex, real duration);
-		
+
+		/**
+		 * \brief Calculate the contact basis needed to transform contact
+		 * coordinates into world space.
+		 */
 		void calculateContactBasis();
 
+		/**
+		 * \brief Swap first and second rigid body.
+		 */
 		void swapBodies();
 
 		CollisionPair m_pair{};
@@ -77,32 +160,23 @@ namespace r3
 		glm::vec3 m_contactNormal{};
 		real m_penetration{};
 
-		
-
 		real m_friction;
 		real m_restitution;
 
 		/**
-		* Transformationsmatrix von Kontakt-Koordinaten in
-		* Welt-Koordinaten. Spalten der Matrix sind Orthonormale
-		* Vektoren.
+		* \brief Transform from contact space to world space.
 		*/
-		glm::mat3 m_contactToWorld;
+		glm::mat3 m_contactToWorld{};
+		glm::vec3 m_closingVelocity{};
 		/**
-		* Closing Velocity. Mit calculateInternals gesetzt.
-		*/
-		glm::vec3 m_contactVelocity;
-		/**
-		* Erforderliche Änderung der Geschwindigkeit für diesen
-		* Kontakt. (Gegen Vibrationen)
-		*/
+		 * \brief Needed velocity to combat vibrations
+		 */
 		real m_desiredDeltaVelocity{};
 		/**
-		* Welt - Koordinaten des Kontaktpunktes relativ zum
-		* Schwerpunkt des Körpers.Mit calculateInternals gesetzt.
+		 * \brief Vectors from contact point to center of mass of rigid bodies
 		*/
-		glm::vec3 m_relativeContactPosition[2];
+		glm::vec3 m_relativeContactPosition[2]{};
 
-		static constexpr real s_velocityLimit = 0.25;
+		static constexpr real s_velocityLimit = static_cast<real>(0.25);
 	};
 }

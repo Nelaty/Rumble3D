@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp">
 <<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_particle_contact_resolver_8h.html" title="R3D/ParticleEngine\l/ParticleContactResolver.h" alt="" coords="5,213,180,255"/>
@@ -18,4 +19,14 @@
 <area shape="rect" id="node10" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="5,303,224,329"/>
 <area shape="rect" id="node15" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="690,213,825,255"/>
 >>>>>>> Stashed changes
+=======
+<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp">
+<area shape="rect" id="node2" href="$_particle_contact_resolver_8h.html" title="R3D/ParticleEngine\l/ParticleContactResolver.h" alt="" coords="5,228,180,269"/>
+<area shape="rect" id="node8" href="$_particle_contact_8h.html" title="R3D/ParticleEngine\l/ParticleContact.h" alt="" coords="256,228,391,269"/>
+<area shape="rect" id="node10" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="415,139,549,180"/>
+<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="329,317,499,344"/>
+<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="132,317,304,344"/>
+<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="345,392,414,419"/>
+<area shape="rect" id="node11" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="415,228,549,269"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

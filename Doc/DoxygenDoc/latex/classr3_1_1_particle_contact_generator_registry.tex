@@ -2,6 +2,11 @@
 \label{classr3_1_1_particle_contact_generator_registry}\index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
 
 
+Registry for Particle\+Contact\+Generators.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Contact\+Generator\+Registry.\+h$>$}
 
 
@@ -21,19 +26,22 @@ Collaboration diagram for r3\+:\+:Particle\+Contact\+Generator\+Registry\+:\nopa
 \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a26a9ed03c6e050ffa99669bd0928d520}{$\sim$\+Particle\+Contact\+Generator\+Registry}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a34d44783a363a513217dec694f625687}{register\+Contact\+Generator}} (\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$generator)
-\item 
+\begin{DoxyCompactList}\small\item\em Register a contact generator. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}{unregister\+Contact\+Generator}} (\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$generator)
-\item 
+\begin{DoxyCompactList}\small\item\em Unregister a contact generator. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a8c24a369a980542a769875466eb835d0}{clear}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Unregister all previously registered contact generators. \end{DoxyCompactList}\item 
 const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$ $>$ \& \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}{get\+Generators}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get all generators in this registry. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$ $>$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator_registry_abefd730c20539681ed0fac53ccd5f8ab}{m\+\_\+contact\+Generators}}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Registry for Particle\+Contact\+Generators. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a2c26127b369a7da81d5d29e4734633e6}\label{classr3_1_1_particle_contact_generator_registry_a2c26127b369a7da81d5d29e4734633e6}} 
@@ -57,25 +65,54 @@ std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Partic
 \subsubsection{\texorpdfstring{clear()}{clear()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Generator\+Registry\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
-Remove all contact generators \mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}\label{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}} 
+
+
+Unregister all previously registered contact generators. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}\label{classr3_1_1_particle_contact_generator_registry_a31b80b662b52afd910ba3d4d07fd8649}} 
 \index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!get\+Generators@{get\+Generators}}
 \index{get\+Generators@{get\+Generators}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
 \subsubsection{\texorpdfstring{get\+Generators()}{getGenerators()}}
 {\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$ $>$ \& r3\+::\+Particle\+Contact\+Generator\+Registry\+::get\+Generators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Get all generators in this registry. 
+
+\begin{DoxyReturn}{Returns}
+All registered generators. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_a34d44783a363a513217dec694f625687}\label{classr3_1_1_particle_contact_generator_registry_a34d44783a363a513217dec694f625687}} 
 \index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!register\+Contact\+Generator@{register\+Contact\+Generator}}
 \index{register\+Contact\+Generator@{register\+Contact\+Generator}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
 \subsubsection{\texorpdfstring{register\+Contact\+Generator()}{registerContactGenerator()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Contact\+Generator\+Registry\+::register\+Contact\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$}]{generator }\end{DoxyParamCaption})}
 
-Add another contact generator \mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}\label{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}} 
+
+
+Register a contact generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em generator} & The generator to be registered. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}\label{classr3_1_1_particle_contact_generator_registry_ae8de6dd84335777644f7eac93b82ba1e}} 
 \index{r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}!unregister\+Contact\+Generator@{unregister\+Contact\+Generator}}
 \index{unregister\+Contact\+Generator@{unregister\+Contact\+Generator}!r3\+::\+Particle\+Contact\+Generator\+Registry@{r3\+::\+Particle\+Contact\+Generator\+Registry}}
 \subsubsection{\texorpdfstring{unregister\+Contact\+Generator()}{unregisterContactGenerator()}}
 {\footnotesize\ttfamily bool r3\+::\+Particle\+Contact\+Generator\+Registry\+::unregister\+Contact\+Generator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact_generator}{Particle\+Contact\+Generator}} $\ast$}]{generator }\end{DoxyParamCaption})}
 
-Remove a specific contact generator \begin{DoxyReturn}{Returns}
+
+
+Unregister a contact generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em generator} & The generator, which will be unregistered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
 True if the given generator was found and removed, false otherwise. 
 \end{DoxyReturn}
 
@@ -91,5 +128,5 @@ True if the given generator was found and removed, false otherwise.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_generator_registry_8h}{Particle\+Contact\+Generator\+Registry.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_generator_registry_8cpp}{Particle\+Contact\+Generator\+Registry.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_generator_registry_8h}{Particle\+Contact\+Generator\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_contact_generator_registry_8cpp}{Particle\+Contact\+Generator\+Registry.\+cpp}}\end{DoxyCompactItemize}

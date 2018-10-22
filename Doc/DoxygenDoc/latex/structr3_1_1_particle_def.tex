@@ -2,6 +2,11 @@
 \label{structr3_1_1_particle_def}\index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 
 
+Bundles construction information of a particle.  
+
+
+
+
 {\ttfamily \#include $<$Particle\+Def.\+h$>$}
 
 
@@ -23,21 +28,24 @@ void \mbox{\hyperlink{structr3_1_1_particle_def_a779364b02815c9e4ea30678ea403144
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_ac608a2d4c722142aa767187ca2f0dc3e}{m\+\_\+position}} \{0.\+0f\}
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_ac608a2d4c722142aa767187ca2f0dc3e}{m\+\_\+position}} \{0\}
 \item 
-glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_a0c69fb8b0e2994e5ff24aa1156bdb5fd}{m\+\_\+velocity}} \{0.\+0f\}
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_a0c69fb8b0e2994e5ff24aa1156bdb5fd}{m\+\_\+velocity}} \{0\}
 \item 
-glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_a231397eab290672708245641223a7cc9}{m\+\_\+acceleration}} \{0.\+0f\}
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_a231397eab290672708245641223a7cc9}{m\+\_\+acceleration}} \{0\}
 \item 
-glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_a4b27ae926a85c8453a5e33ad64fc5c72}{m\+\_\+force\+Accumulator}} \{0.\+0f\}
+glm\+::vec3 \mbox{\hyperlink{structr3_1_1_particle_def_a4b27ae926a85c8453a5e33ad64fc5c72}{m\+\_\+force\+Accumulator}} \{0\}
 \item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_particle_def_a76008c519d8c2fd21b7c866708dceb5c}{m\+\_\+damping}} \{0.\+999f\}
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_particle_def_a76008c519d8c2fd21b7c866708dceb5c}{m\+\_\+damping}} \{static\+\_\+cast$<$\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}$>$(0.\+999)\}
 \item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_particle_def_a7ae250681e8ce19b47d642195bb328b4}{m\+\_\+inverse\+Mass}} \{0.\+0f\}
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{structr3_1_1_particle_def_a7ae250681e8ce19b47d642195bb328b4}{m\+\_\+inverse\+Mass}} \{0\}
 \item 
 bool \mbox{\hyperlink{structr3_1_1_particle_def_a76af421a2ee1f9f3c82bdc388f71d1ba}{m\+\_\+is\+Dead}} \{false\}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Bundles construction information of a particle. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{structr3_1_1_particle_def_a779364b02815c9e4ea30678ea4031445}\label{structr3_1_1_particle_def_a779364b02815c9e4ea30678ea4031445}} 
@@ -59,25 +67,25 @@ bool \mbox{\hyperlink{structr3_1_1_particle_def_a76af421a2ee1f9f3c82bdc388f71d1b
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+acceleration@{m\+\_\+acceleration}}
 \index{m\+\_\+acceleration@{m\+\_\+acceleration}!r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 \subsubsection{\texorpdfstring{m\+\_\+acceleration}{m\_acceleration}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+acceleration \{0.\+0f\}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+acceleration \{0\}}
 
 \mbox{\Hypertarget{structr3_1_1_particle_def_a76008c519d8c2fd21b7c866708dceb5c}\label{structr3_1_1_particle_def_a76008c519d8c2fd21b7c866708dceb5c}} 
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+damping@{m\+\_\+damping}}
 \index{m\+\_\+damping@{m\+\_\+damping}!r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 \subsubsection{\texorpdfstring{m\+\_\+damping}{m\_damping}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Def\+::m\+\_\+damping \{0.\+999f\}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Def\+::m\+\_\+damping \{static\+\_\+cast$<$\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}$>$(0.\+999)\}}
 
 \mbox{\Hypertarget{structr3_1_1_particle_def_a4b27ae926a85c8453a5e33ad64fc5c72}\label{structr3_1_1_particle_def_a4b27ae926a85c8453a5e33ad64fc5c72}} 
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+force\+Accumulator@{m\+\_\+force\+Accumulator}}
 \index{m\+\_\+force\+Accumulator@{m\+\_\+force\+Accumulator}!r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 \subsubsection{\texorpdfstring{m\+\_\+force\+Accumulator}{m\_forceAccumulator}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+force\+Accumulator \{0.\+0f\}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+force\+Accumulator \{0\}}
 
 \mbox{\Hypertarget{structr3_1_1_particle_def_a7ae250681e8ce19b47d642195bb328b4}\label{structr3_1_1_particle_def_a7ae250681e8ce19b47d642195bb328b4}} 
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}}
 \index{m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}!r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 \subsubsection{\texorpdfstring{m\+\_\+inverse\+Mass}{m\_inverseMass}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Def\+::m\+\_\+inverse\+Mass \{0.\+0f\}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Def\+::m\+\_\+inverse\+Mass \{0\}}
 
 \mbox{\Hypertarget{structr3_1_1_particle_def_a76af421a2ee1f9f3c82bdc388f71d1ba}\label{structr3_1_1_particle_def_a76af421a2ee1f9f3c82bdc388f71d1ba}} 
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+is\+Dead@{m\+\_\+is\+Dead}}
@@ -89,17 +97,17 @@ bool \mbox{\hyperlink{structr3_1_1_particle_def_a76af421a2ee1f9f3c82bdc388f71d1b
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+position@{m\+\_\+position}}
 \index{m\+\_\+position@{m\+\_\+position}!r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 \subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+position \{0.\+0f\}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+position \{0\}}
 
 \mbox{\Hypertarget{structr3_1_1_particle_def_a0c69fb8b0e2994e5ff24aa1156bdb5fd}\label{structr3_1_1_particle_def_a0c69fb8b0e2994e5ff24aa1156bdb5fd}} 
 \index{r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}!m\+\_\+velocity@{m\+\_\+velocity}}
 \index{m\+\_\+velocity@{m\+\_\+velocity}!r3\+::\+Particle\+Def@{r3\+::\+Particle\+Def}}
 \subsubsection{\texorpdfstring{m\+\_\+velocity}{m\_velocity}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+velocity \{0.\+0f\}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Def\+::m\+\_\+velocity \{0\}}
 
 
 
 The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_def_8h}{Particle\+Def.\+h}}\item 
-D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_def_8cpp}{Particle\+Def.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_def_8h}{Particle\+Def.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_def_8cpp}{Particle\+Def.\+cpp}}\end{DoxyCompactItemize}

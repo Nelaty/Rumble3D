@@ -33,7 +33,7 @@ namespace r3
 
 	unsigned CollisionResolver::getFilterCount() const
 	{
-		return m_filters.size();
+		return static_cast<unsigned>(m_filters.size());
 	}
 
 	void CollisionResolver::clear()

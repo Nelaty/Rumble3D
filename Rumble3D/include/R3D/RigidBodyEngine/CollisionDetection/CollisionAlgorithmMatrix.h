@@ -1,6 +1,7 @@
 #pragma once
-#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h"
+
+#include "R3D/Common/Common.h"
 
 #include <array>
 #include <memory>

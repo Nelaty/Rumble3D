@@ -1,4 +1,4 @@
 <map id="r3::DefaultParticleEngineCI" name="r3::DefaultParticleEngineCI">
-<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="{r3::ParticleEngineCI\n|# m_particleWorld\l|+ ~ParticleEngineCI()\l+ setParticleWorld()\l+ getParticleWorld()\l# ParticleEngineCI()\l}" alt="" coords="25,219,172,340"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="25,219,172,340"/>
 <area shape="rect" id="node3" href="$classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="11,5,186,171"/>
 </map>

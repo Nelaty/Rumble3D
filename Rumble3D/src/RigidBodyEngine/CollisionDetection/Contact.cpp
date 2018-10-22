@@ -14,19 +14,19 @@ namespace r3
 
 	RigidBody* Contact::getFirst() const
 	{
-		return m_pair.m_first;
+		return m_pair.getFirst();
 	}
 
 	RigidBody* Contact::getSecond() const
 	{
-		return m_pair.m_second;
+		return m_pair.getSecond();
 	}
 
 	RigidBody* Contact::getBody(const int index) const
 	{
 		assert(index == 0 || index == 1);
 
-		return index == 0 ? m_pair.m_first : m_pair.m_second;
+		return m_pair[index];
 	}
 
 	void Contact::setContactPoint(const glm::vec3& contactPoint)
@@ -64,9 +64,8 @@ namespace r3
 	                          const real friction,
 	                          const real restitution)
 	{
-		m_pair.m_first = first;
-		m_pair.m_second = second;
-
+		m_pair.init(first, second);
+	
 		/*m_friction = first->getPhysicsMaterial()->getFriction() +
 			second->getPhysicsMaterial()->getFriction();
 		m_restitution = first->getPhysicsMaterial()->getRestitution() +
@@ -87,14 +86,14 @@ namespace r3
 		return m_restitution;
 	}
 
-	glm::vec3 Contact::getContactVelocity() const
+	glm::vec3 Contact::getClosingVelocity() const
 	{
-		return m_contactVelocity;
+		return m_closingVelocity;
 	}
 
-	void Contact::setContactVelocity(const glm::vec3& velocity)
+	void Contact::setClosingVelocity(const glm::vec3& velocity)
 	{
-		m_contactVelocity = velocity;
+		m_closingVelocity = velocity;
 	}
 
 	real Contact::getDesiredDeltaVelocity() const
@@ -104,37 +103,38 @@ namespace r3
 
 	void Contact::calculateInternals(const real duration)
 	{
-		if(!m_pair.m_first->hasFiniteMass())
+		if(!m_pair.getFirst()->hasFiniteMass())
 		{
 			swapBodies();
 		}
 		// Calculate an set of axis at the contact point.
 		calculateContactBasis();
 
-		const auto first = m_pair.m_first;
-		const auto second = m_pair.m_second;
+		const auto first = m_pair.getFirst();
+		const auto second = m_pair.getSecond();
 
 		// Store the relative position of the contact relative to each body
 		m_relativeContactPosition[0] = m_contactPoint - first->getCenterOfMass();
-		if(m_pair.m_second->hasFiniteMass())
+		if(second->hasFiniteMass())
 		{
 			m_relativeContactPosition[1] = m_contactPoint - second->getCenterOfMass();
 		}
 		
 		// Find the relative velocity of the bodies at the contact point.
-		m_contactVelocity = calculateLocalVelocity(0, duration);
-		if(m_pair.m_second->hasFiniteMass())
+		m_closingVelocity = calculateLocalVelocity(0, duration);
+		if(second->hasFiniteMass())
 		{
-			m_contactVelocity -= calculateLocalVelocity(1, duration);
+			m_closingVelocity -= calculateLocalVelocity(1, duration);
 		}
 
 		// Calculate the desired change in velocity for resolution
 		calculateDesiredDeltaVelocity(duration);
 	}
 
-	glm::vec3 Contact::calculateLocalVelocity(const unsigned bodyIndex, real duration)
+	glm::vec3 Contact::calculateLocalVelocity(const unsigned bodyIndex,
+											  const real duration)
 	{
-		const auto thisBody = bodyIndex ? m_pair.m_second : m_pair.m_first;
+		const auto thisBody = m_pair[bodyIndex];
 
 		// Work out the velocity of the contact point.
 		auto velocity = glm::cross(thisBody->getRotation(),
@@ -143,7 +143,7 @@ namespace r3
 
 		// Turn the velocity into contact-coordinates.
 		// m_contactToWorld.transformTranspose(velocity);
-		glm::vec3 contactVelocity = glm::transpose(m_contactToWorld) * velocity;
+		auto contactVelocity = glm::transpose(m_contactToWorld) * velocity;
 
 		return contactVelocity;
 
@@ -191,17 +191,17 @@ namespace r3
 
 		// If the velocity is very slow, limit the restitution
 		auto thisRestitution = m_restitution;
-		if(abs(m_contactVelocity.x) < s_velocityLimit)
+		if(abs(m_closingVelocity.x) < s_velocityLimit)
 		{
 			thisRestitution = static_cast<real>(0.0f);
 		}
 
 		m_desiredDeltaVelocity =
-			-m_contactVelocity.x
-			- thisRestitution * m_contactVelocity.x; //- velocityFromAcc);
+			-m_closingVelocity.x
+			- thisRestitution * m_closingVelocity.x; //- velocityFromAcc);
 
 
-													 // -thisRestitution * m_contactVelocity.x - velocityFromAcc);
+													 // -thisRestitution * m_closingVelocity.x - velocityFromAcc);
 	}
 
 	const glm::vec3& Contact::getRelativeContactPosition(const int index) const
@@ -237,8 +237,7 @@ namespace r3
 
 			// The new Y-axis is at right angles to the new X- and Z- axes
 			contactTangent[1].x = contactNormalY * contactTangent[0].x;
-			contactTangent[1].y = contactNormalZ * contactTangent[0].x -
-				contactNormalX * contactTangent[0].z;
+			contactTangent[1].y = contactNormalZ * contactTangent[0].x - contactNormalX * contactTangent[0].z;
 			contactTangent[1].z = -contactNormalY * contactTangent[0].x;
 		}
 		else
@@ -253,8 +252,7 @@ namespace r3
 			contactTangent[0].z = s * contactNormalY;
 
 			// The new Y-axis is at right angles to the new X- and Z- axes
-			contactTangent[1].x = contactNormalY * contactTangent[0].z -
-				contactNormalZ * contactTangent[0].y;
+			contactTangent[1].x = contactNormalY * contactTangent[0].z - contactNormalZ * contactTangent[0].y;
 			contactTangent[1].y = -contactNormalX * contactTangent[0].z;
 			contactTangent[1].z = contactNormalX * contactTangent[0].y;
 		}
@@ -268,6 +266,6 @@ namespace r3
 	void Contact::swapBodies()
 	{
 		m_contactNormal *= -1;
-		std::swap(m_pair.m_first, m_pair.m_second);
+		m_pair.swapBodies();
 	}
 }

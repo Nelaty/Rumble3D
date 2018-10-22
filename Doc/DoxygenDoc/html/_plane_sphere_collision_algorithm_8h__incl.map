@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.h">
 <<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_i_plane_sphere_collision_algorithm_8h.html" title="IPlaneSphereCollisionAlgorithm.h" alt="" coords="1323,139,1537,165"/>
@@ -42,4 +43,27 @@
 <area shape="rect" id="node21" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="1519,779,1624,805"/>
 <area shape="rect" id="node26" href="$_i_box_box_narrow_algorithm_8h.html" title="IBoxBoxNarrowAlgorithm.h" alt="" coords="1404,288,1581,315"/>
 >>>>>>> Stashed changes
+=======
+<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.h" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.h">
+<area shape="rect" id="node2" href="$_i_plane_sphere_collision_algorithm_8h.html" title="IPlaneSphereCollisionAlgorithm.h" alt="" coords="1323,153,1537,180"/>
+<area shape="rect" id="node3" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="1345,377,1517,433"/>
+<area shape="rect" id="node4" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="1041,883,1211,909"/>
+<area shape="rect" id="node23" href="$_collision_plane_8h.html" title="R3D/RigidBodyEngine\l/CollisionPlane.h" alt="" coords="368,578,519,619"/>
+<area shape="rect" id="node24" href="$_collision_sphere_8h.html" title="R3D/RigidBodyEngine\l/CollisionSphere.h" alt="" coords="193,578,344,619"/>
+<area shape="rect" id="node25" href="$_box_box_narrow_algorithm_8h.html" title="BoxBoxNarrowAlgorithm.h" alt="" coords="1468,228,1643,255"/>
+<area shape="rect" id="node6" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="1028,481,1179,523"/>
+<area shape="rect" id="node19" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1481,571,1632,627"/>
+<area shape="rect" id="node5" href="$_config_8h.html" title="Config.h" alt="" coords="550,957,619,984"/>
+<area shape="rect" id="node7" href="$_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="1141,578,1292,619"/>
+<area shape="rect" id="node8" href="$_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="1107,689,1241,716"/>
+<area shape="rect" id="node9" href="$_precision_8h.html" title="Common/Precision.h" alt="" coords="5,793,148,820"/>
+<area shape="rect" id="node14" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="880,675,1031,731"/>
+<area shape="rect" id="node15" href="$_rigid_body_def_8h.html" title="R3D/RigidBodyEngine\l/RigidBodyDef.h" alt="" coords="603,578,753,619"/>
+<area shape="rect" id="node16" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="451,682,601,723"/>
+<area shape="rect" id="node17" href="$_collision_primitive_8h.html" title="R3D/RigidBodyEngine\l/CollisionPrimitive.h" alt="" coords="224,682,375,723"/>
+<area shape="rect" id="node18" href="$_collision_primitive_type_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPrimitiveType.h" alt="" coords="223,779,386,835"/>
+<area shape="rect" id="node20" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="1469,675,1620,731"/>
+<area shape="rect" id="node21" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="1520,793,1625,820"/>
+<area shape="rect" id="node26" href="$_i_box_box_narrow_algorithm_8h.html" title="IBoxBoxNarrowAlgorithm.h" alt="" coords="1468,303,1645,329"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

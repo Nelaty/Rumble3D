@@ -16,7 +16,8 @@ namespace r3
 	class ParticleEngineCI; 
 
 	/**
-	 * \brief ParticleWorld holds a number of particles and contact generators
+	 * \brief A ParticleWorld is a physics engine module, used to
+	 * simulate particles.
 	 */
 	class R3D_DECLSPEC ParticleWorld : public PhysicsEngineModule
 	{
@@ -26,8 +27,16 @@ namespace r3
 
 		explicit ParticleWorld();
 		~ParticleWorld();
-	
+
+		/**
+		 * \brief Change the computation interface, used by the module.
+		 * \param computationInterface The new computation interface.
+		 */
 		void setComputationInterface(ParticleEngineCI* computationInterface);
+		/**
+		 * \brief Get the module's computation interface.
+		 * \return The currently used computation interface.
+		 */
 		IComputationInterface* getComputationInterface() const override;
 
 		/** 
@@ -35,7 +44,7 @@ namespace r3
 		 * \param definition Construction information for the new particle.
 		 * \return The new particle.
 		 */
-		Particle* createParticle(ParticleDef definition);
+		Particle* createParticle(ParticleDef definition = ParticleDef());
 		/**
 		 * \brief Free memory of a particle.
 		 * \param particle The particle to destroy.
@@ -47,19 +56,37 @@ namespace r3
 		 */
 		void destroyAllParticles();
 
-		/** Needed to bind particles to particle force generators */
+		/** 
+		 * \brief Get the module's particle force registry
+		 * \return The particle force registry
+		 */
 		ParticleForceRegistry& getParticleForceRegistry();
-		/** Needed to bind particles to particle force generators */
+		/**
+		 * \brief Get the module's particle force registry
+		 * \return The particle force registry
+	 	 */
 		const ParticleForceRegistry& getParticleForceRegistry() const;
 
-		/** Get all currently registered particles. */
+		/** 
+		 * \brief Get the module's particles.
+		 * \return All currently registered particles. 
+		 */
 		Particle_Container& getParticles();
-		/** Get all currently registered particles. */
+		/**
+		 * \brief Get the module's particles.
+		 * \return All currently registered particles.
+		 */
 		const Particle_Container& getParticles() const;
 
-		/** Get the registry which holds all currently active contact generators. */
+		/** 
+		 * \brief Get the module's particle contact generator registry.
+		 * \return The particle contact generator registry
+		 */
 		ParticleContactGeneratorRegistry& getContactGeneratorRegistry();
-		/** Get the registry which holds all currently active contact generators. */
+		/**
+		* \brief Get the module's particle contact generator registry.
+		* \return The particle contact generator registry
+		*/
 		const ParticleContactGeneratorRegistry& getContactGeneratorRegistry() const;
 
 	private:

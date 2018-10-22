@@ -16,13 +16,13 @@ namespace r3
 	NarrowPhaseFilter::~NarrowPhaseFilter()
 	= default;
 
-	void NarrowPhaseFilter::generateCollisionData(const BroadPhaseCollisionData& broadPhaseData,
+	void NarrowPhaseFilter::generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
 												  CollisionData& collisions)
 	{
-		const auto& data = broadPhaseData.getCollisions();
-		for(auto i = 0; i < broadPhaseData.getCollisionsUsed(); ++i)
+		const auto& data = broadPhaseData.getData();
+		for(auto i = 0; i < broadPhaseData.getEntriesUsed(); ++i)
 		{
-			generateCollisionData(data[i].m_first, data[i].m_second, collisions);
+			generateCollisionData(data[i].getFirst(), data[i].getSecond(), collisions);
 		}
 	}
 

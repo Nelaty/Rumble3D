@@ -1,4 +1,5 @@
 <map id="r3::CollisionPrimitive" name="r3::CollisionPrimitive">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <area shape="rect" id="node4" href="$classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="265,535,424,685"/>
 <area shape="rect" id="node3" href="$classr3_1_1_rigid_body.html" title="{r3::RigidBody\n||+ RigidBody()\l+ RigidBody()\l+ ~RigidBody()\l+ init()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\land 41 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="489,851,704,1104"/>
@@ -12,4 +13,11 @@
 <area shape="rect" id="node7" href="$classr3_1_1_physics_material.html" title="{r3::PhysicsMaterial\n||+ PhysicsMaterial()\l+ PhysicsMaterial()\l+ operator=()\l+ ~PhysicsMaterial()\l+ init()\l+ setFriction()\l+ getFriction()\l+ setRestitution()\l+ getRestitution()\l+ getMaterialDef()\l}" alt="" coords="522,461,664,671"/>
 <area shape="rect" id="node9" href="$structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="837,513,960,619"/>
 >>>>>>> Stashed changes
+=======
+<area shape="rect" id="node4" href="$classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="262,491,420,641"/>
+<area shape="rect" id="node3" href="$classr3_1_1_rigid_body.html" title="{r3::RigidBody\n||+ RigidBody()\l+ RigidBody()\l+ ~RigidBody()\l+ init()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\land 41 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="486,807,700,1060"/>
+<area shape="rect" id="node5" href="$classr3_1_1_transform3_d.html" title="{r3::Transform3D\n||+ Transform3D()\l+ ~Transform3D()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ translate()\l+ translate()\l+ rotate()\l+ rotate()\l+ setRotation()\land 7 more...\l}" alt="" coords="318,160,441,384"/>
+<area shape="rect" id="node7" href="$classr3_1_1_physics_material.html" title="{r3::PhysicsMaterial\n||+ PhysicsMaterial()\l+ PhysicsMaterial()\l+ operator=()\l+ ~PhysicsMaterial()\l+ init()\l+ setFriction()\l+ getFriction()\l+ setRestitution()\l+ getRestitution()\l+ getMaterialDef()\l}" alt="" coords="522,461,664,671"/>
+<area shape="rect" id="node9" href="$structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="837,513,960,619"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

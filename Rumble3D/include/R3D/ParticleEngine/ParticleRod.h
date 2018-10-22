@@ -7,8 +7,11 @@ namespace r3
 {
 	class ParticleContact;
 
-	// Feste Verbindung zweier Teilchen. 
-	// Erzeugt Kontact, wenn sich ihr Abstand verändert.
+	/**
+	 * \brief Abstract class, which creates a distance constraint 
+	 * between two particles. A contact gets created if this constraint
+	 * is not fulfilled.
+	 */
 	class R3D_DECLSPEC ParticleRod : public ParticleLink
 	{
 	public:
@@ -17,6 +20,6 @@ namespace r3
 	protected:
 		explicit ParticleRod();
 
-		real m_length{}; // Abstand der Teilchen;
+		real m_distance{};
 	};
 }

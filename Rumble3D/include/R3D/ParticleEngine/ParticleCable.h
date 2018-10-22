@@ -6,15 +6,38 @@
 namespace r3
 {
 	class ParticleContact;
-	
+
+	/**
+	 * \brief A ParticleCable is a contact generator, which will 
+	 * generate a contact if particles are too far apart.
+	 */
 	class R3D_DECLSPEC ParticleCable : public ParticleLink
 	{
 	public:
+		/**
+		 * \brief ParticleCable constructor
+		 * \param maxLength The maximal length of the cable.
+		 * \param restitution The restitution coefficient of generated 
+		 * contacts.
+		 */
 		explicit ParticleCable(real maxLength = 1.0f, real restitution = 0.0f);
 		~ParticleCable();
 
-		unsigned int addContact(ParticleContact* contact, unsigned int limit) const override;
+		/**
+		* \brief Generate new contacts.
+		* \param contactData Out parameter in which new contacts are added.
+		*/
+		void addContact(FixedSizeContainer<ParticleContact>& contactData) const override;
+
+		/**
+		 * \brief Set the threshold at which contacts will be generated.
+		 * \maxLength The maximal length of the cable.
+		 */
 		void setMaxLength(real maxLength);
+		/**
+		 * \brief Set the restitution of generated contacts.
+		 * \restitution The restitution coefficient.
+		 */
 		void setRestitution(real restitution);
 
 	protected:

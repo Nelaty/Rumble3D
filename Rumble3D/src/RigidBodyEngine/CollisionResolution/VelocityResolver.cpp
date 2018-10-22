@@ -16,7 +16,7 @@ namespace r3
 
 	void VelocityResolver::setMaxIterations(const unsigned iterations)
 	{
-		m_iterations = iterations;
+		m_iterationsMax = iterations;
 	}
 
 	void VelocityResolver::setVelocityEpsilon(const real epsilon)
@@ -75,7 +75,7 @@ namespace r3
 
 		// iteratively handle impacts in order of severity.
 		m_iterationsUsed = 0;
-		while(m_iterationsUsed < m_iterations)
+		while(m_iterationsUsed < m_iterationsMax)
 		{
 			// Find contact with maximum magnitude of probable velocity change.			
 			auto& data = collisionData.getData();
@@ -131,7 +131,7 @@ namespace r3
 						// with the second body in a contact.
 						const auto direction = static_cast<real>(b ? -1 : 1);
 						deltaVel = glm::transpose(it.getContactToWorld()) * deltaVel * direction;
-						it.setContactVelocity(it.getContactVelocity() + deltaVel);
+						it.setClosingVelocity(it.getClosingVelocity() + deltaVel);
 
 						it.calculateDesiredDeltaVelocity(duration);
 					}
@@ -202,9 +202,9 @@ namespace r3
 	}
 
 	VelocityResolver::VelocityResolver()
-		: m_epsilon(0.01),
+		: m_epsilon(static_cast<real>(0.01)),
 		m_iterationsUsed(0),
-		m_iterations(1)
+		m_iterationsMax(1)
 	{
 	}
 }

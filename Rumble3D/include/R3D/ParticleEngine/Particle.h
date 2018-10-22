@@ -9,87 +9,155 @@
 namespace r3 
 {
 	/**
-	 * A particle represents a single point in space with physical
+	 * \brief A Particle represents a single point in space with physical
 	 * properties. A particle has no orientation and therefor can't
 	 * be rotated.
 	 */
 	class R3D_DECLSPEC Particle 
 	{
 	public:
+		/**
+		 * \brief Particle default constructor.
+		 */
 		explicit Particle();
+		/**
+		 * \brief Particle constructor
+		 * \param definition The properties of this particle.
+		 */
 		explicit Particle(const ParticleDef& definition);
 		virtual ~Particle();
 
 		/**
-		 * Initialize this particle with a given definition.
-		 * Automatically called from constructors.
+		 * \brief Initialize this particle.
+		 * \param definition The properties of this particle
 		 */
 		void init(const ParticleDef& definition);
 
 		/**
-		 * Change the mass of this particle to the given given value. 
-		 * Implicitly changes inverse mass.
+		 * \brief Set the mass of this particle.
+		 * \param mass The new mass.
+		 * \details Implicitly changes inverse mass.
 		 */
 		void setMass(real mass);
-		/** Get the current mass of this particle. */
+		/** 
+		 * \brief Get the current mass of this particle.
+		 * \return The current mass.
+		 */
 		real getMass() const;
 		/** 
-		 * Change the inverse mass of this particle to the given value.
-		 * Implicitly changes mass.
+		 * \brief Change the inverse mass of this particle to the given value.
 		 * \param inverseMass A value of 0 is equivalent to infinite mass.
+		 * \details Implicitly changes mass.
 		 */
 		void setInverseMass(real inverseMass);
 		/**
-		 * Get the current inverse mass of this particle
-		 * If particle has infinite mass, inverse mass will be 0.
+		 * \brief Get the current inverse mass of this particle
+		 * \return The inverse mass. If particle has infinite mass, 
+		 * the inverse mass will be 0.
 		 */
 		real getInverseMass() const;
 		/**
-		 * Check if this particle has infinite mass.
-		 * \return True if mass is infinite.
+		 * \brief Check if this particle has infinite mass.
+		 * \return True if mass is infinite, false otherwise.
 		 */
 		bool hasFiniteMass() const;
 
-		/** Change particle position to given vector. */
+		/** 
+		 * \brief Change the particle's position. 
+		 * \param position The new position.
+		 */
 		void setPosition(const glm::vec3 &position);
-		/** Change particle position to given coordinates. */
+		/** 
+		 * \brief Change the particle's position.
+		 * \param x The new x coordinate
+		 * \param y The new y coordinate
+		 * \param z The new z coordinate
+		 */
 		void setPosition(real x, real y, real z);
-		/** Get the current position of this particle. */
+		/** 
+		 * \brief Get the particle's position.
+		 * \return The current position.
+		 */
 		const glm::vec3& getPosition() const;
 
-		/** Change the current velocity of this particle to the given velocity. */
-		void setVelocity(const glm::vec3 &velocity);
-		/** Change the current velocity of this particle to the given velocity. */
+		/** 
+		 * \brief Change the particle's velocity.
+		 * \param velocity The new velocity
+		 */
+		void setVelocity(const glm::vec3& velocity);
+		/** 
+		 * \brief Change the particle's velocity.
+		 * \param x The x component of the new velocity
+		 * \param y The y component of the new velocity
+		 * \param z The z component of the new velocity
+		 */
 		void setVelocity(real x, real y, real z);
-		/** Get the current velocity of this particle. */
+		/** 
+		 * \brief Get the particle's velocity.
+		 * \return The current velocity 
+		 */
 		const glm::vec3& getVelocity() const;
 
-		/** Change the current acceleration of this particle to the given acceleration. */
-		void setAcceleration(const glm::vec3 &acceleration);
-		/** Change the current acceleration of this particle to the given acceleration. */
+		/** 
+		 * \brief Change the particle's acceleration
+		 * \param acceleration The new acceleration
+		 */
+		void setAcceleration(const glm::vec3& acceleration);
+		/**
+		 * \brief Change the particle's acceleration
+		 * \param x The x component of the new acceleration
+		 * \param y The y component of the new acceleration
+		 * \param z The z component of the new acceleration
+		 */
 		void setAcceleration(real x, real y, real z);
-		/** Get the current acceleration of this particle. */
+		/** 
+		 * \brief Get the particle's acceleration
+		 * \return The current acceleration
+		 */
 		const glm::vec3& getAcceleration() const;
 
-		/** Change the linear damping constant of this particle. */
+		/** 
+		 * \brief Change the particle's linear damping.
+		 * \param damping The new damping constant
+		 */
 		void setDamping(real damping);
-		/** Get the linear damping constant of this particle. */
+		/**
+		 * \brief Get the particle's linear damping.
+		 * \return The current damping constant.
+		 */
 		real getDamping() const;
 
-		/** Set dead state of this particle. */
+		/**
+		 * \brief Set the particle's dead flag.
+		 * \param isDead Death flag
+		 */
 		void setIsDead(bool isDead);
-		/** Check if this particle is dead. */
+		/** 
+		 * \brief Check if the particle is dead.
+		 * \return True if the particle is dead, false otherwise.
+		 */
 		bool isDead() const;
 
-		/** Get current sum of accumulated forces. */
+		/** 
+		 * \brief Get the sum of forces, accumulated since the last update
+		 * \return Sum of accumulated forces
+		 */
 		const glm::vec3& getForceAccumulator() const;
-		/** Set the accumulated forces to zero. */
+		/** 
+		 * \brief Reset the force accumulator to zero
+		 */
 		void clearAccumulator();
 
-		/** Add a force to the force accumulator. */
-		void addForce(const glm::vec3 &force);
+		/** 
+		 * \brief Add a force to the force accumulator. 
+		 * \param force The force to be added
+		 */
+		void addForce(const glm::vec3& force);
 
-		/** Apply forces and update position, velocity and acceleration. */
+		/** 
+		 * \brief Integrate changes made to the particle.
+		 * \details Apply forces and update position, velocity and acceleration. 
+		 */
 		virtual void integrate(real duration);
 
 	protected:

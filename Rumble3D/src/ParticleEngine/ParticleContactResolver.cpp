@@ -4,8 +4,8 @@
 
 namespace r3
 {
-	ParticleContactResolver::ParticleContactResolver(unsigned int iterations)
-		: m_iterations{iterations},
+	ParticleContactResolver::ParticleContactResolver(const unsigned iterations)
+		: m_iterationsMax{iterations},
 		m_iterationsUsed{0}
 	{
 	}
@@ -13,67 +13,143 @@ namespace r3
 	ParticleContactResolver::~ParticleContactResolver()
 	= default;
 
-	void ParticleContactResolver::setIterations(unsigned int iterations)
+	void ParticleContactResolver::setIterationsMax(const unsigned iterations)
 	{
-		m_iterations = iterations;
+		m_iterationsMax = iterations;
 	}
 
-	void ParticleContactResolver::resolveContacts(ParticleContact* contactArray,
-	                                              const unsigned int numberOfContacts,
-	                                              const real duration)
+	//void ParticleContactResolver::resolveContacts(ParticleContact* contactArray,
+	//                                              const unsigned numberOfContacts,
+	//                                              const real duration)
+	//{
+	//	m_iterationsUsed = 0;
+	//	while (m_iterationsUsed < m_iterationsMax) 
+	//	{
+	//		// Suche den Kontakt mit kleinster Trennungsgeschwindigkeit
+	//		// gleich größter Kollisionsgeschwindigkeit:
+	//		auto max = R3D_REAL_MAX;
+	//		auto maxIndex = numberOfContacts;
+	//		for (unsigned i = 0; i < numberOfContacts; ++i)
+	//		{
+	//			const auto separationVelocity = contactArray[i].calculateSeparatingVelocity();
+	//			if (separationVelocity < max &&
+	//				(separationVelocity < 0 || contactArray[i].getPenetration() > 0)) 
+	//			{
+	//				max = separationVelocity;
+	//				maxIndex = i;
+	//			}
+	//		}
+	//		// wenn nichts zu behandeln ist:
+	//		if(maxIndex == numberOfContacts)
+	//		{
+	//			break;
+	//		}
+
+	//		// Behandle den physikalisch interessantesten Kontakt:
+	//		contactArray[maxIndex].resolve(duration);
+
+	//		// Behandlung der Durchdringung:
+	//		auto* firstMax = contactArray[maxIndex].getFirst();
+	//		auto* secondMax = contactArray[maxIndex].getSecond();
+
+	//		const auto move = contactArray[maxIndex].getParticleMovement();
+	//		for (unsigned i = 0; i < numberOfContacts; ++i)
+	//		{
+	//			auto* first = contactArray[i].getFirst();
+	//			auto* second = contactArray[i].getSecond();
+
+	//			const auto& contactNormal = contactArray[i].getContactNormal();
+
+	//			if (first == firstMax)
+	//			{
+	//				contactArray[i].addToPenetration(-glm::dot(move[0], contactNormal));
+	//			}
+	//			else if (first == secondMax)
+	//			{
+	//				contactArray[i].addToPenetration(-glm::dot(move[1], contactNormal));
+	//			}
+	//			if (second)
+	//			{
+	//				if (second == firstMax)
+	//				{
+	//					contactArray[i].addToPenetration(glm::dot(move[0], contactNormal));
+	//				}
+	//				else if (second == secondMax)
+	//				{
+	//					contactArray[i].addToPenetration(glm::dot(move[1], contactNormal));
+	//				}
+	//			}
+	//		}
+	//		
+	//		m_iterationsUsed++;
+	//	}
+	//}
+
+	void ParticleContactResolver::resolveContacts(FixedSizeContainer<ParticleContact>& contactData,
+												  const real duration)
 	{
-		unsigned i;
+		auto& contactArray = contactData.getData();
+		const auto numberOfContacts = contactData.getEntriesUsed();
+
 		m_iterationsUsed = 0;
-		while (m_iterationsUsed < m_iterations) 
+		while (m_iterationsUsed < m_iterationsMax)
 		{
 			// Suche den Kontakt mit kleinster Trennungsgeschwindigkeit
 			// gleich größter Kollisionsgeschwindigkeit:
 			auto max = R3D_REAL_MAX;
 			auto maxIndex = numberOfContacts;
-			for (i = 0; i < numberOfContacts; ++i)
+			for (unsigned i = 0; i < numberOfContacts; ++i)
 			{
 				const auto separationVelocity = contactArray[i].calculateSeparatingVelocity();
 				if (separationVelocity < max &&
-					(separationVelocity < 0 || contactArray[i].m_penetration > 0)) 
+					(separationVelocity < 0 || contactArray[i].getPenetration() > 0))
 				{
 					max = separationVelocity;
 					maxIndex = i;
 				}
 			}
 			// wenn nichts zu behandeln ist:
-			if(maxIndex == numberOfContacts)
+			if (maxIndex == numberOfContacts)
 			{
 				break;
 			}
 
 			// Behandle den physikalisch interessantesten Kontakt:
 			contactArray[maxIndex].resolve(duration);
-			
+
 			// Behandlung der Durchdringung:
-			const auto move = contactArray[maxIndex].m_particlesMovement;
-			for (i = 0; i < numberOfContacts; ++i)
+			auto* firstMax = contactArray[maxIndex].getFirst();
+			auto* secondMax = contactArray[maxIndex].getSecond();
+
+			const auto move = contactArray[maxIndex].getParticleMovement();
+			for (unsigned i = 0; i < numberOfContacts; ++i)
 			{
-				if (contactArray[i].m_particles[0] == contactArray[maxIndex].m_particles[0])
+				auto* first = contactArray[i].getFirst();
+				auto* second = contactArray[i].getSecond();
+
+				const auto& contactNormal = contactArray[i].getContactNormal();
+
+				if (first == firstMax)
 				{
-					contactArray[i].m_penetration -= glm::dot(move[0], contactArray[i].m_contactNormal);
+					contactArray[i].addToPenetration(-glm::dot(move[0], contactNormal));
 				}
-				else if (contactArray[i].m_particles[0] == contactArray[maxIndex].m_particles[1])
+				else if (first == secondMax)
 				{
-					contactArray[i].m_penetration -= glm::dot(move[1], contactArray[i].m_contactNormal);
+					contactArray[i].addToPenetration(-glm::dot(move[1], contactNormal));
 				}
-				if (contactArray[i].m_particles[1])
+				if (second)
 				{
-					if (contactArray[i].m_particles[1] == contactArray[maxIndex].m_particles[0])
+					if (second == firstMax)
 					{
-						contactArray[i].m_penetration += glm::dot(move[0], contactArray[i].m_contactNormal);
+						contactArray[i].addToPenetration(glm::dot(move[0], contactNormal));
 					}
-					else if (contactArray[i].m_particles[1] == contactArray[maxIndex].m_particles[1])
+					else if (second == secondMax)
 					{
-						contactArray[i].m_penetration += glm::dot(move[1], contactArray[i].m_contactNormal);
+						contactArray[i].addToPenetration(glm::dot(move[1], contactNormal));
 					}
 				}
 			}
-			
+
 			m_iterationsUsed++;
 		}
 	}

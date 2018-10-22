@@ -1,4 +1,5 @@
 <map id="r3::ParticleContactGenerator" name="r3::ParticleContactGenerator">
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$classr3_1_1_particle_constraint.html" title="{r3::ParticleConstraint\n|# m_anchor\l# m_particle\l|+ ~ParticleConstraint()\l# ParticleConstraint()\l# currentLength()\l}" alt="" coords="5,167,159,289"/>
 <area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="{r3::ParticleLink\n|# m_particles\l|+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="183,160,303,296"/>
@@ -12,4 +13,11 @@
 <area shape="rect" id="node5" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="172,337,315,473"/>
 <area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="339,359,457,451"/>
 >>>>>>> Stashed changes
+=======
+<area shape="rect" id="node2" href="$classr3_1_1_particle_constraint.html" title="Abstract class, which links a particle with a static position. " alt="" coords="5,167,159,289"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="183,160,303,296"/>
+<area shape="rect" id="node4" href="$classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart..." alt="" coords="21,344,148,495"/>
+<area shape="rect" id="node5" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="172,351,315,487"/>
+<area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="339,373,457,465"/>
+>>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

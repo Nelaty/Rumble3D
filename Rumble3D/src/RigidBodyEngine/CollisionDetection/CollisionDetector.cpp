@@ -12,6 +12,7 @@ namespace r3
 	CollisionDetector::CollisionDetector(const unsigned int broadPhaseCollisions,
 										 const unsigned int contactsMax,
 										 const unsigned int iterations)
+		: m_broadPhaseCollisions(0)
 	{
 		init(broadPhaseCollisions, contactsMax, iterations);
 	}
@@ -27,7 +28,7 @@ namespace r3
 		m_contactsMax = contactsMax;
 		m_iterations = iterations;
 
-		m_broadPhaseCollisions.init(broadPhaseCollisions, iterations);
+		m_broadPhaseCollisions.init(broadPhaseCollisions);
 		m_collisions.init(contactsMax, iterations);
 	}
 
@@ -40,7 +41,7 @@ namespace r3
 	void CollisionDetector::setBroadPhaseCollisionsMax(const int count)
 	{
 		m_broadPhaseCollisionsMax = count;
-		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax, m_iterations);
+		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax);
 	}
 
 	void CollisionDetector::setContactsMax(const int count)
@@ -52,7 +53,7 @@ namespace r3
 	void CollisionDetector::setIterations(const int iterations)
 	{
 		m_iterations = iterations;
-		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax, m_iterations);
+		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax);
 		m_collisions.init(m_contactsMax, m_iterations);
 	}
 

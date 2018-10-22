@@ -6,7 +6,7 @@ var searchData=
   ['collisiondetector',['CollisionDetector',['../classr3_1_1_collision_detector.html',1,'r3']]],
   ['collisionmask',['CollisionMask',['../structr3_1_1_collision_mask.html',1,'r3']]],
   ['collisionobject',['CollisionObject',['../classr3_1_1_collision_object.html',1,'r3']]],
-  ['collisionpair',['CollisionPair',['../structr3_1_1_collision_pair.html',1,'r3']]],
+  ['collisionpair',['CollisionPair',['../classr3_1_1_collision_pair.html',1,'r3']]],
   ['collisionplane',['CollisionPlane',['../classr3_1_1_collision_plane.html',1,'r3']]],
   ['collisionprimitive',['CollisionPrimitive',['../classr3_1_1_collision_primitive.html',1,'r3']]],
   ['collisionresolver',['CollisionResolver',['../classr3_1_1_collision_resolver.html',1,'r3']]],

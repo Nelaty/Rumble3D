@@ -1,8 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseCollisionData.h"
-
-#include <vector>
+#include "R3D/Utility/FixedSizeContainer.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h"
 
 namespace r3
 {
@@ -15,7 +14,7 @@ namespace r3
 		 * Further filter a previous set of collisions, which might
 		 * still contain false negatives.
 		 */
-		virtual void generateCollisions(BroadPhaseCollisionData& collisions) = 0;
+		virtual void generateCollisions(FixedSizeContainer<CollisionPair>& collisions) = 0;
 
 	protected:
 		explicit IIntermediatePhaseFilter();

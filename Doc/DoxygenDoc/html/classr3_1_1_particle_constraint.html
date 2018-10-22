@@ -77,13 +77,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract class, which links a particle with a static position.  
+ <a href="classr3_1_1_particle_constraint.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_particle_constraint_8h_source.html">ParticleConstraint.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::ParticleConstraint:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_particle_constraint__inherit__graph.png" border="0" usemap="#r3_1_1_particle_constraint_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_particle_constraint_inherit__map" id="r3_1_1_particle_constraint_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_particle_contact_generator.html" title="{r3::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ addContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,5,201,112"/>
+<area shape="rect" id="node2" href="classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,5,201,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,8 +94,8 @@ Collaboration diagram for r3::ParticleConstraint:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_particle_constraint__coll__graph.png" border="0" usemap="#r3_1_1_particle_constraint_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_particle_constraint_coll__map" id="r3_1_1_particle_constraint_coll__map">
-<area shape="rect" id="node2" href="classr3_1_1_particle_contact_generator.html" title="{r3::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ addContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,248,201,355"/>
-<area shape="rect" id="node3" href="classr3_1_1_particle.html" title="{r3::Particle\n||+ Particle()\l+ Particle()\l+ ~Particle()\l+ init()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ setPosition()\land 16 more...\l}" alt="" coords="225,189,357,413"/>
+<area shape="rect" id="node2" href="classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,248,201,355"/>
+<area shape="rect" id="node3" href="classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,357,413"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -105,6 +108,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af258aa3e7d7fb8e9c9ca7eb545d27738 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <<<<<<< Updated upstream
 <tr class="memitem:a3c9c99fb97a4431f0ddf300b30167d03 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="memItemLeft" align="right" valign="top">virtual unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#a3c9c99fb97a4431f0ddf300b30167d03">addContact</a> (<a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> *contact, unsigned int limit) const =0</td></tr>
+<tr class="memdesc:a3c9c99fb97a4431f0ddf300b30167d03 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate new contacts.  <a href="classr3_1_1_particle_contact_generator.html#a3c9c99fb97a4431f0ddf300b30167d03">More...</a><br /></td></tr>
 <tr class="separator:a3c9c99fb97a4431f0ddf300b30167d03 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
 =======
 <tr class="memitem:a39a7a8f0d5b31b1ca2c2ace2af8e2978 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#a39a7a8f0d5b31b1ca2c2ace2af8e2978">addContact</a> (<a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> &gt; &amp;contactData) const =0</td></tr>
@@ -117,6 +121,7 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af158845ecce7f53246f6120ad9dbd4b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_constraint.html#af158845ecce7f53246f6120ad9dbd4b8">ParticleConstraint</a> ()</td></tr>
 <tr class="separator:af158845ecce7f53246f6120ad9dbd4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d466805c43b474d389609faba308cc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_constraint.html#a0d466805c43b474d389609faba308cc0">currentLength</a> () const</td></tr>
+<tr class="memdesc:a0d466805c43b474d389609faba308cc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the distance between the anchor point and the particle.  <a href="#a0d466805c43b474d389609faba308cc0">More...</a><br /></td></tr>
 <tr class="separator:a0d466805c43b474d389609faba308cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classr3_1_1_particle_contact_generator"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classr3_1_1_particle_contact_generator')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classr3_1_1_particle_contact_generator.html">r3::ParticleContactGenerator</a></td></tr>
 <tr class="memitem:a3cfeb03fe6fb6a82a64746c0dd9b89f2 inherit pro_methods_classr3_1_1_particle_contact_generator"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#a3cfeb03fe6fb6a82a64746c0dd9b89f2">ParticleContactGenerator</a> ()</td></tr>
@@ -129,7 +134,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:ad6a80699b1e0579c4a307f3a7ac49d26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_constraint.html#ad6a80699b1e0579c4a307f3a7ac49d26">m_particle</a> {}</td></tr>
 <tr class="separator:ad6a80699b1e0579c4a307f3a7ac49d26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Abstract class, which links a particle with a static position. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa4c9c88384c10a9e9613bdad843df524"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa4c9c88384c10a9e9613bdad843df524">&#9670;&nbsp;</a></span>~ParticleConstraint()</h2>
 
@@ -204,6 +211,9 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the distance between the anchor point and the particle. </p>
+<dl class="section return"><dt>Returns</dt><dd>The distance. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -252,8 +262,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_constraint_8h_source.html">ParticleConstraint.h</a></li>
-<li>D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_constraint_8cpp.html">ParticleConstraint.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_constraint_8h_source.html">ParticleConstraint.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_constraint_8cpp.html">ParticleConstraint.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
