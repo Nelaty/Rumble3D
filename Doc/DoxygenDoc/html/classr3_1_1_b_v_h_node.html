@@ -83,10 +83,17 @@ Collaboration diagram for r3::BVHNode&lt; BoundingVolumeClass &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_b_v_h_node__coll__graph.png" border="0" usemap="#r3_1_1_b_v_h_node_3_01_bounding_volume_class_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_b_v_h_node_3_01_bounding_volume_class_01_4_coll__map" id="r3_1_1_b_v_h_node_3_01_bounding_volume_class_01_4_coll__map">
+<<<<<<< Updated upstream
 <area shape="rect" id="node3" href="classr3_1_1_rigid_body.html" title="{r3::RigidBody\n||+ RigidBody()\l+ RigidBody()\l+ ~RigidBody()\l+ init()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\land 41 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="353,505,567,759"/>
 <area shape="rect" id="node5" href="classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n||+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="241,873,389,1038"/>
 <area shape="rect" id="node4" href="classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="381,1152,539,1303"/>
 <area shape="rect" id="node7" href="classr3_1_1_transform3_d.html" title="{r3::Transform3D\n||+ Transform3D()\l+ ~Transform3D()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ translate()\l+ rotate()\l+ setRotation()\l+ setRotation()\l+ getRotation()\l+ getPointInLocalSpace()\l+ getPointInWorldSpace()\l+ getDirectionInLocalSpace()\l+ getDirectionInWorldSpace()\l}" alt="" coords="828,821,1020,1089"/>
+=======
+<area shape="rect" id="node3" href="classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="353,505,567,759"/>
+<area shape="rect" id="node5" href="classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n||+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="241,851,389,1016"/>
+<area shape="rect" id="node4" href="classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="381,1108,539,1259"/>
+<area shape="rect" id="node7" href="classr3_1_1_transform3_d.html" title="{r3::Transform3D\n||+ Transform3D()\l+ ~Transform3D()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ translate()\l+ translate()\l+ rotate()\l+ rotate()\l+ setRotation()\land 7 more...\l}" alt="" coords="828,821,951,1045"/>
+>>>>>>> Stashed changes
 <area shape="rect" id="node9" href="classr3_1_1_physics_material.html" title="{r3::PhysicsMaterial\n||+ PhysicsMaterial()\l+ PhysicsMaterial()\l+ operator=()\l+ ~PhysicsMaterial()\l+ init()\l+ setFriction()\l+ getFriction()\l+ setRestitution()\l+ getRestitution()\l+ getMaterialDef()\l}" alt="" coords="161,160,303,369"/>
 <area shape="rect" id="node11" href="structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="476,211,599,318"/>
 </map>
@@ -101,16 +108,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72194bd522058bfd362b0ab77c0303af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#a72194bd522058bfd362b0ab77c0303af">~BVHNode</a> ()</td></tr>
 <tr class="separator:a72194bd522058bfd362b0ab77c0303af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a517b40f1a91cda371b3cb786f1c7e155"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#a517b40f1a91cda371b3cb786f1c7e155">isLeaf</a> () const</td></tr>
+<tr class="memdesc:a517b40f1a91cda371b3cb786f1c7e155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this node is a leaf node (= has no child nodes).  <a href="#a517b40f1a91cda371b3cb786f1c7e155">More...</a><br /></td></tr>
 <tr class="separator:a517b40f1a91cda371b3cb786f1c7e155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c8980c3ece5abe91d2c5a01b1756a03"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#a8c8980c3ece5abe91d2c5a01b1756a03">getPotentialContacts</a> (<a class="el" href="structr3_1_1_potential_contacts.html">PotentialContacts</a> *contacts, unsigned int limit) const</td></tr>
-<tr class="separator:a8c8980c3ece5abe91d2c5a01b1756a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a8083e409cd4452e25878e80283440f"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#a9a8083e409cd4452e25878e80283440f">getPotentialContacts</a> (<a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> *contacts, unsigned limit) const</td></tr>
+<tr class="separator:a9a8083e409cd4452e25878e80283440f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a69ec6f958bbe07629cd979599532dfd8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#a69ec6f958bbe07629cd979599532dfd8">overlaps</a> (<a class="el" href="classr3_1_1_b_v_h_node.html">BVHNode</a>&lt; BoundingVolumeClass &gt; *other) const</td></tr>
 <tr class="separator:a69ec6f958bbe07629cd979599532dfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca88cf5bd4b1c4981198cec816f122e8"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#aca88cf5bd4b1c4981198cec816f122e8">getPotentialContactsWith</a> (<a class="el" href="classr3_1_1_b_v_h_node.html">BVHNode</a>&lt; BoundingVolumeClass &gt; *other, <a class="el" href="structr3_1_1_potential_contacts.html">PotentialContacts</a> *contacts, unsigned limit) const</td></tr>
-<tr class="separator:aca88cf5bd4b1c4981198cec816f122e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf81453da8179650565a0a5379ccb5cb"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#abf81453da8179650565a0a5379ccb5cb">getPotentialContactsWith</a> (<a class="el" href="classr3_1_1_b_v_h_node.html">BVHNode</a>&lt; BoundingVolumeClass &gt; *other, <a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> *contacts, unsigned limit) const</td></tr>
+<tr class="separator:abf81453da8179650565a0a5379ccb5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52539a0d78d758021a2fe4bedd30e671"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#a52539a0d78d758021a2fe4bedd30e671">recalculateBoundingVolume</a> ()</td></tr>
 <tr class="separator:a52539a0d78d758021a2fe4bedd30e671"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6f91727e36689a7edc9f8c168ab904b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_b_v_h_node.html#ab6f91727e36689a7edc9f8c168ab904b">insert</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *newBody, const BoundingVolumeClass &amp;newVolume)</td></tr>
@@ -211,8 +219,8 @@ template&lt;class BoundingVolumeClass &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8c8980c3ece5abe91d2c5a01b1756a03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c8980c3ece5abe91d2c5a01b1756a03">&#9670;&nbsp;</a></span>getPotentialContacts()</h2>
+<a id="a9a8083e409cd4452e25878e80283440f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a8083e409cd4452e25878e80283440f">&#9670;&nbsp;</a></span>getPotentialContacts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -220,15 +228,15 @@ template&lt;class BoundingVolumeClass &gt; </div>
 template&lt;class BoundingVolumeClass &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int <a class="el" href="classr3_1_1_b_v_h_node.html">r3::BVHNode</a>&lt; BoundingVolumeClass &gt;::getPotentialContacts </td>
+          <td class="memname">unsigned <a class="el" href="classr3_1_1_b_v_h_node.html">r3::BVHNode</a>&lt; BoundingVolumeClass &gt;::getPotentialContacts </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="structr3_1_1_potential_contacts.html">PotentialContacts</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> *&#160;</td>
           <td class="paramname"><em>contacts</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>limit</em>&#160;</td>
         </tr>
         <tr>
@@ -241,8 +249,8 @@ template&lt;class BoundingVolumeClass &gt; </div>
 
 </div>
 </div>
-<a id="aca88cf5bd4b1c4981198cec816f122e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca88cf5bd4b1c4981198cec816f122e8">&#9670;&nbsp;</a></span>getPotentialContactsWith()</h2>
+<a id="abf81453da8179650565a0a5379ccb5cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf81453da8179650565a0a5379ccb5cb">&#9670;&nbsp;</a></span>getPotentialContactsWith()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +269,7 @@ template&lt;class BoundingVolumeClass &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="structr3_1_1_potential_contacts.html">PotentialContacts</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> *&#160;</td>
           <td class="paramname"><em>contacts</em>, </td>
         </tr>
         <tr>
@@ -339,7 +347,9 @@ template&lt;class BoundingVolumeClass &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if this node is a leaf node (= has no child nodes) </p>
+
+<p>Check if this node is a leaf node (= has no child nodes). </p>
+<dl class="section return"><dt>Returns</dt><dd>True if it is a leaf node, false otherwise. </dd></dl>
 
 </div>
 </div>

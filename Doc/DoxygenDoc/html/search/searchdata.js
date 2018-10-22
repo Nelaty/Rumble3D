@@ -5,13 +5,18 @@ var indexSectionsWithContent =
   2: "ru",
   3: "abcdfgimnprstv",
   4: "abcdefghinoprstuv~",
-  5: "ms",
+  5: "mrs",
   6: "abfinpr",
+<<<<<<< Updated upstream
   7: "c",
   8: "r",
   9: "cp",
   10: "gr",
   11: "rt"
+=======
+  7: "gr",
+  8: "rt"
+>>>>>>> Stashed changes
 };
 
 var indexSectionNames =
@@ -23,11 +28,8 @@ var indexSectionNames =
   4: "functions",
   5: "variables",
   6: "typedefs",
-  7: "enums",
-  8: "enumvalues",
-  9: "related",
-  10: "defines",
-  11: "pages"
+  7: "defines",
+  8: "pages"
 };
 
 var indexSectionLabels =
@@ -39,10 +41,7 @@ var indexSectionLabels =
   4: "Functions",
   5: "Variables",
   6: "Typedefs",
-  7: "Enumerations",
-  8: "Enumerator",
-  9: "Friends",
-  10: "Macros",
-  11: "Pages"
+  7: "Macros",
+  8: "Pages"
 };
 

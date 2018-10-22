@@ -27,8 +27,13 @@ Collaboration diagram for r3\+:\+:Particle\+Contact\+Generator\+:\nopagebreak
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_particle_contact_generator_af258aa3e7d7fb8e9c9ca7eb545d27738}{$\sim$\+Particle\+Contact\+Generator}} ()
 \item 
+<<<<<<< Updated upstream
 virtual unsigned \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a3c9c99fb97a4431f0ddf300b30167d03}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned int limit) const =0
 \end{DoxyCompactItemize}
+=======
+virtual void \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&contact\+Data) const =0
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+>>>>>>> Stashed changes
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -52,15 +57,36 @@ virtual unsigned \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a3c9c99
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_a3c9c99fb97a4431f0ddf300b30167d03}\label{classr3_1_1_particle_contact_generator_a3c9c99fb97a4431f0ddf300b30167d03}} 
+\mbox{\Hypertarget{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}\label{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}} 
 \index{r3\+::\+Particle\+Contact\+Generator@{r3\+::\+Particle\+Contact\+Generator}!add\+Contact@{add\+Contact}}
 \index{add\+Contact@{add\+Contact}!r3\+::\+Particle\+Contact\+Generator@{r3\+::\+Particle\+Contact\+Generator}}
 \subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
-{\footnotesize\ttfamily virtual unsigned r3\+::\+Particle\+Contact\+Generator\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned int}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void r3\+::\+Particle\+Contact\+Generator\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&}]{contact\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
 Implemented in \mbox{\hyperlink{classr3_1_1_particle_link_a07abe1381e0b5ed7e1597099dc0c072d}{r3\+::\+Particle\+Link}}, and \mbox{\hyperlink{classr3_1_1_particle_cable_af8024236316ae2cf7bd68a0e906ed7c7}{r3\+::\+Particle\+Cable}}.
+
+<<<<<<< Updated upstream
+=======
+\begin{DoxyParams}{Parameters}
+{\em contact} & \mbox{\hyperlink{classr3_1_1_contact}{Contact}} array which points to first element in the array. \\
+\hline
+{\em limit} & Maximal number, which the array can hold. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of newly generated contacts. Generate new contacts. 
+\end{DoxyReturn}
+>>>>>>> Stashed changes
+
+\begin{DoxyParams}{Parameters}
+{\em contact\+Data} & Out parameter in which new contacts are added. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb2e6719}{r3\+::\+Particle\+Collision}}, and \mbox{\hyperlink{classr3_1_1_particle_cable_a5187ee9d99fb41cf6e719c22c9b30a7c}{r3\+::\+Particle\+Cable}}.
 
 
 

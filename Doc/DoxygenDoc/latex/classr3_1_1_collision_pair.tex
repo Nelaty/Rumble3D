@@ -1,0 +1,180 @@
+\hypertarget{classr3_1_1_collision_pair}{}\section{r3\+:\+:Collision\+Pair Class Reference}
+\label{classr3_1_1_collision_pair}\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+
+
+A \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} describes a potential collision between two rigid bodies.  
+
+
+
+
+{\ttfamily \#include $<$Collision\+Pair.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Collision\+Pair\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classr3_1_1_collision_pair__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_pair_ab6434bde3aa02c2655e26a976570db01}{Collision\+Pair}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first=nullptr, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classr3_1_1_collision_pair_a38ae2cf6732b5a1b4dfdc544bbff82e0}{$\sim$\+Collision\+Pair}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_pair_a8d56c936cb56821247c5b1a684578c0a}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\begin{DoxyCompactList}\small\item\em Get a rigid body by index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_collision_pair_a7e64e731162cfdc3222d8f02b7c886b1}{init}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second)
+\begin{DoxyCompactList}\small\item\em Initialize the pair with two potentially colliding rigid bodies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_pair_a603f9437f7fa4aa5253ad26247ee75ae}{get\+First}} () const
+\begin{DoxyCompactList}\small\item\em Get the first rigid body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_collision_pair_ac900e6382810b6820dc3f4ecf832bb6b}{set\+First}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first)
+\begin{DoxyCompactList}\small\item\em Set the first rigid body. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_pair_a218a4ee7500ed53c3ba5384833afff5a}{get\+Second}} () const
+\begin{DoxyCompactList}\small\item\em Get the second rigid body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_collision_pair_acb8c2f4a2c44eeffb8a3d76023db985b}{set\+Second}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second)
+\begin{DoxyCompactList}\small\item\em Set the second rigid body. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_collision_pair_a8ef5b5bae7be7db3ed2574ecd9e5bf9a}{swap\+Bodies}} ()
+\begin{DoxyCompactList}\small\item\em Swap first and second rigid body. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} describes a potential collision between two rigid bodies. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_ab6434bde3aa02c2655e26a976570db01}\label{classr3_1_1_collision_pair_ab6434bde3aa02c2655e26a976570db01}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!Collision\+Pair@{Collision\+Pair}}
+\index{Collision\+Pair@{Collision\+Pair}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{Collision\+Pair()}{CollisionPair()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Pair\+::\+Collision\+Pair (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first = {\ttfamily nullptr},  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+\mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & First rigid body \\
+\hline
+{\em second} & Second rigid body \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_a38ae2cf6732b5a1b4dfdc544bbff82e0}\label{classr3_1_1_collision_pair_a38ae2cf6732b5a1b4dfdc544bbff82e0}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!````~Collision\+Pair@{$\sim$\+Collision\+Pair}}
+\index{````~Collision\+Pair@{$\sim$\+Collision\+Pair}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Pair()}{~CollisionPair()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Pair\+::$\sim$\+Collision\+Pair (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_a603f9437f7fa4aa5253ad26247ee75ae}\label{classr3_1_1_collision_pair_a603f9437f7fa4aa5253ad26247ee75ae}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!get\+First@{get\+First}}
+\index{get\+First@{get\+First}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{get\+First()}{getFirst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Collision\+Pair\+::get\+First (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the first rigid body. 
+
+\begin{DoxyReturn}{Returns}
+The first rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_a218a4ee7500ed53c3ba5384833afff5a}\label{classr3_1_1_collision_pair_a218a4ee7500ed53c3ba5384833afff5a}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!get\+Second@{get\+Second}}
+\index{get\+Second@{get\+Second}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{get\+Second()}{getSecond()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Collision\+Pair\+::get\+Second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the second rigid body. 
+
+\begin{DoxyReturn}{Returns}
+The second rigid body 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_a7e64e731162cfdc3222d8f02b7c886b1}\label{classr3_1_1_collision_pair_a7e64e731162cfdc3222d8f02b7c886b1}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!init@{init}}
+\index{init@{init}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second }\end{DoxyParamCaption})}
+
+
+
+Initialize the pair with two potentially colliding rigid bodies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first rigid body \\
+\hline
+{\em second} & The second rigid body \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_a8d56c936cb56821247c5b1a684578c0a}\label{classr3_1_1_collision_pair_a8d56c936cb56821247c5b1a684578c0a}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Collision\+Pair\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+
+
+Get a rigid body by index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Either 0 (first body) or 1 (second body) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+First or second rigid body. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_ac900e6382810b6820dc3f4ecf832bb6b}\label{classr3_1_1_collision_pair_ac900e6382810b6820dc3f4ecf832bb6b}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!set\+First@{set\+First}}
+\index{set\+First@{set\+First}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{set\+First()}{setFirst()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::set\+First (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first }\end{DoxyParamCaption})}
+
+
+
+Set the first rigid body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & A rigid body, which might collide with the second one. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_acb8c2f4a2c44eeffb8a3d76023db985b}\label{classr3_1_1_collision_pair_acb8c2f4a2c44eeffb8a3d76023db985b}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!set\+Second@{set\+Second}}
+\index{set\+Second@{set\+Second}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{set\+Second()}{setSecond()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::set\+Second (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second }\end{DoxyParamCaption})}
+
+
+
+Set the second rigid body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em second} & A rigid body, which might collide with the first one. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_collision_pair_a8ef5b5bae7be7db3ed2574ecd9e5bf9a}\label{classr3_1_1_collision_pair_a8ef5b5bae7be7db3ed2574ecd9e5bf9a}} 
+\index{r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}!swap\+Bodies@{swap\+Bodies}}
+\index{swap\+Bodies@{swap\+Bodies}!r3\+::\+Collision\+Pair@{r3\+::\+Collision\+Pair}}
+\subsubsection{\texorpdfstring{swap\+Bodies()}{swapBodies()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Pair\+::swap\+Bodies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Swap first and second rigid body. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_pair_8h}{Collision\+Pair.\+h}}\item 
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_pair_8cpp}{Collision\+Pair.\+cpp}}\end{DoxyCompactItemize}

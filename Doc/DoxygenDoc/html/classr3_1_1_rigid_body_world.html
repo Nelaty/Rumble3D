@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A <a class="el" href="classr3_1_1_rigid_body_world.html" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies. ">RigidBodyWorld</a> is a physics engine module, used to simulate rigid bodies.  
+ <a href="classr3_1_1_rigid_body_world.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_rigid_body_world_8h_source.html">RigidBodyWorld.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::RigidBodyWorld:</div>
@@ -106,8 +109,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:add6c229831a203d61ee8f5e2294b4192"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#add6c229831a203d61ee8f5e2294b4192">~RigidBodyWorld</a> ()</td></tr>
 <tr class="separator:add6c229831a203d61ee8f5e2294b4192"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c5724007917231ebe9bd970d65b0bfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a0c5724007917231ebe9bd970d65b0bfe">setComputationInterface</a> (<a class="el" href="classr3_1_1_rigid_body_engine_c_i.html">RigidBodyEngineCI</a> *computationInterface)</td></tr>
+<tr class="memdesc:a0c5724007917231ebe9bd970d65b0bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the computation interface, which simulates the rigid bodies.  <a href="#a0c5724007917231ebe9bd970d65b0bfe">More...</a><br /></td></tr>
 <tr class="separator:a0c5724007917231ebe9bd970d65b0bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac25b39a5b15666d99f42b68f29f8a97b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_computation_interface.html">IComputationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#ac25b39a5b15666d99f42b68f29f8a97b">getComputationInterface</a> () const override</td></tr>
+<tr class="memdesc:ac25b39a5b15666d99f42b68f29f8a97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world's computation interface.  <a href="#ac25b39a5b15666d99f42b68f29f8a97b">More...</a><br /></td></tr>
 <tr class="separator:ac25b39a5b15666d99f42b68f29f8a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a647ca787c02a56c230eb5d50080b561d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a647ca787c02a56c230eb5d50080b561d">createRigidBody</a> (<a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a> definition=<a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a>())</td></tr>
 <tr class="memdesc:a647ca787c02a56c230eb5d50080b561d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for a new rigid body and register it.  <a href="#a647ca787c02a56c230eb5d50080b561d">More...</a><br /></td></tr>
@@ -119,12 +124,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acdfd6a392a98366cd8414f7f6f50917f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of all rigid bodies.  <a href="#acdfd6a392a98366cd8414f7f6f50917f">More...</a><br /></td></tr>
 <tr class="separator:acdfd6a392a98366cd8414f7f6f50917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e9a0ddd26c25327aa21b3460c52893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body_world.html#abe8c123eee198b6f8eca079e71302bcb">RigidBody_Container</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a31e9a0ddd26c25327aa21b3460c52893">getRigidBodies</a> ()</td></tr>
+<tr class="memdesc:a31e9a0ddd26c25327aa21b3460c52893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world's rigid bodies.  <a href="#a31e9a0ddd26c25327aa21b3460c52893">More...</a><br /></td></tr>
 <tr class="separator:a31e9a0ddd26c25327aa21b3460c52893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf3bfd4b5d7ed2e843362e555b9eebb2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classr3_1_1_rigid_body_world.html#abe8c123eee198b6f8eca079e71302bcb">RigidBody_Container</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#abf3bfd4b5d7ed2e843362e555b9eebb2">getRigidBodies</a> () const</td></tr>
+<tr class="memdesc:abf3bfd4b5d7ed2e843362e555b9eebb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world's rigid bodies.  <a href="#abf3bfd4b5d7ed2e843362e555b9eebb2">More...</a><br /></td></tr>
 <tr class="separator:abf3bfd4b5d7ed2e843362e555b9eebb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acfdc56e2796e5e0d86dbf71582e1b8c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_force_registry.html">ForceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#acfdc56e2796e5e0d86dbf71582e1b8c2">getForceRegistry</a> ()</td></tr>
+<tr class="memdesc:acfdc56e2796e5e0d86dbf71582e1b8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the force registry, which holds all currently active force generators.  <a href="#acfdc56e2796e5e0d86dbf71582e1b8c2">More...</a><br /></td></tr>
 <tr class="separator:acfdc56e2796e5e0d86dbf71582e1b8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ec345de8bdc6e910797434de918dbc2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classr3_1_1_force_registry.html">ForceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a5ec345de8bdc6e910797434de918dbc2">getForceRegistry</a> () const</td></tr>
+<tr class="memdesc:a5ec345de8bdc6e910797434de918dbc2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the force registry, which holds all currently active force generators.  <a href="#a5ec345de8bdc6e910797434de918dbc2">More...</a><br /></td></tr>
 <tr class="separator:a5ec345de8bdc6e910797434de918dbc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_physics_engine_module"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_physics_engine_module')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_physics_engine_module.html">r3::PhysicsEngineModule</a></td></tr>
 <tr class="memitem:af2b491daa564a15ec5362780c885e2ca inherit pub_methods_classr3_1_1_physics_engine_module"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#af2b491daa564a15ec5362780c885e2ca">~PhysicsEngineModule</a> ()</td></tr>
@@ -143,7 +152,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a9697a77e77dc5dd5990b16876ad413bf inherit pro_attribs_classr3_1_1_physics_engine_module"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#a9697a77e77dc5dd5990b16876ad413bf">m_enabled</a></td></tr>
 <tr class="separator:a9697a77e77dc5dd5990b16876ad413bf inherit pro_attribs_classr3_1_1_physics_engine_module"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A <a class="el" href="classr3_1_1_rigid_body_world.html" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies. ">RigidBodyWorld</a> is a physics engine module, used to simulate rigid bodies. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="abe8c123eee198b6f8eca079e71302bcb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abe8c123eee198b6f8eca079e71302bcb">&#9670;&nbsp;</a></span>RigidBody_Container</h2>
 
@@ -305,7 +316,9 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Get the currently used computation interface. </p>
+
+<p>Get the world's computation interface. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current computation interface. </dd></dl>
 
 <p>Implements <a class="el" href="classr3_1_1_physics_engine_module.html#a3b1d0d9bea0a82534f367f6d728312d3">r3::PhysicsEngineModule</a>.</p>
 
@@ -325,7 +338,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Get the force registry, which holds all currently active force generators. </p>
+<dl class="section return"><dt>Returns</dt><dd>The force registry. </dd></dl>
 
 </div>
 </div>
@@ -343,7 +358,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Get the force registry, which holds all currently active force generators. </p>
+<dl class="section return"><dt>Returns</dt><dd>The force registry. </dd></dl>
 
 </div>
 </div>
@@ -361,7 +378,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get all currently registered rigid bodies. </p>
+
+<p>Get the world's rigid bodies. </p>
+<dl class="section return"><dt>Returns</dt><dd>All currently registered rigid bodies. </dd></dl>
 
 </div>
 </div>
@@ -379,7 +398,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get all currently registered rigid bodies. </p>
+
+<p>Get the world's rigid bodies. </p>
+<dl class="section return"><dt>Returns</dt><dd>All currently registered rigid bodies. </dd></dl>
 
 </div>
 </div>
@@ -398,7 +419,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Set the computation interface, which simulates the rigid bodies. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">computationInterface</td><td>The new computation interface. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

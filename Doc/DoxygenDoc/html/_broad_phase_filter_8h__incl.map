@@ -1,7 +1,16 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.h">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="35,392,206,419"/>
 <area shape="rect" id="node4" href="$_i_broad_phase_filter_8h.html" title="IBroadPhaseFilter.h" alt="" coords="107,139,243,165"/>
 <area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="86,467,155,493"/>
 <area shape="rect" id="node5" href="$_broad_phase_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/BroadPhaseCollisionData.h" alt="" coords="158,213,342,269"/>
 <area shape="rect" id="node6" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="159,317,264,344"/>
+=======
+<area shape="rect" id="node2" href="$_i_broad_phase_filter_8h.html" title="IBroadPhaseFilter.h" alt="" coords="122,139,258,165"/>
+<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="46,317,217,344"/>
+<area shape="rect" id="node5" href="$_fixed_size_container_8h.html" title="R3D/Utility/FixedSizeContainer.h" alt="" coords="319,228,531,255"/>
+<area shape="rect" id="node9" href="$_collision_pair_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPair.h" alt="" coords="144,213,295,269"/>
+<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="97,392,166,419"/>
+<area shape="rect" id="node7" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="290,317,509,344"/>
+>>>>>>> Stashed changes
 </map>

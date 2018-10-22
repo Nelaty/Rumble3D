@@ -1,4 +1,5 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="225,421,395,448"/>
 <area shape="rect" id="node4" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="239,139,389,195"/>
 <area shape="rect" id="node12" href="$_broad_phase_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/BroadPhaseCollisionData.h" alt="" coords="30,139,214,195"/>
@@ -6,4 +7,14 @@
 <area shape="rect" id="node5" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="325,243,476,299"/>
 <area shape="rect" id="node6" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="556,347,728,373"/>
 <area shape="rect" id="node9" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="257,347,363,373"/>
+=======
+<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="145,421,315,448"/>
+<area shape="rect" id="node4" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="113,139,264,195"/>
+<area shape="rect" id="node9" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="103,347,208,373"/>
+<area shape="rect" id="node12" href="$_fixed_size_container_8h.html" title="R3D/Utility/FixedSizeContainer.h" alt="" coords="297,153,509,180"/>
+<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="370,496,439,523"/>
+<area shape="rect" id="node5" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="145,243,296,299"/>
+<area shape="rect" id="node6" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="452,347,624,373"/>
+<area shape="rect" id="node13" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="511,257,730,284"/>
+>>>>>>> Stashed changes
 </map>

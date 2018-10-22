@@ -2,6 +2,11 @@
 \label{classr3_1_1_gravity}\index{r3\+::\+Gravity@{r3\+::\+Gravity}}
 
 
+\mbox{\hyperlink{classr3_1_1_gravity}{Gravity}} is a force generator, which will apply constant force on bodies.  
+
+
+
+
 {\ttfamily \#include $<$Gravity.\+h$>$}
 
 
@@ -26,11 +31,11 @@ Collaboration diagram for r3\+:\+:Gravity\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_gravity_a1c5f6d085a7b1484c23f5a6df4b58b05}{Gravity}} (const glm\+::vec3 \&gravity)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_gravity}{Gravity}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_gravity_abdf3edf32d08b6c5b9c2fc161635f993}{$\sim$\+Gravity}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_gravity_ae3152c6a922ffa193aee362e161cd4a9}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -39,6 +44,9 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_gravity_a2feb1d84fc4118e6e30b707a7224f6
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+\mbox{\hyperlink{classr3_1_1_gravity}{Gravity}} is a force generator, which will apply constant force on bodies. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_gravity_a1c5f6d085a7b1484c23f5a6df4b58b05}\label{classr3_1_1_gravity_a1c5f6d085a7b1484c23f5a6df4b58b05}} 
 \index{r3\+::\+Gravity@{r3\+::\+Gravity}!Gravity@{Gravity}}
@@ -46,6 +54,15 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_gravity_a2feb1d84fc4118e6e30b707a7224f6
 \subsubsection{\texorpdfstring{Gravity()}{Gravity()}}
 {\footnotesize\ttfamily r3\+::\+Gravity\+::\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_gravity}{Gravity}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gravity} & A constant force. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_gravity_abdf3edf32d08b6c5b9c2fc161635f993}\label{classr3_1_1_gravity_abdf3edf32d08b6c5b9c2fc161635f993}} 
 \index{r3\+::\+Gravity@{r3\+::\+Gravity}!````~Gravity@{$\sim$\+Gravity}}
 \index{````~Gravity@{$\sim$\+Gravity}!r3\+::\+Gravity@{r3\+::\+Gravity}}
@@ -63,7 +80,18 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_gravity_a2feb1d84fc4118e6e30b707a7224f6
 
 
 
-Reimplemented from \mbox{\hyperlink{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}{r3\+::\+Force\+Generator}}.
+Apply force to a rigid body over a specific time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body on which to apply force. \\
+\hline
+{\em duration} & The duration over which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}{r3\+::\+Force\+Generator}}.
 
 
 

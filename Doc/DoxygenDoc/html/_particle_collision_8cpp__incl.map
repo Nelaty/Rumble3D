@@ -1,4 +1,5 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleCollision.cpp" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleCollision.cpp">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_particle_collision_8h.html" title="R3D/ParticleEngine\l/ParticleCollision.h" alt="" coords="153,124,288,165"/>
 <area shape="rect" id="node10" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="442,124,577,165"/>
 <area shape="rect" id="node13" href="$_particle_contact_8h.html" title="R3D/ParticleEngine\l/ParticleContact.h" alt="" coords="337,213,472,255"/>
@@ -8,4 +9,17 @@
 <area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="204,452,274,479"/>
 <area shape="rect" id="node6" href="$_particle_contact_generator_8h.html" title="ParticleContactGenerator.h" alt="" coords="32,303,211,329"/>
 <area shape="rect" id="node11" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="548,213,682,255"/>
+=======
+<area shape="rect" id="node2" href="$_particle_collision_8h.html" title="R3D/ParticleEngine\l/ParticleCollision.h" alt="" coords="371,124,506,165"/>
+<area shape="rect" id="node14" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="658,124,793,165"/>
+<area shape="rect" id="node17" href="$_particle_contact_8h.html" title="R3D/ParticleEngine\l/ParticleContact.h" alt="" coords="502,213,637,255"/>
+<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="353,452,524,479"/>
+<area shape="rect" id="node5" href="$_particle_link_8h.html" title="ParticleLink.h" alt="" coords="275,221,376,247"/>
+<area shape="rect" id="node11" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="502,303,674,329"/>
+<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="480,527,549,553"/>
+<area shape="rect" id="node6" href="$_particle_contact_generator_8h.html" title="ParticleContactGenerator.h" alt="" coords="147,303,325,329"/>
+<area shape="rect" id="node7" href="$_fixed_size_container_8h.html" title="R3D/Utility/FixedSizeContainer.h" alt="" coords="62,377,274,404"/>
+<area shape="rect" id="node9" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="85,452,304,479"/>
+<area shape="rect" id="node15" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="763,213,898,255"/>
+>>>>>>> Stashed changes
 </map>

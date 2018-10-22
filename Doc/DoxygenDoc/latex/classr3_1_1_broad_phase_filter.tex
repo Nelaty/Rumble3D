@@ -29,7 +29,7 @@ Collaboration diagram for r3\+:\+:Broad\+Phase\+Filter\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a3c28ac36ed06766b235efad77ff9fd5d}{$\sim$\+Broad\+Phase\+Filter}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a16b87610362f670906ca7d9a3251815f}{generate\+Collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&rigid\+Bodies, \mbox{\hyperlink{classr3_1_1_broad_phase_collision_data}{Broad\+Phase\+Collision\+Data}} \&data) override
+void \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a0435dc6468401e32bf151f84f52e80f8}{generate\+Collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&rigid\+Bodies, \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&data) override
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -50,11 +50,11 @@ void \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a16b87610362f670906ca7d9a32
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_broad_phase_filter_a16b87610362f670906ca7d9a3251815f}\label{classr3_1_1_broad_phase_filter_a16b87610362f670906ca7d9a3251815f}} 
+\mbox{\Hypertarget{classr3_1_1_broad_phase_filter_a0435dc6468401e32bf151f84f52e80f8}\label{classr3_1_1_broad_phase_filter_a0435dc6468401e32bf151f84f52e80f8}} 
 \index{r3\+::\+Broad\+Phase\+Filter@{r3\+::\+Broad\+Phase\+Filter}!generate\+Collisions@{generate\+Collisions}}
 \index{generate\+Collisions@{generate\+Collisions}!r3\+::\+Broad\+Phase\+Filter@{r3\+::\+Broad\+Phase\+Filter}}
 \subsubsection{\texorpdfstring{generate\+Collisions()}{generateCollisions()}}
-{\footnotesize\ttfamily void r3\+::\+Broad\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&}]{rigid\+Bodies,  }\item[{\mbox{\hyperlink{classr3_1_1_broad_phase_collision_data}{Broad\+Phase\+Collision\+Data}} \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Broad\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&}]{rigid\+Bodies,  }\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. \begin{DoxyReturn}{Returns}
 A number of possible collisions. 
@@ -63,7 +63,7 @@ A number of possible collisions.
 \item[\mbox{\hyperlink{todo__todo000009}{Todo}}]use rigid body mask and layout \end{DoxyRefDesc}
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_a19bfa977243bcdd0ec143a0aca750649}{r3\+::\+I\+Broad\+Phase\+Filter}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_a5f437f6390a8f10bf96d72e35e3b4432}{r3\+::\+I\+Broad\+Phase\+Filter}}.
 
 
 

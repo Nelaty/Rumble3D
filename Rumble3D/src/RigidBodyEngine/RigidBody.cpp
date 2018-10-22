@@ -334,9 +334,8 @@ namespace r3
 	void RigidBody::addForceAtPoint(const glm::vec3& force, const glm::vec3& point)
 	{
 		// Angriffspunkt der Kraft relativ zum Schwerpunkt:
-		auto pt = point;
-		pt -= m_transform.getPosition();
-
+		const auto pt = point - m_transform.getPosition();
+		
 		m_forceAccumulated += force;
 		m_torqueAccumulated += cross(pt, force);
 	}

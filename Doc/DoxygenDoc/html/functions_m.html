@@ -88,13 +88,9 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body.html#abfcca5ae4caa68d23ba68cc4fd1d2d33">r3::RigidBody</a>
 , <a class="el" href="structr3_1_1_rigid_body_def.html#a3d48ea179d5ebc3a906949a623236c5a">r3::RigidBodyDef</a>
 </li>
-<li>m_bodies
-: <a class="el" href="structr3_1_1_potential_contacts.html#abe9023b80e8adb82b9e2e0cb65527b3b">r3::PotentialContacts</a>
-</li>
 <li>m_body
 : <a class="el" href="classr3_1_1_b_v_h_node.html#a7f1a7f51f17ed00cc39298ff4d1f1d57">r3::BVHNode&lt; BoundingVolumeClass &gt;</a>
 , <a class="el" href="classr3_1_1_collision_primitive.html#a3ae500c9bd222ec42d86696702e746db">r3::CollisionPrimitive</a>
-, <a class="el" href="classr3_1_1_contact_old.html#aa429e9cfd0ccb3216cf85b53fb9c98a2">r3::ContactOld</a>
 </li>
 <li>m_bounds
 : <a class="el" href="classr3_1_1_bounding_box.html#ad23e4002c102c50ac31f6bb5da6d9d39">r3::BoundingBox</a>
@@ -124,15 +120,10 @@ $(function() {
 : <a class="el" href="classr3_1_1_anchored_spring.html#ac8998ca820fd075aed011136155ec1fb">r3::AnchoredSpring</a>
 , <a class="el" href="classr3_1_1_spring.html#a3c1e08e176ebc363b9f217875036955d">r3::Spring</a>
 </li>
-<li>m_contactArray
-: <a class="el" href="classr3_1_1_collision_data_old.html#a2100ba5e8b3f49926d09b2ad5ca547f1">r3::CollisionDataOld</a>
-</li>
-<li>m_contactCount
-: <a class="el" href="classr3_1_1_collision_data_old.html#af89be6ec7df393c62d8cfa27bbf27d5f">r3::CollisionDataOld</a>
-</li>
 <li>m_contactGenerators
 : <a class="el" href="classr3_1_1_particle_contact_generator_registry.html#abefd730c20539681ed0fac53ccd5f8ab">r3::ParticleContactGeneratorRegistry</a>
 </li>
+<<<<<<< Updated upstream
 <li>m_contactNormal
 : <a class="el" href="classr3_1_1_contact_old.html#ae8e7196a96c9ed05deaefe449933f468">r3::ContactOld</a>
 , <a class="el" href="classr3_1_1_particle_contact.html#a4cc7097057e4985e2f102eace531c2a2">r3::ParticleContact</a>
@@ -151,13 +142,14 @@ $(function() {
 </li>
 <li>m_contactVelocity
 : <a class="el" href="classr3_1_1_contact_old.html#a57be0340f8094c70edbb55287b2dd861">r3::ContactOld</a>
+=======
+<li>m_crossSectionalArea
+: <a class="el" href="classr3_1_1_particle_drag.html#a78e20cea8aeb424684413129148c2a00">r3::ParticleDrag</a>
+>>>>>>> Stashed changes
 </li>
 <li>m_damping
 : <a class="el" href="classr3_1_1_particle.html#a68034523bad4d9e4023f69b849197eb3">r3::Particle</a>
 , <a class="el" href="structr3_1_1_particle_def.html#a76008c519d8c2fd21b7c866708dceb5c">r3::ParticleDef</a>
-</li>
-<li>m_desiredDeltaVelocity
-: <a class="el" href="classr3_1_1_contact_old.html#a9aca0d5261cb4f8b27a7270c7c6f0e45">r3::ContactOld</a>
 </li>
 <li>m_distance
 : <a class="el" href="classr3_1_1_particle_collision.html#a269b3beb261aee2fbd784210025cdebf">r3::ParticleCollision</a>
@@ -184,9 +176,7 @@ $(function() {
 , <a class="el" href="structr3_1_1_particle_force_registry_1_1_particle_force_registration_entry.html#ae3930ad7fedc39be90fab7ef27ae5d46">r3::ParticleForceRegistry::ParticleForceRegistrationEntry</a>
 </li>
 <li>m_friction
-: <a class="el" href="classr3_1_1_collision_data_old.html#a598bcf57a27bd4ed84eab8f64b334c12">r3::CollisionDataOld</a>
-, <a class="el" href="classr3_1_1_contact_old.html#a699b5339e2ea93550be5b977f8588a8d">r3::ContactOld</a>
-, <a class="el" href="structr3_1_1_physics_material_def.html#aef82d9585791c1470ab92c6efa57b1b9">r3::PhysicsMaterialDef</a>
+: <a class="el" href="structr3_1_1_physics_material_def.html#aef82d9585791c1470ab92c6efa57b1b9">r3::PhysicsMaterialDef</a>
 </li>
 <li>m_gravity
 : <a class="el" href="classr3_1_1_gravity.html#a2feb1d84fc4118e6e30b707a7224f6ef">r3::Gravity</a>
@@ -296,9 +286,13 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle_engine_c_i.html#ad13321df475d526a7a2ed34e46cc10ee">r3::ParticleEngineCI</a>
 </li>
 <li>m_penetration
+<<<<<<< Updated upstream
 : <a class="el" href="classr3_1_1_contact_old.html#a16bc66cf09d851c50403436098613470">r3::ContactOld</a>
 , <a class="el" href="classr3_1_1_particle_collision.html#a4e27e43b9a17e4a1d04ff91b808b4da9">r3::ParticleCollision</a>
 , <a class="el" href="classr3_1_1_particle_contact.html#a9c0b9355187b9cb9339f108da11f4244">r3::ParticleContact</a>
+=======
+: <a class="el" href="classr3_1_1_particle_collision.html#a4e27e43b9a17e4a1d04ff91b808b4da9">r3::ParticleCollision</a>
+>>>>>>> Stashed changes
 </li>
 <li>m_physicsMaterial
 : <a class="el" href="classr3_1_1_rigid_body.html#a49766d24aef2bf1db8081fdac50c7924">r3::RigidBody</a>
@@ -308,15 +302,6 @@ $(function() {
 : <a class="el" href="classr3_1_1_particle.html#ab7f5aa7cf48278441aab18db1a0c1ba9">r3::Particle</a>
 , <a class="el" href="structr3_1_1_particle_def.html#ac608a2d4c722142aa767187ca2f0dc3e">r3::ParticleDef</a>
 </li>
-<li>m_positionEpsilon
-: <a class="el" href="classr3_1_1_contact_resolver_old.html#a3c78dc280aa7b4c225efe5ad0c463dba">r3::ContactResolverOld</a>
-</li>
-<li>m_positionIterations
-: <a class="el" href="classr3_1_1_contact_resolver_old.html#a3ed5ff0480a616abaf4b2419cd17d914">r3::ContactResolverOld</a>
-</li>
-<li>m_positionIterationsUsed
-: <a class="el" href="classr3_1_1_contact_resolver_old.html#a88dc91918290c9d56f3556c3ecf3f83f">r3::ContactResolverOld</a>
-</li>
 <li>m_radius
 : <a class="el" href="classr3_1_1_bounding_sphere.html#a37ccefd38d8cea7a0d52b85f771ec7c4">r3::BoundingSphere</a>
 , <a class="el" href="classr3_1_1_collision_sphere.html#abc9e3dcae422b4732a288fa19d89d466">r3::CollisionSphere</a>
@@ -325,13 +310,8 @@ $(function() {
 : <a class="el" href="classr3_1_1_force_registry.html#a36847da26301dc4b18e6b6b25fb2fa51">r3::ForceRegistry</a>
 , <a class="el" href="classr3_1_1_particle_force_registry.html#aadf01f7d6f670e7b32e3d185a0414c29">r3::ParticleForceRegistry</a>
 </li>
-<li>m_relativeContactPosition
-: <a class="el" href="classr3_1_1_contact_old.html#ac94552ced5feefe3fd4886d01f0ec53b">r3::ContactOld</a>
-</li>
 <li>m_restitution
-: <a class="el" href="classr3_1_1_collision_data_old.html#ae4fb8abfc80fdf2637e89bd2ef621aac">r3::CollisionDataOld</a>
-, <a class="el" href="classr3_1_1_contact_old.html#aa53d49477b850e2f0250a4fcb232012d">r3::ContactOld</a>
-, <a class="el" href="classr3_1_1_particle_cable.html#ad03466bf1aeecddec5fd0319be7b2e3d">r3::ParticleCable</a>
+: <a class="el" href="classr3_1_1_particle_cable.html#ad03466bf1aeecddec5fd0319be7b2e3d">r3::ParticleCable</a>
 , <a class="el" href="classr3_1_1_particle_collision.html#a02dd7e5f227a429bcb707ad46adeb292">r3::ParticleCollision</a>
 , <a class="el" href="classr3_1_1_particle_contact.html#ad5c4ed20d7bed8526d4e9ae918d2f74f">r3::ParticleContact</a>
 , <a class="el" href="structr3_1_1_physics_material_def.html#abf6dd41075d432324d9524e18f041a87">r3::PhysicsMaterialDef</a>
@@ -380,15 +360,6 @@ $(function() {
 , <a class="el" href="structr3_1_1_particle_def.html#a0c69fb8b0e2994e5ff24aa1156bdb5fd">r3::ParticleDef</a>
 , <a class="el" href="classr3_1_1_rigid_body.html#a2de7cddcf262009fc8261688d1e56c49">r3::RigidBody</a>
 , <a class="el" href="structr3_1_1_rigid_body_def.html#a3acdc6c652745324b72165c6fc42bc39">r3::RigidBodyDef</a>
-</li>
-<li>m_velocityEpsilon
-: <a class="el" href="classr3_1_1_contact_resolver_old.html#a13d89abda1eafba06fce820a9216c028">r3::ContactResolverOld</a>
-</li>
-<li>m_velocityIterations
-: <a class="el" href="classr3_1_1_contact_resolver_old.html#ac2829b208a21c2cb3902cee603e07bdd">r3::ContactResolverOld</a>
-</li>
-<li>m_velocityIterationsUsed
-: <a class="el" href="classr3_1_1_contact_resolver_old.html#ac93418569aaadc1fed711b9d7902ac56">r3::ContactResolverOld</a>
 </li>
 <li>m_volume
 : <a class="el" href="classr3_1_1_b_v_h_node.html#a114366b1f5cbb56f6f650f9c794258a7">r3::BVHNode&lt; BoundingVolumeClass &gt;</a>

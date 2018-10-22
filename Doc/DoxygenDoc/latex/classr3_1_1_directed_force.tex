@@ -2,6 +2,11 @@
 \label{classr3_1_1_directed_force}\index{r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}}
 
 
+A \mbox{\hyperlink{classr3_1_1_directed_force}{Directed\+Force}} is a force generator, which will continually apply a specified force at a specific body point.  
+
+
+
+
 {\ttfamily \#include $<$Directed\+Force.\+h$>$}
 
 
@@ -25,24 +30,38 @@ Collaboration diagram for r3\+:\+:Directed\+Force\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classr3_1_1_directed_force_a78344fdabf983876dadb3745df4f3223}{Directed\+Force}} (glm\+::vec3 local\+Position, glm\+::vec3 force)
-\item 
+\mbox{\hyperlink{classr3_1_1_directed_force_a01b61a6ebe0c54f92952d69e3d0cf09e}{Directed\+Force}} (const glm\+::vec3 \&local\+Position, const glm\+::vec3 \&force)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_directed_force}{Directed\+Force}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_directed_force_a98aa1b750a187ba18a6fce0c530e397f}{$\sim$\+Directed\+Force}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_directed_force_ac723ddeef767956d16fb9d0a1d706bfd}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\item 
+\begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_directed_force_a5c25cdaa94e053ffd2614472d2a04c7e}{set\+Force}} (const glm\+::vec3 \&force)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the force, which will act on the body. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_directed_force}{Directed\+Force}} is a force generator, which will continually apply a specified force at a specific body point. 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classr3_1_1_directed_force_a78344fdabf983876dadb3745df4f3223}\label{classr3_1_1_directed_force_a78344fdabf983876dadb3745df4f3223}} 
+\mbox{\Hypertarget{classr3_1_1_directed_force_a01b61a6ebe0c54f92952d69e3d0cf09e}\label{classr3_1_1_directed_force_a01b61a6ebe0c54f92952d69e3d0cf09e}} 
 \index{r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}!Directed\+Force@{Directed\+Force}}
 \index{Directed\+Force@{Directed\+Force}!r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}}
 \subsubsection{\texorpdfstring{Directed\+Force()}{DirectedForce()}}
-{\footnotesize\ttfamily r3\+::\+Directed\+Force\+::\+Directed\+Force (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{local\+Position,  }\item[{glm\+::vec3}]{force }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily r3\+::\+Directed\+Force\+::\+Directed\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{local\+Position,  }\item[{const glm\+::vec3 \&}]{force }\end{DoxyParamCaption})}
 
+
+
+\mbox{\hyperlink{classr3_1_1_directed_force}{Directed\+Force}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+Position} & Attack point of the force. \\
+\hline
+{\em force} & The force, which will act on the body. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_directed_force_a98aa1b750a187ba18a6fce0c530e397f}\label{classr3_1_1_directed_force_a98aa1b750a187ba18a6fce0c530e397f}} 
 \index{r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}!````~Directed\+Force@{$\sim$\+Directed\+Force}}
 \index{````~Directed\+Force@{$\sim$\+Directed\+Force}!r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}}
@@ -58,6 +77,15 @@ void \mbox{\hyperlink{classr3_1_1_directed_force_a5c25cdaa94e053ffd2614472d2a04c
 \subsubsection{\texorpdfstring{set\+Force()}{setForce()}}
 {\footnotesize\ttfamily void r3\+::\+Directed\+Force\+::set\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force }\end{DoxyParamCaption})}
 
+
+
+Set the force, which will act on the body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em force} & The new force. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_directed_force_ac723ddeef767956d16fb9d0a1d706bfd}\label{classr3_1_1_directed_force_ac723ddeef767956d16fb9d0a1d706bfd}} 
 \index{r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+Directed\+Force@{r3\+::\+Directed\+Force}}
@@ -66,7 +94,18 @@ void \mbox{\hyperlink{classr3_1_1_directed_force_a5c25cdaa94e053ffd2614472d2a04c
 
 
 
-Reimplemented from \mbox{\hyperlink{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}{r3\+::\+Force\+Generator}}.
+Apply force to a rigid body over a specific time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body on which to apply force. \\
+\hline
+{\em duration} & The duration over which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}{r3\+::\+Force\+Generator}}.
 
 
 

@@ -77,6 +77,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>A rigid body is a 3D object, which can be moved and rotated and has collision properties.  
+ <a href="classr3_1_1_rigid_body.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_rigid_body_8h_source.html">RigidBody.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::RigidBody:</div>
@@ -104,95 +107,137 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8acb625440a10d83a87e9139bc9429d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a8acb625440a10d83a87e9139bc9429d5">RigidBody</a> ()</td></tr>
 <tr class="separator:a8acb625440a10d83a87e9139bc9429d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d12d73e66bca3b95a9597f064fa9d56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a5d12d73e66bca3b95a9597f064fa9d56">RigidBody</a> (const <a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a> &amp;def)</td></tr>
+<tr class="memdesc:a5d12d73e66bca3b95a9597f064fa9d56"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. ">RigidBody</a> constructor.  <a href="#a5d12d73e66bca3b95a9597f064fa9d56">More...</a><br /></td></tr>
 <tr class="separator:a5d12d73e66bca3b95a9597f064fa9d56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84d30e7e97d0341c08f58efc8ec60532"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a84d30e7e97d0341c08f58efc8ec60532">~RigidBody</a> ()</td></tr>
 <tr class="separator:a84d30e7e97d0341c08f58efc8ec60532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa617fb4da3d5aeec43e04983765f7db6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aa617fb4da3d5aeec43e04983765f7db6">init</a> (const <a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a> &amp;definition)</td></tr>
+<tr class="memdesc:aa617fb4da3d5aeec43e04983765f7db6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all attributes of this rigid body. param definition Rigid body construction information.  <a href="#aa617fb4da3d5aeec43e04983765f7db6">More...</a><br /></td></tr>
 <tr class="separator:aa617fb4da3d5aeec43e04983765f7db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:addae07b8e8842e78012c5f3825e5185a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#addae07b8e8842e78012c5f3825e5185a">calculateDerivedData</a> ()</td></tr>
 <tr class="separator:addae07b8e8842e78012c5f3825e5185a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01092f4ae330b7fd13421d8c8177a30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a01092f4ae330b7fd13421d8c8177a30e">setInertiaTensor</a> (const glm::mat3 &amp;inertiaTensor)</td></tr>
+<tr class="memdesc:a01092f4ae330b7fd13421d8c8177a30e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current inertia tensor.  <a href="#a01092f4ae330b7fd13421d8c8177a30e">More...</a><br /></td></tr>
 <tr class="separator:a01092f4ae330b7fd13421d8c8177a30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a99ed119357d0cec8b77dfcb169dfab"><td class="memItemLeft" align="right" valign="top">glm::mat3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a8a99ed119357d0cec8b77dfcb169dfab">getInverseTensor</a> () const</td></tr>
+<tr class="memdesc:a8a99ed119357d0cec8b77dfcb169dfab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inverted inertia tensor.  <a href="#a8a99ed119357d0cec8b77dfcb169dfab">More...</a><br /></td></tr>
 <tr class="separator:a8a99ed119357d0cec8b77dfcb169dfab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84c88437d863261773c9514d87bbc56a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a84c88437d863261773c9514d87bbc56a">setMass</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> mass)</td></tr>
+<tr class="memdesc:a84c88437d863261773c9514d87bbc56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the mass of this rigid body.  <a href="#a84c88437d863261773c9514d87bbc56a">More...</a><br /></td></tr>
 <tr class="separator:a84c88437d863261773c9514d87bbc56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a171ee8190ba1c7c2a40c5faf8d654170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a171ee8190ba1c7c2a40c5faf8d654170">getMass</a> () const</td></tr>
+<tr class="memdesc:a171ee8190ba1c7c2a40c5faf8d654170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the mass of this rigid body.  <a href="#a171ee8190ba1c7c2a40c5faf8d654170">More...</a><br /></td></tr>
 <tr class="separator:a171ee8190ba1c7c2a40c5faf8d654170"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28ee9e1542663a4e704077e9327ddece"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a28ee9e1542663a4e704077e9327ddece">setInverseMass</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> inverseMass)</td></tr>
+<tr class="memdesc:a28ee9e1542663a4e704077e9327ddece"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the inverse mass of this rigid body.  <a href="#a28ee9e1542663a4e704077e9327ddece">More...</a><br /></td></tr>
 <tr class="separator:a28ee9e1542663a4e704077e9327ddece"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a994b91ccc980c1dcc4ed43f71b6913"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a9a994b91ccc980c1dcc4ed43f71b6913">getInverseMass</a> () const</td></tr>
+<tr class="memdesc:a9a994b91ccc980c1dcc4ed43f71b6913"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inverse mass.  <a href="#a9a994b91ccc980c1dcc4ed43f71b6913">More...</a><br /></td></tr>
 <tr class="separator:a9a994b91ccc980c1dcc4ed43f71b6913"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e2a5b4dd423c75199fb0a4fb2ae078f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a4e2a5b4dd423c75199fb0a4fb2ae078f">hasFiniteMass</a> () const</td></tr>
+<tr class="memdesc:a4e2a5b4dd423c75199fb0a4fb2ae078f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this rigid body has infinite mass.  <a href="#a4e2a5b4dd423c75199fb0a4fb2ae078f">More...</a><br /></td></tr>
 <tr class="separator:a4e2a5b4dd423c75199fb0a4fb2ae078f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae15bce9cc4aa2db577bdfb61464d26c0"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ae15bce9cc4aa2db577bdfb61464d26c0">getForceAccumulated</a> () const</td></tr>
+<tr class="memdesc:ae15bce9cc4aa2db577bdfb61464d26c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current sum of linear forces.  <a href="#ae15bce9cc4aa2db577bdfb61464d26c0">More...</a><br /></td></tr>
 <tr class="separator:ae15bce9cc4aa2db577bdfb61464d26c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5111fa2e4bd5f3a2615525da4c2949"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a8a5111fa2e4bd5f3a2615525da4c2949">getTorqueAccumulated</a> () const</td></tr>
+<tr class="memdesc:a8a5111fa2e4bd5f3a2615525da4c2949"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current sum of rotational forces.  <a href="#a8a5111fa2e4bd5f3a2615525da4c2949">More...</a><br /></td></tr>
 <tr class="separator:a8a5111fa2e4bd5f3a2615525da4c2949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d0738162ca1fe649bab7174e21afd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a96d0738162ca1fe649bab7174e21afd8">setCenterOfMass</a> (const glm::vec3 &amp;centerOfMass)</td></tr>
+<tr class="memdesc:a96d0738162ca1fe649bab7174e21afd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of this rigid body.  <a href="#a96d0738162ca1fe649bab7174e21afd8">More...</a><br /></td></tr>
 <tr class="separator:a96d0738162ca1fe649bab7174e21afd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed33487eb4fdc0009b40361391cdf6c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aed33487eb4fdc0009b40361391cdf6c2">setCenterOfMass</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
+<tr class="memdesc:aed33487eb4fdc0009b40361391cdf6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the position of this rigid body.  <a href="#aed33487eb4fdc0009b40361391cdf6c2">More...</a><br /></td></tr>
 <tr class="separator:aed33487eb4fdc0009b40361391cdf6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b802fe5774292fbc6ce80cccab15151"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a9b802fe5774292fbc6ce80cccab15151">getCenterOfMass</a> () const</td></tr>
+<tr class="memdesc:a9b802fe5774292fbc6ce80cccab15151"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position.  <a href="#a9b802fe5774292fbc6ce80cccab15151">More...</a><br /></td></tr>
 <tr class="separator:a9b802fe5774292fbc6ce80cccab15151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a93ca6f386411f14e5e8b844c214573"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a2a93ca6f386411f14e5e8b844c214573">setOrientation</a> (const glm::quat &amp;orientation)</td></tr>
+<tr class="memdesc:a2a93ca6f386411f14e5e8b844c214573"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current orientation.  <a href="#a2a93ca6f386411f14e5e8b844c214573">More...</a><br /></td></tr>
 <tr class="separator:a2a93ca6f386411f14e5e8b844c214573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6dcfce04ca4add81dce4f140e954c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a8f6dcfce04ca4add81dce4f140e954c7">setOrientation</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> r, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> i, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> j, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> k)</td></tr>
+<tr class="memdesc:a8f6dcfce04ca4add81dce4f140e954c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current orientation.  <a href="#a8f6dcfce04ca4add81dce4f140e954c7">More...</a><br /></td></tr>
 <tr class="separator:a8f6dcfce04ca4add81dce4f140e954c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae12d1d4d9dbbb970ed83fa1eab2d928a"><td class="memItemLeft" align="right" valign="top">glm::quat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ae12d1d4d9dbbb970ed83fa1eab2d928a">getOrientation</a> () const</td></tr>
+<tr class="memdesc:ae12d1d4d9dbbb970ed83fa1eab2d928a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current orientation.  <a href="#ae12d1d4d9dbbb970ed83fa1eab2d928a">More...</a><br /></td></tr>
 <tr class="separator:ae12d1d4d9dbbb970ed83fa1eab2d928a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a033bf2bf8e128b5438fdd91f7d29c051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a033bf2bf8e128b5438fdd91f7d29c051">setVelocity</a> (const glm::vec3 &amp;velocity)</td></tr>
-<tr class="separator:a033bf2bf8e128b5438fdd91f7d29c051"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a244d24ec2368098f4ac38603a982ea54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a244d24ec2368098f4ac38603a982ea54">setVelocity</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
-<tr class="separator:a244d24ec2368098f4ac38603a982ea54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17b3c0a13865cdca6e43037ec7107d58"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a17b3c0a13865cdca6e43037ec7107d58">getVelocity</a> () const</td></tr>
-<tr class="separator:a17b3c0a13865cdca6e43037ec7107d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add57880a9a4df0d016c1639eba48350d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#add57880a9a4df0d016c1639eba48350d">setAcceleration</a> (const glm::vec3 &amp;acceleration)</td></tr>
-<tr class="separator:add57880a9a4df0d016c1639eba48350d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39362e0dad1d6758be86c54fc6e6b944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a39362e0dad1d6758be86c54fc6e6b944">setAcceleration</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
-<tr class="separator:a39362e0dad1d6758be86c54fc6e6b944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa763cbd71d2ba60cc45540854d3ecf9b"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aa763cbd71d2ba60cc45540854d3ecf9b">getAcceleration</a> () const</td></tr>
-<tr class="separator:aa763cbd71d2ba60cc45540854d3ecf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac65bfd9fd7a12de59141fab3c02e8579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ac65bfd9fd7a12de59141fab3c02e8579">setLinearDamping</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> linearDamping)</td></tr>
-<tr class="separator:ac65bfd9fd7a12de59141fab3c02e8579"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab48c055a703f1d3d84b9f1977ef504e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ab48c055a703f1d3d84b9f1977ef504e6">getLinearDamping</a> () const</td></tr>
-<tr class="separator:ab48c055a703f1d3d84b9f1977ef504e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53d9954e15f52459386ea82e299c9857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a53d9954e15f52459386ea82e299c9857">setAngularDamping</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> angularDamping)</td></tr>
-<tr class="separator:a53d9954e15f52459386ea82e299c9857"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afcef73f6bf5ad38780f39c8ebb5c4af1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#afcef73f6bf5ad38780f39c8ebb5c4af1">getAngularDamping</a> () const</td></tr>
-<tr class="separator:afcef73f6bf5ad38780f39c8ebb5c4af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeaad22c99a9254f38c93e8e622bb4c01"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aeaad22c99a9254f38c93e8e622bb4c01">setRotation</a> (const glm::vec3 &amp;rotation)</td></tr>
+<tr class="memdesc:aeaad22c99a9254f38c93e8e622bb4c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current orientation.  <a href="#aeaad22c99a9254f38c93e8e622bb4c01">More...</a><br /></td></tr>
 <tr class="separator:aeaad22c99a9254f38c93e8e622bb4c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ac826cea8762df5a5b5c6113d84ad2b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a5ac826cea8762df5a5b5c6113d84ad2b">setRotation</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
+<tr class="memdesc:a5ac826cea8762df5a5b5c6113d84ad2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current orientation.  <a href="#a5ac826cea8762df5a5b5c6113d84ad2b">More...</a><br /></td></tr>
 <tr class="separator:a5ac826cea8762df5a5b5c6113d84ad2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afd8accdd3c9a75053eaeac0c9c35d07d"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#afd8accdd3c9a75053eaeac0c9c35d07d">getRotation</a> () const</td></tr>
+<tr class="memdesc:afd8accdd3c9a75053eaeac0c9c35d07d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current orientation.  <a href="#afd8accdd3c9a75053eaeac0c9c35d07d">More...</a><br /></td></tr>
 <tr class="separator:afd8accdd3c9a75053eaeac0c9c35d07d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033bf2bf8e128b5438fdd91f7d29c051"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a033bf2bf8e128b5438fdd91f7d29c051">setVelocity</a> (const glm::vec3 &amp;velocity)</td></tr>
+<tr class="memdesc:a033bf2bf8e128b5438fdd91f7d29c051"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current velocity.  <a href="#a033bf2bf8e128b5438fdd91f7d29c051">More...</a><br /></td></tr>
+<tr class="separator:a033bf2bf8e128b5438fdd91f7d29c051"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244d24ec2368098f4ac38603a982ea54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a244d24ec2368098f4ac38603a982ea54">setVelocity</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
+<tr class="memdesc:a244d24ec2368098f4ac38603a982ea54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current velocity.  <a href="#a244d24ec2368098f4ac38603a982ea54">More...</a><br /></td></tr>
+<tr class="separator:a244d24ec2368098f4ac38603a982ea54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17b3c0a13865cdca6e43037ec7107d58"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a17b3c0a13865cdca6e43037ec7107d58">getVelocity</a> () const</td></tr>
+<tr class="memdesc:a17b3c0a13865cdca6e43037ec7107d58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current velocity.  <a href="#a17b3c0a13865cdca6e43037ec7107d58">More...</a><br /></td></tr>
+<tr class="separator:a17b3c0a13865cdca6e43037ec7107d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add57880a9a4df0d016c1639eba48350d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#add57880a9a4df0d016c1639eba48350d">setAcceleration</a> (const glm::vec3 &amp;acceleration)</td></tr>
+<tr class="memdesc:add57880a9a4df0d016c1639eba48350d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current acceleration.  <a href="#add57880a9a4df0d016c1639eba48350d">More...</a><br /></td></tr>
+<tr class="separator:add57880a9a4df0d016c1639eba48350d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39362e0dad1d6758be86c54fc6e6b944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a39362e0dad1d6758be86c54fc6e6b944">setAcceleration</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
+<tr class="memdesc:a39362e0dad1d6758be86c54fc6e6b944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current acceleration.  <a href="#a39362e0dad1d6758be86c54fc6e6b944">More...</a><br /></td></tr>
+<tr class="separator:a39362e0dad1d6758be86c54fc6e6b944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa763cbd71d2ba60cc45540854d3ecf9b"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aa763cbd71d2ba60cc45540854d3ecf9b">getAcceleration</a> () const</td></tr>
+<tr class="memdesc:aa763cbd71d2ba60cc45540854d3ecf9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current acceleration.  <a href="#aa763cbd71d2ba60cc45540854d3ecf9b">More...</a><br /></td></tr>
+<tr class="separator:aa763cbd71d2ba60cc45540854d3ecf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac65bfd9fd7a12de59141fab3c02e8579"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ac65bfd9fd7a12de59141fab3c02e8579">setLinearDamping</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> linearDamping)</td></tr>
+<tr class="memdesc:ac65bfd9fd7a12de59141fab3c02e8579"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the linear damping coefficient.  <a href="#ac65bfd9fd7a12de59141fab3c02e8579">More...</a><br /></td></tr>
+<tr class="separator:ac65bfd9fd7a12de59141fab3c02e8579"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab48c055a703f1d3d84b9f1977ef504e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ab48c055a703f1d3d84b9f1977ef504e6">getLinearDamping</a> () const</td></tr>
+<tr class="memdesc:ab48c055a703f1d3d84b9f1977ef504e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the linear damping factor.  <a href="#ab48c055a703f1d3d84b9f1977ef504e6">More...</a><br /></td></tr>
+<tr class="separator:ab48c055a703f1d3d84b9f1977ef504e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53d9954e15f52459386ea82e299c9857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a53d9954e15f52459386ea82e299c9857">setAngularDamping</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> angularDamping)</td></tr>
+<tr class="memdesc:a53d9954e15f52459386ea82e299c9857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the angular damping coefficient.  <a href="#a53d9954e15f52459386ea82e299c9857">More...</a><br /></td></tr>
+<tr class="separator:a53d9954e15f52459386ea82e299c9857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcef73f6bf5ad38780f39c8ebb5c4af1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#afcef73f6bf5ad38780f39c8ebb5c4af1">getAngularDamping</a> () const</td></tr>
+<tr class="memdesc:afcef73f6bf5ad38780f39c8ebb5c4af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the angular damping coefficient.  <a href="#afcef73f6bf5ad38780f39c8ebb5c4af1">More...</a><br /></td></tr>
+<tr class="separator:afcef73f6bf5ad38780f39c8ebb5c4af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64a7edc9c2771caeceb54033d8953e2c"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a64a7edc9c2771caeceb54033d8953e2c">getTransformationMatrix</a> () const</td></tr>
+<tr class="memdesc:a64a7edc9c2771caeceb54033d8953e2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current transformation matrix.  <a href="#a64a7edc9c2771caeceb54033d8953e2c">More...</a><br /></td></tr>
 <tr class="separator:a64a7edc9c2771caeceb54033d8953e2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae9057a0acbb7dd552a23557ed773b3d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#ae9057a0acbb7dd552a23557ed773b3d5">getInverseInertiaTensorWorld</a> (glm::mat3 *inverseInertiaTensorWorld) const</td></tr>
+<tr class="memdesc:ae9057a0acbb7dd552a23557ed773b3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the inverted inertia tensor in world coordinates.  <a href="#ae9057a0acbb7dd552a23557ed773b3d5">More...</a><br /></td></tr>
 <tr class="separator:ae9057a0acbb7dd552a23557ed773b3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3303f1eb97e56d75562525b5e317937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aa3303f1eb97e56d75562525b5e317937">addVelocity</a> (const glm::vec3 &amp;deltaVelocity)</td></tr>
+<tr class="memdesc:aa3303f1eb97e56d75562525b5e317937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additively increase velocity.  <a href="#aa3303f1eb97e56d75562525b5e317937">More...</a><br /></td></tr>
 <tr class="separator:aa3303f1eb97e56d75562525b5e317937"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3f92c7abc8b733a3dac8841ff41b61"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#aaa3f92c7abc8b733a3dac8841ff41b61">addRotation</a> (const glm::vec3 &amp;deltaRotation)</td></tr>
+<tr class="memdesc:aaa3f92c7abc8b733a3dac8841ff41b61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additively increase rotation.  <a href="#aaa3f92c7abc8b733a3dac8841ff41b61">More...</a><br /></td></tr>
 <tr class="separator:aaa3f92c7abc8b733a3dac8841ff41b61"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a162bb9f31e5214001dabb1bdd94a9fbf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a162bb9f31e5214001dabb1bdd94a9fbf">isAwake</a> () const</td></tr>
+<tr class="memdesc:a162bb9f31e5214001dabb1bdd94a9fbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this rigid body is being simulated.  <a href="#a162bb9f31e5214001dabb1bdd94a9fbf">More...</a><br /></td></tr>
 <tr class="separator:a162bb9f31e5214001dabb1bdd94a9fbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd934e55a7f2f09d91f62ded40ebb325"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#acd934e55a7f2f09d91f62ded40ebb325">setAwake</a> (bool awake)</td></tr>
+<tr class="memdesc:acd934e55a7f2f09d91f62ded40ebb325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start or stop simulating this rigid body.  <a href="#acd934e55a7f2f09d91f62ded40ebb325">More...</a><br /></td></tr>
 <tr class="separator:acd934e55a7f2f09d91f62ded40ebb325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f10018dcdfe063a3bdfebdbd508efaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a9f10018dcdfe063a3bdfebdbd508efaf">setPhysicsMaterial</a> (<a class="el" href="classr3_1_1_physics_material.html">PhysicsMaterial</a> *material)</td></tr>
+<tr class="memdesc:a9f10018dcdfe063a3bdfebdbd508efaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the physics material.  <a href="#a9f10018dcdfe063a3bdfebdbd508efaf">More...</a><br /></td></tr>
 <tr class="separator:a9f10018dcdfe063a3bdfebdbd508efaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4de124959ef45fddb8809d60066ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_physics_material.html">PhysicsMaterial</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a6a4de124959ef45fddb8809d60066ca9">getPhysicsMaterial</a> () const</td></tr>
 <tr class="memdesc:a6a4de124959ef45fddb8809d60066ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current physics material.  <a href="#a6a4de124959ef45fddb8809d60066ca9">More...</a><br /></td></tr>
 <tr class="separator:a6a4de124959ef45fddb8809d60066ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86bfec9a651351b27c0f53f5db56c7c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a86bfec9a651351b27c0f53f5db56c7c4">clearAccumulators</a> ()</td></tr>
+<tr class="memdesc:a86bfec9a651351b27c0f53f5db56c7c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset accumulated linear and angular forces.  <a href="#a86bfec9a651351b27c0f53f5db56c7c4">More...</a><br /></td></tr>
 <tr class="separator:a86bfec9a651351b27c0f53f5db56c7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec9e7463d7c9a6607b35a334049a1e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a3ec9e7463d7c9a6607b35a334049a1e3">addForce</a> (const glm::vec3 &amp;force)</td></tr>
+<tr class="memdesc:a3ec9e7463d7c9a6607b35a334049a1e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a force which's attack point is the bodies center of mass.  <a href="#a3ec9e7463d7c9a6607b35a334049a1e3">More...</a><br /></td></tr>
 <tr class="separator:a3ec9e7463d7c9a6607b35a334049a1e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e8fc5409e15ae0184baf3238b97dec7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a9e8fc5409e15ae0184baf3238b97dec7">addForceAtPoint</a> (const glm::vec3 &amp;force, const glm::vec3 &amp;point)</td></tr>
+<tr class="memdesc:a9e8fc5409e15ae0184baf3238b97dec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a force at a specified body point. Can create rotational forces.  <a href="#a9e8fc5409e15ae0184baf3238b97dec7">More...</a><br /></td></tr>
 <tr class="separator:a9e8fc5409e15ae0184baf3238b97dec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abba1067c4db2d246e3f82b6c1bd35c87"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#abba1067c4db2d246e3f82b6c1bd35c87">addForceAtBodyPoint</a> (const glm::vec3 &amp;force, const glm::vec3 &amp;point)</td></tr>
+<tr class="memdesc:abba1067c4db2d246e3f82b6c1bd35c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a force at a specified body point. Can create rotational forces.  <a href="#abba1067c4db2d246e3f82b6c1bd35c87">More...</a><br /></td></tr>
 <tr class="separator:abba1067c4db2d246e3f82b6c1bd35c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a276ac614e4eab3df963d64401112bd36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a276ac614e4eab3df963d64401112bd36">addTorque</a> (const glm::vec3 &amp;torque)</td></tr>
+<tr class="memdesc:a276ac614e4eab3df963d64401112bd36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additively increase torque accumulator..  <a href="#a276ac614e4eab3df963d64401112bd36">More...</a><br /></td></tr>
 <tr class="separator:a276ac614e4eab3df963d64401112bd36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23b72178cb04117c3b016218fefff835"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body.html#a23b72178cb04117c3b016218fefff835">getPointInLocalSpace</a> (const glm::vec3 &amp;point) const</td></tr>
 <tr class="separator:a23b72178cb04117c3b016218fefff835"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,7 +314,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ad664d1dd3a03f183c46c6b7ba7327cfd inherit pro_methods_classr3_1_1_collision_object"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_object.html#ad664d1dd3a03f183c46c6b7ba7327cfd">CollisionObject</a> (<a class="el" href="classr3_1_1_collision_primitive.html">CollisionPrimitive</a> *collisionPrimitive=nullptr)</td></tr>
 <tr class="separator:ad664d1dd3a03f183c46c6b7ba7327cfd inherit pro_methods_classr3_1_1_collision_object"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A rigid body is a 3D object, which can be moved and rotated and has collision properties. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8acb625440a10d83a87e9139bc9429d5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8acb625440a10d83a87e9139bc9429d5">&#9670;&nbsp;</a></span>RigidBody() <span class="overload">[1/2]</span></h2>
 
@@ -319,6 +366,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. ">RigidBody</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">def</td><td>Rigid body construction information. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a84d30e7e97d0341c08f58efc8ec60532"></a>
@@ -362,7 +417,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hinzufügen einer Kraft in Weltkoordinaten. Die Kraft muss am Schwerpunkt angreifen. D'Allembert Prinzip. </p>
+
+<p>Add a force which's attack point is the bodies center of mass. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">force</td><td>The force to be added. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -391,7 +453,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hinzufügen einer Kraft in Weltkoordinaten. Die Kraft wirkt in einem Punkt in lokalen Körperkoordinaten. D'Allembert Prinzip. </p>
+
+<p>Add a force at a specified body point. Can create rotational forces. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">force</td><td>The force to be applied </td></tr>
+    <tr><td class="paramname">point</td><td>The attack point of the force in local body coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -420,7 +490,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hinzufügen einer Kraft in Weltkoordinaten. Die Kraft wirkt in einem Punkt in Weltkoordinaten. D'Allembert Prinzip. Kraft kann auch Drehmoment bewirken. </p>
+
+<p>Add a force at a specified body point. Can create rotational forces. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">force</td><td>The force to be applied </td></tr>
+    <tr><td class="paramname">point</td><td>The attack point of the force in world coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -440,6 +518,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Additively increase rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaRotation</td><td>The summand. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a276ac614e4eab3df963d64401112bd36"></a>
@@ -457,7 +543,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Hinzufügen eines Drehmoments. D'Allembert Prinzip. </p>
+
+<p>Additively increase torque accumulator.. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">torque</td><td>The torque to be added. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -476,6 +569,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Additively increase velocity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">deltaVelocity</td><td>The summand. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -552,7 +653,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Löschen aller aufsummierten Kräfte und Drehmomente. </p>
+
+<p>Reset accumulated linear and angular forces. </p>
 
 </div>
 </div>
@@ -570,6 +672,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the current acceleration. </p>
+<dl class="section return"><dt>Returns</dt><dd>The acceleration. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -587,6 +695,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the angular damping coefficient. </p>
+<dl class="section return"><dt>Returns</dt><dd>The angular damping coefficient. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -604,6 +718,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the current position. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -658,6 +778,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the current sum of linear forces. </p>
+<dl class="section return"><dt>Returns</dt><dd>The force accumulator. </dd></dl>
+
 </div>
 </div>
 <a id="ae9057a0acbb7dd552a23557ed773b3d5"></a>
@@ -676,6 +799,14 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the inverted inertia tensor in world coordinates. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">inverseInertiaTensorWorld</td><td>Contains the inverted inertia tensor. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9a994b91ccc980c1dcc4ed43f71b6913"></a>
@@ -692,6 +823,13 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the inverse mass. </p>
+<dl class="section return"><dt>Returns</dt><dd>The inverse of the current mass.</dd></dl>
+<p>An inverse mass of zero equals a rigid body with infinite mass. </p>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -709,6 +847,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the inverted inertia tensor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The inverse of the current inertia tensor. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -726,6 +870,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the linear damping factor. </p>
+<dl class="section return"><dt>Returns</dt><dd>The linear damping coefficient. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -743,6 +893,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the mass of this rigid body. </p>
+<dl class="section return"><dt>Returns</dt><dd>The current mass. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -760,6 +916,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current orientation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The orientation. </dd></dl>
 
 </div>
 </div>
@@ -834,6 +993,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the current orientation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The orientation. </dd></dl>
+
 </div>
 </div>
 <a id="a8a5111fa2e4bd5f3a2615525da4c2949"></a>
@@ -851,6 +1013,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the current sum of rotational forces. </p>
+<dl class="section return"><dt>Returns</dt><dd>The torque accumulator. </dd></dl>
+
 </div>
 </div>
 <a id="a64a7edc9c2771caeceb54033d8953e2c"></a>
@@ -867,6 +1032,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the current transformation matrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>The transformation matrix. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -884,6 +1055,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the current velocity. </p>
+<dl class="section return"><dt>Returns</dt><dd>The velocity. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -901,6 +1078,12 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Check if this rigid body has infinite mass. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if the mass is infinite, false otherwise. </dd></dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -919,6 +1102,11 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Initialize all attributes of this rigid body. param definition Rigid body construction information. </p>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -963,7 +1151,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Check if this rigid body is being simulated. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if it is being siulated, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -982,6 +1172,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the current acceleration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">acceleration</td><td>The new acceleration. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1016,6 +1217,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the current acceleration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-component of the new acceleration </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the new acceleration </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the new acceleration </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1034,6 +1248,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Get the angular damping coefficient. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">angularDamping</td><td>The new angular damping coefficient. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1052,7 +1277,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Start or stop simulating this rigid body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">awake</td><td>The new awake state. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1071,6 +1303,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the position of this rigid body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">centerOfMass</td><td>The new position. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1105,6 +1348,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the position of this rigid body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-component of the new position. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the new position. </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the new position. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1123,6 +1379,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the current inertia tensor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inertiaTensor</td><td>The new inertia tensor. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1141,6 +1408,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the inverse mass of this rigid body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inverseMass</td><td>An inverse mass of zero equals a rigid body with infinite mass.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Implicitly sets the mass. </p>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1159,6 +1438,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the linear damping coefficient. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">linearDamping</td><td>The new linear damping coefficient. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1177,6 +1467,18 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the mass of this rigid body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mass</td><td>The new mass.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Implicitly sets the inverse mass. </p>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1195,6 +1497,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the current orientation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orientation</td><td>The new orientation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1236,6 +1546,17 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the current orientation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">r</td><td>The radius in radians </td></tr>
+    <tr><td class="paramname">i</td><td>The x component of the rotation axis. </td></tr>
+    <tr><td class="paramname">j</td><td>The y component of the rotation axis. </td></tr>
+    <tr><td class="paramname">k</td><td>The z component of the rotation axis. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9f10018dcdfe063a3bdfebdbd508efaf"></a>
@@ -1253,7 +1574,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Set the physics material. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">material</td><td>The new physics material. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1272,6 +1600,14 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the current orientation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rotation</td><td>The new rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -1307,6 +1643,16 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Set the current orientation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-component of the new orientation. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the new orientation. </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the new orientation. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a033bf2bf8e128b5438fdd91f7d29c051"></a>
@@ -1324,6 +1670,17 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the current velocity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">velocity</td><td>The new velocity. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>
@@ -1358,6 +1715,19 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<<<<<<< Updated upstream
+=======
+
+<p>Set the current velocity. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-component of the new velocity. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the new velocity. </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the new velocity. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>

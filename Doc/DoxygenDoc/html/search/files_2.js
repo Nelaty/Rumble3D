@@ -6,12 +6,8 @@ var searchData=
   ['collisionbox_2eh',['CollisionBox.h',['../_collision_box_8h.html',1,'']]],
   ['collisiondata_2ecpp',['CollisionData.cpp',['../_collision_data_8cpp.html',1,'']]],
   ['collisiondata_2eh',['CollisionData.h',['../_collision_data_8h.html',1,'']]],
-  ['collisiondataold_2ecpp',['CollisionDataOld.cpp',['../_collision_data_old_8cpp.html',1,'']]],
-  ['collisiondataold_2eh',['CollisionDataOld.h',['../_collision_data_old_8h.html',1,'']]],
   ['collisiondetector_2ecpp',['CollisionDetector.cpp',['../_collision_detector_8cpp.html',1,'']]],
   ['collisiondetector_2eh',['CollisionDetector.h',['../_collision_detector_8h.html',1,'']]],
-  ['collisiondetectorold_2ecpp',['CollisionDetectorOld.cpp',['../_collision_detector_old_8cpp.html',1,'']]],
-  ['collisiondetectorold_2eh',['CollisionDetectorOld.h',['../_collision_detector_old_8h.html',1,'']]],
   ['collisionmask_2ecpp',['CollisionMask.cpp',['../_collision_mask_8cpp.html',1,'']]],
   ['collisionmask_2eh',['CollisionMask.h',['../_collision_mask_8h.html',1,'']]],
   ['collisionobject_2ecpp',['CollisionObject.cpp',['../_collision_object_8cpp.html',1,'']]],
@@ -29,9 +25,5 @@ var searchData=
   ['common_2eh',['Common.h',['../_common_8h.html',1,'']]],
   ['config_2eh',['Config.h',['../_config_8h.html',1,'']]],
   ['contact_2ecpp',['Contact.cpp',['../_contact_8cpp.html',1,'']]],
-  ['contact_2eh',['Contact.h',['../_contact_8h.html',1,'']]],
-  ['contactold_2ecpp',['ContactOld.cpp',['../_contact_old_8cpp.html',1,'']]],
-  ['contactold_2eh',['ContactOld.h',['../_contact_old_8h.html',1,'']]],
-  ['contactresolverold_2ecpp',['ContactResolverOld.cpp',['../_contact_resolver_old_8cpp.html',1,'']]],
-  ['contactresolverold_2eh',['ContactResolverOld.h',['../_contact_resolver_old_8h.html',1,'']]]
+  ['contact_2eh',['Contact.h',['../_contact_8h.html',1,'']]]
 ];

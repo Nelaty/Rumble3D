@@ -1,5 +1,11 @@
 <map id="r3::ParticleRod" name="r3::ParticleRod">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="{r3::ParticleLink\n||+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="231,476,351,612"/>
 <area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="{r3::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ addContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,248,201,355"/>
 <area shape="rect" id="node4" href="$classr3_1_1_particle.html" title="{r3::Particle\n||+ Particle()\l+ Particle()\l+ ~Particle()\l+ init()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\l+ setPosition()\land 16 more...\l}" alt="" coords="225,189,357,413"/>
+=======
+<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="231,476,351,597"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,248,201,355"/>
+<area shape="rect" id="node4" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,357,413"/>
+>>>>>>> Stashed changes
 </map>

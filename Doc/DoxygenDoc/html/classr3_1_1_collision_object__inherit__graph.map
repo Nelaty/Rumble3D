@@ -1,3 +1,3 @@
 <map id="r3::CollisionObject" name="r3::CollisionObject">
-<area shape="rect" id="node2" href="$classr3_1_1_rigid_body.html" title="{r3::RigidBody\n|# m_physicsMaterial\l# m_collisionMask\l# m_mass\l# m_inverseMass\l# m_linearDamping\l# m_angularDamping\l# m_velocity\l# m_acceleration\l# m_lastFrameAcceleration\l# m_rotation\land 6 more...\l|+ RigidBody()\l+ RigidBody()\l+ ~RigidBody()\l+ init()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\land 41 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="5,219,220,619"/>
+<area shape="rect" id="node2" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="5,219,220,619"/>
 </map>

@@ -25,37 +25,52 @@ Collaboration diagram for r3\+:\+:Default\+Particle\+Engine\+CI\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a58fd25bfac329775ac6031a07bd64fbb}{Default\+Particle\+Engine\+CI}} (unsigned int max\+Contacts, unsigned int iterations=0, \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$particle\+World=nullptr)
-\item 
+\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a5f7619a5dd227d681d5dcbde6e8368eb}{Default\+Particle\+Engine\+CI}} (unsigned contacts\+Max, unsigned iterations=0, \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$particle\+World=nullptr)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i}{Default\+Particle\+Engine\+CI}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}{$\sim$\+Default\+Particle\+Engine\+CI}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}{on\+Begin}} () override
 \item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}{step}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
-\item 
+\begin{DoxyCompactList}\small\item\em Update particle forces. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}{integrate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
-\item 
+\begin{DoxyCompactList}\small\item\em Perform integration and solve collisions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}{on\+End}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Clear force accumulators and reset contact data. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}{reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Reset the computation interface. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a7dbb49cbf2f5b028656ea2e14174a3ed}{set\+Contacts\+Max}} (unsigned contacts\+Max)
+\begin{DoxyCompactList}\small\item\em Set the maximal number of contacts that the collision solver can use. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}{run\+Collision\+Solver}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
-\item 
-unsigned \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c1656d633de4f1bc254020}{generate\+Contacts}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Solve all previously generated particle contacts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a61aea4f32cc73960915d3c68396bd47e}{generate\+Contacts}} ()
+\begin{DoxyCompactList}\small\item\em Generate particle contacts by using all registered particle contact generators. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a58fd25bfac329775ac6031a07bd64fbb}\label{classr3_1_1_default_particle_engine_c_i_a58fd25bfac329775ac6031a07bd64fbb}} 
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a5f7619a5dd227d681d5dcbde6e8368eb}\label{classr3_1_1_default_particle_engine_c_i_a5f7619a5dd227d681d5dcbde6e8368eb}} 
 \index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!Default\+Particle\+Engine\+CI@{Default\+Particle\+Engine\+CI}}
 \index{Default\+Particle\+Engine\+CI@{Default\+Particle\+Engine\+CI}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
 \subsubsection{\texorpdfstring{Default\+Particle\+Engine\+C\+I()}{DefaultParticleEngineCI()}}
-{\footnotesize\ttfamily r3\+::\+Default\+Particle\+Engine\+C\+I\+::\+Default\+Particle\+Engine\+CI (\begin{DoxyParamCaption}\item[{unsigned int}]{max\+Contacts,  }\item[{unsigned int}]{iterations = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$}]{particle\+World = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily r3\+::\+Default\+Particle\+Engine\+C\+I\+::\+Default\+Particle\+Engine\+CI (\begin{DoxyParamCaption}\item[{unsigned}]{contacts\+Max,  }\item[{unsigned}]{iterations = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$}]{particle\+World = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i}{Default\+Particle\+Engine\+CI}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contacts\+Max} & Maximal number of contacts, which can exist at the same time. \\
+\hline
+{\em iterations} & Maximal number of iterations the particle contact generator can use. \\
+\hline
+{\em particle\+World} & The particle world, which should be used for calculations. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}\label{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}} 
 \index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!````~Default\+Particle\+Engine\+CI@{$\sim$\+Default\+Particle\+Engine\+CI}}
 \index{````~Default\+Particle\+Engine\+CI@{$\sim$\+Default\+Particle\+Engine\+CI}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
@@ -65,11 +80,15 @@ unsigned \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c16
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c1656d633de4f1bc254020}\label{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c1656d633de4f1bc254020}} 
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a61aea4f32cc73960915d3c68396bd47e}\label{classr3_1_1_default_particle_engine_c_i_a61aea4f32cc73960915d3c68396bd47e}} 
 \index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!generate\+Contacts@{generate\+Contacts}}
 \index{generate\+Contacts@{generate\+Contacts}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
 \subsubsection{\texorpdfstring{generate\+Contacts()}{generateContacts()}}
-{\footnotesize\ttfamily unsigned r3\+::\+Default\+Particle\+Engine\+C\+I\+::generate\+Contacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::generate\+Contacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Generate particle contacts by using all registered particle contact generators. 
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}\label{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}} 
 \index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!integrate@{integrate}}
@@ -77,6 +96,15 @@ unsigned \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a84b1d2f9a9c16
 \subsubsection{\texorpdfstring{integrate()}{integrate()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::integrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Perform integration and solve collisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Delta} & Time step of this update. \\
+\hline
+\end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a162250f2b6efbd85460bd0f780d42cff}{r3\+::\+I\+Computation\+Interface}}.
@@ -99,6 +127,10 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba0
 
 
 
+Clear force accumulators and reset contact data. 
+
+
+
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414c74fe6f5a8f4a6c7d}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}\label{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}} 
@@ -106,6 +138,10 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414
 \index{reset@{reset}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the computation interface. 
 
 
 
@@ -117,12 +153,40 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd4e
 \subsubsection{\texorpdfstring{run\+Collision\+Solver()}{runCollisionSolver()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::run\+Collision\+Solver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
+
+
+Solve all previously generated particle contacts. 
+
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a7dbb49cbf2f5b028656ea2e14174a3ed}\label{classr3_1_1_default_particle_engine_c_i_a7dbb49cbf2f5b028656ea2e14174a3ed}} 
+\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!set\+Contacts\+Max@{set\+Contacts\+Max}}
+\index{set\+Contacts\+Max@{set\+Contacts\+Max}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\subsubsection{\texorpdfstring{set\+Contacts\+Max()}{setContactsMax()}}
+{\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::set\+Contacts\+Max (\begin{DoxyParamCaption}\item[{unsigned}]{contacts\+Max }\end{DoxyParamCaption})}
+
+
+
+Set the maximal number of contacts that the collision solver can use. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contacts\+Max} & The maximal number of contacts. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}\label{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}} 
 \index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!step@{step}}
 \index{step@{step}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
 \subsubsection{\texorpdfstring{step()}{step()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Update particle forces. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Delta} & Time step of this update. \\
+\hline
+\end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_aaa12bcc35005f32a1984b38de97696cb}{r3\+::\+I\+Computation\+Interface}}.

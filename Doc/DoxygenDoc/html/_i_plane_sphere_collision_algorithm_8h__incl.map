@@ -1,4 +1,5 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.h">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="1345,288,1517,344"/>
 <area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="1041,793,1211,820"/>
 <area shape="rect" id="node22" href="$_collision_plane_8h.html" title="R3D/RigidBodyEngine\l/CollisionPlane.h" alt="" coords="368,489,519,530"/>
@@ -7,6 +8,16 @@
 <area shape="rect" id="node5" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="1028,392,1179,433"/>
 <area shape="rect" id="node18" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1481,481,1632,537"/>
 <area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="550,868,619,895"/>
+=======
+<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="1041,793,1211,820"/>
+<area shape="rect" id="node4" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="1345,288,1517,344"/>
+<area shape="rect" id="node22" href="$_collision_plane_8h.html" title="R3D/RigidBodyEngine\l/CollisionPlane.h" alt="" coords="368,489,519,530"/>
+<area shape="rect" id="node23" href="$_collision_sphere_8h.html" title="R3D/RigidBodyEngine\l/CollisionSphere.h" alt="" coords="193,489,344,530"/>
+<area shape="rect" id="node24" href="$_box_box_narrow_algorithm_8h.html" title="BoxBoxNarrowAlgorithm.h" alt="" coords="1469,139,1644,165"/>
+<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="550,868,619,895"/>
+<area shape="rect" id="node5" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="1028,392,1179,433"/>
+<area shape="rect" id="node18" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1481,481,1632,537"/>
+>>>>>>> Stashed changes
 <area shape="rect" id="node6" href="$_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="1141,489,1292,530"/>
 <area shape="rect" id="node7" href="$_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="1107,600,1241,627"/>
 <area shape="rect" id="node8" href="$_precision_8h.html" title="Common/Precision.h" alt="" coords="5,704,148,731"/>

@@ -1,6 +1,13 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/Particle.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/Particle.h">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,131,176,158"/>
 <area shape="rect" id="node4" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="129,213,301,240"/>
 <area shape="rect" id="node7" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="251,124,386,165"/>
 <area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="73,288,143,315"/>
+=======
+<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,213,176,240"/>
+<area shape="rect" id="node4" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="201,213,373,240"/>
+<area shape="rect" id="node7" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="163,124,298,165"/>
+<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="112,288,181,315"/>
+>>>>>>> Stashed changes
 </map>

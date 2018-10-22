@@ -1,4 +1,5 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleBungee.cpp" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/ParticleBungee.cpp">
+<<<<<<< Updated upstream
 <area shape="rect" id="node2" href="$_particle_bungee_8h.html" title="R3D/ParticleEngine\l/ParticleBungee.h" alt="" coords="120,124,255,165"/>
 <area shape="rect" id="node9" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="311,124,445,165"/>
 <area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="25,303,195,329"/>
@@ -6,4 +7,13 @@
 <area shape="rect" id="node6" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="220,303,392,329"/>
 <area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="131,377,201,404"/>
 <area shape="rect" id="node10" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="372,213,507,255"/>
+=======
+<area shape="rect" id="node2" href="$_particle_bungee_8h.html" title="R3D/ParticleEngine\l/ParticleBungee.h" alt="" coords="126,124,260,165"/>
+<area shape="rect" id="node9" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="318,124,452,165"/>
+<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="42,303,213,329"/>
+<area shape="rect" id="node5" href="$_i_particle_force_generator_8h.html" title="R3D/ParticleEngine\l/IParticleForceGenerator.h" alt="" coords="26,213,200,255"/>
+<area shape="rect" id="node6" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="238,303,410,329"/>
+<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="149,377,218,404"/>
+<area shape="rect" id="node10" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="378,213,512,255"/>
+>>>>>>> Stashed changes
 </map>

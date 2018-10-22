@@ -89,10 +89,19 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a37050bf25f0607a9290444121c56ee8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7754eccf43c97727f1ecfac643cbd5b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_resolver.html#ae7754eccf43c97727f1ecfac643cbd5b">~ParticleContactResolver</a> ()</td></tr>
 <tr class="separator:ae7754eccf43c97727f1ecfac643cbd5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<<<<<<< Updated upstream
 <tr class="memitem:ae82964d26967cb4a3bf73f0c360aa01e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_resolver.html#ae82964d26967cb4a3bf73f0c360aa01e">setIterations</a> (unsigned int iterations)</td></tr>
 <tr class="separator:ae82964d26967cb4a3bf73f0c360aa01e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28fd96ffc247fc5f925674dd1757235e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_resolver.html#a28fd96ffc247fc5f925674dd1757235e">resolveContacts</a> (<a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> *contactArray, unsigned int numberOfContacts, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> duration)</td></tr>
 <tr class="separator:a28fd96ffc247fc5f925674dd1757235e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+=======
+<tr class="memitem:a631df60543a1709a7c48dcf56490b3d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_resolver.html#a631df60543a1709a7c48dcf56490b3d2">setIterationsMax</a> (unsigned int iterations)</td></tr>
+<tr class="memdesc:a631df60543a1709a7c48dcf56490b3d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set maximal number of iterations used.  <a href="#a631df60543a1709a7c48dcf56490b3d2">More...</a><br /></td></tr>
+<tr class="separator:a631df60543a1709a7c48dcf56490b3d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a756e60ebdfa7811c711015a8c61e7ff3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_resolver.html#a756e60ebdfa7811c711015a8c61e7ff3">resolveContacts</a> (<a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> &gt; &amp;contactData, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> duration)</td></tr>
+<tr class="memdesc:a756e60ebdfa7811c711015a8c61e7ff3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve collision and penetration.  <a href="#a756e60ebdfa7811c711015a8c61e7ff3">More...</a><br /></td></tr>
+<tr class="separator:a756e60ebdfa7811c711015a8c61e7ff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+>>>>>>> Stashed changes
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -154,8 +163,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a28fd96ffc247fc5f925674dd1757235e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28fd96ffc247fc5f925674dd1757235e">&#9670;&nbsp;</a></span>resolveContacts()</h2>
+<a id="a756e60ebdfa7811c711015a8c61e7ff3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a756e60ebdfa7811c711015a8c61e7ff3">&#9670;&nbsp;</a></span>resolveContacts()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -163,14 +172,8 @@ Protected Attributes</h2></td></tr>
         <tr>
           <td class="memname">void r3::ParticleContactResolver::resolveContacts </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> *&#160;</td>
-          <td class="paramname"><em>contactArray</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>numberOfContacts</em>, </td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_particle_contact.html">ParticleContact</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>contactData</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -186,6 +189,16 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Resolve collision and penetration. </p>
+<<<<<<< Updated upstream
+=======
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">contactData</td><td>The contacts to be resolved. </td></tr>
+    <tr><td class="paramname">duration</td><td>Time step used for this update. </td></tr>
+  </table>
+  </dd>
+</dl>
+>>>>>>> Stashed changes
 
 </div>
 </div>

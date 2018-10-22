@@ -86,7 +86,6 @@ var searchData=
   ['planespherecollisionalgorithm',['PlaneSphereCollisionAlgorithm',['../classr3_1_1_plane_sphere_collision_algorithm.html',1,'r3::PlaneSphereCollisionAlgorithm'],['../classr3_1_1_plane_sphere_collision_algorithm.html#ab81963394bb97fcee3863f4f2c1aab7a',1,'r3::PlaneSphereCollisionAlgorithm::PlaneSphereCollisionAlgorithm()']]],
   ['planespherecollisionalgorithm_2ecpp',['PlaneSphereCollisionAlgorithm.cpp',['../_plane_sphere_collision_algorithm_8cpp.html',1,'']]],
   ['planespherecollisionalgorithm_2eh',['PlaneSphereCollisionAlgorithm.h',['../_plane_sphere_collision_algorithm_8h.html',1,'']]],
-  ['potentialcontacts',['PotentialContacts',['../structr3_1_1_potential_contacts.html',1,'r3']]],
   ['precision_2eh',['Precision.h',['../_precision_8h.html',1,'']]],
-  ['preparecontacts',['prepareContacts',['../classr3_1_1_collision_data.html#a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9',1,'r3::CollisionData::prepareContacts()'],['../classr3_1_1_contact_resolver_old.html#aec82455efcca455ec890ad434bbdb900',1,'r3::ContactResolverOld::prepareContacts()']]]
+  ['preparecontacts',['prepareContacts',['../classr3_1_1_collision_data.html#a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9',1,'r3::CollisionData']]]
 ];

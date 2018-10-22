@@ -26,5 +26,5 @@ var searchData=
   ['planeboxcollisionalgorithm',['PlaneBoxCollisionAlgorithm',['../classr3_1_1_plane_box_collision_algorithm.html#af949a76b7aa24fc9d620798b7c00f279',1,'r3::PlaneBoxCollisionAlgorithm']]],
   ['planeplanecollisionalgorithm',['PlanePlaneCollisionAlgorithm',['../classr3_1_1_plane_plane_collision_algorithm.html#a9393dcf1554224f91daac5c7b4cd0377',1,'r3::PlanePlaneCollisionAlgorithm']]],
   ['planespherecollisionalgorithm',['PlaneSphereCollisionAlgorithm',['../classr3_1_1_plane_sphere_collision_algorithm.html#ab81963394bb97fcee3863f4f2c1aab7a',1,'r3::PlaneSphereCollisionAlgorithm']]],
-  ['preparecontacts',['prepareContacts',['../classr3_1_1_collision_data.html#a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9',1,'r3::CollisionData::prepareContacts()'],['../classr3_1_1_contact_resolver_old.html#aec82455efcca455ec890ad434bbdb900',1,'r3::ContactResolverOld::prepareContacts()']]]
+  ['preparecontacts',['prepareContacts',['../classr3_1_1_collision_data.html#a7a8dcf7d0b2cdd99d9c96dabc2a4fbc9',1,'r3::CollisionData']]]
 ];

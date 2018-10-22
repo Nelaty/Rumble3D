@@ -1,3 +1,7 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<<<<<<< Updated upstream
 <area shape="rect" id="node1" href="$classr3_1_1_particle_force_registry.html" title="r3::ParticleForceRegistry" alt="" coords="5,5,172,32"/>
+=======
+<area shape="rect" id="node1" href="$classr3_1_1_physics_engine.html" title="The PhysicsEngine is the main component of this library and consists of multiple PhysicsEngineModule..." alt="" coords="5,5,133,32"/>
+>>>>>>> Stashed changes
 </map>

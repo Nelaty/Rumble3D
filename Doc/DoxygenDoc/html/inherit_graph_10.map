@@ -1,4 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_collision_object.html" title="r3::CollisionObject" alt="" coords="5,5,133,32"/>
-<area shape="rect" id="node2" href="$classr3_1_1_rigid_body.html" title="r3::RigidBody" alt="" coords="181,5,281,32"/>
+<area shape="rect" id="node1" href="$classr3_1_1_contact.html" title="A Contact represents a point in space at which two rigid bodies collide. It is not a point in world s..." alt="" coords="5,5,92,32"/>
 </map>

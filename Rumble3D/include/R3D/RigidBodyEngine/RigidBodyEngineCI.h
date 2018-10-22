@@ -21,7 +21,14 @@ namespace r3
 
 		/** Set the rigid body world, used for rigid body calculations. */
 		void setRigidBodyWorld(RigidBodyWorld* rigidBodyWorld);
+<<<<<<< Updated upstream
 		/** Get the currently used rigid body world. */
+=======
+		/** 
+		 * \brief Get the currently used rigid body world. 
+		 * \return The rigid body world.
+		 */
+>>>>>>> Stashed changes
 		RigidBodyWorld* getRigidBodyWorld() const;
 
 	protected:

@@ -5,11 +5,19 @@
 Member \mbox{\hyperlink{classr3_1_1_box_box_narrow_algorithm_a200098ad4e6e2381f58856002a2d5dec}{r3\+:\+:Box\+Box\+Narrow\+Algorithm\+:\+:generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Box1, \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}} $\ast$box1, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Box2, \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}} $\ast$box2, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override]variable is never set??? 
 
 \+: crash -\/$>$ best stays 0xffffff  
+<<<<<<< Updated upstream
 \item[\label{todo__todo000009}%
 \Hypertarget{todo__todo000009}%
 Member \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a16b87610362f670906ca7d9a3251815f}{r3\+:\+:Broad\+Phase\+Filter\+:\+:generate\+Collisions}} (const std\+::vector$<$ Rigid\+Body $\ast$$>$ \&rigid\+Bodies, \mbox{\hyperlink{classr3_1_1_broad_phase_collision_data}{Broad\+Phase\+Collision\+Data}} \&data) override]use rigid body mask and layout  
 \item[\label{todo__todo000002}%
 \Hypertarget{todo__todo000002}%
+=======
+\item[\label{todo__todo000011}%
+\Hypertarget{todo__todo000011}%
+Member \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a0435dc6468401e32bf151f84f52e80f8}{r3\+:\+:Broad\+Phase\+Filter\+:\+:generate\+Collisions}} (const std\+::vector$<$ Rigid\+Body $\ast$$>$ \&rigid\+Bodies, Fixed\+Size\+Container$<$ Collision\+Pair $>$ \&data) override]use rigid body mask and layout  
+\item[\label{todo__todo000004}%
+\Hypertarget{todo__todo000004}%
+>>>>>>> Stashed changes
 Member \mbox{\hyperlink{classr3_1_1_collision_data_ae610a57c20c504a7bacb4e35f89f530f}{r3\+:\+:Collision\+Data\+:\+:get\+Friction}} () const]use physic material in rigid body instead.  
 \item[\label{todo__todo000003}%
 \Hypertarget{todo__todo000003}%
@@ -17,11 +25,25 @@ Member \mbox{\hyperlink{classr3_1_1_collision_data_a4fa1a70757353fe8ae2facc3762f
 \item[\label{todo__todo000010}%
 \Hypertarget{todo__todo000010}%
 Member \mbox{\hyperlink{classr3_1_1_collision_primitive_ae27cb70a6812491c2d8de97f22c07ac6}{r3\+:\+:Collision\+Primitive\+:\+:calculate\+Internals}} ()]use new transform!  
+<<<<<<< Updated upstream
 \item[\label{todo__todo000006}%
 \Hypertarget{todo__todo000006}%
 Member \mbox{\hyperlink{classr3_1_1_plane_box_collision_algorithm_a529c85973e9dab38e7427cdf9177d9ba}{r3\+:\+:Plane\+Box\+Collision\+Algorithm\+:\+:generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Plane, \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$plane, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Box, \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}} $\ast$box, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override]\+: implement  
 \item[\label{todo__todo000007}%
 \Hypertarget{todo__todo000007}%
+=======
+\item[\label{todo__todo000001}%
+\Hypertarget{todo__todo000001}%
+Member \mbox{\hyperlink{classr3_1_1_particle_buoyancy_a15857a4724e0e91efd9ce45831d00cbd}{r3\+:\+:Particle\+Buoyancy\+:\+:s\+\_\+gravity}} ]\+: refactor this  
+\item[\label{todo__todo000002}%
+\Hypertarget{todo__todo000002}%
+Member \mbox{\hyperlink{classr3_1_1_particle_collision_af3c52ed10e7495207bf20f3263175098}{r3\+:\+:Particle\+Collision\+:\+:Particle\+Collision}} (real restitution, real distance, real penetration)]Why does this even exist? Just calculate interpenetration in contact generation.  
+\item[\label{todo__todo000008}%
+\Hypertarget{todo__todo000008}%
+Member \mbox{\hyperlink{classr3_1_1_plane_box_collision_algorithm_a529c85973e9dab38e7427cdf9177d9ba}{r3\+:\+:Plane\+Box\+Collision\+Algorithm\+:\+:generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Plane, \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$plane, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Box, \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}} $\ast$box, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override]\+: implement when plan is not a half space  
+\item[\label{todo__todo000009}%
+\Hypertarget{todo__todo000009}%
+>>>>>>> Stashed changes
 Member \mbox{\hyperlink{classr3_1_1_plane_plane_collision_algorithm_a33400ba57a8c0550ada0778bb92eeb69}{r3\+:\+:Plane\+Plane\+Collision\+Algorithm\+:\+:generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Plane1, \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$plane1, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Plane2, \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$plane2, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override]\+: implement  
 \item[\label{todo__todo000008}%
 \Hypertarget{todo__todo000008}%

@@ -29,8 +29,13 @@ Collaboration diagram for r3\+:\+:Particle\+Collision\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_collision_a7227b004e41a96aafd5f9a54e3b6b97e}{$\sim$\+Particle\+Collision}} ()
 \item 
+<<<<<<< Updated upstream
 unsigned int \mbox{\hyperlink{classr3_1_1_particle_collision_ab22f6b1c2d95c925c2dd5241be9b8889}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$contact, unsigned limit) const override
 \end{DoxyCompactItemize}
+=======
+void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb2e6719}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&contact\+Data) const override
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+>>>>>>> Stashed changes
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -59,11 +64,28 @@ unsigned int \mbox{\hyperlink{classr3_1_1_particle_collision_ab22f6b1c2d95c925c2
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_collision_ab22f6b1c2d95c925c2dd5241be9b8889}\label{classr3_1_1_particle_collision_ab22f6b1c2d95c925c2dd5241be9b8889}} 
+\mbox{\Hypertarget{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb2e6719}\label{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb2e6719}} 
 \index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!add\+Contact@{add\+Contact}}
 \index{add\+Contact@{add\+Contact}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
 \subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
+<<<<<<< Updated upstream
 {\footnotesize\ttfamily unsigned int r3\+::\+Particle\+Collision\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $\ast$}]{contact,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+=======
+{\footnotesize\ttfamily void r3\+::\+Particle\+Collision\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&}]{contact\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generate new contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact\+Data} & Out parameter in which new contacts are added. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}{r3\+::\+Particle\+Contact\+Generator}}.
+>>>>>>> Stashed changes
 
 
 

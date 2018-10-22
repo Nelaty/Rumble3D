@@ -1,3 +1,3 @@
 <map id="r3::DirectedForce" name="r3::DirectedForce">
-<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="{r3::ForceGenerator\n||+ ~ForceGenerator()\l+ updateForce()\l# ForceGenerator()\l}" alt="" coords="5,5,145,112"/>
+<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="Interface for rigid body force generators. " alt="" coords="5,5,145,112"/>
 </map>

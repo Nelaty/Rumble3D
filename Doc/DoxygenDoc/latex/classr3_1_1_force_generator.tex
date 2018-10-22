@@ -2,6 +2,11 @@
 \label{classr3_1_1_force_generator}\index{r3\+::\+Force\+Generator@{r3\+::\+Force\+Generator}}
 
 
+Interface for rigid body force generators.  
+
+
+
+
 {\ttfamily \#include $<$Force\+Generator.\+h$>$}
 
 
@@ -27,14 +32,17 @@ Collaboration diagram for r3\+:\+:Force\+Generator\+:\nopagebreak
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_force_generator_a64f1659bd0cf863ea28cccc689b2be3e}{$\sim$\+Force\+Generator}} ()
 \item 
-virtual void \mbox{\hyperlink{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
-\end{DoxyCompactItemize}
+virtual void \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)=0
+\begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_force_generator_a7b21e48ccca59631975e0621057a1035}{Force\+Generator}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for rigid body force generators. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_force_generator_a64f1659bd0cf863ea28cccc689b2be3e}\label{classr3_1_1_force_generator_a64f1659bd0cf863ea28cccc689b2be3e}} 
@@ -52,15 +60,26 @@ virtual void \mbox{\hyperlink{classr3_1_1_force_generator_a16d1e8aa85d574013de85
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}\label{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}} 
+\mbox{\Hypertarget{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}\label{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}} 
 \index{r3\+::\+Force\+Generator@{r3\+::\+Force\+Generator}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+Force\+Generator@{r3\+::\+Force\+Generator}}
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
-{\footnotesize\ttfamily void r3\+::\+Force\+Generator\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily virtual void r3\+::\+Force\+Generator\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Reimplemented in \mbox{\hyperlink{classr3_1_1_spring_a3305adfd568606ed9ae6fb589f20446b}{r3\+::\+Spring}}, \mbox{\hyperlink{classr3_1_1_anchored_spring_a3e928bc7fdedc8eb5b302a007200a58c}{r3\+::\+Anchored\+Spring}}, \mbox{\hyperlink{classr3_1_1_gravity_ae3152c6a922ffa193aee362e161cd4a9}{r3\+::\+Gravity}}, and \mbox{\hyperlink{classr3_1_1_directed_force_ac723ddeef767956d16fb9d0a1d706bfd}{r3\+::\+Directed\+Force}}.
+Apply force to a rigid body over a specific time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body on which to apply force. \\
+\hline
+{\em duration} & The duration over which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classr3_1_1_spring_a3305adfd568606ed9ae6fb589f20446b}{r3\+::\+Spring}}, \mbox{\hyperlink{classr3_1_1_anchored_spring_a3e928bc7fdedc8eb5b302a007200a58c}{r3\+::\+Anchored\+Spring}}, \mbox{\hyperlink{classr3_1_1_directed_force_ac723ddeef767956d16fb9d0a1d706bfd}{r3\+::\+Directed\+Force}}, and \mbox{\hyperlink{classr3_1_1_gravity_ae3152c6a922ffa193aee362e161cd4a9}{r3\+::\+Gravity}}.
 
 
 

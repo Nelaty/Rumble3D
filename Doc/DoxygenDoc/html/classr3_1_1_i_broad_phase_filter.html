@@ -95,8 +95,8 @@ Collaboration diagram for r3::IBroadPhaseFilter:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af6cd5cfcf4487d97916debae0011244f"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_broad_phase_filter.html#af6cd5cfcf4487d97916debae0011244f">~IBroadPhaseFilter</a> ()</td></tr>
 <tr class="separator:af6cd5cfcf4487d97916debae0011244f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19bfa977243bcdd0ec143a0aca750649"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_broad_phase_filter.html#a19bfa977243bcdd0ec143a0aca750649">generateCollisions</a> (const std::vector&lt; <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&gt; &amp;rigidBodies, <a class="el" href="classr3_1_1_broad_phase_collision_data.html">BroadPhaseCollisionData</a> &amp;data)=0</td></tr>
-<tr class="separator:a19bfa977243bcdd0ec143a0aca750649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f437f6390a8f10bf96d72e35e3b4432"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_broad_phase_filter.html#a5f437f6390a8f10bf96d72e35e3b4432">generateCollisions</a> (const std::vector&lt; <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&gt; &amp;rigidBodies, <a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> &gt; &amp;data)=0</td></tr>
+<tr class="separator:a5f437f6390a8f10bf96d72e35e3b4432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -155,8 +155,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a19bfa977243bcdd0ec143a0aca750649"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19bfa977243bcdd0ec143a0aca750649">&#9670;&nbsp;</a></span>generateCollisions()</h2>
+<a id="a5f437f6390a8f10bf96d72e35e3b4432"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f437f6390a8f10bf96d72e35e3b4432">&#9670;&nbsp;</a></span>generateCollisions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,7 +173,7 @@ Protected Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classr3_1_1_broad_phase_collision_data.html">BroadPhaseCollisionData</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>data</em>&#160;</td>
         </tr>
         <tr>
@@ -190,7 +190,7 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. </p><dl class="section return"><dt>Returns</dt><dd>A number of possible collisions. </dd></dl>
 
-<p>Implemented in <a class="el" href="classr3_1_1_broad_phase_filter.html#a16b87610362f670906ca7d9a3251815f">r3::BroadPhaseFilter</a>.</p>
+<p>Implemented in <a class="el" href="classr3_1_1_broad_phase_filter.html#a0435dc6468401e32bf151f84f52e80f8">r3::BroadPhaseFilter</a>.</p>
 
 </div>
 </div>

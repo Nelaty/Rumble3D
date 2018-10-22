@@ -2,7 +2,7 @@
 \label{classr3_1_1_rigid_body_engine_c_i}\index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
 
 
-Abstract class for computation interfaces used for rigid body worlds.  
+Abstract class for computation interfaces used by rigid body worlds.  
 
 
 
@@ -33,14 +33,14 @@ Collaboration diagram for r3\+:\+:Rigid\+Body\+Engine\+CI\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a9f75c8c49e987206554b09550d93b341}{$\sim$\+Rigid\+Body\+Engine\+CI}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}{set\+Rigid\+Body\+World}} (\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$rigid\+Body\+World)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the rigid body world, used for rigid body calculations. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_affb7b66f769300619e0c61f7d3ab13ee}{get\+Rigid\+Body\+World}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the currently used rigid body world. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i_a10d9cbc84de1412abd7798f638831a35}{Rigid\+Body\+Engine\+CI}} (\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$rigid\+Body\+World=nullptr)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i}{Rigid\+Body\+Engine\+CI}} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -53,7 +53,7 @@ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_i_collision_resolver_acce
 
 
 \subsection{Detailed Description}
-Abstract class for computation interfaces used for rigid body worlds. 
+Abstract class for computation interfaces used by rigid body worlds. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a9f75c8c49e987206554b09550d93b341}\label{classr3_1_1_rigid_body_engine_c_i_a9f75c8c49e987206554b09550d93b341}} 
@@ -70,6 +70,15 @@ Abstract class for computation interfaces used for rigid body worlds.
 
 
 
+\mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i}{Rigid\+Body\+Engine\+CI}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rigid\+Body\+World} & The world used for rigid body calculations. \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_affb7b66f769300619e0c61f7d3ab13ee}\label{classr3_1_1_rigid_body_engine_c_i_affb7b66f769300619e0c61f7d3ab13ee}} 
 \index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!get\+Rigid\+Body\+World@{get\+Rigid\+Body\+World}}
@@ -77,13 +86,29 @@ Abstract class for computation interfaces used for rigid body worlds.
 \subsubsection{\texorpdfstring{get\+Rigid\+Body\+World()}{getRigidBodyWorld()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$ r3\+::\+Rigid\+Body\+Engine\+C\+I\+::get\+Rigid\+Body\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the currently used rigid body world. \mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}\label{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}} 
+
+
+Get the currently used rigid body world. 
+
+\begin{DoxyReturn}{Returns}
+The rigid body world. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}\label{classr3_1_1_rigid_body_engine_c_i_a6787623e1862550ce04f1d970375b0ce}} 
 \index{r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}!set\+Rigid\+Body\+World@{set\+Rigid\+Body\+World}}
 \index{set\+Rigid\+Body\+World@{set\+Rigid\+Body\+World}!r3\+::\+Rigid\+Body\+Engine\+CI@{r3\+::\+Rigid\+Body\+Engine\+CI}}
 \subsubsection{\texorpdfstring{set\+Rigid\+Body\+World()}{setRigidBodyWorld()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+Engine\+C\+I\+::set\+Rigid\+Body\+World (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} $\ast$}]{rigid\+Body\+World }\end{DoxyParamCaption})}
 
+
+
 Set the rigid body world, used for rigid body calculations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rigid\+Body\+World} & The related rigid body world. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_engine_c_i_adb37ed2c686594f9504680be76c2dcbc}\label{classr3_1_1_rigid_body_engine_c_i_adb37ed2c686594f9504680be76c2dcbc}} 

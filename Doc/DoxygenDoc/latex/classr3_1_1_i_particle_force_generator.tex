@@ -1,0 +1,84 @@
+\hypertarget{classr3_1_1_i_particle_force_generator}{}\section{r3\+:\+:I\+Particle\+Force\+Generator Class Reference}
+\label{classr3_1_1_i_particle_force_generator}\index{r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}}
+
+
+{\ttfamily \#include $<$I\+Particle\+Force\+Generator.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:I\+Particle\+Force\+Generator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_i_particle_force_generator__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:I\+Particle\+Force\+Generator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classr3_1_1_i_particle_force_generator__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a1682bcec51cd294cbef8b6cbd4f50266}{$\sim$\+I\+Particle\+Force\+Generator}} ()
+\item 
+virtual void \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)=0
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a919ae235883c736232741d947fd9a708}{I\+Particle\+Force\+Generator}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface for particle force generators. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_i_particle_force_generator_a1682bcec51cd294cbef8b6cbd4f50266}\label{classr3_1_1_i_particle_force_generator_a1682bcec51cd294cbef8b6cbd4f50266}} 
+\index{r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}!````~I\+Particle\+Force\+Generator@{$\sim$\+I\+Particle\+Force\+Generator}}
+\index{````~I\+Particle\+Force\+Generator@{$\sim$\+I\+Particle\+Force\+Generator}!r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Particle\+Force\+Generator()}{~IParticleForceGenerator()}}
+{\footnotesize\ttfamily r3\+::\+I\+Particle\+Force\+Generator\+::$\sim$\+I\+Particle\+Force\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_i_particle_force_generator_a919ae235883c736232741d947fd9a708}\label{classr3_1_1_i_particle_force_generator_a919ae235883c736232741d947fd9a708}} 
+\index{r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}!I\+Particle\+Force\+Generator@{I\+Particle\+Force\+Generator}}
+\index{I\+Particle\+Force\+Generator@{I\+Particle\+Force\+Generator}!r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}}
+\subsubsection{\texorpdfstring{I\+Particle\+Force\+Generator()}{IParticleForceGenerator()}}
+{\footnotesize\ttfamily r3\+::\+I\+Particle\+Force\+Generator\+::\+I\+Particle\+Force\+Generator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}\label{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}} 
+\index{r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}!update\+Force@{update\+Force}}
+\index{update\+Force@{update\+Force}!r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}}
+\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+{\footnotesize\ttfamily virtual void r3\+::\+I\+Particle\+Force\+Generator\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates and changes the force in the force accumulator of a particle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle} & The particle, on which the force should be applied to. \\
+\hline
+{\em duration} & The duration for which the force acts \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classr3_1_1_particle_buoyancy_ad1249e51508770fd9b1775c8e22eb51a}{r3\+::\+Particle\+Buoyancy}}, \mbox{\hyperlink{classr3_1_1_particle_drag_abbfc4f053bb921be0068f8928c300384}{r3\+::\+Particle\+Drag}}, \mbox{\hyperlink{classr3_1_1_particle_anchored_spring_aa445db9e0efcc25a422348f4e580ed7f}{r3\+::\+Particle\+Anchored\+Spring}}, \mbox{\hyperlink{classr3_1_1_particle_spring_a113e7bdf36d5edf020abecec5a0fb730}{r3\+::\+Particle\+Spring}}, \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384b96}{r3\+::\+Particle\+Bungee}}, and \mbox{\hyperlink{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}{r3\+::\+Particle\+Gravity}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_i_particle_force_generator_8h}{I\+Particle\+Force\+Generator.\+h}}\item 
+D\+:/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_i_particle_force_generator_8cpp}{I\+Particle\+Force\+Generator.\+cpp}}\end{DoxyCompactItemize}

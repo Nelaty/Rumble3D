@@ -9,6 +9,9 @@
 
 namespace r3
 {
+	/**
+	 * \brief Bundles construction information about a rigid body.
+	 */
 	struct R3D_DECLSPEC RigidBodyDef
 	{
 		PhysicsMaterial* m_physicsMaterial{};

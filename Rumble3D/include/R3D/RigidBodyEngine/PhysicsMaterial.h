@@ -4,10 +4,13 @@
 
 namespace r3
 {
+	/**
+	 * \brief Construction information for a PhysicsMaterial
+	 */
 	struct R3D_DECLSPEC PhysicsMaterialDef
 	{
-		static constexpr real s_defaultFriction = 0.0f;
-		static constexpr real s_defaultRestitution = 1.0f;
+		static constexpr real s_defaultFriction = 0.5f;
+		static constexpr real s_defaultRestitution = 0.5f;
 
 		real m_friction{s_defaultFriction};
 		real m_restitution{s_defaultRestitution};

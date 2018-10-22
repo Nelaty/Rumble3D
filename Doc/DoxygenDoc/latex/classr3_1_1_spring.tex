@@ -2,6 +2,11 @@
 \label{classr3_1_1_spring}\index{r3\+::\+Spring@{r3\+::\+Spring}}
 
 
+A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simulates a spring between two rigid bodies.  
+
+
+
+
 {\ttfamily \#include $<$Spring.\+h$>$}
 
 
@@ -26,24 +31,29 @@ Collaboration diagram for r3\+:\+:Spring\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_spring_ae96ec521b5609d2ace1476aec3c831f3}{Spring}} (const glm\+::vec3 \&local\+Connection\+Point, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$other, const glm\+::vec3 \&other\+Connection\+Point, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_spring}{Spring}} constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_spring_a3305adfd568606ed9ae6fb589f20446b}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_spring_a06963e33fd2c3f8e25ddd345324b292b}{m\+\_\+spring\+Constant}}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_spring_ad1c8ba98c782bee7f9896d0c868b9ee7}{m\+\_\+rest\+Length}}
 \item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_spring_a3c1e08e176ebc363b9f217875036955d}{m\+\_\+connection\+Point}}
 \item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_spring_a7a1c5a5c2960bbf756dac88986e939ae}{m\+\_\+other\+Connection\+Point}}
 \item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_spring_ac762f73af2e30d8f6f1e6b0a1575d49e}{m\+\_\+other}}
-\item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_spring_a06963e33fd2c3f8e25ddd345324b292b}{m\+\_\+spring\+Constant}}
-\item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_spring_ad1c8ba98c782bee7f9896d0c868b9ee7}{m\+\_\+rest\+Length}}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simulates a spring between two rigid bodies. 
+
+The spring force will not be applied to the rigid body, which is assigned to this generator. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_spring_ae96ec521b5609d2ace1476aec3c831f3}\label{classr3_1_1_spring_ae96ec521b5609d2ace1476aec3c831f3}} 
@@ -52,6 +62,23 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_spring_a7a1c5a5c2960bbf756dac88986e939a
 \subsubsection{\texorpdfstring{Spring()}{Spring()}}
 {\footnotesize\ttfamily r3\+::\+Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{local\+Connection\+Point,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{other,  }\item[{const glm\+::vec3 \&}]{other\+Connection\+Point,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})}
 
+
+
+\mbox{\hyperlink{classr3_1_1_spring}{Spring}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em local\+Connection\+Point} & Connection point in local coordinates of the body. \\
+\hline
+{\em other} & The other rigid body connected to the string. \\
+\hline
+{\em other\+Connection\+Point} & Connection point in local coordinates of the other body. \\
+\hline
+{\em spring\+Constant} & The hardness of the spring. \\
+\hline
+{\em rest\+Length} & The distance at which no forces act. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
@@ -63,7 +90,18 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_spring_a7a1c5a5c2960bbf756dac88986e939a
 
 
 
-Reimplemented from \mbox{\hyperlink{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}{r3\+::\+Force\+Generator}}.
+Apply force to a rigid body over a specific time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body on which to apply force. \\
+\hline
+{\em duration} & The duration over which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}{r3\+::\+Force\+Generator}}.
 
 
 

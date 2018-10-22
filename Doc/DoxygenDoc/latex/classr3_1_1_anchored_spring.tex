@@ -2,6 +2,11 @@
 \label{classr3_1_1_anchored_spring}\index{r3\+::\+Anchored\+Spring@{r3\+::\+Anchored\+Spring}}
 
 
+An \mbox{\hyperlink{classr3_1_1_anchored_spring}{Anchored\+Spring}} is a force generator that simulates spring forces.  
+
+
+
+
 {\ttfamily \#include $<$Anchored\+Spring.\+h$>$}
 
 
@@ -26,11 +31,11 @@ Collaboration diagram for r3\+:\+:Anchored\+Spring\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_anchored_spring_a944423598dfb2e3f080f9f9850c8aa13}{Anchored\+Spring}} (const glm\+::vec3 \&anchor, const glm\+::vec3 \&local\+Connection\+Point, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_anchored_spring}{Anchored\+Spring}} generator. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_anchored_spring_afe612722d8ed0d7a6f0058dcc21eb17f}{$\sim$\+Anchored\+Spring}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_anchored_spring_a3e928bc7fdedc8eb5b302a007200a58c}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -45,6 +50,11 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_anchored_spring_a1387aec403f6955848fe8c
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+An \mbox{\hyperlink{classr3_1_1_anchored_spring}{Anchored\+Spring}} is a force generator that simulates spring forces. 
+
+One end of the spring is a static point. 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_anchored_spring_a944423598dfb2e3f080f9f9850c8aa13}\label{classr3_1_1_anchored_spring_a944423598dfb2e3f080f9f9850c8aa13}} 
 \index{r3\+::\+Anchored\+Spring@{r3\+::\+Anchored\+Spring}!Anchored\+Spring@{Anchored\+Spring}}
@@ -52,6 +62,21 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_anchored_spring_a1387aec403f6955848fe8c
 \subsubsection{\texorpdfstring{Anchored\+Spring()}{AnchoredSpring()}}
 {\footnotesize\ttfamily r3\+::\+Anchored\+Spring\+::\+Anchored\+Spring (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{anchor,  }\item[{const glm\+::vec3 \&}]{local\+Connection\+Point,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_anchored_spring}{Anchored\+Spring}} generator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em anchor} & The static end of the spring in world coordinates. \\
+\hline
+{\em local\+Connection\+Point} & Connection point of the rigid body (in local coordinates of said body). \\
+\hline
+{\em spring\+Constant} & The hardness of the spring. \\
+\hline
+{\em rest\+Length} & The distance at which no forces act. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_anchored_spring_afe612722d8ed0d7a6f0058dcc21eb17f}\label{classr3_1_1_anchored_spring_afe612722d8ed0d7a6f0058dcc21eb17f}} 
 \index{r3\+::\+Anchored\+Spring@{r3\+::\+Anchored\+Spring}!````~Anchored\+Spring@{$\sim$\+Anchored\+Spring}}
 \index{````~Anchored\+Spring@{$\sim$\+Anchored\+Spring}!r3\+::\+Anchored\+Spring@{r3\+::\+Anchored\+Spring}}
@@ -69,7 +94,18 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_anchored_spring_a1387aec403f6955848fe8c
 
 
 
-Reimplemented from \mbox{\hyperlink{classr3_1_1_force_generator_a16d1e8aa85d574013de859b95944c5bb}{r3\+::\+Force\+Generator}}.
+Apply force to a rigid body over a specific time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body on which to apply force. \\
+\hline
+{\em duration} & The duration over which the force acts. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}{r3\+::\+Force\+Generator}}.
 
 
 

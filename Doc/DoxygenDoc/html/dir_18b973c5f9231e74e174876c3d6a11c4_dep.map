@@ -1,10 +1,13 @@
 <map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine">
 <area shape="rect" id="node2" href="dir_4762bb1bcfd1e9fa802a8f5c3b61c662.html" title="CollisionDetection" alt="" coords="39,159,166,207"/>
-<area shape="rect" id="node4" href="dir_be262f943ff85a51194996e762c1aad5.html" title="Common" alt="" coords="116,255,191,303"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000006_000003.html" title="21" alt="" coords="132,227,147,242"/>
+<area shape="rect" id="node4" href="dir_75cd3efcb616ab802f172a7332f71da6.html" title="Utility" alt="" coords="44,255,116,303"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000006_000010.html" title="4" alt="" coords="94,232,102,246"/>
+<area shape="rect" id="node5" href="dir_be262f943ff85a51194996e762c1aad5.html" title="Common" alt="" coords="116,351,191,399"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000006_000003.html" title="26" alt="" coords="147,324,162,338"/>
 <area shape="rect" id="node3" href="dir_465caeafbaca1936a6f378ce3c8e0573.html" title="CollisionResolution" alt="" coords="38,63,170,111"/>
-<area shape="rect" id="edge3-headlabel" href="dir_000008_000006.html" title="2" alt="" coords="108,133,116,148"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000008_000003.html" title="7" alt="" coords="179,235,187,249"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000008_000006.html" title="2" alt="" coords="108,133,116,148"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000008_000003.html" title="7" alt="" coords="173,329,181,344"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000010_000003.html" title="4" alt="" coords="127,324,135,338"/>
 <area shape="rect" id="clust2" href="dir_18b973c5f9231e74e174876c3d6a11c4.html" alt="" coords="27,52,327,217"/>
 <area shape="rect" id="clust1" href="dir_bb57e8985be6345160b95bc715b6ed65.html" title="R3D" alt="" coords="16,16,337,228"/>
 </map>

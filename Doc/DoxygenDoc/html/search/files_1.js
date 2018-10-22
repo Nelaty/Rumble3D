@@ -8,8 +8,6 @@ var searchData=
   ['boxboxnarrowalgorithm_2eh',['BoxBoxNarrowAlgorithm.h',['../_box_box_narrow_algorithm_8h.html',1,'']]],
   ['boxspherenarrowalgorithm_2ecpp',['BoxSphereNarrowAlgorithm.cpp',['../_box_sphere_narrow_algorithm_8cpp.html',1,'']]],
   ['boxspherenarrowalgorithm_2eh',['BoxSphereNarrowAlgorithm.h',['../_box_sphere_narrow_algorithm_8h.html',1,'']]],
-  ['broadphasecollisiondata_2ecpp',['BroadPhaseCollisionData.cpp',['../_broad_phase_collision_data_8cpp.html',1,'']]],
-  ['broadphasecollisiondata_2eh',['BroadPhaseCollisionData.h',['../_broad_phase_collision_data_8h.html',1,'']]],
   ['broadphasefilter_2ecpp',['BroadPhaseFilter.cpp',['../_broad_phase_filter_8cpp.html',1,'']]],
   ['broadphasefilter_2eh',['BroadPhaseFilter.h',['../_broad_phase_filter_8h.html',1,'']]],
   ['bvhnode_2ecpp',['BVHNode.cpp',['../_b_v_h_node_8cpp.html',1,'']]],

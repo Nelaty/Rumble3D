@@ -23,15 +23,15 @@ Collaboration diagram for r3\+:\+:B\+V\+H\+Node$<$ Bounding\+Volume\+Class $>$\+
 \mbox{\hyperlink{classr3_1_1_b_v_h_node_a72194bd522058bfd362b0ab77c0303af}{$\sim$\+B\+V\+H\+Node}} ()
 \item 
 bool \mbox{\hyperlink{classr3_1_1_b_v_h_node_a517b40f1a91cda371b3cb786f1c7e155}{is\+Leaf}} () const
-\item 
-unsigned int \mbox{\hyperlink{classr3_1_1_b_v_h_node_a8c8980c3ece5abe91d2c5a01b1756a03}{get\+Potential\+Contacts}} (\mbox{\hyperlink{structr3_1_1_potential_contacts}{Potential\+Contacts}} $\ast$contacts, unsigned int limit) const
+\begin{DoxyCompactList}\small\item\em Check if this node is a leaf node (= has no child nodes). \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classr3_1_1_b_v_h_node_a9a8083e409cd4452e25878e80283440f}{get\+Potential\+Contacts}} (\mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $\ast$contacts, unsigned limit) const
 \end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{classr3_1_1_b_v_h_node_a69ec6f958bbe07629cd979599532dfd8}{overlaps}} (\mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$ $\ast$other) const
 \item 
-unsigned \mbox{\hyperlink{classr3_1_1_b_v_h_node_aca88cf5bd4b1c4981198cec816f122e8}{get\+Potential\+Contacts\+With}} (\mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$ $\ast$other, \mbox{\hyperlink{structr3_1_1_potential_contacts}{Potential\+Contacts}} $\ast$contacts, unsigned limit) const
+unsigned \mbox{\hyperlink{classr3_1_1_b_v_h_node_abf81453da8179650565a0a5379ccb5cb}{get\+Potential\+Contacts\+With}} (\mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$ $\ast$other, \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $\ast$contacts, unsigned limit) const
 \item 
 void \mbox{\hyperlink{classr3_1_1_b_v_h_node_a52539a0d78d758021a2fe4bedd30e671}{recalculate\+Bounding\+Volume}} ()
 \item 
@@ -75,19 +75,19 @@ Bounding\+Volume\+Class \mbox{\hyperlink{classr3_1_1_b_v_h_node_a114366b1f5cbb56
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_b_v_h_node_a8c8980c3ece5abe91d2c5a01b1756a03}\label{classr3_1_1_b_v_h_node_a8c8980c3ece5abe91d2c5a01b1756a03}} 
+\mbox{\Hypertarget{classr3_1_1_b_v_h_node_a9a8083e409cd4452e25878e80283440f}\label{classr3_1_1_b_v_h_node_a9a8083e409cd4452e25878e80283440f}} 
 \index{r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}!get\+Potential\+Contacts@{get\+Potential\+Contacts}}
 \index{get\+Potential\+Contacts@{get\+Potential\+Contacts}!r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}}
 \subsubsection{\texorpdfstring{get\+Potential\+Contacts()}{getPotentialContacts()}}
 {\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
-unsigned int \mbox{\hyperlink{classr3_1_1_b_v_h_node}{r3\+::\+B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$\+::get\+Potential\+Contacts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structr3_1_1_potential_contacts}{Potential\+Contacts}} $\ast$}]{contacts,  }\item[{unsigned int}]{limit }\end{DoxyParamCaption}) const}
+unsigned \mbox{\hyperlink{classr3_1_1_b_v_h_node}{r3\+::\+B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$\+::get\+Potential\+Contacts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $\ast$}]{contacts,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const}
 
-\mbox{\Hypertarget{classr3_1_1_b_v_h_node_aca88cf5bd4b1c4981198cec816f122e8}\label{classr3_1_1_b_v_h_node_aca88cf5bd4b1c4981198cec816f122e8}} 
+\mbox{\Hypertarget{classr3_1_1_b_v_h_node_abf81453da8179650565a0a5379ccb5cb}\label{classr3_1_1_b_v_h_node_abf81453da8179650565a0a5379ccb5cb}} 
 \index{r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}!get\+Potential\+Contacts\+With@{get\+Potential\+Contacts\+With}}
 \index{get\+Potential\+Contacts\+With@{get\+Potential\+Contacts\+With}!r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}}
 \subsubsection{\texorpdfstring{get\+Potential\+Contacts\+With()}{getPotentialContactsWith()}}
 {\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
-unsigned \mbox{\hyperlink{classr3_1_1_b_v_h_node}{r3\+::\+B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$\+::get\+Potential\+Contacts\+With (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$ $\ast$}]{other,  }\item[{\mbox{\hyperlink{structr3_1_1_potential_contacts}{Potential\+Contacts}} $\ast$}]{contacts,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+unsigned \mbox{\hyperlink{classr3_1_1_b_v_h_node}{r3\+::\+B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$\+::get\+Potential\+Contacts\+With (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$ $\ast$}]{other,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $\ast$}]{contacts,  }\item[{unsigned}]{limit }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_b_v_h_node_ab6f91727e36689a7edc9f8c168ab904b}\label{classr3_1_1_b_v_h_node_ab6f91727e36689a7edc9f8c168ab904b}} 
 \index{r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}!insert@{insert}}
@@ -103,7 +103,14 @@ void \mbox{\hyperlink{classr3_1_1_b_v_h_node}{r3\+::\+B\+V\+H\+Node}}$<$ Boundin
 {\footnotesize\ttfamily template$<$class Bounding\+Volume\+Class $>$ \\
 bool \mbox{\hyperlink{classr3_1_1_b_v_h_node}{r3\+::\+B\+V\+H\+Node}}$<$ Bounding\+Volume\+Class $>$\+::is\+Leaf (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Check if this node is a leaf node (= has no child nodes) \mbox{\Hypertarget{classr3_1_1_b_v_h_node_a69ec6f958bbe07629cd979599532dfd8}\label{classr3_1_1_b_v_h_node_a69ec6f958bbe07629cd979599532dfd8}} 
+
+
+Check if this node is a leaf node (= has no child nodes). 
+
+\begin{DoxyReturn}{Returns}
+True if it is a leaf node, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_b_v_h_node_a69ec6f958bbe07629cd979599532dfd8}\label{classr3_1_1_b_v_h_node_a69ec6f958bbe07629cd979599532dfd8}} 
 \index{r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}!overlaps@{overlaps}}
 \index{overlaps@{overlaps}!r3\+::\+B\+V\+H\+Node@{r3\+::\+B\+V\+H\+Node}}
 \subsubsection{\texorpdfstring{overlaps()}{overlaps()}}
