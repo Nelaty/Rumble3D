@@ -2,6 +2,11 @@
 \label{classr3_1_1_collision_object}\index{r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}}
 
 
+A \mbox{\hyperlink{classr3_1_1_collision_object}{Collision\+Object}} can collide with other collision objects in 3D space.  
+
+
+
+
 {\ttfamily \#include $<$Collision\+Object.\+h$>$}
 
 
@@ -28,18 +33,18 @@ Collaboration diagram for r3\+:\+:Collision\+Object\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_collision_object_a26f7c8a9adb08718c98dce736cc89830}{$\sim$\+Collision\+Object}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_collision_object_afaf76460298998bcbe405c0b2e6de6a6}{set\+Collision\+Primitive}} (\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$collision\+Primitive)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the collision primitive used for collision detection. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_object_aabb0d7173dacef5ffc02163557f55fa4}{get\+Collision\+Primitive}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the currently used collision primitive. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& \mbox{\hyperlink{classr3_1_1_collision_object_a79e04809124cad6aeb25a66f11826fee}{get\+Transform}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current transform. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& \mbox{\hyperlink{classr3_1_1_collision_object_acc41118b9a571e5aa918644aaeda6bfa}{get\+Transform}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the current transform. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_collision_object_ad664d1dd3a03f183c46c6b7ba7327cfd}{Collision\+Object}} (\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$collision\+Primitive=nullptr)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_object}{Collision\+Object}} constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -48,6 +53,9 @@ const \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& \mbox{\hyperli
 \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \mbox{\hyperlink{classr3_1_1_collision_object_a2ed717150a250f1b81e23ba7e5431542}{m\+\_\+transform}}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A \mbox{\hyperlink{classr3_1_1_collision_object}{Collision\+Object}} can collide with other collision objects in 3D space. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_collision_object_a26f7c8a9adb08718c98dce736cc89830}\label{classr3_1_1_collision_object_a26f7c8a9adb08718c98dce736cc89830}} 
@@ -64,6 +72,15 @@ const \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& \mbox{\hyperli
 
 
 
+\mbox{\hyperlink{classr3_1_1_collision_object}{Collision\+Object}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Primitive} & The initial collision primitive. \\
+\hline
+\end{DoxyParams}
+
+
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_collision_object_aabb0d7173dacef5ffc02163557f55fa4}\label{classr3_1_1_collision_object_aabb0d7173dacef5ffc02163557f55fa4}} 
 \index{r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}!get\+Collision\+Primitive@{get\+Collision\+Primitive}}
@@ -71,25 +88,55 @@ const \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& \mbox{\hyperli
 \subsubsection{\texorpdfstring{get\+Collision\+Primitive()}{getCollisionPrimitive()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$ r3\+::\+Collision\+Object\+::get\+Collision\+Primitive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the currently used collision primitive \mbox{\Hypertarget{classr3_1_1_collision_object_a79e04809124cad6aeb25a66f11826fee}\label{classr3_1_1_collision_object_a79e04809124cad6aeb25a66f11826fee}} 
+
+
+Get the currently used collision primitive. 
+
+\begin{DoxyReturn}{Returns}
+The collision primitive. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_collision_object_a79e04809124cad6aeb25a66f11826fee}\label{classr3_1_1_collision_object_a79e04809124cad6aeb25a66f11826fee}} 
 \index{r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}!get\+Transform@{get\+Transform}}
 \index{get\+Transform@{get\+Transform}!r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}}
 \subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& r3\+::\+Collision\+Object\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Get the current transform. 
+
+\begin{DoxyReturn}{Returns}
+The transform. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_collision_object_acc41118b9a571e5aa918644aaeda6bfa}\label{classr3_1_1_collision_object_acc41118b9a571e5aa918644aaeda6bfa}} 
 \index{r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}!get\+Transform@{get\+Transform}}
 \index{get\+Transform@{get\+Transform}!r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}}
 \subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} \& r3\+::\+Collision\+Object\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Get the current transform. 
+
+\begin{DoxyReturn}{Returns}
+The transform. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_collision_object_afaf76460298998bcbe405c0b2e6de6a6}\label{classr3_1_1_collision_object_afaf76460298998bcbe405c0b2e6de6a6}} 
 \index{r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}!set\+Collision\+Primitive@{set\+Collision\+Primitive}}
 \index{set\+Collision\+Primitive@{set\+Collision\+Primitive}!r3\+::\+Collision\+Object@{r3\+::\+Collision\+Object}}
 \subsubsection{\texorpdfstring{set\+Collision\+Primitive()}{setCollisionPrimitive()}}
 {\footnotesize\ttfamily void r3\+::\+Collision\+Object\+::set\+Collision\+Primitive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} $\ast$}]{collision\+Primitive }\end{DoxyParamCaption})}
 
+
+
 Set the collision primitive used for collision detection. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Primitive} & The new collision primitive. \\
+\hline
+\end{DoxyParams}
+
 
 \subsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_collision_object_afa62ecdda20144d43f9fcf72d56642d6}\label{classr3_1_1_collision_object_afa62ecdda20144d43f9fcf72d56642d6}} 
@@ -108,5 +155,5 @@ Set the collision primitive used for collision detection.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_object_8h}{Collision\+Object.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_object_8cpp}{Collision\+Object.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_object_8h}{Collision\+Object.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_object_8cpp}{Collision\+Object.\+cpp}}\end{DoxyCompactItemize}

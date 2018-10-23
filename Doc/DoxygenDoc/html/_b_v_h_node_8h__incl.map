@@ -1,16 +1,7 @@
-<<<<<<< HEAD
-<map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/BVHNode.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/BVHNode.h">
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="32,124,203,151"/>
-<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="83,199,152,225"/>
-=======
-<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="32,228,203,255"/>
-<area shape="rect" id="node4" href="$_collision_pair_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPair.h" alt="" coords="99,124,250,180"/>
-<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="83,303,152,329"/>
->>>>>>> Stashed changes
-=======
-<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/BVHNode.h" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/BVHNode.h">
-<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="32,139,203,165"/>
-<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="83,213,152,240"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
+<map id="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/BVHNode.h" name="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/BVHNode.h">
+<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="33,228,204,255"/>
+<area shape="rect" id="node4" href="$_collision_pair_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPair.h" alt="" coords="43,124,194,180"/>
+<area shape="rect" id="node5" href="$_fixed_size_container_8h.html" title="R3D/Utility/FixedSizeContainer.h" alt="" coords="218,139,430,165"/>
+<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="84,303,153,329"/>
+<area shape="rect" id="node7" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="341,228,560,255"/>
 </map>

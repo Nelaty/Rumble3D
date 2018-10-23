@@ -2,6 +2,11 @@
 \label{classr3_1_1_bounding_sphere}\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
 
 
+A bounding sphere is a kind of bounding volume.  
+
+
+
+
 {\ttfamily \#include $<$Bounding\+Sphere.\+h$>$}
 
 
@@ -19,17 +24,22 @@ Collaboration diagram for r3\+:\+:Bounding\+Sphere\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_bounding_sphere_af602a853d8ed0b5ccad8679ee41fe7f8}{Bounding\+Sphere}} ()
 \item 
 \mbox{\hyperlink{classr3_1_1_bounding_sphere_a9a9264c19d56b10c9b0def547a369d57}{Bounding\+Sphere}} (const glm\+::vec3 \&center, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} radius)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_bounding_box}{Bounding\+Box}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_bounding_sphere_a3d461e62b827ad9a30ca8013d451e3da}{Bounding\+Sphere}} (const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&one, const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&two)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}{$\sim$\+Bounding\+Sphere}} ()
 \item 
 bool \mbox{\hyperlink{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}{overlaps}} (const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} $\ast$other) const
-\item 
+\begin{DoxyCompactList}\small\item\em Check if this bounding sphere overlaps with the given bounding sphere. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}{get\+Volume}} () const
 \item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_ac13a86be56c1c52b33a707eb2356daa3}{get\+Growth}} (const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&other) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get an approximation of how much a new bounding sphere, including the given and this one, would be relatively to this one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_ae0e7a71b8cfe2f3287397ac865545ee4}{squared\+Radius}} () const
+\begin{DoxyCompactList}\small\item\em Calculate the square of this spheres radius. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -38,6 +48,9 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_bounding_sphere_a880d9888f25b016c5c38c6
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_bounding_sphere_a37ccefd38d8cea7a0d52b85f771ec7c4}{m\+\_\+radius}} \{\}
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+A bounding sphere is a kind of bounding volume. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_bounding_sphere_af602a853d8ed0b5ccad8679ee41fe7f8}\label{classr3_1_1_bounding_sphere_af602a853d8ed0b5ccad8679ee41fe7f8}} 
@@ -52,13 +65,36 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_bounding_sphere_a880d9888f25b016c5c38c6
 \subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily r3\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{center,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{radius }\end{DoxyParamCaption})}
 
+
+
+\mbox{\hyperlink{classr3_1_1_bounding_box}{Bounding\+Box}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em center} & The center of the spehere in world coordinates. \\
+\hline
+{\em radius} & The radius of the sphere \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a3d461e62b827ad9a30ca8013d451e3da}\label{classr3_1_1_bounding_sphere_a3d461e62b827ad9a30ca8013d451e3da}} 
 \index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!Bounding\+Sphere@{Bounding\+Sphere}}
 \index{Bounding\+Sphere@{Bounding\+Sphere}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
 \subsubsection{\texorpdfstring{Bounding\+Sphere()}{BoundingSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily r3\+::\+Bounding\+Sphere\+::\+Bounding\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{one,  }\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{two }\end{DoxyParamCaption})}
 
-Create a bounding sphere which contains both given spheres. \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}\label{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}} 
+
+
+\mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} constructor. 
+
+Create a bounding sphere which contains both given spheres. ~\newline
+
+\begin{DoxyParams}{Parameters}
+{\em one} & The first child bounding sphere. \\
+\hline
+{\em two} & The second child bounding sphere. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}\label{classr3_1_1_bounding_sphere_a9951f8922ebb2227cd97e59c97fed2a5}} 
 \index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!````~Bounding\+Sphere@{$\sim$\+Bounding\+Sphere}}
 \index{````~Bounding\+Sphere@{$\sim$\+Bounding\+Sphere}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
 \subsubsection{\texorpdfstring{$\sim$\+Bounding\+Sphere()}{~BoundingSphere()}}
@@ -73,20 +109,52 @@ Create a bounding sphere which contains both given spheres. \mbox{\Hypertarget{c
 \subsubsection{\texorpdfstring{get\+Growth()}{getGrowth()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Bounding\+Sphere\+::get\+Growth (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} \&}]{other }\end{DoxyParamCaption}) const}
 
-Gibt einen Wert zurück, der das Wachstum einer Kugel durch eine andere Kugel beschreibt, indem Näherungen der Oberflächen berechnet werden. \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}\label{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}} 
+
+
+Get an approximation of how much a new bounding sphere, including the given and this one, would be relatively to this one. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The added volume. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The growth. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}\label{classr3_1_1_bounding_sphere_a01cc1a7397eeec86d2b074d2bf734798}} 
 \index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!get\+Volume@{get\+Volume}}
 \index{get\+Volume@{get\+Volume}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
 \subsubsection{\texorpdfstring{get\+Volume()}{getVolume()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Bounding\+Sphere\+::get\+Volume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the volume of this bounding sphere. \mbox{\Hypertarget{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}\label{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}} 
+Get the volume of this bounding sphere. \begin{DoxyReturn}{Returns}
+The volume. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}\label{classr3_1_1_bounding_sphere_a49163c78b0d1318c576d99e61f806ac2}} 
 \index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!overlaps@{overlaps}}
 \index{overlaps@{overlaps}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
 \subsubsection{\texorpdfstring{overlaps()}{overlaps()}}
 {\footnotesize\ttfamily bool r3\+::\+Bounding\+Sphere\+::overlaps (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}} $\ast$}]{other }\end{DoxyParamCaption}) const}
 
-Check if this bounding sphere overlaps with the given bounding sphere \begin{DoxyReturn}{Returns}
+
+
+Check if this bounding sphere overlaps with the given bounding sphere. 
+
+\begin{DoxyReturn}{Returns}
 True if they overlap, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_bounding_sphere_ae0e7a71b8cfe2f3287397ac865545ee4}\label{classr3_1_1_bounding_sphere_ae0e7a71b8cfe2f3287397ac865545ee4}} 
+\index{r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}!squared\+Radius@{squared\+Radius}}
+\index{squared\+Radius@{squared\+Radius}!r3\+::\+Bounding\+Sphere@{r3\+::\+Bounding\+Sphere}}
+\subsubsection{\texorpdfstring{squared\+Radius()}{squaredRadius()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Bounding\+Sphere\+::squared\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Calculate the square of this spheres radius. 
+
+\begin{DoxyReturn}{Returns}
+The squared radius. 
 \end{DoxyReturn}
 
 
@@ -107,5 +175,5 @@ True if they overlap, false otherwise.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_bounding_sphere_8h}{Bounding\+Sphere.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_bounding_sphere_8cpp}{Bounding\+Sphere.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_bounding_sphere_8h}{Bounding\+Sphere.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_bounding_sphere_8cpp}{Bounding\+Sphere.\+cpp}}\end{DoxyCompactItemize}

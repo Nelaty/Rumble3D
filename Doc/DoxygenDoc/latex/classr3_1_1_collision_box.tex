@@ -2,6 +2,11 @@
 \label{classr3_1_1_collision_box}\index{r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}}
 
 
+\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} that represents a box.  
+
+
+
+
 {\ttfamily \#include $<$Collision\+Box.\+h$>$}
 
 
@@ -25,27 +30,38 @@ Collaboration diagram for r3\+:\+:Collision\+Box\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classr3_1_1_collision_box_ae8fd5f7a2fa804313c988f8b13866b91}{Collision\+Box}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, const glm\+::vec3 \&half\+Size, const glm\+::mat4 \&offset=glm\+::mat4(1))
-\item 
+\mbox{\hyperlink{classr3_1_1_collision_box_af20be9fdcddf3a94d195fabf22d8ad3a}{Collision\+Box}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, const glm\+::vec3 \&half\+Sizes, const glm\+::mat4 \&offset=glm\+::mat4(1))
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_collision_box_aab1d8f1b7999c61cff10b631305cc4f3}{$\sim$\+Collision\+Box}} ()
 \item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_box_a6d35bfc27fd291409cb5e90ae2464179}{get\+Half\+Size}} () const
-\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_box_a91a3eaa48b16d7b0ca52ebadf4830bc8}{m\+\_\+half\+Size}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the half sizes of the box. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
+\subsection{Detailed Description}
+\mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} that represents a box. 
+
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_box_ae8fd5f7a2fa804313c988f8b13866b91}\label{classr3_1_1_collision_box_ae8fd5f7a2fa804313c988f8b13866b91}} 
+\mbox{\Hypertarget{classr3_1_1_collision_box_af20be9fdcddf3a94d195fabf22d8ad3a}\label{classr3_1_1_collision_box_af20be9fdcddf3a94d195fabf22d8ad3a}} 
 \index{r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}!Collision\+Box@{Collision\+Box}}
 \index{Collision\+Box@{Collision\+Box}!r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}}
 \subsubsection{\texorpdfstring{Collision\+Box()}{CollisionBox()}}
-{\footnotesize\ttfamily r3\+::\+Collision\+Box\+::\+Collision\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{const glm\+::vec3 \&}]{half\+Size,  }\item[{const glm\+::mat4 \&}]{offset = {\ttfamily glm\+:\+:mat4(1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Box\+::\+Collision\+Box (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{const glm\+::vec3 \&}]{half\+Sizes,  }\item[{const glm\+::mat4 \&}]{offset = {\ttfamily glm\+:\+:mat4(1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body represented by this primitive. \\
+\hline
+{\em half\+Sizes} & The half sizes of the box. \\
+\hline
+{\em offset} & The offset from the rigid body. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_collision_box_aab1d8f1b7999c61cff10b631305cc4f3}\label{classr3_1_1_collision_box_aab1d8f1b7999c61cff10b631305cc4f3}} 
 \index{r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}!````~Collision\+Box@{$\sim$\+Collision\+Box}}
 \index{````~Collision\+Box@{$\sim$\+Collision\+Box}!r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}}
@@ -63,16 +79,14 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_collision_box_a91a3eaa48b16d7b0ca52ebad
 
 
 
-\subsection{Member Data Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_box_a91a3eaa48b16d7b0ca52ebadf4830bc8}\label{classr3_1_1_collision_box_a91a3eaa48b16d7b0ca52ebadf4830bc8}} 
-\index{r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}!m\+\_\+half\+Size@{m\+\_\+half\+Size}}
-\index{m\+\_\+half\+Size@{m\+\_\+half\+Size}!r3\+::\+Collision\+Box@{r3\+::\+Collision\+Box}}
-\subsubsection{\texorpdfstring{m\+\_\+half\+Size}{m\_halfSize}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Collision\+Box\+::m\+\_\+half\+Size\hspace{0.3cm}{\ttfamily [protected]}}
+Get the half sizes of the box. 
 
+\begin{DoxyReturn}{Returns}
+The half sizes. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_box_8h}{Collision\+Box.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_box_8cpp}{Collision\+Box.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_box_8h}{Collision\+Box.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_box_8cpp}{Collision\+Box.\+cpp}}\end{DoxyCompactItemize}

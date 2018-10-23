@@ -2,6 +2,11 @@
 \label{classr3_1_1_physics_engine_module}\index{r3\+::\+Physics\+Engine\+Module@{r3\+::\+Physics\+Engine\+Module}}
 
 
+Abstract class for physic engine modules.  
+
+
+
+
 {\ttfamily \#include $<$Physics\+Engine\+Module.\+h$>$}
 
 
@@ -28,11 +33,11 @@ Collaboration diagram for r3\+:\+:Physics\+Engine\+Module\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_physics_engine_module_af2b491daa564a15ec5362780c885e2ca}{$\sim$\+Physics\+Engine\+Module}} ()
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}} $\ast$ \mbox{\hyperlink{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534f367f6d728312d3}{get\+Computation\+Interface}} () const =0
-\item 
+\begin{DoxyCompactList}\small\item\em Get the computation interface of this module. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_physics_engine_module_abaaace8d25ea23ed21ade61ca2b201d0}{enable}} (bool enabled)
-\item 
+\begin{DoxyCompactList}\small\item\em Enable or disable this module. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classr3_1_1_physics_engine_module_add8b93ca3e3e3ec0ff045c15610119ea}{is\+Enabled}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Check if this module is currently enabled. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -70,13 +75,29 @@ Abstract class for physic engine modules.
 \subsubsection{\texorpdfstring{enable()}{enable()}}
 {\footnotesize\ttfamily void r3\+::\+Physics\+Engine\+Module\+::enable (\begin{DoxyParamCaption}\item[{bool}]{enabled }\end{DoxyParamCaption})}
 
-Enable or disable this module. \mbox{\Hypertarget{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534f367f6d728312d3}\label{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534f367f6d728312d3}} 
+
+
+Enable or disable this module. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enabled} & True will enable it, false disable it. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534f367f6d728312d3}\label{classr3_1_1_physics_engine_module_a3b1d0d9bea0a82534f367f6d728312d3}} 
 \index{r3\+::\+Physics\+Engine\+Module@{r3\+::\+Physics\+Engine\+Module}!get\+Computation\+Interface@{get\+Computation\+Interface}}
 \index{get\+Computation\+Interface@{get\+Computation\+Interface}!r3\+::\+Physics\+Engine\+Module@{r3\+::\+Physics\+Engine\+Module}}
 \subsubsection{\texorpdfstring{get\+Computation\+Interface()}{getComputationInterface()}}
 {\footnotesize\ttfamily virtual \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}}$\ast$ r3\+::\+Physics\+Engine\+Module\+::get\+Computation\+Interface (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+
+
 Get the computation interface of this module. 
+
+\begin{DoxyReturn}{Returns}
+The computation interface. 
+\end{DoxyReturn}
+
 
 Implemented in \mbox{\hyperlink{classr3_1_1_particle_world_a1e806bf89ec6445a54b9534f1efc081f}{r3\+::\+Particle\+World}}, and \mbox{\hyperlink{classr3_1_1_rigid_body_world_ac25b39a5b15666d99f42b68f29f8a97b}{r3\+::\+Rigid\+Body\+World}}.
 
@@ -86,8 +107,12 @@ Implemented in \mbox{\hyperlink{classr3_1_1_particle_world_a1e806bf89ec6445a54b9
 \subsubsection{\texorpdfstring{is\+Enabled()}{isEnabled()}}
 {\footnotesize\ttfamily bool r3\+::\+Physics\+Engine\+Module\+::is\+Enabled (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Check if this module is currently enabled. \begin{DoxyReturn}{Returns}
-true if currently enabled. 
+
+
+Check if this module is currently enabled. 
+
+\begin{DoxyReturn}{Returns}
+True if enabled, false otherwise. 
 \end{DoxyReturn}
 
 
@@ -102,5 +127,5 @@ true if currently enabled.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\mbox{\hyperlink{_physics_engine_module_8h}{Physics\+Engine\+Module.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\mbox{\hyperlink{_physics_engine_module_8cpp}{Physics\+Engine\+Module.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\mbox{\hyperlink{_physics_engine_module_8h}{Physics\+Engine\+Module.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\mbox{\hyperlink{_physics_engine_module_8cpp}{Physics\+Engine\+Module.\+cpp}}\end{DoxyCompactItemize}

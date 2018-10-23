@@ -6,7 +6,7 @@ namespace r3
 	class IComputationInterface;
 
 	/**
-	 * Abstract class for physic engine modules.
+	 * \brief Abstract class for physic engine modules.
 	 */
 	class R3D_DECLSPEC PhysicsEngineModule
 	{
@@ -14,17 +14,19 @@ namespace r3
 		virtual ~PhysicsEngineModule();
 
 		/**
-		 * Get the computation interface of this module.
+		 * \brief Get the computation interface of this module.
+		 * \return The computation interface.
 		 */
 		virtual IComputationInterface* getComputationInterface() const = 0;
 
 		/**
-		 * Enable or disable this module.
+		 * \brief Enable or disable this module.
+		 * \param enabled True will enable it, false disable it.
 		 */
 		void enable(bool enabled);
 		/**
-		 * Check if this module is currently enabled.
-		 * \return true if currently enabled.
+		 * \brief Check if this module is currently enabled.
+		 * \return True if enabled, false otherwise.
 		 */
 		bool isEnabled() const;
 

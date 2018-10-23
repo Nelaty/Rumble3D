@@ -2,6 +2,11 @@
 \label{classr3_1_1_physics_material}\index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
 
 
+Contains physical properties of a material.  
+
+
+
+
 {\ttfamily \#include $<$Physics\+Material.\+h$>$}
 
 
@@ -19,24 +24,27 @@ Collaboration diagram for r3\+:\+:Physics\+Material\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_physics_material_adf01a85845faf2303264617b4756946b}{Physics\+Material}} ()
 \item 
 \mbox{\hyperlink{classr3_1_1_physics_material_ae3b11163453e24be78d2c51a638b0708}{Physics\+Material}} (const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}} \&definition)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} \& \mbox{\hyperlink{classr3_1_1_physics_material_a2c2b9752b5d5305ca2189e91fb8979e6}{operator=}} (const \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} \&)=default
 \item 
 \mbox{\hyperlink{classr3_1_1_physics_material_a795d62d5fa009bb6aa7d37627ccc4fd0}{$\sim$\+Physics\+Material}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_physics_material_a13509f5494d00fdd5356ca6101c620ac}{init}} (const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}} \&definition)
-\item 
+\begin{DoxyCompactList}\small\item\em Initialize all attributes. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_physics_material_a8193e719476e1b22ba61b9cd15066437}{set\+Friction}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} friction)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the friction coefficient. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_physics_material_ace861dc19a676ebdb19193076b24a458}{get\+Friction}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current friction coefficient. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_physics_material_a2056c195a2d655aefe9a480c28e67ddb}{set\+Restitution}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} restitution)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the current restitution coefficient. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_physics_material_a555b73c2bde3679b0e40087455eab61e}{get\+Restitution}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current restitution coefficient. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}} \& \mbox{\hyperlink{classr3_1_1_physics_material_a652318d9fa4f6db099dc58d6f6ae314a}{get\+Material\+Def}} () const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get a collection of all attributes. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Contains physical properties of a material. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_physics_material_adf01a85845faf2303264617b4756946b}\label{classr3_1_1_physics_material_adf01a85845faf2303264617b4756946b}} 
@@ -51,6 +59,15 @@ const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def
 \subsubsection{\texorpdfstring{Physics\+Material()}{PhysicsMaterial()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily r3\+::\+Physics\+Material\+::\+Physics\+Material (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}} \&}]{definition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em definition} & The construction information. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_physics_material_a795d62d5fa009bb6aa7d37627ccc4fd0}\label{classr3_1_1_physics_material_a795d62d5fa009bb6aa7d37627ccc4fd0}} 
 \index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}!````~Physics\+Material@{$\sim$\+Physics\+Material}}
 \index{````~Physics\+Material@{$\sim$\+Physics\+Material}!r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
@@ -66,24 +83,54 @@ const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def
 \subsubsection{\texorpdfstring{get\+Friction()}{getFriction()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Physics\+Material\+::get\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Get the current friction coefficient. 
+
+\begin{DoxyReturn}{Returns}
+The friction coefficient. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_physics_material_a652318d9fa4f6db099dc58d6f6ae314a}\label{classr3_1_1_physics_material_a652318d9fa4f6db099dc58d6f6ae314a}} 
 \index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}!get\+Material\+Def@{get\+Material\+Def}}
 \index{get\+Material\+Def@{get\+Material\+Def}!r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
 \subsubsection{\texorpdfstring{get\+Material\+Def()}{getMaterialDef()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}} \& r3\+::\+Physics\+Material\+::get\+Material\+Def (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Get a collection of all attributes. 
+
+\begin{DoxyReturn}{Returns}
+The material definition. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_physics_material_a555b73c2bde3679b0e40087455eab61e}\label{classr3_1_1_physics_material_a555b73c2bde3679b0e40087455eab61e}} 
 \index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}!get\+Restitution@{get\+Restitution}}
 \index{get\+Restitution@{get\+Restitution}!r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
 \subsubsection{\texorpdfstring{get\+Restitution()}{getRestitution()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Physics\+Material\+::get\+Restitution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
+
+
+Get the current restitution coefficient. 
+
+\begin{DoxyReturn}{Returns}
+The restitution coefficient. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_physics_material_a13509f5494d00fdd5356ca6101c620ac}\label{classr3_1_1_physics_material_a13509f5494d00fdd5356ca6101c620ac}} 
 \index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}!init@{init}}
 \index{init@{init}!r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
 \subsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void r3\+::\+Physics\+Material\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}} \&}]{definition }\end{DoxyParamCaption})}
 
+
+
+Initialize all attributes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em definition} & The construction information. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_physics_material_a2c2b9752b5d5305ca2189e91fb8979e6}\label{classr3_1_1_physics_material_a2c2b9752b5d5305ca2189e91fb8979e6}} 
 \index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}!operator=@{operator=}}
 \index{operator=@{operator=}!r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
@@ -96,6 +143,15 @@ const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def
 \subsubsection{\texorpdfstring{set\+Friction()}{setFriction()}}
 {\footnotesize\ttfamily void r3\+::\+Physics\+Material\+::set\+Friction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{friction }\end{DoxyParamCaption})}
 
+
+
+Set the friction coefficient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em friction} & The new friction coefficient. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_physics_material_a2056c195a2d655aefe9a480c28e67ddb}\label{classr3_1_1_physics_material_a2056c195a2d655aefe9a480c28e67ddb}} 
 \index{r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}!set\+Restitution@{set\+Restitution}}
 \index{set\+Restitution@{set\+Restitution}!r3\+::\+Physics\+Material@{r3\+::\+Physics\+Material}}
@@ -104,7 +160,16 @@ const \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def
 
 
 
+Set the current restitution coefficient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em restitution} & The new restitution coefficient. \\
+\hline
+\end{DoxyParams}
+
+
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_physics_material_8h}{Physics\+Material.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_physics_material_8cpp}{Physics\+Material.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_physics_material_8h}{Physics\+Material.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_physics_material_8cpp}{Physics\+Material.\+cpp}}\end{DoxyCompactItemize}

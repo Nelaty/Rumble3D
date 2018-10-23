@@ -9,7 +9,7 @@ var searchData=
   ['clearaccumulator',['clearAccumulator',['../classr3_1_1_particle.html#a1ba9a33fb4513cf79eb8bf4954ec6b97',1,'r3::Particle']]],
   ['clearaccumulators',['clearAccumulators',['../classr3_1_1_rigid_body.html#a86bfec9a651351b27c0f53f5db56c7c4',1,'r3::RigidBody']]],
   ['collisionalgorithmmatrix',['CollisionAlgorithmMatrix',['../classr3_1_1_collision_algorithm_matrix.html#a97bdad626057f600ae5ffca63eb174b8',1,'r3::CollisionAlgorithmMatrix']]],
-  ['collisionbox',['CollisionBox',['../classr3_1_1_collision_box.html#ae8fd5f7a2fa804313c988f8b13866b91',1,'r3::CollisionBox']]],
+  ['collisionbox',['CollisionBox',['../classr3_1_1_collision_box.html#af20be9fdcddf3a94d195fabf22d8ad3a',1,'r3::CollisionBox']]],
   ['collisiondata',['CollisionData',['../classr3_1_1_collision_data.html#a439100db9ec5b734e2f0b778d2f97cce',1,'r3::CollisionData']]],
   ['collisiondetector',['CollisionDetector',['../classr3_1_1_collision_detector.html#a47ab392bc5215133e29cd678ef915108',1,'r3::CollisionDetector::CollisionDetector(unsigned int broadPhaseCollisions=1000000, unsigned int contactsMax=1000, unsigned int iterations=2000)'],['../classr3_1_1_collision_detector.html#ad44d67dd15e661d0e135016c89a7c9a4',1,'r3::CollisionDetector::CollisionDetector(const CollisionDetector &amp;)=delete']]],
   ['collisionmask',['CollisionMask',['../structr3_1_1_collision_mask.html#a7f1fb1fae3d7e14677ad2590fcd661e0',1,'r3::CollisionMask']]],

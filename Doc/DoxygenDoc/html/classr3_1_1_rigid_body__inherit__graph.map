@@ -1,3 +1,3 @@
 <map id="r3::RigidBody" name="r3::RigidBody">
-<area shape="rect" id="node2" href="$classr3_1_1_collision_object.html" title="{r3::CollisionObject\n|# m_collisionPrimitive\l# m_transform\l|+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="33,5,192,171"/>
+<area shape="rect" id="node2" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="33,5,192,171"/>
 </map>

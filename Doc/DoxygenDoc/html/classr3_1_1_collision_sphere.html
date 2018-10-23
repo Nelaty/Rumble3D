@@ -76,13 +76,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p><a class="el" href="classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. ">CollisionPrimitive</a>, which represents a sphere.  
+ <a href="classr3_1_1_collision_sphere.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_collision_sphere_8h_source.html">CollisionSphere.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::CollisionSphere:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_collision_sphere__inherit__graph.png" border="0" usemap="#r3_1_1_collision_sphere_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_collision_sphere_inherit__map" id="r3_1_1_collision_sphere_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n|# m_body\l# m_offset\l# m_transform\l|+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="5,5,153,200"/>
+<area shape="rect" id="node2" href="classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. " alt="" coords="5,5,153,200"/>
 </map>
 </div>
 <div class="dynheader">
@@ -90,53 +93,42 @@ Collaboration diagram for r3::CollisionSphere:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_collision_sphere__coll__graph.png" border="0" usemap="#r3_1_1_collision_sphere_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_collision_sphere_coll__map" id="r3_1_1_collision_sphere_coll__map">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n||+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="291,211,439,377"/>
-<area shape="rect" id="node5" href="classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="444,535,603,685"/>
-<area shape="rect" id="node4" href="classr3_1_1_rigid_body.html" title="{r3::RigidBody\n||+ RigidBody()\l+ RigidBody()\l+ ~RigidBody()\l+ init()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\land 41 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="667,851,882,1104"/>
-<area shape="rect" id="node6" href="classr3_1_1_transform3_d.html" title="{r3::Transform3D\n||+ Transform3D()\l+ ~Transform3D()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ translate()\l+ rotate()\l+ setRotation()\l+ setRotation()\l+ getRotation()\l+ getPointInLocalSpace()\l+ getPointInWorldSpace()\l+ getDirectionInLocalSpace()\l+ getDirectionInWorldSpace()\l}" alt="" coords="466,160,658,428"/>
-<area shape="rect" id="node8" href="classr3_1_1_physics_material.html" title="{r3::PhysicsMaterial\n||+ PhysicsMaterial()\l+ PhysicsMaterial()\l+ operator=()\l+ ~PhysicsMaterial()\l+ init()\l+ setFriction()\l+ getFriction()\l+ setRestitution()\l+ getRestitution()\l+ getMaterialDef()\l}" alt="" coords="703,505,846,715"/>
-<area shape="rect" id="node10" href="structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="949,557,1072,663"/>
-=======
-<area shape="rect" id="node2" href="classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n||+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="306,189,454,355"/>
-<area shape="rect" id="node5" href="classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="442,491,601,641"/>
+<area shape="rect" id="node2" href="classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. " alt="" coords="306,189,454,355"/>
+<area shape="rect" id="node5" href="classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="442,491,601,641"/>
 <area shape="rect" id="node4" href="classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="665,807,879,1060"/>
-<area shape="rect" id="node6" href="classr3_1_1_transform3_d.html" title="{r3::Transform3D\n||+ Transform3D()\l+ ~Transform3D()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ translate()\l+ translate()\l+ rotate()\l+ rotate()\l+ setRotation()\land 7 more...\l}" alt="" coords="499,160,621,384"/>
-<area shape="rect" id="node8" href="classr3_1_1_physics_material.html" title="{r3::PhysicsMaterial\n||+ PhysicsMaterial()\l+ PhysicsMaterial()\l+ operator=()\l+ ~PhysicsMaterial()\l+ init()\l+ setFriction()\l+ getFriction()\l+ setRestitution()\l+ getRestitution()\l+ getMaterialDef()\l}" alt="" coords="701,461,843,671"/>
+<area shape="rect" id="node6" href="classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. " alt="" coords="499,160,621,384"/>
+<area shape="rect" id="node8" href="classr3_1_1_physics_material.html" title="Contains physical properties of a material. " alt="" coords="701,461,843,671"/>
 <area shape="rect" id="node10" href="structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="948,513,1071,619"/>
->>>>>>> Stashed changes
-=======
-<area shape="rect" id="node2" href="classr3_1_1_collision_primitive.html" title="{r3::CollisionPrimitive\n||+ ~CollisionPrimitive()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l+ getType()\l# CollisionPrimitive()\l}" alt="" coords="306,189,454,355"/>
-<area shape="rect" id="node5" href="classr3_1_1_collision_object.html" title="{r3::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l+ getTransform()\l+ getTransform()\l# CollisionObject()\l}" alt="" coords="442,491,601,641"/>
-<area shape="rect" id="node4" href="classr3_1_1_rigid_body.html" title="{r3::RigidBody\n||+ RigidBody()\l+ RigidBody()\l+ ~RigidBody()\l+ init()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\land 41 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="665,807,879,1060"/>
-<area shape="rect" id="node6" href="classr3_1_1_transform3_d.html" title="{r3::Transform3D\n||+ Transform3D()\l+ ~Transform3D()\l+ setPosition()\l+ setPosition()\l+ getPosition()\l+ translate()\l+ translate()\l+ rotate()\l+ rotate()\l+ setRotation()\land 7 more...\l}" alt="" coords="499,160,621,384"/>
-<area shape="rect" id="node8" href="classr3_1_1_physics_material.html" title="{r3::PhysicsMaterial\n||+ PhysicsMaterial()\l+ PhysicsMaterial()\l+ operator=()\l+ ~PhysicsMaterial()\l+ init()\l+ setFriction()\l+ getFriction()\l+ setRestitution()\l+ getRestitution()\l+ getMaterialDef()\l}" alt="" coords="701,461,843,671"/>
-<area shape="rect" id="node10" href="structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="948,513,1071,619"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3b910b66d6b9689da9beba5ec151eba3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_sphere.html#a3b910b66d6b9689da9beba5ec151eba3">CollisionSphere</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *body, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> radius, const glm::mat4 &amp;offset=glm::mat4(1))</td></tr>
+<tr class="memdesc:a3b910b66d6b9689da9beba5ec151eba3"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classr3_1_1_collision_sphere.html" title="CollisionPrimitive, which represents a sphere. ">CollisionSphere</a> constructor.  <a href="#a3b910b66d6b9689da9beba5ec151eba3">More...</a><br /></td></tr>
 <tr class="separator:a3b910b66d6b9689da9beba5ec151eba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3605a7afc888411c5fa52179122a8a77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_sphere.html#a3605a7afc888411c5fa52179122a8a77">~CollisionSphere</a> ()</td></tr>
 <tr class="separator:a3605a7afc888411c5fa52179122a8a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa3b7687165b34ab82b3bedb0884cc65b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_sphere.html#aa3b7687165b34ab82b3bedb0884cc65b">getRadius</a> () const</td></tr>
+<tr class="memdesc:aa3b7687165b34ab82b3bedb0884cc65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the radius of the collision sphere.  <a href="#aa3b7687165b34ab82b3bedb0884cc65b">More...</a><br /></td></tr>
 <tr class="separator:aa3b7687165b34ab82b3bedb0884cc65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_collision_primitive"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_collision_primitive')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_collision_primitive.html">r3::CollisionPrimitive</a></td></tr>
 <tr class="memitem:adfa75f14067cb33a3f0049895a3db880 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#adfa75f14067cb33a3f0049895a3db880">~CollisionPrimitive</a> ()</td></tr>
 <tr class="separator:adfa75f14067cb33a3f0049895a3db880 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae27cb70a6812491c2d8de97f22c07ac6 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#ae27cb70a6812491c2d8de97f22c07ac6">calculateInternals</a> ()</td></tr>
+<tr class="memdesc:ae27cb70a6812491c2d8de97f22c07ac6 inherit pub_methods_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates its transformation.  <a href="classr3_1_1_collision_primitive.html#ae27cb70a6812491c2d8de97f22c07ac6">More...</a><br /></td></tr>
 <tr class="separator:ae27cb70a6812491c2d8de97f22c07ac6 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c959f5ca0a09a0fc2038ac7f30e45a inherit pub_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#a78c959f5ca0a09a0fc2038ac7f30e45a">getAxis</a> (unsigned index) const</td></tr>
+<tr class="memdesc:a78c959f5ca0a09a0fc2038ac7f30e45a inherit pub_methods_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an axis from the transformation matrix.  <a href="classr3_1_1_collision_primitive.html#a78c959f5ca0a09a0fc2038ac7f30e45a">More...</a><br /></td></tr>
 <tr class="separator:a78c959f5ca0a09a0fc2038ac7f30e45a inherit pub_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc4e2139c698bab280338db36d7cc586 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">const glm::mat4 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#acc4e2139c698bab280338db36d7cc586">getTransform</a> () const</td></tr>
+<tr class="memdesc:acc4e2139c698bab280338db36d7cc586 inherit pub_methods_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the transform of this primitive.  <a href="classr3_1_1_collision_primitive.html#acc4e2139c698bab280338db36d7cc586">More...</a><br /></td></tr>
 <tr class="separator:acc4e2139c698bab280338db36d7cc586 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8dbda90cce34a6262309cbdb75feea7 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#af8dbda90cce34a6262309cbdb75feea7">getBody</a> () const</td></tr>
+<tr class="memdesc:af8dbda90cce34a6262309cbdb75feea7 inherit pub_methods_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rigid body, which uses this collision primitive.  <a href="classr3_1_1_collision_primitive.html#af8dbda90cce34a6262309cbdb75feea7">More...</a><br /></td></tr>
 <tr class="separator:af8dbda90cce34a6262309cbdb75feea7 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac7a318fb788d1442e7d3390c8e465e14 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">CollisionPrimitiveType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#ac7a318fb788d1442e7d3390c8e465e14">getType</a> () const</td></tr>
+<tr class="memdesc:ac7a318fb788d1442e7d3390c8e465e14 inherit pub_methods_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of this primitive.  <a href="classr3_1_1_collision_primitive.html#ac7a318fb788d1442e7d3390c8e465e14">More...</a><br /></td></tr>
 <tr class="separator:ac7a318fb788d1442e7d3390c8e465e14 inherit pub_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -145,8 +137,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:abc9e3dcae422b4732a288fa19d89d466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classr3_1_1_collision_primitive"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classr3_1_1_collision_primitive')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classr3_1_1_collision_primitive.html">r3::CollisionPrimitive</a></td></tr>
 <tr class="memitem:a3ae500c9bd222ec42d86696702e746db inherit pro_attribs_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#a3ae500c9bd222ec42d86696702e746db">m_body</a> {}</td></tr>
+<tr class="memdesc:a3ae500c9bd222ec42d86696702e746db inherit pro_attribs_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">The rigid body this collision primitive represents.  <a href="classr3_1_1_collision_primitive.html#a3ae500c9bd222ec42d86696702e746db">More...</a><br /></td></tr>
 <tr class="separator:a3ae500c9bd222ec42d86696702e746db inherit pro_attribs_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a51c2e72a8c5122a1031d6620a2901 inherit pro_attribs_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#a15a51c2e72a8c5122a1031d6620a2901">m_offset</a></td></tr>
+<tr class="memdesc:a15a51c2e72a8c5122a1031d6620a2901 inherit pro_attribs_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight">Offset from the represented rigid body.  <a href="classr3_1_1_collision_primitive.html#a15a51c2e72a8c5122a1031d6620a2901">More...</a><br /></td></tr>
 <tr class="separator:a15a51c2e72a8c5122a1031d6620a2901 inherit pro_attribs_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb28517e7791b9836a5cac5d8550b13 inherit pro_attribs_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">glm::mat4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#a0cb28517e7791b9836a5cac5d8550b13">m_transform</a></td></tr>
 <tr class="separator:a0cb28517e7791b9836a5cac5d8550b13 inherit pro_attribs_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,9 +149,12 @@ Protected Attributes</h2></td></tr>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_methods_classr3_1_1_collision_primitive"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classr3_1_1_collision_primitive')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classr3_1_1_collision_primitive.html">r3::CollisionPrimitive</a></td></tr>
 <tr class="memitem:a56f4cef84fcb4d92b0ced2ffcefdb22a inherit pro_methods_classr3_1_1_collision_primitive"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_primitive.html#a56f4cef84fcb4d92b0ced2ffcefdb22a">CollisionPrimitive</a> (CollisionPrimitiveType type)</td></tr>
+<tr class="memdesc:a56f4cef84fcb4d92b0ced2ffcefdb22a inherit pro_methods_classr3_1_1_collision_primitive"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. ">CollisionPrimitive</a> constructor.  <a href="classr3_1_1_collision_primitive.html#a56f4cef84fcb4d92b0ced2ffcefdb22a">More...</a><br /></td></tr>
 <tr class="separator:a56f4cef84fcb4d92b0ced2ffcefdb22a inherit pro_methods_classr3_1_1_collision_primitive"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. ">CollisionPrimitive</a>, which represents a sphere. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b910b66d6b9689da9beba5ec151eba3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3b910b66d6b9689da9beba5ec151eba3">&#9670;&nbsp;</a></span>CollisionSphere()</h2>
 
@@ -189,6 +186,16 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classr3_1_1_collision_sphere.html" title="CollisionPrimitive, which represents a sphere. ">CollisionSphere</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>The rigid body this collision sphere represents. </td></tr>
+    <tr><td class="paramname">radius</td><td>The radius of the collision sphere. </td></tr>
+    <tr><td class="paramname">offset</td><td>Offset from the represented rigid body. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -233,6 +240,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the radius of the collision sphere. </p>
+<dl class="section return"><dt>Returns</dt><dd>The radius of the sphere. </dd></dl>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -259,8 +269,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_collision_sphere_8h_source.html">CollisionSphere.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_collision_sphere_8cpp.html">CollisionSphere.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_collision_sphere_8h_source.html">CollisionSphere.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_collision_sphere_8cpp.html">CollisionSphere.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

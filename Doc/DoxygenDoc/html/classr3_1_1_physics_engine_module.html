@@ -77,23 +77,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Abstract class for physic engine modules.  
+ <a href="classr3_1_1_physics_engine_module.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_physics_engine_module_8h_source.html">PhysicsEngineModule.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::PhysicsEngineModule:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_physics_engine_module__inherit__graph.png" border="0" usemap="#r3_1_1_physics_engine_module_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_physics_engine_module_inherit__map" id="r3_1_1_physics_engine_module_inherit__map">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="classr3_1_1_particle_world.html" title="ParticleWorld holds a number of particles and contact generators. " alt="" coords="5,189,216,443"/>
-=======
-<area shape="rect" id="node2" href="classr3_1_1_particle_world.html" title="A ParticleWorld holds a number of particles and contact generators. It uses its ParticleEngineCI to m..." alt="" coords="5,189,216,443"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
-<area shape="rect" id="node3" href="classr3_1_1_rigid_body_world.html" title="{r3::RigidBodyWorld\n||+ RigidBodyWorld()\l+ ~RigidBodyWorld()\l+ setComputationInterface()\l+ getComputationInterface()\l+ createRigidBody()\l+ destroyRigidBody()\l+ destroyAllRigidBodies()\l+ getRigidBodies()\l+ getRigidBodies()\l+ getForceRegistry()\l+ getForceRegistry()\l}" alt="" coords="241,204,423,428"/>
-=======
 <area shape="rect" id="node2" href="classr3_1_1_particle_world.html" title="A ParticleWorld is a physics engine module, used to simulate particles. " alt="" coords="5,189,216,443"/>
 <area shape="rect" id="node3" href="classr3_1_1_rigid_body_world.html" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies. " alt="" coords="241,204,423,428"/>
->>>>>>> Stashed changes
 </map>
 </div>
 <div class="dynheader">
@@ -107,10 +101,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af2b491daa564a15ec5362780c885e2ca"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#af2b491daa564a15ec5362780c885e2ca">~PhysicsEngineModule</a> ()</td></tr>
 <tr class="separator:af2b491daa564a15ec5362780c885e2ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b1d0d9bea0a82534f367f6d728312d3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classr3_1_1_i_computation_interface.html">IComputationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#a3b1d0d9bea0a82534f367f6d728312d3">getComputationInterface</a> () const =0</td></tr>
+<tr class="memdesc:a3b1d0d9bea0a82534f367f6d728312d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the computation interface of this module.  <a href="#a3b1d0d9bea0a82534f367f6d728312d3">More...</a><br /></td></tr>
 <tr class="separator:a3b1d0d9bea0a82534f367f6d728312d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abaaace8d25ea23ed21ade61ca2b201d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#abaaace8d25ea23ed21ade61ca2b201d0">enable</a> (bool enabled)</td></tr>
+<tr class="memdesc:abaaace8d25ea23ed21ade61ca2b201d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or disable this module.  <a href="#abaaace8d25ea23ed21ade61ca2b201d0">More...</a><br /></td></tr>
 <tr class="separator:abaaace8d25ea23ed21ade61ca2b201d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add8b93ca3e3e3ec0ff045c15610119ea"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_physics_engine_module.html#add8b93ca3e3e3ec0ff045c15610119ea">isEnabled</a> () const</td></tr>
+<tr class="memdesc:add8b93ca3e3e3ec0ff045c15610119ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this module is currently enabled.  <a href="#add8b93ca3e3e3ec0ff045c15610119ea">More...</a><br /></td></tr>
 <tr class="separator:add8b93ca3e3e3ec0ff045c15610119ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -192,7 +189,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Enable or disable this module. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enabled</td><td>True will enable it, false disable it. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -218,7 +222,9 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
 <p>Get the computation interface of this module. </p>
+<dl class="section return"><dt>Returns</dt><dd>The computation interface. </dd></dl>
 
 <p>Implemented in <a class="el" href="classr3_1_1_particle_world.html#a1e806bf89ec6445a54b9534f1efc081f">r3::ParticleWorld</a>, and <a class="el" href="classr3_1_1_rigid_body_world.html#ac25b39a5b15666d99f42b68f29f8a97b">r3::RigidBodyWorld</a>.</p>
 
@@ -238,7 +244,9 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if this module is currently enabled. </p><dl class="section return"><dt>Returns</dt><dd>true if currently enabled. </dd></dl>
+
+<p>Check if this module is currently enabled. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if enabled, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -266,8 +274,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_physics_engine_module_8h_source.html">PhysicsEngineModule.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_physics_engine_module_8cpp.html">PhysicsEngineModule.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_physics_engine_module_8h_source.html">PhysicsEngineModule.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_physics_engine_module_8cpp.html">PhysicsEngineModule.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

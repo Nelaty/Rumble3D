@@ -10,24 +10,43 @@ namespace r3
 	{
 	public:
 		BoundingBox();
-		BoundingBox(const glm::vec3& center, const glm::vec3& bounds);
-		// Erstellt BoundingSphere, die die beiden Kugeln beinhaltet
+		/**
+		 * \brief BoundingBox constructor.
+		 * \param center The center of the box in world coordinates.
+		 * \param bounds Half sizes of the box.
+		 */
+		BoundingBox(const glm::vec3& center, const glm::vec3& halfSizes);
+		/**
+		 * \brief BoundingBox constructor. Create a bounding box
+		 * which contains both given boxes.
+		 * \param one The first contained bounding box.
+		 * \param two The second contained bounding box.
+		 */
 		BoundingBox(const BoundingBox& one, const BoundingBox& two);
 		~BoundingBox();
-
-		// Gibt true zurück, wenn sich die BoundingSphere mit other überlappt
-		// und sonst false
+		/**
+		 * \brief Check the given bounding box overlaps with this one.
+		 * \param other The other bounding box to check against.
+		 * \return True if there is a collision, false otherwise.
+		 */
 		bool overlaps(const BoundingBox* other) const;
-		/** Get the volume of this bounding box. */
+		/** 
+		 * \brief Get the volume of this bounding box. 
+		 * \return The volume.
+		 */
 		real getVolume() const;
-		// Gibt einen Wert zurück, der das Wachstum einer Kugel durch eine
-		// andere Kugel beschreibt, indem Näherungen der Oberflächen 
-		// berechnet werden.
+		/**
+		 * \brief Get an approximation of how much a new bounding
+		 * box, including the given and this one, would be
+		 * relatively to this one.
+		 * \param other The added volume.
+		 * \return The growth.
+		 */
 		real getGrowth(const BoundingBox& other) const;
 
 	protected:
 		glm::vec3 m_center;
-		glm::vec3 m_bounds;
+		glm::vec3 m_halfSizes;
 	};
 }
 

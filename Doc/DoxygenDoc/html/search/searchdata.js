@@ -2,21 +2,13 @@ var indexSectionsWithContent =
 {
   0: "abcdefghimnoprstuv~",
   1: "abcdfginprstv",
-  2: "ru",
+  2: "r",
   3: "abcdfgimnprstv",
   4: "abcdefghinoprstuv~",
   5: "mrs",
   6: "abfinpr",
-<<<<<<< Updated upstream
-  7: "c",
-  8: "r",
-  9: "c",
-  10: "gr",
-  11: "rt"
-=======
   7: "gr",
   8: "rt"
->>>>>>> Stashed changes
 };
 
 var indexSectionNames =

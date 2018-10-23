@@ -1,12 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node1" href="$classr3_1_1_i_computation_interface.html" title="r3::IComputationInterface" alt="" coords="5,31,172,57"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="r3::ParticleEngineCI" alt="" coords="227,5,365,32"/>
-<area shape="rect" id="node4" href="$classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used for rigid body worlds. " alt="" coords="220,56,372,83"/>
-<area shape="rect" id="node3" href="$classr3_1_1_default_particle_engine_c_i.html" title="r3::DefaultParticleEngineCI" alt="" coords="427,5,605,32"/>
-<area shape="rect" id="node5" href="$classr3_1_1_default_rigid_body_engine_c_i.html" title="r3::DefaultRigidBodyEngineCI" alt="" coords="420,56,612,83"/>
-=======
 <area shape="rect" id="node1" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="r3::INarrowPhaseAlgorithm" alt="" coords="5,136,181,163"/>
 <area shape="rect" id="node2" href="$classr3_1_1_i_box_box_narrow_algorithm.html" title="r3::IBoxBoxNarrowAlgorithm" alt="" coords="247,5,433,32"/>
 <area shape="rect" id="node4" href="$classr3_1_1_i_box_sphere_narrow_algorithm.html" title="r3::IBoxSphereNarrowAlgorithm" alt="" coords="239,56,441,83"/>
@@ -20,9 +12,4 @@
 <area shape="rect" id="node9" href="$classr3_1_1_plane_plane_collision_algorithm.html" title="r3::PlanePlaneCollisionAlgorithm" alt="" coords="503,165,713,192"/>
 <area shape="rect" id="node11" href="$classr3_1_1_plane_sphere_collision_algorithm.html" title="r3::PlaneSphereCollision\lAlgorithm" alt="" coords="526,223,690,265"/>
 <area shape="rect" id="node13" href="$classr3_1_1_sphere_sphere_narrow_algorithm.html" title="r3::SphereSphereNarrowAlgorithm" alt="" coords="499,289,717,316"/>
->>>>>>> Stashed changes
-=======
-<area shape="rect" id="node1" href="$classr3_1_1_i_collision_resolver_access.html" title="r3::ICollisionResolverAccess" alt="" coords="5,5,192,32"/>
-<area shape="rect" id="node2" href="$classr3_1_1_collision_resolver.html" title="r3::CollisionResolver" alt="" coords="240,5,379,32"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

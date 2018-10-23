@@ -4,10 +4,10 @@
 namespace r3
 {
 	CollisionBox::CollisionBox(RigidBody* body,
-							   const glm::vec3& halfSize,
+							   const glm::vec3& halfSizes,
 							   const glm::mat4& offset)
 		: CollisionPrimitive(R3D_PRIMITIVE_BOX), 
-		m_halfSize{halfSize}
+		m_halfSizes{ halfSizes }
 	{
 		m_body = body;
 		m_offset = offset;
@@ -19,21 +19,21 @@ namespace r3
 	= default;
 
 	glm::vec3 CollisionBox::getHalfSize() const{
-		return m_halfSize;
+		return m_halfSizes;
 	}
 	
 	void CollisionBox::initVertices()
 	{
 		m_vertices =
 		{
-			glm::vec3(-m_halfSize.x, -m_halfSize.y, -m_halfSize.z),
-			glm::vec3(-m_halfSize.x, -m_halfSize.y, +m_halfSize.z),
-			glm::vec3(-m_halfSize.x, +m_halfSize.y, -m_halfSize.z),
-			glm::vec3(-m_halfSize.x, +m_halfSize.y, +m_halfSize.z),
-			glm::vec3(+m_halfSize.x, -m_halfSize.y, -m_halfSize.z),
-			glm::vec3(+m_halfSize.x, -m_halfSize.y, +m_halfSize.z),
-			glm::vec3(+m_halfSize.x, +m_halfSize.y, -m_halfSize.z),
-			glm::vec3(+m_halfSize.x, +m_halfSize.y, +m_halfSize.z)
+			glm::vec3(-m_halfSizes.x, -m_halfSizes.y, -m_halfSizes.z),
+			glm::vec3(-m_halfSizes.x, -m_halfSizes.y, +m_halfSizes.z),
+			glm::vec3(-m_halfSizes.x, +m_halfSizes.y, -m_halfSizes.z),
+			glm::vec3(-m_halfSizes.x, +m_halfSizes.y, +m_halfSizes.z),
+			glm::vec3(+m_halfSizes.x, -m_halfSizes.y, -m_halfSizes.z),
+			glm::vec3(+m_halfSizes.x, -m_halfSizes.y, +m_halfSizes.z),
+			glm::vec3(+m_halfSizes.x, +m_halfSizes.y, -m_halfSizes.z),
+			glm::vec3(+m_halfSizes.x, +m_halfSizes.y, +m_halfSizes.z)
 		};
 		for(auto& vertex : m_vertices)
 		{

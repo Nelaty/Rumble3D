@@ -1,7 +1,7 @@
 <map id="r3::DefaultRigidBodyEngineCI" name="r3::DefaultRigidBodyEngineCI">
 <area shape="rect" id="node2" href="$classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds. " alt="" coords="295,617,456,739"/>
-<area shape="rect" id="node3" href="$classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,360,180,525"/>
+<area shape="rect" id="node3" href="$classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,360,180,525"/>
 <area shape="rect" id="node5" href="$classr3_1_1_rigid_body_world.html" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies. " alt="" coords="395,331,577,555"/>
-<area shape="rect" id="node6" href="$classr3_1_1_physics_engine_module.html" title="{r3::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="395,145,577,281"/>
+<area shape="rect" id="node6" href="$classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules. " alt="" coords="395,145,577,281"/>
 <area shape="rect" id="node8" href="$classr3_1_1_collision_detector.html" title="{r3::CollisionDetector\n||+ CollisionDetector()\l+ CollisionDetector()\l+ ~CollisionDetector()\l+ init()\l+ reset()\l+ setBroadPhaseCollisionsMax()\l+ setContactsMax()\l+ setIterations()\l+ generateCollisions()\l+ setBroadPhaseFilter()\land 6 more...\l}" alt="" coords="601,331,813,555"/>
 </map>

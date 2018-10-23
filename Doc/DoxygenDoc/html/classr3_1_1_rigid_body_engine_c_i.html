@@ -86,8 +86,8 @@ Inheritance diagram for r3::RigidBodyEngineCI:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_rigid_body_engine_c_i__inherit__graph.png" border="0" usemap="#r3_1_1_rigid_body_engine_c_i_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_rigid_body_engine_c_i_inherit__map" id="r3_1_1_rigid_body_engine_c_i_inherit__map">
-<area shape="rect" id="node3" href="classr3_1_1_default_rigid_body_engine_c_i.html" title="{r3::DefaultRigidBodyEngineCI\n||+ DefaultRigidBodyEngineCI()\l+ ~DefaultRigidBodyEngineCI()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l}" alt="" coords="5,417,207,583"/>
-<area shape="rect" id="node2" href="classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="19,5,193,171"/>
+<area shape="rect" id="node3" href="classr3_1_1_default_rigid_body_engine_c_i.html" title="Default implementation of the rigid body engine computation interface. " alt="" coords="5,417,207,583"/>
+<area shape="rect" id="node2" href="classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="19,5,193,171"/>
 </map>
 </div>
 <div class="dynheader">
@@ -95,9 +95,9 @@ Collaboration diagram for r3::RigidBodyEngineCI:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_rigid_body_engine_c_i__coll__graph.png" border="0" usemap="#r3_1_1_rigid_body_engine_c_i_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_rigid_body_engine_c_i_coll__map" id="r3_1_1_rigid_body_engine_c_i_coll__map">
-<area shape="rect" id="node2" href="classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,360,180,525"/>
+<area shape="rect" id="node2" href="classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,360,180,525"/>
 <area shape="rect" id="node4" href="classr3_1_1_rigid_body_world.html" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies. " alt="" coords="395,331,577,555"/>
-<area shape="rect" id="node5" href="classr3_1_1_physics_engine_module.html" title="{r3::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="395,145,577,281"/>
+<area shape="rect" id="node5" href="classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules. " alt="" coords="395,145,577,281"/>
 <area shape="rect" id="node7" href="classr3_1_1_collision_detector.html" title="{r3::CollisionDetector\n||+ CollisionDetector()\l+ CollisionDetector()\l+ ~CollisionDetector()\l+ init()\l+ reset()\l+ setBroadPhaseCollisionsMax()\l+ setContactsMax()\l+ setIterations()\l+ generateCollisions()\l+ setBroadPhaseFilter()\land 6 more...\l}" alt="" coords="601,331,813,555"/>
 </map>
 </div>
@@ -116,14 +116,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88c5734b5636745f0200c03adac30994 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a88c5734b5636745f0200c03adac30994">~IComputationInterface</a> ()</td></tr>
 <tr class="separator:a88c5734b5636745f0200c03adac30994 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430ebc9cb8d4ba064ac6a032ef07edd7 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a430ebc9cb8d4ba064ac6a032ef07edd7">onBegin</a> ()=0</td></tr>
+<tr class="memdesc:a430ebc9cb8d4ba064ac6a032ef07edd7 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the start of a physics step.  <a href="classr3_1_1_i_computation_interface.html#a430ebc9cb8d4ba064ac6a032ef07edd7">More...</a><br /></td></tr>
 <tr class="separator:a430ebc9cb8d4ba064ac6a032ef07edd7 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa12bcc35005f32a1984b38de97696cb inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#aaa12bcc35005f32a1984b38de97696cb">step</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)=0</td></tr>
+<tr class="memdesc:aaa12bcc35005f32a1984b38de97696cb inherit pub_methods_classr3_1_1_i_computation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to calculate changes.  <a href="classr3_1_1_i_computation_interface.html#aaa12bcc35005f32a1984b38de97696cb">More...</a><br /></td></tr>
 <tr class="separator:aaa12bcc35005f32a1984b38de97696cb inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a162250f2b6efbd85460bd0f780d42cff inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a162250f2b6efbd85460bd0f780d42cff">integrate</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)=0</td></tr>
+<tr class="memdesc:a162250f2b6efbd85460bd0f780d42cff inherit pub_methods_classr3_1_1_i_computation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to apply changes.  <a href="classr3_1_1_i_computation_interface.html#a162250f2b6efbd85460bd0f780d42cff">More...</a><br /></td></tr>
 <tr class="separator:a162250f2b6efbd85460bd0f780d42cff inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae0c5fada7e414c74fe6f5a8f4a6c7d inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#acae0c5fada7e414c74fe6f5a8f4a6c7d">onEnd</a> ()=0</td></tr>
+<tr class="memdesc:acae0c5fada7e414c74fe6f5a8f4a6c7d inherit pub_methods_classr3_1_1_i_computation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the end of a physics step.  <a href="classr3_1_1_i_computation_interface.html#acae0c5fada7e414c74fe6f5a8f4a6c7d">More...</a><br /></td></tr>
 <tr class="separator:acae0c5fada7e414c74fe6f5a8f4a6c7d inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6069989c54ffd4e714788d0968851007 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a6069989c54ffd4e714788d0968851007">reset</a> ()=0</td></tr>
+<tr class="memdesc:a6069989c54ffd4e714788d0968851007 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a computation interface to its start state.  <a href="classr3_1_1_i_computation_interface.html#a6069989c54ffd4e714788d0968851007">More...</a><br /></td></tr>
 <tr class="separator:a6069989c54ffd4e714788d0968851007 inherit pub_methods_classr3_1_1_i_computation_interface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -223,7 +228,6 @@ Protected Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the currently used rigid body world. </p>
-<dl class="section return"><dt>Returns</dt><dd>The rigid body world. </dd></dl>
 
 </div>
 </div>
@@ -321,8 +325,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_rigid_body_engine_c_i_8h_source.html">RigidBodyEngineCI.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_rigid_body_engine_c_i_8cpp.html">RigidBodyEngineCI.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_rigid_body_engine_c_i_8h_source.html">RigidBodyEngineCI.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_rigid_body_engine_c_i_8cpp.html">RigidBodyEngineCI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

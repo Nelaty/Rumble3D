@@ -2,6 +2,11 @@
 \label{classr3_1_1_default_rigid_body_engine_c_i}\index{r3\+::\+Default\+Rigid\+Body\+Engine\+CI@{r3\+::\+Default\+Rigid\+Body\+Engine\+CI}}
 
 
+Default implementation of the rigid body engine computation interface.  
+
+
+
+
 {\ttfamily \#include $<$Default\+Rigid\+Body\+Engine\+C\+I.\+h$>$}
 
 
@@ -30,17 +35,20 @@ Collaboration diagram for r3\+:\+:Default\+Rigid\+Body\+Engine\+CI\+:\nopagebrea
 \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_af68e19bbae7b792bf57d24a4004295eb}{$\sim$\+Default\+Rigid\+Body\+Engine\+CI}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_a5d9e40ea40845499f01081d21cd9ff64}{on\+Begin}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Prepare rigid bodies. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_ac45ae1d1889c75e6839b865870cbf59c}{step}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
-\item 
+\begin{DoxyCompactList}\small\item\em Update forces on rigid bodies. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_a4b79e7e4bc76eedcad7ef5c4777b9d33}{integrate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
-\item 
+\begin{DoxyCompactList}\small\item\em Update positions, rotations and resolve collisions. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_ad7746126ebd5aab4cfc352dd9facabb2}{on\+End}} () override
-\item 
+\begin{DoxyCompactList}\small\item\em Clear accumulators. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_a06bd27e94b26017e7960e01f6e884e33}{reset}} () override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Reset the computation interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Default implementation of the rigid body engine computation interface. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_default_rigid_body_engine_c_i_a277f7da049340a3957fdaf8cb7ee0dfe}\label{classr3_1_1_default_rigid_body_engine_c_i_a277f7da049340a3957fdaf8cb7ee0dfe}} 
@@ -66,6 +74,15 @@ void \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_a06bd27e94b26017
 
 
 
+Update positions, rotations and resolve collisions. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Delta} & Time step of the simulation update. \\
+\hline
+\end{DoxyParams}
+
+
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a162250f2b6efbd85460bd0f780d42cff}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_rigid_body_engine_c_i_a5d9e40ea40845499f01081d21cd9ff64}\label{classr3_1_1_default_rigid_body_engine_c_i_a5d9e40ea40845499f01081d21cd9ff64}} 
@@ -73,6 +90,10 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a162250f2b6efbd8
 \index{on\+Begin@{on\+Begin}!r3\+::\+Default\+Rigid\+Body\+Engine\+CI@{r3\+::\+Default\+Rigid\+Body\+Engine\+CI}}
 \subsubsection{\texorpdfstring{on\+Begin()}{onBegin()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Rigid\+Body\+Engine\+C\+I\+::on\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Prepare rigid bodies. 
 
 
 
@@ -86,6 +107,10 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba0
 
 
 
+Clear accumulators. 
+
+
+
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414c74fe6f5a8f4a6c7d}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_rigid_body_engine_c_i_a06bd27e94b26017e7960e01f6e884e33}\label{classr3_1_1_default_rigid_body_engine_c_i_a06bd27e94b26017e7960e01f6e884e33}} 
@@ -93,6 +118,10 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414
 \index{reset@{reset}!r3\+::\+Default\+Rigid\+Body\+Engine\+CI@{r3\+::\+Default\+Rigid\+Body\+Engine\+CI}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Rigid\+Body\+Engine\+C\+I\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset the computation interface. 
 
 
 
@@ -106,11 +135,20 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd4e
 
 
 
+Update forces on rigid bodies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Delta} & Time step of the simulation update. \\
+\hline
+\end{DoxyParams}
+
+
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_aaa12bcc35005f32a1984b38de97696cb}{r3\+::\+I\+Computation\+Interface}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_default_rigid_body_engine_c_i_8h}{Default\+Rigid\+Body\+Engine\+C\+I.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_default_rigid_body_engine_c_i_8cpp}{Default\+Rigid\+Body\+Engine\+C\+I.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_default_rigid_body_engine_c_i_8h}{Default\+Rigid\+Body\+Engine\+C\+I.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_default_rigid_body_engine_c_i_8cpp}{Default\+Rigid\+Body\+Engine\+C\+I.\+cpp}}\end{DoxyCompactItemize}

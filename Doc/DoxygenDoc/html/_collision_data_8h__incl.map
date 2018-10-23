@@ -1,24 +1,7 @@
-<<<<<<< HEAD
-<map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h">
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,317,176,344"/>
-<area shape="rect" id="node4" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="98,139,249,195"/>
-<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="133,392,203,419"/>
-<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="250,243,422,269"/>
-<area shape="rect" id="node8" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="121,243,226,269"/>
-=======
+<map id="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h" name="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h">
 <area shape="rect" id="node2" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="303,139,453,195"/>
 <area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="315,317,486,344"/>
 <area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="5,243,177,269"/>
 <area shape="rect" id="node8" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="201,243,307,269"/>
 <area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="194,392,263,419"/>
->>>>>>> Stashed changes
-=======
-<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h">
-<area shape="rect" id="node2" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,332,176,359"/>
-<area shape="rect" id="node4" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="98,153,249,209"/>
-<area shape="rect" id="node3" href="$_config_8h.html" title="Config.h" alt="" coords="133,407,203,433"/>
-<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="250,257,422,284"/>
-<area shape="rect" id="node8" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="121,257,226,284"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

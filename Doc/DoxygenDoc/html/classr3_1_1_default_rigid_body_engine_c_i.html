@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Default implementation of the rigid body engine computation interface.  
+ <a href="classr3_1_1_default_rigid_body_engine_c_i.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_default_rigid_body_engine_c_i_8h_source.html">DefaultRigidBodyEngineCI.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::DefaultRigidBodyEngineCI:</div>
@@ -82,7 +85,7 @@ Inheritance diagram for r3::DefaultRigidBodyEngineCI:</div>
 <div class="center"><img src="classr3_1_1_default_rigid_body_engine_c_i__inherit__graph.png" border="0" usemap="#r3_1_1_default_rigid_body_engine_c_i_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_default_rigid_body_engine_c_i_inherit__map" id="r3_1_1_default_rigid_body_engine_c_i_inherit__map">
 <area shape="rect" id="node2" href="classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds. " alt="" coords="25,219,187,369"/>
-<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="19,5,193,171"/>
+<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="19,5,193,171"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,9 +94,9 @@ Collaboration diagram for r3::DefaultRigidBodyEngineCI:</div>
 <div class="center"><img src="classr3_1_1_default_rigid_body_engine_c_i__coll__graph.png" border="0" usemap="#r3_1_1_default_rigid_body_engine_c_i_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_default_rigid_body_engine_c_i_coll__map" id="r3_1_1_default_rigid_body_engine_c_i_coll__map">
 <area shape="rect" id="node2" href="classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds. " alt="" coords="295,617,456,739"/>
-<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,360,180,525"/>
+<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,360,180,525"/>
 <area shape="rect" id="node5" href="classr3_1_1_rigid_body_world.html" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies. " alt="" coords="395,331,577,555"/>
-<area shape="rect" id="node6" href="classr3_1_1_physics_engine_module.html" title="{r3::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="395,145,577,281"/>
+<area shape="rect" id="node6" href="classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules. " alt="" coords="395,145,577,281"/>
 <area shape="rect" id="node8" href="classr3_1_1_collision_detector.html" title="{r3::CollisionDetector\n||+ CollisionDetector()\l+ CollisionDetector()\l+ ~CollisionDetector()\l+ init()\l+ reset()\l+ setBroadPhaseCollisionsMax()\l+ setContactsMax()\l+ setIterations()\l+ generateCollisions()\l+ setBroadPhaseFilter()\land 6 more...\l}" alt="" coords="601,331,813,555"/>
 </map>
 </div>
@@ -105,14 +108,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af68e19bbae7b792bf57d24a4004295eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#af68e19bbae7b792bf57d24a4004295eb">~DefaultRigidBodyEngineCI</a> ()</td></tr>
 <tr class="separator:af68e19bbae7b792bf57d24a4004295eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d9e40ea40845499f01081d21cd9ff64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#a5d9e40ea40845499f01081d21cd9ff64">onBegin</a> () override</td></tr>
+<tr class="memdesc:a5d9e40ea40845499f01081d21cd9ff64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prepare rigid bodies.  <a href="#a5d9e40ea40845499f01081d21cd9ff64">More...</a><br /></td></tr>
 <tr class="separator:a5d9e40ea40845499f01081d21cd9ff64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac45ae1d1889c75e6839b865870cbf59c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#ac45ae1d1889c75e6839b865870cbf59c">step</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta) override</td></tr>
+<tr class="memdesc:ac45ae1d1889c75e6839b865870cbf59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update forces on rigid bodies.  <a href="#ac45ae1d1889c75e6839b865870cbf59c">More...</a><br /></td></tr>
 <tr class="separator:ac45ae1d1889c75e6839b865870cbf59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b79e7e4bc76eedcad7ef5c4777b9d33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#a4b79e7e4bc76eedcad7ef5c4777b9d33">integrate</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta) override</td></tr>
+<tr class="memdesc:a4b79e7e4bc76eedcad7ef5c4777b9d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update positions, rotations and resolve collisions.  <a href="#a4b79e7e4bc76eedcad7ef5c4777b9d33">More...</a><br /></td></tr>
 <tr class="separator:a4b79e7e4bc76eedcad7ef5c4777b9d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7746126ebd5aab4cfc352dd9facabb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#ad7746126ebd5aab4cfc352dd9facabb2">onEnd</a> () override</td></tr>
+<tr class="memdesc:ad7746126ebd5aab4cfc352dd9facabb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear accumulators.  <a href="#ad7746126ebd5aab4cfc352dd9facabb2">More...</a><br /></td></tr>
 <tr class="separator:ad7746126ebd5aab4cfc352dd9facabb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06bd27e94b26017e7960e01f6e884e33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#a06bd27e94b26017e7960e01f6e884e33">reset</a> () override</td></tr>
+<tr class="memdesc:a06bd27e94b26017e7960e01f6e884e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the computation interface.  <a href="#a06bd27e94b26017e7960e01f6e884e33">More...</a><br /></td></tr>
 <tr class="separator:a06bd27e94b26017e7960e01f6e884e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_rigid_body_engine_c_i"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_rigid_body_engine_c_i')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_rigid_body_engine_c_i.html">r3::RigidBodyEngineCI</a></td></tr>
 <tr class="memitem:a9f75c8c49e987206554b09550d93b341 inherit pub_methods_classr3_1_1_rigid_body_engine_c_i"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_engine_c_i.html#a9f75c8c49e987206554b09550d93b341">~RigidBodyEngineCI</a> ()</td></tr>
@@ -144,7 +152,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:afd7ae3fcba8b88ec6c31f2df56aae3f6 inherit pro_attribs_classr3_1_1_rigid_body_engine_c_i"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body_world.html">RigidBodyWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_engine_c_i.html#afd7ae3fcba8b88ec6c31f2df56aae3f6">m_rigidBodyWorld</a></td></tr>
 <tr class="separator:afd7ae3fcba8b88ec6c31f2df56aae3f6 inherit pro_attribs_classr3_1_1_rigid_body_engine_c_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Default implementation of the rigid body engine computation interface. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a277f7da049340a3957fdaf8cb7ee0dfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a277f7da049340a3957fdaf8cb7ee0dfe">&#9670;&nbsp;</a></span>DefaultRigidBodyEngineCI()</h2>
 
@@ -220,6 +230,14 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Update positions, rotations and resolve collisions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeDelta</td><td>Time step of the simulation update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classr3_1_1_i_computation_interface.html#a162250f2b6efbd85460bd0f780d42cff">r3::IComputationInterface</a>.</p>
 
 </div>
@@ -246,6 +264,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Prepare rigid bodies. </p>
 
 <p>Implements <a class="el" href="classr3_1_1_i_computation_interface.html#a430ebc9cb8d4ba064ac6a032ef07edd7">r3::IComputationInterface</a>.</p>
 
@@ -274,6 +294,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Clear accumulators. </p>
+
 <p>Implements <a class="el" href="classr3_1_1_i_computation_interface.html#acae0c5fada7e414c74fe6f5a8f4a6c7d">r3::IComputationInterface</a>.</p>
 
 </div>
@@ -300,6 +322,8 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Reset the computation interface. </p>
 
 <p>Implements <a class="el" href="classr3_1_1_i_computation_interface.html#a6069989c54ffd4e714788d0968851007">r3::IComputationInterface</a>.</p>
 
@@ -329,13 +353,21 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Update forces on rigid bodies. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeDelta</td><td>Time step of the simulation update. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classr3_1_1_i_computation_interface.html#aaa12bcc35005f32a1984b38de97696cb">r3::IComputationInterface</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_default_rigid_body_engine_c_i_8h_source.html">DefaultRigidBodyEngineCI.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_default_rigid_body_engine_c_i_8cpp.html">DefaultRigidBodyEngineCI.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_default_rigid_body_engine_c_i_8h_source.html">DefaultRigidBodyEngineCI.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_default_rigid_body_engine_c_i_8cpp.html">DefaultRigidBodyEngineCI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

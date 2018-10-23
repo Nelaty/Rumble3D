@@ -1,24 +1,7 @@
-<<<<<<< HEAD
-<map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/Particle.cpp" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/Particle.cpp">
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="198,124,333,165"/>
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,221,176,247"/>
-<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="129,303,301,329"/>
-<area shape="rect" id="node8" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="251,213,386,255"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="73,377,143,404"/>
-=======
+<map id="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/Particle.cpp" name="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/Particle.cpp">
 <area shape="rect" id="node2" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="215,124,350,165"/>
 <area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,303,176,329"/>
 <area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="201,303,373,329"/>
 <area shape="rect" id="node8" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="163,213,298,255"/>
 <area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="112,377,181,404"/>
->>>>>>> Stashed changes
-=======
-<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/Particle.cpp" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/Particle.cpp">
-<area shape="rect" id="node2" href="$_particle_8h.html" title="R3D/ParticleEngine\l/Particle.h" alt="" coords="215,139,350,180"/>
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="5,317,176,344"/>
-<area shape="rect" id="node5" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="201,317,373,344"/>
-<area shape="rect" id="node8" href="$_particle_def_8h.html" title="R3D/ParticleEngine\l/ParticleDef.h" alt="" coords="163,228,298,269"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="112,392,181,419"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

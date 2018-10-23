@@ -86,7 +86,7 @@ Inheritance diagram for r3::DefaultParticleEngineCI:</div>
 <div class="center"><img src="classr3_1_1_default_particle_engine_c_i__inherit__graph.png" border="0" usemap="#r3_1_1_default_particle_engine_c_i_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_default_particle_engine_c_i_inherit__map" id="r3_1_1_default_particle_engine_c_i_inherit__map">
 <area shape="rect" id="node2" href="classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="25,219,172,340"/>
-<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="11,5,186,171"/>
+<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="11,5,186,171"/>
 </map>
 </div>
 <div class="dynheader">
@@ -95,17 +95,9 @@ Collaboration diagram for r3::DefaultParticleEngineCI:</div>
 <div class="center"><img src="classr3_1_1_default_particle_engine_c_i__coll__graph.png" border="0" usemap="#r3_1_1_default_particle_engine_c_i_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_default_particle_engine_c_i_coll__map" id="r3_1_1_default_particle_engine_c_i_coll__map">
 <area shape="rect" id="node2" href="classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="85,647,231,768"/>
-<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="{r3::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,375,180,540"/>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node4" href="classr3_1_1_particle_world.html" title="ParticleWorld holds a number of particles and contact generators. " alt="" coords="205,331,415,584"/>
-=======
+<area shape="rect" id="node3" href="classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,375,180,540"/>
 <area shape="rect" id="node4" href="classr3_1_1_particle_world.html" title="A ParticleWorld is a physics engine module, used to simulate particles. " alt="" coords="205,331,415,584"/>
->>>>>>> Stashed changes
-=======
-<area shape="rect" id="node4" href="classr3_1_1_particle_world.html" title="A ParticleWorld holds a number of particles and contact generators. It uses its ParticleEngineCI to m..." alt="" coords="205,331,415,584"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
-<area shape="rect" id="node5" href="classr3_1_1_physics_engine_module.html" title="{r3::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="219,145,401,281"/>
+<area shape="rect" id="node5" href="classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules. " alt="" coords="219,145,401,281"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -117,6 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afb7df43eb7fe45d6bcb15c39e3c30849"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_particle_engine_c_i.html#afb7df43eb7fe45d6bcb15c39e3c30849">~DefaultParticleEngineCI</a> ()</td></tr>
 <tr class="separator:afb7df43eb7fe45d6bcb15c39e3c30849"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf2e9ca87bff5e48c8eb59384e9cf180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_particle_engine_c_i.html#aaf2e9ca87bff5e48c8eb59384e9cf180">onBegin</a> () override</td></tr>
+<tr class="memdesc:aaf2e9ca87bff5e48c8eb59384e9cf180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the start of a physics step.  <a href="#aaf2e9ca87bff5e48c8eb59384e9cf180">More...</a><br /></td></tr>
 <tr class="separator:aaf2e9ca87bff5e48c8eb59384e9cf180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c58fd00ec521410e1b412e9885ee0d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_default_particle_engine_c_i.html#a7c58fd00ec521410e1b412e9885ee0d2">step</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta) override</td></tr>
 <tr class="memdesc:a7c58fd00ec521410e1b412e9885ee0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update particle forces.  <a href="#a7c58fd00ec521410e1b412e9885ee0d2">More...</a><br /></td></tr>
@@ -168,23 +161,11 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:ad13321df475d526a7a2ed34e46cc10ee inherit pro_attribs_classr3_1_1_particle_engine_c_i"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle_world.html">ParticleWorld</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_engine_c_i.html#ad13321df475d526a7a2ed34e46cc10ee">m_particleWorld</a></td></tr>
 <tr class="separator:ad13321df475d526a7a2ed34e46cc10ee inherit pro_attribs_classr3_1_1_particle_engine_c_i"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-=======
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Default implementation of the particle computation interface. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
-<a id="a58fd25bfac329775ac6031a07bd64fbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58fd25bfac329775ac6031a07bd64fbb">&#9670;&nbsp;</a></span>DefaultParticleEngineCI()</h2>
-=======
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default implementation of the particle computation interface. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a5f7619a5dd227d681d5dcbde6e8368eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f7619a5dd227d681d5dcbde6e8368eb">&#9670;&nbsp;</a></span>DefaultParticleEngineCI()</h2>
->>>>>>> Stashed changes
 
 <div class="memitem">
 <div class="memproto">
@@ -347,6 +328,8 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called at the start of a physics step. </p>
+
 <p>Implements <a class="el" href="classr3_1_1_i_computation_interface.html#a430ebc9cb8d4ba064ac6a032ef07edd7">r3::IComputationInterface</a>.</p>
 
 </div>
@@ -500,8 +483,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_default_particle_engine_c_i_8h_source.html">DefaultParticleEngineCI.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_default_particle_engine_c_i_8cpp.html">DefaultParticleEngineCI.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_default_particle_engine_c_i_8h_source.html">DefaultParticleEngineCI.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_default_particle_engine_c_i_8cpp.html">DefaultParticleEngineCI.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

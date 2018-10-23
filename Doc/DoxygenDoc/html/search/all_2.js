@@ -11,7 +11,7 @@ var searchData=
   ['collisionalgorithmmatrix',['CollisionAlgorithmMatrix',['../classr3_1_1_collision_algorithm_matrix.html',1,'r3::CollisionAlgorithmMatrix'],['../classr3_1_1_collision_algorithm_matrix.html#a97bdad626057f600ae5ffca63eb174b8',1,'r3::CollisionAlgorithmMatrix::CollisionAlgorithmMatrix()']]],
   ['collisionalgorithmmatrix_2ecpp',['CollisionAlgorithmMatrix.cpp',['../_collision_algorithm_matrix_8cpp.html',1,'']]],
   ['collisionalgorithmmatrix_2eh',['CollisionAlgorithmMatrix.h',['../_collision_algorithm_matrix_8h.html',1,'']]],
-  ['collisionbox',['CollisionBox',['../classr3_1_1_collision_box.html',1,'r3::CollisionBox'],['../classr3_1_1_collision_box.html#ae8fd5f7a2fa804313c988f8b13866b91',1,'r3::CollisionBox::CollisionBox()']]],
+  ['collisionbox',['CollisionBox',['../classr3_1_1_collision_box.html',1,'r3::CollisionBox'],['../classr3_1_1_collision_box.html#af20be9fdcddf3a94d195fabf22d8ad3a',1,'r3::CollisionBox::CollisionBox()']]],
   ['collisionbox_2ecpp',['CollisionBox.cpp',['../_collision_box_8cpp.html',1,'']]],
   ['collisionbox_2eh',['CollisionBox.h',['../_collision_box_8h.html',1,'']]],
   ['collisiondata',['CollisionData',['../classr3_1_1_collision_data.html',1,'r3::CollisionData'],['../classr3_1_1_collision_data.html#a439100db9ec5b734e2f0b778d2f97cce',1,'r3::CollisionData::CollisionData()']]],

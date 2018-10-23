@@ -69,12 +69,16 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classr3_1_1_bounding_sphere-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">r3::BoundingSphere Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A bounding sphere is a kind of bounding volume.  
+ <a href="classr3_1_1_bounding_sphere.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_bounding_sphere_8h_source.html">BoundingSphere.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -88,17 +92,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af602a853d8ed0b5ccad8679ee41fe7f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#af602a853d8ed0b5ccad8679ee41fe7f8">BoundingSphere</a> ()</td></tr>
 <tr class="separator:af602a853d8ed0b5ccad8679ee41fe7f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a9264c19d56b10c9b0def547a369d57"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#a9a9264c19d56b10c9b0def547a369d57">BoundingSphere</a> (const glm::vec3 &amp;center, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> radius)</td></tr>
+<tr class="memdesc:a9a9264c19d56b10c9b0def547a369d57"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classr3_1_1_bounding_box.html">BoundingBox</a> constructor.  <a href="#a9a9264c19d56b10c9b0def547a369d57">More...</a><br /></td></tr>
 <tr class="separator:a9a9264c19d56b10c9b0def547a369d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d461e62b827ad9a30ca8013d451e3da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#a3d461e62b827ad9a30ca8013d451e3da">BoundingSphere</a> (const <a class="el" href="classr3_1_1_bounding_sphere.html">BoundingSphere</a> &amp;one, const <a class="el" href="classr3_1_1_bounding_sphere.html">BoundingSphere</a> &amp;two)</td></tr>
+<tr class="memdesc:a3d461e62b827ad9a30ca8013d451e3da"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classr3_1_1_bounding_sphere.html" title="A bounding sphere is a kind of bounding volume. ">BoundingSphere</a> constructor.  <a href="#a3d461e62b827ad9a30ca8013d451e3da">More...</a><br /></td></tr>
 <tr class="separator:a3d461e62b827ad9a30ca8013d451e3da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9951f8922ebb2227cd97e59c97fed2a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#a9951f8922ebb2227cd97e59c97fed2a5">~BoundingSphere</a> ()</td></tr>
 <tr class="separator:a9951f8922ebb2227cd97e59c97fed2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49163c78b0d1318c576d99e61f806ac2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#a49163c78b0d1318c576d99e61f806ac2">overlaps</a> (const <a class="el" href="classr3_1_1_bounding_sphere.html">BoundingSphere</a> *other) const</td></tr>
+<tr class="memdesc:a49163c78b0d1318c576d99e61f806ac2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if this bounding sphere overlaps with the given bounding sphere.  <a href="#a49163c78b0d1318c576d99e61f806ac2">More...</a><br /></td></tr>
 <tr class="separator:a49163c78b0d1318c576d99e61f806ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01cc1a7397eeec86d2b074d2bf734798"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#a01cc1a7397eeec86d2b074d2bf734798">getVolume</a> () const</td></tr>
 <tr class="separator:a01cc1a7397eeec86d2b074d2bf734798"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac13a86be56c1c52b33a707eb2356daa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#ac13a86be56c1c52b33a707eb2356daa3">getGrowth</a> (const <a class="el" href="classr3_1_1_bounding_sphere.html">BoundingSphere</a> &amp;other) const</td></tr>
+<tr class="memdesc:ac13a86be56c1c52b33a707eb2356daa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an approximation of how much a new bounding sphere, including the given and this one, would be relatively to this one.  <a href="#ac13a86be56c1c52b33a707eb2356daa3">More...</a><br /></td></tr>
 <tr class="separator:ac13a86be56c1c52b33a707eb2356daa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:ae0e7a71b8cfe2f3287397ac865545ee4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#ae0e7a71b8cfe2f3287397ac865545ee4">squaredRadius</a> () const</td></tr>
+<tr class="memdesc:ae0e7a71b8cfe2f3287397ac865545ee4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the square of this spheres radius.  <a href="#ae0e7a71b8cfe2f3287397ac865545ee4">More...</a><br /></td></tr>
+<tr class="separator:ae0e7a71b8cfe2f3287397ac865545ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -107,7 +121,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a37ccefd38d8cea7a0d52b85f771ec7c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_bounding_sphere.html#a37ccefd38d8cea7a0d52b85f771ec7c4">m_radius</a> {}</td></tr>
 <tr class="separator:a37ccefd38d8cea7a0d52b85f771ec7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A bounding sphere is a kind of bounding volume. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af602a853d8ed0b5ccad8679ee41fe7f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af602a853d8ed0b5ccad8679ee41fe7f8">&#9670;&nbsp;</a></span>BoundingSphere() <span class="overload">[1/3]</span></h2>
 
@@ -159,6 +175,15 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classr3_1_1_bounding_box.html">BoundingBox</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">center</td><td>The center of the spehere in world coordinates. </td></tr>
+    <tr><td class="paramname">radius</td><td>The radius of the sphere </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a3d461e62b827ad9a30ca8013d451e3da"></a>
@@ -186,7 +211,16 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Create a bounding sphere which contains both given spheres. </p>
+
+<p><a class="el" href="classr3_1_1_bounding_sphere.html" title="A bounding sphere is a kind of bounding volume. ">BoundingSphere</a> constructor. </p>
+<p>Create a bounding sphere which contains both given spheres. <br />
+</p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">one</td><td>The first child bounding sphere. </td></tr>
+    <tr><td class="paramname">two</td><td>The second child bounding sphere. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -231,7 +265,15 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Gibt einen Wert zurück, der das Wachstum einer Kugel durch eine andere Kugel beschreibt, indem Näherungen der Oberflächen berechnet werden. </p>
+
+<p>Get an approximation of how much a new bounding sphere, including the given and this one, would be relatively to this one. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>The added volume. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The growth. </dd></dl>
 
 </div>
 </div>
@@ -249,7 +291,7 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get the volume of this bounding sphere. </p>
+<p>Get the volume of this bounding sphere. </p><dl class="section return"><dt>Returns</dt><dd>The volume. </dd></dl>
 
 </div>
 </div>
@@ -268,7 +310,37 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Check if this bounding sphere overlaps with the given bounding sphere </p><dl class="section return"><dt>Returns</dt><dd>True if they overlap, false otherwise. </dd></dl>
+
+<p>Check if this bounding sphere overlaps with the given bounding sphere. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if they overlap, false otherwise. </dd></dl>
+
+</div>
+</div>
+<a id="ae0e7a71b8cfe2f3287397ac865545ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0e7a71b8cfe2f3287397ac865545ee4">&#9670;&nbsp;</a></span>squaredRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> r3::BoundingSphere::squaredRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Calculate the square of this spheres radius. </p>
+<dl class="section return"><dt>Returns</dt><dd>The squared radius. </dd></dl>
 
 </div>
 </div>
@@ -318,8 +390,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_bounding_sphere_8h_source.html">BoundingSphere.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_bounding_sphere_8cpp.html">BoundingSphere.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_bounding_sphere_8h_source.html">BoundingSphere.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_bounding_sphere_8cpp.html">BoundingSphere.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

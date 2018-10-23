@@ -1,14 +1,4 @@
 <map id="r3::ParticleCable" name="r3::ParticleCable">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="{r3::ParticleLink\n|# m_particles\l|+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="43,160,163,296"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="{r3::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ addContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,5,201,112"/>
-=======
 <area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="43,160,163,281"/>
 <area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,5,201,112"/>
->>>>>>> Stashed changes
-=======
-<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="43,160,163,296"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,5,201,112"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

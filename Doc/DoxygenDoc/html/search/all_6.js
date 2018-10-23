@@ -20,20 +20,9 @@ var searchData=
   ['getcollisionprimitive',['getCollisionPrimitive',['../classr3_1_1_collision_object.html#aabb0d7173dacef5ffc02163557f55fa4',1,'r3::CollisionObject']]],
   ['getcomputationinterface',['getComputationInterface',['../classr3_1_1_particle_world.html#a1e806bf89ec6445a54b9534f1efc081f',1,'r3::ParticleWorld::getComputationInterface()'],['../classr3_1_1_physics_engine_module.html#a3b1d0d9bea0a82534f367f6d728312d3',1,'r3::PhysicsEngineModule::getComputationInterface()'],['../classr3_1_1_rigid_body_world.html#ac25b39a5b15666d99f42b68f29f8a97b',1,'r3::RigidBodyWorld::getComputationInterface()']]],
   ['getcontactgeneratorregistry',['getContactGeneratorRegistry',['../classr3_1_1_particle_world.html#a85fc9fcf5c51a5bbce206a35a82f8ccf',1,'r3::ParticleWorld::getContactGeneratorRegistry()'],['../classr3_1_1_particle_world.html#ab5cd3adaed73294927de72f3293b0709',1,'r3::ParticleWorld::getContactGeneratorRegistry() const']]],
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  ['getcontactnormal',['getContactNormal',['../classr3_1_1_contact.html#a2d8f594947a1900fd21e2f707384d9fe',1,'r3::Contact::getContactNormal()'],['../classr3_1_1_contact_old.html#affb54494fd3c883cc6acf4f1b9fbc639',1,'r3::ContactOld::getContactNormal()']]],
-=======
-  ['getcontactnormal',['getContactNormal',['../classr3_1_1_particle_contact.html#a35b1266f0ebc69fe67dbceaf4ad4c2a0',1,'r3::ParticleContact::getContactNormal()'],['../classr3_1_1_contact.html#a2d8f594947a1900fd21e2f707384d9fe',1,'r3::Contact::getContactNormal()'],['../classr3_1_1_contact_old.html#affb54494fd3c883cc6acf4f1b9fbc639',1,'r3::ContactOld::getContactNormal()']]],
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
-  ['getcontactpoint',['getContactPoint',['../classr3_1_1_contact.html#a9558ff3dd4e2c5331fc05076e4e503a0',1,'r3::Contact::getContactPoint()'],['../classr3_1_1_contact_old.html#a1af4ec25d791c0f14e41747e231fd6ab',1,'r3::ContactOld::getContactPoint()']]],
-  ['getcontacts',['getContacts',['../classr3_1_1_collision_data_old.html#a5df14bfb6d789df7663b64306756eb96',1,'r3::CollisionDataOld']]],
-  ['getcontactsleft',['getContactsLeft',['../classr3_1_1_collision_data_old.html#a78d2328616c76e498822df4cb0690832',1,'r3::CollisionDataOld::getContactsLeft()'],['../classr3_1_1_collision_data.html#a13e8ade4bbbbc63a1437de9371fea879',1,'r3::CollisionData::getContactsLeft()']]],
-=======
   ['getcontactnormal',['getContactNormal',['../classr3_1_1_particle_contact.html#a35b1266f0ebc69fe67dbceaf4ad4c2a0',1,'r3::ParticleContact::getContactNormal()'],['../classr3_1_1_contact.html#a2d8f594947a1900fd21e2f707384d9fe',1,'r3::Contact::getContactNormal()']]],
   ['getcontactpoint',['getContactPoint',['../classr3_1_1_contact.html#a9558ff3dd4e2c5331fc05076e4e503a0',1,'r3::Contact']]],
   ['getcontactsleft',['getContactsLeft',['../classr3_1_1_collision_data.html#a13e8ade4bbbbc63a1437de9371fea879',1,'r3::CollisionData']]],
->>>>>>> Stashed changes
   ['getcontactsused',['getContactsUsed',['../classr3_1_1_collision_data.html#aaf0e65914133cd35cc32224df851561e',1,'r3::CollisionData']]],
   ['getcontacttoworld',['getContactToWorld',['../classr3_1_1_contact.html#a4e9692d870bdba44ff6b627b8c6c6e30',1,'r3::Contact']]],
   ['getdamping',['getDamping',['../classr3_1_1_particle.html#a5e8544a8ac8e4765a9021f9112209eba',1,'r3::Particle']]],
@@ -69,47 +58,24 @@ var searchData=
   ['getparticlemovement',['getParticleMovement',['../classr3_1_1_particle_contact.html#af56ceb020653556811766410119351fa',1,'r3::ParticleContact']]],
   ['getparticles',['getParticles',['../classr3_1_1_particle_contact.html#aeeacfbf5cbed36cf2be65775066e8f14',1,'r3::ParticleContact::getParticles()'],['../classr3_1_1_particle_world.html#a00a5014002f28e35ebb59a3f8175db3c',1,'r3::ParticleWorld::getParticles()'],['../classr3_1_1_particle_world.html#ab816d6bca8b42fdf16170275087008f0',1,'r3::ParticleWorld::getParticles() const']]],
   ['getparticleworld',['getParticleWorld',['../classr3_1_1_particle_engine_c_i.html#af622bfe4b9279ffd5dcff14d43a8887b',1,'r3::ParticleEngineCI']]],
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  ['getpenetration',['getPenetration',['../classr3_1_1_contact.html#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd',1,'r3::Contact::getPenetration()'],['../classr3_1_1_contact_old.html#a2ef64745c0b7d6370f886ed002697044',1,'r3::ContactOld::getPenetration()']]],
-=======
   ['getpenetration',['getPenetration',['../classr3_1_1_particle_contact.html#a9bff741e1a56b01dc43013cab0b9ae08',1,'r3::ParticleContact::getPenetration()'],['../classr3_1_1_contact.html#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd',1,'r3::Contact::getPenetration()']]],
->>>>>>> Stashed changes
-=======
-  ['getpenetration',['getPenetration',['../classr3_1_1_particle_contact.html#a9bff741e1a56b01dc43013cab0b9ae08',1,'r3::ParticleContact::getPenetration()'],['../classr3_1_1_contact.html#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd',1,'r3::Contact::getPenetration()'],['../classr3_1_1_contact_old.html#a2ef64745c0b7d6370f886ed002697044',1,'r3::ContactOld::getPenetration()']]],
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
   ['getphysicsmaterial',['getPhysicsMaterial',['../classr3_1_1_rigid_body.html#a6a4de124959ef45fddb8809d60066ca9',1,'r3::RigidBody']]],
   ['getpointinlocalspace',['getPointInLocalSpace',['../classr3_1_1_rigid_body.html#a23b72178cb04117c3b016218fefff835',1,'r3::RigidBody::getPointInLocalSpace()'],['../classr3_1_1_transform3_d.html#a7c6348081c8c1b4d36af89fa7fe2103d',1,'r3::Transform3D::getPointInLocalSpace()']]],
   ['getpointinworldspace',['getPointInWorldSpace',['../classr3_1_1_rigid_body.html#a1d694ab55e5846af2d5a184b2be4c523',1,'r3::RigidBody::getPointInWorldSpace()'],['../classr3_1_1_transform3_d.html#a4ecfb0e1518fbeaaa838da02402d0bd9',1,'r3::Transform3D::getPointInWorldSpace()']]],
   ['getposition',['getPosition',['../classr3_1_1_particle.html#a6f61c64625f2d9bf7fe1145d74790a92',1,'r3::Particle::getPosition()'],['../classr3_1_1_transform3_d.html#abe9ff86c845d54cd297ff00fd21aad71',1,'r3::Transform3D::getPosition()']]],
-  ['getpotentialcontacts',['getPotentialContacts',['../classr3_1_1_b_v_h_node.html#a9a8083e409cd4452e25878e80283440f',1,'r3::BVHNode']]],
-  ['getpotentialcontactswith',['getPotentialContactsWith',['../classr3_1_1_b_v_h_node.html#abf81453da8179650565a0a5379ccb5cb',1,'r3::BVHNode']]],
+  ['getpotentialcontacts',['getPotentialContacts',['../classr3_1_1_b_v_h_node.html#a922773e61c14d365f2b9c9740d565783',1,'r3::BVHNode']]],
+  ['getpotentialcontactswith',['getPotentialContactsWith',['../classr3_1_1_b_v_h_node.html#a00031bc5ca7a6971a396cad6ff3fe490',1,'r3::BVHNode']]],
   ['getradius',['getRadius',['../classr3_1_1_collision_sphere.html#aa3b7687165b34ab82b3bedb0884cc65b',1,'r3::CollisionSphere']]],
   ['getrelativecontactposition',['getRelativeContactPosition',['../classr3_1_1_contact.html#ade5794f7055fb30ff52f9193b92c6bf0',1,'r3::Contact']]],
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  ['getrestitution',['getRestitution',['../classr3_1_1_collision_data_old.html#a3546df5d0d82e690c12f0899bc683d35',1,'r3::CollisionDataOld::getRestitution()'],['../classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b',1,'r3::CollisionData::getRestitution()'],['../classr3_1_1_contact.html#a8ec701dcaf82e7fc65bc6c4a2cb6987e',1,'r3::Contact::getRestitution()'],['../classr3_1_1_physics_material.html#a555b73c2bde3679b0e40087455eab61e',1,'r3::PhysicsMaterial::getRestitution()']]],
-=======
   ['getrestitution',['getRestitution',['../classr3_1_1_particle_contact.html#a89c8382938e10cff1846085f16e8b4a2',1,'r3::ParticleContact::getRestitution()'],['../classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b',1,'r3::CollisionData::getRestitution()'],['../classr3_1_1_contact.html#a8ec701dcaf82e7fc65bc6c4a2cb6987e',1,'r3::Contact::getRestitution()'],['../classr3_1_1_physics_material.html#a555b73c2bde3679b0e40087455eab61e',1,'r3::PhysicsMaterial::getRestitution()']]],
->>>>>>> Stashed changes
-=======
-  ['getrestitution',['getRestitution',['../classr3_1_1_particle_contact.html#a89c8382938e10cff1846085f16e8b4a2',1,'r3::ParticleContact::getRestitution()'],['../classr3_1_1_collision_data_old.html#a3546df5d0d82e690c12f0899bc683d35',1,'r3::CollisionDataOld::getRestitution()'],['../classr3_1_1_collision_data.html#a4fa1a70757353fe8ae2facc3762f5b2b',1,'r3::CollisionData::getRestitution()'],['../classr3_1_1_contact.html#a8ec701dcaf82e7fc65bc6c4a2cb6987e',1,'r3::Contact::getRestitution()'],['../classr3_1_1_physics_material.html#a555b73c2bde3679b0e40087455eab61e',1,'r3::PhysicsMaterial::getRestitution()']]],
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
   ['getrigidbodies',['getRigidBodies',['../classr3_1_1_rigid_body_world.html#a31e9a0ddd26c25327aa21b3460c52893',1,'r3::RigidBodyWorld::getRigidBodies()'],['../classr3_1_1_rigid_body_world.html#abf3bfd4b5d7ed2e843362e555b9eebb2',1,'r3::RigidBodyWorld::getRigidBodies() const']]],
   ['getrigidbodyengineci',['getRigidBodyEngineCI',['../classr3_1_1_service_locator_computation_interface.html#a01d7434be386277d9a9a26d6859472c3',1,'r3::ServiceLocatorComputationInterface']]],
   ['getrigidbodyworld',['getRigidBodyWorld',['../classr3_1_1_rigid_body_engine_c_i.html#affb7b66f769300619e0c61f7d3ab13ee',1,'r3::RigidBodyEngineCI']]],
   ['getrotation',['getRotation',['../classr3_1_1_rigid_body.html#afd8accdd3c9a75053eaeac0c9c35d07d',1,'r3::RigidBody::getRotation()'],['../classr3_1_1_transform3_d.html#a1bad817e81d93f275ac71864fae763aa',1,'r3::Transform3D::getRotation()']]],
   ['getsecond',['getSecond',['../classr3_1_1_particle_contact.html#ad2002c182f5a4716a35dd0110af7c476',1,'r3::ParticleContact::getSecond()'],['../classr3_1_1_collision_pair.html#a218a4ee7500ed53c3ba5384833afff5a',1,'r3::CollisionPair::getSecond()'],['../classr3_1_1_contact.html#a90af8f5c7cba65a6a84c57b5a6ef6d70',1,'r3::Contact::getSecond()']]],
-  ['getseed',['getSeed',['../classutl_1_1_random.html#a88abb8994dd315ddc0d44707752f4150',1,'utl::Random']]],
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-  ['getsize',['getSize',['../classr3_1_1_broad_phase_collision_data.html#a6ec1a2db157093ffa0fb790dbf82907e',1,'r3::BroadPhaseCollisionData::getSize()'],['../classr3_1_1_collision_data.html#ad0898e21e34b4558dbdd68dd115c49d8',1,'r3::CollisionData::getSize()']]],
-=======
+  ['getseed',['getSeed',['../classr3_1_1_random.html#a5d1f4fef27e14bde1e3b560728b7d3ba',1,'r3::Random']]],
+  ['getsibling',['getSibling',['../classr3_1_1_b_v_h_node.html#ae2844615a68ba58f1379dd864f335633',1,'r3::BVHNode']]],
   ['getsize',['getSize',['../classr3_1_1_collision_data.html#ad0898e21e34b4558dbdd68dd115c49d8',1,'r3::CollisionData::getSize()'],['../classr3_1_1_fixed_size_container.html#a984b90ac15df32a41011e665e3059e17',1,'r3::FixedSizeContainer::getSize()']]],
->>>>>>> Stashed changes
-=======
-  ['getsize',['getSize',['../classr3_1_1_broad_phase_collision_data.html#a6ec1a2db157093ffa0fb790dbf82907e',1,'r3::BroadPhaseCollisionData::getSize()'],['../classr3_1_1_collision_data.html#ad0898e21e34b4558dbdd68dd115c49d8',1,'r3::CollisionData::getSize()'],['../classr3_1_1_fixed_size_container.html#a984b90ac15df32a41011e665e3059e17',1,'r3::FixedSizeContainer::getSize()']]],
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
   ['gettorqueaccumulated',['getTorqueAccumulated',['../classr3_1_1_rigid_body.html#a8a5111fa2e4bd5f3a2615525da4c2949',1,'r3::RigidBody']]],
   ['gettransform',['getTransform',['../classr3_1_1_collision_object.html#a79e04809124cad6aeb25a66f11826fee',1,'r3::CollisionObject::getTransform() const'],['../classr3_1_1_collision_object.html#acc41118b9a571e5aa918644aaeda6bfa',1,'r3::CollisionObject::getTransform()'],['../classr3_1_1_collision_primitive.html#acc4e2139c698bab280338db36d7cc586',1,'r3::CollisionPrimitive::getTransform()']]],
   ['gettransformationmatrix',['getTransformationMatrix',['../classr3_1_1_rigid_body.html#a64a7edc9c2771caeceb54033d8953e2c',1,'r3::RigidBody']]],

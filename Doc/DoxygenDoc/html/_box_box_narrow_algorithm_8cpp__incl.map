@@ -1,65 +1,20 @@
-<<<<<<< HEAD
-<map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp">
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="$_box_box_narrow_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Algorithm/BoxBoxNarrowAlgorithm.h" alt="" coords="1473,124,1710,180"/>
-<area shape="rect" id="node24" href="$_collision_box_8h.html" title="R3D/RigidBodyEngine\l/CollisionBox.h" alt="" coords="1753,503,1904,545"/>
-<area shape="rect" id="node26" href="$_contact_old_8h.html" title="R3D/RigidBodyEngine\l/ContactOld.h" alt="" coords="27,607,177,649"/>
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="1018,808,1189,835"/>
-<area shape="rect" id="node5" href="$_i_box_box_narrow_algorithm_8h.html" title="IBoxBoxNarrowAlgorithm.h" alt="" coords="1484,228,1661,255"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="814,883,883,909"/>
-<area shape="rect" id="node6" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="1333,303,1505,359"/>
-<area shape="rect" id="node20" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1312,496,1463,552"/>
-<area shape="rect" id="node7" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="464,407,615,448"/>
-<area shape="rect" id="node8" href="$_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="187,503,337,545"/>
-<area shape="rect" id="node9" href="$_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="253,615,388,641"/>
-<area shape="rect" id="node10" href="$_precision_8h.html" title="Common/Precision.h" alt="" coords="31,719,173,745"/>
-<area shape="rect" id="node15" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="464,600,615,656"/>
-<area shape="rect" id="node16" href="$_rigid_body_def_8h.html" title="R3D/RigidBodyEngine\l/RigidBodyDef.h" alt="" coords="664,503,815,545"/>
-<area shape="rect" id="node17" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="639,607,789,649"/>
-<area shape="rect" id="node18" href="$_collision_primitive_8h.html" title="R3D/RigidBodyEngine\l/CollisionPrimitive.h" alt="" coords="1425,607,1576,649"/>
-<area shape="rect" id="node19" href="$_collision_primitive_type_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPrimitiveType.h" alt="" coords="1414,704,1577,760"/>
-<area shape="rect" id="node21" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="1068,600,1219,656"/>
-<area shape="rect" id="node22" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="1051,719,1156,745"/>
-=======
-<area shape="rect" id="node2" href="$_box_box_narrow_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Algorithm/BoxBoxNarrowAlgorithm.h" alt="" coords="1297,124,1534,180"/>
-<area shape="rect" id="node24" href="$_collision_box_8h.html" title="R3D/RigidBodyEngine\l/CollisionBox.h" alt="" coords="1587,503,1737,545"/>
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="759,808,930,835"/>
-<area shape="rect" id="node5" href="$_i_box_box_narrow_algorithm_8h.html" title="IBoxBoxNarrowAlgorithm.h" alt="" coords="1091,228,1268,255"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="649,883,718,909"/>
-<area shape="rect" id="node6" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="941,303,1113,359"/>
-<area shape="rect" id="node20" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1013,496,1164,552"/>
-<area shape="rect" id="node7" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="267,407,417,448"/>
-<area shape="rect" id="node8" href="$_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="52,503,203,545"/>
-<area shape="rect" id="node9" href="$_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="119,615,253,641"/>
-<area shape="rect" id="node10" href="$_precision_8h.html" title="Common/Precision.h" alt="" coords="461,719,604,745"/>
-<area shape="rect" id="node15" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="380,600,531,656"/>
-<area shape="rect" id="node16" href="$_rigid_body_def_8h.html" title="R3D/RigidBodyEngine\l/RigidBodyDef.h" alt="" coords="611,503,761,545"/>
-<area shape="rect" id="node17" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="555,607,705,649"/>
-<area shape="rect" id="node18" href="$_collision_primitive_8h.html" title="R3D/RigidBodyEngine\l/CollisionPrimitive.h" alt="" coords="1341,607,1492,649"/>
-<area shape="rect" id="node19" href="$_collision_primitive_type_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPrimitiveType.h" alt="" coords="1330,704,1493,760"/>
-<area shape="rect" id="node21" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="781,600,932,656"/>
-<area shape="rect" id="node22" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="832,719,937,745"/>
->>>>>>> Stashed changes
-=======
-<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp">
-<area shape="rect" id="node2" href="$_box_box_narrow_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Algorithm/BoxBoxNarrowAlgorithm.h" alt="" coords="1473,139,1710,195"/>
-<area shape="rect" id="node24" href="$_collision_box_8h.html" title="R3D/RigidBodyEngine\l/CollisionBox.h" alt="" coords="1753,518,1904,559"/>
-<area shape="rect" id="node26" href="$_contact_old_8h.html" title="R3D/RigidBodyEngine\l/ContactOld.h" alt="" coords="27,622,177,663"/>
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="1018,823,1189,849"/>
-<area shape="rect" id="node5" href="$_i_box_box_narrow_algorithm_8h.html" title="IBoxBoxNarrowAlgorithm.h" alt="" coords="1484,243,1661,269"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="814,897,883,924"/>
-<area shape="rect" id="node6" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="1333,317,1505,373"/>
-<area shape="rect" id="node20" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1312,511,1463,567"/>
-<area shape="rect" id="node7" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="464,421,615,463"/>
-<area shape="rect" id="node8" href="$_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="187,518,337,559"/>
-<area shape="rect" id="node9" href="$_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="253,629,388,656"/>
-<area shape="rect" id="node10" href="$_precision_8h.html" title="Common/Precision.h" alt="" coords="31,733,173,760"/>
-<area shape="rect" id="node15" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="464,615,615,671"/>
-<area shape="rect" id="node16" href="$_rigid_body_def_8h.html" title="R3D/RigidBodyEngine\l/RigidBodyDef.h" alt="" coords="664,518,815,559"/>
-<area shape="rect" id="node17" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="639,622,789,663"/>
-<area shape="rect" id="node18" href="$_collision_primitive_8h.html" title="R3D/RigidBodyEngine\l/CollisionPrimitive.h" alt="" coords="1425,622,1576,663"/>
-<area shape="rect" id="node19" href="$_collision_primitive_type_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPrimitiveType.h" alt="" coords="1414,719,1577,775"/>
-<area shape="rect" id="node21" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="1068,615,1219,671"/>
-<area shape="rect" id="node22" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="1051,733,1156,760"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
+<map id="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp" name="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp">
+<area shape="rect" id="node2" href="$_box_box_narrow_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Algorithm/BoxBoxNarrowAlgorithm.h" alt="" coords="1297,139,1534,195"/>
+<area shape="rect" id="node24" href="$_collision_box_8h.html" title="R3D/RigidBodyEngine\l/CollisionBox.h" alt="" coords="1587,518,1737,559"/>
+<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="759,823,930,849"/>
+<area shape="rect" id="node5" href="$_i_box_box_narrow_algorithm_8h.html" title="IBoxBoxNarrowAlgorithm.h" alt="" coords="1091,243,1268,269"/>
+<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="649,897,718,924"/>
+<area shape="rect" id="node6" href="$_i_narrow_phase_algorithm_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseAlgorithm.h" alt="" coords="941,317,1113,373"/>
+<area shape="rect" id="node20" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="1013,511,1164,567"/>
+<area shape="rect" id="node7" href="$_rigid_body_8h.html" title="R3D/RigidBodyEngine\l/RigidBody.h" alt="" coords="267,421,417,463"/>
+<area shape="rect" id="node8" href="$_collision_object_8h.html" title="R3D/RigidBodyEngine\l/CollisionObject.h" alt="" coords="52,518,203,559"/>
+<area shape="rect" id="node9" href="$_transform3_d_8h.html" title="R3D/Transform3D.h" alt="" coords="119,629,253,656"/>
+<area shape="rect" id="node10" href="$_precision_8h.html" title="Common/Precision.h" alt="" coords="461,733,604,760"/>
+<area shape="rect" id="node15" href="$_collision_mask_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionMask.h" alt="" coords="380,615,531,671"/>
+<area shape="rect" id="node16" href="$_rigid_body_def_8h.html" title="R3D/RigidBodyEngine\l/RigidBodyDef.h" alt="" coords="611,518,761,559"/>
+<area shape="rect" id="node17" href="$_physics_material_8h.html" title="R3D/RigidBodyEngine\l/PhysicsMaterial.h" alt="" coords="555,622,705,663"/>
+<area shape="rect" id="node18" href="$_collision_primitive_8h.html" title="R3D/RigidBodyEngine\l/CollisionPrimitive.h" alt="" coords="1341,622,1492,663"/>
+<area shape="rect" id="node19" href="$_collision_primitive_type_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionPrimitiveType.h" alt="" coords="1330,719,1493,775"/>
+<area shape="rect" id="node21" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="781,615,932,671"/>
+<area shape="rect" id="node22" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="832,733,937,760"/>
 </map>

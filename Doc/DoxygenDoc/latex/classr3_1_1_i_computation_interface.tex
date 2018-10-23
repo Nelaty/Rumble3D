@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_computation_interface}\index{r3\+::\+I\+Computation\+Interface@{r3\+::\+I\+Computation\+Interface}}
 
 
+Interface used by physics modules to accomplish their tasks.  
+
+
+
+
 {\ttfamily \#include $<$I\+Computation\+Interface.\+h$>$}
 
 
@@ -28,21 +33,24 @@ Collaboration diagram for r3\+:\+:I\+Computation\+Interface\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_i_computation_interface_a88c5734b5636745f0200c03adac30994}{$\sim$\+I\+Computation\+Interface}} ()
 \item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba064ac6a032ef07edd7}{on\+Begin}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Called at the start of a physics step. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_computation_interface_aaa12bcc35005f32a1984b38de97696cb}{step}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Used to calculate changes. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_computation_interface_a162250f2b6efbd85460bd0f780d42cff}{integrate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Used to apply changes. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414c74fe6f5a8f4a6c7d}{on\+End}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Called at the end of a physics step. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd4e714788d0968851007}{reset}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resets a computation interface to its start state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_i_computation_interface_aa7ec35b2ab0cccd1a94ebdfeccc7bb43}{I\+Computation\+Interface}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface used by physics modules to accomplish their tasks. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_computation_interface_a88c5734b5636745f0200c03adac30994}\label{classr3_1_1_i_computation_interface_a88c5734b5636745f0200c03adac30994}} 
@@ -68,6 +76,15 @@ virtual void \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd
 
 
 
+Used to apply changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Delta} & The time step of the physics step. \\
+\hline
+\end{DoxyParams}
+
+
 Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}{r3\+::\+Default\+Particle\+Engine\+CI}}, and \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_a4b79e7e4bc76eedcad7ef5c4777b9d33}{r3\+::\+Default\+Rigid\+Body\+Engine\+CI}}.
 
 \mbox{\Hypertarget{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba064ac6a032ef07edd7}\label{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba064ac6a032ef07edd7}} 
@@ -75,6 +92,10 @@ Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a4603707
 \index{on\+Begin@{on\+Begin}!r3\+::\+I\+Computation\+Interface@{r3\+::\+I\+Computation\+Interface}}
 \subsubsection{\texorpdfstring{on\+Begin()}{onBegin()}}
 {\footnotesize\ttfamily void r3\+::\+I\+Computation\+Interface\+::on\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Called at the start of a physics step. 
 
 
 
@@ -88,6 +109,10 @@ Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_aaf2e9ca
 
 
 
+Called at the end of a physics step. 
+
+
+
 Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}{r3\+::\+Default\+Particle\+Engine\+CI}}, and \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_ad7746126ebd5aab4cfc352dd9facabb2}{r3\+::\+Default\+Rigid\+Body\+Engine\+CI}}.
 
 \mbox{\Hypertarget{classr3_1_1_i_computation_interface_a6069989c54ffd4e714788d0968851007}\label{classr3_1_1_i_computation_interface_a6069989c54ffd4e714788d0968851007}} 
@@ -95,6 +120,10 @@ Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a6a34c77
 \index{reset@{reset}!r3\+::\+I\+Computation\+Interface@{r3\+::\+I\+Computation\+Interface}}
 \subsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void r3\+::\+I\+Computation\+Interface\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Resets a computation interface to its start state. 
 
 
 
@@ -108,11 +137,20 @@ Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a97757c6
 
 
 
+Used to calculate changes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Delta} & The time step of the physics step. \\
+\hline
+\end{DoxyParams}
+
+
 Implemented in \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}{r3\+::\+Default\+Particle\+Engine\+CI}}, and \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i_ac45ae1d1889c75e6839b865870cbf59c}{r3\+::\+Default\+Rigid\+Body\+Engine\+CI}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\mbox{\hyperlink{_i_computation_interface_8h}{I\+Computation\+Interface.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\mbox{\hyperlink{_i_computation_interface_8cpp}{I\+Computation\+Interface.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\mbox{\hyperlink{_i_computation_interface_8h}{I\+Computation\+Interface.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\mbox{\hyperlink{_i_computation_interface_8cpp}{I\+Computation\+Interface.\+cpp}}\end{DoxyCompactItemize}

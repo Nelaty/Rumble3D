@@ -1,10 +1,9 @@
 #include "R3D/Utility/Random.h"
-
 #include <cassert>
 #include <utility>
 #include <ctime>
 
-namespace utl
+namespace r3
 {
 	void Random::seed()
 	{
@@ -67,7 +66,8 @@ namespace utl
 
 	glm::vec2 Random::randomVec2()
 	{
-		return glm::vec2(randomFloat(), randomFloat());
+		return glm::vec2(randomFloat(),
+						 randomFloat());
 	}
 
 	glm::vec2 Random::randomVec2(const float min, const float max)
@@ -76,9 +76,17 @@ namespace utl
 						 randomFloat(min, max));
 	}
 
+	glm::vec2 Random::randomVec2(const glm::vec2& min, const glm::vec2& max)
+	{
+		return glm::vec2(randomFloat(min.x, max.x),
+						 randomFloat(min.y, max.y));
+	}
+
 	glm::vec3 Random::randomVec3()
 	{
-		return glm::vec3(randomFloat(), randomFloat(), randomFloat());
+		return glm::vec3(randomFloat(),
+						 randomFloat(),
+						 randomFloat());
 	}
 
 	glm::vec3 Random::randomVec3(const float min, const float max)
@@ -88,9 +96,19 @@ namespace utl
 						 randomFloat(min, max));
 	}
 
+	glm::vec3 Random::randomVec3(const glm::vec3& min, const glm::vec3& max)
+	{
+		return glm::vec3(randomFloat(min.x, max.x),
+						 randomFloat(min.y, max.y),
+						 randomFloat(min.z, max.z));
+	}
+
 	glm::vec4 Random::randomVec4()
 	{
-		return glm::vec4(randomFloat(), randomFloat(), randomFloat(), randomFloat());
+		return glm::vec4(randomFloat(),
+						 randomFloat(),
+						 randomFloat(),
+						 randomFloat());
 	}
 
 	glm::vec4 Random::randomVec4(const float min, const float max)
@@ -101,16 +119,24 @@ namespace utl
 						 randomFloat(min, max));
 	}
 
+	glm::vec4 Random::randomVec4(const glm::vec4& min, const glm::vec4& max)
+	{
+		return glm::vec4(randomFloat(min.x, max.x),
+						 randomFloat(min.y, max.y),
+						 randomFloat(min.z, max.z),
+						 randomFloat(min.w, max.w));
+	}
+
 	bool Random::randomBool(const float chance)
 	{
 		return randomFloatZeroOne() < chance;
 	}
 
 	Random::Random()
-	= default;
+		= default;
 
 	Random::~Random()
-	= default;
+		= default;
 
 	unsigned int Random::s_seed = 0;
 }

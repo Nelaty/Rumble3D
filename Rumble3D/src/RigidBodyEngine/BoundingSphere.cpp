@@ -1,7 +1,5 @@
 #include "R3D/RigidBodyEngine/BoundingSphere.h"
 
-#include <corecrt_math_defines.h>
-
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>
 #include <glm/gtc/constants.hpp>
@@ -63,12 +61,17 @@ namespace r3
 	
 	real BoundingSphere::getVolume() const
 	{
-		return static_cast<real>(1.333333) * M_PI * m_radius * m_radius * m_radius;
+		return R3D_4_OVER_3 * R3D_PI * m_radius * m_radius * m_radius;
 	}
 	
 	real BoundingSphere::getGrowth(const BoundingSphere& other) const
 	{
 		const BoundingSphere newSphere(*this, other);
-		return newSphere.m_radius*newSphere.m_radius - m_radius*m_radius;
+		return newSphere.squaredRadius() - squaredRadius();
+	}
+
+	real BoundingSphere::squaredRadius() const
+	{
+		return m_radius * m_radius;
 	}
 }

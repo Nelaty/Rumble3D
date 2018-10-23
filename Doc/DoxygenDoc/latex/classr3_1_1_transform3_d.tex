@@ -2,6 +2,11 @@
 \label{classr3_1_1_transform3_d}\index{r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 
 
+Encapsulates translation and rotation and manipulation functions on them.  
+
+
+
+
 {\ttfamily \#include $<$Transform3\+D.\+h$>$}
 
 
@@ -17,40 +22,43 @@ Collaboration diagram for r3\+:\+:Transform3D\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_transform3_d_ab43888860ef5d5c124e185124cc681b5}{Transform3D}} (const glm\+::vec3 \&position=glm\+::vec3(0.\+0), const glm\+::mat3 \&rotation=glm\+::mat3(1))
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_transform3_d_acb2850307abbb9733d259dba96d5ec30}{$\sim$\+Transform3D}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_a24bf42a0f16e38b66bd6a3ecf4f026c4}{set\+Position}} (const glm\+::vec3 \&position)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the current position. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_adae3a3bf01667c1c6c67d9a817d03a77}{set\+Position}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} x, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} y, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} z)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the current position. \end{DoxyCompactList}\item 
 const glm\+::vec3 \& \mbox{\hyperlink{classr3_1_1_transform3_d_abe9ff86c845d54cd297ff00fd21aad71}{get\+Position}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current position. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_a36ca89f7424b3efec3f2d5532c37f457}{translate}} (const glm\+::vec3 \&delta)
-\item 
+\begin{DoxyCompactList}\small\item\em Additively change the current position. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_aab83077fb0b382391493aa59bdd2ce13}{translate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} x, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} y, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} z)
-\item 
+\begin{DoxyCompactList}\small\item\em Additively change the current position. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_aaf633209948d35ca4b90422614a84478}{rotate}} (const glm\+::quat \&rot)
-\item 
+\begin{DoxyCompactList}\small\item\em Multiplicative change of the current rotation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_a802314a0dee26e4a5fb96666cd39741c}{rotate}} (const glm\+::mat3 \&rot)
-\item 
+\begin{DoxyCompactList}\small\item\em Multiplicative change of the current rotation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_a78c34c186d255ad6dcd0adf7ce199c4e}{set\+Rotation}} (float w, float x, float y, float z)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the current rotation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_af539b9a5a73f5196515f9a55ee73be4d}{set\+Rotation}} (const glm\+::quat \&orientation)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the current rotation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_transform3_d_acaab6048f44805ef28fdae452f0c4853}{set\+Rotation}} (const glm\+::mat3 \&rot)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the current rotation. \end{DoxyCompactList}\item 
 const glm\+::mat3 \& \mbox{\hyperlink{classr3_1_1_transform3_d_a1bad817e81d93f275ac71864fae763aa}{get\+Rotation}} () const
-\item 
+\begin{DoxyCompactList}\small\item\em Get the current rotation. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_transform3_d_a7c6348081c8c1b4d36af89fa7fe2103d}{get\+Point\+In\+Local\+Space}} (const glm\+::vec3 \&point) const
-\item 
+\begin{DoxyCompactList}\small\item\em Convert a point into local body space. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_transform3_d_a4ecfb0e1518fbeaaa838da02402d0bd9}{get\+Point\+In\+World\+Space}} (const glm\+::vec3 \&point) const
-\item 
+\begin{DoxyCompactList}\small\item\em Convert a point from local body space into world space. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_transform3_d_ac942055c92499597d01b309b4068917e}{get\+Direction\+In\+Local\+Space}} (const glm\+::vec3 \&direction) const
-\item 
+\begin{DoxyCompactList}\small\item\em Convert a direction from world space into local space. \end{DoxyCompactList}\item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_transform3_d_a16c5747e86d579935b808a15f4804b2f}{get\+Direction\+In\+World\+Space}} (const glm\+::vec3 \&direction) const
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Convert a direction from local body space into world space. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Encapsulates translation and rotation and manipulation functions on them. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_transform3_d_ab43888860ef5d5c124e185124cc681b5}\label{classr3_1_1_transform3_d_ab43888860ef5d5c124e185124cc681b5}} 
@@ -59,6 +67,17 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_transform3_d_a16c5747e86d579935b808a15f
 \subsubsection{\texorpdfstring{Transform3\+D()}{Transform3D()}}
 {\footnotesize\ttfamily r3\+::\+Transform3\+D\+::\+Transform3D (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position = {\ttfamily glm\+:\+:vec3(0.0)},  }\item[{const glm\+::mat3 \&}]{rotation = {\ttfamily glm\+:\+:mat3(1)} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & Initial position. \\
+\hline
+{\em rotation} & Initial rotation. \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_transform3_d_acb2850307abbb9733d259dba96d5ec30}\label{classr3_1_1_transform3_d_acb2850307abbb9733d259dba96d5ec30}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!````~Transform3D@{$\sim$\+Transform3D}}
 \index{````~Transform3D@{$\sim$\+Transform3D}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
@@ -74,93 +93,250 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_transform3_d_a16c5747e86d579935b808a15f
 \subsubsection{\texorpdfstring{get\+Direction\+In\+Local\+Space()}{getDirectionInLocalSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Transform3\+D\+::get\+Direction\+In\+Local\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption}) const}
 
+
+
+Convert a direction from world space into local space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction in world space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The direction in local space. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_transform3_d_a16c5747e86d579935b808a15f4804b2f}\label{classr3_1_1_transform3_d_a16c5747e86d579935b808a15f4804b2f}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!get\+Direction\+In\+World\+Space@{get\+Direction\+In\+World\+Space}}
 \index{get\+Direction\+In\+World\+Space@{get\+Direction\+In\+World\+Space}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{get\+Direction\+In\+World\+Space()}{getDirectionInWorldSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Transform3\+D\+::get\+Direction\+In\+World\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption}) const}
 
+
+
+Convert a direction from local body space into world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction in local body space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The direction in world space. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_transform3_d_a7c6348081c8c1b4d36af89fa7fe2103d}\label{classr3_1_1_transform3_d_a7c6348081c8c1b4d36af89fa7fe2103d}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!get\+Point\+In\+Local\+Space@{get\+Point\+In\+Local\+Space}}
 \index{get\+Point\+In\+Local\+Space@{get\+Point\+In\+Local\+Space}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{get\+Point\+In\+Local\+Space()}{getPointInLocalSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Transform3\+D\+::get\+Point\+In\+Local\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption}) const}
 
+
+
+Convert a point into local body space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & The point to convert. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The point in local body space. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_transform3_d_a4ecfb0e1518fbeaaa838da02402d0bd9}\label{classr3_1_1_transform3_d_a4ecfb0e1518fbeaaa838da02402d0bd9}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!get\+Point\+In\+World\+Space@{get\+Point\+In\+World\+Space}}
 \index{get\+Point\+In\+World\+Space@{get\+Point\+In\+World\+Space}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{get\+Point\+In\+World\+Space()}{getPointInWorldSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Transform3\+D\+::get\+Point\+In\+World\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption}) const}
 
+
+
+Convert a point from local body space into world space. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & A point in local body space. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The converted point in world space. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_transform3_d_abe9ff86c845d54cd297ff00fd21aad71}\label{classr3_1_1_transform3_d_abe9ff86c845d54cd297ff00fd21aad71}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!get\+Position@{get\+Position}}
 \index{get\+Position@{get\+Position}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Transform3\+D\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the current position. \mbox{\Hypertarget{classr3_1_1_transform3_d_a1bad817e81d93f275ac71864fae763aa}\label{classr3_1_1_transform3_d_a1bad817e81d93f275ac71864fae763aa}} 
+
+
+Get the current position. 
+
+\begin{DoxyReturn}{Returns}
+The position. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_a1bad817e81d93f275ac71864fae763aa}\label{classr3_1_1_transform3_d_a1bad817e81d93f275ac71864fae763aa}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!get\+Rotation@{get\+Rotation}}
 \index{get\+Rotation@{get\+Rotation}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
 {\footnotesize\ttfamily const glm\+::mat3 \& r3\+::\+Transform3\+D\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
-Get the current rotation. \mbox{\Hypertarget{classr3_1_1_transform3_d_aaf633209948d35ca4b90422614a84478}\label{classr3_1_1_transform3_d_aaf633209948d35ca4b90422614a84478}} 
+
+
+Get the current rotation. 
+
+\begin{DoxyReturn}{Returns}
+The rotation. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_aaf633209948d35ca4b90422614a84478}\label{classr3_1_1_transform3_d_aaf633209948d35ca4b90422614a84478}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!rotate@{rotate}}
 \index{rotate@{rotate}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::rotate (\begin{DoxyParamCaption}\item[{const glm\+::quat \&}]{rot }\end{DoxyParamCaption})}
 
-Rotate \mbox{\Hypertarget{classr3_1_1_transform3_d_a802314a0dee26e4a5fb96666cd39741c}\label{classr3_1_1_transform3_d_a802314a0dee26e4a5fb96666cd39741c}} 
+
+
+Multiplicative change of the current rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rot} & The factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_a802314a0dee26e4a5fb96666cd39741c}\label{classr3_1_1_transform3_d_a802314a0dee26e4a5fb96666cd39741c}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!rotate@{rotate}}
 \index{rotate@{rotate}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{rotate()}{rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::rotate (\begin{DoxyParamCaption}\item[{const glm\+::mat3 \&}]{rot }\end{DoxyParamCaption})}
 
-Rotate \mbox{\Hypertarget{classr3_1_1_transform3_d_a24bf42a0f16e38b66bd6a3ecf4f026c4}\label{classr3_1_1_transform3_d_a24bf42a0f16e38b66bd6a3ecf4f026c4}} 
+
+
+Multiplicative change of the current rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rot} & The factor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_a24bf42a0f16e38b66bd6a3ecf4f026c4}\label{classr3_1_1_transform3_d_a24bf42a0f16e38b66bd6a3ecf4f026c4}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!set\+Position@{set\+Position}}
 \index{set\+Position@{set\+Position}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})}
 
-Set the current position. \mbox{\Hypertarget{classr3_1_1_transform3_d_adae3a3bf01667c1c6c67d9a817d03a77}\label{classr3_1_1_transform3_d_adae3a3bf01667c1c6c67d9a817d03a77}} 
+
+
+Set the current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The new position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_adae3a3bf01667c1c6c67d9a817d03a77}\label{classr3_1_1_transform3_d_adae3a3bf01667c1c6c67d9a817d03a77}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!set\+Position@{set\+Position}}
 \index{set\+Position@{set\+Position}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
-Set the current position. \mbox{\Hypertarget{classr3_1_1_transform3_d_a78c34c186d255ad6dcd0adf7ce199c4e}\label{classr3_1_1_transform3_d_a78c34c186d255ad6dcd0adf7ce199c4e}} 
+
+
+Set the current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/component of the new position. \\
+\hline
+{\em y} & The y-\/component of the new position. \\
+\hline
+{\em z} & The z-\/component of the new position. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_a78c34c186d255ad6dcd0adf7ce199c4e}\label{classr3_1_1_transform3_d_a78c34c186d255ad6dcd0adf7ce199c4e}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::set\+Rotation (\begin{DoxyParamCaption}\item[{float}]{w,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
 
-Set the current rotation. \mbox{\Hypertarget{classr3_1_1_transform3_d_af539b9a5a73f5196515f9a55ee73be4d}\label{classr3_1_1_transform3_d_af539b9a5a73f5196515f9a55ee73be4d}} 
+
+
+Set the current rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & Rotation in radians. \\
+\hline
+{\em x} & The x-\/component of the axis. \\
+\hline
+{\em y} & The y-\/component of the axis. \\
+\hline
+{\em z} & The z-\/component of the axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_af539b9a5a73f5196515f9a55ee73be4d}\label{classr3_1_1_transform3_d_af539b9a5a73f5196515f9a55ee73be4d}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::quat \&}]{orientation }\end{DoxyParamCaption})}
 
-Set the current rotation. \mbox{\Hypertarget{classr3_1_1_transform3_d_acaab6048f44805ef28fdae452f0c4853}\label{classr3_1_1_transform3_d_acaab6048f44805ef28fdae452f0c4853}} 
+
+
+Set the current rotation. 
+
+s 
+\begin{DoxyParams}{Parameters}
+{\em orientation} & The new orientation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_acaab6048f44805ef28fdae452f0c4853}\label{classr3_1_1_transform3_d_acaab6048f44805ef28fdae452f0c4853}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!set\+Rotation@{set\+Rotation}}
 \index{set\+Rotation@{set\+Rotation}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::mat3 \&}]{rot }\end{DoxyParamCaption})}
 
-Set the current rotation \mbox{\Hypertarget{classr3_1_1_transform3_d_a36ca89f7424b3efec3f2d5532c37f457}\label{classr3_1_1_transform3_d_a36ca89f7424b3efec3f2d5532c37f457}} 
+
+
+Set the current rotation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rot} & The new rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_a36ca89f7424b3efec3f2d5532c37f457}\label{classr3_1_1_transform3_d_a36ca89f7424b3efec3f2d5532c37f457}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!translate@{translate}}
 \index{translate@{translate}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{translate()}{translate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::translate (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{delta }\end{DoxyParamCaption})}
 
-Translate \mbox{\Hypertarget{classr3_1_1_transform3_d_aab83077fb0b382391493aa59bdd2ce13}\label{classr3_1_1_transform3_d_aab83077fb0b382391493aa59bdd2ce13}} 
+
+
+Additively change the current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delta} & The summand. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_transform3_d_aab83077fb0b382391493aa59bdd2ce13}\label{classr3_1_1_transform3_d_aab83077fb0b382391493aa59bdd2ce13}} 
 \index{r3\+::\+Transform3D@{r3\+::\+Transform3D}!translate@{translate}}
 \index{translate@{translate}!r3\+::\+Transform3D@{r3\+::\+Transform3D}}
 \subsubsection{\texorpdfstring{translate()}{translate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Transform3\+D\+::translate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
-Translate 
+
+
+Additively change the current position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/component of the summand. \\
+\hline
+{\em y} & The y-\/component of the summand. \\
+\hline
+{\em z} & The z-\/component of the summand. \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\mbox{\hyperlink{_transform3_d_8h}{Transform3\+D.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\mbox{\hyperlink{_transform3_d_8cpp}{Transform3\+D.\+cpp}}\end{DoxyCompactItemize}
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\mbox{\hyperlink{_transform3_d_8h}{Transform3\+D.\+h}}\item 
+C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\mbox{\hyperlink{_transform3_d_8cpp}{Transform3\+D.\+cpp}}\end{DoxyCompactItemize}

@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Encapsulates translation and rotation and manipulation functions on them.  
+ <a href="classr3_1_1_transform3_d.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_transform3_d_8h_source.html">Transform3D.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::Transform3D:</div>
@@ -85,41 +88,59 @@ Collaboration diagram for r3::Transform3D:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab43888860ef5d5c124e185124cc681b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#ab43888860ef5d5c124e185124cc681b5">Transform3D</a> (const glm::vec3 &amp;position=glm::vec3(0.0), const glm::mat3 &amp;rotation=glm::mat3(1))</td></tr>
+<tr class="memdesc:ab43888860ef5d5c124e185124cc681b5"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. ">Transform3D</a> constructor.  <a href="#ab43888860ef5d5c124e185124cc681b5">More...</a><br /></td></tr>
 <tr class="separator:ab43888860ef5d5c124e185124cc681b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb2850307abbb9733d259dba96d5ec30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#acb2850307abbb9733d259dba96d5ec30">~Transform3D</a> ()</td></tr>
 <tr class="separator:acb2850307abbb9733d259dba96d5ec30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a24bf42a0f16e38b66bd6a3ecf4f026c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a24bf42a0f16e38b66bd6a3ecf4f026c4">setPosition</a> (const glm::vec3 &amp;position)</td></tr>
+<tr class="memdesc:a24bf42a0f16e38b66bd6a3ecf4f026c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current position.  <a href="#a24bf42a0f16e38b66bd6a3ecf4f026c4">More...</a><br /></td></tr>
 <tr class="separator:a24bf42a0f16e38b66bd6a3ecf4f026c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adae3a3bf01667c1c6c67d9a817d03a77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#adae3a3bf01667c1c6c67d9a817d03a77">setPosition</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
+<tr class="memdesc:adae3a3bf01667c1c6c67d9a817d03a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current position.  <a href="#adae3a3bf01667c1c6c67d9a817d03a77">More...</a><br /></td></tr>
 <tr class="separator:adae3a3bf01667c1c6c67d9a817d03a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe9ff86c845d54cd297ff00fd21aad71"><td class="memItemLeft" align="right" valign="top">const glm::vec3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#abe9ff86c845d54cd297ff00fd21aad71">getPosition</a> () const</td></tr>
+<tr class="memdesc:abe9ff86c845d54cd297ff00fd21aad71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current position.  <a href="#abe9ff86c845d54cd297ff00fd21aad71">More...</a><br /></td></tr>
 <tr class="separator:abe9ff86c845d54cd297ff00fd21aad71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36ca89f7424b3efec3f2d5532c37f457"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a36ca89f7424b3efec3f2d5532c37f457">translate</a> (const glm::vec3 &amp;delta)</td></tr>
+<tr class="memdesc:a36ca89f7424b3efec3f2d5532c37f457"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additively change the current position.  <a href="#a36ca89f7424b3efec3f2d5532c37f457">More...</a><br /></td></tr>
 <tr class="separator:a36ca89f7424b3efec3f2d5532c37f457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab83077fb0b382391493aa59bdd2ce13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#aab83077fb0b382391493aa59bdd2ce13">translate</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> x, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> y, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> z)</td></tr>
+<tr class="memdesc:aab83077fb0b382391493aa59bdd2ce13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Additively change the current position.  <a href="#aab83077fb0b382391493aa59bdd2ce13">More...</a><br /></td></tr>
 <tr class="separator:aab83077fb0b382391493aa59bdd2ce13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf633209948d35ca4b90422614a84478"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#aaf633209948d35ca4b90422614a84478">rotate</a> (const glm::quat &amp;rot)</td></tr>
+<tr class="memdesc:aaf633209948d35ca4b90422614a84478"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplicative change of the current rotation.  <a href="#aaf633209948d35ca4b90422614a84478">More...</a><br /></td></tr>
 <tr class="separator:aaf633209948d35ca4b90422614a84478"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802314a0dee26e4a5fb96666cd39741c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a802314a0dee26e4a5fb96666cd39741c">rotate</a> (const glm::mat3 &amp;rot)</td></tr>
+<tr class="memdesc:a802314a0dee26e4a5fb96666cd39741c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Multiplicative change of the current rotation.  <a href="#a802314a0dee26e4a5fb96666cd39741c">More...</a><br /></td></tr>
 <tr class="separator:a802314a0dee26e4a5fb96666cd39741c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c34c186d255ad6dcd0adf7ce199c4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a78c34c186d255ad6dcd0adf7ce199c4e">setRotation</a> (float w, float x, float y, float z)</td></tr>
+<tr class="memdesc:a78c34c186d255ad6dcd0adf7ce199c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current rotation.  <a href="#a78c34c186d255ad6dcd0adf7ce199c4e">More...</a><br /></td></tr>
 <tr class="separator:a78c34c186d255ad6dcd0adf7ce199c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af539b9a5a73f5196515f9a55ee73be4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#af539b9a5a73f5196515f9a55ee73be4d">setRotation</a> (const glm::quat &amp;orientation)</td></tr>
+<tr class="memdesc:af539b9a5a73f5196515f9a55ee73be4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current rotation.  <a href="#af539b9a5a73f5196515f9a55ee73be4d">More...</a><br /></td></tr>
 <tr class="separator:af539b9a5a73f5196515f9a55ee73be4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaab6048f44805ef28fdae452f0c4853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#acaab6048f44805ef28fdae452f0c4853">setRotation</a> (const glm::mat3 &amp;rot)</td></tr>
+<tr class="memdesc:acaab6048f44805ef28fdae452f0c4853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current rotation.  <a href="#acaab6048f44805ef28fdae452f0c4853">More...</a><br /></td></tr>
 <tr class="separator:acaab6048f44805ef28fdae452f0c4853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1bad817e81d93f275ac71864fae763aa"><td class="memItemLeft" align="right" valign="top">const glm::mat3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a1bad817e81d93f275ac71864fae763aa">getRotation</a> () const</td></tr>
+<tr class="memdesc:a1bad817e81d93f275ac71864fae763aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current rotation.  <a href="#a1bad817e81d93f275ac71864fae763aa">More...</a><br /></td></tr>
 <tr class="separator:a1bad817e81d93f275ac71864fae763aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c6348081c8c1b4d36af89fa7fe2103d"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a7c6348081c8c1b4d36af89fa7fe2103d">getPointInLocalSpace</a> (const glm::vec3 &amp;point) const</td></tr>
+<tr class="memdesc:a7c6348081c8c1b4d36af89fa7fe2103d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point into local body space.  <a href="#a7c6348081c8c1b4d36af89fa7fe2103d">More...</a><br /></td></tr>
 <tr class="separator:a7c6348081c8c1b4d36af89fa7fe2103d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ecfb0e1518fbeaaa838da02402d0bd9"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a4ecfb0e1518fbeaaa838da02402d0bd9">getPointInWorldSpace</a> (const glm::vec3 &amp;point) const</td></tr>
+<tr class="memdesc:a4ecfb0e1518fbeaaa838da02402d0bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point from local body space into world space.  <a href="#a4ecfb0e1518fbeaaa838da02402d0bd9">More...</a><br /></td></tr>
 <tr class="separator:a4ecfb0e1518fbeaaa838da02402d0bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac942055c92499597d01b309b4068917e"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#ac942055c92499597d01b309b4068917e">getDirectionInLocalSpace</a> (const glm::vec3 &amp;direction) const</td></tr>
+<tr class="memdesc:ac942055c92499597d01b309b4068917e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a direction from world space into local space.  <a href="#ac942055c92499597d01b309b4068917e">More...</a><br /></td></tr>
 <tr class="separator:ac942055c92499597d01b309b4068917e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16c5747e86d579935b808a15f4804b2f"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a16c5747e86d579935b808a15f4804b2f">getDirectionInWorldSpace</a> (const glm::vec3 &amp;direction) const</td></tr>
+<tr class="memdesc:a16c5747e86d579935b808a15f4804b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a direction from local body space into world space.  <a href="#a16c5747e86d579935b808a15f4804b2f">More...</a><br /></td></tr>
 <tr class="separator:a16c5747e86d579935b808a15f4804b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Encapsulates translation and rotation and manipulation functions on them. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab43888860ef5d5c124e185124cc681b5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab43888860ef5d5c124e185124cc681b5">&#9670;&nbsp;</a></span>Transform3D()</h2>
 
@@ -153,6 +174,15 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. ">Transform3D</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>Initial position. </td></tr>
+    <tr><td class="paramname">rotation</td><td>Initial rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,6 +228,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Convert a direction from world space into local space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>The direction in world space. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direction in local space. </dd></dl>
+
 </div>
 </div>
 <a id="a16c5747e86d579935b808a15f4804b2f"></a>
@@ -215,6 +254,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Convert a direction from local body space into world space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">direction</td><td>The direction in local body space. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The direction in world space. </dd></dl>
 
 </div>
 </div>
@@ -234,6 +282,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Convert a point into local body space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>The point to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The point in local body space. </dd></dl>
+
 </div>
 </div>
 <a id="a4ecfb0e1518fbeaaa838da02402d0bd9"></a>
@@ -252,6 +309,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Convert a point from local body space into world space. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">point</td><td>A point in local body space. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The converted point in world space. </dd></dl>
+
 </div>
 </div>
 <a id="abe9ff86c845d54cd297ff00fd21aad71"></a>
@@ -268,7 +334,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Get the current position. </p>
+<dl class="section return"><dt>Returns</dt><dd>The position. </dd></dl>
 
 </div>
 </div>
@@ -286,7 +354,9 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Get the current rotation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation. </dd></dl>
 
 </div>
 </div>
@@ -305,7 +375,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rotate </p>
+
+<p>Multiplicative change of the current rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rot</td><td>The factor. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -324,7 +401,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Rotate </p>
+
+<p>Multiplicative change of the current rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rot</td><td>The factor. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -343,7 +427,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Set the current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">position</td><td>The new position. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -378,7 +469,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Set the current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-component of the new position. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the new position. </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the new position. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -419,7 +519,17 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Set the current rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Rotation in radians. </td></tr>
+    <tr><td class="paramname">x</td><td>The x-component of the axis. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the axis. </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the axis. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -438,7 +548,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
 <p>Set the current rotation. </p>
+<p>s </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">orientation</td><td>The new orientation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -457,7 +574,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set the current rotation </p>
+
+<p>Set the current rotation. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rot</td><td>The new rotation. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -476,7 +600,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Translate </p>
+
+<p>Additively change the current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">delta</td><td>The summand. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -511,13 +642,22 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Translate </p>
+
+<p>Additively change the current position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>The x-component of the summand. </td></tr>
+    <tr><td class="paramname">y</td><td>The y-component of the summand. </td></tr>
+    <tr><td class="paramname">z</td><td>The z-component of the summand. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_transform3_d_8h_source.html">Transform3D.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_transform3_d_8cpp.html">Transform3D.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_transform3_d_8h_source.html">Transform3D.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_transform3_d_8cpp.html">Transform3D.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

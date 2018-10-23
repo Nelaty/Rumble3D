@@ -1,33 +1,11 @@
-<<<<<<< HEAD
-<map id="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp" name="D:/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp">
-<area shape="rect" id="node2" href="$_i_narrow_phase_filter_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseFilter.h" alt="" coords="67,124,218,180"/>
-<<<<<<< Updated upstream
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="245,511,416,537"/>
-<area shape="rect" id="node5" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="259,228,410,284"/>
-<area shape="rect" id="node13" href="$_broad_phase_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/BroadPhaseCollisionData.h" alt="" coords="51,228,235,284"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="445,585,515,612"/>
-<area shape="rect" id="node6" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="346,332,497,388"/>
-<area shape="rect" id="node7" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="577,436,749,463"/>
-<area shape="rect" id="node10" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="278,436,383,463"/>
-=======
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="165,511,336,537"/>
-<area shape="rect" id="node5" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="134,228,285,284"/>
-<area shape="rect" id="node10" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="123,436,229,463"/>
-<area shape="rect" id="node13" href="$_fixed_size_container_8h.html" title="R3D/Utility/FixedSizeContainer.h" alt="" coords="318,243,530,269"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="391,585,460,612"/>
-<area shape="rect" id="node6" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="166,332,317,388"/>
-<area shape="rect" id="node7" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="473,436,645,463"/>
-<area shape="rect" id="node14" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="532,347,751,373"/>
->>>>>>> Stashed changes
-=======
-<map id="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp" name="D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp">
-<area shape="rect" id="node2" href="$_i_narrow_phase_filter_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseFilter.h" alt="" coords="67,139,218,195"/>
-<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="245,525,416,552"/>
-<area shape="rect" id="node5" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="259,243,410,299"/>
-<area shape="rect" id="node13" href="$_broad_phase_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/BroadPhaseCollisionData.h" alt="" coords="51,243,235,299"/>
-<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="445,600,515,627"/>
-<area shape="rect" id="node6" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="346,347,497,403"/>
-<area shape="rect" id="node7" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="577,451,749,477"/>
-<area shape="rect" id="node10" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="278,451,383,477"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
+<map id="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp" name="C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp">
+<area shape="rect" id="node2" href="$_i_narrow_phase_filter_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/INarrowPhaseFilter.h" alt="" coords="57,139,208,195"/>
+<area shape="rect" id="node3" href="$_common_8h.html" title="R3D/Common/Common.h" alt="" coords="155,525,326,552"/>
+<area shape="rect" id="node5" href="$_collision_data_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/CollisionData.h" alt="" coords="124,243,275,299"/>
+<area shape="rect" id="node10" href="$_collision_pair_8h.html" title="CollisionPair.h" alt="" coords="113,451,219,477"/>
+<area shape="rect" id="node13" href="$_fixed_size_container_8h.html" title="R3D/Utility/FixedSizeContainer.h" alt="" coords="308,257,520,284"/>
+<area shape="rect" id="node4" href="$_config_8h.html" title="Config.h" alt="" coords="381,600,450,627"/>
+<area shape="rect" id="node6" href="$_contact_8h.html" title="R3D/RigidBodyEngine\l/CollisionDetection\l/Contact.h" alt="" coords="156,347,307,403"/>
+<area shape="rect" id="node7" href="$_precision_8h.html" title="R3D/Common/Precision.h" alt="" coords="463,451,635,477"/>
+<area shape="rect" id="node14" href="$_fixed_size_container_8inl.html" title="R3D/Utility/FixedSizeContainer.inl" alt="" coords="522,361,741,388"/>
 </map>

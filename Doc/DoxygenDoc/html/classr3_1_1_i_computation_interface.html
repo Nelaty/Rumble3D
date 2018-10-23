@@ -76,27 +76,19 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface used by physics modules to accomplish their tasks.  
+ <a href="classr3_1_1_i_computation_interface.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_computation_interface_8h_source.html">IComputationInterface.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::IComputationInterface:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_i_computation_interface__inherit__graph.png" border="0" usemap="#r3_1_1_i_computation_interface_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_i_computation_interface_inherit__map" id="r3_1_1_i_computation_interface_inherit__map">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node2" href="classr3_1_1_particle_engine_c_i.html" title="{r3::ParticleEngineCI\n|# m_particleWorld\l|+ ~ParticleEngineCI()\l+ setParticleWorld()\l+ getParticleWorld()\l# ParticleEngineCI()\l}" alt="" coords="35,233,181,355"/>
-=======
-<area shape="rect" id="node2" href="classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="35,233,181,355"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
-<area shape="rect" id="node4" href="classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used for rigid body worlds. " alt="" coords="226,219,387,369"/>
-<area shape="rect" id="node3" href="classr3_1_1_default_particle_engine_c_i.html" title="Default implementation of the particle computation interface. " alt="" coords="5,417,192,612"/>
-<area shape="rect" id="node5" href="classr3_1_1_default_rigid_body_engine_c_i.html" title="{r3::DefaultRigidBodyEngineCI\n||+ DefaultRigidBodyEngineCI()\l+ ~DefaultRigidBodyEngineCI()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l}" alt="" coords="217,432,418,597"/>
-=======
 <area shape="rect" id="node2" href="classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="35,233,181,355"/>
 <area shape="rect" id="node4" href="classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds. " alt="" coords="226,219,387,369"/>
 <area shape="rect" id="node3" href="classr3_1_1_default_particle_engine_c_i.html" title="Default implementation of the particle computation interface. " alt="" coords="5,417,192,627"/>
-<area shape="rect" id="node5" href="classr3_1_1_default_rigid_body_engine_c_i.html" title="{r3::DefaultRigidBodyEngineCI\n||+ DefaultRigidBodyEngineCI()\l+ ~DefaultRigidBodyEngineCI()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l}" alt="" coords="217,439,418,605"/>
->>>>>>> Stashed changes
+<area shape="rect" id="node5" href="classr3_1_1_default_rigid_body_engine_c_i.html" title="Default implementation of the rigid body engine computation interface. " alt="" coords="217,439,418,605"/>
 </map>
 </div>
 <div class="dynheader">
@@ -110,14 +102,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a88c5734b5636745f0200c03adac30994"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a88c5734b5636745f0200c03adac30994">~IComputationInterface</a> ()</td></tr>
 <tr class="separator:a88c5734b5636745f0200c03adac30994"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430ebc9cb8d4ba064ac6a032ef07edd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a430ebc9cb8d4ba064ac6a032ef07edd7">onBegin</a> ()=0</td></tr>
+<tr class="memdesc:a430ebc9cb8d4ba064ac6a032ef07edd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the start of a physics step.  <a href="#a430ebc9cb8d4ba064ac6a032ef07edd7">More...</a><br /></td></tr>
 <tr class="separator:a430ebc9cb8d4ba064ac6a032ef07edd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa12bcc35005f32a1984b38de97696cb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#aaa12bcc35005f32a1984b38de97696cb">step</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)=0</td></tr>
+<tr class="memdesc:aaa12bcc35005f32a1984b38de97696cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to calculate changes.  <a href="#aaa12bcc35005f32a1984b38de97696cb">More...</a><br /></td></tr>
 <tr class="separator:aaa12bcc35005f32a1984b38de97696cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a162250f2b6efbd85460bd0f780d42cff"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a162250f2b6efbd85460bd0f780d42cff">integrate</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)=0</td></tr>
+<tr class="memdesc:a162250f2b6efbd85460bd0f780d42cff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to apply changes.  <a href="#a162250f2b6efbd85460bd0f780d42cff">More...</a><br /></td></tr>
 <tr class="separator:a162250f2b6efbd85460bd0f780d42cff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acae0c5fada7e414c74fe6f5a8f4a6c7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#acae0c5fada7e414c74fe6f5a8f4a6c7d">onEnd</a> ()=0</td></tr>
+<tr class="memdesc:acae0c5fada7e414c74fe6f5a8f4a6c7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called at the end of a physics step.  <a href="#acae0c5fada7e414c74fe6f5a8f4a6c7d">More...</a><br /></td></tr>
 <tr class="separator:acae0c5fada7e414c74fe6f5a8f4a6c7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6069989c54ffd4e714788d0968851007"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#a6069989c54ffd4e714788d0968851007">reset</a> ()=0</td></tr>
+<tr class="memdesc:a6069989c54ffd4e714788d0968851007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets a computation interface to its start state.  <a href="#a6069989c54ffd4e714788d0968851007">More...</a><br /></td></tr>
 <tr class="separator:a6069989c54ffd4e714788d0968851007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -125,7 +122,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa7ec35b2ab0cccd1a94ebdfeccc7bb43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_computation_interface.html#aa7ec35b2ab0cccd1a94ebdfeccc7bb43">IComputationInterface</a> ()</td></tr>
 <tr class="separator:aa7ec35b2ab0cccd1a94ebdfeccc7bb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface used by physics modules to accomplish their tasks. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a88c5734b5636745f0200c03adac30994"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88c5734b5636745f0200c03adac30994">&#9670;&nbsp;</a></span>~IComputationInterface()</h2>
 
@@ -201,6 +200,14 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Used to apply changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeDelta</td><td>The time step of the physics step. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="classr3_1_1_default_particle_engine_c_i.html#a4603707afe6c841a83294a46ea4a1c62">r3::DefaultParticleEngineCI</a>, and <a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#a4b79e7e4bc76eedcad7ef5c4777b9d33">r3::DefaultRigidBodyEngineCI</a>.</p>
 
 </div>
@@ -227,6 +234,8 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called at the start of a physics step. </p>
 
 <p>Implemented in <a class="el" href="classr3_1_1_default_particle_engine_c_i.html#aaf2e9ca87bff5e48c8eb59384e9cf180">r3::DefaultParticleEngineCI</a>, and <a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#a5d9e40ea40845499f01081d21cd9ff64">r3::DefaultRigidBodyEngineCI</a>.</p>
 
@@ -255,6 +264,8 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Called at the end of a physics step. </p>
+
 <p>Implemented in <a class="el" href="classr3_1_1_default_particle_engine_c_i.html#a6a34c77436d8133560eaa7366c740119">r3::DefaultParticleEngineCI</a>, and <a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#ad7746126ebd5aab4cfc352dd9facabb2">r3::DefaultRigidBodyEngineCI</a>.</p>
 
 </div>
@@ -281,6 +292,8 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Resets a computation interface to its start state. </p>
 
 <p>Implemented in <a class="el" href="classr3_1_1_default_particle_engine_c_i.html#a97757c62b4cb1266da29e2b5625bb9d3">r3::DefaultParticleEngineCI</a>, and <a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#a06bd27e94b26017e7960e01f6e884e33">r3::DefaultRigidBodyEngineCI</a>.</p>
 
@@ -310,13 +323,21 @@ Protected Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Used to calculate changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeDelta</td><td>The time step of the physics step. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="classr3_1_1_default_particle_engine_c_i.html#a7c58fd00ec521410e1b412e9885ee0d2">r3::DefaultParticleEngineCI</a>, and <a class="el" href="classr3_1_1_default_rigid_body_engine_c_i.html#ac45ae1d1889c75e6839b865870cbf59c">r3::DefaultRigidBodyEngineCI</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_i_computation_interface_8h_source.html">IComputationInterface.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_i_computation_interface_8cpp.html">IComputationInterface.cpp</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_i_computation_interface_8h_source.html">IComputationInterface.h</a></li>
+<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_i_computation_interface_8cpp.html">IComputationInterface.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -23,7 +23,7 @@ namespace r3
 		 * \param offset The offset from the rigid body.
 		 */
 		explicit CollisionBox(RigidBody* body, 
-							  const glm::vec3& halfSize,
+							  const glm::vec3& halfSizes,
 							  const glm::mat4& offset = glm::mat4(1));
 		~CollisionBox();
 
@@ -34,7 +34,7 @@ namespace r3
 		glm::vec3 getHalfSize() const;
 
 	private:
-		glm::vec3 m_halfSize;
+		glm::vec3 m_halfSizes;
 
 		/**
 		 * \brief Calculate vertices of this box once and store them.

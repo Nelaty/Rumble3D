@@ -1,16 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-<area shape="rect" id="node1" href="$classr3_1_1_force_registry.html" title="r3::ForceRegistry" alt="" coords="5,5,128,32"/>
-=======
 <area shape="rect" id="node1" href="$classr3_1_1_i_broad_phase_filter.html" title="r3::IBroadPhaseFilter" alt="" coords="5,5,149,32"/>
 <area shape="rect" id="node2" href="$classr3_1_1_broad_phase_filter.html" title="r3::BroadPhaseFilter" alt="" coords="197,5,339,32"/>
->>>>>>> Stashed changes
-=======
-<area shape="rect" id="node1" href="$classr3_1_1_force_generator.html" title="r3::ForceGenerator" alt="" coords="5,81,136,108"/>
-<area shape="rect" id="node2" href="$classr3_1_1_anchored_spring.html" title="r3::AnchoredSpring" alt="" coords="184,5,317,32"/>
-<area shape="rect" id="node3" href="$classr3_1_1_directed_force.html" title="r3::DirectedForce" alt="" coords="189,56,312,83"/>
-<area shape="rect" id="node4" href="$classr3_1_1_gravity.html" title="r3::Gravity" alt="" coords="210,107,291,133"/>
-<area shape="rect" id="node5" href="$classr3_1_1_spring.html" title="r3::Spring" alt="" coords="211,157,290,184"/>
->>>>>>> 86c58dbfa3dbb64702d584333f678d875b4a173d
 </map>

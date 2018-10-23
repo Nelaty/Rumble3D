@@ -5,38 +5,42 @@
 
 namespace r3
 {
+	namespace
+	{
+		template<class T>
+		class has_overlap_method
+		{
+			template<typename U, bool (U::*)(const U*) const> struct checker {};
+			template<typename U> static char test(checker<U, &U::overlap>*);
+			template<typename U> static int test(...);
+
+		public:
+			static const bool value = sizeof(test<T>(nullptr)) == sizeof(char);
+		};
+	}
+
 	template<class BoundingVolumeClass>
 	BVHNode<BoundingVolumeClass>::BVHNode()
 	= default;
 
 	template<class BoundingVolumeClass>
-	BVHNode<BoundingVolumeClass>::BVHNode(BVHNode<BoundingVolumeClass> *parent, 
-										  const BoundingVolumeClass &volume,
+	BVHNode<BoundingVolumeClass>::BVHNode(BVHNode<BoundingVolumeClass>* parent, 
+										  const BoundingVolumeClass& volume,
 										  RigidBody* body)
 		: m_parent(parent),
 		m_body(body),
 		m_volume(volume)
 	{
-		m_children[0] = m_children[1] = nullptr;
+		//static_assert(has_overlap_method<BoundingVolumeClass>::value,
+		//			  "Bounding volume class doens't support overlap method!");
 	}
 
 	template<class BoundingVolumeClass>
 	BVHNode<BoundingVolumeClass>::~BVHNode()
 	{
-		// Ohne Eltern müssen wir uns um Geschwister nicht kümmern.
-		if(m_parent)
+		auto* sibling = getSibling();
+		if(sibling)
 		{
-			// Suche Geschwister
-			BVHNode<BoundingVolumeClass> *sibling;
-			if(m_parent->m_children[0] == this)
-			{
-				sibling = m_parent->m_children[1];
-			}
-			else
-			{
-				sibling = m_parent->m_children[0];
-			}
-
 			// Überschreibe Elternknoten mit Geschwisterdaten
 			m_parent->m_volume = sibling->m_volume;
 			m_parent->m_body = sibling->m_body;
@@ -71,21 +75,35 @@ namespace r3
 	template<class BoundingVolumeClass>
 	bool BVHNode<BoundingVolumeClass>::isLeaf() const
 	{
-		return (m_body != nullptr);
+		return m_body != nullptr;
 	}
 
 	template<class BoundingVolumeClass>
-	unsigned BVHNode<BoundingVolumeClass>::getPotentialContacts(CollisionPair* contacts,
-																	unsigned limit) const
+	void BVHNode<BoundingVolumeClass>::getPotentialContacts(FixedSizeContainer<CollisionPair>& contacts) const
 	{
-		// Ende, wenn Blatt, oder Limit erreicht.
-		if(isLeaf() || limit == 0)
+		if(isLeaf() || contacts.isFull())
 		{
-			return 0;
+			return;
 		}
 
 		// Potentielle Kontakte eines unserer Kinder mit dem anderen.
-		return m_children[0]->getPotentialContactsWith(m_children[1], contacts, limit);
+		m_children[0]->getPotentialContactsWith(m_children[1], contacts);
+	}
+
+	template <class BoundingVolumeClass>
+	BVHNode<BoundingVolumeClass>* BVHNode<BoundingVolumeClass>::getSibling() const
+	{
+		if(!m_parent)
+		{
+			return nullptr;
+		}
+
+		if (this == m_parent->m_children[0])
+		{
+			return m_parent->m_children[1];
+		}
+		return m_parent->m_children[0];
+
 	}
 
 	template<class BoundingVolumeClass>
@@ -95,66 +113,40 @@ namespace r3
 	}
 
 	template<class BoundingVolumeClass>
-	unsigned BVHNode<BoundingVolumeClass>::getPotentialContactsWith(BVHNode<BoundingVolumeClass>* other,
-																	CollisionPair* contacts,
-																	unsigned limit) const{
+	void BVHNode<BoundingVolumeClass>::getPotentialContactsWith(BVHNode<BoundingVolumeClass>* other,
+																FixedSizeContainer<CollisionPair>& contacts) const
+	{
+		if(!overlaps(other) || contacts.isFull()) return;
 
-		// Ende, wenn Blatt, oder Limit erreicht.
-		if(!overlaps(other) || limit == 0)
-		{
-			return 0;
-		}
-
-		// Wenn beides Blätter, dann potentieller Kontakt:
+		/** Potential contact if both are leaf nodes. */
 		if(isLeaf() && other->isLeaf())
 		{
-			contacts->init(m_body, other->m_body);
-			return 1;
+			auto entry = contacts.getAvailableEntry();
+			entry->init(m_body, other->m_body);
+			return;
 		}
 
-		// Absteigen im Baum. Ist eines ein Blatt, steigen wir den
-		// anderen Zweig ab. Sind beides Zweige, dann steigen wir den
-		// mit größtem Volumen ab:
+		/** Recursively get potential contacts with child nodes. */
 		if(other->isLeaf() ||
 			(!isLeaf() && m_volume.getVolume() >= other->m_volume.getVolume()))
 		{
-			// Rekursion in children[0]:
-			unsigned count = m_children[0]->getPotentialContactsWith(other, contacts, limit);
-
-			// Rekursion in andere Seite, wenn genügend PLatz im Array:
-			if(limit > count)
-			{
-				return count + m_children[1]->getPotentialContactsWith(
-					other, contacts + count, limit - count);
-			}
-			return count;
+			m_children[0]->getPotentialContactsWith(other, contacts);
+			m_children[1]->getPotentialContactsWith(other, contacts);
+			return;
 		}
-		// Rekursion in children[0] von other:
-		unsigned count = getPotentialContactsWith(other->m_children[0], contacts, limit);
-
-		// Rekursion in andere Seite, wenn genügend PLatz im Array:
-		if(limit > count)
-		{
-			return count + getPotentialContactsWith(
-				other->m_children[1], contacts + count, limit - count);
-		}
-		return count;
+		
+		getPotentialContactsWith(other->m_children[0], contacts);
+		getPotentialContactsWith(other->m_children[1], contacts);
 	}
 
 	template<class BoundingVolumeClass>
 	void BVHNode<BoundingVolumeClass>::recalculateBoundingVolume()
 	{
-		if(isLeaf())
-		{
-			return;
-		}
+		if(isLeaf()) return;
 
-		m_volume = BoundingVolumeClass(
-			m_children[0]->m_volume,
-			m_children[1]->m_volume
-		);
+		m_volume = BoundingVolumeClass(m_children[0]->m_volume,
+									   m_children[1]->m_volume);
 
-		// Rekursion
 		if(m_parent)
 		{
 			m_parent->recalculateBoundingVolume();
@@ -176,9 +168,8 @@ namespace r3
 			m_children[1] = new BVHNode<BoundingVolumeClass>(this, newVolume, newBody);
 
 			// And we now loose the body (we're no longer a leaf)
-			this->m_body = nullptr;
+			m_body = nullptr;
 
-			// We need to recalculate our bounding volume
 			recalculateBoundingVolume();
 		}
 
