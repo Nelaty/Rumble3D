@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_intermediate_phase_filter}\index{r3\+::\+I\+Intermediate\+Phase\+Filter@{r3\+::\+I\+Intermediate\+Phase\+Filter}}
 
 
+Interface for intermediate phase filters. These filters are an optional part of the broad phase. They are executed after an \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}. They are functionally identical to an \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}, but can be chained.  
+
+
+
+
 {\ttfamily \#include $<$I\+Intermediate\+Phase\+Filter.\+h$>$}
 
 
@@ -19,13 +24,16 @@ Collaboration diagram for r3\+:\+:I\+Intermediate\+Phase\+Filter\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_ab2257ec90263c444371f455078e5ff7c}{$\sim$\+I\+Intermediate\+Phase\+Filter}} ()
 \item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_a0b235161317095e134661aa49beb909d}{generate\+Collisions}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&collisions)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Further filter a previous set of collisions, which might still contain a lot of false negatives. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_a22779c8595810d4068bfaaa140e39e0b}{I\+Intermediate\+Phase\+Filter}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for intermediate phase filters. These filters are an optional part of the broad phase. They are executed after an \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}. They are functionally identical to an \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}, but can be chained. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_intermediate_phase_filter_ab2257ec90263c444371f455078e5ff7c}\label{classr3_1_1_i_intermediate_phase_filter_ab2257ec90263c444371f455078e5ff7c}} 
@@ -49,7 +57,18 @@ virtual void \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_a0b2351613
 \subsubsection{\texorpdfstring{generate\+Collisions()}{generateCollisions()}}
 {\footnotesize\ttfamily virtual void r3\+::\+I\+Intermediate\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{collisions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Further filter a previous set of collisions, which might still contain false negatives. 
+
+
+Further filter a previous set of collisions, which might still contain a lot of false negatives. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collisions} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000011}{Todo}}]\{ Changed param signature to (const Fixed\+Size\+Container$<$\+Collision\+Pair$>$\& in, Fixed\+Size\+Container$<$\+Collision\+Pair$>$\& out) \} \end{DoxyRefDesc}
+
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

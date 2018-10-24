@@ -10,15 +10,15 @@ class \mbox{\hyperlink{classr3_1_1_bounding_box}{Bounding\+Box}}
 class \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}}
 \begin{DoxyCompactList}\small\item\em A bounding sphere is a kind of bounding volume. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_box_box_narrow_algorithm}{Box\+Box\+Narrow\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a box-\/box narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_box_sphere_narrow_algorithm}{Box\+Sphere\+Narrow\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a box-\/sphere narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_broad_phase_filter}{Broad\+Phase\+Filter}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation of \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}
 \item 
 class \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}}
-\item 
+\begin{DoxyCompactList}\small\item\em Describes a collision algorithm for every collision primitive type combination. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} that represents a box. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}}
@@ -26,7 +26,7 @@ class \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}}
 class \mbox{\hyperlink{classr3_1_1_collision_detector}{Collision\+Detector}}
 \item 
 struct \mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}}
-\item 
+\begin{DoxyCompactList}\small\item\em Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the same group cannot collide! \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_object}{Collision\+Object}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_collision_object}{Collision\+Object}} can collide with other collision objects in 3D space. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}}
@@ -36,7 +36,7 @@ class \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}}
 class \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}}
 \begin{DoxyCompactList}\small\item\em Abstract collision shape, which can collide with other collision primitives. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_resolver}{Collision\+Resolver}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a collision resolver. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}}, which represents a sphere. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_contact}{Contact}}
@@ -54,41 +54,41 @@ class \mbox{\hyperlink{classr3_1_1_force_generator}{Force\+Generator}}
 class \mbox{\hyperlink{classr3_1_1_force_registry}{Force\+Registry}}
 \begin{DoxyCompactList}\small\item\em Pairs force generators with rigid bodies. It uses the force generators to update forces of linked rigid bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_friction_resolver}{Friction\+Resolver}}
-\item 
+\begin{DoxyCompactList}\small\item\em Specialized collision resolution filter, which adds friction at given contacts. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_gravity}{Gravity}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_gravity}{Gravity}} is a force generator, which will apply constant force on bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_box_box_narrow_algorithm}{I\+Box\+Box\+Narrow\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for box-\/box narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_box_sphere_narrow_algorithm}{I\+Box\+Sphere\+Narrow\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for box-\/sphere narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for broad phase filters. Only one broad phase filter can be used at the same time. To expand the broad phase look at \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter}{I\+Intermediate\+Phase\+Filter}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for collision resolution filter. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_collision_resolver_access}{I\+Collision\+Resolver\+Access}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for collision resolvers. Uses \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} to resolve given contacts. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}}
 \begin{DoxyCompactList}\small\item\em Interface used by physics modules to accomplish their tasks. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter}{I\+Intermediate\+Phase\+Filter}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for intermediate phase filters. These filters are an optional part of the broad phase. They are executed after an \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}. They are functionally identical to an \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter}{I\+Broad\+Phase\+Filter}}, but can be chained. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of collision primitives, i.\+e. sphere-\/sphere, box-\/sphere. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_narrow_phase_filter}{I\+Narrow\+Phase\+Filter}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for narrow phase filters. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_inertia_tensor_generator}{Inertia\+Tensor\+Generator}}
-\item 
+\begin{DoxyCompactList}\small\item\em Static class, which provides methods to generate inertia tensors for various shapes. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_interpenetration_resolver}{Interpenetration\+Resolver}}
-\item 
+\begin{DoxyCompactList}\small\item\em Specialized collision resolution filter, which solves interpenetration of bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_particle_force_generator}{I\+Particle\+Force\+Generator}}
 \item 
 class \mbox{\hyperlink{classr3_1_1_i_plane_box_collision_algorithm}{I\+Plane\+Box\+Collision\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for plane-\/box narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_plane_plane_collision_algorithm}{I\+Plane\+Plane\+Collision\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for plane-\/plane narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm}{I\+Plane\+Sphere\+Collision\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for plane-\/sphere narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm}{I\+Sphere\+Sphere\+Narrow\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Interface for sphere-\/sphere narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_narrow_phase_filter}{Narrow\+Phase\+Filter}}
 \item 
 class \mbox{\hyperlink{classr3_1_1_particle}{Particle}}
@@ -140,11 +140,11 @@ class \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}}
 struct \mbox{\hyperlink{structr3_1_1_physics_material_def}{Physics\+Material\+Def}}
 \begin{DoxyCompactList}\small\item\em Construction information for a \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}}. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_plane_box_collision_algorithm}{Plane\+Box\+Collision\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a plane-\/box narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_plane_plane_collision_algorithm}{Plane\+Plane\+Collision\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a plane-\/plane narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_plane_sphere_collision_algorithm}{Plane\+Sphere\+Collision\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a plane-\/sphere narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_random}{Random}}
 \begin{DoxyCompactList}\small\item\em Equally distributed random number generator. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}}
@@ -156,11 +156,11 @@ class \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i}{Rigid\+Body\+Engine\+C
 class \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} is a physics engine module, used to simulate rigid bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_service_locator_collision_algorithm_matrix}{Service\+Locator\+Collision\+Algorithm\+Matrix}}
-\item 
+\begin{DoxyCompactList}\small\item\em Generate a \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}} with default narrow phase collision detection and contact generation algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_service_locator_computation_interface}{Service\+Locator\+Computation\+Interface}}
-\item 
+\begin{DoxyCompactList}\small\item\em Generate default implementations of various computation interfaces. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_sphere_sphere_narrow_algorithm}{Sphere\+Sphere\+Narrow\+Algorithm}}
-\item 
+\begin{DoxyCompactList}\small\item\em Default implementation for a sphere-\/sphere narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_spring}{Spring}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simulates a spring between two rigid bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_test_class}{Test\+Class}}
@@ -168,7 +168,7 @@ class \mbox{\hyperlink{classr3_1_1_test_class}{Test\+Class}}
 class \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}}
 \begin{DoxyCompactList}\small\item\em Encapsulates translation and rotation and manipulation functions on them. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_velocity_resolver}{Velocity\+Resolver}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Specialized collision resolution filter, which changes body velocities for bodies involved in contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 

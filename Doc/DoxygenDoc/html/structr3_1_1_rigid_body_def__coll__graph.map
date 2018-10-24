@@ -2,7 +2,7 @@
 <area shape="rect" id="node9" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="871,505,1086,759"/>
 <area shape="rect" id="node3" href="$classr3_1_1_physics_material.html" title="Contains physical properties of a material. " alt="" coords="283,160,426,369"/>
 <area shape="rect" id="node8" href="$classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. " alt="" coords="1067,924,1215,1089"/>
-<area shape="rect" id="node6" href="$structr3_1_1_collision_mask.html" title="{r3::CollisionMask\n||+ CollisionMask()\l+ operator==()\l+ operator!=()\l}" alt="" coords="729,211,852,318"/>
+<area shape="rect" id="node6" href="$structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ..." alt="" coords="729,211,852,318"/>
 <area shape="rect" id="node10" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="1062,1181,1221,1332"/>
 <area shape="rect" id="node11" href="$classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. " alt="" coords="1537,895,1660,1119"/>
 </map>

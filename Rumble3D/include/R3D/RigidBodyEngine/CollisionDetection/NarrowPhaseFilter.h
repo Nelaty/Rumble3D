@@ -16,17 +16,35 @@ namespace r3
 		template<class AlgorithmType>
 		using Algorithm = std::unique_ptr<AlgorithmType>;
 
-		explicit NarrowPhaseFilter(unsigned int iterations = 10, unsigned int collisionsMax = 1000);
+		explicit NarrowPhaseFilter(unsigned iterations = 10, unsigned collisionsMax = 1000);
 		~NarrowPhaseFilter();
 
+		/**
+		 * \brief Generate contacts.
+		 * \param broadPhaseData Collision pairs generated in the
+		 * broad phase.
+		 * \param[out] collisions All newly generated contacts will
+		 * be put in here.
+		 */
 		void generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
 								   CollisionData& collisions) override;
 
-		/** Generate collisions between two rigid bodies. */
-		void generateCollisionData(RigidBody* first, RigidBody* second, CollisionData& collisions);
+		/** 
+		 * \brief Generate contacts between two rigid bodies if existent. 
+		 * \param first The first participating rigid body.
+		 * \param second The second participating rigid body.
+		 * \param[out] collisions All newly generated contacts will
+		 * be put in here.
+		 */
+		void generateCollisionData(RigidBody* first,
+								   RigidBody* second, 
+								   CollisionData& collisions);
 
 
 	protected:
+		/**
+		 * \brief Initialize the algorithm matrix.
+		 */
 		void init();
 
 		CollisionAlgorithmMatrix m_algorithms;

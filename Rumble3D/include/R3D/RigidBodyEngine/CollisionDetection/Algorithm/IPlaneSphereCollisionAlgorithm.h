@@ -8,12 +8,25 @@
 
 namespace r3
 {
+	/**
+	 * \brief Interface for plane-sphere narrow algorithms.
+	 */
 	class R3D_DECLSPEC IPlaneSphereCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
 		virtual ~IPlaneSphereCollisionAlgorithm();
 
-
+		/**
+		 * \brief Generate contacts between two rigid bodies one with
+		 * a sphere collision primitive and one with a plane collision
+		 * primitives.
+		 * \param first The first participating rigid body.
+		 * \param second The second participating rigid body.
+		 * \param[out] collisionData All newly generated contacts will
+		 * be put in here.
+		 * \return True if new contacts have been generated, false
+		 * otherwise.
+		 */
 		bool generateContactData(RigidBody* first, 
 								 RigidBody* second, 
 								 CollisionData& collisionData) override final;
@@ -21,6 +34,9 @@ namespace r3
 	protected:
 		explicit IPlaneSphereCollisionAlgorithm();
 
+		/**
+		 * \brief Generate contacts between a plane and a sphere.
+		 */
 		virtual bool generateContactDataImpl(RigidBody* rbPlane, CollisionPlane* plane,
 											 RigidBody* rbSphere, CollisionSphere* sphere,
 											 CollisionData& collisionData) = 0;

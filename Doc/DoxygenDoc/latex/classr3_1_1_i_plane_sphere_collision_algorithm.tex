@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_plane_sphere_collision_algorithm}\index{r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm@{r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm}}
 
 
+Interface for plane-\/sphere narrow algorithms.  
+
+
+
+
 {\ttfamily \#include $<$I\+Plane\+Sphere\+Collision\+Algorithm.\+h$>$}
 
 
@@ -28,15 +33,18 @@ Collaboration diagram for r3\+:\+:I\+Plane\+Sphere\+Collision\+Algorithm\+:\nopa
 virtual \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a25bd94a472e466de011c128012b8e938}{$\sim$\+I\+Plane\+Sphere\+Collision\+Algorithm}} ()
 \item 
 bool \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a5b1c334d90d381e089d59cb59a7714c5}{generate\+Contact\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override final
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate contacts between two rigid bodies one with a sphere collision primitive and one with a plane collision primitives. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a249833e88ee66651740f119d6fab0910}{I\+Plane\+Sphere\+Collision\+Algorithm}} ()
 \item 
 virtual bool \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a92ddfd3ba00ed53b183a6aef41b04a60}{generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Plane, \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$plane, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Sphere, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$sphere, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate contacts between a plane and a sphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for plane-\/sphere narrow algorithms. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_plane_sphere_collision_algorithm_a25bd94a472e466de011c128012b8e938}\label{classr3_1_1_i_plane_sphere_collision_algorithm_a25bd94a472e466de011c128012b8e938}} 
@@ -62,6 +70,22 @@ virtual bool \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a92
 
 
 
+Generate contacts between two rigid bodies one with a sphere collision primitive and one with a plane collision primitives. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em first} & The first participating rigid body. \\
+\hline
+ & {\em second} & The second participating rigid body. \\
+\hline
+\mbox{\tt out}  & {\em collision\+Data} & All newly generated contacts will be put in here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if new contacts have been generated, false otherwise. 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe81ff45fedb81ca74717c3}{r3\+::\+I\+Narrow\+Phase\+Algorithm}}.
 
 \mbox{\Hypertarget{classr3_1_1_i_plane_sphere_collision_algorithm_a92ddfd3ba00ed53b183a6aef41b04a60}\label{classr3_1_1_i_plane_sphere_collision_algorithm_a92ddfd3ba00ed53b183a6aef41b04a60}} 
@@ -69,6 +93,10 @@ Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe81f
 \index{generate\+Contact\+Data\+Impl@{generate\+Contact\+Data\+Impl}!r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm@{r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm}}
 \subsubsection{\texorpdfstring{generate\+Contact\+Data\+Impl()}{generateContactDataImpl()}}
 {\footnotesize\ttfamily virtual bool r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm\+::generate\+Contact\+Data\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Plane,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$}]{plane,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Sphere,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Generate contacts between a plane and a sphere. 
 
 
 

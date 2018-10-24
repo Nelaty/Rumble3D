@@ -6,22 +6,23 @@ namespace r3
 	CollisionBox::CollisionBox(RigidBody* body,
 							   const glm::vec3& halfSizes,
 							   const glm::mat4& offset)
-		: CollisionPrimitive(R3D_PRIMITIVE_BOX), 
-		m_halfSizes{ halfSizes }
+		: CollisionPrimitive(R3D_PRIMITIVE_BOX),
+		m_halfSizes{halfSizes}
 	{
 		m_body = body;
 		m_offset = offset;
 
 		initVertices();
 	}
-	
-	CollisionBox::~CollisionBox()
-	= default;
 
-	glm::vec3 CollisionBox::getHalfSize() const{
+	CollisionBox::~CollisionBox()
+		= default;
+
+	glm::vec3 CollisionBox::getHalfSize() const
+	{
 		return m_halfSizes;
 	}
-	
+
 	void CollisionBox::initVertices()
 	{
 		m_vertices =

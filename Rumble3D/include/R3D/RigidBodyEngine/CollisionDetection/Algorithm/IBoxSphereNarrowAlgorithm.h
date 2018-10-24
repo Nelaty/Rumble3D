@@ -8,6 +8,9 @@ namespace r3
 	class CollisionBox;
 	class CollisionSphere;
 
+	/**
+	 * \brief Interface for box-sphere narrow algorithms.
+	 */
 	class R3D_DECLSPEC IBoxSphereNarrowAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:

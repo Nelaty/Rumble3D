@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Describes a collision algorithm for every collision primitive type combination.  
+ <a href="classr3_1_1_collision_algorithm_matrix.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_collision_algorithm_matrix_8h_source.html">CollisionAlgorithmMatrix.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::CollisionAlgorithmMatrix:</div>
@@ -89,11 +92,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adea2db794d9606ecf24745ad6ac912d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#adea2db794d9606ecf24745ad6ac912d8">~CollisionAlgorithmMatrix</a> ()</td></tr>
 <tr class="separator:adea2db794d9606ecf24745ad6ac912d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ddf117fbce8a3216b4b4413ccade6d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#a6ddf117fbce8a3216b4b4413ccade6d0">setAlgorithm</a> (<a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a> *algorithm, CollisionPrimitiveType firstShape, CollisionPrimitiveType secondShape)</td></tr>
+<tr class="memdesc:a6ddf117fbce8a3216b4b4413ccade6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the collision algorithm for a specific collision primitive combination.  <a href="#a6ddf117fbce8a3216b4b4413ccade6d0">More...</a><br /></td></tr>
 <tr class="separator:a6ddf117fbce8a3216b4b4413ccade6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40e0f125b95d6bcdb2e8a27c1397e68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#ad40e0f125b95d6bcdb2e8a27c1397e68">getAlgorithm</a> (CollisionPrimitiveType firstShape, CollisionPrimitiveType secondShape)</td></tr>
+<tr class="memdesc:ad40e0f125b95d6bcdb2e8a27c1397e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision algorithm currently used for a specific collision primitive combination.  <a href="#ad40e0f125b95d6bcdb2e8a27c1397e68">More...</a><br /></td></tr>
 <tr class="separator:ad40e0f125b95d6bcdb2e8a27c1397e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Describes a collision algorithm for every collision primitive type combination. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a97bdad626057f600ae5ffca63eb174b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97bdad626057f600ae5ffca63eb174b8">&#9670;&nbsp;</a></span>CollisionAlgorithmMatrix()</h2>
 
@@ -171,6 +178,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the collision algorithm currently used for a specific collision primitive combination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">firstShape</td><td>The type of the first primitive shape. </td></tr>
+    <tr><td class="paramname">secondShape</td><td>The type of the second primitive shape. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The collision algorithm matrix. </dd></dl>
+
 </div>
 </div>
 <a id="a6ddf117fbce8a3216b4b4413ccade6d0"></a>
@@ -204,6 +221,16 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the collision algorithm for a specific collision primitive combination. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">algorithm</td><td>The algorithm to use for the specified combination. </td></tr>
+    <tr><td class="paramname">firstShape</td><td>The type of the first primitive shape. </td></tr>
+    <tr><td class="paramname">secondShape</td><td>The type of the second shape. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -3,6 +3,11 @@
 
 namespace r3
 {
+	/**
+	 * \brief All possible primitive types need to be listed here
+	 * so the narrow phase can differentiate incoming collision 
+	 * primitives.
+	 */
 	enum R3D_DECLSPEC CollisionPrimitiveType
 	{
 		R3D_PRIMITIVE_BOX = 0,

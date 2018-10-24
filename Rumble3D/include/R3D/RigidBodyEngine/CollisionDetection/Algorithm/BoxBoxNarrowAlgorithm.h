@@ -6,6 +6,9 @@
 
 namespace r3
 {
+	/**
+	 * \brief Default implementation for a box-box narrow algorithm.
+	 */
 	class R3D_DECLSPEC BoxBoxNarrowAlgorithm : public IBoxBoxNarrowAlgorithm
 	{
 	public:
@@ -43,7 +46,7 @@ namespace r3
 							const CollisionBox* two,
 							glm::vec3 axis,
 							const glm::vec3& toCentre,
-							unsigned int index,
+							unsigned index,
 							real& smallestPenetration,
 							unsigned &smallestCase);
 
@@ -55,7 +58,7 @@ namespace r3
 										const CollisionBox* box2,
 										const glm::vec3& toCentre,
 										Contact* contact,
-										unsigned int best,
+										unsigned best,
 										real penetration);
 
 		/**

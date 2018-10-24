@@ -1,4 +1,4 @@
 <map id="r3::BoxBoxNarrowAlgorithm" name="r3::BoxBoxNarrowAlgorithm">
-<area shape="rect" id="node2" href="$classr3_1_1_i_box_box_narrow_algorithm.html" title="{r3::IBoxBoxNarrowAlgorithm\n||+ ~IBoxBoxNarrowAlgorithm()\l+ generateContactData()\l# generateContactDataImpl()\l# IBoxBoxNarrowAlgorithm()\l}" alt="" coords="5,160,200,281"/>
-<area shape="rect" id="node3" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="{r3::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l+ generateContactData()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="10,5,195,112"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_box_box_narrow_algorithm.html" title="Interface for box&#45;box narrow algorithms. " alt="" coords="5,160,200,281"/>
+<area shape="rect" id="node3" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="10,5,195,112"/>
 </map>

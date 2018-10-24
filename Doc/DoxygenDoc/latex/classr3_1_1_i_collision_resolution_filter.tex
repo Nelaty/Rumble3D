@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_collision_resolution_filter}\index{r3\+::\+I\+Collision\+Resolution\+Filter@{r3\+::\+I\+Collision\+Resolution\+Filter}}
 
 
+Interface for collision resolution filter.  
+
+
+
+
 {\ttfamily \#include $<$I\+Collision\+Resolution\+Filter.\+h$>$}
 
 
@@ -28,13 +33,16 @@ Collaboration diagram for r3\+:\+:I\+Collision\+Resolution\+Filter\+:\nopagebrea
 virtual \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a89b3382d573308a790d436b9713b02ed}{$\sim$\+I\+Collision\+Resolution\+Filter}} ()
 \item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a87ef2579e2acaaadef4cd8f9a20005ce}{resolve}} (\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Resolve given contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_ab2dcf60620e28db288abf19bdeeb11ad}{I\+Collision\+Resolution\+Filter}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for collision resolution filter. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_collision_resolution_filter_a89b3382d573308a790d436b9713b02ed}\label{classr3_1_1_i_collision_resolution_filter_a89b3382d573308a790d436b9713b02ed}} 
@@ -58,6 +66,17 @@ virtual void \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a87ef257
 \subsubsection{\texorpdfstring{resolve()}{resolve()}}
 {\footnotesize\ttfamily virtual void r3\+::\+I\+Collision\+Resolution\+Filter\+::resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
+
+
+Resolve given contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Data} & The contacts to resolve. \\
+\hline
+{\em time\+Delta} & The time step of the current physics update. \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{classr3_1_1_friction_resolver_af26a84959e95749088f713176ec3c096}{r3\+::\+Friction\+Resolver}}, \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a7c896a7e8e0321c9f26b3d9c616d16ee}{r3\+::\+Interpenetration\+Resolver}}, and \mbox{\hyperlink{classr3_1_1_velocity_resolver_a93e8859d1ab3407b073328a58b7caeef}{r3\+::\+Velocity\+Resolver}}.

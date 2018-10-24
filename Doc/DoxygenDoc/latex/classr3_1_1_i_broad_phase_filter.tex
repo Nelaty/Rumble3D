@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_broad_phase_filter}\index{r3\+::\+I\+Broad\+Phase\+Filter@{r3\+::\+I\+Broad\+Phase\+Filter}}
 
 
+Interface for broad phase filters. Only one broad phase filter can be used at the same time. To expand the broad phase look at \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter}{I\+Intermediate\+Phase\+Filter}}.  
+
+
+
+
 {\ttfamily \#include $<$I\+Broad\+Phase\+Filter.\+h$>$}
 
 
@@ -28,13 +33,16 @@ Collaboration diagram for r3\+:\+:I\+Broad\+Phase\+Filter\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_af6cd5cfcf4487d97916debae0011244f}{$\sim$\+I\+Broad\+Phase\+Filter}} ()
 \item 
 virtual void \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_a5f437f6390a8f10bf96d72e35e3b4432}{generate\+Collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&rigid\+Bodies, \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&data)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_ab1eb5dc44548078aa0716eedbab8ac11}{I\+Broad\+Phase\+Filter}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for broad phase filters. Only one broad phase filter can be used at the same time. To expand the broad phase look at \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter}{I\+Intermediate\+Phase\+Filter}}. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_broad_phase_filter_af6cd5cfcf4487d97916debae0011244f}\label{classr3_1_1_i_broad_phase_filter_af6cd5cfcf4487d97916debae0011244f}} 
@@ -58,9 +66,17 @@ virtual void \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_a5f437f6390a8f10b
 \subsubsection{\texorpdfstring{generate\+Collisions()}{generateCollisions()}}
 {\footnotesize\ttfamily virtual void r3\+::\+I\+Broad\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&}]{rigid\+Bodies,  }\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. \begin{DoxyReturn}{Returns}
-A number of possible collisions. 
-\end{DoxyReturn}
+
+
+Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em rigid\+Bodies} & The rigid bodies to check against possible collisions. \\
+\hline
+\mbox{\tt out}  & {\em data} & A number of possible collisions. \\
+\hline
+\end{DoxyParams}
 
 
 Implemented in \mbox{\hyperlink{classr3_1_1_broad_phase_filter_a0435dc6468401e32bf151f84f52e80f8}{r3\+::\+Broad\+Phase\+Filter}}.

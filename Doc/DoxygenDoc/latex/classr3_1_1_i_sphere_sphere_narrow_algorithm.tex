@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_sphere_sphere_narrow_algorithm}\index{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm@{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}}
 
 
+Interface for sphere-\/sphere narrow algorithms.  
+
+
+
+
 {\ttfamily \#include $<$I\+Sphere\+Sphere\+Narrow\+Algorithm.\+h$>$}
 
 
@@ -28,15 +33,18 @@ Collaboration diagram for r3\+:\+:I\+Sphere\+Sphere\+Narrow\+Algorithm\+:\nopage
 virtual \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_af1abc65f80b07e3af1d3b1c69d6b5db0}{$\sim$\+I\+Sphere\+Sphere\+Narrow\+Algorithm}} ()
 \item 
 bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_acfdb8ae3db8c91843216651768cbd4e2}{generate\+Contact\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override final
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate contacts between two rigid bodies with sphere collision primitives. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 virtual bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e616d04c7ee379d973ec81ea0067cc3}{generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Sphere1, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$sphere1, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Sphere2, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$sphere2, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data)=0
-\item 
+\begin{DoxyCompactList}\small\item\em Generate contacts between two collision spheres. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_ac7efae14951096a647a7d037f275d75b}{I\+Sphere\+Sphere\+Narrow\+Algorithm}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for sphere-\/sphere narrow algorithms. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_sphere_sphere_narrow_algorithm_af1abc65f80b07e3af1d3b1c69d6b5db0}\label{classr3_1_1_i_sphere_sphere_narrow_algorithm_af1abc65f80b07e3af1d3b1c69d6b5db0}} 
@@ -62,6 +70,22 @@ virtual bool \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e61
 
 
 
+Generate contacts between two rigid bodies with sphere collision primitives. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em first} & The first participating rigid body. \\
+\hline
+ & {\em second} & The second participating rigid body. \\
+\hline
+\mbox{\tt out}  & {\em collision\+Data} & All newly generated contacts will be put in here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if new contacts have been generated, false otherwise. 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe81ff45fedb81ca74717c3}{r3\+::\+I\+Narrow\+Phase\+Algorithm}}.
 
 \mbox{\Hypertarget{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e616d04c7ee379d973ec81ea0067cc3}\label{classr3_1_1_i_sphere_sphere_narrow_algorithm_a9e616d04c7ee379d973ec81ea0067cc3}} 
@@ -70,6 +94,26 @@ Implements \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe81f
 \subsubsection{\texorpdfstring{generate\+Contact\+Data\+Impl()}{generateContactDataImpl()}}
 {\footnotesize\ttfamily virtual bool r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm\+::generate\+Contact\+Data\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Sphere1,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{sphere1,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Sphere2,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{sphere2,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
 
+
+
+Generate contacts between two collision spheres. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em rb\+Sphere1} & First rigid body with sphere primitive. \\
+\hline
+ & {\em sphere1} & \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} of rb\+Sphere1. \\
+\hline
+ & {\em rb\+Sphere2} & Second rigid body with sphere primitive. \\
+\hline
+ & {\em sphere2} & \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} of rb\+Sphere2. \\
+\hline
+\mbox{\tt out}  & {\em collision\+Data} & All newly generated contacts will be put in here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if new contacts have been generated, false otherwise. 
+\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classr3_1_1_sphere_sphere_narrow_algorithm_a3559238de013b2fb8f3786e365e2ace7}{r3\+::\+Sphere\+Sphere\+Narrow\+Algorithm}}.

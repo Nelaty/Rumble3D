@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the same group cannot collide!  
+ <a href="structr3_1_1_collision_mask.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_collision_mask_8h_source.html">CollisionMask.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::CollisionMask:</div>
@@ -86,6 +89,7 @@ Collaboration diagram for r3::CollisionMask:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7f1fb1fae3d7e14677ad2590fcd661e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structr3_1_1_collision_mask.html#a7f1fb1fae3d7e14677ad2590fcd661e0">CollisionMask</a> (unsigned int layer=0, unsigned int group=0)</td></tr>
+<tr class="memdesc:a7f1fb1fae3d7e14677ad2590fcd661e0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ...">CollisionMask</a> constructor.  <a href="#a7f1fb1fae3d7e14677ad2590fcd661e0">More...</a><br /></td></tr>
 <tr class="separator:a7f1fb1fae3d7e14677ad2590fcd661e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d1315f7324fc03cee09df2c364f5c54"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structr3_1_1_collision_mask.html#a7d1315f7324fc03cee09df2c364f5c54">operator==</a> (const <a class="el" href="structr3_1_1_collision_mask.html">CollisionMask</a> &amp;mask) const</td></tr>
 <tr class="separator:a7d1315f7324fc03cee09df2c364f5c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,7 +103,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a4e3ed2227bb1782f7c6dc948a8427620"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structr3_1_1_collision_mask.html#a4e3ed2227bb1782f7c6dc948a8427620">m_layer</a></td></tr>
 <tr class="separator:a4e3ed2227bb1782f7c6dc948a8427620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the same group cannot collide! </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a7f1fb1fae3d7e14677ad2590fcd661e0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7f1fb1fae3d7e14677ad2590fcd661e0">&#9670;&nbsp;</a></span>CollisionMask()</h2>
 
@@ -133,6 +139,15 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ...">CollisionMask</a> constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">layer</td><td>Only bodies from the same layer can collide. </td></tr>
+    <tr><td class="paramname">group</td><td>Bodies from the same group can't collide. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

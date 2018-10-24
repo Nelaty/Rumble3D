@@ -2,6 +2,11 @@
 \label{classr3_1_1_interpenetration_resolver}\index{r3\+::\+Interpenetration\+Resolver@{r3\+::\+Interpenetration\+Resolver}}
 
 
+Specialized collision resolution filter, which solves interpenetration of bodies.  
+
+
+
+
 {\ttfamily \#include $<$Interpenetration\+Resolver.\+h$>$}
 
 
@@ -30,13 +35,16 @@ Collaboration diagram for r3\+:\+:Interpenetration\+Resolver\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a2c0f47fd620356e06fb9e16387b7e83b}{$\sim$\+Interpenetration\+Resolver}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a7c896a7e8e0321c9f26b3d9c616d16ee}{resolve}} (\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
-\item 
+\begin{DoxyCompactList}\small\item\em Resolve given contacts. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_a8250baac4ce0ed634002ed3be4515519}{set\+Max\+Iterations}} (unsigned int iterations)
 \item 
 void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_ad70802061f5f8868622cc5024a10f8cf}{set\+Position\+Epsilon}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} epsilon)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
+
+\subsection{Detailed Description}
+Specialized collision resolution filter, which solves interpenetration of bodies. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_interpenetration_resolver_a6a739e8121bba89238f0db2a573eb272}\label{classr3_1_1_interpenetration_resolver_a6a739e8121bba89238f0db2a573eb272}} 
@@ -60,6 +68,17 @@ void \mbox{\hyperlink{classr3_1_1_interpenetration_resolver_ad70802061f5f8868622
 \subsubsection{\texorpdfstring{resolve()}{resolve()}}
 {\footnotesize\ttfamily void r3\+::\+Interpenetration\+Resolver\+::resolve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
+
+
+Resolve given contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Data} & The contacts to resolve. \\
+\hline
+{\em time\+Delta} & The time step of the current physics update. \\
+\hline
+\end{DoxyParams}
 
 
 Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter_a87ef2579e2acaaadef4cd8f9a20005ce}{r3\+::\+I\+Collision\+Resolution\+Filter}}.

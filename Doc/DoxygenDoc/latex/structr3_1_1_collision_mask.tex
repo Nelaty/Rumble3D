@@ -2,6 +2,11 @@
 \label{structr3_1_1_collision_mask}\index{r3\+::\+Collision\+Mask@{r3\+::\+Collision\+Mask}}
 
 
+Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the same group cannot collide!  
+
+
+
+
 {\ttfamily \#include $<$Collision\+Mask.\+h$>$}
 
 
@@ -17,7 +22,7 @@ Collaboration diagram for r3\+:\+:Collision\+Mask\+:\nopagebreak
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{structr3_1_1_collision_mask_a7f1fb1fae3d7e14677ad2590fcd661e0}{Collision\+Mask}} (unsigned int layer=0, unsigned int group=0)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} constructor. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{structr3_1_1_collision_mask_a7d1315f7324fc03cee09df2c364f5c54}{operator==}} (const \mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} \&mask) const
 \item 
 bool \mbox{\hyperlink{structr3_1_1_collision_mask_ae6bbe0e4390b584497c854d39ec12c6a}{operator!=}} (const \mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} \&mask) const
@@ -31,6 +36,9 @@ unsigned int \mbox{\hyperlink{structr3_1_1_collision_mask_a4e3ed2227bb1782f7c6dc
 \end{DoxyCompactItemize}
 
 
+\subsection{Detailed Description}
+Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the same group cannot collide! 
+
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{structr3_1_1_collision_mask_a7f1fb1fae3d7e14677ad2590fcd661e0}\label{structr3_1_1_collision_mask_a7f1fb1fae3d7e14677ad2590fcd661e0}} 
 \index{r3\+::\+Collision\+Mask@{r3\+::\+Collision\+Mask}!Collision\+Mask@{Collision\+Mask}}
@@ -38,6 +46,17 @@ unsigned int \mbox{\hyperlink{structr3_1_1_collision_mask_a4e3ed2227bb1782f7c6dc
 \subsubsection{\texorpdfstring{Collision\+Mask()}{CollisionMask()}}
 {\footnotesize\ttfamily r3\+::\+Collision\+Mask\+::\+Collision\+Mask (\begin{DoxyParamCaption}\item[{unsigned int}]{layer = {\ttfamily 0},  }\item[{unsigned int}]{group = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
+
+
+\mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em layer} & Only bodies from the same layer can collide. \\
+\hline
+{\em group} & Bodies from the same group can\textquotesingle{}t collide. \\
+\hline
+\end{DoxyParams}
 
 
 \subsection{Member Function Documentation}

@@ -375,14 +375,14 @@ namespace r3
 		// Dämpfung:
 		m_velocity *= pow(m_linearDamping, duration);
 		m_rotation *= pow(m_angularDamping, duration);
-		m_rotation *= static_cast<real>(-1.0f); //Da Rotation falsch herum in Vektoria
+		//m_rotation *= real(-1.0); //Da Rotation falsch herum in Vektoria
 
 		// Positionsanpassung linear:
 		m_transform.translate(duration * m_velocity);
 
 		// Positionsanpassung Drehung:
 		//m_orientation.updateOrientationByAngularVelocity(m_rotation, duration);		
-		m_transform.rotate((glm::quat(0, m_rotation * duration) * glm::quat_cast(m_transform.getRotation())) * static_cast<real>(0.5f));
+		m_transform.rotate(glm::quat(0, m_rotation * duration) * glm::quat_cast(m_transform.getRotation()) * real(0.5));
 
 		// Normalisierung der Orientierung und Update der abgeleiteten Daten:
 		calculateDerivedData();

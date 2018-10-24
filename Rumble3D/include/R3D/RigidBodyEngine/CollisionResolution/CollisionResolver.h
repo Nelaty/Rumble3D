@@ -9,6 +9,9 @@ namespace r3
 {
 	class ICollisionResolutionFilter;
 
+	/**
+	 * \brief Default implementation for a collision resolver.
+	 */
 	class R3D_DECLSPEC CollisionResolver : public ICollisionResolverAccess
 	{
 	public:

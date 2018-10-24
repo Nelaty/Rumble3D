@@ -5,6 +5,9 @@
 
 namespace r3
 {
+	/**
+	 * \brief Default implementation for a plane-sphere narrow algorithm.
+	 */
 	class R3D_DECLSPEC PlaneSphereCollisionAlgorithm : public IPlaneSphereCollisionAlgorithm
 	{
 	public:

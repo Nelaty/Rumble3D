@@ -15,8 +15,6 @@ namespace r3
 														RigidBody* rbBox2, CollisionBox* box2,
 														CollisionData& collisionData)
 	{
-		//return false;
-
 		// Check if there is still a contact left
 		if(collisionData.isFull())
 		{
@@ -24,8 +22,8 @@ namespace r3
 		}
 
 		// Vektor zwischen den Schwerpunkten:
-		glm::vec3 twoCentre = rbBox2->getTransform().getPosition();
-		glm::vec3 oneCentre = rbBox1->getTransform().getPosition();
+		const glm::vec3 twoCentre = rbBox2->getTransform().getPosition();
+		const glm::vec3 oneCentre = rbBox1->getTransform().getPosition();
 		glm::vec3 toCentre(0, 0, 0);
 		toCentre = twoCentre - oneCentre;
 		// Angenommen,es gibt keinen Kontakt:
@@ -55,7 +53,7 @@ namespace r3
 		// fast parallele Kanten gibt, die uns keine Aussage
 		// machen lassen.
 		/// \todo variable is never set???
-		unsigned int bestSingleAxis = best;
+		const unsigned bestSingleAxis = best;
 
 
 		if(checkOverlap(glm::cross(rotationOne[0], rotationTwo[0]), 6)) return false;
@@ -74,7 +72,7 @@ namespace r3
 		/// \todo: crash -> best stays 0xffffff
 		if(best > 8) return false;
 
-		Contact* contact = collisionData.getAvailableContact();
+		auto* contact = collisionData.getAvailableContact();
 
 		// Wir wissen, es gibt eine Kollision und wir wissen, welche der SAT-Achsen
 		// die minimale Durchdringung ergab. Nun folgt die Fallunterscheidung:
@@ -82,7 +80,7 @@ namespace r3
 		{
 			// Ecke von Box2 und Fläche von Box1.
 			fillPointFaceBoxBox(box1, box2, toCentre, contact, best, pen);
-			return 1;
+			return true;
 		}
 		
 		if(best < 6)
@@ -90,7 +88,7 @@ namespace r3
 			// Ecke von Box1 und Fläche von Box2.
 			// Vertausche Argumente und invertiere toCentre
 			fillPointFaceBoxBox(box2, box1, -toCentre, contact, best - 3, pen);
-			return 1;
+			return true;
 		}
 
 		// Im Fall Kante-Kante suche die SAT-Achse:
@@ -103,9 +101,9 @@ namespace r3
 		axis = glm::normalize(axis);
 
 		// Die Achse soll von Box 1 zu Box 2 zeigen.
-		if(glm::dot(axis, toCentre) > static_cast<real>(0.0f))
+		if(glm::dot(axis, toCentre) > real(0))
 		{
-			axis *= static_cast<real>(1.0f);
+			axis *= real(1);
 		}
 		// Wir kennen die Achse, aber nicht, welche Kanten betroffen sind.
 		// Dazu suchen wir den Mittelpunkt der Kanten (eine Koordinate der
@@ -116,20 +114,20 @@ namespace r3
 		{
 			if(i == oneAxisIndex)
 			{
-				ptOnOneEdge[i] = static_cast<real>(0.0f);
+				ptOnOneEdge[i] = real(0);
 			}
 				// sonst: eine oder andere Kante.
-			else if(glm::dot(rotationOne[i], axis) > static_cast<real>(0.0f))
+			else if(glm::dot(rotationOne[i], axis) > real(0))
 			{
 				ptOnOneEdge[i] = -(ptOnOneEdge[i]);
 			}
 
 			if(i == twoAxisIndex)
 			{
-				ptOnTwoEdge[i] = static_cast<real>(0.0f);
+				ptOnTwoEdge[i] = real(0);
 			}
 				// sonst: eine oder andere Kante.
-			else if(glm::dot(rotationTwo[i], axis) < static_cast<real>(0.0f))
+			else if(glm::dot(rotationTwo[i], axis) < real(0))
 			{
 				ptOnTwoEdge[i] = -(ptOnTwoEdge[i]);
 			}
@@ -144,7 +142,7 @@ namespace r3
 		// Wir haben jetzt einen Punkt und eine Richtung für die kollidierenden
 		// Kanten. Wir suchen jetzt den Punkt wo die beiden Kanten am nächsten
 		// zusammeniegen.
-		glm::vec3 vertex = contactPoint(
+		const glm::vec3 vertex = contactPoint(
 			ptOnOneEdge, oneAxis, box1->getHalfSize()[oneAxisIndex],
 			ptOnTwoEdge, twoAxis, box2->getHalfSize()[twoAxisIndex],
 			bestSingleAxis > 2);
@@ -176,11 +174,11 @@ namespace r3
 												  const glm::vec3& toCentre)
 	{
 		// Projektionen der halfSizes auf die Achse:
-		real oneProject = transformToAxis(one, axis);
-		real twoProject = transformToAxis(two, axis);
+		const real oneProject = transformToAxis(one, axis);
+		const real twoProject = transformToAxis(two, axis);
 
 		// Projektion des Abstandsvektors auf die Achse.
-		real distance = abs(glm::dot(toCentre, axis));
+		const real distance = abs(glm::dot(toCentre, axis));
 
 		// Rückgabe der Überlappung. Positive Werte
 		// bedeuten Überlappung, negative keine.
@@ -191,12 +189,12 @@ namespace r3
 										const CollisionBox* two,
 										glm::vec3 axis,
 										const glm::vec3& toCentre,
-	                                    const unsigned int index,
+	                                    const unsigned index,
 										real& smallestPenetration, 
 										unsigned& smallestCase)
 	{
 		// Fast parallele Achsen nicht berücksichtigen.
-		if(glm::length2(axis) < 0.0001)
+		if(real(glm::length2(axis)) < R3D_REAL_EPSILON)
 		{
 			return true;
 		}
@@ -220,7 +218,7 @@ namespace r3
 													const CollisionBox* box2,
 													const glm::vec3& toCentre,
 													Contact* contact,
-													unsigned int best,
+													const unsigned best,
 	                                                const real penetration)
 	{
 		auto* rbBox1 = box1->getBody();
@@ -231,7 +229,7 @@ namespace r3
 
 		glm::vec3 normal = rotationOne[best];
 		// Richtige Fläche auswählen:
-		if(glm::dot(rotationOne[best], toCentre) >  static_cast<real>(0.0f))
+		if(glm::dot(rotationOne[best], toCentre) > real(0))
 		{
 			normal = -normal;
 		}
@@ -241,15 +239,15 @@ namespace r3
 		// in die entgegengesetze Richtung negieren wir seine Koordinate, um 
 		//eine andere Ecke zu erhalten:
 		glm::vec3 vertex = box2->getHalfSize();
-		if(glm::dot(rotationTwo[0], normal) < static_cast<real>(0.0f))
+		if(glm::dot(rotationTwo[0], normal) < real(0))
 		{
 			vertex.x = -vertex.x;
 		}
-		if(glm::dot(rotationTwo[1], normal) < static_cast<real>(0.0f))
+		if(glm::dot(rotationTwo[1], normal) < real(0))
 		{
 			vertex.y = -vertex.y;
 		}
-		if(glm::dot(rotationTwo[2], normal) < static_cast<real>(0.0f))
+		if(glm::dot(rotationTwo[2], normal) < real(0))
 		{
 			vertex.z = -vertex.z;
 		}
@@ -270,30 +268,26 @@ namespace r3
 	                                              const real twoSize,
 	                                              const bool useOne)
 	{
-		glm::vec3 toSt, cOne, cTwo;
-		real dpStaOne, dpStaTwo, dpOneTwo, smOne, smTwo;
-		real denom, mua, mub;
+		const real smOne = glm::length2(dOne);
+		const real smTwo = glm::length2(dTwo);
+		const real dpOneTwo = glm::dot(dTwo, dOne);
 
-		smOne = glm::length2(dOne);
-		smTwo = glm::length2(dTwo);
-		dpOneTwo = glm::dot(dTwo, dOne);
+		const glm::vec3 toSt = pOne - pTwo;
+		const real dpStaOne = glm::dot(dOne, toSt);
+		const real dpStaTwo = glm::dot(dTwo, toSt);
 
-		toSt = pOne - pTwo;
-		dpStaOne = glm::dot(dOne, toSt);
-		dpStaTwo = glm::dot(dTwo, toSt);
+		const real denom = smOne * smTwo - dpOneTwo * dpOneTwo;
 
-		denom = smOne * smTwo - dpOneTwo * dpOneTwo;
-
-		// Nenner 0 bedeutet parallele Kanten:
-		if(abs(denom) < 0.0001f)
+		/** Check if edges are parallel */
+		if(real(abs(denom)) < R3D_REAL_EPSILON)
 		{
 			return useOne ? pOne : pTwo;
 		}
 
-		mua = (dpOneTwo * dpStaTwo - smTwo * dpStaOne) / denom;
-		mub = (smOne * dpStaTwo - dpOneTwo * dpStaOne) / denom;
+		const real mua = (dpOneTwo * dpStaTwo - smTwo * dpStaOne) / denom;
+		const real mub = (smOne * dpStaTwo - dpOneTwo * dpStaOne) / denom;
 
-		// Kante-Fläche-Kontakt:
+		// Edge-Face-Contact:
 		if(mua > oneSize ||
 		   mua < -oneSize ||
 		   mub > twoSize ||
@@ -302,9 +296,9 @@ namespace r3
 			return useOne ? pOne : pTwo;
 		}
 		
-		cOne = pOne + (dOne * mua);
-		cTwo = pTwo + (dTwo * mub);
+		const glm::vec3 cOne = pOne + (dOne * mua);
+		const glm::vec3 cTwo = pTwo + (dTwo * mub);
 
-		return static_cast<real>(0.5f) * (cOne + cTwo);
+		return real(0.5) * (cOne + cTwo);
 	}
 }

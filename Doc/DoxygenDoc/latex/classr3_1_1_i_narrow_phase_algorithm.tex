@@ -2,6 +2,11 @@
 \label{classr3_1_1_i_narrow_phase_algorithm}\index{r3\+::\+I\+Narrow\+Phase\+Algorithm@{r3\+::\+I\+Narrow\+Phase\+Algorithm}}
 
 
+Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of collision primitives, i.\+e. sphere-\/sphere, box-\/sphere.  
+
+
+
+
 {\ttfamily \#include $<$I\+Narrow\+Phase\+Algorithm.\+h$>$}
 
 
@@ -28,13 +33,16 @@ Collaboration diagram for r3\+:\+:I\+Narrow\+Phase\+Algorithm\+:\nopagebreak
 virtual \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a5c60462a72d97075b147bc4f0392b4f8}{$\sim$\+I\+Narrow\+Phase\+Algorithm}} ()
 \item 
 virtual bool \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe81ff45fedb81ca74717c3}{generate\+Contact\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate contacts between two rigid bodies. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a870b838f5095825c1033a195f1e5d7e0}{I\+Narrow\+Phase\+Algorithm}} ()
 \end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of collision primitives, i.\+e. sphere-\/sphere, box-\/sphere. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_i_narrow_phase_algorithm_a5c60462a72d97075b147bc4f0392b4f8}\label{classr3_1_1_i_narrow_phase_algorithm_a5c60462a72d97075b147bc4f0392b4f8}} 
@@ -60,7 +68,23 @@ virtual bool \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm_a606fe8de5fe8
 
 
 
-Implemented in \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a5b1c334d90d381e089d59cb59a7714c5}{r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_box_sphere_narrow_algorithm_aeecdb2486c6e6cbae057466f05323bdb}{r3\+::\+I\+Box\+Sphere\+Narrow\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_box_box_narrow_algorithm_a4b06ee2be38c248c59195082db64c3e3}{r3\+::\+I\+Box\+Box\+Narrow\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_plane_box_collision_algorithm_aacbbfc59a3cb174876bd5cffad22f1fc}{r3\+::\+I\+Plane\+Box\+Collision\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_acfdb8ae3db8c91843216651768cbd4e2}{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}}, and \mbox{\hyperlink{classr3_1_1_i_plane_plane_collision_algorithm_a910587be6f6537f86bbcc5e3a9b40223}{r3\+::\+I\+Plane\+Plane\+Collision\+Algorithm}}.
+Generate contacts between two rigid bodies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & The first participating rigid body. \\
+\hline
+{\em second} & The second participating rigid body. \\
+\hline
+{\em collision\+Data} & All newly generated contacts will be put in here. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if new contacts have been generated, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a5b1c334d90d381e089d59cb59a7714c5}{r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm_acfdb8ae3db8c91843216651768cbd4e2}{r3\+::\+I\+Sphere\+Sphere\+Narrow\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_box_sphere_narrow_algorithm_aeecdb2486c6e6cbae057466f05323bdb}{r3\+::\+I\+Box\+Sphere\+Narrow\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_box_box_narrow_algorithm_a4b06ee2be38c248c59195082db64c3e3}{r3\+::\+I\+Box\+Box\+Narrow\+Algorithm}}, \mbox{\hyperlink{classr3_1_1_i_plane_box_collision_algorithm_aacbbfc59a3cb174876bd5cffad22f1fc}{r3\+::\+I\+Plane\+Box\+Collision\+Algorithm}}, and \mbox{\hyperlink{classr3_1_1_i_plane_plane_collision_algorithm_a910587be6f6537f86bbcc5e3a9b40223}{r3\+::\+I\+Plane\+Plane\+Collision\+Algorithm}}.
 
 
 

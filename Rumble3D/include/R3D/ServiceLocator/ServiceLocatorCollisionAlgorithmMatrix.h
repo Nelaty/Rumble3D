@@ -4,9 +4,18 @@
 
 namespace r3
 {
+	/**
+	 * \brief Generate a CollisionAlgorithmMatrix with default 
+	 * narrow phase collision detection and contact generation
+	 * algorithms.
+	 */
 	class R3D_DECLSPEC ServiceLocatorCollisionAlgorithmMatrix
 	{
 	public:
+		/**
+		 * \brief Generate a default CollisionAlgorithmMatrix.
+		 * \return The CollisionAlgorithmMatrix.
+		 */
 		static CollisionAlgorithmMatrix getMatrix();
 
 	private:

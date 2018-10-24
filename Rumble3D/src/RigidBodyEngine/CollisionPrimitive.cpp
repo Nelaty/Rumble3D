@@ -42,8 +42,7 @@ namespace r3
 	}
 
 	CollisionPrimitive::CollisionPrimitive(const CollisionPrimitiveType type)
-		: m_body{nullptr},
-		m_type(type)
+		: m_type(type)
 	{
 	}
 }

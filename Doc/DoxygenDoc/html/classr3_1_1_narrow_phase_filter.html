@@ -84,7 +84,7 @@ Inheritance diagram for r3::NarrowPhaseFilter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_narrow_phase_filter__inherit__graph.png" border="0" usemap="#r3_1_1_narrow_phase_filter_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_narrow_phase_filter_inherit__map" id="r3_1_1_narrow_phase_filter_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_i_narrow_phase_filter.html" title="{r3::INarrowPhaseFilter\n||+ ~INarrowPhaseFilter()\l+ generateCollisionData()\l# INarrowPhaseFilter()\l}" alt="" coords="5,5,173,112"/>
+<area shape="rect" id="node2" href="classr3_1_1_i_narrow_phase_filter.html" title="Interface for narrow phase filters. " alt="" coords="5,5,173,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -92,8 +92,8 @@ Collaboration diagram for r3::NarrowPhaseFilter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_narrow_phase_filter__coll__graph.png" border="0" usemap="#r3_1_1_narrow_phase_filter_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_narrow_phase_filter_coll__map" id="r3_1_1_narrow_phase_filter_coll__map">
-<area shape="rect" id="node2" href="classr3_1_1_i_narrow_phase_filter.html" title="{r3::INarrowPhaseFilter\n||+ ~INarrowPhaseFilter()\l+ generateCollisionData()\l# INarrowPhaseFilter()\l}" alt="" coords="5,13,173,119"/>
-<area shape="rect" id="node3" href="classr3_1_1_collision_algorithm_matrix.html" title="{r3::CollisionAlgorithmMatrix\n||+ CollisionAlgorithmMatrix()\l+ ~CollisionAlgorithmMatrix()\l+ setAlgorithm()\l+ getAlgorithm()\l}" alt="" coords="198,5,389,127"/>
+<area shape="rect" id="node2" href="classr3_1_1_i_narrow_phase_filter.html" title="Interface for narrow phase filters. " alt="" coords="5,13,173,119"/>
+<area shape="rect" id="node3" href="classr3_1_1_collision_algorithm_matrix.html" title="Describes a collision algorithm for every collision primitive type combination. " alt="" coords="198,5,389,127"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -105,13 +105,15 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad3696d7d4a1d0cfd1b383802a4504897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_narrow_phase_filter.html#ad3696d7d4a1d0cfd1b383802a4504897">NarrowPhaseFilter</a> (unsigned int iterations=10, unsigned int collisionsMax=1000)</td></tr>
-<tr class="separator:ad3696d7d4a1d0cfd1b383802a4504897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4384e2d6e5f3e5e90b7bf8fffb3e5171"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_narrow_phase_filter.html#a4384e2d6e5f3e5e90b7bf8fffb3e5171">NarrowPhaseFilter</a> (unsigned iterations=10, unsigned collisionsMax=1000)</td></tr>
+<tr class="separator:a4384e2d6e5f3e5e90b7bf8fffb3e5171"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd99c99da07750756ae37fa5641136cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_narrow_phase_filter.html#acd99c99da07750756ae37fa5641136cb">~NarrowPhaseFilter</a> ()</td></tr>
 <tr class="separator:acd99c99da07750756ae37fa5641136cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f7b7a901d5af6e616bc6df677fae086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_narrow_phase_filter.html#a7f7b7a901d5af6e616bc6df677fae086">generateCollisionData</a> (const <a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> &gt; &amp;broadPhaseData, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisions) override</td></tr>
+<tr class="memdesc:a7f7b7a901d5af6e616bc6df677fae086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate contacts.  <a href="#a7f7b7a901d5af6e616bc6df677fae086">More...</a><br /></td></tr>
 <tr class="separator:a7f7b7a901d5af6e616bc6df677fae086"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a567743be66c7e8d118165ec92ed68cdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_narrow_phase_filter.html#a567743be66c7e8d118165ec92ed68cdf">generateCollisionData</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *first, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *second, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisions)</td></tr>
+<tr class="memdesc:a567743be66c7e8d118165ec92ed68cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate contacts between two rigid bodies if existent.  <a href="#a567743be66c7e8d118165ec92ed68cdf">More...</a><br /></td></tr>
 <tr class="separator:a567743be66c7e8d118165ec92ed68cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_i_narrow_phase_filter"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_i_narrow_phase_filter')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_i_narrow_phase_filter.html">r3::INarrowPhaseFilter</a></td></tr>
 <tr class="memitem:a87d190166b99b0ace5e6005d9e62562b inherit pub_methods_classr3_1_1_i_narrow_phase_filter"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_filter.html#a87d190166b99b0ace5e6005d9e62562b">~INarrowPhaseFilter</a> ()</td></tr>
@@ -120,6 +122,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a09742dd02960fab328444144fb22b85b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_narrow_phase_filter.html#a09742dd02960fab328444144fb22b85b">init</a> ()</td></tr>
+<tr class="memdesc:a09742dd02960fab328444144fb22b85b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the algorithm matrix.  <a href="#a09742dd02960fab328444144fb22b85b">More...</a><br /></td></tr>
 <tr class="separator:a09742dd02960fab328444144fb22b85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classr3_1_1_i_narrow_phase_filter"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classr3_1_1_i_narrow_phase_filter')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classr3_1_1_i_narrow_phase_filter.html">r3::INarrowPhaseFilter</a></td></tr>
 <tr class="memitem:a48c0812ce04a7e258c8fbbf34c8b85a6 inherit pro_methods_classr3_1_1_i_narrow_phase_filter"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_filter.html#a48c0812ce04a7e258c8fbbf34c8b85a6">INarrowPhaseFilter</a> ()</td></tr>
@@ -148,8 +151,8 @@ template&lt;class AlgorithmType &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad3696d7d4a1d0cfd1b383802a4504897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3696d7d4a1d0cfd1b383802a4504897">&#9670;&nbsp;</a></span>NarrowPhaseFilter()</h2>
+<a id="a4384e2d6e5f3e5e90b7bf8fffb3e5171"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4384e2d6e5f3e5e90b7bf8fffb3e5171">&#9670;&nbsp;</a></span>NarrowPhaseFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,13 +163,13 @@ template&lt;class AlgorithmType &gt; </div>
         <tr>
           <td class="memname">r3::NarrowPhaseFilter::NarrowPhaseFilter </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>iterations</em> = <code>10</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">unsigned&#160;</td>
           <td class="paramname"><em>collisionsMax</em> = <code>1000</code>&#160;</td>
         </tr>
         <tr>
@@ -244,6 +247,15 @@ template&lt;class AlgorithmType &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Generate contacts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">broadPhaseData</td><td>Collision pairs generated in the broad phase. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">collisions</td><td>All newly generated contacts will be put in here. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="classr3_1_1_i_narrow_phase_filter.html#a800e26eea0b0a899cde273e2931c22db">r3::INarrowPhaseFilter</a>.</p>
 
 </div>
@@ -279,7 +291,16 @@ template&lt;class AlgorithmType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Generate collisions between two rigid bodies. </p>
+
+<p>Generate contacts between two rigid bodies if existent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">first</td><td>The first participating rigid body. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">second</td><td>The second participating rigid body. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">collisions</td><td>All newly generated contacts will be put in here. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -305,6 +326,8 @@ template&lt;class AlgorithmType &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Initialize the algorithm matrix. </p>
 
 </div>
 </div>

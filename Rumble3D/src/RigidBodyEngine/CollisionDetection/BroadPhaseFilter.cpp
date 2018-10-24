@@ -13,7 +13,7 @@ namespace r3
 											  FixedSizeContainer<CollisionPair>& data)
 	{
 		/// \todo use rigid body mask and layout
-		//#pragma omp for
+		//#pragma omp parallel for
 		for (auto i = 0; i < rigidBodies.size(); ++i)
 		{
 			auto* first = rigidBodies[i];

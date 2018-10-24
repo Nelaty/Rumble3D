@@ -76,15 +76,18 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for collision resolution filter.  
+ <a href="classr3_1_1_i_collision_resolution_filter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_collision_resolution_filter_8h_source.html">ICollisionResolutionFilter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::ICollisionResolutionFilter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_i_collision_resolution_filter__inherit__graph.png" border="0" usemap="#r3_1_1_i_collision_resolution_filter_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_i_collision_resolution_filter_inherit__map" id="r3_1_1_i_collision_resolution_filter_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_friction_resolver.html" title="{r3::FrictionResolver\n||+ FrictionResolver()\l+ ~FrictionResolver()\l+ resolve()\l}" alt="" coords="5,189,148,296"/>
-<area shape="rect" id="node3" href="classr3_1_1_interpenetration_resolver.html" title="{r3::InterpenetrationResolver\n||+ InterpenetrationResolver()\l+ ~InterpenetrationResolver()\l+ resolve()\l+ setMaxIterations()\l+ setPositionEpsilon()\l}" alt="" coords="172,175,360,311"/>
-<area shape="rect" id="node4" href="classr3_1_1_velocity_resolver.html" title="{r3::VelocityResolver\n||+ VelocityResolver()\l+ ~VelocityResolver()\l+ resolve()\l+ setMaxIterations()\l+ setVelocityEpsilon()\l}" alt="" coords="384,175,535,311"/>
+<area shape="rect" id="node2" href="classr3_1_1_friction_resolver.html" title="Specialized collision resolution filter, which adds friction at given contacts. " alt="" coords="5,189,148,296"/>
+<area shape="rect" id="node3" href="classr3_1_1_interpenetration_resolver.html" title="Specialized collision resolution filter, which solves interpenetration of bodies. ..." alt="" coords="172,175,360,311"/>
+<area shape="rect" id="node4" href="classr3_1_1_velocity_resolver.html" title="Specialized collision resolution filter, which changes body velocities for bodies involved in contact..." alt="" coords="384,175,535,311"/>
 </map>
 </div>
 <div class="dynheader">
@@ -98,6 +101,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a89b3382d573308a790d436b9713b02ed"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html#a89b3382d573308a790d436b9713b02ed">~ICollisionResolutionFilter</a> ()</td></tr>
 <tr class="separator:a89b3382d573308a790d436b9713b02ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87ef2579e2acaaadef4cd8f9a20005ce"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html#a87ef2579e2acaaadef4cd8f9a20005ce">resolve</a> (<a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta)=0</td></tr>
+<tr class="memdesc:a87ef2579e2acaaadef4cd8f9a20005ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resolve given contacts.  <a href="#a87ef2579e2acaaadef4cd8f9a20005ce">More...</a><br /></td></tr>
 <tr class="separator:a87ef2579e2acaaadef4cd8f9a20005ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -105,7 +109,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab2dcf60620e28db288abf19bdeeb11ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html#ab2dcf60620e28db288abf19bdeeb11ad">ICollisionResolutionFilter</a> ()</td></tr>
 <tr class="separator:ab2dcf60620e28db288abf19bdeeb11ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for collision resolution filter. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a89b3382d573308a790d436b9713b02ed"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a89b3382d573308a790d436b9713b02ed">&#9670;&nbsp;</a></span>~ICollisionResolutionFilter()</h2>
 
@@ -190,6 +196,15 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Resolve given contacts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collisionData</td><td>The contacts to resolve. </td></tr>
+    <tr><td class="paramname">timeDelta</td><td>The time step of the current physics update. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classr3_1_1_friction_resolver.html#af26a84959e95749088f713176ec3c096">r3::FrictionResolver</a>, <a class="el" href="classr3_1_1_interpenetration_resolver.html#a7c896a7e8e0321c9f26b3d9c616d16ee">r3::InterpenetrationResolver</a>, and <a class="el" href="classr3_1_1_velocity_resolver.html#a93e8859d1ab3407b073328a58b7caeef">r3::VelocityResolver</a>.</p>
 

@@ -5,6 +5,9 @@
 
 namespace r3
 {
+	/**
+	 * \brief Interface for plane-plane narrow algorithms.
+	 */
 	class R3D_DECLSPEC IPlanePlaneCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:

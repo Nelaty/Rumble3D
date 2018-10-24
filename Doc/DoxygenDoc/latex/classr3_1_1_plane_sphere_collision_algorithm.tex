@@ -2,6 +2,11 @@
 \label{classr3_1_1_plane_sphere_collision_algorithm}\index{r3\+::\+Plane\+Sphere\+Collision\+Algorithm@{r3\+::\+Plane\+Sphere\+Collision\+Algorithm}}
 
 
+Default implementation for a plane-\/sphere narrow algorithm.  
+
+
+
+
 {\ttfamily \#include $<$Plane\+Sphere\+Collision\+Algorithm.\+h$>$}
 
 
@@ -33,8 +38,11 @@ Collaboration diagram for r3\+:\+:Plane\+Sphere\+Collision\+Algorithm\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{classr3_1_1_plane_sphere_collision_algorithm_a6823dc80b23ce77beabd26a9c2a9d9ed}{generate\+Contact\+Data\+Impl}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Plane, \mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$plane, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb\+Sphere, \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$sphere, \mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data) override
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate contacts between a plane and a sphere. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Default implementation for a plane-\/sphere narrow algorithm. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_plane_sphere_collision_algorithm_ab81963394bb97fcee3863f4f2c1aab7a}\label{classr3_1_1_plane_sphere_collision_algorithm_ab81963394bb97fcee3863f4f2c1aab7a}} 
@@ -58,8 +66,12 @@ bool \mbox{\hyperlink{classr3_1_1_plane_sphere_collision_algorithm_a6823dc80b23c
 \subsubsection{\texorpdfstring{generate\+Contact\+Data\+Impl()}{generateContactDataImpl()}}
 {\footnotesize\ttfamily bool r3\+::\+Plane\+Sphere\+Collision\+Algorithm\+::generate\+Contact\+Data\+Impl (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Plane,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_plane}{Collision\+Plane}} $\ast$}]{plane,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb\+Sphere,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}} $\ast$}]{sphere,  }\item[{\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&}]{collision\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
 
+
+
+Generate contacts between a plane and a sphere. 
+
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000016}{Todo}}]\+: implement -\/$>$ plane is not half space \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000017}{Todo}}]\+: implement -\/$>$ plane is not half space \end{DoxyRefDesc}
 
 
 Implements \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm_a92ddfd3ba00ed53b183a6aef41b04a60}{r3\+::\+I\+Plane\+Sphere\+Collision\+Algorithm}}.

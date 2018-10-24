@@ -10,9 +10,10 @@ namespace r3
 	class RigidBody;
 
 	/**
-	 * \brief A Contact represents a point in space at which two rigid bodies
-	 * collide. It is not a point in world space but rather knows the
-	 * relative offsets to the points of mass of both rigid bodies.
+	 * \brief A Contact represents a point in space at which two 
+	 * rigid bodies collide. It is not a point in world space but 
+	 * rather knows the relative offsets to the points of mass of 
+	 * both rigid bodies.
 	 */
 	class R3D_DECLSPEC Contact
 	{

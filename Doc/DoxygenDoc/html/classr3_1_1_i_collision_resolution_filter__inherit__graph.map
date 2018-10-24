@@ -1,5 +1,5 @@
 <map id="r3::ICollisionResolutionFilter" name="r3::ICollisionResolutionFilter">
-<area shape="rect" id="node2" href="$classr3_1_1_friction_resolver.html" title="{r3::FrictionResolver\n||+ FrictionResolver()\l+ ~FrictionResolver()\l+ resolve()\l}" alt="" coords="5,189,148,296"/>
-<area shape="rect" id="node3" href="$classr3_1_1_interpenetration_resolver.html" title="{r3::InterpenetrationResolver\n||+ InterpenetrationResolver()\l+ ~InterpenetrationResolver()\l+ resolve()\l+ setMaxIterations()\l+ setPositionEpsilon()\l}" alt="" coords="172,175,360,311"/>
-<area shape="rect" id="node4" href="$classr3_1_1_velocity_resolver.html" title="{r3::VelocityResolver\n||+ VelocityResolver()\l+ ~VelocityResolver()\l+ resolve()\l+ setMaxIterations()\l+ setVelocityEpsilon()\l}" alt="" coords="384,175,535,311"/>
+<area shape="rect" id="node2" href="$classr3_1_1_friction_resolver.html" title="Specialized collision resolution filter, which adds friction at given contacts. " alt="" coords="5,189,148,296"/>
+<area shape="rect" id="node3" href="$classr3_1_1_interpenetration_resolver.html" title="Specialized collision resolution filter, which solves interpenetration of bodies. ..." alt="" coords="172,175,360,311"/>
+<area shape="rect" id="node4" href="$classr3_1_1_velocity_resolver.html" title="Specialized collision resolution filter, which changes body velocities for bodies involved in contact..." alt="" coords="384,175,535,311"/>
 </map>

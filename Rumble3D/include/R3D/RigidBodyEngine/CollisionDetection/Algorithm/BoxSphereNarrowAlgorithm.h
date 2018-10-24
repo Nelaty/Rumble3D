@@ -4,6 +4,9 @@
 
 namespace r3
 {
+	/**
+	 * \brief Default implementation for a box-sphere narrow algorithm.
+	 */
 	class R3D_DECLSPEC BoxSphereNarrowAlgorithm : public IBoxSphereNarrowAlgorithm
 	{
 	public:

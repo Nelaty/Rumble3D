@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for intermediate phase filters. These filters are an optional part of the broad phase. They are executed after an <a class="el" href="classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time...">IBroadPhaseFilter</a>. They are functionally identical to an <a class="el" href="classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time...">IBroadPhaseFilter</a>, but can be chained.  
+ <a href="classr3_1_1_i_intermediate_phase_filter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_intermediate_phase_filter_8h_source.html">IIntermediatePhaseFilter.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::IIntermediatePhaseFilter:</div>
@@ -88,6 +91,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2257ec90263c444371f455078e5ff7c"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_intermediate_phase_filter.html#ab2257ec90263c444371f455078e5ff7c">~IIntermediatePhaseFilter</a> ()</td></tr>
 <tr class="separator:ab2257ec90263c444371f455078e5ff7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b235161317095e134661aa49beb909d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_intermediate_phase_filter.html#a0b235161317095e134661aa49beb909d">generateCollisions</a> (<a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> &gt; &amp;collisions)=0</td></tr>
+<tr class="memdesc:a0b235161317095e134661aa49beb909d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Further filter a previous set of collisions, which might still contain a lot of false negatives.  <a href="#a0b235161317095e134661aa49beb909d">More...</a><br /></td></tr>
 <tr class="separator:a0b235161317095e134661aa49beb909d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -95,7 +99,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a22779c8595810d4068bfaaa140e39e0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_intermediate_phase_filter.html#a22779c8595810d4068bfaaa140e39e0b">IIntermediatePhaseFilter</a> ()</td></tr>
 <tr class="separator:a22779c8595810d4068bfaaa140e39e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for intermediate phase filters. These filters are an optional part of the broad phase. They are executed after an <a class="el" href="classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time...">IBroadPhaseFilter</a>. They are functionally identical to an <a class="el" href="classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time...">IBroadPhaseFilter</a>, but can be chained. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab2257ec90263c444371f455078e5ff7c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab2257ec90263c444371f455078e5ff7c">&#9670;&nbsp;</a></span>~IIntermediatePhaseFilter()</h2>
 
@@ -170,7 +176,15 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Further filter a previous set of collisions, which might still contain false negatives. </p>
+
+<p>Further filter a previous set of collisions, which might still contain a lot of false negatives. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collisions</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000011">Todo:</a></b></dt><dd>{ Changed param signature to (const FixedSizeContainer&lt;CollisionPair&gt;&amp; in, FixedSizeContainer&lt;CollisionPair&gt;&amp; out) } </dd></dl>
 
 </div>
 </div>

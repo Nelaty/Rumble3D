@@ -76,14 +76,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Default implementation for a box-sphere narrow algorithm.  
+ <a href="classr3_1_1_box_sphere_narrow_algorithm.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_box_sphere_narrow_algorithm_8h_source.html">BoxSphereNarrowAlgorithm.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::BoxSphereNarrowAlgorithm:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_box_sphere_narrow_algorithm__inherit__graph.png" border="0" usemap="#r3_1_1_box_sphere_narrow_algorithm_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_box_sphere_narrow_algorithm_inherit__map" id="r3_1_1_box_sphere_narrow_algorithm_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_i_box_sphere_narrow_algorithm.html" title="{r3::IBoxSphereNarrowAlgorithm\n||+ ~IBoxSphereNarrowAlgorithm()\l+ generateContactData()\l# generateContactDataImpl()\l# IBoxSphereNarrowAlgorithm()\l}" alt="" coords="5,160,217,281"/>
-<area shape="rect" id="node3" href="classr3_1_1_i_narrow_phase_algorithm.html" title="{r3::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l+ generateContactData()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="19,5,204,112"/>
+<area shape="rect" id="node2" href="classr3_1_1_i_box_sphere_narrow_algorithm.html" title="Interface for box&#45;sphere narrow algorithms. " alt="" coords="5,160,217,281"/>
+<area shape="rect" id="node3" href="classr3_1_1_i_narrow_phase_algorithm.html" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="19,5,204,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -91,8 +94,8 @@ Collaboration diagram for r3::BoxSphereNarrowAlgorithm:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_box_sphere_narrow_algorithm__coll__graph.png" border="0" usemap="#r3_1_1_box_sphere_narrow_algorithm_coll__map" alt="Collaboration graph"/></div>
 <map name="r3_1_1_box_sphere_narrow_algorithm_coll__map" id="r3_1_1_box_sphere_narrow_algorithm_coll__map">
-<area shape="rect" id="node2" href="classr3_1_1_i_box_sphere_narrow_algorithm.html" title="{r3::IBoxSphereNarrowAlgorithm\n||+ ~IBoxSphereNarrowAlgorithm()\l+ generateContactData()\l# generateContactDataImpl()\l# IBoxSphereNarrowAlgorithm()\l}" alt="" coords="5,160,217,281"/>
-<area shape="rect" id="node3" href="classr3_1_1_i_narrow_phase_algorithm.html" title="{r3::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l+ generateContactData()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="19,5,204,112"/>
+<area shape="rect" id="node2" href="classr3_1_1_i_box_sphere_narrow_algorithm.html" title="Interface for box&#45;sphere narrow algorithms. " alt="" coords="5,160,217,281"/>
+<area shape="rect" id="node3" href="classr3_1_1_i_narrow_phase_algorithm.html" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="19,5,204,112"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -106,6 +109,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac70f8e99bb2deb52c1e4686ef6fafe2d inherit pub_methods_classr3_1_1_i_box_sphere_narrow_algorithm"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#ac70f8e99bb2deb52c1e4686ef6fafe2d">~IBoxSphereNarrowAlgorithm</a> ()</td></tr>
 <tr class="separator:ac70f8e99bb2deb52c1e4686ef6fafe2d inherit pub_methods_classr3_1_1_i_box_sphere_narrow_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeecdb2486c6e6cbae057466f05323bdb inherit pub_methods_classr3_1_1_i_box_sphere_narrow_algorithm"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_box_sphere_narrow_algorithm.html#aeecdb2486c6e6cbae057466f05323bdb">generateContactData</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *first, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *second, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData) override final</td></tr>
+<tr class="memdesc:aeecdb2486c6e6cbae057466f05323bdb inherit pub_methods_classr3_1_1_i_box_sphere_narrow_algorithm"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate contacts between two rigid bodies.  <a href="classr3_1_1_i_box_sphere_narrow_algorithm.html#aeecdb2486c6e6cbae057466f05323bdb">More...</a><br /></td></tr>
 <tr class="separator:aeecdb2486c6e6cbae057466f05323bdb inherit pub_methods_classr3_1_1_i_box_sphere_narrow_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_i_narrow_phase_algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_i_narrow_phase_algorithm')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">r3::INarrowPhaseAlgorithm</a></td></tr>
 <tr class="memitem:a5c60462a72d97075b147bc4f0392b4f8 inherit pub_methods_classr3_1_1_i_narrow_phase_algorithm"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html#a5c60462a72d97075b147bc4f0392b4f8">~INarrowPhaseAlgorithm</a> ()</td></tr>
@@ -122,7 +126,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a870b838f5095825c1033a195f1e5d7e0 inherit pro_methods_classr3_1_1_i_narrow_phase_algorithm"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html#a870b838f5095825c1033a195f1e5d7e0">INarrowPhaseAlgorithm</a> ()</td></tr>
 <tr class="separator:a870b838f5095825c1033a195f1e5d7e0 inherit pro_methods_classr3_1_1_i_narrow_phase_algorithm"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Default implementation for a box-sphere narrow algorithm. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0184c33ce7da891240781ad7c78bd9a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0184c33ce7da891240781ad7c78bd9a2">&#9670;&nbsp;</a></span>BoxSphereNarrowAlgorithm()</h2>
 

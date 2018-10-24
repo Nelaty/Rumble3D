@@ -2,6 +2,11 @@
 \label{classr3_1_1_collision_algorithm_matrix}\index{r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}}
 
 
+Describes a collision algorithm for every collision primitive type combination.  
+
+
+
+
 {\ttfamily \#include $<$Collision\+Algorithm\+Matrix.\+h$>$}
 
 
@@ -21,10 +26,13 @@ Collaboration diagram for r3\+:\+:Collision\+Algorithm\+Matrix\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_adea2db794d9606ecf24745ad6ac912d8}{$\sim$\+Collision\+Algorithm\+Matrix}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b4b4413ccade6d0}{set\+Algorithm}} (\mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$algorithm, Collision\+Primitive\+Type first\+Shape, Collision\+Primitive\+Type second\+Shape)
-\item 
+\begin{DoxyCompactList}\small\item\em Set the collision algorithm for a specific collision primitive combination. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_ad40e0f125b95d6bcdb2e8a27c1397e68}{get\+Algorithm}} (Collision\+Primitive\+Type first\+Shape, Collision\+Primitive\+Type second\+Shape)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the collision algorithm currently used for a specific collision primitive combination. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Describes a collision algorithm for every collision primitive type combination. 
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_a97bdad626057f600ae5ffca63eb174b8}\label{classr3_1_1_collision_algorithm_matrix_a97bdad626057f600ae5ffca63eb174b8}} 
@@ -48,12 +56,39 @@ void \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b
 \subsubsection{\texorpdfstring{get\+Algorithm()}{getAlgorithm()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$ r3\+::\+Collision\+Algorithm\+Matrix\+::get\+Algorithm (\begin{DoxyParamCaption}\item[{Collision\+Primitive\+Type}]{first\+Shape,  }\item[{Collision\+Primitive\+Type}]{second\+Shape }\end{DoxyParamCaption})}
 
+
+
+Get the collision algorithm currently used for a specific collision primitive combination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first\+Shape} & The type of the first primitive shape. \\
+\hline
+{\em second\+Shape} & The type of the second primitive shape. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The collision algorithm matrix. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b4b4413ccade6d0}\label{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b4b4413ccade6d0}} 
 \index{r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}!set\+Algorithm@{set\+Algorithm}}
 \index{set\+Algorithm@{set\+Algorithm}!r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}}
 \subsubsection{\texorpdfstring{set\+Algorithm()}{setAlgorithm()}}
 {\footnotesize\ttfamily void r3\+::\+Collision\+Algorithm\+Matrix\+::set\+Algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$}]{algorithm,  }\item[{Collision\+Primitive\+Type}]{first\+Shape,  }\item[{Collision\+Primitive\+Type}]{second\+Shape }\end{DoxyParamCaption})}
 
+
+
+Set the collision algorithm for a specific collision primitive combination. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em algorithm} & The algorithm to use for the specified combination. \\
+\hline
+{\em first\+Shape} & The type of the first primitive shape. \\
+\hline
+{\em second\+Shape} & The type of the second shape. \\
+\hline
+\end{DoxyParams}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

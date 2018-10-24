@@ -2,6 +2,11 @@
 \label{classr3_1_1_service_locator_computation_interface}\index{r3\+::\+Service\+Locator\+Computation\+Interface@{r3\+::\+Service\+Locator\+Computation\+Interface}}
 
 
+Generate default implementations of various computation interfaces.  
+
+
+
+
 {\ttfamily \#include $<$Service\+Locator\+Computation\+Interface.\+h$>$}
 
 
@@ -17,10 +22,13 @@ Collaboration diagram for r3\+:\+:Service\+Locator\+Computation\+Interface\+:\no
 \begin{DoxyCompactItemize}
 \item 
 static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_particle_engine_c_i}{Particle\+Engine\+CI}} $>$ \mbox{\hyperlink{classr3_1_1_service_locator_computation_interface_abc0c31a51308c4db9932763325c0cb08}{get\+Particle\+Engine\+CI}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Generate a default computation interface implementation for a particle engine. \end{DoxyCompactList}\item 
 static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i}{Rigid\+Body\+Engine\+CI}} $>$ \mbox{\hyperlink{classr3_1_1_service_locator_computation_interface_a01d7434be386277d9a9a26d6859472c3}{get\+Rigid\+Body\+Engine\+CI}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate a default computation interface implementation for a rigid body engine. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
+
+\subsection{Detailed Description}
+Generate default implementations of various computation interfaces. 
 
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_service_locator_computation_interface_abc0c31a51308c4db9932763325c0cb08}\label{classr3_1_1_service_locator_computation_interface_abc0c31a51308c4db9932763325c0cb08}} 
@@ -29,12 +37,26 @@ static std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_
 \subsubsection{\texorpdfstring{get\+Particle\+Engine\+C\+I()}{getParticleEngineCI()}}
 {\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_particle_engine_c_i}{Particle\+Engine\+CI}} $>$ r3\+::\+Service\+Locator\+Computation\+Interface\+::get\+Particle\+Engine\+CI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Generate a default computation interface implementation for a particle engine. 
+
+\begin{DoxyReturn}{Returns}
+The new computation interface. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_service_locator_computation_interface_a01d7434be386277d9a9a26d6859472c3}\label{classr3_1_1_service_locator_computation_interface_a01d7434be386277d9a9a26d6859472c3}} 
 \index{r3\+::\+Service\+Locator\+Computation\+Interface@{r3\+::\+Service\+Locator\+Computation\+Interface}!get\+Rigid\+Body\+Engine\+CI@{get\+Rigid\+Body\+Engine\+CI}}
 \index{get\+Rigid\+Body\+Engine\+CI@{get\+Rigid\+Body\+Engine\+CI}!r3\+::\+Service\+Locator\+Computation\+Interface@{r3\+::\+Service\+Locator\+Computation\+Interface}}
 \subsubsection{\texorpdfstring{get\+Rigid\+Body\+Engine\+C\+I()}{getRigidBodyEngineCI()}}
 {\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i}{Rigid\+Body\+Engine\+CI}} $>$ r3\+::\+Service\+Locator\+Computation\+Interface\+::get\+Rigid\+Body\+Engine\+CI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
+
+
+Generate a default computation interface implementation for a rigid body engine. 
+
+\begin{DoxyReturn}{Returns}
+The new computation interface. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

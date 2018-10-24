@@ -5,6 +5,9 @@
 
 namespace r3
 {
+	/**
+	 * \brief Default implementation for a sphere-sphere narrow algorithm.
+	 */
 	class R3D_DECLSPEC SphereSphereNarrowAlgorithm : public ISphereSphereNarrowAlgorithm
 	{
 	public:

@@ -76,6 +76,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Interface for narrow phase filters.  
+ <a href="classr3_1_1_i_narrow_phase_filter.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_i_narrow_phase_filter_8h_source.html">INarrowPhaseFilter.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for r3::INarrowPhaseFilter:</div>
@@ -96,6 +99,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a87d190166b99b0ace5e6005d9e62562b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_filter.html#a87d190166b99b0ace5e6005d9e62562b">~INarrowPhaseFilter</a> ()</td></tr>
 <tr class="separator:a87d190166b99b0ace5e6005d9e62562b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a800e26eea0b0a899cde273e2931c22db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_filter.html#a800e26eea0b0a899cde273e2931c22db">generateCollisionData</a> (const <a class="el" href="classr3_1_1_fixed_size_container.html">FixedSizeContainer</a>&lt; <a class="el" href="classr3_1_1_collision_pair.html">CollisionPair</a> &gt; &amp;broadPhaseData, <a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisions)=0</td></tr>
+<tr class="memdesc:a800e26eea0b0a899cde273e2931c22db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate contacts.  <a href="#a800e26eea0b0a899cde273e2931c22db">More...</a><br /></td></tr>
 <tr class="separator:a800e26eea0b0a899cde273e2931c22db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
@@ -103,7 +107,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a48c0812ce04a7e258c8fbbf34c8b85a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_narrow_phase_filter.html#a48c0812ce04a7e258c8fbbf34c8b85a6">INarrowPhaseFilter</a> ()</td></tr>
 <tr class="separator:a48c0812ce04a7e258c8fbbf34c8b85a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Interface for narrow phase filters. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a87d190166b99b0ace5e6005d9e62562b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87d190166b99b0ace5e6005d9e62562b">&#9670;&nbsp;</a></span>~INarrowPhaseFilter()</h2>
 
@@ -188,6 +194,15 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generate contacts. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">broadPhaseData</td><td>Collision pairs generated in the broad phase. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">collisions</td><td>All newly generated contacts will be put in here. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classr3_1_1_narrow_phase_filter.html#a7f7b7a901d5af6e616bc6df677fae086">r3::NarrowPhaseFilter</a>.</p>
 

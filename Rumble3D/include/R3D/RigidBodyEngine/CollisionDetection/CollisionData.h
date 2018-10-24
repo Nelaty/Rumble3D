@@ -7,6 +7,7 @@
 
 namespace r3
 {
+
 	class R3D_DECLSPEC CollisionData
 	{
 	public:

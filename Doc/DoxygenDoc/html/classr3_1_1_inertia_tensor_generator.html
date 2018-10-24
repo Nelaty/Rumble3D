@@ -75,6 +75,9 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Static class, which provides methods to generate inertia tensors for various shapes.  
+ <a href="classr3_1_1_inertia_tensor_generator.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_inertia_tensor_generator_8h_source.html">InertiaTensorGenerator.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for r3::InertiaTensorGenerator:</div>
@@ -85,11 +88,15 @@ Collaboration diagram for r3::InertiaTensorGenerator:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae4d92045858bfe898a3bc6c779fe3d9b"><td class="memItemLeft" align="right" valign="top">static glm::mat3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_inertia_tensor_generator.html#ae4d92045858bfe898a3bc6c779fe3d9b">generateCubeTensor</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> mass, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> xHalf, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> yHalf, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> zHalf)</td></tr>
+<tr class="memdesc:ae4d92045858bfe898a3bc6c779fe3d9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an inertia tensor for a box shape.  <a href="#ae4d92045858bfe898a3bc6c779fe3d9b">More...</a><br /></td></tr>
 <tr class="separator:ae4d92045858bfe898a3bc6c779fe3d9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a637b526735235ca96cab6e7414f7a8c2"><td class="memItemLeft" align="right" valign="top">static glm::mat3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_inertia_tensor_generator.html#a637b526735235ca96cab6e7414f7a8c2">generateSphereTensor</a> (<a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> mass, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> radius)</td></tr>
+<tr class="memdesc:a637b526735235ca96cab6e7414f7a8c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate an inertia tensor for a sphere shape.  <a href="#a637b526735235ca96cab6e7414f7a8c2">More...</a><br /></td></tr>
 <tr class="separator:a637b526735235ca96cab6e7414f7a8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Static class, which provides methods to generate inertia tensors for various shapes. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ae4d92045858bfe898a3bc6c779fe3d9b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae4d92045858bfe898a3bc6c779fe3d9b">&#9670;&nbsp;</a></span>generateCubeTensor()</h2>
 
@@ -136,6 +143,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Generate an inertia tensor for a box shape. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mass</td><td>The mass of the object. </td></tr>
+    <tr><td class="paramname">xHalf</td><td>Half length of the x side. </td></tr>
+    <tr><td class="paramname">yHalf</td><td>Half length of the y side. </td></tr>
+    <tr><td class="paramname">zHalf</td><td>Half length of the z side. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inertia tensor. </dd></dl>
+
 </div>
 </div>
 <a id="a637b526735235ca96cab6e7414f7a8c2"></a>
@@ -171,6 +190,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Generate an inertia tensor for a sphere shape. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mass</td><td>The mass of the object. </td></tr>
+    <tr><td class="paramname">radius</td><td>The radius of the sphere. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The inertia tensor. </dd></dl>
 
 </div>
 </div>
