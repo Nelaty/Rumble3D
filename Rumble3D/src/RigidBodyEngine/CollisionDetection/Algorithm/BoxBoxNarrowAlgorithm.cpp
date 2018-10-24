@@ -67,10 +67,10 @@ namespace r3
 		if(checkOverlap(glm::cross(rotationOne[2], rotationTwo[2]), 14)) return false;
 
 		// Make sure we've got a result.
-		// assert(best != 0xffffff);
+		assert(best != 0xffffff);
 		
 		/// \todo: crash -> best stays 0xffffff
-		if(best > 8) return false;
+		//if(best > 8) return false;
 
 		auto* contact = collisionData.getAvailableContact();
 
