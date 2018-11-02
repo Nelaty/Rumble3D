@@ -1,50 +1,385 @@
-\documentclass[10pt,a4paper]{article}
+\documentclass[12p, paper=a4, leqno, colorinlistoftodos]{article}
+\usepackage{wrapfig}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
-%\usepackage[english]{isodate}
-%\usepackage[parfill]{parskip}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+\usepackage{amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{wrapfig}
 
-%\newcommand{\csection}[1]{\section{{#1}}}
-%\newcommand{\csubsection}[1]{\subsection{{#1}}}
-%\newcommand{\csubsubsection}[1]{\subsubsection{{#1}}}
+\usepackage[parfill]{parskip}
+\usepackage{subcaption}
+\usepackage{fix-cm}
+\usepackage{transparent}
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{tocloft, url}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\usepackage[german]{fancyref}
+\usepackage{lipsum}	
+\usepackage{sectsty}
+\usepackage{pdfpages}
+\usepackage{tcolorbox}
+\usepackage{todonotes}
 
+
+\usepackage{enumitem}
+\usepackage[bottom]{footmisc}
+
+\usepackage{forest}
+\usepackage{float}
+\usepackage{longtable}
+\usepackage[normalem]{ulem}
+\usepackage{multirow}
+\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+\usepackage{tikz}
+\usepackage{calc}
+\usepackage{geometry}
+\usepackage{listings,lstautogobble}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage[noend]{algpseudocode}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{xcolor,colortbl}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage[nottoc,notlot,notlof,numbib]{tocbibind}
+
+\usepackage{cite}
+
+
+\hypersetup{
+	colorlinks,
+	linkcolor={black},
+	citecolor={blue!50!black},
+	urlcolor={blue!80!black}	
+}
+
+% BEGIN COLORS
+\definecolor{CBlue}{RGB}{1,0,119}
+\definecolor{CBlack}{rgb}{0.0,0.0,0.0}
+\definecolor{CLightGrey}{rgb}{0.664,0.664,0.664}
+\definecolor{LightOrange}{rgb}{1.0,0.9,0.63}
+\definecolor{DarkOrange}{rgb}{1.0,0.8,0.22}
+\definecolor{LightCyan}{rgb}{1.0,0.9,0.63}
+\definecolor{CWhite}{RGB}{0,0,0}
+\definecolor{CLink}{rgb}{0.5,0.0,0.0}
+
+\newcommand{\CTitle}{CBlue}
+% BEGIN Table row/column colors{102,217,239}
+\definecolor{CEven0}{RGB}{208,238,244}
+\definecolor{CUneven0}{RGB}{255,255,255}
+\definecolor{CEven1}{rgb}{1.0,1.0,1.0}
+\definecolor{CUneven1}{rgb}{1.0,1.0,1.0}
+% END Table row/column colors
+% END COLORS
+
+
+% BEGIN NEWENVIRONMENTS
+\newenvironment{packed_itemize}
+{\begin{itemize}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+	}{\end{itemize}}
+
+\newenvironment{packed_description}
+{\begin{description}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}}
+	{\end{description}}
+
+\newenvironment{packed_enumerate}
+{\begin{enumerate}
+		\setlength{\itemsep}{0pt}
+		\setlength{\parskip}{0pt}
+		\setlength{\parsep}{0pt}
+	}{\end{enumerate}}
+
+% END NEWENVIRONMENTS
+
+
+% BEGIN NEWCOMMANDS
+% tables
+\newcommand{\tabularPaddingSmall}{\renewcommand{\arraystretch}{0.75}}
+\newcommand{\tabularPaddingDefault}{\renewcommand{\arraystretch}{1}}
+\newcommand{\tabularPaddinglarge}{\renewcommand{\arraystretch}{1.25}}
+\newcommand{\tabularPaddingLarge}{\renewcommand{\arraystretch}{1.5}}
+\newcommand{\tabularPaddingLARGE}{\renewcommand{\arraystretch}{2}}
+\newcommand{\tabularPaddingBot}{\vspace{0.5cm}}
+
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+\newcommand{\coloredHline}[1]{\arrayrulecolor{#1}\hline}
+\newcommand{\minitab}[2][l]{\begin{tabular}{#1}#2\end{tabular}}
+
+% quoting
+\newcommand{\quoteSource}[2]{\glqq{#1}\grqq, \textit{#2}}
+\newcommand{\quoteQuick}[1]{\glqq{#1}\grqq}
+\newcommand{\quoteAuthor}[2]{\quoteQuick{#1}, von \textit{#2}}
+\newcommand{\quoteCite}[2]{\quoteQuick{\textit{#1}}#2}
+\newcommand{\srcSelf}{\\\text{Quelle: Eigene Darstellung}}
+\newcommand{\citePage}[2]{\cite{#1} Seite: {#2}}
+\newcommand{\citeEquation}[1]{\text{\hspace{1cm}{#1}}}
+
+% paragraphs
+\newcommand{\parTiny}{\vspace{2mm}\\}
+\newcommand{\parSmall}{\\~\par}
+\newcommand{\parNoIndent}{\\\noindent}
+\newcommand{\parWrapfig}{\\\text{ }\\}
+
+% math
+
+
+% 
+\newcommand{\emphFold}[1]{\textbf{#1}}
+
+% page layout
+\newcommand{\geometryNormal}{\newgeometry{top = 2cm, left=2.5cm,bottom=2cm, right = 4cm}}
+\newcommand{\geometryToc}{\newgeometry{top = 3cm, left=3cm,bottom=3cm, right = 3cm}}
+
+% todo notes
+\newcommand{\todoLowp}[1]{\todo[color=green!40]{#1}}
+\newcommand{\todoMedp}[1]{\todo[color=orange!40]{#1}}
+\newcommand{\todoHighp}[1]{\todo[color=red!40]{#1}}
+\newcommand{\todoFig}[1]{\missingfigure{#1}}
+
+% titles
+\colorlet{ctcolorchapternum}{black}
+
+\newcommand\mysectionformatCore[1]{%
+	\vspace{-3em}\parbox[b]{\dimexpr\textwidth-1em\relax}{\raggedright#1}}
+\newcommand{\titleformatCore}
+{
+	\titleformat
+	{\section}[display]%
+	{\color{black}\Large\bfseries}%
+	{\vspace{-18em}\raggedleft{%
+			{\color{ctcolorchapternum}\fontsize{60}{60}{\selectfont\thesection}}%
+		}\hspace{1em}%
+	}%
+	{0pt}%
+	{\mysectionformatCore}%
+	[{\vspace{-0.5em}%
+		\rule{0.75\textwidth}{1pt}%
+		\rule[-3pt]{0.25\textwidth}{4pt}}]
+	
+	\titleformat
+	{\subsection}[block]%
+	{\color{black}\large\bfseries}%
+	{\thesubsection\text{ }}%
+	{0pt}{}[]%
+	
+	\titleformat
+	{\subsubsection}[block]%
+	{\color{black}\normalsize\bfseries}%
+	{\thesubsubsection\text{ }}%
+	{0pt}{}[]%
+	
+	\titleformat{\paragraph}
+	{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+	\titlespacing*{\paragraph}
+	{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+}
+
+\newcommand\mysectionformatAppendix[1]{#1}
+\newcommand{\titleformatAppendix}
+{
+	\titleformat
+	{\section}[display]%
+	{\color{black}\Large\bfseries}%
+	{}{0pt}{\mysectionformatAppendix}[]
+}
+
+% END NEWCOMMANDS
+
+% BEGIN RENEW COMMANDS
+% END RENEW COMMANDS
+
+\newlistof{links}{lks}{List of Links}
+\newcommand\externallink[1]{%
+	\refstepcounter{links}%
+	\footnote{\url{#1}}%
+	\addcontentsline{lks}{links}{%
+		\protect\numberline{\thelinks}%
+		\protect\url{#1}}%
+}
+\newcommand\externallinkIL[1]{%
+	\refstepcounter{links}%
+	\addcontentsline{lks}{links}{%
+		\protect\numberline{\thelinks}%
+		\protect\url{#1}}%
+}
+
+\newcolumntype{L}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+%\newcolumntype{C}[1]{>{\raggedcenter\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+\newcolumntype{C}[1]{>{\raggedcenter\hspace{0pt}}p{#1}}
+
+
+\author{Matthias Elmar Gensheimer}
+\title{Rumble3D Manual}
+\date{\today}
+
+
+% BEGIN HEADER
+\newcommand{\headerNormal}
+{
+	\pagestyle{fancy}
+	\fancyhf{}
+	\lhead{\rightmark}
+	\rhead{\thepage}
+}
+
+\newcommand{\headerEmpty}
+{
+	\fancyhf{}
+	\renewcommand{\headrulewidth}{0pt}
+	\lhead{}
+	\rhead{}
+}
+
+\newcommand{\headerErklaerung}
+{
+	\pagestyle{fancy}
+	\fancyhf{}
+	\rhead{\thepage}
+}
+% END HEADER
+
+% BEGIN FOOTER
+\usepackage{scrlayer}
+\DeclareNewLayer[
+foreground,
+foot,
+hoffset=0pt,
+width=\paperwidth,
+contents={\parbox{\layerwidth}{\centering}}
+]{PageMarkCentredToPage}
+\RedeclarePageStyleByLayers{plain}{PageMarkCentredToPage}
+% END FOOTER
+
+% BEGIN TOC SETUP
+\makeatletter
+\patchcmd{\l@section}
+{\hfil}
+{\leaders\hbox{\normalfont$\m@th\mkern \@dotsep mu\hbox{.}\mkern \@dotsep mu$}\hfill}
+{}{}
+\makeatother
+% END TOC SETUP
+
+% BEGIN PAGE SETUP
+\geometryNormal
+\setlength{\extrarowheight}{3pt}
+% END PAGE SETUP
+
+
+\titleformatCore
+\headerNormal
 
 \begin{document}
+	\pagenumbering{Roman} 
+	
+	\lstset{language=C++,
+		keywordstyle=\color{RoyalBlue},
+		basicstyle=\ttfamily,
+		commentstyle=\ttfamily\itshape\color{gray},
+		stringstyle=\ttfamily,
+		showstringspaces=false,
+		breaklines=true,
+		frameround=ffff,
+		rulecolor=\color{black},
+		autogobble=true
+	}
+	
 	\begin{titlepage}
-		\centering
-		\LARGE\underline{\textbf{Rumble3D User Manual}}
+		\begin{flushright}
+			\includegraphics[width=0.5\textwidth]{resources/hs_kempten_logo}
+		\end{flushright}
+		\begin{center}
+			\topskip0pt
+			\vspace*{\fill}
+			\LARGE\textbf{Rumble3D User Manual}\\		
+			
+			%\LARGE{A 3D Scenegraph built on OpenGL}\\
+			\vspace{1cm}
+			\Large{EVELIN Project}\\
+			\vspace{2cm}
+			
+			
+			\vfill
+			\Large{\textcopyright 2018 Matthias Gensheimer}\\
+			\Large{All Rights Reserved.}
+		\end{center}
+		
 	\end{titlepage}
 	
-	\pagenumbering{Roman}
-	\tableofcontents
+	% Add an empty page
+	\mbox{}
+	\thispagestyle{empty}
 	\newpage
 	
-	\pagenumbering{arabic}
+	\pagebreak
+	
+	\geometryNormal
+	\tableofcontents
+	\geometryNormal
+	\setstretch{1.30}
+	
+	\pagenumbering{arabic} 
+	\section{Introduction}
+
+	
+	\pagebreak
+	\section{First steps}
+
+	
+	\pagebreak
+	\section{Collisions}
+	One major part of this physics engine is the detection and resolution of collisions between rigid bodies.
 		
+		\subsection{Broad phase}
+		
+		
+		
+		\subsection{Narrow phase}
+			\subsubsection{Collision Algorithms}
+			\begin{table}[ht]
+				\begin{tabular}{|l || l | l | l |}
+					\hline
+					& \textbf{Box} & \textbf{Sphere} & \textbf{Plane}\\
+					\hline
+					\hline
+					\textbf{Box} & Box-Box & Box-Sphere & Box-Plane\\
+					\hline
+					\textbf{Sphere} & Sphere-Box & Sphere-Sphere & Sphere-Plane\\
+					\hline
+					\textbf{Plane}& Plane-Box & Plane-Sphere & Plane-Plane\\
+					\hline
+				\end{tabular}
+			\end{table}
 	
-	\begin{table}[ht]
-		\begin{tabular}{l || l | l | l | l | l |}
-			\hline
-			 & \textbf{Box} & \textbf{Sphere} & \textbf{Plane} & \textbf{TriangleMesh} &\\
-			\hline
-			\hline
-			\textbf{Box} & & & & &\\
-			\hline
-			\textbf{Sphere} & & & & &\\
-			\hline
-			\textbf{Plane}& & & & &\\
-			\hline
-			\textbf{TriangleMesh} & & & & &\\
-			\hline
-			\textbf{} & & & & &\\
-			\hline
-		\end{tabular}
-	\end{table}
+		\subsection{Collision resolution}
+	
+	\pagebreak
 	
 	
+	
+	
+	\pagenumbering{alph}
 	\newpage
 	\appendix
 	\listoffigures
 	\listoftables
+	
+	% TODO: glossary
+	
 \end{document}
 
