@@ -301,18 +301,19 @@ contents={\parbox{\layerwidth}{\centering}}
 	
 	\begin{titlepage}
 		\begin{flushright}
-			\includegraphics[width=0.5\textwidth]{resources/hs_kempten_logo}
+			\includegraphics[width=0.45\textwidth]{resources/Evelin_Logo_Final_4fbg}
+			\includegraphics[width=0.45\textwidth]{resources/hs_kempten_logo}
 		\end{flushright}
 		\begin{center}
 			\topskip0pt
 			\vspace*{\fill}
 			\LARGE\textbf{Rumble3D User Manual}\\		
 			
-			%\LARGE{A 3D Scenegraph built on OpenGL}\\
+			%\LARGE{}\\
 			\vspace{1cm}
-			\Large{EVELIN Project}\\
+			%\Large{EVELIN Project}\\
 			\vspace{2cm}
-			
+			\includegraphics[width=0.30\textwidth]{resources/Rumble3DLogo}
 			
 			\vfill
 			\Large{\textcopyright 2018 Matthias Gensheimer}\\
@@ -342,14 +343,21 @@ contents={\parbox{\layerwidth}{\centering}}
 
 	
 	\pagebreak
-	\section{Collisions}
-	One major part of this physics engine is the detection and resolution of collisions between rigid bodies.
+	\section{Collision detection}
+	One major part of this physics engine is the detection and resolution of collisions between rigid bodies. First off all the collision detection system will be explained.
+		
+		% TODO: collision detection pipeline visualization + INPUT/OUTPUT
 		
 		\subsection{Broad phase}
+		The broad phase takes in a number of rigid bodies and outputs a number of \textbf{CollisionPairs}. The task of the broad phase is to eliminate collision pairs, which do not collide. The generated \textbf{CollisionPairs} are only potential contacts, which means that there can be false positives. There should never be false negatives (e.q. eliminated collision pairs, that actually collide).
 		
 		
+		\subsection{Intermediate phase}
+		An intermediate phase takes in a number of \textbf{CollisionPairs} and outputs a (probably) smaller number of \textbf{CollisionPairs}. An intermediate phase behaves just like a broad phase, with the only difference being that multiple intermediate phases can be concatenated.
 		
 		\subsection{Narrow phase}
+		A narrow phase takes a number of \textbf{CollisionPairs} as input and outputs a number of contacts. These contacts are then used in the collision resolution later on.
+		
 			\subsubsection{Collision Algorithms}
 			\begin{table}[ht]
 				\begin{tabular}{|l || l | l | l |}
@@ -366,9 +374,10 @@ contents={\parbox{\layerwidth}{\centering}}
 				\end{tabular}
 			\end{table}
 	
-		\subsection{Collision resolution}
-	
 	\pagebreak
+	\section{Collision resolution}
+	
+	
 	
 	
 	
@@ -382,4 +391,5 @@ contents={\parbox{\layerwidth}{\centering}}
 	% TODO: glossary
 	
 \end{document}
+
 

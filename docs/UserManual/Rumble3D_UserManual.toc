@@ -1,8 +1,9 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}First steps}{2}{section.2}
-\contentsline {section}{\numberline {3}Collisions}{3}{section.3}
+\contentsline {section}{\numberline {3}Collision detection}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}Broad phase}{3}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Narrow phase}{3}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}Collision Algorithms}{3}{subsubsection.3.2.1}
-\contentsline {subsection}{\numberline {3.3}Collision resolution}{3}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.2}Intermediate phase}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Narrow phase}{3}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Collision Algorithms}{3}{subsubsection.3.3.1}
+\contentsline {section}{\numberline {4}Collision resolution}{a}{section.4}
