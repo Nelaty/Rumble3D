@@ -178,7 +178,12 @@ namespace r3
 		 * \brief Get the current acceleration. 
 		 * \return The acceleration.
 		 */
-		glm::vec3 getAcceleration() const;
+		const glm::vec3& getAcceleration() const;
+
+		/**
+		 * \brief Get the acceleration from the last update.
+		 */
+		const glm::vec3& getLastFrameAcceleration() const;
 
 		/** 
 		 * \brief Set the linear damping coefficient. 
@@ -336,7 +341,7 @@ namespace r3
 		/* Accumulators */
 		glm::vec3 m_forceAccumulated;
 		glm::vec3 m_torqueAccumulated;
-		bool m_awake = false;
+		bool m_awake{};
 
 		/**
 		 * \brief Calculate a transformation matrix from given parameters.

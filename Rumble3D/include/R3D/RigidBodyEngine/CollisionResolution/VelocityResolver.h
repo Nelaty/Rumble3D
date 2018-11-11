@@ -23,6 +23,10 @@ namespace r3
 	private:
 		glm::vec3 calculateFrictionlessImpulse(const Contact& contact,
 											   glm::mat3 inverseInertiaTensor[2]) const;
+		glm::vec3 calculateFrictionImpulse(const Contact& contact,
+										   glm::mat3 inverseInertiaTensor[2]) const;
+
+
 		void adjustVelocities(CollisionData& collisionData, real duration);
 
 		void applyVelocityChange(const Contact& contact,

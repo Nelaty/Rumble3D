@@ -73,5 +73,7 @@ namespace r3
 									  const glm::vec3& dTwo,
 									  real twoSize,
 									  bool useOne);
+
+		static constexpr real s_epsilon = real(0.0001);
 	};
 }

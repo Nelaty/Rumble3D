@@ -37,6 +37,6 @@ namespace r3
 		/* Accumulators */
 		glm::vec3 m_forceAccumulated{0.0f};
 		glm::vec3 m_torqueAccumulated{0.0f};
-		bool m_awake{false};
+		bool m_awake{true};
 	};
 }

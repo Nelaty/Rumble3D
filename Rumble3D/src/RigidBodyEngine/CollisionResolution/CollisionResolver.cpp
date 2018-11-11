@@ -33,7 +33,7 @@ namespace r3
 
 	unsigned CollisionResolver::getFilterCount() const
 	{
-		return static_cast<unsigned>(m_filters.size());
+		return unsigned(m_filters.size());
 	}
 
 	void CollisionResolver::clear()
@@ -43,8 +43,8 @@ namespace r3
 
 	CollisionResolver::CollisionResolver()
 	{
-		appendFilter(std::make_unique<VelocityResolver>());
 		appendFilter(std::make_unique<InterpenetrationResolver>());
+		appendFilter(std::make_unique<VelocityResolver>());
 		appendFilter(std::make_unique<FrictionResolver>());
 	}
 }

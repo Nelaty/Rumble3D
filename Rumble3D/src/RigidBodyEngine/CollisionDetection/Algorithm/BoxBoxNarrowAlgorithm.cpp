@@ -3,6 +3,8 @@
 
 #include <glm/gtx/norm.inl>
 
+#include <cassert>
+
 namespace r3
 {
 	BoxBoxNarrowAlgorithm::BoxBoxNarrowAlgorithm()
@@ -22,10 +24,10 @@ namespace r3
 		}
 
 		// Vektor zwischen den Schwerpunkten:
-		const glm::vec3 twoCentre = rbBox2->getTransform().getPosition();
 		const glm::vec3 oneCentre = rbBox1->getTransform().getPosition();
-		glm::vec3 toCentre(0, 0, 0);
-		toCentre = twoCentre - oneCentre;
+		const glm::vec3 twoCentre = rbBox2->getTransform().getPosition();
+		glm::vec3 toCentre = twoCentre - oneCentre;
+
 		// Angenommen,es gibt keinen Kontakt:
 		real pen = R3D_REAL_MAX;
 		unsigned int best = 0xffffff;
@@ -52,7 +54,6 @@ namespace r3
 		// Beste Werte zwischenspeichern, falls es nur noch
 		// fast parallele Kanten gibt, die uns keine Aussage
 		// machen lassen.
-		/// \todo variable is never set???
 		const unsigned bestSingleAxis = best;
 
 
@@ -68,9 +69,6 @@ namespace r3
 
 		// Make sure we've got a result.
 		assert(best != 0xffffff);
-		
-		/// \todo: crash -> best stays 0xffffff
-		//if(best > 8) return false;
 
 		auto* contact = collisionData.getAvailableContact();
 
@@ -103,7 +101,7 @@ namespace r3
 		// Die Achse soll von Box 1 zu Box 2 zeigen.
 		if(glm::dot(axis, toCentre) > real(0))
 		{
-			axis *= real(1);
+			axis *= real(-1);
 		}
 		// Wir kennen die Achse, aber nicht, welche Kanten betroffen sind.
 		// Dazu suchen wir den Mittelpunkt der Kanten (eine Koordinate der
@@ -119,7 +117,7 @@ namespace r3
 				// sonst: eine oder andere Kante.
 			else if(glm::dot(rotationOne[i], axis) > real(0))
 			{
-				ptOnOneEdge[i] = -(ptOnOneEdge[i]);
+				ptOnOneEdge[i] = -ptOnOneEdge[i];
 			}
 
 			if(i == twoAxisIndex)
@@ -129,7 +127,7 @@ namespace r3
 				// sonst: eine oder andere Kante.
 			else if(glm::dot(rotationTwo[i], axis) < real(0))
 			{
-				ptOnTwoEdge[i] = -(ptOnTwoEdge[i]);
+				ptOnTwoEdge[i] = -ptOnTwoEdge[i];
 			}
 		}
 
@@ -137,7 +135,7 @@ namespace r3
 
 		// Transformation in Weltkoordinaten:
 		ptOnOneEdge = rbBox1->getTransform().getPointInWorldSpace(ptOnOneEdge);
-		ptOnTwoEdge = rbBox1->getTransform().getPointInWorldSpace(ptOnTwoEdge);
+		ptOnTwoEdge = rbBox2->getTransform().getPointInWorldSpace(ptOnTwoEdge);
 
 		// Wir haben jetzt einen Punkt und eine Richtung für die kollidierenden
 		// Kanten. Wir suchen jetzt den Punkt wo die beiden Kanten am nächsten
@@ -194,7 +192,7 @@ namespace r3
 										unsigned& smallestCase)
 	{
 		// Fast parallele Achsen nicht berücksichtigen.
-		if(real(glm::length2(axis)) < R3D_REAL_EPSILON)
+		if(real(glm::length2(axis)) < s_epsilon)
 		{
 			return true;
 		}
@@ -255,6 +253,7 @@ namespace r3
 		// Create the contact data
 		contact->setContactNormal(normal);
 		contact->setPenetration(penetration);
+		
 		contact->setContactPoint(rbBox2->getPointInWorldSpace(vertex));
 		contact->setBodyData(rbBox1, rbBox2,
 							 contact->getFriction(), contact->getRestitution());
@@ -279,7 +278,7 @@ namespace r3
 		const real denom = smOne * smTwo - dpOneTwo * dpOneTwo;
 
 		/** Check if edges are parallel */
-		if(real(abs(denom)) < R3D_REAL_EPSILON)
+		if(real(abs(denom)) < s_epsilon)
 		{
 			return useOne ? pOne : pTwo;
 		}

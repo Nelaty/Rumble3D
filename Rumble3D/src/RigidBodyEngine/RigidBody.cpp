@@ -59,62 +59,85 @@ namespace r3
 	                                       const glm::mat4& rotMat)
 	{
 		/// \todo: refactor
+		// Check if this does the same:
+		//
+		// glm::mat3 rot = rotMat;
+		// rot * iit * rot;
+
 		// Der folgende Code wurde von Millington direkt übernommen,
 		// der behauptet, er wäre automatisch optimiert worden:		
-		real t4 = rotMat[0][0] * iit[0][0] +
+		real t4 = 
+			rotMat[0][0] * iit[0][0] +
 			rotMat[1][0] * iit[0][1] +
 			rotMat[2][0] * iit[0][2];
-		real t9 = rotMat[0][0] * iit[1][0] +
+		real t9 = 
+			rotMat[0][0] * iit[1][0] +
 			rotMat[1][0] * iit[1][1] +
 			rotMat[2][0] * iit[1][2];
-		real t14 = rotMat[0][0] * iit[2][0] +
+		real t14 = 
+			rotMat[0][0] * iit[2][0] +
 			rotMat[1][0] * iit[2][1] +
 			rotMat[2][0] * iit[2][2];
-		real t28 = rotMat[0][1] * iit[0][0] +
+		real t28 = 
+			rotMat[0][1] * iit[0][0] +
 			rotMat[1][1] * iit[0][1] +
 			rotMat[2][1] * iit[0][2];
-		real t33 = rotMat[0][1] * iit[1][0] +
+		real t33 = 
+			rotMat[0][1] * iit[1][0] +
 			rotMat[1][1] * iit[1][1] +
 			rotMat[2][1] * iit[1][2];
-		real t38 = rotMat[0][1] * iit[2][0] +
+		real t38 = 
+			rotMat[0][1] * iit[2][0] +
 			rotMat[1][1] * iit[2][1] +
 			rotMat[2][1] * iit[2][2];
-		real t52 = rotMat[0][2] * iit[0][0] +
+		real t52 = 
+			rotMat[0][2] * iit[0][0] +
 			rotMat[1][2] * iit[0][1] +
 			rotMat[2][2] * iit[0][2];
-		real t57 = rotMat[0][2] * iit[1][0] +
+		real t57 = 
+			rotMat[0][2] * iit[1][0] +
 			rotMat[1][2] * iit[1][1] +
 			rotMat[2][2] * iit[1][2];
-		real t62 = rotMat[0][2] * iit[2][0] +
+		real t62 = 
+			rotMat[0][2] * iit[2][0] +
 			rotMat[1][2] * iit[2][1] +
 			rotMat[2][2] * iit[2][2];
 
 
-		iitWorld[0][0] = t4 * rotMat[0][0] +
+		iitWorld[0][0] = 
+			t4 * rotMat[0][0] +
 			t9 * rotMat[1][0] +
 			t14 * rotMat[2][0];
-		iitWorld[1][0] = t4 * rotMat[0][1] +
+		iitWorld[1][0] =
+			t4 * rotMat[0][1] +
 			t9 * rotMat[1][1] +
 			t14 * rotMat[2][1];
-		iitWorld[2][0] = t4 * rotMat[0][2] +
+		iitWorld[2][0] =
+			t4 * rotMat[0][2] +
 			t9 * rotMat[1][2] +
 			t14 * rotMat[2][2];
-		iitWorld[0][1] = t28 * rotMat[0][0] +
+		iitWorld[0][1] = 
+			t28 * rotMat[0][0] +
 			t33 * rotMat[1][0] +
 			t38 * rotMat[2][0];
-		iitWorld[1][1] = t28 * rotMat[0][1] +
+		iitWorld[1][1] = 
+			t28 * rotMat[0][1] +
 			t33 * rotMat[1][1] +
 			t38 * rotMat[2][1];
-		iitWorld[2][1] = t28 * rotMat[0][2] +
+		iitWorld[2][1] = 
+			t28 * rotMat[0][2] +
 			t33 * rotMat[1][2] +
 			t38 * rotMat[2][2];
-		iitWorld[0][2] = t52 * rotMat[0][0] +
+		iitWorld[0][2] = 
+			t52 * rotMat[0][0] +
 			t57 * rotMat[1][0] +
 			t62 * rotMat[2][0];
-		iitWorld[1][2] = t52 * rotMat[0][1] +
+		iitWorld[1][2] = 
+			t52 * rotMat[0][1] +
 			t57 * rotMat[1][1] +
 			t62 * rotMat[2][1];
-		iitWorld[2][2] = t52 * rotMat[0][2] +
+		iitWorld[2][2] = 
+			t52 * rotMat[0][2] +
 			t57 * rotMat[1][2] +
 			t62 * rotMat[2][2];
 	}
@@ -196,6 +219,11 @@ namespace r3
 		return m_torqueAccumulated;
 	}
 
+	const glm::vec3& RigidBody::getLastFrameAcceleration() const
+	{
+		return m_lastFrameAcceleration;
+	}
+
 	void RigidBody::setLinearDamping(const real linearDamping)
 	{
 		m_linearDamping = linearDamping;
@@ -265,7 +293,7 @@ namespace r3
 		*inverseInertiaTensorWorld = m_inverseInertiaTensorWorld;
 	}
 
-	glm::vec3 RigidBody::getAcceleration() const
+	const glm::vec3& RigidBody::getAcceleration() const
 	{
 		return m_acceleration;
 	}
@@ -358,13 +386,16 @@ namespace r3
 
 	void RigidBody::integrate(const real duration)
 	{
-		calculateDerivedData();
+		if(!m_awake) return;
+
+		// calculateDerivedData();
+
 		// Lineare Beschleunigung:
 		m_lastFrameAcceleration = m_acceleration;
 		m_lastFrameAcceleration += m_inverseMass * m_forceAccumulated;
 
 		// Winkelbeschleunigung aus Drehmoment:
-		const auto angularAcceleration = m_inverseMass * m_inverseInertiaTensorWorld * m_torqueAccumulated;
+		const auto angularAcceleration = m_inverseInertiaTensorWorld * m_torqueAccumulated;
 
 		// Lineare Geschwindigkeit aus Beschleunigung und Impuls:
 		m_velocity += duration * m_lastFrameAcceleration;
@@ -375,20 +406,31 @@ namespace r3
 		// Dämpfung:
 		m_velocity *= pow(m_linearDamping, duration);
 		m_rotation *= pow(m_angularDamping, duration);
-		//m_rotation *= real(-1.0); //Da Rotation falsch herum in Vektoria
-
+	
 		// Positionsanpassung linear:
 		m_transform.translate(duration * m_velocity);
 
 		// Positionsanpassung Drehung:
-		//m_orientation.updateOrientationByAngularVelocity(m_rotation, duration);		
+		//m_orientation.updateOrientationByAngularVelocity(m_rotation, duration);	
+
+		//glm::quat rot = glm::quat(0, m_rotation * duration);
 		m_transform.rotate(glm::quat(0, m_rotation * duration) * glm::quat_cast(m_transform.getRotation()) * real(0.5));
 
 		// Normalisierung der Orientierung und Update der abgeleiteten Daten:
 		calculateDerivedData();
 
 		clearAccumulators();
-		//m_rotation *= -1.0; //Wieder zurückrechnen. Da Rotation falsch herum in Vektoria
+
+		/*if(canSleep) {
+			real currentMotion = velocity.scalarProduct(velocity) +
+				rotation.scalarProduct(rotation);
+
+			real bias = real_pow(0.5, duration);
+			motion = bias * motion + (1 - bias)*currentMotion;
+
+			if(motion < sleepEpsilon) setAwake(false);
+			else if(motion > 10 * sleepEpsilon) motion = 10 * sleepEpsilon;
+		}*/
 	}
 
 	void RigidBody::addVelocity(const glm::vec3& deltaVelocity)

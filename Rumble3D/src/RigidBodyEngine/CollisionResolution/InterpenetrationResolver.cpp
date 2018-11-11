@@ -28,13 +28,13 @@ namespace r3
 	void InterpenetrationResolver::adjustPositions(CollisionData& collisionData,
 	                                               const real timeDelta)
 	{
+		glm::vec3 linearChange[2]{};
+		glm::vec3 angularChange[2]{};
+
 		// iteratively resolve interpenetrations in order of severity.
 		m_iterationsUsed = 0;
 		while (m_iterationsUsed < m_iterations)
 		{
-			glm::vec3 linearChange[2];
-			glm::vec3 angularChange[2];
-
 			// Find biggest penetration		
 			auto& data = collisionData.getData();
 			auto maxIndex = -1;
@@ -69,12 +69,12 @@ namespace r3
 				auto& it = data[i];
 				for (auto b = 0; b < 2; b++)
 				{
-					auto* first = b == 0 ? it.getFirst() : it.getSecond();
+					auto* first = it.getBody(b);
 					if (!first->hasFiniteMass()) continue;
 
 					for (auto d = 0; d < 2; ++d)
 					{
-						auto* second = d == 0 ? contact.getFirst() : contact.getSecond();
+						auto* second = contact.getBody(d);
 						if (first != second) continue;
 
 						auto deltaPosition = linearChange[d] +
@@ -84,7 +84,7 @@ namespace r3
 						// dealing with the second body in a contact
 						// and negative otherwise (because we're
 						// subtracting the resolution)..
-						auto direction = b ? static_cast<real>(1.0f) : static_cast<real>(-1);
+						auto direction = (b == 1) ? real(1) : real(-1);
 						auto deltaPenetration = glm::dot(deltaPosition, it.getContactNormal()) * direction;
 						it.setPenetration(it.getPenetration() + deltaPenetration);
 					}
@@ -100,17 +100,17 @@ namespace r3
 	{
 		const auto penetration = contact.getPenetration();
 
-		const auto angularLimit = static_cast<real>(0.2f);
-		real angularMove[2] = {0.0f, 0.0f};
-		real linearMove[2] = {0.0f, 0.0f};
+		const auto angularLimit = real(0.2);
+		real angularMove[2]{};
+		real linearMove[2]{};
 
-		real totalInertia = 0.0f;
-		real linearInertia[2] = {0.0f, 0.0f};
-		real angularInertia[2] = {0.0f, 0.0f};
+		real totalInertia = 0;
+		real linearInertia[2]{};
+		real angularInertia[2]{};
 
 		// We need to work out the inertia of each object in the direction
 		// of the contact normal, due to angular inertia only.
-		for (unsigned i = 0; i < 2; i++)
+		for (unsigned i = 0; i < 2; ++i)
 		{
 			auto* body = contact.getBody(i);
 			if (body->hasFiniteMass())
@@ -123,8 +123,10 @@ namespace r3
 				glm::vec3 angularInertiaWorld = glm::cross(contact.getRelativeContactPosition(i),
 				                                           contact.getContactNormal());
 				angularInertiaWorld = inverseInertiaTensor * angularInertiaWorld;
-				angularInertiaWorld = glm::cross(angularInertiaWorld, contact.getRelativeContactPosition(i));
-				angularInertia[i] = glm::dot(angularInertiaWorld, contact.getContactNormal());
+				angularInertiaWorld = glm::cross(angularInertiaWorld, 
+												 contact.getRelativeContactPosition(i));
+				angularInertia[i] = glm::dot(angularInertiaWorld, 
+											 contact.getContactNormal());
 
 				// The linear component is simply the inverse mass
 				linearInertia[i] = body->getInverseMass();
@@ -139,14 +141,14 @@ namespace r3
 		}
 
 		// Loop through again calculating and applying the changes
-		for (unsigned i = 0; i < 2; i++)
+		for (unsigned i = 0; i < 2; ++i)
 		{
 			auto* body = contact.getBody(i);
 			if (body->hasFiniteMass())
 			{
 				// The linear and angular movements required are in proportion to
-				// the two inverse inertias.
-				const auto sign = (i == 0) ? static_cast<real>(1.0f) : static_cast<real>(-1);
+				// the two inverse inertias. 
+				const auto sign = (i == 0) ? real(1) : real(-1);
 				angularMove[i] =
 					sign * penetration * (angularInertia[i] / totalInertia);
 				linearMove[i] =
@@ -155,8 +157,8 @@ namespace r3
 				// To avoid angular projections that are too great (when mass is large
 				// but inertia tensor is small) limit the angular move.
 				glm::vec3 projection = contact.getRelativeContactPosition(i);
-				projection += glm::dot(-contact.getRelativeContactPosition(i), contact.getContactNormal()) * contact.
-					getContactNormal();
+				projection += glm::dot(-contact.getRelativeContactPosition(i), 
+									   contact.getContactNormal()) * contact.getContactNormal();
 
 				// Use the small angle approximation for the sine of the angle (i.e.
 				// the magnitude would be sine(angularLimit) * projection.magnitude
@@ -182,7 +184,7 @@ namespace r3
 				if (angularMove[i] == 0)
 				{
 					// Easy case - no angular movement means no rotation.
-					angularChange[i] = glm::vec3(static_cast<real>(0.0f));
+					angularChange[i] = glm::vec3(0);
 				}
 				else
 				{
@@ -194,8 +196,9 @@ namespace r3
 					body->getInverseInertiaTensorWorld(&inverseInertiaTensor);
 
 					// Work out the direction we'd need to rotate to achieve that
-					angularChange[i] = (angularMove[i] / angularInertia[i]) *
-						inverseInertiaTensor * targetAngularDirection;
+					angularChange[i] =
+						inverseInertiaTensor * targetAngularDirection *
+						(angularMove[i] / angularInertia[i]);
 				}
 
 				// Velocity change is easier - it is just the linear movement
@@ -211,8 +214,8 @@ namespace r3
 				// And the change in orientation
 				auto q = body->getOrientation();
 				//q.addScaledVector(angularChange[i], static_cast<real>(1.0)); // ACHTUNG in RegisterForce... *0,5!!!
-				q += (glm::quat(static_cast<real>(0.0f), angularChange[i] * static_cast<real>(1.0)) * q * static_cast<
-					real>(0.5f));
+				q += glm::quat(0, angularChange[i]) * q * real(0.5f);
+
 
 				body->setOrientation(q);
 
@@ -221,7 +224,7 @@ namespace r3
 				// data. Otherwise the resolution will not change the position
 				// of the object, and the next collision detection round will
 				// have the same penetration.
-				//if (!m_body[i]->getAwake()) m_body[i]->calculateDerivedData();
+				if (!body->isAwake()) body->calculateDerivedData();
 			}
 		}
 	}

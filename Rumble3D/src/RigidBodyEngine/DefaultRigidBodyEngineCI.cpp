@@ -25,6 +25,7 @@ namespace r3
 		auto& rigidBodies = m_rigidBodyWorld->getRigidBodies();
 		for(auto& rb : rigidBodies)
 		{
+			rb->clearAccumulators();
 			rb->calculateDerivedData();
 		}
 	}

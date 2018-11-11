@@ -24,8 +24,6 @@ namespace r3
 
 	RigidBody* Contact::getBody(const int index) const
 	{
-		assert(index == 0 || index == 1);
-
 		return m_pair[index];
 	}
 
@@ -145,15 +143,12 @@ namespace r3
 		// m_contactToWorld.transformTranspose(velocity);
 		auto contactVelocity = glm::transpose(m_contactToWorld) * velocity;
 
-		return contactVelocity;
-
-		/* Erst relevant, wenn lastFrame berücksichtigt wird.
 		// Calculate the ammount of velocity that is due to forces without
 		// reactions.
 		glm::vec3 accVelocity = thisBody->getLastFrameAcceleration() * duration;
 
 		// Calculate the velocity in contact-coordinates.
-		accVelocity = contactToWorld.transformTranspose(accVelocity);
+		accVelocity = glm::transpose(m_contactToWorld) * accVelocity;
 
 		// We ignore any component of acceleration in the contact normal
 		// direction, we are only interested in planar acceleration
@@ -165,43 +160,36 @@ namespace r3
 
 		// And return it
 		return contactVelocity;
-		*/
 	}
 
 	void Contact::calculateDesiredDeltaVelocity(const real duration)
 	{
-		/* Hier Code wenn isAwake implementiert und lastFrame verwendet wird:
+		auto first = m_pair.getFirst();
+		auto second = m_pair.getSecond();
 
 		// Calculate the acceleration induced velocity accumulated this frame
 		real velocityFromAcc = 0;
-
-		if (body[0]->getAwake())
+		if (first->isAwake())
 		{
-		velocityFromAcc +=
-		body[0]->getLastFrameAcceleration() * duration * contactNormal;
+			velocityFromAcc += duration *
+				glm::dot(first->getLastFrameAcceleration(), m_contactNormal);
 		}
-
-		if (body[1] && body[1]->getAwake())
+		if(second->hasFiniteMass() && second->isAwake())
 		{
-		velocityFromAcc -=
-		body[1]->getLastFrameAcceleration() * duration * contactNormal;
+			velocityFromAcc -= duration *
+				glm::dot(second->getLastFrameAcceleration(), m_contactNormal);
 		}
-
-		*/
 
 		// If the velocity is very slow, limit the restitution
 		auto thisRestitution = m_restitution;
 		if(abs(m_closingVelocity.x) < s_velocityLimit)
 		{
-			thisRestitution = static_cast<real>(0.0f);
+			thisRestitution = 0;
 		}
 
-		m_desiredDeltaVelocity =
-			-m_closingVelocity.x
-			- thisRestitution * m_closingVelocity.x; //- velocityFromAcc);
-
-
-													 // -thisRestitution * m_closingVelocity.x - velocityFromAcc);
+		m_desiredDeltaVelocity = 
+			-m_closingVelocity.x -
+			thisRestitution * (m_closingVelocity.x - velocityFromAcc);
 	}
 
 	const glm::vec3& Contact::getRelativeContactPosition(const int index) const
@@ -218,7 +206,7 @@ namespace r3
 
 	void Contact::calculateContactBasis()
 	{
-		glm::vec3 contactTangent[2];
+		glm::vec3 contactTangent[2]{};
 		const auto contactNormalX = m_contactNormal.x;
 		const auto contactNormalY = m_contactNormal.y;
 		const auto contactNormalZ = m_contactNormal.z;
@@ -227,8 +215,8 @@ namespace r3
 		if(abs(contactNormalX) > abs(contactNormalY))
 		{
 			// Scaling factor to ensure the results are normalized
-			const auto s = static_cast<real>(1.0f) / sqrt(contactNormalZ*contactNormalZ +
-														  contactNormalX * contactNormalX);
+			const auto s = real(1) / sqrt(contactNormalZ * contactNormalZ +
+										  contactNormalX * contactNormalX);
 
 			// The new X-axis is at right angles to the world Y-axis
 			contactTangent[0].x = s * contactNormalZ;
@@ -237,14 +225,16 @@ namespace r3
 
 			// The new Y-axis is at right angles to the new X- and Z- axes
 			contactTangent[1].x = contactNormalY * contactTangent[0].x;
-			contactTangent[1].y = contactNormalZ * contactTangent[0].x - contactNormalX * contactTangent[0].z;
+			contactTangent[1].y = 
+				contactNormalZ * contactTangent[0].x -
+				contactNormalX * contactTangent[0].z;
 			contactTangent[1].z = -contactNormalY * contactTangent[0].x;
 		}
 		else
 		{
 			// Scaling factor to ensure the results are normalized
-			const real s = static_cast<real>(1.0) / sqrt(contactNormalZ*contactNormalZ +
-														 contactNormalY * contactNormalY);
+			const real s = real(1) / sqrt(contactNormalZ * contactNormalZ +
+										  contactNormalY * contactNormalY);
 
 			// The new X-axis is at right angles to the world X-axis
 			contactTangent[0].x = 0;
@@ -252,7 +242,9 @@ namespace r3
 			contactTangent[0].z = s * contactNormalY;
 
 			// The new Y-axis is at right angles to the new X- and Z- axes
-			contactTangent[1].x = contactNormalY * contactTangent[0].z - contactNormalZ * contactTangent[0].y;
+			contactTangent[1].x = 
+				contactNormalY * contactTangent[0].z - 
+				contactNormalZ * contactTangent[0].y;
 			contactTangent[1].y = -contactNormalX * contactTangent[0].z;
 			contactTangent[1].z = contactNormalX * contactTangent[0].y;
 		}
