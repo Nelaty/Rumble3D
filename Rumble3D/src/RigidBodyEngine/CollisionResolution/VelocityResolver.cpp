@@ -190,10 +190,13 @@ namespace r3
 				return;
 			}
 
+
+
 			// Match the awake state at the contact
 			//c[index].matchAwakeState();
 
 			auto& contact = data[maxIndex];
+			contact.matchAwakeState();
 			applyVelocityChange(contact, velocityChange, rotationChange);
 
 			// With the change in velocity of the two bodies, the update of

@@ -242,6 +242,15 @@ namespace r3
 		void setAwake(bool awake);
 
 		/**
+		 * \brief Check if this body can go to sleep at any time.
+		 */
+		bool canSleep() const;
+		/**
+		 * \brief Set whether the body can got to sleep at any time.
+		 */
+		void setCanSleep(bool canSleep);
+
+		/**
 		 * \brief Set the physics material. 
 		 * \param material The new physics material.
 		 */
@@ -331,7 +340,7 @@ namespace r3
 		
 		glm::vec3 m_velocity;
 		glm::vec3 m_acceleration;
-		glm::vec3 m_lastFrameAcceleration; // Beschleunigung im letzten Frame ???
+		glm::vec3 m_lastFrameAcceleration;
 		glm::vec3 m_rotation;
 
 		glm::mat4 m_transformationMatrix;
@@ -341,7 +350,12 @@ namespace r3
 		/* Accumulators */
 		glm::vec3 m_forceAccumulated;
 		glm::vec3 m_torqueAccumulated;
+
 		bool m_awake{};
+
+		real m_motion;
+		real m_sleepEpsilon;
+		bool m_canSleep{};
 
 		/**
 		 * \brief Calculate a transformation matrix from given parameters.

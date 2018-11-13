@@ -7,7 +7,8 @@ namespace r3
 														 const real yHalf,
 														 const real zHalf)
 	{
-		const auto scalar = mass / static_cast<real>(48.0f);
+		auto scalar = mass / static_cast<real>(48.0f);
+		scalar = real(0.3) * mass;
 
 		const auto x = xHalf * xHalf;
 		const auto y = yHalf * yHalf;

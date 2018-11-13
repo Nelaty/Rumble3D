@@ -14,9 +14,10 @@ namespace r3
 	BoxSphereNarrowAlgorithm::~BoxSphereNarrowAlgorithm()
 	= default;
 
-	bool BoxSphereNarrowAlgorithm::generateContactDataImpl(RigidBody* rbBox, CollisionBox* box,
-														   RigidBody* rbSphere, CollisionSphere* sphere, 
-														   CollisionData& collisionData)
+	bool BoxSphereNarrowAlgorithm::generateContactDataImpl(
+		RigidBody* rbBox, CollisionBox* box,
+		RigidBody* rbSphere, CollisionSphere* sphere, 
+		CollisionData& collisionData)
 	{
 		// Wenn Kontakt-Array voll ist, nichts mehr zu tun:
 		if(collisionData.getContactsLeft() <= 0)
@@ -26,18 +27,18 @@ namespace r3
 
 		// Kugelmittelpunkt in Quaderkoordinaten transformieren:
 		glm::vec3 centre = rbSphere->getTransform().getPosition();
-		//glm::vec3 relCentre = box.GetTransform().transformInverse(centre);
+		//glm::vec3 relCentre = rbBox->getTransform().transformInverse(centre);
 		// TODO: test result
 		const auto& boxTransform = rbBox->getTransform();
 		glm::vec3 relCentre = glm::transpose(boxTransform.getRotation()) *
 			(centre - boxTransform.getPosition());
 
 		// Early out check 
-		const auto boxDim = box->getHalfSize();
-
-		if(abs(relCentre.x) - sphere->getRadius() > boxDim.x ||
-		   abs(relCentre.y) - sphere->getRadius() > boxDim.y ||
-		   abs(relCentre.z) - sphere->getRadius() > boxDim.z)
+		const auto& boxDim = box->getHalfSize();
+		const auto radius = sphere->getRadius();
+		if(abs(relCentre.x) - radius > boxDim.x ||
+		   abs(relCentre.y) - radius > boxDim.y ||
+		   abs(relCentre.z) - radius > boxDim.z)
 		{
 			return false;
 		}
@@ -59,7 +60,7 @@ namespace r3
 
 		// Prüfe, ob ein Kontakt vorliegt:
 		const auto distance = glm::length2(closestPt - relCentre);
-		if(distance > sphere->getRadius() * sphere->getRadius())
+		if(distance > radius * radius)
 		{
 			return false;
 		}
@@ -69,11 +70,10 @@ namespace r3
 		//	glm::vec3(box.getTransform() * glm::vec4(closestPt, static_cast<real>(1.0f)));
 
 		const auto closestPtWorld = rbBox->getPointInWorldSpace(closestPt);
-	
+		//glm::vec3 closestPtWorld = box->getTransform() * glm::vec4(closestPt, 1);
 
 		auto* contact = collisionData.getAvailableContact();
-		glm::vec3 tmp = (closestPtWorld - centre);
-		tmp = glm::normalize(tmp);
+		glm::vec3 tmp = glm::normalize(closestPtWorld - centre);
 		contact->setContactNormal(tmp);
 		contact->setContactPoint(closestPtWorld);
 		contact->setPenetration(sphere->getRadius() - sqrt(distance));

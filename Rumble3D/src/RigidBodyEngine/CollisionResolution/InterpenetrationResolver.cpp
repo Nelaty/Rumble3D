@@ -60,6 +60,7 @@ namespace r3
 			//c[index].matchAwakeState();
 
 			auto& contact = data[maxIndex];
+			contact.matchAwakeState();
 			applyPositionChange(linearChange, angularChange, contact);
 
 			// Again this action may have changed the penetration of other

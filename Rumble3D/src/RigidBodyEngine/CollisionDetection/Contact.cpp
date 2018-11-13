@@ -204,6 +204,23 @@ namespace r3
 		return m_contactToWorld;
 	}
 
+	void Contact::matchAwakeState()
+	{
+		if(m_pair.getSecond()->hasFiniteMass())
+		{
+			return;
+		}
+
+		auto first = m_pair.getFirst();
+		auto second = m_pair.getSecond();
+
+		if(first->isAwake() || second->isAwake())
+		{
+			m_pair.getFirst()->setAwake(true);
+			m_pair.getSecond()->setAwake(true);
+		}
+	}
+
 	void Contact::calculateContactBasis()
 	{
 		glm::vec3 contactTangent[2]{};

@@ -5,6 +5,9 @@
 #include <cassert>
 #include <glm/gtc/matrix_transform.inl>
 
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/quaternion.hpp>
+
 namespace r3
 {
 	RigidBody::RigidBody()
@@ -42,16 +45,20 @@ namespace r3
 		m_forceAccumulated = definition.m_forceAccumulated;
 		m_torqueAccumulated = definition.m_torqueAccumulated;
 		m_awake = definition.m_awake;
+
+		m_motion = 0;
+		m_sleepEpsilon = real(0.3);
+		m_canSleep = false;
 	}
 
 	void RigidBody::calculateTransformationMatrix(glm::mat4& transformationMatrix,
 	                                              const glm::vec3& position,
 	                                              const glm::mat3& orientation)
 	{
+		//transformationMatrix = orientation;
+		
 		transformationMatrix = orientation;
 		transformationMatrix = glm::translate(transformationMatrix, position);
-
-		//transformationMatrix[3] += glm::vec4(position, static_cast<real>(1.0f));
 	}
 
 	void RigidBody::transformInertiaTensor(glm::mat3& iitWorld,
@@ -164,7 +171,13 @@ namespace r3
 
 	void RigidBody::calculateDerivedData()
 	{
-		const auto orientation = m_transform.getRotation();
+		/// \bug: Potentially critical bug
+		/// Orientation might not be normalized
+		auto orientation = m_transform.getRotation();
+	/*	auto quat = glm::quat_cast(orientation);
+		glm::normalize(quat);
+		orientation = glm::toMat3(quat);*/
+
 		calculateTransformationMatrix(m_transformationMatrix, m_transform.getPosition(), orientation);
 		transformInertiaTensor(m_inverseInertiaTensorWorld,
 		                       m_inverseInertiaTensor,
@@ -185,7 +198,7 @@ namespace r3
 	{
 		assert(mass > 0.0f);
 		m_mass = mass;
-		m_inverseMass = static_cast<real>(1.0f) / mass;
+		m_inverseMass = real(1) / mass;
 	}
 
 	real RigidBody::getMass() const
@@ -195,7 +208,7 @@ namespace r3
 
 	void RigidBody::setInverseMass(const real inverseMass)
 	{
-		m_mass = inverseMass != 0.0f ? 1.0f / inverseMass : R3D_REAL_MAX;
+		m_mass = inverseMass != real(0) ? real(1) / inverseMass : R3D_REAL_MAX;
 		m_inverseMass = inverseMass;
 	}
 
@@ -206,7 +219,7 @@ namespace r3
 
 	bool RigidBody::hasFiniteMass() const
 	{
-		return m_inverseMass > 0.0f;
+		return m_inverseMass > real(0);
 	}
 
 	glm::vec3 RigidBody::getForceAccumulated() const
@@ -336,6 +349,30 @@ namespace r3
 	void RigidBody::setAwake(const bool awake)
 	{
 		m_awake = awake;
+		if(awake)
+		{
+			m_motion = m_sleepEpsilon * 2.0f;
+		}
+		else
+		{
+			m_velocity = glm::vec3(0);
+			m_rotation = glm::vec3(0);
+		}
+	}
+
+	bool RigidBody::canSleep() const
+	{
+		return m_canSleep;
+	}
+
+	void RigidBody::setCanSleep(const bool canSleep)
+	{
+		m_canSleep = canSleep;
+
+		if(!m_canSleep)
+		{
+			setAwake(true);
+		}
 	}
 
 	void RigidBody::setPhysicsMaterial(PhysicsMaterial* material)
@@ -421,16 +458,24 @@ namespace r3
 
 		clearAccumulators();
 
-		/*if(canSleep) {
-			real currentMotion = velocity.scalarProduct(velocity) +
-				rotation.scalarProduct(rotation);
+		if(m_canSleep)
+		{
+			real currentMotion = 
+				glm::dot(m_velocity, m_velocity) +
+				glm::dot(m_rotation, m_rotation);
 
-			real bias = real_pow(0.5, duration);
-			motion = bias * motion + (1 - bias)*currentMotion;
+			real bias = pow(real(0.5), duration);
+			m_motion = bias * m_motion + (real(1) - bias)*currentMotion;
 
-			if(motion < sleepEpsilon) setAwake(false);
-			else if(motion > 10 * sleepEpsilon) motion = 10 * sleepEpsilon;
-		}*/
+			if(m_motion < m_sleepEpsilon)
+			{
+				setAwake(false);
+			}
+			else if(m_motion > real(10) * m_sleepEpsilon)
+			{
+				m_motion = real(10) * m_sleepEpsilon;
+			}
+		}
 	}
 
 	void RigidBody::addVelocity(const glm::vec3& deltaVelocity)
@@ -443,3 +488,6 @@ namespace r3
 		m_rotation += deltaRotation;
 	}
 }
+
+
+#undef GLM_ENABLE_EXPERIMENTAL

@@ -141,6 +141,8 @@ namespace r3
 		 */
 		const glm::mat3& getContactToWorld() const;
 
+		void matchAwakeState();
+
 	private:
 		glm::vec3 calculateLocalVelocity(unsigned bodyIndex, real duration);
 

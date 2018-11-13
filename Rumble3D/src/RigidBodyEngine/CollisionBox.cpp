@@ -18,7 +18,7 @@ namespace r3
 	CollisionBox::~CollisionBox()
 		= default;
 
-	glm::vec3 CollisionBox::getHalfSize() const
+	const glm::vec3& CollisionBox::getHalfSize() const
 	{
 		return m_halfSizes;
 	}

@@ -31,7 +31,7 @@ namespace r3
 		 * \brief Get the half sizes of the box.
 		 * \return The half sizes.
 		 */
-		glm::vec3 getHalfSize() const;
+		const glm::vec3& getHalfSize() const;
 
 	private:
 		glm::vec3 m_halfSizes;
