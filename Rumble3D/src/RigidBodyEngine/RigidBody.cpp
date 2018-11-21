@@ -306,6 +306,11 @@ namespace r3
 		*inverseInertiaTensorWorld = m_inverseInertiaTensorWorld;
 	}
 
+	const glm::mat3& RigidBody::getInverseInertiaTensorWorld() const
+	{
+		return m_inverseInertiaTensorWorld;
+	}
+
 	const glm::vec3& RigidBody::getAcceleration() const
 	{
 		return m_acceleration;
@@ -416,7 +421,7 @@ namespace r3
 		m_torqueAccumulated += torque;
 	}
 
-	glm::mat4 RigidBody::getTransformationMatrix() const
+	const glm::mat4& RigidBody::getTransformationMatrix() const
 	{
 		return m_transformationMatrix;
 	}

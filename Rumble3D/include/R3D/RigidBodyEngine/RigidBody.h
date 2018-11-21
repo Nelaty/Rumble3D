@@ -211,13 +211,17 @@ namespace r3
 		 * \brief Get the current transformation matrix. 
 		 * \return The transformation matrix.
 		 */
-		glm::mat4 getTransformationMatrix() const;
+		const glm::mat4& getTransformationMatrix() const;
 		/**
 		 * \brief Get the inverted inertia tensor in world coordinates.
 		 * \param[out] inverseInertiaTensorWorld Contains the inverted
 		 * inertia tensor.
 		 */
 		void getInverseInertiaTensorWorld(glm::mat3* inverseInertiaTensorWorld) const;
+		/**
+		 * \brief Get the inverted inertia tensor in world coordinates.
+		 */
+		const glm::mat3& getInverseInertiaTensorWorld() const;
 
 		/**
 		 * \brief Additively increase velocity.

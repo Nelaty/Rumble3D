@@ -207,14 +207,14 @@ namespace r3
 				auto& it = data[i];
 
 				// Check each body in the contact
-				for(unsigned b = 0; b < 2; b++)
+				for(unsigned b = 0; b < 2; ++b)
 				{
 					auto* first = it.getBody(b);
 					if(!first->hasFiniteMass()) continue;
 					
 					// Check for a match with each body in the newly
 					// resolved contact
-					for(unsigned d = 0; d < 2; d++)
+					for(unsigned d = 0; d < 2; ++d)
 					{
 						auto* second = contact.getBody(d);
 						if(first != second) continue;
@@ -245,10 +245,10 @@ namespace r3
 
 		// Zwischenspeichern der inversen Trägheitstensoren in Weltkoordinaten
 		glm::mat3 inverseInertiaTensor[2]{};
-		first->getInverseInertiaTensorWorld(&inverseInertiaTensor[0]);
+		inverseInertiaTensor[0] = first->getInverseInertiaTensorWorld();
 		if(second->hasFiniteMass())
 		{
-			second->getInverseInertiaTensorWorld(&inverseInertiaTensor[1]);
+			inverseInertiaTensor[1] = second->getInverseInertiaTensorWorld();
 		}
 
 		// Berechnung des Impulses

@@ -22,8 +22,8 @@ namespace r3
 		void setMassInfinite();
 		real m_inverseMass{0.0f};
 		
-		real m_linearDamping{0.999f};
-		real m_angularDamping{0.999f};
+		real m_linearDamping{0.95f};
+		real m_angularDamping{0.99f};
 
 		glm::vec3 m_velocity{0.0f};
 		glm::vec3 m_acceleration{0.0f};

@@ -45,19 +45,10 @@ namespace r3
 
 		// Clamp each coordinate to the box.
 		glm::vec3 closestPt{};
-
-		auto distX = relCentre.x;
-		distX = glm::clamp(distX, -boxDim.x, boxDim.x);
-		closestPt.x = distX;
-
-		auto distY = relCentre.y;
-		distY = glm::clamp(distY, -boxDim.y, boxDim.y);
-		closestPt.y = distY;
-
-		auto distZ = relCentre.z;
-		distZ = glm::clamp(distZ, -boxDim.z, boxDim.z);
-		closestPt.z = distZ;
-
+		closestPt.x = glm::clamp(relCentre.x, -boxDim.x, boxDim.x);
+		closestPt.y = glm::clamp(relCentre.y, -boxDim.y, boxDim.y);
+		closestPt.z = glm::clamp(relCentre.z, -boxDim.z, boxDim.z);
+		
 		// Prüfe, ob ein Kontakt vorliegt:
 		const auto distance = glm::length2(closestPt - relCentre);
 		if(distance > radius * radius)

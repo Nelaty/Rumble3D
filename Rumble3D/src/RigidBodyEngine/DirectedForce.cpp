@@ -24,6 +24,7 @@ namespace r3
 		// Rotate forceLocal by quaternion
 		forceLocal = quaternion * forceLocal;
 
+		/// \todo: add force at body point doesn't create rotational forces.
 		body->addForceAtBodyPoint(forceLocal, attackPoint);
 		body->addRotation(forceLocal);
 	}
