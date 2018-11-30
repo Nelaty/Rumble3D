@@ -255,6 +255,9 @@
     <ClCompile Include="src\ParticleEngine\IParticleForceGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\NullAlgorithm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\R3D\RigidBodyEngine\AnchoredSpring.h">
@@ -510,6 +513,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\Utility\FixedSizeContainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\NullAlgorithm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

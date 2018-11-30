@@ -8,6 +8,7 @@
 namespace r3
 {
 	class INarrowPhaseAlgorithm;
+	class NullAlgorithm;
 
 	/**
 	 * \brief Describes a collision algorithm for every collision
@@ -56,6 +57,9 @@ namespace r3
 		 * matrix.
 		 */
 		void init();
+
+		/** Null-object: Algorithm that does nothing. */
+		NullAlgorithm* m_nullAlgorithm{};
 
 		static constexpr int s_algCount = R3D_PRIMITIVE_TYPE_COUNT;
 		std::array<std::array<INarrowPhaseAlgorithm*, s_algCount>, s_algCount> m_algorithms{};
