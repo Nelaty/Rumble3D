@@ -13,9 +13,7 @@ namespace r3
 	}
 
 	CollisionAlgorithmMatrix::~CollisionAlgorithmMatrix()
-	{
-		delete m_nullAlgorithm;
-	}
+	= default;
 
 	void CollisionAlgorithmMatrix::setAlgorithm(INarrowPhaseAlgorithm* algorithm,
 	                                            const CollisionPrimitiveType firstShape,
@@ -39,22 +37,21 @@ namespace r3
 	                                          const CollisionPrimitiveType secondShape)
 	{
 		auto algorithm = m_algorithms[firstShape][secondShape];
-		if(algorithm != m_nullAlgorithm)
+		if(algorithm != m_nullAlgorithm.get())
 		{
 			delete algorithm;
-			m_algorithms[firstShape][secondShape] = m_nullAlgorithm;
+			m_algorithms[firstShape][secondShape] = m_nullAlgorithm.get();
 		}
 	}
 
 	void CollisionAlgorithmMatrix::init()
 	{
-		/// \todo: replace nullptr with NullAlgorithm
-		//m_nullAlgorithm = nullptr;// new NullAlgorithm();
+		m_nullAlgorithm = std::make_unique<NullAlgorithm>();
 		for(int i = 0; i < s_algCount; ++i)
 		{
 			for(int j = 0; j < s_algCount; ++j)
 			{
-				m_algorithms[i][j] = m_nullAlgorithm;
+				m_algorithms[i][j] = m_nullAlgorithm.get();
 			}
 		}
 	}

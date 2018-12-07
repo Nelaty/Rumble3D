@@ -3,6 +3,7 @@
 
 #include "R3D/Common/Common.h"
 
+#include <memory>
 #include <array>
 
 namespace r3
@@ -59,7 +60,7 @@ namespace r3
 		void init();
 
 		/** Null-object: Algorithm that does nothing. */
-		NullAlgorithm* m_nullAlgorithm{};
+		std::shared_ptr<NullAlgorithm> m_nullAlgorithm{};
 
 		static constexpr int s_algCount = R3D_PRIMITIVE_TYPE_COUNT;
 		std::array<std::array<INarrowPhaseAlgorithm*, s_algCount>, s_algCount> m_algorithms{};
