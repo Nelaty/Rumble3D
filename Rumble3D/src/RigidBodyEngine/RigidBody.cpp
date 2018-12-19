@@ -453,12 +453,8 @@ namespace r3
 		m_transform.translate(duration * m_velocity);
 
 		// Positionsanpassung Drehung:
-		//m_orientation.updateOrientationByAngularVelocity(m_rotation, duration);	
-
-		//m_transform.rotate(glm::quat(0, m_rotation * duration) * );
+		m_transform.updateOrientationByAngularVelocity(m_rotation, duration);
 		
-		m_transform.rotate(glm::quat(0, m_rotation * duration) * glm::quat_cast(m_transform.getRotationMat()) * real(0.5));
-
 		// Normalisierung der Orientierung und Update der abgeleiteten Daten:
 		calculateDerivedData();
 

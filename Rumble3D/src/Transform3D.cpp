@@ -49,7 +49,7 @@ namespace r3
 	{
 		//m_rotation = rot * m_rotation;
 		//m_rotation = m_rotation * rot;
-		m_rotation += rot;
+		m_rotation = rot * m_rotation;
 	}
 
 	void Transform3D::rotate(const glm::mat3& rot)
@@ -80,6 +80,14 @@ namespace r3
 	const glm::quat& Transform3D::getRotation() const
 	{
 		return m_rotation;
+	}
+
+	void Transform3D::updateOrientationByAngularVelocity(const glm::vec3& rotation,
+														 real duration)
+	{
+		auto rot = glm::quat(0, rotation * duration) * m_rotation * real(0.5);
+		m_rotation += rot;
+		m_rotation = glm::normalize(m_rotation);
 	}
 
 	glm::vec3 Transform3D::getPointInLocalSpace(const glm::vec3& point) const

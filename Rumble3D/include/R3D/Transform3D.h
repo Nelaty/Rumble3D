@@ -95,6 +95,9 @@ namespace r3
 		 */
 		const glm::quat& getRotation() const;
 
+		void updateOrientationByAngularVelocity(const glm::vec3& rotation, 
+												real duration);
+
 		/**
 		 * \brief Convert a point into local body space.
 		 * \param point The point to convert.
