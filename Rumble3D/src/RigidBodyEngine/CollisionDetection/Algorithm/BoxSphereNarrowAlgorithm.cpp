@@ -30,7 +30,7 @@ namespace r3
 		//glm::vec3 relCentre = rbBox->getTransform().transformInverse(centre);
 		// TODO: test result
 		const auto& boxTransform = rbBox->getTransform();
-		glm::vec3 relCentre = glm::transpose(boxTransform.getRotation()) *
+		glm::vec3 relCentre = glm::transpose(boxTransform.getRotationMat()) *
 			(centre - boxTransform.getPosition());
 
 		// Early out check 

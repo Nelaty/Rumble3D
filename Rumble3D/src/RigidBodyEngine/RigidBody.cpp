@@ -173,7 +173,7 @@ namespace r3
 	{
 		/// \bug: Potentially critical bug
 		/// Orientation might not be normalized
-		auto orientation = m_transform.getRotation();
+		auto orientation = m_transform.getRotationMat();
 	/*	auto quat = glm::quat_cast(orientation);
 		glm::normalize(quat);
 		orientation = glm::toMat3(quat);*/
@@ -328,7 +328,7 @@ namespace r3
 
 	glm::quat RigidBody::getOrientation() const
 	{
-		return glm::quat_cast(m_transform.getRotation());
+		return glm::quat_cast(m_transform.getRotationMat());
 	}
 
 	void RigidBody::setRotation(const glm::vec3& rotation)
@@ -455,8 +455,9 @@ namespace r3
 		// Positionsanpassung Drehung:
 		//m_orientation.updateOrientationByAngularVelocity(m_rotation, duration);	
 
-		//glm::quat rot = glm::quat(0, m_rotation * duration);
-		m_transform.rotate(glm::quat(0, m_rotation * duration) * glm::quat_cast(m_transform.getRotation()) * real(0.5));
+		//m_transform.rotate(glm::quat(0, m_rotation * duration) * );
+		
+		m_transform.rotate(glm::quat(0, m_rotation * duration) * glm::quat_cast(m_transform.getRotationMat()) * real(0.5));
 
 		// Normalisierung der Orientierung und Update der abgeleiteten Daten:
 		calculateDerivedData();

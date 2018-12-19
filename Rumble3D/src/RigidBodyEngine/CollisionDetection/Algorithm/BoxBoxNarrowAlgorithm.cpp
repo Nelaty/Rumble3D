@@ -40,8 +40,8 @@ namespace r3
 		// SAT-Test mit allen Achsen. Wenn ein Test positiv ist,
 		// verlassen wir die Methode mit 0Kontakten.
 		// Sonst suchen wir die Achsemit der minimalen Durchdringung:
-		const auto& rotationOne = rbBox1->getTransform().getRotation();
-		const auto& rotationTwo = rbBox2->getTransform().getRotation();
+		const auto& rotationOne = rbBox1->getTransform().getRotationMat();
+		const auto& rotationTwo = rbBox2->getTransform().getRotationMat();
 
 		if(checkOverlap(rotationOne[0], 0)) return false;
 		if(checkOverlap(rotationOne[1], 1)) return false;
@@ -158,7 +158,7 @@ namespace r3
 	real BoxBoxNarrowAlgorithm::transformToAxis(const CollisionBox* box,
 												const glm::vec3& axis)
 	{
-		const auto& rotation = box->getBody()->getTransform().getRotation();
+		const auto& rotation = box->getBody()->getTransform().getRotationMat();
 
 		return
 			box->getHalfSize().x * abs(glm::dot(axis, rotation[0])) +
@@ -222,8 +222,8 @@ namespace r3
 		auto* rbBox1 = box1->getBody();
 		auto* rbBox2 = box2->getBody();
 
-		const auto& rotationOne = rbBox1->getTransform().getRotation();
-		const auto& rotationTwo = rbBox2->getTransform().getRotation();
+		const auto& rotationOne = rbBox1->getTransform().getRotationMat();
+		const auto& rotationTwo = rbBox2->getTransform().getRotationMat();
 
 		glm::vec3 normal = rotationOne[best];
 		// Richtige Fläche auswählen:

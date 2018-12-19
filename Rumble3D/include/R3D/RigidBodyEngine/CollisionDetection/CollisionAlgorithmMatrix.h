@@ -38,7 +38,8 @@ namespace r3
 		 * a specific collision primitive combination.
 		 * \param firstShape The type of the first primitive shape.
 		 * \param secondShape The type of the second primitive shape.
-		 * \return The collision algorithm matrix.
+		 * \return The collision algorithm if existent, a null object
+		 * otherwise.
 		 */
 		INarrowPhaseAlgorithm* getAlgorithm(CollisionPrimitiveType firstShape,
 											CollisionPrimitiveType secondShape);

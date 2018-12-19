@@ -87,7 +87,13 @@ namespace r3
 		 * \brief Get the current rotation. 
 		 * \return The rotation.
 		 */
-		const glm::mat3& getRotation() const;
+		glm::mat3 getRotationMat() const;
+
+		/**
+		 * \brief Get the current rotation.
+		 * \return The rotation.
+		 */
+		const glm::quat& getRotation() const;
 
 		/**
 		 * \brief Convert a point into local body space.
@@ -118,7 +124,9 @@ namespace r3
 		glm::vec3 getDirectionInWorldSpace(const glm::vec3& direction) const;
 
 	private:
-		glm::mat3 m_rotation;
+		//glm::mat3 m_rotation;
+		glm::quat m_rotation;
+		
 		glm::vec3 m_position;
 	};
 }

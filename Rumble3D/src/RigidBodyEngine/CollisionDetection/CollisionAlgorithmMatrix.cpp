@@ -29,14 +29,14 @@ namespace r3
 	INarrowPhaseAlgorithm* CollisionAlgorithmMatrix::getAlgorithm(const CollisionPrimitiveType firstShape,
 	                                                              const CollisionPrimitiveType secondShape)
 	{
-		const auto foundAlgorithm = m_algorithms[firstShape][secondShape];
-		return foundAlgorithm;
+		const auto algorithm = m_algorithms[firstShape][secondShape];
+		return algorithm;
 	}
 
 	void CollisionAlgorithmMatrix::freeMemory(const CollisionPrimitiveType firstShape,
 	                                          const CollisionPrimitiveType secondShape)
 	{
-		auto algorithm = m_algorithms[firstShape][secondShape];
+		const auto algorithm = m_algorithms[firstShape][secondShape];
 		if(algorithm != m_nullAlgorithm.get())
 		{
 			delete algorithm;

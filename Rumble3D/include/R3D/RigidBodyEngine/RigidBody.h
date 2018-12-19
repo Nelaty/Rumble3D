@@ -338,9 +338,6 @@ namespace r3
 		
 		real m_linearDamping{};
 		real m_angularDamping{};
-
-		/*glm::vec3 m_centerOfMass;
-		glm::quat m_orientation;*/
 		
 		glm::vec3 m_velocity;
 		glm::vec3 m_acceleration;

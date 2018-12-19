@@ -14,7 +14,7 @@ namespace r3
 	{
 		/// \todo use new transform!
 		const auto& transform = m_body->getTransform();
-		glm::mat4 mat = transform.getRotation();
+		glm::mat4 mat = transform.getRotationMat();
 		mat[3] = glm::vec4(transform.getPosition(), 1.0f);
 
 		m_transform = mat * m_offset;
