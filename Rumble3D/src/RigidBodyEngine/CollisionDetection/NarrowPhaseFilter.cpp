@@ -41,6 +41,9 @@ namespace r3
 		auto algorithm = m_algorithms.getAlgorithm(firstCollider->getType(),
 												   secondCollider->getType());
 	
-		algorithm->generateContactData(first, second, collisions);
+		if(algorithm->generateContactData(first, second, collisions))
+		{
+			/// \todo: execute callback
+		}
 	}
 }

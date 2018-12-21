@@ -20,12 +20,6 @@ namespace r3
 			scalar * (y + z), 0, 0,
 			0, scalar * (x + z), 0,
 			0, 0, scalar * (x + y));
-
-		/*auto s = mass / real(12);
-		return glm::mat3(
-			s * (y + z), 0, 0,
-			0, s * (x + y), 0,
-			0, 0, s * (x + z));*/
 	}
 
 	glm::mat3 InertiaTensorGenerator::generateSphereTensor(const real mass, 

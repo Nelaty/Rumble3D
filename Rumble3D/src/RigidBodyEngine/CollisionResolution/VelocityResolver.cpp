@@ -262,11 +262,11 @@ namespace r3
 		}
 		else
 		{
-			impulseContact = calculateFrictionlessImpulse(contact,
-														  inverseInertiaTensor);
+			//impulseContact = calculateFrictionlessImpulse(contact,
+			//											  inverseInertiaTensor);
 			// With friction
-			//impulseContact = calculateFrictionImpulse(contact, 
-			//										  inverseInertiaTensor);
+			impulseContact = calculateFrictionImpulse(contact, 
+													  inverseInertiaTensor);
 		}
 
 		// Konvertiere Impuls in Welt-Koordinaten

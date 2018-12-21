@@ -65,15 +65,13 @@ namespace r3
 	                                       const glm::mat3& iit,
 	                                       const glm::mat4& rotMat)
 	{
-		/// \todo: refactor
-		// Check if this does the same:
-		//
-		// glm::mat3 rot = rotMat;
-		// rot * iit * rot;
+		// Same as millington, but readable
+		const glm::mat3 rot = rotMat;
+		iitWorld = rot * iit * glm::transpose(rot);
 
 		// Der folgende Code wurde von Millington direkt übernommen,
 		// der behauptet, er wäre automatisch optimiert worden:		
-		real t4 = 
+		/*real t4 = 
 			rotMat[0][0] * iit[0][0] +
 			rotMat[1][0] * iit[0][1] +
 			rotMat[2][0] * iit[0][2];
@@ -146,7 +144,7 @@ namespace r3
 		iitWorld[2][2] = 
 			t52 * rotMat[0][2] +
 			t57 * rotMat[1][2] +
-			t62 * rotMat[2][2];
+			t62 * rotMat[2][2];*/
 	}
 
 	glm::vec3 RigidBody::getPointInLocalSpace(const glm::vec3& point) const
@@ -171,13 +169,8 @@ namespace r3
 
 	void RigidBody::calculateDerivedData()
 	{
-		/// \bug: Potentially critical bug
-		/// Orientation might not be normalized
 		auto orientation = m_transform.getRotationMat();
-	/*	auto quat = glm::quat_cast(orientation);
-		glm::normalize(quat);
-		orientation = glm::toMat3(quat);*/
-
+		//orientation = glm::normalize(orientation);
 		calculateTransformationMatrix(m_transformationMatrix, m_transform.getPosition(), orientation);
 		transformInertiaTensor(m_inverseInertiaTensorWorld,
 		                       m_inverseInertiaTensor,
@@ -430,7 +423,7 @@ namespace r3
 	{
 		if(!m_awake) return;
 
-		// calculateDerivedData();
+		calculateDerivedData();
 
 		// Lineare Beschleunigung:
 		m_lastFrameAcceleration = m_acceleration;
