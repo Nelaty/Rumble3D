@@ -9,6 +9,7 @@ namespace r3
 	class R3D_DECLSPEC BoundingBox
 	{
 	public:
+	
 		BoundingBox();
 		/**
 		 * \brief BoundingBox constructor.
@@ -24,6 +25,8 @@ namespace r3
 		 */
 		BoundingBox(const BoundingBox& one, const BoundingBox& two);
 		~BoundingBox();
+		
+		void spin();
 		/**
 		 * \brief Check the given bounding box overlaps with this one.
 		 * \param other The other bounding box to check against.
