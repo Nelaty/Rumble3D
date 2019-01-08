@@ -3,11 +3,6 @@
 
 namespace r3
 {
-	void func()
-	{
-		
-	}
-	
 	CollisionBox::CollisionBox(RigidBody* body,
 							   const glm::vec3& halfSizes,
 							   const glm::mat4& offset)

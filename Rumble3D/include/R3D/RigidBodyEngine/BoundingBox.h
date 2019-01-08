@@ -26,7 +26,6 @@ namespace r3
 		BoundingBox(const BoundingBox& one, const BoundingBox& two);
 		~BoundingBox();
 		
-		void spin();
 		/**
 		 * \brief Check the given bounding box overlaps with this one.
 		 * \param other The other bounding box to check against.
