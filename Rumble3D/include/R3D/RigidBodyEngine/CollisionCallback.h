@@ -20,7 +20,7 @@ namespace r3
 		/** \brief Set the currently used callback function. */
 		void setCallback(const Callback& callback);
 		/** \brief Execute the underlying callback. */
-		void execute(RigidBody* rb1, RigidBody* rb2);
+		void execute(RigidBody* rb1, RigidBody* rb2) const;
 
 	private:
 		Callback m_callback{};

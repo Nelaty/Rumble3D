@@ -72,8 +72,7 @@ namespace r3
 					contact->setContactPoint(tmp);
 					contact->setContactNormal(plane->getNormal());
 					contact->setPenetration(plane->getOffset() - vertexDistance);
-					contact->setBodyData(rbBox, rbPlane,
-										 collisionData.getFriction(), collisionData.getRestitution());
+					contact->setBodyData(rbBox, rbPlane);
 				}
 			}
 		}

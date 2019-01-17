@@ -14,7 +14,7 @@ namespace r3
 	 */
 	struct R3D_DECLSPEC RigidBodyDef
 	{
-		PhysicsMaterial* m_physicsMaterial{};
+		PhysicsMaterial m_physicsMaterial{};
 		CollisionPrimitive* m_collisionPrimitive{};
 		CollisionMask m_collisionMask{};
 

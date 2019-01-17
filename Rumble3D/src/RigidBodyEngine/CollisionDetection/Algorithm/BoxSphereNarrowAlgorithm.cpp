@@ -68,8 +68,7 @@ namespace r3
 		contact->setContactNormal(tmp);
 		contact->setContactPoint(closestPtWorld);
 		contact->setPenetration(sphere->getRadius() - sqrt(distance));
-		contact->setBodyData(rbBox, rbSphere,
-							 collisionData.getFriction(), collisionData.getRestitution());
+		contact->setBodyData(rbBox, rbSphere);
 		return true;
 	}
 }

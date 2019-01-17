@@ -15,7 +15,7 @@ namespace r3
 		m_callback = callback;
 	}
 
-	void CollisionCallback::execute(RigidBody* rb1, RigidBody* rb2)
+	void CollisionCallback::execute(RigidBody* rb1, RigidBody* rb2) const
 	{
 		if(m_callback)
 		{

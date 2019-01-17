@@ -150,8 +150,7 @@ namespace r3
 		contact->setPenetration(pen);
 		contact->setContactNormal(axis);
 		contact->setContactPoint(vertex);
-		contact->setBodyData(rbBox1, rbBox2,
-		                     contact->getFriction(), contact->getRestitution());
+		contact->setBodyData(rbBox1, rbBox2);
 		return true;
 	}
 
@@ -255,8 +254,7 @@ namespace r3
 		contact->setPenetration(penetration);
 		
 		contact->setContactPoint(rbBox2->getPointInWorldSpace(vertex));
-		contact->setBodyData(rbBox1, rbBox2,
-							 contact->getFriction(), contact->getRestitution());
+		contact->setBodyData(rbBox1, rbBox2);
 	}
 
 	glm::vec3 BoxBoxNarrowAlgorithm::contactPoint(const glm::vec3& pOne,

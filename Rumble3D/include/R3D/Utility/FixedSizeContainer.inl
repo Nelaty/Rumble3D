@@ -60,6 +60,18 @@ namespace r3
 	}
 
 	template <class Element_Type, class Container_Type>
+	Element_Type* FixedSizeContainer<Element_Type, Container_Type>::back()
+	{
+		return isEmpty() ? nullptr : &m_data[m_entriesUsed - 1];
+	}
+
+	template <class Element_Type, class Container_Type>
+	Element_Type* FixedSizeContainer<Element_Type, Container_Type>::front()
+	{
+		return isEmpty() ? nullptr : &m_data[0];
+	}
+
+	template <class Element_Type, class Container_Type>
 	Element_Type* FixedSizeContainer<Element_Type, Container_Type>::getAvailableEntry()
 	{
 		if (isFull()) return nullptr;

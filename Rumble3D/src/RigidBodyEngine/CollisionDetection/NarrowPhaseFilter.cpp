@@ -40,10 +40,12 @@ namespace r3
 
 		auto algorithm = m_algorithms.getAlgorithm(firstCollider->getType(),
 												   secondCollider->getType());
-	
+
+		/// \todo: replace CollisionData structure with FixedSizeContainer
 		if(algorithm->generateContactData(first, second, collisions))
-		{
-			/// \todo: execute callback
+		{	
+			first->getCollisionCallback().execute(first, second);
+			second->getCollisionCallback().execute(first, second);
 		}
 	}
 }

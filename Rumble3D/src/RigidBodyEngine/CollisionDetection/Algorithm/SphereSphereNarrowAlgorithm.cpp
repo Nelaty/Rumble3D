@@ -40,14 +40,13 @@ namespace r3
 		}
 
 		// Erstellung der Kontaktnormalen und der Kontaktdaten:
-		const auto normal = midline * (static_cast<real>(1.0f) / size);
+		const auto normal = midline * (real(1) / size);
 		auto* contact = collisionData.getAvailableContact();
 		
 		contact->setContactNormal(normal);
-		contact->setContactPoint(positionOne + midline * static_cast<real>(0.5f));
+		contact->setContactPoint(positionOne + midline * real(0.5));
 		contact->setPenetration((sphere1->getRadius() + sphere2->getRadius() - size));
-		contact->setBodyData(rbSphere1, rbSphere2,
-							 collisionData.getFriction(), collisionData.getRestitution());
+		contact->setBodyData(rbSphere1, rbSphere2);
 		return true;
 	}
 }

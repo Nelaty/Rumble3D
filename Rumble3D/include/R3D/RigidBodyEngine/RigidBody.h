@@ -262,12 +262,12 @@ namespace r3
 		 * \brief Set the physics material. 
 		 * \param material The new physics material.
 		 */
-		void setPhysicsMaterial(PhysicsMaterial* material);
+		void setPhysicsMaterial(const PhysicsMaterial& material);
 		/** 
 		 * \brief Get the current physics material.
 		 * \return The current physics material if existent, nullptr otherwise.	 
 		 */
-		PhysicsMaterial* getPhysicsMaterial() const;
+		const PhysicsMaterial& getPhysicsMaterial() const;
 
 		/**
 		 * \brief Reset accumulated linear and angular forces.
@@ -294,11 +294,15 @@ namespace r3
 		 * coordinates.
 		 */
 		void addForceAtBodyPoint(const glm::vec3 & force, const glm::vec3 & point);
-		/** 
-		 * \brief Additively increase torque accumulator..
-		 * \param torque The torque to be added.
-		*/
+		
+		/** \brief Additively increase the torque accumulator.. */
 		void addTorque(const glm::vec3 & torque);
+
+		/** \brief Set the currently used callback. */
+		void setCollisionCallback(const CollisionCallback& callback);
+
+		/** \brief Get the collision callback of this body. */
+		const CollisionCallback& getCollisionCallback() const;
 
 		/**
 		 * \brief Convert a point into local body space.
@@ -334,8 +338,10 @@ namespace r3
 		virtual void integrate(real duration);
 
 	protected:
-		PhysicsMaterial* m_physicsMaterial{};
+		PhysicsMaterial m_physicsMaterial;
 		CollisionMask m_collisionMask;
+
+		CollisionCallback m_collisionCallback;
 
 		real m_mass;
 		real m_inverseMass{};

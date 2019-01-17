@@ -68,6 +68,12 @@ namespace r3
 		 */
 		int getSize() const;
 
+		/** \brief Get the last element. */
+		Element_Type* back();
+	
+		/** \brief Get the first element. */
+		Element_Type* front();
+
 		/**
 		 * \brief Get the next available element. This automatically use
 		 * the entry.

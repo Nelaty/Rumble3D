@@ -75,11 +75,8 @@ namespace r3
 		 * \brief Initialize this contact 
 		 * \param first First colliding body
 		 * \param second Second colliding body
-		 * \param friction Friction constant used for the bodies
-		 * \param restitution Restitution used for the bodies
 		 */
-		void setBodyData(RigidBody* first, RigidBody* second,
-						 real friction, real restitution);
+		void setBodyData(RigidBody* first, RigidBody* second);
 
 		/** 
 		 * \brief Get the friction constant used for the bodies in 

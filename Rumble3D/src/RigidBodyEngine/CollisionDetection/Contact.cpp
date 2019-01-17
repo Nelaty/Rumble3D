@@ -58,20 +58,14 @@ namespace r3
 	}
 
 	void Contact::setBodyData(RigidBody* first,
-							  RigidBody* second,
-	                          const real friction,
-	                          const real restitution)
+							  RigidBody* second)
 	{
 		m_pair.init(first, second);
 	
-		/*m_friction = first->getPhysicsMaterial()->getFriction() +
-			second->getPhysicsMaterial()->getFriction();
-		m_restitution = first->getPhysicsMaterial()->getRestitution() +
-			second->getPhysicsMaterial()->getRestitution();*/
-
-
-		m_friction = friction;
-		m_restitution = restitution;
+		m_friction = real(0.5) * (first->getPhysicsMaterial().getFriction() +
+			second->getPhysicsMaterial().getFriction());
+		m_restitution = real(0.5) * (first->getPhysicsMaterial().getRestitution() +
+			second->getPhysicsMaterial().getRestitution());
 	}
 
 	real Contact::getFriction() const

@@ -34,8 +34,7 @@ namespace r3
 			contact->setContactNormal(plane->getNormal());
 			contact->setPenetration(-ballDistance);
 			contact->setContactPoint(position - plane->getNormal() * (ballDistance + sphere->getRadius()));
-			contact->setBodyData(rbSphere, rbPlane,
-								 collisionData.getFriction(), collisionData.getRestitution());
+			contact->setBodyData(rbSphere, rbPlane);
 
 			return true;
 		}

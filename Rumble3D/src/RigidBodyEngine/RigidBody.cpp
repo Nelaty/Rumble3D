@@ -373,12 +373,12 @@ namespace r3
 		}
 	}
 
-	void RigidBody::setPhysicsMaterial(PhysicsMaterial* material)
+	void RigidBody::setPhysicsMaterial(const PhysicsMaterial& material)
 	{
 		m_physicsMaterial = material;
 	}
 
-	PhysicsMaterial* RigidBody::getPhysicsMaterial() const
+	const PhysicsMaterial& RigidBody::getPhysicsMaterial() const
 	{
 		return m_physicsMaterial;
 	}
@@ -412,6 +412,16 @@ namespace r3
 	void RigidBody::addTorque(const glm::vec3& torque)
 	{
 		m_torqueAccumulated += torque;
+	}
+
+	void RigidBody::setCollisionCallback(const CollisionCallback& callback)
+	{
+		m_collisionCallback = callback;
+	}
+
+	const CollisionCallback& RigidBody::getCollisionCallback() const
+	{
+		return m_collisionCallback;
 	}
 
 	const glm::mat4& RigidBody::getTransformationMatrix() const
