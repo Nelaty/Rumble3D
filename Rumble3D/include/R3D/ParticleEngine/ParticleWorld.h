@@ -46,6 +46,16 @@ namespace r3
 		 */
 		Particle* createParticle(ParticleDef definition = ParticleDef());
 		/**
+		* \brief Add an existent particle
+		*/
+		void addParticle(Particle* particle);
+		/**
+		 * \brief Remove a registered particle
+		 * \return True if particle was registered, false otherwise.
+		 */
+		bool removeParticle(Particle* particle);
+
+		/**
 		 * \brief Free memory of a particle.
 		 * \param particle The particle to destroy.
 		 * \return True if the particle was found, false otherwise.

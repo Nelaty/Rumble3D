@@ -29,6 +29,20 @@ namespace r3
 		return particle;
 	}
 
+	void ParticleWorld::addParticle(Particle* particle)
+	{
+		m_particles.emplace_back(particle);
+	}
+
+	bool ParticleWorld::removeParticle(Particle* particle)
+	{
+		const auto removedParticle = std::remove(m_particles.begin(),
+												 m_particles.end(),
+												 particle);
+
+		return removedParticle != m_particles.end();
+	}
+
 	bool ParticleWorld::destroyParticle(Particle* particle)
 	{
 		const auto removedParticle = std::remove(m_particles.begin(),

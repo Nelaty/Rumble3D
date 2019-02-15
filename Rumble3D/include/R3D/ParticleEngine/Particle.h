@@ -154,6 +154,11 @@ namespace r3
 		 */
 		void addForce(const glm::vec3& force);
 
+		/**
+		 * \brief Reset this particle.
+		 */
+		void reset(const glm::vec3& position = glm::vec3(0));
+
 		/** 
 		 * \brief Integrate changes made to the particle.
 		 * \details Apply forces and update position, velocity and acceleration. 

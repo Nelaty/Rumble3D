@@ -144,6 +144,15 @@ namespace r3
 		m_forceAccumulator += force;
 	}
 
+	void Particle::reset(const glm::vec3& position)
+	{
+		m_position = position;
+		m_velocity = glm::vec3(0);
+		m_acceleration = glm::vec3(0);
+		m_isDead = false;
+		clearAccumulator();
+	}
+
 	void Particle::integrate(const real duration)
 	{
 		if (m_isDead || m_inverseMass <= 0) return;
