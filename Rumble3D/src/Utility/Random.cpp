@@ -132,6 +132,18 @@ namespace r3
 		return randomFloatZeroOne() < chance;
 	}
 
+	int Random::randomSign(float chance)
+	{
+		if(randomBool(chance))
+		{
+			return 1;
+		}
+		else
+		{
+			return -1;
+		}
+	}
+
 	Random::Random()
 		= default;
 

@@ -126,6 +126,12 @@ namespace r3
 		 */
 		glm::vec3 getDirectionInWorldSpace(const glm::vec3& direction) const;
 
+		/**
+		 * \brief Reset the transform to a given position and rotation.
+		 */
+		void reset(const glm::vec3& position = glm::vec3(0),
+				   const glm::vec3& rotation = glm::vec3(0));
+
 	private:
 		//glm::mat3 m_rotation;
 		glm::quat m_rotation;

@@ -337,6 +337,14 @@ namespace r3
 		 */
 		virtual void integrate(real timeDelta);
 
+		/**
+		 * \brief Reset the rigid body.
+		 * \param position The initial position
+		 * \param rotation The initial rotation.
+		 */
+		void reset(const glm::vec3& position = glm::vec3(0),
+				   const glm::vec3& rotation = glm::vec3(0));
+
 	protected:
 		PhysicsMaterial m_physicsMaterial;
 		CollisionMask m_collisionMask;

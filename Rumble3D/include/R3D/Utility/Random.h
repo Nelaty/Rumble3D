@@ -144,7 +144,14 @@ namespace r3
 		 * \param chance The probability of the boolean value to be true.
 		 * \return A random bool
 		 */
-		static bool randomBool(float chance);
+		static bool randomBool(float chance = 0.5f);
+
+		/**
+		 * \brief Get a positive signed value of 1 with a given chance
+		 * \param chance The probability of returning a positive value
+		 * \return 1 or -1
+		 */
+		static int randomSign(float chance = 0.5f);
 
 	private:
 		explicit Random();

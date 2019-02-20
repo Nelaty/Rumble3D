@@ -481,6 +481,17 @@ namespace r3
 		}
 	}
 
+	void RigidBody::reset(const glm::vec3& position,
+						  const glm::vec3& rotation)
+	{
+		m_velocity = glm::vec3(0);
+		m_acceleration = glm::vec3(0);
+		m_lastFrameAcceleration = glm::vec3(0);
+		m_rotation = glm::vec3(0);
+
+		m_transform.reset(position, rotation);
+	}
+
 	void RigidBody::addVelocity(const glm::vec3& deltaVelocity)
 	{
 		m_velocity += deltaVelocity;

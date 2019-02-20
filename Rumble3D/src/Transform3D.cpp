@@ -8,9 +8,9 @@ namespace r3
 {
 	Transform3D::Transform3D(const glm::vec3& position,
 							 const glm::mat3& rotation)
-		: m_rotation{rotation},
-		m_position{position}
+		: m_position{position}
 	{
+		m_rotation = glm::quat_cast(rotation);
 	}
 
 	Transform3D::~Transform3D()
@@ -110,5 +110,12 @@ namespace r3
 	glm::vec3 Transform3D::getDirectionInWorldSpace(const glm::vec3& direction) const
 	{
 		return m_rotation * direction;
+	}
+
+	void Transform3D::reset(const glm::vec3& position,
+							const glm::vec3& rotation)
+	{
+		m_position = position;
+		m_rotation = rotation;
 	}
 }
