@@ -13,10 +13,8 @@ namespace r3
 
 	void ParticleGravity::updateForce(Particle* particle, real duration)
 	{
-		if(!particle->hasFiniteMass())
-		{
-			return;
-		}
+		if(!particle->hasFiniteMass()) return;
+
 		particle->addForce(m_gravity * particle->getMass());
 	}
 }

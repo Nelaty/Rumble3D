@@ -3,8 +3,14 @@
 #include "ParticleLink.h"
 #include "R3D/Common/Precision.h"
 
+#include <glm/glm.hpp>
+
+#include <functional>
+
 namespace r3
 {
+	class Particle;
+
 	class ParticleContact;
 	
 	/**
@@ -15,6 +21,10 @@ namespace r3
 	class R3D_DECLSPEC ParticleCollision : public ParticleLink
 	{	
 	public:
+		using CollisionCallback = std::function<void(Particle* first,
+													 Particle* second,
+													 const glm::vec3& contactNormal)>;
+	
 		/**
 		 * \brief ParticleCollision constructor.
 		 * \param restitution The restitution of generated contacts.
@@ -26,15 +36,20 @@ namespace r3
 		~ParticleCollision();
 
 		/**
-		* \brief Generate new contacts.
-		* \param contactData Out parameter in which new contacts are added.
-		*/
+		 * \brief Generate new contacts.
+		 * \param contactData Out parameter in which new contacts are added.
+		 */
 		void addContact(FixedSizeContainer<ParticleContact>& contactData) const override;
-	
+
+		/** \brief Set a callback for when a collision happens. */
+		void setCollisionCallback(const CollisionCallback& callback);
+
 	protected:
 		real m_restitution;
 		real m_distance;
 		real m_penetration;
+
+		CollisionCallback m_callback;
 	};
 	
 }

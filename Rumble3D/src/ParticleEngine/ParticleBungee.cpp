@@ -22,10 +22,7 @@ namespace r3
 		force -= m_other->getPosition();
 	
 		real magnitude = glm::length(force);
-		if(magnitude <= m_restLength)
-		{
-			return;
-		}
+		if(magnitude <= m_restLength) return;
 	
 		magnitude = m_springConstant * (m_restLength - magnitude);
 	

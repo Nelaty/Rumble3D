@@ -23,7 +23,7 @@ namespace r3
 	
 	void ParticleForceRegistry::add(Particle* particle, IParticleForceGenerator * generator)
 	{
-		m_registrations.push_back({particle, generator});
+		m_registrations.push_back(ParticleForceRegistrationEntry{particle, generator});
 	}
 	
 	void ParticleForceRegistry::updateForces(const real duration)

@@ -37,10 +37,7 @@ namespace r3
 	void ParticleContact::resolveVelocity(const real duration)
 	{
 		const real separatingVelocity = calculateSeparatingVelocity();
-		if (separatingVelocity > 0) 
-		{
-			return;
-		}
+		if(separatingVelocity > 0) return;
 
 		// \prime{v_s} = -c*v_s
 		real newSeparatingVelocity = -separatingVelocity * m_restitution;
@@ -81,7 +78,7 @@ namespace r3
 		// Fehler Millington: Massen und nicht 1/Masse nehmen!!!
 
 		// Wenn beide Teilchen unendliche Masse, dann aendert Impuls nichts:
-		if(!(m_particles[0]->hasFiniteMass()))
+		if(!m_particles[0]->hasFiniteMass())
 		{
 			return;
 		}
@@ -108,33 +105,24 @@ namespace r3
 	{
 		// Ohne Durchdringung ist nichts zu tun:
 		// Bislang wurde Durchdringung noch nicht berechnet!!!
-		if(m_penetration <= 0)
-		{
-			return;
-		}
+		if(m_penetration <= 0) return;
 
-		// m_a + m_b
-		real totalMass = m_particles[0]->getMass();
+		// Velocity change in accordance with their masses
+		real totalInverseMass = m_particles[0]->getInverseMass();
 		if(m_particles[1])
 		{
-			totalMass += m_particles[1]->getMass();
+			totalInverseMass += m_particles[1]->getInverseMass();
 		}
-		if(!m_particles[0]->hasFiniteMass())
-		{
-			return;
-		}
-
-		//Berechne d * n:
-		glm::vec3 dn = m_contactNormal * m_penetration;
+		if(totalInverseMass <= 0) return;
 
 		// Berechne 1/(m_a + m_b) * d * n
-		glm::vec3 movePerInverseMass = dn * (static_cast<real>(1.0) / totalMass);
+		glm::vec3 movePerInverseMass = m_contactNormal * (m_penetration / totalInverseMass);
 
 		// Berechnung von Delta-p_a und Delta-p_b
-		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->getMass();
+		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->getInverseMass();
 		if (m_particles[1])
 		{
-			m_particlesMovement[1] = movePerInverseMass * -m_particles[1]->getMass();
+			m_particlesMovement[1] = movePerInverseMass * -m_particles[1]->getInverseMass();
 		}
 		else 
 		{

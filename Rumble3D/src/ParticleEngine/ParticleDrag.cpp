@@ -24,7 +24,7 @@ namespace r3
 
 		const auto magnitude = glm::length(force);
 		const auto dragCoefficient = 
-			static_cast<real>(0.5) * m_crossSectionalArea * 
+			real(0.5) * m_crossSectionalArea * 
 			m_dragCoefficient * m_mediumDensity * magnitude * magnitude;
 	
 		force = glm::normalize(force);

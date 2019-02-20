@@ -13,27 +13,27 @@ namespace r3
 	CollisionAlgorithmMatrix ServiceLocatorCollisionAlgorithmMatrix::getMatrix()
 	{
 		CollisionAlgorithmMatrix matrix;
-		matrix.setAlgorithm(new BoxBoxNarrowAlgorithm(),
+		matrix.setAlgorithm(std::make_shared<BoxBoxNarrowAlgorithm>(),
 							R3D_PRIMITIVE_BOX,
 							R3D_PRIMITIVE_BOX);
 
-		matrix.setAlgorithm(new BoxSphereNarrowAlgorithm(),
+		matrix.setAlgorithm(std::make_shared<BoxSphereNarrowAlgorithm>(),
 							R3D_PRIMITIVE_BOX,
 							R3D_PRIMITIVE_SPHERE);
 
-		matrix.setAlgorithm(new SphereSphereNarrowAlgorithm(),
+		matrix.setAlgorithm(std::make_shared<SphereSphereNarrowAlgorithm>(),
 							R3D_PRIMITIVE_SPHERE,
 							R3D_PRIMITIVE_SPHERE);
 
-		matrix.setAlgorithm(new PlanePlaneCollisionAlgorithm(),
+		matrix.setAlgorithm(std::make_shared<PlanePlaneCollisionAlgorithm>(),
 							R3D_PRIMITIVE_PLANE,
 							R3D_PRIMITIVE_PLANE);
 
-		matrix.setAlgorithm(new PlaneBoxCollisionAlgorithm(),
+		matrix.setAlgorithm(std::make_shared<PlaneBoxCollisionAlgorithm>(),
 							R3D_PRIMITIVE_PLANE,
 							R3D_PRIMITIVE_BOX);
 
-		matrix.setAlgorithm(new PlaneSphereCollisionAlgorithm(),
+		matrix.setAlgorithm(std::make_shared<PlaneSphereCollisionAlgorithm>(),
 							R3D_PRIMITIVE_PLANE,
 							R3D_PRIMITIVE_SPHERE);
 

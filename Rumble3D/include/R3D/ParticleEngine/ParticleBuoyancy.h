@@ -27,7 +27,8 @@ namespace r3
 		explicit ParticleBuoyancy(real maxDepth,
 								  real volume, 
 								  real liquidHeight, 
-								  real liquidDensity = static_cast<real>(1000));
+								  real liquidDensity = real(1000),
+								  real gravity = real(9.81));
 		~ParticleBuoyancy();
 
 		/**
@@ -44,7 +45,6 @@ namespace r3
 		real m_liquidHeight;
 		real m_liquidDensity;
 
-		/// \todo: refactor this
-		static constexpr real s_gravity = static_cast<real>(9.81);
+		real m_gravity;
 	};
 }

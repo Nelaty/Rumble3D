@@ -25,7 +25,7 @@ namespace r3
 		}
 	}
 
-	ICollisionResolutionFilter* CollisionResolver::appendFilter(Filter_Ptr filter)
+	ICollisionResolutionFilter* CollisionResolver::appendFilter(const Filter_Ptr& filter)
 	{
 		m_filters.emplace_back(std::move(filter));
 		return m_filters.back().get();
@@ -43,8 +43,8 @@ namespace r3
 
 	CollisionResolver::CollisionResolver()
 	{
-		appendFilter(std::make_unique<InterpenetrationResolver>());
-		appendFilter(std::make_unique<VelocityResolver>());
-		appendFilter(std::make_unique<FrictionResolver>());
+		appendFilter(std::make_shared<InterpenetrationResolver>());
+		appendFilter(std::make_shared<VelocityResolver>());
+		appendFilter(std::make_shared<FrictionResolver>());
 	}
 }

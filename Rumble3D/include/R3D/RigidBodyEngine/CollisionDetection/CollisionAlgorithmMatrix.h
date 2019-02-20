@@ -18,6 +18,8 @@ namespace r3
 	class R3D_DECLSPEC CollisionAlgorithmMatrix
 	{
 	public:
+		using Algorithm_Ptr = std::shared_ptr<INarrowPhaseAlgorithm>;
+
 		explicit CollisionAlgorithmMatrix();
 		~CollisionAlgorithmMatrix();
 
@@ -29,7 +31,7 @@ namespace r3
 		 * \param firstShape The type of the first primitive shape.
 		 * \param secondShape The type of the second shape.
 		 */
-		void setAlgorithm(INarrowPhaseAlgorithm* algorithm,
+		void setAlgorithm(const Algorithm_Ptr& algorithm,
 						  CollisionPrimitiveType firstShape,
 						  CollisionPrimitiveType secondShape);
 
@@ -44,16 +46,12 @@ namespace r3
 		INarrowPhaseAlgorithm* getAlgorithm(CollisionPrimitiveType firstShape,
 											CollisionPrimitiveType secondShape);
 
-	private:
 		/**
-		 * \brief Destroy the collision algorithm matrix used for
-		 * a specific collision primitive combination.
-		 * \param firstShape The type of the first primitive shape.
-		 * \param secondShape The type of the second primitive shape.
+		 * \brief Replace all algorithms with a null algorithm.
 		 */
-		void freeMemory(CollisionPrimitiveType firstShape,
-						CollisionPrimitiveType secondShape);
+		void reset();
 
+	private:
 		/**
 		 * \brief Default initialization of the collision algorithm
 		 * matrix.
@@ -64,6 +62,6 @@ namespace r3
 		std::shared_ptr<NullAlgorithm> m_nullAlgorithm{};
 
 		static constexpr int s_algCount = R3D_PRIMITIVE_TYPE_COUNT;
-		std::array<std::array<INarrowPhaseAlgorithm*, s_algCount>, s_algCount> m_algorithms{};
+		std::array<std::array<Algorithm_Ptr, s_algCount>, s_algCount> m_algorithms{};
 	};
 }

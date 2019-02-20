@@ -55,8 +55,6 @@ namespace r3
 	                                              const glm::vec3& position,
 	                                              const glm::mat3& orientation)
 	{
-		//transformationMatrix = orientation;
-		
 		transformationMatrix = orientation;
 		transformationMatrix = glm::translate(transformationMatrix, position);
 	}
@@ -65,7 +63,7 @@ namespace r3
 	                                       const glm::mat3& iit,
 	                                       const glm::mat4& rotMat)
 	{
-		// Same as millington, but readable
+		// Same as Millington, but readable
 		const glm::mat3 rot = rotMat;
 		iitWorld = rot * iit * glm::transpose(rot);
 
@@ -179,7 +177,7 @@ namespace r3
 
 	void RigidBody::setInertiaTensor(const glm::mat3& inertiaTensor)
 	{
-		m_inverseInertiaTensor = inverse(inertiaTensor);
+		m_inverseInertiaTensor = glm::inverse(inertiaTensor);
 	}
 
 	glm::mat3 RigidBody::getInverseTensor() const
@@ -385,8 +383,8 @@ namespace r3
 
 	void RigidBody::clearAccumulators()
 	{
-		m_forceAccumulated = glm::vec3(static_cast<real>(0.0f));
-		m_torqueAccumulated = glm::vec3(static_cast<real>(0.0f));
+		m_forceAccumulated = glm::vec3(0);
+		m_torqueAccumulated = glm::vec3(0);
 	}
 
 	void RigidBody::addForce(const glm::vec3& force)
@@ -397,16 +395,16 @@ namespace r3
 	void RigidBody::addForceAtPoint(const glm::vec3& force, const glm::vec3& point)
 	{
 		// Angriffspunkt der Kraft relativ zum Schwerpunkt:
-		const auto pt = point - m_transform.getPosition();
+		const auto pointLocal = point - m_transform.getPosition();
 		
 		m_forceAccumulated += force;
-		m_torqueAccumulated += cross(pt, force);
+		m_torqueAccumulated += cross(pointLocal, force);
 	}
 
 	void RigidBody::addForceAtBodyPoint(const glm::vec3& force, const glm::vec3& point)
 	{
-		const auto pt = getPointInWorldSpace(point);
-		addForceAtPoint(force, pt);
+		const auto pointWorld = getPointInWorldSpace(point);
+		addForceAtPoint(force, pointWorld);
 	}
 
 	void RigidBody::addTorque(const glm::vec3& torque)
@@ -429,36 +427,36 @@ namespace r3
 		return m_transformationMatrix;
 	}
 
-	void RigidBody::integrate(const real duration)
+	void RigidBody::integrate(const real timeDelta)
 	{
 		if(!m_awake) return;
 
 		calculateDerivedData();
 
-		// Lineare Beschleunigung:
+		// Linear acceleration
 		m_lastFrameAcceleration = m_acceleration;
 		m_lastFrameAcceleration += m_inverseMass * m_forceAccumulated;
 
-		// Winkelbeschleunigung aus Drehmoment:
+		// Angular acceleration from torque
 		const auto angularAcceleration = m_inverseInertiaTensorWorld * m_torqueAccumulated;
 
-		// Lineare Geschwindigkeit aus Beschleunigung und Impuls:
-		m_velocity += duration * m_lastFrameAcceleration;
+		// Linear velocity from velocity and impulse
+		m_velocity += timeDelta * m_lastFrameAcceleration;
 
-		// Winkelgeschwindigkeit aus Winkelbeschleunigung und Impuls:
-		m_rotation += duration * angularAcceleration;
+		// Angular velocity from angular acceleration and impulse
+		m_rotation += timeDelta * angularAcceleration;
 
-		// Dämpfung:
-		m_velocity *= pow(m_linearDamping, duration);
-		m_rotation *= pow(m_angularDamping, duration);
+		// Drag
+		m_velocity *= pow(m_linearDamping, timeDelta);
+		m_rotation *= pow(m_angularDamping, timeDelta);
 	
-		// Positionsanpassung linear:
-		m_transform.translate(duration * m_velocity);
+		// Linear position update
+		m_transform.translate(timeDelta * m_velocity);
 
-		// Positionsanpassung Drehung:
-		m_transform.updateOrientationByAngularVelocity(m_rotation, duration);
-		
-		// Normalisierung der Orientierung und Update der abgeleiteten Daten:
+		// Rotational position update
+		m_transform.updateOrientationByAngularVelocity(m_rotation, timeDelta);
+
+		// Normalize orientation and update derived data
 		calculateDerivedData();
 
 		clearAccumulators();
@@ -469,7 +467,7 @@ namespace r3
 				glm::dot(m_velocity, m_velocity) +
 				glm::dot(m_rotation, m_rotation);
 
-			real bias = pow(real(0.5), duration);
+			real bias = pow(real(0.5), timeDelta);
 			m_motion = bias * m_motion + (real(1) - bias)*currentMotion;
 
 			if(m_motion < m_sleepEpsilon)

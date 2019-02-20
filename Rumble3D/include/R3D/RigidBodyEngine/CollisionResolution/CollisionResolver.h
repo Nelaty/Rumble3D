@@ -15,7 +15,7 @@ namespace r3
 	class R3D_DECLSPEC CollisionResolver : public ICollisionResolverAccess
 	{
 	public:
-		using Filter_Ptr = std::unique_ptr<ICollisionResolutionFilter>;
+		using Filter_Ptr = std::shared_ptr<ICollisionResolutionFilter>;
 
 		explicit CollisionResolver();
 		virtual ~CollisionResolver();
@@ -29,7 +29,7 @@ namespace r3
 		 * \param filter The new filter.
 		 * \return The new filter.
 		 */
-		ICollisionResolutionFilter* appendFilter(Filter_Ptr filter);
+		ICollisionResolutionFilter* appendFilter(const Filter_Ptr& filter);
 
 
 		/** Get the current number of used filters. */

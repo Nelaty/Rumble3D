@@ -278,14 +278,14 @@ namespace r3
 		 * center of mass.
 		 * \param force The force to be added.
 		 */
-		void addForce(const glm::vec3 & force); 
+		void addForce(const glm::vec3& force); 
 		/** 
 		 * \brief Add a force at a specified body point. Can create
 		 * rotational forces.
 		 * \param force The force to be applied 
 		 * \param point The attack point of the force in world coordinates.
 		 */
-		void addForceAtPoint(const glm::vec3 & force, const glm::vec3 & point);
+		void addForceAtPoint(const glm::vec3& force, const glm::vec3& point);
 		/**
 		 * \brief Add a force at a specified body point. Can create
 		 * rotational forces.
@@ -293,10 +293,10 @@ namespace r3
 		 * \param point The attack point of the force in local body 
 		 * coordinates.
 		 */
-		void addForceAtBodyPoint(const glm::vec3 & force, const glm::vec3 & point);
+		void addForceAtBodyPoint(const glm::vec3& force, const glm::vec3& point);
 		
 		/** \brief Additively increase the torque accumulator.. */
-		void addTorque(const glm::vec3 & torque);
+		void addTorque(const glm::vec3& torque);
 
 		/** \brief Set the currently used callback. */
 		void setCollisionCallback(const CollisionCallback& callback);
@@ -309,33 +309,33 @@ namespace r3
 		 * \param point The point to convert.
 		 * \return The point in local body space.
 		 */
-		glm::vec3 getPointInLocalSpace(const glm::vec3 &point) const;
+		glm::vec3 getPointInLocalSpace(const glm::vec3& point) const;
 		/**
 		 * \brief Convert a point from local body space into world
 		 * space.
 		 * \param point A point in local body space.
 		 * \return The converted point in world space.
 		 */
-		glm::vec3 getPointInWorldSpace(const glm::vec3 &point) const;
+		glm::vec3 getPointInWorldSpace(const glm::vec3& point) const;
 		/**
 		 * \brief Convert a direction from world space into local
 		 * space.
 		 * \param direction The direction in world space.
 		 * \return The direction in local space.
 		 */
-		glm::vec3 getDirectionInLocalSpace(const glm::vec3 &direction) const;
+		glm::vec3 getDirectionInLocalSpace(const glm::vec3& direction) const;
 		/**
 		 * \brief Convert a direction from local body space into
 		 * world space.
 		 * \param direction The direction in local body space.
 		 * \return The direction in world space.
 		 */
-		glm::vec3 getDirectionInWorldSpace(const glm::vec3 &direction) const;
+		glm::vec3 getDirectionInWorldSpace(const glm::vec3& direction) const;
 		/**
 		 * \brief Resolve position and rotation
 		 * \param duration The duration to integrate over.
 		 */
-		virtual void integrate(real duration);
+		virtual void integrate(real timeDelta);
 
 	protected:
 		PhysicsMaterial m_physicsMaterial;

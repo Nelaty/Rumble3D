@@ -25,9 +25,9 @@ namespace r3
 		* Drag coefficient of a smooth sphere = 0.47, RE = 10^5 (RE = Reynolds Number)
 		* Density of air at 15°C = 1.225
 		*/
-		explicit ParticleDrag(real crossSectionalArea = static_cast<real>(2.0 * R3D_PI),
-							  real dragCoefficient = static_cast<real>(0.47),
-							  real mediumDensity = static_cast<real>(1.225));
+		explicit ParticleDrag(real crossSectionalArea = real(2.0 * R3D_PI),
+							  real dragCoefficient = real(0.47),
+							  real mediumDensity = real(1.225));
 		~ParticleDrag();
 
 		/**

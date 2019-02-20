@@ -31,11 +31,21 @@ namespace r3
 
 		// Negative Kontaktnormale:
 		glm::vec3 normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
-		normal *= static_cast<real>(-1);
+		normal *= -1;
 		normal = glm::normalize(normal);
 
 		contact->setContactNormal(normal);
 		contact->setPenetration(m_penetration);
 		contact->setRestitution(m_restitution);
+	
+		if(m_callback)
+		{
+			m_callback(m_particles[0], m_particles[1], normal);
+		}
+	}
+
+	void ParticleCollision::setCollisionCallback(const CollisionCallback& callback)
+	{
+		m_callback = callback;
 	}
 }

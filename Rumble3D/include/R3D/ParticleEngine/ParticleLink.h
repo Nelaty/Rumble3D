@@ -22,7 +22,13 @@ namespace r3
 		 * \param second Second particle
 		 */
 		void setParticles(Particle* first, Particle* second);
-	
+
+		/** \brief Get the first particle. */
+		Particle* getFirst() const;
+
+		/** \brief Get the second particle. */
+		Particle* getSecond() const;
+
 	protected:
 		explicit ParticleLink();
 

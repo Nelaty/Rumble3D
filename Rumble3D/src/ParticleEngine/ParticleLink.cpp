@@ -15,6 +15,16 @@ namespace r3
 		m_particles[1] = second;
 	}
 
+	Particle* ParticleLink::getFirst() const
+	{
+		return m_particles[0];
+	}
+
+	Particle* ParticleLink::getSecond() const
+	{
+		return m_particles[1];
+	}
+
 	ParticleLink::ParticleLink()
 	= default;
 
