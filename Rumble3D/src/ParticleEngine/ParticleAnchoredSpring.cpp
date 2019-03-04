@@ -19,10 +19,11 @@ namespace r3
 		force -= *m_anchor;
 
 		auto magnitude = glm::length(force);
-		magnitude = (m_restLength - magnitude) * m_springConstant;
+		magnitude -= m_restLength;
+		magnitude *= m_springConstant;
 
 		force = glm::normalize(force);
-		force *= magnitude;
+		force *= -magnitude;
 		particle->addForce(force);
 	}
 }

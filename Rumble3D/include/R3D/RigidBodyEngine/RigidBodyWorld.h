@@ -37,22 +37,18 @@ namespace r3
 		 */
 		IComputationInterface* getComputationInterface() const override;
 
+		/** 
+		 * \brief Register a new rigid body.
+		 * \param body The rigid body to register.
+		 */
+		void addRigidBody(RigidBody* body);
+
 		/**
-		* \brief Allocate space for a new rigid body and register it.
-		* \param definition Construction information for the new rigid body.
-		* \return The new rigid body.
-		*/
-		RigidBody* createRigidBody(RigidBodyDef definition = RigidBodyDef());
-		/**
-		* \brief Free memory of a given rigid body.
-		* \param rigidBody The rigid body to destroy.
-		* \return True if the rigid body was found, false otherwise.
-		*/
-		bool destroyRigidBody(RigidBody* rigidBody);
-		/**
-		* \brief Free memory of all rigid bodies.
-		*/
-		void destroyAllRigidBodies();
+		 * \brief Unregister an already registered rigid body.
+		 * \param body The rigid body to unregister.
+		 * \return True if the body was registered, false otherwise.
+		 */
+		bool removeRigidBody(RigidBody* body);
 
 		/** 
 		 * \brief Get the world's rigid bodies. 

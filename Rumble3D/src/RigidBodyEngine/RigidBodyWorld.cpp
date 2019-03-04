@@ -25,34 +25,18 @@ namespace r3
 		return m_computationInterface;
 	}
 
-	RigidBody* RigidBodyWorld::createRigidBody(const RigidBodyDef definition)
+	void RigidBodyWorld::addRigidBody(RigidBody* body)
 	{
-		auto rigidBody = new RigidBody(definition);
-		m_rigidBodies.emplace_back(rigidBody);
-		return rigidBody;
+		m_rigidBodies.push_back(body);
 	}
 
-	bool RigidBodyWorld::destroyRigidBody(RigidBody* rigidBody)
+	bool RigidBodyWorld::removeRigidBody(RigidBody* body)
 	{
-		const auto removedBody = std::remove(m_rigidBodies.begin(),
-											 m_rigidBodies.end(),
-											 rigidBody);
+		const auto removedIt = std::remove(m_rigidBodies.begin(),
+										   m_rigidBodies.end(),
+										   body);
 
-		if(removedBody != m_rigidBodies.end())
-		{
-			delete *removedBody;
-			return true;
-		}
-		return false;
-	}
-
-	void RigidBodyWorld::destroyAllRigidBodies()
-	{
-		for(auto& it : m_rigidBodies)
-		{
-			delete it;
-		}
-		m_rigidBodies.clear();
+		return removedIt != m_rigidBodies.end();
 	}
 
 	RigidBodyWorld::RigidBody_Container& RigidBodyWorld::getRigidBodies()

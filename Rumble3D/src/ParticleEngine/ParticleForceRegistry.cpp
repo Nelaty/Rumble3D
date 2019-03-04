@@ -2,25 +2,36 @@
 #include "R3D/ParticleEngine/Particle.h"
 #include "R3D/ParticleEngine/IParticleForceGenerator.h"
 
+#include <algorithm>
 
 namespace r3
 {
-	void ParticleForceRegistry::remove(Particle* particle, IParticleForceGenerator * generator)
+	ParticleForceRegistry::ParticleForceRegistry()
 	{
-		for (auto i = m_registrations.begin(); i != m_registrations.end(); ++i)
+	}
+
+	ParticleForceRegistry::~ParticleForceRegistry()
+	{
+	}
+
+	bool ParticleForceRegistry::remove(Particle* particle, IParticleForceGenerator * generator)
+	{
+		const auto removedItem = std::remove_if(m_registrations.begin(),
+												m_registrations.end(),
+												[&](const ParticleForceRegistrationEntry& entry)
 		{
-			if (i->m_particle == particle && i->m_forceGenerator == generator)
-			{
-				m_registrations.erase(i);
-			}
-		}
+			return entry.m_particle == particle
+				&& entry.m_forceGenerator == generator;
+		});
+
+		return removedItem != m_registrations.end();
 	}
 	
 	void ParticleForceRegistry::clear()
 	{
 		m_registrations.clear();
 	}
-	
+
 	void ParticleForceRegistry::add(Particle* particle, IParticleForceGenerator * generator)
 	{
 		m_registrations.push_back(ParticleForceRegistrationEntry{particle, generator});

@@ -23,6 +23,9 @@ namespace r3
 		};
 		using Registry_Type = std::vector<ParticleForceRegistrationEntry>;
 
+		explicit ParticleForceRegistry();
+		~ParticleForceRegistry();
+
 		/**
 		 * \brief Register a force generator with a particle it acts on.
 		 * \param particle The particle, which will receive forces.
@@ -34,8 +37,9 @@ namespace r3
 		 * \brief Remove an existing entry.
 		 * \param particle The particle stored in the entry.
 		 * \param generator The force generator stored in the entry.
+		 * \return True if the given pair was found, false otherwise.
 		 */
-		void remove(Particle* particle, IParticleForceGenerator* generator);
+		bool remove(Particle* particle, IParticleForceGenerator* generator);
 		/**
 		 * \brief Remove all entries.
 		 */

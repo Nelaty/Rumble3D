@@ -39,12 +39,6 @@ namespace r3
 		 */
 		IComputationInterface* getComputationInterface() const override;
 
-		/** 
-		 * \brief Allocate space for a new particle and register it.
-		 * \param definition Construction information for the new particle.
-		 * \return The new particle.
-		 */
-		Particle* createParticle(ParticleDef definition = ParticleDef());
 		/**
 		* \brief Add an existent particle
 		*/
@@ -54,17 +48,6 @@ namespace r3
 		 * \return True if particle was registered, false otherwise.
 		 */
 		bool removeParticle(Particle* particle);
-
-		/**
-		 * \brief Free memory of a particle.
-		 * \param particle The particle to destroy.
-		 * \return True if the particle was found, false otherwise.
-		 */
-		bool destroyParticle(Particle* particle);
-		/**
-		 * \brief Free memory of all particles.
-		 */
-		void destroyAllParticles();
 
 		/** 
 		 * \brief Get the module's particle force registry

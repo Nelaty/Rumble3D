@@ -22,16 +22,9 @@ namespace r3
 		return m_computationInterface;
 	}
 
-	Particle* ParticleWorld::createParticle(const ParticleDef definition)
-	{
-		auto particle = new Particle(definition);
-		m_particles.emplace_back(particle);
-		return particle;
-	}
-
 	void ParticleWorld::addParticle(Particle* particle)
 	{
-		m_particles.emplace_back(particle);
+		m_particles.push_back(particle);
 	}
 
 	bool ParticleWorld::removeParticle(Particle* particle)
@@ -41,29 +34,6 @@ namespace r3
 												 particle);
 
 		return removedParticle != m_particles.end();
-	}
-
-	bool ParticleWorld::destroyParticle(Particle* particle)
-	{
-		const auto removedParticle = std::remove(m_particles.begin(),
-												 m_particles.end(),
-												 particle);
-
-		if(removedParticle != m_particles.end())
-		{
-			delete *removedParticle;
-			return true;
-		}
-		return false;
-	}
-
-	void ParticleWorld::destroyAllParticles()
-	{
-		for(auto& it : m_particles)
-		{
-			delete it;
-		}
-		m_particles.clear();
 	}
 
 	r3::ParticleForceRegistry& ParticleWorld::getParticleForceRegistry()
