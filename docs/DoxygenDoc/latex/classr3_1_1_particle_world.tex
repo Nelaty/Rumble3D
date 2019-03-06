@@ -45,12 +45,10 @@ void \mbox{\hyperlink{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a
 \begin{DoxyCompactList}\small\item\em Change the computation interface, used by the module. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}} $\ast$ \mbox{\hyperlink{classr3_1_1_particle_world_a1e806bf89ec6445a54b9534f1efc081f}{get\+Computation\+Interface}} () const override
 \begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s computation interface. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$ \mbox{\hyperlink{classr3_1_1_particle_world_a467a56ef835bbd7c3a23b722db81fa5e}{create\+Particle}} (\mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}} definition=\mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}}())
-\begin{DoxyCompactList}\small\item\em Allocate space for a new particle and register it. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classr3_1_1_particle_world_a1802231868ed6d99dd677ef71328781a}{destroy\+Particle}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle)
-\begin{DoxyCompactList}\small\item\em Free memory of a particle. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_particle_world_aa061b4eab09216fb7e3a8d08cbdb6dd2}{destroy\+All\+Particles}} ()
-\begin{DoxyCompactList}\small\item\em Free memory of all particles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_world_a89baf289522c69ad7d4be95594317269}{add\+Particle}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle)
+\begin{DoxyCompactList}\small\item\em Add an existent particle. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classr3_1_1_particle_world_a7c2b9a7345016ad344d4439d807dadc3}{remove\+Particle}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle)
+\begin{DoxyCompactList}\small\item\em Remove a registered particle. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_force_registry}{Particle\+Force\+Registry}} \& \mbox{\hyperlink{classr3_1_1_particle_world_aaa3f952fdfd8862673d41afa078245bf}{get\+Particle\+Force\+Registry}} ()
 \begin{DoxyCompactList}\small\item\em Get the module\textquotesingle{}s particle force registry. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classr3_1_1_particle_force_registry}{Particle\+Force\+Registry}} \& \mbox{\hyperlink{classr3_1_1_particle_world_add0e006264e25065ff226eafc0c1a29d}{get\+Particle\+Force\+Registry}} () const
@@ -100,52 +98,16 @@ A \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} is a physics en
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_world_a467a56ef835bbd7c3a23b722db81fa5e}\label{classr3_1_1_particle_world_a467a56ef835bbd7c3a23b722db81fa5e}} 
-\index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!create\+Particle@{create\+Particle}}
-\index{create\+Particle@{create\+Particle}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
-\subsubsection{\texorpdfstring{create\+Particle()}{createParticle()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$ r3\+::\+Particle\+World\+::create\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}}}]{definition = {\ttfamily \mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}}()} }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classr3_1_1_particle_world_a89baf289522c69ad7d4be95594317269}\label{classr3_1_1_particle_world_a89baf289522c69ad7d4be95594317269}} 
+\index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!add\+Particle@{add\+Particle}}
+\index{add\+Particle@{add\+Particle}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{add\+Particle()}{addParticle()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+World\+::add\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})}
 
 
 
-Allocate space for a new particle and register it. 
+Add an existent particle. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em definition} & Construction information for the new particle. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The new particle. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_particle_world_aa061b4eab09216fb7e3a8d08cbdb6dd2}\label{classr3_1_1_particle_world_aa061b4eab09216fb7e3a8d08cbdb6dd2}} 
-\index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!destroy\+All\+Particles@{destroy\+All\+Particles}}
-\index{destroy\+All\+Particles@{destroy\+All\+Particles}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
-\subsubsection{\texorpdfstring{destroy\+All\+Particles()}{destroyAllParticles()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+World\+::destroy\+All\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Free memory of all particles. 
-
-\mbox{\Hypertarget{classr3_1_1_particle_world_a1802231868ed6d99dd677ef71328781a}\label{classr3_1_1_particle_world_a1802231868ed6d99dd677ef71328781a}} 
-\index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!destroy\+Particle@{destroy\+Particle}}
-\index{destroy\+Particle@{destroy\+Particle}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
-\subsubsection{\texorpdfstring{destroy\+Particle()}{destroyParticle()}}
-{\footnotesize\ttfamily bool r3\+::\+Particle\+World\+::destroy\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})}
-
-
-
-Free memory of a particle. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em particle} & The particle to destroy. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if the particle was found, false otherwise. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_world_a1e806bf89ec6445a54b9534f1efc081f}\label{classr3_1_1_particle_world_a1e806bf89ec6445a54b9534f1efc081f}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!get\+Computation\+Interface@{get\+Computation\+Interface}}
 \index{get\+Computation\+Interface@{get\+Computation\+Interface}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
@@ -241,6 +203,19 @@ Get the module\textquotesingle{}s particles.
 \begin{DoxyReturn}{Returns}
 All currently registered particles. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_world_a7c2b9a7345016ad344d4439d807dadc3}\label{classr3_1_1_particle_world_a7c2b9a7345016ad344d4439d807dadc3}} 
+\index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!remove\+Particle@{remove\+Particle}}
+\index{remove\+Particle@{remove\+Particle}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
+\subsubsection{\texorpdfstring{remove\+Particle()}{removeParticle()}}
+{\footnotesize\ttfamily bool r3\+::\+Particle\+World\+::remove\+Particle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})}
+
+
+
+Remove a registered particle. 
+
+\begin{DoxyReturn}{Returns}
+True if particle was registered, false otherwise. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}\label{classr3_1_1_particle_world_adf5630d53659e9ced254d33990f15a9d}} 
 \index{r3\+::\+Particle\+World@{r3\+::\+Particle\+World}!set\+Computation\+Interface@{set\+Computation\+Interface}}
 \index{set\+Computation\+Interface@{set\+Computation\+Interface}!r3\+::\+Particle\+World@{r3\+::\+Particle\+World}}
@@ -260,5 +235,5 @@ Change the computation interface, used by the module.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8h}{Particle\+World.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8cpp}{Particle\+World.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8h}{Particle\+World.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_world_8cpp}{Particle\+World.\+cpp}}\end{DoxyCompactItemize}

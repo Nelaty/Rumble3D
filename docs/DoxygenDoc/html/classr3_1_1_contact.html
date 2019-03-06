@@ -117,9 +117,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe0f0a9a42b4b1f8bd8a61f0b6a4afdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd">getPenetration</a> () const</td></tr>
 <tr class="memdesc:afe0f0a9a42b4b1f8bd8a61f0b6a4afdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of interpenetration.  <a href="#afe0f0a9a42b4b1f8bd8a61f0b6a4afdd">More...</a><br /></td></tr>
 <tr class="separator:afe0f0a9a42b4b1f8bd8a61f0b6a4afdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af394998586bc05ec666ffbd06b0f7077"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html#af394998586bc05ec666ffbd06b0f7077">setBodyData</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *first, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *second, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> friction, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> restitution)</td></tr>
-<tr class="memdesc:af394998586bc05ec666ffbd06b0f7077"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this contact.  <a href="#af394998586bc05ec666ffbd06b0f7077">More...</a><br /></td></tr>
-<tr class="separator:af394998586bc05ec666ffbd06b0f7077"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7471ab195f0cadaee4e2f27f15bb9fff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html#a7471ab195f0cadaee4e2f27f15bb9fff">setBodyData</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *first, <a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *second)</td></tr>
+<tr class="memdesc:a7471ab195f0cadaee4e2f27f15bb9fff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize this contact.  <a href="#a7471ab195f0cadaee4e2f27f15bb9fff">More...</a><br /></td></tr>
+<tr class="separator:a7471ab195f0cadaee4e2f27f15bb9fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a547c3852733960001cc5fe0fe06790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html#a1a547c3852733960001cc5fe0fe06790">getFriction</a> () const</td></tr>
 <tr class="memdesc:a1a547c3852733960001cc5fe0fe06790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the friction constant used for the bodies in this contact.  <a href="#a1a547c3852733960001cc5fe0fe06790">More...</a><br /></td></tr>
 <tr class="separator:a1a547c3852733960001cc5fe0fe06790"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,6 +147,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4e9692d870bdba44ff6b627b8c6c6e30"><td class="memItemLeft" align="right" valign="top">const glm::mat3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html#a4e9692d870bdba44ff6b627b8c6c6e30">getContactToWorld</a> () const</td></tr>
 <tr class="memdesc:a4e9692d870bdba44ff6b627b8c6c6e30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the rotation matrix, which transforms this contact to world orientation.  <a href="#a4e9692d870bdba44ff6b627b8c6c6e30">More...</a><br /></td></tr>
 <tr class="separator:a4e9692d870bdba44ff6b627b8c6c6e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02d78ecc5afe6e7402dd11c655234e4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_contact.html#a02d78ecc5afe6e7402dd11c655234e4a">matchAwakeState</a> ()</td></tr>
+<tr class="separator:a02d78ecc5afe6e7402dd11c655234e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A <a class="el" href="classr3_1_1_contact.html" title="A Contact represents a point in space at which two rigid bodies collide. It is not a point in world s...">Contact</a> represents a point in space at which two rigid bodies collide. It is not a point in world space but rather knows the relative offsets to the points of mass of both rigid bodies. </p>
@@ -489,8 +491,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="af394998586bc05ec666ffbd06b0f7077"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af394998586bc05ec666ffbd06b0f7077">&#9670;&nbsp;</a></span>setBodyData()</h2>
+<a id="a02d78ecc5afe6e7402dd11c655234e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02d78ecc5afe6e7402dd11c655234e4a">&#9670;&nbsp;</a></span>matchAwakeState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::Contact::matchAwakeState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7471ab195f0cadaee4e2f27f15bb9fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7471ab195f0cadaee4e2f27f15bb9fff">&#9670;&nbsp;</a></span>setBodyData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -505,19 +524,7 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td>
-          <td class="paramname"><em>second</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
-          <td class="paramname"><em>friction</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
-          <td class="paramname"><em>restitution</em>&#160;</td>
+          <td class="paramname"><em>second</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -532,8 +539,6 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">first</td><td>First colliding body </td></tr>
     <tr><td class="paramname">second</td><td>Second colliding body </td></tr>
-    <tr><td class="paramname">friction</td><td>Friction constant used for the bodies </td></tr>
-    <tr><td class="paramname">restitution</td><td>Restitution used for the bodies </td></tr>
   </table>
   </dd>
 </dl>
@@ -645,8 +650,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/<a class="el" href="_contact_8h_source.html">Contact.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/<a class="el" href="_contact_8cpp.html">Contact.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/<a class="el" href="_contact_8h_source.html">Contact.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/<a class="el" href="_contact_8cpp.html">Contact.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

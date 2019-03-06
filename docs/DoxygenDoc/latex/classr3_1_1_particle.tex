@@ -71,6 +71,8 @@ void \mbox{\hyperlink{classr3_1_1_particle_a1ba9a33fb4513cf79eb8bf4954ec6b97}{cl
 \begin{DoxyCompactList}\small\item\em Reset the force accumulator to zero. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_a18bc9d9ded382879086eb2820ce787c9}{add\+Force}} (const glm\+::vec3 \&force)
 \begin{DoxyCompactList}\small\item\em Add a force to the force accumulator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_a28335c3bee5a6956ec43653f3b26f84a}{reset}} (const glm\+::vec3 \&position=glm\+::vec3(0))
+\begin{DoxyCompactList}\small\item\em Reset this particle. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classr3_1_1_particle_aff134984d9bc7409579e16eca3e42b68}{integrate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
 \begin{DoxyCompactList}\small\item\em Integrate changes made to the particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
@@ -297,6 +299,16 @@ Check if the particle is dead.
 \begin{DoxyReturn}{Returns}
 True if the particle is dead, false otherwise. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_particle_a28335c3bee5a6956ec43653f3b26f84a}\label{classr3_1_1_particle_a28335c3bee5a6956ec43653f3b26f84a}} 
+\index{r3\+::\+Particle@{r3\+::\+Particle}!reset@{reset}}
+\index{reset@{reset}!r3\+::\+Particle@{r3\+::\+Particle}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+::reset (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position = {\ttfamily glm\+:\+:vec3(0)} }\end{DoxyParamCaption})}
+
+
+
+Reset this particle. 
+
 \mbox{\Hypertarget{classr3_1_1_particle_ad4c180ad74ee8cfd1b0e5c76347d6182}\label{classr3_1_1_particle_ad4c180ad74ee8cfd1b0e5c76347d6182}} 
 \index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Acceleration@{set\+Acceleration}}
 \index{set\+Acceleration@{set\+Acceleration}!r3\+::\+Particle@{r3\+::\+Particle}}
@@ -508,5 +520,5 @@ Change the particle\textquotesingle{}s velocity.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_8h}{Particle.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_8cpp}{Particle.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_8h}{Particle.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_8cpp}{Particle.\+cpp}}\end{DoxyCompactItemize}

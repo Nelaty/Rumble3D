@@ -1,4 +1,4 @@
 <map id="r3::ParticleCollision" name="r3::ParticleCollision">
-<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="43,160,163,281"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="43,160,163,311"/>
 <area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,5,201,112"/>
 </map>

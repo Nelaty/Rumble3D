@@ -100,12 +100,16 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a4ca245fb0538dbfb0c04ca49a3a226b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_force_registry.html#a4ca245fb0538dbfb0c04ca49a3a226b6">ParticleForceRegistry</a> ()</td></tr>
+<tr class="separator:a4ca245fb0538dbfb0c04ca49a3a226b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1fb5af3138a91474810858e52f5a21c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_force_registry.html#aa1fb5af3138a91474810858e52f5a21c">~ParticleForceRegistry</a> ()</td></tr>
+<tr class="separator:aa1fb5af3138a91474810858e52f5a21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a11cb053992645af9af2ccd5f98783cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_force_registry.html#a11cb053992645af9af2ccd5f98783cae">add</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle, <a class="el" href="classr3_1_1_i_particle_force_generator.html">IParticleForceGenerator</a> *generator)</td></tr>
 <tr class="memdesc:a11cb053992645af9af2ccd5f98783cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a force generator with a particle it acts on.  <a href="#a11cb053992645af9af2ccd5f98783cae">More...</a><br /></td></tr>
 <tr class="separator:a11cb053992645af9af2ccd5f98783cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adadb8aa711eea04ae1466a69b008aa83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_force_registry.html#adadb8aa711eea04ae1466a69b008aa83">remove</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle, <a class="el" href="classr3_1_1_i_particle_force_generator.html">IParticleForceGenerator</a> *generator)</td></tr>
-<tr class="memdesc:adadb8aa711eea04ae1466a69b008aa83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an existing entry.  <a href="#adadb8aa711eea04ae1466a69b008aa83">More...</a><br /></td></tr>
-<tr class="separator:adadb8aa711eea04ae1466a69b008aa83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4aa0458e212f63a7a9248318fee1016"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_force_registry.html#aa4aa0458e212f63a7a9248318fee1016">remove</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle, <a class="el" href="classr3_1_1_i_particle_force_generator.html">IParticleForceGenerator</a> *generator)</td></tr>
+<tr class="memdesc:aa4aa0458e212f63a7a9248318fee1016"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove an existing entry.  <a href="#aa4aa0458e212f63a7a9248318fee1016">More...</a><br /></td></tr>
+<tr class="separator:aa4aa0458e212f63a7a9248318fee1016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac49c38fa041447278c56e68c6e796d77"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_force_registry.html#ac49c38fa041447278c56e68c6e796d77">clear</a> ()</td></tr>
 <tr class="memdesc:ac49c38fa041447278c56e68c6e796d77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all entries.  <a href="#ac49c38fa041447278c56e68c6e796d77">More...</a><br /></td></tr>
 <tr class="separator:ac49c38fa041447278c56e68c6e796d77"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,6 +133,49 @@ Protected Attributes</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">using <a class="el" href="classr3_1_1_particle_force_registry.html#ae769e654dbf539cf09c514e47768498c">r3::ParticleForceRegistry::Registry_Type</a> =  std::vector&lt;<a class="el" href="structr3_1_1_particle_force_registry_1_1_particle_force_registration_entry.html">ParticleForceRegistrationEntry</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4ca245fb0538dbfb0c04ca49a3a226b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ca245fb0538dbfb0c04ca49a3a226b6">&#9670;&nbsp;</a></span>ParticleForceRegistry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">r3::ParticleForceRegistry::ParticleForceRegistry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1fb5af3138a91474810858e52f5a21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1fb5af3138a91474810858e52f5a21c">&#9670;&nbsp;</a></span>~ParticleForceRegistry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">r3::ParticleForceRegistry::~ParticleForceRegistry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -192,14 +239,14 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adadb8aa711eea04ae1466a69b008aa83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adadb8aa711eea04ae1466a69b008aa83">&#9670;&nbsp;</a></span>remove()</h2>
+<a id="aa4aa0458e212f63a7a9248318fee1016"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4aa0458e212f63a7a9248318fee1016">&#9670;&nbsp;</a></span>remove()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void r3::ParticleForceRegistry::remove </td>
+          <td class="memname">bool r3::ParticleForceRegistry::remove </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td>
           <td class="paramname"><em>particle</em>, </td>
@@ -226,6 +273,7 @@ Protected Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the given pair was found, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -279,8 +327,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_force_registry_8h_source.html">ParticleForceRegistry.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_force_registry_8cpp.html">ParticleForceRegistry.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_force_registry_8h_source.html">ParticleForceRegistry.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_force_registry_8cpp.html">ParticleForceRegistry.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -68,6 +68,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classr3_1_1_collision_algorithm_matrix-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -85,22 +86,45 @@ Collaboration diagram for r3::CollisionAlgorithmMatrix:</div>
 <div class="center"><img src="classr3_1_1_collision_algorithm_matrix__coll__graph.png" border="0" usemap="#r3_1_1_collision_algorithm_matrix_coll__map" alt="Collaboration graph"/></div>
 </div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ae68e99a7d5f10618fa4b82ee254052b9"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#ae68e99a7d5f10618fa4b82ee254052b9">Algorithm_Ptr</a> = std::shared_ptr&lt; <a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a> &gt;</td></tr>
+<tr class="separator:ae68e99a7d5f10618fa4b82ee254052b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a97bdad626057f600ae5ffca63eb174b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#a97bdad626057f600ae5ffca63eb174b8">CollisionAlgorithmMatrix</a> ()</td></tr>
 <tr class="separator:a97bdad626057f600ae5ffca63eb174b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adea2db794d9606ecf24745ad6ac912d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#adea2db794d9606ecf24745ad6ac912d8">~CollisionAlgorithmMatrix</a> ()</td></tr>
 <tr class="separator:adea2db794d9606ecf24745ad6ac912d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ddf117fbce8a3216b4b4413ccade6d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#a6ddf117fbce8a3216b4b4413ccade6d0">setAlgorithm</a> (<a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a> *algorithm, CollisionPrimitiveType firstShape, CollisionPrimitiveType secondShape)</td></tr>
-<tr class="memdesc:a6ddf117fbce8a3216b4b4413ccade6d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the collision algorithm for a specific collision primitive combination.  <a href="#a6ddf117fbce8a3216b4b4413ccade6d0">More...</a><br /></td></tr>
-<tr class="separator:a6ddf117fbce8a3216b4b4413ccade6d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05aae40f6aba106fa9e62b45fd434bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#a05aae40f6aba106fa9e62b45fd434bad">setAlgorithm</a> (const <a class="el" href="classr3_1_1_collision_algorithm_matrix.html#ae68e99a7d5f10618fa4b82ee254052b9">Algorithm_Ptr</a> &amp;algorithm, CollisionPrimitiveType firstShape, CollisionPrimitiveType secondShape)</td></tr>
+<tr class="memdesc:a05aae40f6aba106fa9e62b45fd434bad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the collision algorithm for a specific collision primitive combination.  <a href="#a05aae40f6aba106fa9e62b45fd434bad">More...</a><br /></td></tr>
+<tr class="separator:a05aae40f6aba106fa9e62b45fd434bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad40e0f125b95d6bcdb2e8a27c1397e68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#ad40e0f125b95d6bcdb2e8a27c1397e68">getAlgorithm</a> (CollisionPrimitiveType firstShape, CollisionPrimitiveType secondShape)</td></tr>
 <tr class="memdesc:ad40e0f125b95d6bcdb2e8a27c1397e68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the collision algorithm currently used for a specific collision primitive combination.  <a href="#ad40e0f125b95d6bcdb2e8a27c1397e68">More...</a><br /></td></tr>
 <tr class="separator:ad40e0f125b95d6bcdb2e8a27c1397e68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2f1a16b0e3bbede20dc8559820525cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_algorithm_matrix.html#af2f1a16b0e3bbede20dc8559820525cb">reset</a> ()</td></tr>
+<tr class="memdesc:af2f1a16b0e3bbede20dc8559820525cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replace all algorithms with a null algorithm.  <a href="#af2f1a16b0e3bbede20dc8559820525cb">More...</a><br /></td></tr>
+<tr class="separator:af2f1a16b0e3bbede20dc8559820525cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Describes a collision algorithm for every collision primitive type combination. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae68e99a7d5f10618fa4b82ee254052b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae68e99a7d5f10618fa4b82ee254052b9">&#9670;&nbsp;</a></span>Algorithm_Ptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="classr3_1_1_collision_algorithm_matrix.html#ae68e99a7d5f10618fa4b82ee254052b9">r3::CollisionAlgorithmMatrix::Algorithm_Ptr</a> =  std::shared_ptr&lt;<a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a97bdad626057f600ae5ffca63eb174b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97bdad626057f600ae5ffca63eb174b8">&#9670;&nbsp;</a></span>CollisionAlgorithmMatrix()</h2>
 
@@ -186,12 +210,31 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The collision algorithm matrix. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The collision algorithm if existent, a null object otherwise. </dd></dl>
 
 </div>
 </div>
-<a id="a6ddf117fbce8a3216b4b4413ccade6d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ddf117fbce8a3216b4b4413ccade6d0">&#9670;&nbsp;</a></span>setAlgorithm()</h2>
+<a id="af2f1a16b0e3bbede20dc8559820525cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af2f1a16b0e3bbede20dc8559820525cb">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::CollisionAlgorithmMatrix::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Replace all algorithms with a null algorithm. </p>
+
+</div>
+</div>
+<a id="a05aae40f6aba106fa9e62b45fd434bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05aae40f6aba106fa9e62b45fd434bad">&#9670;&nbsp;</a></span>setAlgorithm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +242,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void r3::CollisionAlgorithmMatrix::setAlgorithm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classr3_1_1_i_narrow_phase_algorithm.html">INarrowPhaseAlgorithm</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classr3_1_1_collision_algorithm_matrix.html#ae68e99a7d5f10618fa4b82ee254052b9">Algorithm_Ptr</a> &amp;&#160;</td>
           <td class="paramname"><em>algorithm</em>, </td>
         </tr>
         <tr>
@@ -235,8 +278,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_algorithm_matrix_8h_source.html">CollisionAlgorithmMatrix.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_algorithm_matrix_8cpp.html">CollisionAlgorithmMatrix.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_algorithm_matrix_8h_source.html">CollisionAlgorithmMatrix.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionDetection/<a class="el" href="_collision_algorithm_matrix_8cpp.html">CollisionAlgorithmMatrix.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

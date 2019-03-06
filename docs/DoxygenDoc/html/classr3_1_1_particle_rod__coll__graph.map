@@ -1,5 +1,5 @@
 <map id="r3::ParticleRod" name="r3::ParticleRod">
-<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="231,476,351,597"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="231,476,351,627"/>
 <area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,248,201,355"/>
 <area shape="rect" id="node4" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,357,413"/>
 </map>

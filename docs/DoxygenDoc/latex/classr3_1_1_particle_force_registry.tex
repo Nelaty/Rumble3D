@@ -31,9 +31,13 @@ using \mbox{\hyperlink{classr3_1_1_particle_force_registry_ae769e654dbf539cf09c5
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classr3_1_1_particle_force_registry_a4ca245fb0538dbfb0c04ca49a3a226b6}{Particle\+Force\+Registry}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_force_registry_aa1fb5af3138a91474810858e52f5a21c}{$\sim$\+Particle\+Force\+Registry}} ()
+\item 
 void \mbox{\hyperlink{classr3_1_1_particle_force_registry_a11cb053992645af9af2ccd5f98783cae}{add}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classr3_1_1_i_particle_force_generator}{I\+Particle\+Force\+Generator}} $\ast$generator)
 \begin{DoxyCompactList}\small\item\em Register a force generator with a particle it acts on. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_particle_force_registry_adadb8aa711eea04ae1466a69b008aa83}{remove}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classr3_1_1_i_particle_force_generator}{I\+Particle\+Force\+Generator}} $\ast$generator)
+bool \mbox{\hyperlink{classr3_1_1_particle_force_registry_aa4aa0458e212f63a7a9248318fee1016}{remove}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{classr3_1_1_i_particle_force_generator}{I\+Particle\+Force\+Generator}} $\ast$generator)
 \begin{DoxyCompactList}\small\item\em Remove an existing entry. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_force_registry_ac49c38fa041447278c56e68c6e796d77}{clear}} ()
 \begin{DoxyCompactList}\small\item\em Remove all entries. \end{DoxyCompactList}\item 
@@ -55,6 +59,21 @@ A \mbox{\hyperlink{classr3_1_1_particle_force_registry}{Particle\+Force\+Registr
 \index{Registry\+\_\+\+Type@{Registry\+\_\+\+Type}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
 \subsubsection{\texorpdfstring{Registry\+\_\+\+Type}{Registry\_Type}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_particle_force_registry_ae769e654dbf539cf09c514e47768498c}{r3\+::\+Particle\+Force\+Registry\+::\+Registry\+\_\+\+Type}} =  std\+::vector$<$\mbox{\hyperlink{structr3_1_1_particle_force_registry_1_1_particle_force_registration_entry}{Particle\+Force\+Registration\+Entry}}$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_a4ca245fb0538dbfb0c04ca49a3a226b6}\label{classr3_1_1_particle_force_registry_a4ca245fb0538dbfb0c04ca49a3a226b6}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!Particle\+Force\+Registry@{Particle\+Force\+Registry}}
+\index{Particle\+Force\+Registry@{Particle\+Force\+Registry}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{Particle\+Force\+Registry()}{ParticleForceRegistry()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Force\+Registry\+::\+Particle\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_aa1fb5af3138a91474810858e52f5a21c}\label{classr3_1_1_particle_force_registry_aa1fb5af3138a91474810858e52f5a21c}} 
+\index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!````~Particle\+Force\+Registry@{$\sim$\+Particle\+Force\+Registry}}
+\index{````~Particle\+Force\+Registry@{$\sim$\+Particle\+Force\+Registry}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Force\+Registry()}{~ParticleForceRegistry()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Force\+Registry\+::$\sim$\+Particle\+Force\+Registry (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -86,11 +105,11 @@ Register a force generator with a particle it acts on.
 
 Remove all entries. 
 
-\mbox{\Hypertarget{classr3_1_1_particle_force_registry_adadb8aa711eea04ae1466a69b008aa83}\label{classr3_1_1_particle_force_registry_adadb8aa711eea04ae1466a69b008aa83}} 
+\mbox{\Hypertarget{classr3_1_1_particle_force_registry_aa4aa0458e212f63a7a9248318fee1016}\label{classr3_1_1_particle_force_registry_aa4aa0458e212f63a7a9248318fee1016}} 
 \index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!remove@{remove}}
 \index{remove@{remove}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
 \subsubsection{\texorpdfstring{remove()}{remove()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+Force\+Registry\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{classr3_1_1_i_particle_force_generator}{I\+Particle\+Force\+Generator}} $\ast$}]{generator }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool r3\+::\+Particle\+Force\+Registry\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{classr3_1_1_i_particle_force_generator}{I\+Particle\+Force\+Generator}} $\ast$}]{generator }\end{DoxyParamCaption})}
 
 
 
@@ -103,6 +122,9 @@ Remove an existing entry.
 {\em generator} & The force generator stored in the entry. \\
 \hline
 \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the given pair was found, false otherwise. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_force_registry_aff16efc19c65d28e39a38cbc936ede2a}\label{classr3_1_1_particle_force_registry_aff16efc19c65d28e39a38cbc936ede2a}} 
 \index{r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}!update\+Forces@{update\+Forces}}
 \index{update\+Forces@{update\+Forces}!r3\+::\+Particle\+Force\+Registry@{r3\+::\+Particle\+Force\+Registry}}
@@ -131,5 +153,5 @@ Let all registered force generators act forces on their linked particle(s).
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8h}{Particle\+Force\+Registry.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8cpp}{Particle\+Force\+Registry.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8h}{Particle\+Force\+Registry.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_force_registry_8cpp}{Particle\+Force\+Registry.\+cpp}}\end{DoxyCompactItemize}

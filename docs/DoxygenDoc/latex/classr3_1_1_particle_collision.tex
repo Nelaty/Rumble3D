@@ -24,9 +24,14 @@ Collaboration diagram for r3\+:\+:Particle\+Collision\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classr3_1_1_particle_collision__coll__graph}
+\includegraphics[height=550pt]{classr3_1_1_particle_collision__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}{Collision\+Callback}} = std\+::function$<$ void(\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$first, \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$second, const glm\+::vec3 \&contact\+Normal)$>$
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -35,7 +40,9 @@ Collaboration diagram for r3\+:\+:Particle\+Collision\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_particle_collision_a7227b004e41a96aafd5f9a54e3b6b97e}{$\sim$\+Particle\+Collision}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb2e6719}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&contact\+Data) const override
-\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_collision_ada3299069d9e5436a6839c70fdd0c820}{set\+Collision\+Callback}} (const \mbox{\hyperlink{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}{Collision\+Callback}} \&callback)
+\begin{DoxyCompactList}\small\item\em Set a callback for when a collision happens. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -44,12 +51,23 @@ void \mbox{\hyperlink{classr3_1_1_particle_collision_adb77c85cb90707073e7c654acb
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_collision_a269b3beb261aee2fbd784210025cdebf}{m\+\_\+distance}}
 \item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_collision_a4e27e43b9a17e4a1d04ff91b808b4da9}{m\+\_\+penetration}}
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}{Collision\+Callback}} \mbox{\hyperlink{classr3_1_1_particle_collision_aaa7e8c1e2b4cd1b635277548fb82bb4f}{m\+\_\+callback}}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 A \mbox{\hyperlink{classr3_1_1_particle_collision}{Particle\+Collision}} can maintains a certain distance between two particles. A contact will be generated if those particles are too close together. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}\label{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}} 
+\index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!Collision\+Callback@{Collision\+Callback}}
+\index{Collision\+Callback@{Collision\+Callback}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
+\subsubsection{\texorpdfstring{Collision\+Callback}{CollisionCallback}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}{r3\+::\+Particle\+Collision\+::\+Collision\+Callback}} =  std\+::function$<$void(\mbox{\hyperlink{classr3_1_1_particle}{Particle}}$\ast$ first, \mbox{\hyperlink{classr3_1_1_particle}{Particle}}$\ast$ second, const glm\+::vec3\& contact\+Normal)$>$}
+
+
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_collision_af3c52ed10e7495207bf20f3263175098}\label{classr3_1_1_particle_collision_af3c52ed10e7495207bf20f3263175098}} 
@@ -99,9 +117,25 @@ Generate new contacts.
 
 Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}{r3\+::\+Particle\+Contact\+Generator}}.
 
+\mbox{\Hypertarget{classr3_1_1_particle_collision_ada3299069d9e5436a6839c70fdd0c820}\label{classr3_1_1_particle_collision_ada3299069d9e5436a6839c70fdd0c820}} 
+\index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!set\+Collision\+Callback@{set\+Collision\+Callback}}
+\index{set\+Collision\+Callback@{set\+Collision\+Callback}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
+\subsubsection{\texorpdfstring{set\+Collision\+Callback()}{setCollisionCallback()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Collision\+::set\+Collision\+Callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}{Collision\+Callback}} \&}]{callback }\end{DoxyParamCaption})}
+
+
+
+Set a callback for when a collision happens. 
+
 
 
 \subsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_collision_aaa7e8c1e2b4cd1b635277548fb82bb4f}\label{classr3_1_1_particle_collision_aaa7e8c1e2b4cd1b635277548fb82bb4f}} 
+\index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!m\+\_\+callback@{m\+\_\+callback}}
+\index{m\+\_\+callback@{m\+\_\+callback}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
+\subsubsection{\texorpdfstring{m\+\_\+callback}{m\_callback}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle_collision_a85d1a02ec35335322e5a3ce47f0e46cf}{Collision\+Callback}} r3\+::\+Particle\+Collision\+::m\+\_\+callback\hspace{0.3cm}{\ttfamily [protected]}}
+
 \mbox{\Hypertarget{classr3_1_1_particle_collision_a269b3beb261aee2fbd784210025cdebf}\label{classr3_1_1_particle_collision_a269b3beb261aee2fbd784210025cdebf}} 
 \index{r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}!m\+\_\+distance@{m\+\_\+distance}}
 \index{m\+\_\+distance@{m\+\_\+distance}!r3\+::\+Particle\+Collision@{r3\+::\+Particle\+Collision}}
@@ -124,5 +158,5 @@ Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b3
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8h}{Particle\+Collision.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8cpp}{Particle\+Collision.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8h}{Particle\+Collision.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_collision_8cpp}{Particle\+Collision.\+cpp}}\end{DoxyCompactItemize}

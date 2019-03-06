@@ -147,9 +147,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a69cce589274029051cc7568dd8fde54d"><td class="memItemLeft" align="right" valign="top">static glm::vec4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_random.html#a69cce589274029051cc7568dd8fde54d">randomVec4</a> (const glm::vec4 &amp;min, const glm::vec4 &amp;max)</td></tr>
 <tr class="memdesc:a69cce589274029051cc7568dd8fde54d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate a random 4D vector in a user defined range.  <a href="#a69cce589274029051cc7568dd8fde54d">More...</a><br /></td></tr>
 <tr class="separator:a69cce589274029051cc7568dd8fde54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b9dd03194e79fac4374e16c0b2ad03f"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_random.html#a7b9dd03194e79fac4374e16c0b2ad03f">randomBool</a> (float chance)</td></tr>
-<tr class="memdesc:a7b9dd03194e79fac4374e16c0b2ad03f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a random boolean value.  <a href="#a7b9dd03194e79fac4374e16c0b2ad03f">More...</a><br /></td></tr>
-<tr class="separator:a7b9dd03194e79fac4374e16c0b2ad03f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63733fee2f7cf42bab7ad00b1a23a0d1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_random.html#a63733fee2f7cf42bab7ad00b1a23a0d1">randomBool</a> (float chance=0.5f)</td></tr>
+<tr class="memdesc:a63733fee2f7cf42bab7ad00b1a23a0d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a random boolean value.  <a href="#a63733fee2f7cf42bab7ad00b1a23a0d1">More...</a><br /></td></tr>
+<tr class="separator:a63733fee2f7cf42bab7ad00b1a23a0d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27bd8d68f82223df0421bc309e83647f"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_random.html#a27bd8d68f82223df0421bc309e83647f">randomSign</a> (float chance=0.5f)</td></tr>
+<tr class="memdesc:a27bd8d68f82223df0421bc309e83647f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a positive signed value of 1 with a given chance.  <a href="#a27bd8d68f82223df0421bc309e83647f">More...</a><br /></td></tr>
+<tr class="separator:a27bd8d68f82223df0421bc309e83647f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Equally distributed random number generator. </p>
@@ -182,8 +185,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a7b9dd03194e79fac4374e16c0b2ad03f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b9dd03194e79fac4374e16c0b2ad03f">&#9670;&nbsp;</a></span>randomBool()</h2>
+<a id="a63733fee2f7cf42bab7ad00b1a23a0d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63733fee2f7cf42bab7ad00b1a23a0d1">&#9670;&nbsp;</a></span>randomBool()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -195,7 +198,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool r3::Random::randomBool </td>
           <td>(</td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>chance</em></td><td>)</td>
+          <td class="paramname"><em>chance</em> = <code>0.5f</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -492,6 +495,41 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A random integer </dd></dl>
+
+</div>
+</div>
+<a id="a27bd8d68f82223df0421bc309e83647f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27bd8d68f82223df0421bc309e83647f">&#9670;&nbsp;</a></span>randomSign()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int r3::Random::randomSign </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>chance</em> = <code>0.5f</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a positive signed value of 1 with a given chance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chance</td><td>The probability of returning a positive value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>1 or -1 </dd></dl>
 
 </div>
 </div>
@@ -912,8 +950,8 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/Utility/<a class="el" href="_random_8h_source.html">Random.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/Utility/<a class="el" href="_random_8cpp.html">Random.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/Utility/<a class="el" href="_random_8h_source.html">Random.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/Utility/<a class="el" href="_random_8cpp.html">Random.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

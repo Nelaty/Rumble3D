@@ -1,7 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,31,172,57"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="227,5,365,32"/>
-<area shape="rect" id="node4" href="$classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds. " alt="" coords="220,56,372,83"/>
-<area shape="rect" id="node3" href="$classr3_1_1_default_particle_engine_c_i.html" title="Default implementation of the particle computation interface. " alt="" coords="427,5,605,32"/>
-<area shape="rect" id="node5" href="$classr3_1_1_default_rigid_body_engine_c_i.html" title="Default implementation of the rigid body engine computation interface. " alt="" coords="420,56,612,83"/>
+<area shape="rect" id="node1" href="$classr3_1_1_i_collision_resolution_filter.html" title="Interface for collision resolution filter. " alt="" coords="5,49,160,90"/>
+<area shape="rect" id="node2" href="$classr3_1_1_friction_resolver.html" title="Specialized collision resolution filter, which adds friction at given contacts. " alt="" coords="231,5,364,32"/>
+<area shape="rect" id="node3" href="$classr3_1_1_interpenetration_resolver.html" title="Specialized collision resolution filter, which solves interpenetration of bodies. ..." alt="" coords="208,56,387,83"/>
+<area shape="rect" id="node4" href="$classr3_1_1_velocity_resolver.html" title="Specialized collision resolution filter, which changes body velocities for bodies involved in contact..." alt="" coords="229,107,366,133"/>
 </map>

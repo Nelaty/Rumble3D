@@ -30,7 +30,7 @@ Collaboration diagram for r3\+:\+:Collision\+Resolver\+:\nopagebreak
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-using \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} = std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $>$
+using \mbox{\hyperlink{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}{Filter\+\_\+\+Ptr}} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $>$
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
@@ -41,7 +41,7 @@ virtual \mbox{\hyperlink{classr3_1_1_collision_resolver_ad172d58efecf5ef38f42020
 \item 
 void \mbox{\hyperlink{classr3_1_1_collision_resolver_a134da5221d60b34c568f7de29c9d0a58}{resolve\+Collisions}} (\mbox{\hyperlink{classr3_1_1_collision_data}{Collision\+Data}} \&collision\+Data, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
 \item 
-\mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}{append\+Filter}} (\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} filter)
+\mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_resolver_adad2e36c48000a5af14b679fde5e7b3d}{append\+Filter}} (const \mbox{\hyperlink{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}{Filter\+\_\+\+Ptr}} \&filter)
 \begin{DoxyCompactList}\small\item\em Insert a new filter, which will be executed after all already inserted filters. \end{DoxyCompactList}\item 
 unsigned int \mbox{\hyperlink{classr3_1_1_collision_resolver_ae56e2125e24982ad368f0d87e9c2a28f}{get\+Filter\+Count}} () const
 \item 
@@ -50,7 +50,7 @@ void \mbox{\hyperlink{classr3_1_1_collision_resolver_a1f4e3d97afae66c03581807a52
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}} $>$ \mbox{\hyperlink{classr3_1_1_collision_resolver_abf1234ad45ba7f114b31950c90ccaaff}{m\+\_\+filters}}
+std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}{Filter\+\_\+\+Ptr}} $>$ \mbox{\hyperlink{classr3_1_1_collision_resolver_abf1234ad45ba7f114b31950c90ccaaff}{m\+\_\+filters}}
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
@@ -59,11 +59,11 @@ std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498
 Default implementation for a collision resolver. 
 
 \subsection{Member Typedef Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}\label{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}} 
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}\label{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}} 
 \index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!Filter\+\_\+\+Ptr@{Filter\+\_\+\+Ptr}}
 \index{Filter\+\_\+\+Ptr@{Filter\+\_\+\+Ptr}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
 \subsubsection{\texorpdfstring{Filter\+\_\+\+Ptr}{Filter\_Ptr}}
-{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{r3\+::\+Collision\+Resolver\+::\+Filter\+\_\+\+Ptr}} =  std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}}$>$}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}{r3\+::\+Collision\+Resolver\+::\+Filter\+\_\+\+Ptr}} =  std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}}$>$}
 
 
 
@@ -83,11 +83,11 @@ Default implementation for a collision resolver.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}\label{classr3_1_1_collision_resolver_a9409413937188dbd5332c3440c2a8834}} 
+\mbox{\Hypertarget{classr3_1_1_collision_resolver_adad2e36c48000a5af14b679fde5e7b3d}\label{classr3_1_1_collision_resolver_adad2e36c48000a5af14b679fde5e7b3d}} 
 \index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!append\+Filter@{append\+Filter}}
 \index{append\+Filter@{append\+Filter}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
 \subsubsection{\texorpdfstring{append\+Filter()}{appendFilter()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ r3\+::\+Collision\+Resolver\+::append\+Filter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}}}]{filter }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_i_collision_resolution_filter}{I\+Collision\+Resolution\+Filter}} $\ast$ r3\+::\+Collision\+Resolver\+::append\+Filter (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}{Filter\+\_\+\+Ptr}} \&}]{filter }\end{DoxyParamCaption})}
 
 
 
@@ -130,11 +130,11 @@ Implements \mbox{\hyperlink{classr3_1_1_i_collision_resolver_access_a266dfbc4c42
 \index{r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}!m\+\_\+filters@{m\+\_\+filters}}
 \index{m\+\_\+filters@{m\+\_\+filters}!r3\+::\+Collision\+Resolver@{r3\+::\+Collision\+Resolver}}
 \subsubsection{\texorpdfstring{m\+\_\+filters}{m\_filters}}
-{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classr3_1_1_collision_resolver_ad1c9ca40341498c0fe4d483d21c8eb9b}{Filter\+\_\+\+Ptr}}$>$ r3\+::\+Collision\+Resolver\+::m\+\_\+filters\hspace{0.3cm}{\ttfamily [protected]}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classr3_1_1_collision_resolver_a5b3838b81de7909c3c78268801d61414}{Filter\+\_\+\+Ptr}}$>$ r3\+::\+Collision\+Resolver\+::m\+\_\+filters\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Resolution/\mbox{\hyperlink{_collision_resolver_8h}{Collision\+Resolver.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Resolution/\mbox{\hyperlink{_collision_resolver_8cpp}{Collision\+Resolver.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Resolution/\mbox{\hyperlink{_collision_resolver_8h}{Collision\+Resolver.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Resolution/\mbox{\hyperlink{_collision_resolver_8cpp}{Collision\+Resolver.\+cpp}}\end{DoxyCompactItemize}

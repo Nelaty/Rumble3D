@@ -15,7 +15,7 @@ Inheritance diagram for r3\+:\+:Fixed\+Size\+Container$<$ Element\+\_\+\+Type, C
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=350pt]{classr3_1_1_fixed_size_container__inherit__graph}
+\includegraphics[height=550pt]{classr3_1_1_fixed_size_container__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -48,6 +48,10 @@ int \mbox{\hyperlink{classr3_1_1_fixed_size_container_a4ec349530e78e78244f739139
 \begin{DoxyCompactList}\small\item\em Get the number of elements, which are already stored in the container. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classr3_1_1_fixed_size_container_a984b90ac15df32a41011e665e3059e17}{get\+Size}} () const
 \begin{DoxyCompactList}\small\item\em Get the maximal number of elements, which can fit in this container. \end{DoxyCompactList}\item 
+Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container_a6e849d08e5ad5a1a0ef6207f8b36b22e}{back}} ()
+\begin{DoxyCompactList}\small\item\em Get the last element. \end{DoxyCompactList}\item 
+Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container_ae60eda032ed2276552c7df4fc6da4640}{front}} ()
+\begin{DoxyCompactList}\small\item\em Get the first element. \end{DoxyCompactList}\item 
 Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container_a7903fc6d43600195b97218aead60a99a}{get\+Available\+Entry}} ()
 \begin{DoxyCompactList}\small\item\em Get the next available element. This automatically use the entry. \end{DoxyCompactList}\item 
 Container\+\_\+\+Type \& \mbox{\hyperlink{classr3_1_1_fixed_size_container_adbf383734c597677d4221278000886a3}{get\+Data}} ()
@@ -93,6 +97,28 @@ Template class for a container, which can be resized, with random access (depend
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_a6e849d08e5ad5a1a0ef6207f8b36b22e}\label{classr3_1_1_fixed_size_container_a6e849d08e5ad5a1a0ef6207f8b36b22e}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!back@{back}}
+\index{back@{back}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{back()}{back()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::back (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the last element. 
+
+\mbox{\Hypertarget{classr3_1_1_fixed_size_container_ae60eda032ed2276552c7df4fc6da4640}\label{classr3_1_1_fixed_size_container_ae60eda032ed2276552c7df4fc6da4640}} 
+\index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!front@{front}}
+\index{front@{front}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
+\subsubsection{\texorpdfstring{front()}{front()}}
+{\footnotesize\ttfamily template$<$class Element\+\_\+\+Type , class Container\+\_\+\+Type $>$ \\
+Element\+\_\+\+Type $\ast$ \mbox{\hyperlink{classr3_1_1_fixed_size_container}{r3\+::\+Fixed\+Size\+Container}}$<$ Element\+\_\+\+Type, Container\+\_\+\+Type $>$\+::front (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the first element. 
+
 \mbox{\Hypertarget{classr3_1_1_fixed_size_container_a7903fc6d43600195b97218aead60a99a}\label{classr3_1_1_fixed_size_container_a7903fc6d43600195b97218aead60a99a}} 
 \index{r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}!get\+Available\+Entry@{get\+Available\+Entry}}
 \index{get\+Available\+Entry@{get\+Available\+Entry}!r3\+::\+Fixed\+Size\+Container@{r3\+::\+Fixed\+Size\+Container}}
@@ -236,5 +262,5 @@ Reset the number of used entries.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_fixed_size_container_8h}{Fixed\+Size\+Container.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_fixed_size_container_8inl}{Fixed\+Size\+Container.\+inl}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_fixed_size_container_8h}{Fixed\+Size\+Container.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_fixed_size_container_8inl}{Fixed\+Size\+Container.\+inl}}\end{DoxyCompactItemize}

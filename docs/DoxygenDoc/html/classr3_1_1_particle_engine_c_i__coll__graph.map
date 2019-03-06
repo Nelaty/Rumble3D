@@ -1,5 +1,5 @@
 <map id="r3::ParticleEngineCI" name="r3::ParticleEngineCI">
-<area shape="rect" id="node2" href="$classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,375,180,540"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_world.html" title="A ParticleWorld is a physics engine module, used to simulate particles. " alt="" coords="205,331,415,584"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks. " alt="" coords="5,367,180,533"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_world.html" title="A ParticleWorld is a physics engine module, used to simulate particles. " alt="" coords="205,331,415,569"/>
 <area shape="rect" id="node4" href="$classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules. " alt="" coords="219,145,401,281"/>
 </map>

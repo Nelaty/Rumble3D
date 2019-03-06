@@ -43,12 +43,10 @@ void \mbox{\hyperlink{classr3_1_1_rigid_body_world_a0c5724007917231ebe9bd970d65b
 \begin{DoxyCompactList}\small\item\em Set the computation interface, which simulates the rigid bodies. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_i_computation_interface}{I\+Computation\+Interface}} $\ast$ \mbox{\hyperlink{classr3_1_1_rigid_body_world_ac25b39a5b15666d99f42b68f29f8a97b}{get\+Computation\+Interface}} () const override
 \begin{DoxyCompactList}\small\item\em Get the world\textquotesingle{}s computation interface. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_rigid_body_world_a647ca787c02a56c230eb5d50080b561d}{create\+Rigid\+Body}} (\mbox{\hyperlink{structr3_1_1_rigid_body_def}{Rigid\+Body\+Def}} definition=\mbox{\hyperlink{structr3_1_1_rigid_body_def}{Rigid\+Body\+Def}}())
-\begin{DoxyCompactList}\small\item\em Allocate space for a new rigid body and register it. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classr3_1_1_rigid_body_world_a1a203fb9675eba999e0f59c23e597111}{destroy\+Rigid\+Body}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rigid\+Body)
-\begin{DoxyCompactList}\small\item\em Free memory of a given rigid body. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_rigid_body_world_acdfd6a392a98366cd8414f7f6f50917f}{destroy\+All\+Rigid\+Bodies}} ()
-\begin{DoxyCompactList}\small\item\em Free memory of all rigid bodies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_rigid_body_world_ae743b90995308445e9ef985e3fde8f8f}{add\+Rigid\+Body}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body)
+\begin{DoxyCompactList}\small\item\em Register a new rigid body. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classr3_1_1_rigid_body_world_a916edefa8befc0401b6f757037139931}{remove\+Rigid\+Body}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body)
+\begin{DoxyCompactList}\small\item\em Unregister an already registered rigid body. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_rigid_body_world_abe8c123eee198b6f8eca079e71302bcb}{Rigid\+Body\+\_\+\+Container}} \& \mbox{\hyperlink{classr3_1_1_rigid_body_world_a31e9a0ddd26c25327aa21b3460c52893}{get\+Rigid\+Bodies}} ()
 \begin{DoxyCompactList}\small\item\em Get the world\textquotesingle{}s rigid bodies. \end{DoxyCompactList}\item 
 const \mbox{\hyperlink{classr3_1_1_rigid_body_world_abe8c123eee198b6f8eca079e71302bcb}{Rigid\+Body\+\_\+\+Container}} \& \mbox{\hyperlink{classr3_1_1_rigid_body_world_abf3bfd4b5d7ed2e843362e555b9eebb2}{get\+Rigid\+Bodies}} () const
@@ -88,52 +86,21 @@ A \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} is a physi
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_rigid_body_world_a647ca787c02a56c230eb5d50080b561d}\label{classr3_1_1_rigid_body_world_a647ca787c02a56c230eb5d50080b561d}} 
-\index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!create\+Rigid\+Body@{create\+Rigid\+Body}}
-\index{create\+Rigid\+Body@{create\+Rigid\+Body}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
-\subsubsection{\texorpdfstring{create\+Rigid\+Body()}{createRigidBody()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ r3\+::\+Rigid\+Body\+World\+::create\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structr3_1_1_rigid_body_def}{Rigid\+Body\+Def}}}]{definition = {\ttfamily \mbox{\hyperlink{structr3_1_1_rigid_body_def}{Rigid\+Body\+Def}}()} }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_world_ae743b90995308445e9ef985e3fde8f8f}\label{classr3_1_1_rigid_body_world_ae743b90995308445e9ef985e3fde8f8f}} 
+\index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!add\+Rigid\+Body@{add\+Rigid\+Body}}
+\index{add\+Rigid\+Body@{add\+Rigid\+Body}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{add\+Rigid\+Body()}{addRigidBody()}}
+{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+World\+::add\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body }\end{DoxyParamCaption})}
 
 
 
-Allocate space for a new rigid body and register it. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em definition} & Construction information for the new rigid body. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-The new rigid body. 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_rigid_body_world_acdfd6a392a98366cd8414f7f6f50917f}\label{classr3_1_1_rigid_body_world_acdfd6a392a98366cd8414f7f6f50917f}} 
-\index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!destroy\+All\+Rigid\+Bodies@{destroy\+All\+Rigid\+Bodies}}
-\index{destroy\+All\+Rigid\+Bodies@{destroy\+All\+Rigid\+Bodies}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
-\subsubsection{\texorpdfstring{destroy\+All\+Rigid\+Bodies()}{destroyAllRigidBodies()}}
-{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+World\+::destroy\+All\+Rigid\+Bodies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Free memory of all rigid bodies. 
-
-\mbox{\Hypertarget{classr3_1_1_rigid_body_world_a1a203fb9675eba999e0f59c23e597111}\label{classr3_1_1_rigid_body_world_a1a203fb9675eba999e0f59c23e597111}} 
-\index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!destroy\+Rigid\+Body@{destroy\+Rigid\+Body}}
-\index{destroy\+Rigid\+Body@{destroy\+Rigid\+Body}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
-\subsubsection{\texorpdfstring{destroy\+Rigid\+Body()}{destroyRigidBody()}}
-{\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+World\+::destroy\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rigid\+Body }\end{DoxyParamCaption})}
-
-
-
-Free memory of a given rigid body. 
+Register a new rigid body. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em rigid\+Body} & The rigid body to destroy. \\
+{\em body} & The rigid body to register. \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-True if the rigid body was found, false otherwise. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_world_ac25b39a5b15666d99f42b68f29f8a97b}\label{classr3_1_1_rigid_body_world_ac25b39a5b15666d99f42b68f29f8a97b}} 
 \index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!get\+Computation\+Interface@{get\+Computation\+Interface}}
 \index{get\+Computation\+Interface@{get\+Computation\+Interface}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
@@ -203,6 +170,24 @@ Get the world\textquotesingle{}s rigid bodies.
 \begin{DoxyReturn}{Returns}
 All currently registered rigid bodies. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_world_a916edefa8befc0401b6f757037139931}\label{classr3_1_1_rigid_body_world_a916edefa8befc0401b6f757037139931}} 
+\index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!remove\+Rigid\+Body@{remove\+Rigid\+Body}}
+\index{remove\+Rigid\+Body@{remove\+Rigid\+Body}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
+\subsubsection{\texorpdfstring{remove\+Rigid\+Body()}{removeRigidBody()}}
+{\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+World\+::remove\+Rigid\+Body (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body }\end{DoxyParamCaption})}
+
+
+
+Unregister an already registered rigid body. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & The rigid body to unregister. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the body was registered, false otherwise. 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_world_a0c5724007917231ebe9bd970d65b0bfe}\label{classr3_1_1_rigid_body_world_a0c5724007917231ebe9bd970d65b0bfe}} 
 \index{r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}!set\+Computation\+Interface@{set\+Computation\+Interface}}
 \index{set\+Computation\+Interface@{set\+Computation\+Interface}!r3\+::\+Rigid\+Body\+World@{r3\+::\+Rigid\+Body\+World}}
@@ -222,5 +207,5 @@ Set the computation interface, which simulates the rigid bodies.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_world_8h}{Rigid\+Body\+World.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_world_8cpp}{Rigid\+Body\+World.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_world_8h}{Rigid\+Body\+World.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_world_8cpp}{Rigid\+Body\+World.\+cpp}}\end{DoxyCompactItemize}

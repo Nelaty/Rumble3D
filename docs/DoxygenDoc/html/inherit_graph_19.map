@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_i_collision_resolver_access.html" title="Interface for collision resolvers. Uses ICollisionResolutionFilter to resolve given contacts..." alt="" coords="5,5,192,32"/>
-<area shape="rect" id="node2" href="$classr3_1_1_collision_resolver.html" title="Default implementation for a collision resolver. " alt="" coords="240,5,379,32"/>
+<area shape="rect" id="node1" href="$classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time..." alt="" coords="5,31,149,57"/>
+<area shape="rect" id="node2" href="$classr3_1_1_broad_phase_filter.html" title="Default implementation of IBroadPhaseFilter. " alt="" coords="217,5,358,32"/>
+<area shape="rect" id="node3" href="$classr3_1_1_octree_broad_phase_filter.html" title="r3::OctreeBroadPhaseFilter" alt="" coords="197,56,377,83"/>
 </map>

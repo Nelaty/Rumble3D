@@ -1,0 +1,79 @@
+\hypertarget{classr3_1_1_octree_broad_phase_filter}{}\section{r3\+:\+:Octree\+Broad\+Phase\+Filter Class Reference}
+\label{classr3_1_1_octree_broad_phase_filter}\index{r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}}
+
+
+{\ttfamily \#include $<$Octree\+Broad\+Phase\+Filter.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Octree\+Broad\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classr3_1_1_octree_broad_phase_filter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Octree\+Broad\+Phase\+Filter\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classr3_1_1_octree_broad_phase_filter__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_octree_broad_phase_filter_af7c42e2915074abe284799b250079100}{Octree\+Broad\+Phase\+Filter}} ()
+\item 
+\mbox{\hyperlink{classr3_1_1_octree_broad_phase_filter_abf83846bc8ecbc65647cd46c63f87e08}{$\sim$\+Octree\+Broad\+Phase\+Filter}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_octree_broad_phase_filter_a9a4a5bbdcb978c782b89b729c475abfa}{generate\+Collisions}} (const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&rigid\+Bodies, \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&data) override
+\begin{DoxyCompactList}\small\item\em Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_octree_broad_phase_filter_af7c42e2915074abe284799b250079100}\label{classr3_1_1_octree_broad_phase_filter_af7c42e2915074abe284799b250079100}} 
+\index{r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}!Octree\+Broad\+Phase\+Filter@{Octree\+Broad\+Phase\+Filter}}
+\index{Octree\+Broad\+Phase\+Filter@{Octree\+Broad\+Phase\+Filter}!r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{Octree\+Broad\+Phase\+Filter()}{OctreeBroadPhaseFilter()}}
+{\footnotesize\ttfamily r3\+::\+Octree\+Broad\+Phase\+Filter\+::\+Octree\+Broad\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_octree_broad_phase_filter_abf83846bc8ecbc65647cd46c63f87e08}\label{classr3_1_1_octree_broad_phase_filter_abf83846bc8ecbc65647cd46c63f87e08}} 
+\index{r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}!````~Octree\+Broad\+Phase\+Filter@{$\sim$\+Octree\+Broad\+Phase\+Filter}}
+\index{````~Octree\+Broad\+Phase\+Filter@{$\sim$\+Octree\+Broad\+Phase\+Filter}!r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{$\sim$\+Octree\+Broad\+Phase\+Filter()}{~OctreeBroadPhaseFilter()}}
+{\footnotesize\ttfamily r3\+::\+Octree\+Broad\+Phase\+Filter\+::$\sim$\+Octree\+Broad\+Phase\+Filter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_octree_broad_phase_filter_a9a4a5bbdcb978c782b89b729c475abfa}\label{classr3_1_1_octree_broad_phase_filter_a9a4a5bbdcb978c782b89b729c475abfa}} 
+\index{r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}!generate\+Collisions@{generate\+Collisions}}
+\index{generate\+Collisions@{generate\+Collisions}!r3\+::\+Octree\+Broad\+Phase\+Filter@{r3\+::\+Octree\+Broad\+Phase\+Filter}}
+\subsubsection{\texorpdfstring{generate\+Collisions()}{generateCollisions()}}
+{\footnotesize\ttfamily void r3\+::\+Octree\+Broad\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$$>$ \&}]{rigid\+Bodies,  }\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Conservatively check, which rigid body pairs might collide. These collisions can be false positives, but there should never be false negatives. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em rigid\+Bodies} & The rigid bodies to check against possible collisions. \\
+\hline
+\mbox{\tt out}  & {\em data} & A number of possible collisions. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_broad_phase_filter_a5f437f6390a8f10bf96d72e35e3b4432}{r3\+::\+I\+Broad\+Phase\+Filter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_octree_broad_phase_filter_8h}{Octree\+Broad\+Phase\+Filter.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_octree_broad_phase_filter_8cpp}{Octree\+Broad\+Phase\+Filter.\+cpp}}\end{DoxyCompactItemize}

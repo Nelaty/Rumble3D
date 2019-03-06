@@ -18,6 +18,11 @@ Collaboration diagram for r3\+:\+:Collision\+Algorithm\+Matrix\+:\nopagebreak
 \includegraphics[width=223pt]{classr3_1_1_collision_algorithm_matrix__coll__graph}
 \end{center}
 \end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_ae68e99a7d5f10618fa4b82ee254052b9}{Algorithm\+\_\+\+Ptr}} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $>$
+\end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
@@ -25,14 +30,25 @@ Collaboration diagram for r3\+:\+:Collision\+Algorithm\+Matrix\+:\nopagebreak
 \item 
 \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_adea2db794d9606ecf24745ad6ac912d8}{$\sim$\+Collision\+Algorithm\+Matrix}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b4b4413ccade6d0}{set\+Algorithm}} (\mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$algorithm, Collision\+Primitive\+Type first\+Shape, Collision\+Primitive\+Type second\+Shape)
+void \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_a05aae40f6aba106fa9e62b45fd434bad}{set\+Algorithm}} (const \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_ae68e99a7d5f10618fa4b82ee254052b9}{Algorithm\+\_\+\+Ptr}} \&algorithm, Collision\+Primitive\+Type first\+Shape, Collision\+Primitive\+Type second\+Shape)
 \begin{DoxyCompactList}\small\item\em Set the collision algorithm for a specific collision primitive combination. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$ \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_ad40e0f125b95d6bcdb2e8a27c1397e68}{get\+Algorithm}} (Collision\+Primitive\+Type first\+Shape, Collision\+Primitive\+Type second\+Shape)
-\begin{DoxyCompactList}\small\item\em Get the collision algorithm currently used for a specific collision primitive combination. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the collision algorithm currently used for a specific collision primitive combination. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_af2f1a16b0e3bbede20dc8559820525cb}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Replace all algorithms with a null algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 Describes a collision algorithm for every collision primitive type combination. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_ae68e99a7d5f10618fa4b82ee254052b9}\label{classr3_1_1_collision_algorithm_matrix_ae68e99a7d5f10618fa4b82ee254052b9}} 
+\index{r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}!Algorithm\+\_\+\+Ptr@{Algorithm\+\_\+\+Ptr}}
+\index{Algorithm\+\_\+\+Ptr@{Algorithm\+\_\+\+Ptr}!r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}}
+\subsubsection{\texorpdfstring{Algorithm\+\_\+\+Ptr}{Algorithm\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_ae68e99a7d5f10618fa4b82ee254052b9}{r3\+::\+Collision\+Algorithm\+Matrix\+::\+Algorithm\+\_\+\+Ptr}} =  std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}}$>$}
+
+
 
 \subsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_a97bdad626057f600ae5ffca63eb174b8}\label{classr3_1_1_collision_algorithm_matrix_a97bdad626057f600ae5ffca63eb174b8}} 
@@ -68,13 +84,23 @@ Get the collision algorithm currently used for a specific collision primitive co
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-The collision algorithm matrix. 
+The collision algorithm if existent, a null object otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b4b4413ccade6d0}\label{classr3_1_1_collision_algorithm_matrix_a6ddf117fbce8a3216b4b4413ccade6d0}} 
+\mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_af2f1a16b0e3bbede20dc8559820525cb}\label{classr3_1_1_collision_algorithm_matrix_af2f1a16b0e3bbede20dc8559820525cb}} 
+\index{r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}!reset@{reset}}
+\index{reset@{reset}!r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Algorithm\+Matrix\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Replace all algorithms with a null algorithm. 
+
+\mbox{\Hypertarget{classr3_1_1_collision_algorithm_matrix_a05aae40f6aba106fa9e62b45fd434bad}\label{classr3_1_1_collision_algorithm_matrix_a05aae40f6aba106fa9e62b45fd434bad}} 
 \index{r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}!set\+Algorithm@{set\+Algorithm}}
 \index{set\+Algorithm@{set\+Algorithm}!r3\+::\+Collision\+Algorithm\+Matrix@{r3\+::\+Collision\+Algorithm\+Matrix}}
 \subsubsection{\texorpdfstring{set\+Algorithm()}{setAlgorithm()}}
-{\footnotesize\ttfamily void r3\+::\+Collision\+Algorithm\+Matrix\+::set\+Algorithm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_i_narrow_phase_algorithm}{I\+Narrow\+Phase\+Algorithm}} $\ast$}]{algorithm,  }\item[{Collision\+Primitive\+Type}]{first\+Shape,  }\item[{Collision\+Primitive\+Type}]{second\+Shape }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Algorithm\+Matrix\+::set\+Algorithm (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_ae68e99a7d5f10618fa4b82ee254052b9}{Algorithm\+\_\+\+Ptr}} \&}]{algorithm,  }\item[{Collision\+Primitive\+Type}]{first\+Shape,  }\item[{Collision\+Primitive\+Type}]{second\+Shape }\end{DoxyParamCaption})}
 
 
 
@@ -93,5 +119,5 @@ Set the collision algorithm for a specific collision primitive combination.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_algorithm_matrix_8h}{Collision\+Algorithm\+Matrix.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_algorithm_matrix_8cpp}{Collision\+Algorithm\+Matrix.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_algorithm_matrix_8h}{Collision\+Algorithm\+Matrix.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_collision_algorithm_matrix_8cpp}{Collision\+Algorithm\+Matrix.\+cpp}}\end{DoxyCompactItemize}

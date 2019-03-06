@@ -26,7 +26,6 @@
 \usepackage{tcolorbox}
 \usepackage{todonotes}
 
-
 \usepackage{enumitem}
 \usepackage[bottom]{footmisc}
 
@@ -36,7 +35,10 @@
 \usepackage[normalem]{ulem}
 \usepackage{multirow}
 \usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+
 \usepackage{tikz}
+\usetikzlibrary{positioning,automata}
+
 \usepackage{calc}
 \usepackage{geometry}
 \usepackage{listings,lstautogobble}
@@ -288,33 +290,31 @@ contents={\parbox{\layerwidth}{\centering}}
 	\pagenumbering{Roman} 
 	
 	\lstset{language=C++,
-		keywordstyle=\color{RoyalBlue},
+		keywordstyle=\color{blue},
 		basicstyle=\ttfamily,
 		commentstyle=\ttfamily\itshape\color{gray},
 		stringstyle=\ttfamily,
 		showstringspaces=false,
+		numbers=left,
+		numberstyle=\small,
 		breaklines=true,
 		frameround=ffff,
 		rulecolor=\color{black},
+		frame=single,
+		captionpos=b,
 		autogobble=true
 	}
 	
 	\begin{titlepage}
 		\begin{flushright}
-			\includegraphics[width=0.45\textwidth]{resources/Evelin_Logo_Final_4fbg}
 			\includegraphics[width=0.45\textwidth]{resources/hs_kempten_logo}
 		\end{flushright}
 		\begin{center}
 			\topskip0pt
 			\vspace*{\fill}
 			\LARGE\textbf{Rumble3D User Manual}\\		
-			
-			%\LARGE{}\\
-			\vspace{1cm}
-			%\Large{EVELIN Project}\\
-			\vspace{2cm}
-			\includegraphics[width=0.30\textwidth]{resources/Rumble3DLogo}
-			
+			\LARGE{A 3D physics library}\\
+
 			\vfill
 			\Large{\textcopyright 2018 Matthias Gensheimer}\\
 			\Large{All Rights Reserved.}
@@ -336,17 +336,81 @@ contents={\parbox{\layerwidth}{\centering}}
 	
 	\pagenumbering{arabic} 
 	\section{Introduction}
+	Rumble3D is a 3D physics library. Its core features are:
+	\begin{itemize}
+		\item Particle simulation
+		\item Rigid body simulation
+		\item Force generators
+		\item Collision detection and resolution
+	\end{itemize}
+	Due to the engine being made up of physic modules, it is fully extensible.
 
+	This manual will guide you through your first steps setting up the physics engine. It will explain the main parts of using the particle and rigid body engine aswell as the collision detection and resolution pipeline used in the rigid body engine.
 	
 	\pagebreak
 	\section{First steps}
-
+		\subsection{PhysicsEngine}
+		Each physic simulation needs one \textbf{PhysicsEngine}. It contains all \textbf{PhysicsEngineModules}, that are being used for the current simulation. Registering a module in the physics engine is as simple as:
+		
+		\begin{lstlisting}
+			PhysicsEngineModule* myModule = new MyModule();
+		
+			PhysicsEngine engine;
+			engine.registerModule(myModule, "myModule");
+		\end{lstlisting}
+	
+		\subsection{PhysicsEngineModule}
+		A \textbf{PhysicsEngineModule} is an abstract class, which allows the creation of new modules. A module contains an \textbf{IComputationInterface}, which can compute updates based on the data held by the module. This way The computation is separated from the data and therefore exchangeable. The function
+		\begin{lstlisting}
+			/**
+			* \brief Get the computation interface of this module.
+			* \return The computation interface.
+			*/
+			virtual IComputationInterface* getComputationInterface() const = 0;
+		\end{lstlisting}
+		is abstract, so that the module can directly communicate with the computation unit, which is derived from \textbf{IComputationInterface}. This prevents hacky casts inside implementations of \textbf{PhysicsEngineModule}.
+		
+		
+		\subsection{Basic physics engine setup}
+		In this section I guide you through the setup of a basic physics engine with particle and rigid body support.
+		
+		First we will create a particle module (ParticleWorld) with a default computation interface (DefaultParticleEngineCI), which is already provided by the library.
+		\begin{lstlisting}
+			r3::ParticleWorld* particleWorld;	
+			particleWorld = new r3::ParticleWorld();
+			
+			const auto ci = new r3::DefaultParticleEngineCI(1000, 0, particleWorld);
+			particleWorld->setComputationInterface(ci);
+		\end{lstlisting}
+		
+		Then we will create a rigid body module (RigidBodyWorld) with a default computation interface (DefaultRigidBodyEngineCI), which is also provided by the library.
+		\begin{lstlisting}
+			r3::RigidBodyWorld* rigidBodyWorld;
+			rigidBodyWorld = new r3::RigidBodyWorld();
+			
+			const auto ci = new r3::DefaultRigidBodyEngineCI();
+			ci->setRigidBodyWorld(rigidBodyWorld);
+			rigidBodyWorld->setComputationInterface(ci);
+		\end{lstlisting}
+		
+		Now that we created our modules, we need to register them in the physics engine:
+		\begin{lstlisting}
+			PhysicsEngine physicsEngine;
+		
+			physicsEngine.registerModule(particleWorld, "particle");
+			physicsEngine.registerModule(rigidBodyWorld, "rigid_body");
+		\end{lstlisting}
+		
+		All that is left todo now, is to update our simulation by calling the \textbf{tick}-Funktion on the \textbf{PhysicsEngine}
+		\begin{lstlisting}
+			physicsEngine.tick(timeDelta);
+		\end{lstlisting}
+		Note: If timeDelta is too large, strange effects can occur, like objects travelling through walls, increasing oscillations, excessive acceleration etc.
+	
 	
 	\pagebreak
 	\section{Collision detection}
-	One major part of this physics engine is the detection and resolution of collisions between rigid bodies. First off all the collision detection system will be explained.
-		
-		% TODO: collision detection pipeline visualization + INPUT/OUTPUT
+	One major part of this physics engine is the detection and resolution of collisions between rigid bodies. First off you will get to know the collision detection system. The task of this system is to find all points in 3D space, where collisions occur. Additionally it will save properties of a collision at every found point. The collision points and their properties will be used later on, to resolve these collisions.
 		
 		\subsection{Broad phase}
 		The broad phase takes in a number of rigid bodies and outputs a number of \textbf{CollisionPairs}. The task of the broad phase is to eliminate collision pairs, which do not collide. The generated \textbf{CollisionPairs} are only potential contacts, which means that there can be false positives. There should never be false negatives (e.q. eliminated collision pairs, that actually collide).
@@ -373,20 +437,191 @@ contents={\parbox{\layerwidth}{\centering}}
 					\hline
 				\end{tabular}
 			\end{table}
+		
+		\subsection{Pipeline}
+		\begin{minipage}{\textwidth}
+			\begin{minipage}{0.45\textwidth}
+				In figure \ref{fig:collisionDetectionPipeline} you can see the structure of the collision detection pipeline explained above. The \textbf{BroadphaseFilter} takes a set of rigid bodies as input and outputs a set of \textbf{CollisionPair}s.
+				
+				\noindent
+				It might be more apparent now, that an intermediate phase filter is needed on top of a broadphase filter, since both receive different inputs.
+			\end{minipage}\hfill
+			\begin{minipage}[c]{0.45\textwidth}
+				\begin{figure}[H]
+					\centering
+					\begin{tikzpicture}
+					\node[draw=none] (Start) at (0, 0) {};
+					\node[shape=rectangle, draw=black] (Broad) at (0,-2) 
+					{Broadphase Filter};
+					\node[shape=rectangle, draw=black] (Inter) at (0,-4) 
+					{Intermediate Phase Filter};
+					\node[shape=rectangle, draw=black] (Narrow) at (0,-6) 
+					{Narrowphase Filter};
+					\node[draw=none] (End) at (0, -8) {};
+					
+					\node[draw=none] (Loop0) at (1, -3.85) {};
+					\node[draw=none] (Loop1) at (1, -2.5) {};
+					\node[draw=none] (Loop2) at (2, -2.5) {};
+					\node[draw=none] (Loop3) at (2, -3.85) {};
+					
+					\path[->](Start) edge node[left]{Rigid bodies}(Broad);
+					\path[->](Broad) edge node[left]{Collision pairs}(Inter);
+					\path[->](Inter) edge node[left]{Collision pairs}(Narrow);
+					\path[->](Narrow) edge node[left]{Collision pairs}(End);
+					
+					\path[-](1, -3.75) edge node[left]{}(1, -2.5);
+					\path[-](1, -2.5) edge node[right]{}(2, -2.5);
+					\path[->](2, -2.5) edge node[right]{Collision pairs}(2, -3.75);
+					
+					\end{tikzpicture}
+					\caption{Collision detection pipeline}
+					\label{fig:collisionDetectionPipeline}
+				\end{figure}
+			\end{minipage}
+		\end{minipage}
+	
+	\pagebreak
+	\section{Particle Engine}
+		The particle engine simulates the movement of particles.
+	
+		The main parts of the particle engine are:
+		\begin{packed_itemize}
+			\item Particle
+			\item ParticleWorld
+			\item ParticleForceRegistry
+			\item ParticleContactGeneratorRegistry
+			\item ParticleEngineCI
+		\end{packed_itemize}
+		
+		\subsection{Particle}
+		Particles are dimensionless points in space and can therefore not collide with other particles. A particle has a multitude of properties:
+		
+		\begin{tabular}[H]{r | l}
+			Property & Range\\
+			\hline
+			position & $\mathbb{R}^3$\\
+			velocity & $\mathbb{R}^3$\\
+			acceleration & $\mathbb{R}^3$\\
+			forceAccumulator & $\mathbb{R}^3$\\
+			damping & $[0, 1]$\\
+			inverseMass & $\mathbb{R}^+_0$\\
+			isDead & $\{false, true\}$\\
+		\end{tabular}
+	
+		Note: An inverseMass of 0 defines an object with infinite mass.
+		
+		\subsection{ParticleWorld}
+		
+		\subsection{ParticleForceRegistry}
+		
+		\subsection{ParticleContactGeneratorRegistry}
+		
+		\subsection{ParticleEngineCI}
+		
+		
+		
+	
+	\pagebreak
+	\section{Rigid Body Engine}
+		The rigid body engine simulates the movement of rigid bodies.
+		
+		The main parts of the rigid body engine are:
+		\begin{packed_itemize}
+			\item RigidBody
+			\item RigidBodyWorld
+		\end{packed_itemize}
+	
+		\subsection{RigidBody}
+		A rigid body is defined by following properties:
+		
+		\begin{tabular}[H]{r | l}
+			Property & Range\\
+			\hline
+			position & $\mathbb{R}^3$\\
+			rotation & $\mathbb{H}$\\
+			velocity & $\mathbb{R}^3$\\
+			acceleration & $\mathbb{R}^3$\\
+			forceAccumulator & $\mathbb{R}^3$\\
+			torqueAccumulator & $\mathbb{R}^3$\\
+			linearDamping & $[0, 1]$\\
+			angularDamping & $[0, 1]$\\
+			inverseMass & $\mathbb{R}^+_0$\\
+			isDead & $\{false, true\}$\\
+			inverseInertiaTensor & $\mathbb{R}^{3 \times 3}$\\
+		\end{tabular}
+	
+		\subsection{RigidBodyWorld}
 	
 	\pagebreak
 	\section{Collision resolution}
+	The collision resolution stage follows the collision detection stage. In this stage contacts are being resolved (eliminated) by moving the affected rigid bodies accordingly. 
+		
+		\subsection{Collision Resolver}
+		Every \textbf{RigidBodyEngineCI} (CI = Computation Interface) contains one \textbf{CollisionResolver}. It holds a set of \textbf{ICollisionResolverFilter}. When there are collisions to resolve, it passes them through all previously registered filters. This pipeline can be seen in figure \ref{fig:collisionResolutionPipeline}.
+		 
+		\begin{figure}[H]
+			\centering
+			\begin{tikzpicture}
+			\node[draw=none] (Start) at (0, -1) {};
+			\node[shape=rectangle, draw=black] (Filter) at (5,-1) 
+			{Collision Resolution Filter};
+			\node[draw=none] (End) at (10, -1) {};
+			
+			\path[->](Start) edge node[above]{Contacts}(Filter);
+			\path[->](Filter) edge node[above]{Contacts}(End);
+			
+			\path[-](3.5, -0.75) edge node[left]{}(3.5, 0);
+			\path[-](3.5, 0) edge node[above]{Contacts}(6.5, 0);
+			\path[->](6.5, 0) edge node[right]{}(6.5, -0.75);
+			
+			\end{tikzpicture}
+			\caption{Collision resolution pipeline}
+			\label{fig:collisionResolutionPipeline}
+		\end{figure}
+		 
+		\subsection{Filter}
+		A \textbf{ICollisionResolutionFilter} (as seen in listing \ref{lst:collisionResolutionFilter}) computes and applies changes to rigid bodies by using the contact data generated in the collision detection stage. 
+		\begin{lstlisting}[caption={Collision resolution filter},captionpos=b, label=lst:collisionResolutionFilter]
+			class R3D_DECLSPEC ICollisionResolutionFilter
+			{
+			public:
+				virtual ~ICollisionResolutionFilter();
+				
+				/**
+				* \brief Resolve given contacts.
+				* \param collisionData The contacts to resolve.
+				* \param timeDelta The time step of the current physics
+				* update.
+				*/
+				virtual void resolve(CollisionData& collisionData,
+				real timeDelta) = 0;
+				
+			protected:
+				explicit ICollisionResolutionFilter();
+			};
+		\end{lstlisting}
+		There already are two implementations of such a filter:
+		\begin{packed_itemize}
+			\item VelocityResolver
+			\item InterpenetrationResolver
+		\end{packed_itemize}
+		The \textbf{InterpenetationResolver} changes the position and rotation of rigid bodies, so that they are no longer overlapping.
+		
+		The \textbf{VelocityResolver} changes the velocity of colliding rigid bodies, according to their contact normal, physics material and fricition before the impact.
+		
+		
+		
 	
 	
 	
 	
 	
 	
-	\pagenumbering{alph}
-	\newpage
-	\appendix
-	\listoffigures
-	\listoftables
+	%\pagenumbering{alph}
+	%\newpage
+	%\appendix
+	%\listoffigures
+	%\listoftables
 	
 	% TODO: glossary
 	

@@ -1,0 +1,92 @@
+\hypertarget{classr3_1_1_collision_callback}{}\section{r3\+:\+:Collision\+Callback Class Reference}
+\label{classr3_1_1_collision_callback}\index{r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}}
+
+
+Callback, which gets executed, when two rigid bodies collide.  
+
+
+
+
+{\ttfamily \#include $<$Collision\+Callback.\+h$>$}
+
+
+
+Collaboration diagram for r3\+:\+:Collision\+Callback\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=192pt]{classr3_1_1_collision_callback__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}{Callback}} = std\+::function$<$ void(\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_callback_ad18bc4d3c1e63ade9cb9ec420de59591}{Collision\+Callback}} (\mbox{\hyperlink{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}{Callback}} callback=nullptr)
+\item 
+\mbox{\hyperlink{classr3_1_1_collision_callback_af85a61a2c9b93718f6930bb21e27faa0}{$\sim$\+Collision\+Callback}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_collision_callback_ab6a33e6f074ebd6860f396c3b0a78423}{set\+Callback}} (const \mbox{\hyperlink{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}{Callback}} \&callback)
+\begin{DoxyCompactList}\small\item\em Set the currently used callback function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_collision_callback_afe734fe9303efadfdd6c1abc3910c432}{execute}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb1, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$rb2) const
+\begin{DoxyCompactList}\small\item\em Execute the underlying callback. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Callback, which gets executed, when two rigid bodies collide. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}\label{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}} 
+\index{r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}!Callback@{Callback}}
+\index{Callback@{Callback}!r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}}
+\subsubsection{\texorpdfstring{Callback}{Callback}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}{r3\+::\+Collision\+Callback\+::\+Callback}} =  std\+::function$<$void(\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}}$\ast$, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}}$\ast$)$>$}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_callback_ad18bc4d3c1e63ade9cb9ec420de59591}\label{classr3_1_1_collision_callback_ad18bc4d3c1e63ade9cb9ec420de59591}} 
+\index{r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}!Collision\+Callback@{Collision\+Callback}}
+\index{Collision\+Callback@{Collision\+Callback}!r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}}
+\subsubsection{\texorpdfstring{Collision\+Callback()}{CollisionCallback()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Callback\+::\+Collision\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}{Callback}}}]{callback = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classr3_1_1_collision_callback_af85a61a2c9b93718f6930bb21e27faa0}\label{classr3_1_1_collision_callback_af85a61a2c9b93718f6930bb21e27faa0}} 
+\index{r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}!````~Collision\+Callback@{$\sim$\+Collision\+Callback}}
+\index{````~Collision\+Callback@{$\sim$\+Collision\+Callback}!r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}}
+\subsubsection{\texorpdfstring{$\sim$\+Collision\+Callback()}{~CollisionCallback()}}
+{\footnotesize\ttfamily r3\+::\+Collision\+Callback\+::$\sim$\+Collision\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_collision_callback_afe734fe9303efadfdd6c1abc3910c432}\label{classr3_1_1_collision_callback_afe734fe9303efadfdd6c1abc3910c432}} 
+\index{r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}!execute@{execute}}
+\index{execute@{execute}!r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}}
+\subsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Callback\+::execute (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb1,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{rb2 }\end{DoxyParamCaption}) const}
+
+
+
+Execute the underlying callback. 
+
+\mbox{\Hypertarget{classr3_1_1_collision_callback_ab6a33e6f074ebd6860f396c3b0a78423}\label{classr3_1_1_collision_callback_ab6a33e6f074ebd6860f396c3b0a78423}} 
+\index{r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}!set\+Callback@{set\+Callback}}
+\index{set\+Callback@{set\+Callback}!r3\+::\+Collision\+Callback@{r3\+::\+Collision\+Callback}}
+\subsubsection{\texorpdfstring{set\+Callback()}{setCallback()}}
+{\footnotesize\ttfamily void r3\+::\+Collision\+Callback\+::set\+Callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_callback_afcd5494eafdbd1a0956589b6ec9c0728}{Callback}} \&}]{callback }\end{DoxyParamCaption})}
+
+
+
+Set the currently used callback function. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_callback_8h}{Collision\+Callback.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_collision_callback_8cpp}{Collision\+Callback.\+cpp}}\end{DoxyCompactItemize}

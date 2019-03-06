@@ -1,3 +1,4 @@
 <map id="r3::IBroadPhaseFilter" name="r3::IBroadPhaseFilter">
-<area shape="rect" id="node2" href="$classr3_1_1_broad_phase_filter.html" title="Default implementation of IBroadPhaseFilter. " alt="" coords="7,160,157,267"/>
+<area shape="rect" id="node2" href="$classr3_1_1_broad_phase_filter.html" title="Default implementation of IBroadPhaseFilter. " alt="" coords="5,160,156,267"/>
+<area shape="rect" id="node3" href="$classr3_1_1_octree_broad_phase_filter.html" title="{r3::OctreeBroadPhaseFilter\n||+ OctreeBroadPhaseFilter()\l+ ~OctreeBroadPhaseFilter()\l+ generateCollisions()\l}" alt="" coords="181,160,370,267"/>
 </map>

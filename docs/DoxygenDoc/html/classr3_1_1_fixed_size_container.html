@@ -84,8 +84,8 @@ Inheritance diagram for r3::FixedSizeContainer&lt; Element_Type, Container_Type 
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_fixed_size_container__inherit__graph.png" border="0" usemap="#r3_1_1_fixed_size_container_3_01_element___type_00_01_container___type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_fixed_size_container_3_01_element___type_00_01_container___type_01_4_inherit__map" id="r3_1_1_fixed_size_container_3_01_element___type_00_01_container___type_01_4_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_fixed_size_container.html" title="{r3::FixedSizeContainer\l\&lt; r3::ParticleContact \&gt;\n||+ FixedSizeContainer()\l+ ~FixedSizeContainer()\l+ init()\l+ reset()\l+ isEmpty()\l+ isFull()\l+ getEntriesLeft()\l+ getEntriesUsed()\l+ getSize()\l+ getAvailableEntry()\l+ getData()\l+ getData()\l}" alt="" coords="5,336,168,589"/>
-<area shape="rect" id="node3" href="classr3_1_1_fixed_size_container.html" title="{r3::FixedSizeContainer\l\&lt; r3::CollisionPair \&gt;\n||+ FixedSizeContainer()\l+ ~FixedSizeContainer()\l+ init()\l+ reset()\l+ isEmpty()\l+ isFull()\l+ getEntriesLeft()\l+ getEntriesUsed()\l+ getSize()\l+ getAvailableEntry()\l+ getData()\l+ getData()\l}" alt="" coords="192,336,355,589"/>
+<area shape="rect" id="node2" href="classr3_1_1_fixed_size_container.html" title="{r3::FixedSizeContainer\l\&lt; r3::ParticleContact \&gt;\n||+ FixedSizeContainer()\l+ ~FixedSizeContainer()\l+ init()\l+ reset()\l+ isEmpty()\l+ isFull()\l+ getEntriesLeft()\l+ getEntriesUsed()\l+ getSize()\l+ back()\l+ front()\l+ getAvailableEntry()\l+ getData()\l+ getData()\l}" alt="" coords="5,365,168,648"/>
+<area shape="rect" id="node3" href="classr3_1_1_fixed_size_container.html" title="{r3::FixedSizeContainer\l\&lt; r3::CollisionPair \&gt;\n||+ FixedSizeContainer()\l+ ~FixedSizeContainer()\l+ init()\l+ reset()\l+ isEmpty()\l+ isFull()\l+ getEntriesLeft()\l+ getEntriesUsed()\l+ getSize()\l+ back()\l+ front()\l+ getAvailableEntry()\l+ getData()\l+ getData()\l}" alt="" coords="192,365,355,648"/>
 </map>
 </div>
 <div class="dynheader">
@@ -122,6 +122,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a984b90ac15df32a41011e665e3059e17"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_fixed_size_container.html#a984b90ac15df32a41011e665e3059e17">getSize</a> () const</td></tr>
 <tr class="memdesc:a984b90ac15df32a41011e665e3059e17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the maximal number of elements, which can fit in this container.  <a href="#a984b90ac15df32a41011e665e3059e17">More...</a><br /></td></tr>
 <tr class="separator:a984b90ac15df32a41011e665e3059e17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e849d08e5ad5a1a0ef6207f8b36b22e"><td class="memItemLeft" align="right" valign="top">Element_Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_fixed_size_container.html#a6e849d08e5ad5a1a0ef6207f8b36b22e">back</a> ()</td></tr>
+<tr class="memdesc:a6e849d08e5ad5a1a0ef6207f8b36b22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the last element.  <a href="#a6e849d08e5ad5a1a0ef6207f8b36b22e">More...</a><br /></td></tr>
+<tr class="separator:a6e849d08e5ad5a1a0ef6207f8b36b22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60eda032ed2276552c7df4fc6da4640"><td class="memItemLeft" align="right" valign="top">Element_Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_fixed_size_container.html#ae60eda032ed2276552c7df4fc6da4640">front</a> ()</td></tr>
+<tr class="memdesc:ae60eda032ed2276552c7df4fc6da4640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first element.  <a href="#ae60eda032ed2276552c7df4fc6da4640">More...</a><br /></td></tr>
+<tr class="separator:ae60eda032ed2276552c7df4fc6da4640"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7903fc6d43600195b97218aead60a99a"><td class="memItemLeft" align="right" valign="top">Element_Type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_fixed_size_container.html#a7903fc6d43600195b97218aead60a99a">getAvailableEntry</a> ()</td></tr>
 <tr class="memdesc:a7903fc6d43600195b97218aead60a99a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the next available element. This automatically use the entry.  <a href="#a7903fc6d43600195b97218aead60a99a">More...</a><br /></td></tr>
 <tr class="separator:a7903fc6d43600195b97218aead60a99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -203,6 +209,48 @@ template&lt;class Element_Type , class Container_Type &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6e849d08e5ad5a1a0ef6207f8b36b22e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e849d08e5ad5a1a0ef6207f8b36b22e">&#9670;&nbsp;</a></span>back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Element_Type , class Container_Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Element_Type * <a class="el" href="classr3_1_1_fixed_size_container.html">r3::FixedSizeContainer</a>&lt; Element_Type, Container_Type &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the last element. </p>
+
+</div>
+</div>
+<a id="ae60eda032ed2276552c7df4fc6da4640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae60eda032ed2276552c7df4fc6da4640">&#9670;&nbsp;</a></span>front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class Element_Type , class Container_Type &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">Element_Type * <a class="el" href="classr3_1_1_fixed_size_container.html">r3::FixedSizeContainer</a>&lt; Element_Type, Container_Type &gt;::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first element. </p>
+
+</div>
+</div>
 <a id="a7903fc6d43600195b97218aead60a99a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7903fc6d43600195b97218aead60a99a">&#9670;&nbsp;</a></span>getAvailableEntry()</h2>
 
@@ -429,8 +477,8 @@ template&lt;class Element_Type , class Container_Type &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/Utility/<a class="el" href="_fixed_size_container_8h_source.html">FixedSizeContainer.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/Utility/<a class="el" href="_fixed_size_container_8inl.html">FixedSizeContainer.inl</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/Utility/<a class="el" href="_fixed_size_container_8h_source.html">FixedSizeContainer.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/Utility/<a class="el" href="_fixed_size_container_8inl.html">FixedSizeContainer.inl</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

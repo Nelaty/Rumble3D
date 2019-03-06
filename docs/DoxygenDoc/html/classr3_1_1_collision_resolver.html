@@ -100,8 +100,8 @@ Collaboration diagram for r3::CollisionResolver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad1c9ca40341498c0fe4d483d21c8eb9b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">Filter_Ptr</a> = std::unique_ptr&lt; <a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a> &gt;</td></tr>
-<tr class="separator:ad1c9ca40341498c0fe4d483d21c8eb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b3838b81de7909c3c78268801d61414"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a5b3838b81de7909c3c78268801d61414">Filter_Ptr</a> = std::shared_ptr&lt; <a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a> &gt;</td></tr>
+<tr class="separator:a5b3838b81de7909c3c78268801d61414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -111,9 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad172d58efecf5ef38f42020f21746f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a134da5221d60b34c568f7de29c9d0a58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a134da5221d60b34c568f7de29c9d0a58">resolveCollisions</a> (<a class="el" href="classr3_1_1_collision_data.html">CollisionData</a> &amp;collisionData, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> timeDelta) override</td></tr>
 <tr class="separator:a134da5221d60b34c568f7de29c9d0a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9409413937188dbd5332c3440c2a8834"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a9409413937188dbd5332c3440c2a8834">appendFilter</a> (<a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">Filter_Ptr</a> filter)</td></tr>
-<tr class="memdesc:a9409413937188dbd5332c3440c2a8834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new filter, which will be executed after all already inserted filters.  <a href="#a9409413937188dbd5332c3440c2a8834">More...</a><br /></td></tr>
-<tr class="separator:a9409413937188dbd5332c3440c2a8834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adad2e36c48000a5af14b679fde5e7b3d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#adad2e36c48000a5af14b679fde5e7b3d">appendFilter</a> (const <a class="el" href="classr3_1_1_collision_resolver.html#a5b3838b81de7909c3c78268801d61414">Filter_Ptr</a> &amp;filter)</td></tr>
+<tr class="memdesc:adad2e36c48000a5af14b679fde5e7b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a new filter, which will be executed after all already inserted filters.  <a href="#adad2e36c48000a5af14b679fde5e7b3d">More...</a><br /></td></tr>
+<tr class="separator:adad2e36c48000a5af14b679fde5e7b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae56e2125e24982ad368f0d87e9c2a28f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#ae56e2125e24982ad368f0d87e9c2a28f">getFilterCount</a> () const</td></tr>
 <tr class="separator:ae56e2125e24982ad368f0d87e9c2a28f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f4e3d97afae66c03581807a529678cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#a1f4e3d97afae66c03581807a529678cd">clear</a> ()</td></tr>
@@ -124,7 +124,7 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:abf1234ad45ba7f114b31950c90ccaaff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">Filter_Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#abf1234ad45ba7f114b31950c90ccaaff">m_filters</a></td></tr>
+<tr class="memitem:abf1234ad45ba7f114b31950c90ccaaff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classr3_1_1_collision_resolver.html#a5b3838b81de7909c3c78268801d61414">Filter_Ptr</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_collision_resolver.html#abf1234ad45ba7f114b31950c90ccaaff">m_filters</a></td></tr>
 <tr class="separator:abf1234ad45ba7f114b31950c90ccaaff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -136,14 +136,14 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default implementation for a collision resolver. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ad1c9ca40341498c0fe4d483d21c8eb9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1c9ca40341498c0fe4d483d21c8eb9b">&#9670;&nbsp;</a></span>Filter_Ptr</h2>
+<a id="a5b3838b81de7909c3c78268801d61414"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b3838b81de7909c3c78268801d61414">&#9670;&nbsp;</a></span>Filter_Ptr</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">r3::CollisionResolver::Filter_Ptr</a> =  std::unique_ptr&lt;<a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a>&gt;</td>
+          <td class="memname">using <a class="el" href="classr3_1_1_collision_resolver.html#a5b3838b81de7909c3c78268801d61414">r3::CollisionResolver::Filter_Ptr</a> =  std::shared_ptr&lt;<a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,8 +202,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9409413937188dbd5332c3440c2a8834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9409413937188dbd5332c3440c2a8834">&#9670;&nbsp;</a></span>appendFilter()</h2>
+<a id="adad2e36c48000a5af14b679fde5e7b3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adad2e36c48000a5af14b679fde5e7b3d">&#9670;&nbsp;</a></span>appendFilter()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +211,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="classr3_1_1_i_collision_resolution_filter.html">ICollisionResolutionFilter</a> * r3::CollisionResolver::appendFilter </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">Filter_Ptr</a>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classr3_1_1_collision_resolver.html#a5b3838b81de7909c3c78268801d61414">Filter_Ptr</a> &amp;&#160;</td>
           <td class="paramname"><em>filter</em></td><td>)</td>
           <td></td>
         </tr>
@@ -314,7 +314,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="classr3_1_1_collision_resolver.html#ad1c9ca40341498c0fe4d483d21c8eb9b">Filter_Ptr</a>&gt; r3::CollisionResolver::m_filters</td>
+          <td class="memname">std::vector&lt;<a class="el" href="classr3_1_1_collision_resolver.html#a5b3838b81de7909c3c78268801d61414">Filter_Ptr</a>&gt; r3::CollisionResolver::m_filters</td>
         </tr>
       </table>
   </td>
@@ -327,8 +327,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionResolution/<a class="el" href="_collision_resolver_8h_source.html">CollisionResolver.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionResolution/<a class="el" href="_collision_resolver_8cpp.html">CollisionResolver.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/CollisionResolution/<a class="el" href="_collision_resolver_8h_source.html">CollisionResolver.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/CollisionResolution/<a class="el" href="_collision_resolver_8cpp.html">CollisionResolver.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

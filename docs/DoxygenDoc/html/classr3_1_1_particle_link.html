@@ -86,10 +86,10 @@ Inheritance diagram for r3::ParticleLink:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_particle_link__inherit__graph.png" border="0" usemap="#r3_1_1_particle_link_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_particle_link_inherit__map" id="r3_1_1_particle_link_inherit__map">
-<area shape="rect" id="node3" href="classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart..." alt="" coords="5,329,132,480"/>
-<area shape="rect" id="node4" href="classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="156,337,299,473"/>
-<area shape="rect" id="node5" href="classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="323,359,441,451"/>
-<area shape="rect" id="node2" href="classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="129,5,325,112"/>
+<area shape="rect" id="node3" href="classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart..." alt="" coords="5,366,132,517"/>
+<area shape="rect" id="node4" href="classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="156,359,315,524"/>
+<area shape="rect" id="node5" href="classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="339,395,457,487"/>
+<area shape="rect" id="node2" href="classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="137,5,333,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -109,6 +109,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6c199dcab0ac23674e0069e54bd841c4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_link.html#a6c199dcab0ac23674e0069e54bd841c4">setParticles</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *first, <a class="el" href="classr3_1_1_particle.html">Particle</a> *second)</td></tr>
 <tr class="memdesc:a6c199dcab0ac23674e0069e54bd841c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the referenced particles.  <a href="#a6c199dcab0ac23674e0069e54bd841c4">More...</a><br /></td></tr>
 <tr class="separator:a6c199dcab0ac23674e0069e54bd841c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a432355211b3aa1353a33aaf9f003825e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_link.html#a432355211b3aa1353a33aaf9f003825e">getFirst</a> () const</td></tr>
+<tr class="memdesc:a432355211b3aa1353a33aaf9f003825e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the first particle.  <a href="#a432355211b3aa1353a33aaf9f003825e">More...</a><br /></td></tr>
+<tr class="separator:a432355211b3aa1353a33aaf9f003825e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90a94eda0137a354739dc00923ee7f03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_link.html#a90a94eda0137a354739dc00923ee7f03">getSecond</a> () const</td></tr>
+<tr class="memdesc:a90a94eda0137a354739dc00923ee7f03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the second particle.  <a href="#a90a94eda0137a354739dc00923ee7f03">More...</a><br /></td></tr>
+<tr class="separator:a90a94eda0137a354739dc00923ee7f03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classr3_1_1_particle_contact_generator"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classr3_1_1_particle_contact_generator')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classr3_1_1_particle_contact_generator.html">r3::ParticleContactGenerator</a></td></tr>
 <tr class="memitem:af258aa3e7d7fb8e9c9ca7eb545d27738 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_contact_generator.html#af258aa3e7d7fb8e9c9ca7eb545d27738">~ParticleContactGenerator</a> ()</td></tr>
 <tr class="separator:af258aa3e7d7fb8e9c9ca7eb545d27738 inherit pub_methods_classr3_1_1_particle_contact_generator"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -214,6 +220,44 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a432355211b3aa1353a33aaf9f003825e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a432355211b3aa1353a33aaf9f003825e">&#9670;&nbsp;</a></span>getFirst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classr3_1_1_particle.html">Particle</a> * r3::ParticleLink::getFirst </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the first particle. </p>
+
+</div>
+</div>
+<a id="a90a94eda0137a354739dc00923ee7f03"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90a94eda0137a354739dc00923ee7f03">&#9670;&nbsp;</a></span>getSecond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classr3_1_1_particle.html">Particle</a> * r3::ParticleLink::getSecond </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the second particle. </p>
+
+</div>
+</div>
 <a id="a6c199dcab0ac23674e0069e54bd841c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c199dcab0ac23674e0069e54bd841c4">&#9670;&nbsp;</a></span>setParticles()</h2>
 
@@ -275,8 +319,8 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_link_8h_source.html">ParticleLink.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_link_8cpp.html">ParticleLink.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_link_8h_source.html">ParticleLink.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_link_8cpp.html">ParticleLink.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

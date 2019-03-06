@@ -1,8 +1,9 @@
 <map id="r3::CollisionBox" name="r3::CollisionBox">
 <area shape="rect" id="node2" href="$classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. " alt="" coords="122,189,270,355"/>
 <area shape="rect" id="node5" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="294,491,453,641"/>
-<area shape="rect" id="node4" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="635,807,850,1060"/>
+<area shape="rect" id="node4" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="711,807,926,1060"/>
 <area shape="rect" id="node6" href="$classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. " alt="" coords="315,160,437,384"/>
 <area shape="rect" id="node8" href="$classr3_1_1_physics_material.html" title="Contains physical properties of a material. " alt="" coords="671,461,814,671"/>
-<area shape="rect" id="node10" href="$structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ..." alt="" coords="987,513,1109,619"/>
+<area shape="rect" id="node10" href="$structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ..." alt="" coords="983,513,1105,619"/>
+<area shape="rect" id="node13" href="$classr3_1_1_collision_callback.html" title="Callback, which gets executed, when two rigid bodies collide. " alt="" coords="1231,505,1380,627"/>
 </map>

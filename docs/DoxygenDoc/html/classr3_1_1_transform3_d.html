@@ -122,9 +122,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:acaab6048f44805ef28fdae452f0c4853"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#acaab6048f44805ef28fdae452f0c4853">setRotation</a> (const glm::mat3 &amp;rot)</td></tr>
 <tr class="memdesc:acaab6048f44805ef28fdae452f0c4853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the current rotation.  <a href="#acaab6048f44805ef28fdae452f0c4853">More...</a><br /></td></tr>
 <tr class="separator:acaab6048f44805ef28fdae452f0c4853"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1bad817e81d93f275ac71864fae763aa"><td class="memItemLeft" align="right" valign="top">const glm::mat3 &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a1bad817e81d93f275ac71864fae763aa">getRotation</a> () const</td></tr>
-<tr class="memdesc:a1bad817e81d93f275ac71864fae763aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current rotation.  <a href="#a1bad817e81d93f275ac71864fae763aa">More...</a><br /></td></tr>
-<tr class="separator:a1bad817e81d93f275ac71864fae763aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac9c80563cfca63791987f04639cff411"><td class="memItemLeft" align="right" valign="top">glm::mat3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#ac9c80563cfca63791987f04639cff411">getRotationMat</a> () const</td></tr>
+<tr class="memdesc:ac9c80563cfca63791987f04639cff411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current rotation.  <a href="#ac9c80563cfca63791987f04639cff411">More...</a><br /></td></tr>
+<tr class="separator:ac9c80563cfca63791987f04639cff411"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a6737bc120cbcd7ae16801291478a35"><td class="memItemLeft" align="right" valign="top">const glm::quat &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a0a6737bc120cbcd7ae16801291478a35">getRotation</a> () const</td></tr>
+<tr class="memdesc:a0a6737bc120cbcd7ae16801291478a35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current rotation.  <a href="#a0a6737bc120cbcd7ae16801291478a35">More...</a><br /></td></tr>
+<tr class="separator:a0a6737bc120cbcd7ae16801291478a35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55dfafe91c164f61bda64882e3a83c90"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a55dfafe91c164f61bda64882e3a83c90">updateOrientationByAngularVelocity</a> (const glm::vec3 &amp;rotation, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> duration)</td></tr>
+<tr class="separator:a55dfafe91c164f61bda64882e3a83c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c6348081c8c1b4d36af89fa7fe2103d"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a7c6348081c8c1b4d36af89fa7fe2103d">getPointInLocalSpace</a> (const glm::vec3 &amp;point) const</td></tr>
 <tr class="memdesc:a7c6348081c8c1b4d36af89fa7fe2103d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a point into local body space.  <a href="#a7c6348081c8c1b4d36af89fa7fe2103d">More...</a><br /></td></tr>
 <tr class="separator:a7c6348081c8c1b4d36af89fa7fe2103d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +142,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a16c5747e86d579935b808a15f4804b2f"><td class="memItemLeft" align="right" valign="top">glm::vec3&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#a16c5747e86d579935b808a15f4804b2f">getDirectionInWorldSpace</a> (const glm::vec3 &amp;direction) const</td></tr>
 <tr class="memdesc:a16c5747e86d579935b808a15f4804b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a direction from local body space into world space.  <a href="#a16c5747e86d579935b808a15f4804b2f">More...</a><br /></td></tr>
 <tr class="separator:a16c5747e86d579935b808a15f4804b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0eadc0ced65b65d78d721209f8b45de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_transform3_d.html#ae0eadc0ced65b65d78d721209f8b45de">reset</a> (const glm::vec3 &amp;position=glm::vec3(0), const glm::vec3 &amp;rotation=glm::vec3(0))</td></tr>
+<tr class="memdesc:ae0eadc0ced65b65d78d721209f8b45de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the transform to a given position and rotation.  <a href="#ae0eadc0ced65b65d78d721209f8b45de">More...</a><br /></td></tr>
+<tr class="separator:ae0eadc0ced65b65d78d721209f8b45de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Encapsulates translation and rotation and manipulation functions on them. </p>
@@ -340,14 +348,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1bad817e81d93f275ac71864fae763aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1bad817e81d93f275ac71864fae763aa">&#9670;&nbsp;</a></span>getRotation()</h2>
+<a id="a0a6737bc120cbcd7ae16801291478a35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a6737bc120cbcd7ae16801291478a35">&#9670;&nbsp;</a></span>getRotation()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const glm::mat3 &amp; r3::Transform3D::getRotation </td>
+          <td class="memname">const glm::quat &amp; r3::Transform3D::getRotation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -357,6 +365,56 @@ Public Member Functions</h2></td></tr>
 
 <p>Get the current rotation. </p>
 <dl class="section return"><dt>Returns</dt><dd>The rotation. </dd></dl>
+
+</div>
+</div>
+<a id="ac9c80563cfca63791987f04639cff411"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac9c80563cfca63791987f04639cff411">&#9670;&nbsp;</a></span>getRotationMat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">glm::mat3 r3::Transform3D::getRotationMat </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current rotation. </p>
+<dl class="section return"><dt>Returns</dt><dd>The rotation. </dd></dl>
+
+</div>
+</div>
+<a id="ae0eadc0ced65b65d78d721209f8b45de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0eadc0ced65b65d78d721209f8b45de">&#9670;&nbsp;</a></span>reset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::Transform3D::reset </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>position</em> = <code>glm::vec3(0)</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em> = <code>glm::vec3(0)</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset the transform to a given position and rotation. </p>
 
 </div>
 </div>
@@ -655,9 +713,37 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a55dfafe91c164f61bda64882e3a83c90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55dfafe91c164f61bda64882e3a83c90">&#9670;&nbsp;</a></span>updateOrientationByAngularVelocity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void r3::Transform3D::updateOrientationByAngularVelocity </td>
+          <td>(</td>
+          <td class="paramtype">const glm::vec3 &amp;&#160;</td>
+          <td class="paramname"><em>rotation</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_transform3_d_8h_source.html">Transform3D.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_transform3_d_8cpp.html">Transform3D.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/<a class="el" href="_transform3_d_8h_source.html">Transform3D.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/<a class="el" href="_transform3_d_8cpp.html">Transform3D.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

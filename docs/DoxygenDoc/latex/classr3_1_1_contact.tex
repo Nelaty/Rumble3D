@@ -43,7 +43,7 @@ void \mbox{\hyperlink{classr3_1_1_contact_a828feb22ff02fe787739eb5d87cfec38}{set
 \begin{DoxyCompactList}\small\item\em Set the amount of interpenetration. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_afe0f0a9a42b4b1f8bd8a61f0b6a4afdd}{get\+Penetration}} () const
 \begin{DoxyCompactList}\small\item\em Get the amount of interpenetration. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}{set\+Body\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} friction, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} restitution)
+void \mbox{\hyperlink{classr3_1_1_contact_a7471ab195f0cadaee4e2f27f15bb9fff}{set\+Body\+Data}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$first, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$second)
 \begin{DoxyCompactList}\small\item\em Initialize this contact. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_contact_a1a547c3852733960001cc5fe0fe06790}{get\+Friction}} () const
 \begin{DoxyCompactList}\small\item\em Get the friction constant used for the bodies in this contact. \end{DoxyCompactList}\item 
@@ -62,7 +62,9 @@ void \mbox{\hyperlink{classr3_1_1_contact_a3f2c146006389bf6273cdd078763b7a3}{cal
 const glm\+::vec3 \& \mbox{\hyperlink{classr3_1_1_contact_ade5794f7055fb30ff52f9193b92c6bf0}{get\+Relative\+Contact\+Position}} (int index) const
 \begin{DoxyCompactList}\small\item\em Get the contact position relative to the first or the second rigid body. \end{DoxyCompactList}\item 
 const glm\+::mat3 \& \mbox{\hyperlink{classr3_1_1_contact_a4e9692d870bdba44ff6b627b8c6c6e30}{get\+Contact\+To\+World}} () const
-\begin{DoxyCompactList}\small\item\em Get the rotation matrix, which transforms this contact to world orientation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Get the rotation matrix, which transforms this contact to world orientation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_contact_a02d78ecc5afe6e7402dd11c655234e4a}{match\+Awake\+State}} ()
+\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -261,11 +263,17 @@ Get the second colliding rigid body.
 \begin{DoxyReturn}{Returns}
 The second rigid body 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}\label{classr3_1_1_contact_af394998586bc05ec666ffbd06b0f7077}} 
+\mbox{\Hypertarget{classr3_1_1_contact_a02d78ecc5afe6e7402dd11c655234e4a}\label{classr3_1_1_contact_a02d78ecc5afe6e7402dd11c655234e4a}} 
+\index{r3\+::\+Contact@{r3\+::\+Contact}!match\+Awake\+State@{match\+Awake\+State}}
+\index{match\+Awake\+State@{match\+Awake\+State}!r3\+::\+Contact@{r3\+::\+Contact}}
+\subsubsection{\texorpdfstring{match\+Awake\+State()}{matchAwakeState()}}
+{\footnotesize\ttfamily void r3\+::\+Contact\+::match\+Awake\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_contact_a7471ab195f0cadaee4e2f27f15bb9fff}\label{classr3_1_1_contact_a7471ab195f0cadaee4e2f27f15bb9fff}} 
 \index{r3\+::\+Contact@{r3\+::\+Contact}!set\+Body\+Data@{set\+Body\+Data}}
 \index{set\+Body\+Data@{set\+Body\+Data}!r3\+::\+Contact@{r3\+::\+Contact}}
 \subsubsection{\texorpdfstring{set\+Body\+Data()}{setBodyData()}}
-{\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Body\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{friction,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{restitution }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void r3\+::\+Contact\+::set\+Body\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{first,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{second }\end{DoxyParamCaption})}
 
 
 
@@ -276,10 +284,6 @@ Initialize this contact.
 {\em first} & First colliding body \\
 \hline
 {\em second} & Second colliding body \\
-\hline
-{\em friction} & Friction constant used for the bodies \\
-\hline
-{\em restitution} & Restitution used for the bodies \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_contact_a7b837cd82d64d93ce1a98cdd172dd868}\label{classr3_1_1_contact_a7b837cd82d64d93ce1a98cdd172dd868}} 
@@ -346,5 +350,5 @@ Set the amount of interpenetration.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8h}{Contact.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8cpp}{Contact.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8h}{Contact.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_contact_8cpp}{Contact.\+cpp}}\end{DoxyCompactItemize}

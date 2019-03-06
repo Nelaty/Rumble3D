@@ -1,7 +1,8 @@
 <map id="r3::CollisionPrimitive" name="r3::CollisionPrimitive">
-<area shape="rect" id="node4" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="262,491,420,641"/>
-<area shape="rect" id="node3" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="486,807,700,1060"/>
-<area shape="rect" id="node5" href="$classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. " alt="" coords="318,160,441,384"/>
-<area shape="rect" id="node7" href="$classr3_1_1_physics_material.html" title="Contains physical properties of a material. " alt="" coords="522,461,664,671"/>
-<area shape="rect" id="node9" href="$structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ..." alt="" coords="837,513,960,619"/>
+<area shape="rect" id="node4" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="260,491,419,641"/>
+<area shape="rect" id="node3" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="560,807,775,1060"/>
+<area shape="rect" id="node5" href="$classr3_1_1_transform3_d.html" title="Encapsulates translation and rotation and manipulation functions on them. " alt="" coords="317,160,440,384"/>
+<area shape="rect" id="node7" href="$classr3_1_1_physics_material.html" title="Contains physical properties of a material. " alt="" coords="520,461,663,671"/>
+<area shape="rect" id="node9" href="$structr3_1_1_collision_mask.html" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ..." alt="" coords="832,513,954,619"/>
+<area shape="rect" id="node12" href="$classr3_1_1_collision_callback.html" title="Callback, which gets executed, when two rigid bodies collide. " alt="" coords="1080,505,1229,627"/>
 </map>

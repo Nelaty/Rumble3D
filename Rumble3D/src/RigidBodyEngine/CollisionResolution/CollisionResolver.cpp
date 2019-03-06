@@ -27,7 +27,7 @@ namespace r3
 
 	ICollisionResolutionFilter* CollisionResolver::appendFilter(const Filter_Ptr& filter)
 	{
-		m_filters.emplace_back(std::move(filter));
+		m_filters.emplace_back(filter);
 		return m_filters.back().get();
 	}
 

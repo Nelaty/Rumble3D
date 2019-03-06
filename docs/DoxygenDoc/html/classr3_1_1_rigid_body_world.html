@@ -114,15 +114,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac25b39a5b15666d99f42b68f29f8a97b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_computation_interface.html">IComputationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#ac25b39a5b15666d99f42b68f29f8a97b">getComputationInterface</a> () const override</td></tr>
 <tr class="memdesc:ac25b39a5b15666d99f42b68f29f8a97b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world's computation interface.  <a href="#ac25b39a5b15666d99f42b68f29f8a97b">More...</a><br /></td></tr>
 <tr class="separator:ac25b39a5b15666d99f42b68f29f8a97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a647ca787c02a56c230eb5d50080b561d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a647ca787c02a56c230eb5d50080b561d">createRigidBody</a> (<a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a> definition=<a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a>())</td></tr>
-<tr class="memdesc:a647ca787c02a56c230eb5d50080b561d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for a new rigid body and register it.  <a href="#a647ca787c02a56c230eb5d50080b561d">More...</a><br /></td></tr>
-<tr class="separator:a647ca787c02a56c230eb5d50080b561d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a203fb9675eba999e0f59c23e597111"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a1a203fb9675eba999e0f59c23e597111">destroyRigidBody</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *rigidBody)</td></tr>
-<tr class="memdesc:a1a203fb9675eba999e0f59c23e597111"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of a given rigid body.  <a href="#a1a203fb9675eba999e0f59c23e597111">More...</a><br /></td></tr>
-<tr class="separator:a1a203fb9675eba999e0f59c23e597111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdfd6a392a98366cd8414f7f6f50917f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#acdfd6a392a98366cd8414f7f6f50917f">destroyAllRigidBodies</a> ()</td></tr>
-<tr class="memdesc:acdfd6a392a98366cd8414f7f6f50917f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of all rigid bodies.  <a href="#acdfd6a392a98366cd8414f7f6f50917f">More...</a><br /></td></tr>
-<tr class="separator:acdfd6a392a98366cd8414f7f6f50917f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae743b90995308445e9ef985e3fde8f8f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#ae743b90995308445e9ef985e3fde8f8f">addRigidBody</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *body)</td></tr>
+<tr class="memdesc:ae743b90995308445e9ef985e3fde8f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a new rigid body.  <a href="#ae743b90995308445e9ef985e3fde8f8f">More...</a><br /></td></tr>
+<tr class="separator:ae743b90995308445e9ef985e3fde8f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a916edefa8befc0401b6f757037139931"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a916edefa8befc0401b6f757037139931">removeRigidBody</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *body)</td></tr>
+<tr class="memdesc:a916edefa8befc0401b6f757037139931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister an already registered rigid body.  <a href="#a916edefa8befc0401b6f757037139931">More...</a><br /></td></tr>
+<tr class="separator:a916edefa8befc0401b6f757037139931"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a31e9a0ddd26c25327aa21b3460c52893"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_rigid_body_world.html#abe8c123eee198b6f8eca079e71302bcb">RigidBody_Container</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_rigid_body_world.html#a31e9a0ddd26c25327aa21b3460c52893">getRigidBodies</a> ()</td></tr>
 <tr class="memdesc:a31e9a0ddd26c25327aa21b3460c52893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the world's rigid bodies.  <a href="#a31e9a0ddd26c25327aa21b3460c52893">More...</a><br /></td></tr>
 <tr class="separator:a31e9a0ddd26c25327aa21b3460c52893"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -223,76 +220,29 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a647ca787c02a56c230eb5d50080b561d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a647ca787c02a56c230eb5d50080b561d">&#9670;&nbsp;</a></span>createRigidBody()</h2>
+<a id="ae743b90995308445e9ef985e3fde8f8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae743b90995308445e9ef985e3fde8f8f">&#9670;&nbsp;</a></span>addRigidBody()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> * r3::RigidBodyWorld::createRigidBody </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a>&#160;</td>
-          <td class="paramname"><em>definition</em> = <code><a class="el" href="structr3_1_1_rigid_body_def.html">RigidBodyDef</a>()</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate space for a new rigid body and register it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">definition</td><td>Construction information for the new rigid body. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new rigid body. </dd></dl>
-
-</div>
-</div>
-<a id="acdfd6a392a98366cd8414f7f6f50917f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdfd6a392a98366cd8414f7f6f50917f">&#9670;&nbsp;</a></span>destroyAllRigidBodies()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void r3::RigidBodyWorld::destroyAllRigidBodies </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free memory of all rigid bodies. </p>
-
-</div>
-</div>
-<a id="a1a203fb9675eba999e0f59c23e597111"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a203fb9675eba999e0f59c23e597111">&#9670;&nbsp;</a></span>destroyRigidBody()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool r3::RigidBodyWorld::destroyRigidBody </td>
+          <td class="memname">void r3::RigidBodyWorld::addRigidBody </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td>
-          <td class="paramname"><em>rigidBody</em></td><td>)</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Free memory of a given rigid body. </p>
+<p>Register a new rigid body. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rigidBody</td><td>The rigid body to destroy. </td></tr>
+    <tr><td class="paramname">body</td><td>The rigid body to register. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the rigid body was found, false otherwise. </dd></dl>
 
 </div>
 </div>
@@ -406,6 +356,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a916edefa8befc0401b6f757037139931"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a916edefa8befc0401b6f757037139931">&#9670;&nbsp;</a></span>removeRigidBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool r3::RigidBodyWorld::removeRigidBody </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td>
+          <td class="paramname"><em>body</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister an already registered rigid body. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">body</td><td>The rigid body to unregister. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the body was registered, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="a0c5724007917231ebe9bd970d65b0bfe"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c5724007917231ebe9bd970d65b0bfe">&#9670;&nbsp;</a></span>setComputationInterface()</h2>
 
@@ -433,8 +410,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_rigid_body_world_8h_source.html">RigidBodyWorld.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_rigid_body_world_8cpp.html">RigidBodyWorld.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_rigid_body_world_8h_source.html">RigidBodyWorld.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_rigid_body_world_8cpp.html">RigidBodyWorld.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

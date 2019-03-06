@@ -1,3 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_inertia_tensor_generator.html" title="Static class, which provides methods to generate inertia tensors for various shapes. " alt="" coords="5,5,177,32"/>
+<area shape="rect" id="node1" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="5,165,181,192"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_box_box_narrow_algorithm.html" title="Interface for box&#45;box narrow algorithms. " alt="" coords="247,5,433,32"/>
+<area shape="rect" id="node4" href="$classr3_1_1_i_box_sphere_narrow_algorithm.html" title="Interface for box&#45;sphere narrow algorithms. " alt="" coords="239,56,441,83"/>
+<area shape="rect" id="node6" href="$classr3_1_1_i_plane_box_collision_algorithm.html" title="Interface for plane&#45;box narrow algorithms. " alt="" coords="238,107,442,133"/>
+<area shape="rect" id="node8" href="$classr3_1_1_i_plane_plane_collision_algorithm.html" title="Interface for plane&#45;plane narrow algorithms. " alt="" coords="261,158,419,199"/>
+<area shape="rect" id="node10" href="$classr3_1_1_i_plane_sphere_collision_algorithm.html" title="Interface for plane&#45;sphere narrow algorithms. " alt="" coords="257,223,423,265"/>
+<area shape="rect" id="node12" href="$classr3_1_1_i_sphere_sphere_narrow_algorithm.html" title="Interface for sphere&#45;sphere narrow algorithms. " alt="" coords="229,289,451,316"/>
+<area shape="rect" id="node14" href="$classr3_1_1_null_algorithm.html" title="r3::NullAlgorithm" alt="" coords="281,340,399,367"/>
+<area shape="rect" id="node3" href="$classr3_1_1_box_box_narrow_algorithm.html" title="Default implementation for a box&#45;box narrow algorithm. " alt="" coords="517,5,699,32"/>
+<area shape="rect" id="node5" href="$classr3_1_1_box_sphere_narrow_algorithm.html" title="Default implementation for a box&#45;sphere narrow algorithm. " alt="" coords="508,56,708,83"/>
+<area shape="rect" id="node7" href="$classr3_1_1_plane_box_collision_algorithm.html" title="Default implementation for a plane&#45;box narrow algorithm. " alt="" coords="507,107,709,133"/>
+<area shape="rect" id="node9" href="$classr3_1_1_plane_plane_collision_algorithm.html" title="Default implementation for a plane&#45;plane narrow algorithm. " alt="" coords="503,165,713,192"/>
+<area shape="rect" id="node11" href="$classr3_1_1_plane_sphere_collision_algorithm.html" title="Default implementation for a plane&#45;sphere narrow algorithm. " alt="" coords="526,223,690,265"/>
+<area shape="rect" id="node13" href="$classr3_1_1_sphere_sphere_narrow_algorithm.html" title="Default implementation for a sphere&#45;sphere narrow algorithm. " alt="" coords="499,289,717,316"/>
 </map>

@@ -61,8 +61,10 @@ static glm\+::vec4 \mbox{\hyperlink{classr3_1_1_random_aec123971a394e6b064d00e7a
 \begin{DoxyCompactList}\small\item\em Calculate a random 4D vector in a user defined range. \end{DoxyCompactList}\item 
 static glm\+::vec4 \mbox{\hyperlink{classr3_1_1_random_a69cce589274029051cc7568dd8fde54d}{random\+Vec4}} (const glm\+::vec4 \&min, const glm\+::vec4 \&max)
 \begin{DoxyCompactList}\small\item\em Calculate a random 4D vector in a user defined range. \end{DoxyCompactList}\item 
-static bool \mbox{\hyperlink{classr3_1_1_random_a7b9dd03194e79fac4374e16c0b2ad03f}{random\+Bool}} (float chance)
-\begin{DoxyCompactList}\small\item\em Get a random boolean value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+static bool \mbox{\hyperlink{classr3_1_1_random_a63733fee2f7cf42bab7ad00b1a23a0d1}{random\+Bool}} (float chance=0.\+5f)
+\begin{DoxyCompactList}\small\item\em Get a random boolean value. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{classr3_1_1_random_a27bd8d68f82223df0421bc309e83647f}{random\+Sign}} (float chance=0.\+5f)
+\begin{DoxyCompactList}\small\item\em Get a positive signed value of 1 with a given chance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -82,11 +84,11 @@ Get the seed, with which the random number generator got initialized.
 \begin{DoxyReturn}{Returns}
 The seed 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_random_a7b9dd03194e79fac4374e16c0b2ad03f}\label{classr3_1_1_random_a7b9dd03194e79fac4374e16c0b2ad03f}} 
+\mbox{\Hypertarget{classr3_1_1_random_a63733fee2f7cf42bab7ad00b1a23a0d1}\label{classr3_1_1_random_a63733fee2f7cf42bab7ad00b1a23a0d1}} 
 \index{r3\+::\+Random@{r3\+::\+Random}!random\+Bool@{random\+Bool}}
 \index{random\+Bool@{random\+Bool}!r3\+::\+Random@{r3\+::\+Random}}
 \subsubsection{\texorpdfstring{random\+Bool()}{randomBool()}}
-{\footnotesize\ttfamily bool r3\+::\+Random\+::random\+Bool (\begin{DoxyParamCaption}\item[{float}]{chance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily bool r3\+::\+Random\+::random\+Bool (\begin{DoxyParamCaption}\item[{float}]{chance = {\ttfamily 0.5f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -224,6 +226,24 @@ Calculate random integer value in a user defined range.
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 A random integer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_random_a27bd8d68f82223df0421bc309e83647f}\label{classr3_1_1_random_a27bd8d68f82223df0421bc309e83647f}} 
+\index{r3\+::\+Random@{r3\+::\+Random}!random\+Sign@{random\+Sign}}
+\index{random\+Sign@{random\+Sign}!r3\+::\+Random@{r3\+::\+Random}}
+\subsubsection{\texorpdfstring{random\+Sign()}{randomSign()}}
+{\footnotesize\ttfamily int r3\+::\+Random\+::random\+Sign (\begin{DoxyParamCaption}\item[{float}]{chance = {\ttfamily 0.5f} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get a positive signed value of 1 with a given chance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chance} & The probability of returning a positive value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 or -\/1 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_random_af52bb4270520c41c040d037ba88a8641}\label{classr3_1_1_random_af52bb4270520c41c040d037ba88a8641}} 
 \index{r3\+::\+Random@{r3\+::\+Random}!random\+Vec2@{random\+Vec2}}
@@ -408,5 +428,5 @@ seed The number used as a seed
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_random_8h}{Random.\+h}}\item 
-C\+:/\+Library/\+Job/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Utility/\mbox{\hyperlink{_random_8cpp}{Random.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Utility/\mbox{\hyperlink{_random_8h}{Random.\+h}}\item 
+D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Utility/\mbox{\hyperlink{_random_8cpp}{Random.\+cpp}}\end{DoxyCompactItemize}

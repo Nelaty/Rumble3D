@@ -116,15 +116,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1e806bf89ec6445a54b9534f1efc081f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_i_computation_interface.html">IComputationInterface</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a1e806bf89ec6445a54b9534f1efc081f">getComputationInterface</a> () const override</td></tr>
 <tr class="memdesc:a1e806bf89ec6445a54b9534f1efc081f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's computation interface.  <a href="#a1e806bf89ec6445a54b9534f1efc081f">More...</a><br /></td></tr>
 <tr class="separator:a1e806bf89ec6445a54b9534f1efc081f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a467a56ef835bbd7c3a23b722db81fa5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a467a56ef835bbd7c3a23b722db81fa5e">createParticle</a> (<a class="el" href="structr3_1_1_particle_def.html">ParticleDef</a> definition=<a class="el" href="structr3_1_1_particle_def.html">ParticleDef</a>())</td></tr>
-<tr class="memdesc:a467a56ef835bbd7c3a23b722db81fa5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate space for a new particle and register it.  <a href="#a467a56ef835bbd7c3a23b722db81fa5e">More...</a><br /></td></tr>
-<tr class="separator:a467a56ef835bbd7c3a23b722db81fa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1802231868ed6d99dd677ef71328781a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a1802231868ed6d99dd677ef71328781a">destroyParticle</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle)</td></tr>
-<tr class="memdesc:a1802231868ed6d99dd677ef71328781a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of a particle.  <a href="#a1802231868ed6d99dd677ef71328781a">More...</a><br /></td></tr>
-<tr class="separator:a1802231868ed6d99dd677ef71328781a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa061b4eab09216fb7e3a8d08cbdb6dd2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#aa061b4eab09216fb7e3a8d08cbdb6dd2">destroyAllParticles</a> ()</td></tr>
-<tr class="memdesc:aa061b4eab09216fb7e3a8d08cbdb6dd2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory of all particles.  <a href="#aa061b4eab09216fb7e3a8d08cbdb6dd2">More...</a><br /></td></tr>
-<tr class="separator:aa061b4eab09216fb7e3a8d08cbdb6dd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89baf289522c69ad7d4be95594317269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a89baf289522c69ad7d4be95594317269">addParticle</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle)</td></tr>
+<tr class="memdesc:a89baf289522c69ad7d4be95594317269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add an existent particle.  <a href="#a89baf289522c69ad7d4be95594317269">More...</a><br /></td></tr>
+<tr class="separator:a89baf289522c69ad7d4be95594317269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c2b9a7345016ad344d4439d807dadc3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#a7c2b9a7345016ad344d4439d807dadc3">removeParticle</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle)</td></tr>
+<tr class="memdesc:a7c2b9a7345016ad344d4439d807dadc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a registered particle.  <a href="#a7c2b9a7345016ad344d4439d807dadc3">More...</a><br /></td></tr>
+<tr class="separator:a7c2b9a7345016ad344d4439d807dadc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa3f952fdfd8862673d41afa078245bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classr3_1_1_particle_force_registry.html">ParticleForceRegistry</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_particle_world.html#aaa3f952fdfd8862673d41afa078245bf">getParticleForceRegistry</a> ()</td></tr>
 <tr class="memdesc:aaa3f952fdfd8862673d41afa078245bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the module's particle force registry.  <a href="#aaa3f952fdfd8862673d41afa078245bf">More...</a><br /></td></tr>
 <tr class="separator:aaa3f952fdfd8862673d41afa078245bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -245,60 +242,14 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a467a56ef835bbd7c3a23b722db81fa5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a467a56ef835bbd7c3a23b722db81fa5e">&#9670;&nbsp;</a></span>createParticle()</h2>
+<a id="a89baf289522c69ad7d4be95594317269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89baf289522c69ad7d4be95594317269">&#9670;&nbsp;</a></span>addParticle()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classr3_1_1_particle.html">Particle</a> * r3::ParticleWorld::createParticle </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structr3_1_1_particle_def.html">ParticleDef</a>&#160;</td>
-          <td class="paramname"><em>definition</em> = <code><a class="el" href="structr3_1_1_particle_def.html">ParticleDef</a>()</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Allocate space for a new particle and register it. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">definition</td><td>Construction information for the new particle. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The new particle. </dd></dl>
-
-</div>
-</div>
-<a id="aa061b4eab09216fb7e3a8d08cbdb6dd2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa061b4eab09216fb7e3a8d08cbdb6dd2">&#9670;&nbsp;</a></span>destroyAllParticles()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void r3::ParticleWorld::destroyAllParticles </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free memory of all particles. </p>
-
-</div>
-</div>
-<a id="a1802231868ed6d99dd677ef71328781a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1802231868ed6d99dd677ef71328781a">&#9670;&nbsp;</a></span>destroyParticle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool r3::ParticleWorld::destroyParticle </td>
+          <td class="memname">void r3::ParticleWorld::addParticle </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td>
           <td class="paramname"><em>particle</em></td><td>)</td>
@@ -307,14 +258,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Free memory of a particle. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">particle</td><td>The particle to destroy. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the particle was found, false otherwise. </dd></dl>
+<p>Add an existent particle. </p>
 
 </div>
 </div>
@@ -468,6 +412,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a7c2b9a7345016ad344d4439d807dadc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c2b9a7345016ad344d4439d807dadc3">&#9670;&nbsp;</a></span>removeParticle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool r3::ParticleWorld::removeParticle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td>
+          <td class="paramname"><em>particle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remove a registered particle. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if particle was registered, false otherwise. </dd></dl>
+
+</div>
+</div>
 <a id="adf5630d53659e9ced254d33990f15a9d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adf5630d53659e9ced254d33990f15a9d">&#9670;&nbsp;</a></span>setComputationInterface()</h2>
 
@@ -495,8 +460,8 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_world_8h_source.html">ParticleWorld.h</a></li>
-<li>C:/Library/Job/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_world_8cpp.html">ParticleWorld.cpp</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_particle_world_8h_source.html">ParticleWorld.h</a></li>
+<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_particle_world_8cpp.html">ParticleWorld.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
