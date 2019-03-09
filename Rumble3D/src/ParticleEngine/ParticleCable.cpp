@@ -24,6 +24,7 @@ namespace r3
 			return;
 		}
 
+		// Get an unused contact
 		auto contact = contactData.getAvailableEntry();
 		if (m_particles[1]->hasFiniteMass())
 		{
@@ -34,10 +35,11 @@ namespace r3
 			contact->init(m_particles[0], nullptr);
 		}
 
-		// Negative Kontaktnormale:
+		// Negative contact normal
 		auto normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
 		normal = glm::normalize(normal);
 
+		// 
 		contact->setContactNormal(normal);
 		contact->setPenetration(length - m_maxLength);
 		contact->setRestitution(m_restitution);

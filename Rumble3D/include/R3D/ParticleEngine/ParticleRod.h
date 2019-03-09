@@ -15,11 +15,20 @@ namespace r3
 	class R3D_DECLSPEC ParticleRod : public ParticleLink
 	{
 	public:
+		explicit ParticleRod(real length);
 		virtual ~ParticleRod();
 
-	protected:
-		explicit ParticleRod();
+		/**
+		* \brief Generate new contacts.
+		* \param contactData Out parameter in which new contacts are added.
+		*/
+		void addContact(FixedSizeContainer<ParticleContact>& contactData) const override;
 
-		real m_distance{};
+		/** \brief Set the current length of the rod. */
+		void setLength(real length);
+
+	protected:
+
+		real m_length{};
 	};
 }

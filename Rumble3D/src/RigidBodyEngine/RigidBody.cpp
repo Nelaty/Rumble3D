@@ -454,6 +454,7 @@ namespace r3
 		m_transform.translate(timeDelta * m_velocity);
 
 		// Rotational position update
+		//m_transform.setRotation(m_transform.getRotation() + m_rotation * timeDelta);
 		m_transform.updateOrientationByAngularVelocity(m_rotation, timeDelta);
 
 		// Normalize orientation and update derived data

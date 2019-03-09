@@ -78,7 +78,7 @@ namespace r3
 		// Fehler Millington: Massen und nicht 1/Masse nehmen!!!
 
 		// Wenn beide Teilchen unendliche Masse, dann aendert Impuls nichts:
-		if(!m_particles[0]->hasFiniteMass())
+		if(totalInverseMass <= 0)
 		{
 			return;
 		}
@@ -86,18 +86,18 @@ namespace r3
 		const real impulse = deltaVelocity / totalInverseMass;
 
 		// Impuls / inverse Masse in Richtung der Kontaktnormalen
-		const glm::vec3 impulsePerMass = m_contactNormal * impulse;
+		const glm::vec3 impulsePerInverseMass = m_contactNormal * impulse;
 
 		// Anwendung des Impulses je Teilchen proportional zu den inversen Massen:
 		// \prime{\hat{p}} = \dot{p} + 1/m * g
 		m_particles[0]->setVelocity(m_particles[0]->getVelocity() +
-									impulsePerMass * m_particles[0]->getInverseMass());
+									impulsePerInverseMass * m_particles[0]->getInverseMass());
 
 		if (m_particles[1]) 
 		{
 			// hier negativ, da aus Sicht von m_particles[0]
 			m_particles[1]->setVelocity(m_particles[1]->getVelocity() +
-										impulsePerMass * -m_particles[1]->getInverseMass()); 
+										impulsePerInverseMass * -m_particles[1]->getInverseMass());
 		}
 	}
 

@@ -94,7 +94,7 @@ namespace r3
 	{
 		glm::vec3 temp = point;
 		temp -= m_position;
-		return inverse(m_rotation) * temp;
+		return glm::inverse(m_rotation) * temp;
 	}
 
 	glm::vec3 Transform3D::getPointInWorldSpace(const glm::vec3& point) const
