@@ -511,15 +511,33 @@ contents={\parbox{\layerwidth}{\centering}}
 		Note: An inverseMass of 0 defines an object with infinite mass.
 		
 		\subsection{ParticleWorld}
+		The \textbf{ParticleWorld} consists of
+		\begin{packed_itemize}
+			\item A container of particles
+			\item A force registry
+			\item A contact generator regsitry
+			\item A particle computation interface
+		\end{packed_itemize}
+		Particles can be registered and unregister. Only particles, which are registered, will receive updates.
 		
 		\subsection{ParticleForceRegistry}
+		The force registry contains Particle-ParticleForceGenerator entry-pairs. A force generator will add forces to the particle, which it is paired up with, in every update step. A force generator can be paired up with multiple particles and a particle can be influenced by multiple force generators.
 		
 		\subsection{ParticleContactGeneratorRegistry}
+		The ParticleContactGeneratorRegistry works similarly to the ParticleForceRegistry. Except instead of having Particle-ParticleForceGenerator pairs, we now have Particle-ParticleContactGenerator pairs.
+		
+		A \textbf{ParticleContactGenerator} doesn't add forces to particles, but creates \textbf{ParticleContact}s if necessary. I.e. two particles, which are connected by a \textbf{ParticleRod} should always have the same predefined distance. If that is not the case $\rightarrow$ generate a contact.
+		
+		Resolving those contacts is done by the \textbf{ParticleContactResolver} and is part of the \textbf{ParticleEngineCI}.
 		
 		\subsection{ParticleEngineCI}
-		
-		
-		
+		The \textbf{ParticleEngineCI} (CI: computation interface) is responsible for transforming the data in a \textbf{ParticleWorld}. This means:
+		\begin{packed_itemize}
+			\item Calculating particle forces by using the force registry
+			\item Integrating these forces
+			\item Detect contacts and resolve them by using the ParticleContactResolver
+		\end{packed_itemize}	
+		Since ParticleEngineCI is only an abstract class, there needs to be an implementation for it. There is already a default implementation of this computation interface called \textbf{DefaultParticleEngineCI}.		
 	
 	\pagebreak
 	\section{Rigid Body Engine}
@@ -551,7 +569,27 @@ contents={\parbox{\layerwidth}{\centering}}
 		\end{tabular}
 	
 		\subsection{RigidBodyWorld}
-	
+		The \textbf{RigidBodyWorld} consists of:
+		\begin{packed_itemize}
+			\item A container of rigid bodies
+			\item A \textbf{ForceRegistry}
+			\item A \textbf{RigidBodyCI}
+		\end{packed_itemize}
+		Rigid bodies can be registered and unregistered.
+		
+		\subsection{ForceRegistry}
+		It holds a set of RigidBody-ForceGenerator pairs. The force generators are used to act forces onto the rigid bodies they are coupled with.
+		
+		\subsection{RigidBodyCI}
+		The \textbf{RigidBodyCI} uses the data in a \textbf{RigidBodyWorld} to transform it. This means:
+		\begin{packed_itemize}
+			\item Calculating forces by using the \textbf{ForceRegistry}
+			\item Detecting contacts by using the \textbf{ContactDetector}
+			\item Resolving those contacts by using the \textbf{CollisionResolver}
+			\item Integrating the accumulated forces
+		\end{packed_itemize}
+		The library already provides an implementation of such a RigidBodyCI, which is called \textbf{DefaultRigidBodyCI}.
+		
 	\pagebreak
 	\section{Collision resolution}
 	The collision resolution stage follows the collision detection stage. In this stage contacts are being resolved (eliminated) by moving the affected rigid bodies accordingly. 
