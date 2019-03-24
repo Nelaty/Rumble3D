@@ -169,6 +169,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ParticleEngine\ParticleBidirectionalSpring.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticlePlaneContactGenerator.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionCallback.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.cpp" />
@@ -263,6 +264,7 @@
     <ClInclude Include="include\R3D\ParticleEngine\DefaultParticleEngineCI.h" />
     <ClInclude Include="include\R3D\ParticleEngine\Particle.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleAnchoredSpring.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleBidirectionalSpring.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleBungee.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleBuoyancy.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleCable.h" />

@@ -36,7 +36,13 @@ namespace r3
 										   m_rigidBodies.end(),
 										   body);
 
-		return removedIt != m_rigidBodies.end();
+		const bool found = removedIt != m_rigidBodies.end();
+		if(found)
+		{
+			m_rigidBodies.erase(removedIt);
+		}
+
+		return found;
 	}
 
 	RigidBodyWorld::RigidBody_Container& RigidBodyWorld::getRigidBodies()

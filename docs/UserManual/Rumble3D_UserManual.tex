@@ -481,6 +481,29 @@ contents={\parbox{\layerwidth}{\centering}}
 		\end{minipage}
 	
 	\pagebreak
+	\section{Computation Interface}
+		This physics engine decouples data from computation. Each \textbf{PhysicsEngineModule} provides method, which returns an \textbf{IComputationInterface}. This interface consists of 4 methods:
+		\begin{packed_itemize}
+			\item void onBegin()
+			\item void step(real timeDelta)
+			\item void integrate(real timeDelta)
+			\item void onEnd() 
+		\end{packed_itemize}
+		In each iteration, the \textbf{PhysicsEngine} will go over every \textbf{PhysicsEngineModule}, get their computation interfaces (CI) and call
+		\begin{packed_enumerate}
+			\item onBegin() on all CIs
+			\item then step() on all CIs
+			\item then integrate() on all CIs
+			\item and finally onEnd() on all CIs
+		\end{packed_enumerate}
+		This decoupling allows the usage of multiple computation interfaces for multiple task, such as:
+		\begin{packed_itemize}
+			\item Very accurate, but computationally expensive offline calculations
+			\item Real time simulations
+			\item CPU and/or GPU simulations
+		\end{packed_itemize}
+	
+	\pagebreak
 	\section{Particle Engine}
 		The particle engine simulates the movement of particles.
 	
