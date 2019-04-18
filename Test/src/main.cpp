@@ -5,14 +5,12 @@
 
 TEST(mySuccessfulTest)
 {
-	r3::TestClass simpleTest;
-	CHECK_EQUAL(3, simpleTest.test());
+	CHECK_EQUAL(3, 3);
 }
 
 TEST(myUnsuccessfulTest)
 {
-	r3::TestClass simpleTest;
-	CHECK_EQUAL(1, simpleTest.test());
+	CHECK_EQUAL(1, 3);
 }
 
 int main(int argc, char** argv)

@@ -31,7 +31,7 @@ namespace r3
 	void Particle::setMass(const real mass)
 	{
 		assert(mass != 0);
-		m_inverseMass = (static_cast<real>(1.0)) / mass;
+		m_inverseMass = real(1) / mass;
 	}
 
 	real Particle::getMass() const
@@ -40,7 +40,7 @@ namespace r3
 		{
 			return R3D_REAL_MAX;
 		}
-		return (static_cast<real>(1.0)) / m_inverseMass;
+		return real(1) / m_inverseMass;
 	}
 
 	void Particle::setInverseMass(const real inverseMass)

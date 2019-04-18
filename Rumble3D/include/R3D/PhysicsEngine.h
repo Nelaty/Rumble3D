@@ -24,21 +24,18 @@ namespace r3
 		 */
 		void tick(real timeDelta);
 
-		/// \todo: remove
 		/** 
 		 * \brief Try to find an existing module.
 		 * \return The found module or nullptr if the module doesn't exist.
 		 */
 		PhysicsEngineModule* findModule(const std::string& key) const;
 
-		/// \todo: replace
 		/**
 		 * Check if a module with the given key is already registered.
 		 * \return True if module is registered.
 		 */
 		bool isModuleRegistered(const std::string& key) const;
 
-		/// \todo: replace
 		/** 
 		 * \brief Register a new physics module with a given key. Fails, when a
 		 * module with the same key is already registered.
@@ -46,7 +43,6 @@ namespace r3
 		 */
 		PhysicsEngineModule* registerModule(PhysicsEngineModule* module, const std::string& key);
 
-		/// \todo: replace
 		/**
 		 * \brief Unregister an existing physics module. 
 		 * \return The unregistered module or nullptr if the module doesn't exist.
@@ -86,17 +82,7 @@ namespace r3
 		 */
 		void integrate(real timeDelta);
 
-		bool m_paused;
-		std::map<std::string, PhysicsEngineModule*> m_modules; /// \todo: replace
-	};
-
-	/// \todo REMOVE TestClass
-	class TestClass
-	{
-	public:
-		static int test()
-		{
-			return 3;
-		}
+		bool m_paused{false};
+		std::map<std::string, PhysicsEngineModule*> m_modules;
 	};
 }
