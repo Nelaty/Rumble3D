@@ -6,16 +6,16 @@ namespace r3
 	{
 		if(mass != 0.0f)
 		{
-			m_inverseMass = static_cast<real>(1.0f) / mass;
+			m_inverseMass = real(1.0f) / mass;
 		}
 		else
 		{
-			m_inverseMass = static_cast<real>(R3D_REAL_MAX);
+			m_inverseMass = real(R3D_REAL_MAX);
 		}
 	}
 
 	void RigidBodyDef::setMassInfinite()
 	{
-		m_inverseMass = static_cast<real>(1.0f);
+		m_inverseMass = real(0.0f);
 	}
 }

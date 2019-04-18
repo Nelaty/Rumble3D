@@ -32,8 +32,14 @@ namespace r3
 		const auto removedParticle = std::remove(m_particles.begin(),
 												 m_particles.end(),
 												 particle);
-
-		return removedParticle != m_particles.end();
+		
+		const bool found = removedParticle != m_particles.end();
+		if(found)
+		{
+			m_particles.erase(removedParticle);
+		}
+		
+		return found;
 	}
 
 	r3::ParticleForceRegistry& ParticleWorld::getParticleForceRegistry()

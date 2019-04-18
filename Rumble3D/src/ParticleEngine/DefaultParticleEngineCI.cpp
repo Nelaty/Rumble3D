@@ -43,10 +43,22 @@ namespace r3
 		assert(m_particleWorld != nullptr);
 
 		auto& particles = m_particleWorld->getParticles();
+		for(int i = 0; i < particles.size(); ++i)
+		{
+			particles[i]->integrate(timeDelta);
+		}
+
+		/*
+		// Problem with this: 
+		// If someone adds particles in "integrate", all iterators
+		// of the "particles"-container will be invalidated
+		// -> very confusing crashes
+		// \todo check if it should be forbidden to derive from particle
 		for (auto& p : particles)
 		{
 			p->integrate(timeDelta);
 		}
+		*/
 		runCollisionSolver(timeDelta);
 	}
 

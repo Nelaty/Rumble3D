@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <ProjectGuid>{25A2AD93-2B9C-4E47-984E-6B0292DC8122}</ProjectGuid>
     <RootNamespace>Rumble3D</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -169,6 +169,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\ParticleEngine\ParticleBidirectionalSpring.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticlePlaneContactGenerator.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionCallback.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.cpp" />
@@ -263,6 +264,7 @@
     <ClInclude Include="include\R3D\ParticleEngine\DefaultParticleEngineCI.h" />
     <ClInclude Include="include\R3D\ParticleEngine\Particle.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleAnchoredSpring.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleBidirectionalSpring.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleBungee.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleBuoyancy.h" />
     <ClInclude Include="include\R3D\ParticleEngine\ParticleCable.h" />
