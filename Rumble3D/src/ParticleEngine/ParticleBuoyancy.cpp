@@ -48,4 +48,55 @@ namespace r3
 		force.y = verticalForce * submergedDistance / m_maxDepth;
 		particle->addForce(force);
 	}
+
+	r3::real ParticleBuoyancy::getMaxDepth() const
+	{
+		return m_maxDepth;
+	}
+
+	void ParticleBuoyancy::setMaxDepth(real depth)
+	{
+		m_maxDepth = depth;
+	}
+
+	r3::real ParticleBuoyancy::getVolume() const
+	{
+		return m_volume;
+	}
+
+	void ParticleBuoyancy::setVolume(real depth)
+	{
+		m_volume = depth;
+	}
+
+	r3::real ParticleBuoyancy::getLiquidHeight() const
+	{
+		return m_liquidHeight;
+	}
+
+	void ParticleBuoyancy::setLiquidHeight(real height)
+	{
+		m_liquidHeight = height;
+	}
+
+	r3::real ParticleBuoyancy::getLiquidDensity() const
+	{
+		return m_liquidDensity;
+	}
+
+	void ParticleBuoyancy::setLiquidDensity(real density)
+	{
+		m_liquidDensity = density;
+	}
+
+	r3::real ParticleBuoyancy::getGravity() const
+	{
+		return m_gravity;
+	}
+
+	void ParticleBuoyancy::setGravity(real gravity)
+	{
+		m_gravity = gravity;
+	}
+
 }

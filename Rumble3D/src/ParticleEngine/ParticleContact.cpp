@@ -37,6 +37,8 @@ namespace r3
 	void ParticleContact::resolveVelocity(const real duration)
 	{
 		const real separatingVelocity = calculateSeparatingVelocity();
+
+		// Check if particles are moving apart
 		if(separatingVelocity > 0) return;
 
 		// \prime{v_s} = -c*v_s
@@ -70,21 +72,21 @@ namespace r3
 		const real deltaVelocity = newSeparatingVelocity - separatingVelocity;
 
 		// Veraenderung der Geschwindigkeit in Abh. der Massen der Teilchen
-		/*real totalInverseMass = m_particles[0]->getInverseMass();
+		real totalInverseMass = m_particles[0]->getInverseMass();
 		if(m_particles[1])
 		{
 			totalInverseMass += m_particles[1]->getInverseMass();
-		}*/
+		}
 		// Fehler Millington: Massen und nicht 1/Masse nehmen!!!
 
 		if(!(m_particles[0]->hasFiniteMass())) return;
 
-		real totalMass = m_particles[0]->getMass();
+		/*real totalMass = m_particles[0]->getMass();
 		if(m_particles[1] && m_particles[1]->hasFiniteMass())
 		{
 			totalMass += m_particles[1]->getMass();
 		}
-		real totalInverseMass = real(1) / totalMass;
+		real totalInverseMass = real(1) / totalMass;*/
 
 		// Wenn beide Teilchen unendliche Masse, dann aendert Impuls nichts:
 		if(totalInverseMass <= 0)

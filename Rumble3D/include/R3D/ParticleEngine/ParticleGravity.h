@@ -31,6 +31,11 @@ namespace r3
 		*/
 		void updateForce(Particle* particle, real duration) override;
 
+		/** \brief Get the current gravity. */
+		const glm::vec3& getGravity() const;
+		/** \brief Set the current gravity. */
+		void setGravity(const glm::vec3& gravity);
+
 	protected:
 		glm::vec3 m_gravity;
 	};

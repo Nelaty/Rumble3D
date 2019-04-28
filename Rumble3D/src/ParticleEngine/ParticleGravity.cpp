@@ -17,4 +17,14 @@ namespace r3
 
 		particle->addForce(m_gravity * particle->getMass());
 	}
+
+	const glm::vec3& ParticleGravity::getGravity() const
+	{
+		return m_gravity;
+	}
+
+	void ParticleGravity::setGravity(const glm::vec3& gravity)
+	{
+		m_gravity = gravity;
+	}
 }

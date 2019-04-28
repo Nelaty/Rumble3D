@@ -39,6 +39,31 @@ namespace r3
 		*/
 		void updateForce(Particle* particle, real duration) override;
 
+		/** \brief Get the current at which the body is completely submerged. */
+		real getMaxDepth() const;
+		/** \brief Set the current at which the body is completely submerged. */
+		void setMaxDepth(real depth);
+
+		/** \brief Get the volume of the body. */
+		real getVolume() const;
+		/** \brief Set the volume of the body. */
+		void setVolume(real depth);
+
+		/** \brief Get the current liquid height. */
+		real getLiquidHeight() const;
+		/** \brief Set the current liquid height. */
+		void setLiquidHeight(real height);
+
+		/** \brief Get the current liquid density. */
+		real getLiquidDensity() const;
+		/** \brief Set the current liquid density. */
+		void setLiquidDensity(real density);
+
+		/** \brief Get the up-force of this generator. */
+		real getGravity() const;
+		/** \brief Set the up-force of this generator. */
+		void setGravity(real gravity);
+
 	protected:
 		real m_maxDepth;
 		real m_volume;
