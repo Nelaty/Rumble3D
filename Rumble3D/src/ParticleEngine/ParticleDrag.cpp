@@ -23,6 +23,11 @@ namespace r3
 		auto force = particle->getVelocity();
 
 		const auto magnitude = glm::length(force);
+		if(magnitude == real(0))
+		{
+			return;
+		}
+
 		const auto dragCoefficient = 
 			real(0.5) * m_crossSectionalArea * 
 			m_dragCoefficient * m_mediumDensity * magnitude * magnitude;
