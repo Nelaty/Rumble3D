@@ -1,0 +1,4 @@
+target_sources(rumble3D
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/InertiaTensorGenerator.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Random.cpp
+)

@@ -1,0 +1,26 @@
+target_sources(rumble3D
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/AnchoredSpring.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/BoundingBox.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/BoundingSphere.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/BVHNode.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionBox.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionCallback.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionObject.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionPlane.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionPrimitive.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionSphere.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/DefaultRigidBodyEngineCI.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/DirectedForce.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ForceGenerator.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ForceRegistry.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Gravity.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/PhysicsMaterial.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBody.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyDef.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyEngineCI.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyWorld.cpp
+	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Spring.cpp
+)
+
+add_subdirectory(CollisionDetection)
+add_subdirectory(CollisionResolution)
