@@ -55,7 +55,7 @@ namespace r3
 	                                              const glm::vec3& position,
 	                                              const glm::mat3& orientation)
 	{
-		transformationMatrix = orientation;
+		transformationMatrix = glm::mat4(orientation);
 		transformationMatrix = glm::translate(transformationMatrix, position);
 	}
 
@@ -64,7 +64,7 @@ namespace r3
 	                                       const glm::mat4& rotMat)
 	{
 		// Same as Millington, but readable
-		const glm::mat3 rot = rotMat;
+		const glm::mat3 rot = glm::mat3(rotMat);
 		iitWorld = rot * iit * glm::transpose(rot);
 
 		// Der folgende Code wurde von Millington direkt übernommen,

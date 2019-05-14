@@ -8,11 +8,11 @@ namespace r3
 				   const glm::vec3& otherConnectionPoint,
 				   real springConstant,
 				   real restLength) 
-		: m_connectionPoint(localConnectionPoint),
-		m_other(other),
+		: m_springConstant(springConstant),
+		m_restLength(restLength),
+		m_connectionPoint(localConnectionPoint),
 		m_otherConnectionPoint(otherConnectionPoint),
-		m_springConstant(springConstant),
-		m_restLength(restLength)
+		m_other(other)
 	{
 	}
 	

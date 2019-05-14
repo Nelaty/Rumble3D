@@ -157,7 +157,7 @@ namespace r3
 		/**
 		 * \brief Reset this particle.
 		 */
-		void reset(const glm::vec3& position = glm::vec3(0));
+		void reset(const glm::vec3& position = glm::vec3(0.0));
 
 		/** 
 		 * \brief Integrate changes made to the particle.
