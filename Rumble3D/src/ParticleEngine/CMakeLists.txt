@@ -1,26 +1,27 @@
-target_sources(rumble3D
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/DefaultParticleEngineCI.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/IParticleForceGenerator.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleAnchoredSpring.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleBidirectionalSpring.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleBungee.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleBuoyancy.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleCable.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleCollision.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleConstraint.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleContact.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactGenerator.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactGeneratorRegistry.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactResolver.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Particle.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleDef.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleDrag.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleEngineCI.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleForceRegistry.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleGravity.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleLink.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticlePlaneContactGenerator.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleRod.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleSpring.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ParticleWorld.cpp
+target_sources(${PROJECT_NAME}
+PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}/DefaultParticleEngineCI.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IParticleForceGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleAnchoredSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleBidirectionalSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleBungee.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleBuoyancy.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleCable.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleCollision.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleConstraint.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContact.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactGeneratorRegistry.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactResolver.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Particle.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleDef.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleDrag.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleEngineCI.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleForceRegistry.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleGravity.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleLink.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticlePlaneContactGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleRod.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleWorld.cpp
 )

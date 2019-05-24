@@ -19,12 +19,8 @@ endif()
 
 
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/Rumble3D/include)
-
-
-
-
-add_subdirectory(Rumble3D/src)
+add_subdirectory(Rumble3D)
+add_subdirectory(Example)
 
 
 

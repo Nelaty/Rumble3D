@@ -1,25 +1,26 @@
-target_sources(rumble3D
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/AnchoredSpring.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/BoundingBox.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/BoundingSphere.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/BVHNode.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionBox.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionCallback.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionObject.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionPlane.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionPrimitive.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/CollisionSphere.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/DefaultRigidBodyEngineCI.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/DirectedForce.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ForceGenerator.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ForceRegistry.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Gravity.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/PhysicsMaterial.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBody.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyDef.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyEngineCI.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyWorld.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/Spring.cpp
+target_sources(${PROJECT_NAME}
+PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}/AnchoredSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/BoundingBox.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/BoundingSphere.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/BVHNode.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/CollisionBox.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/CollisionCallback.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/CollisionObject.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/CollisionPlane.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/CollisionPrimitive.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/CollisionSphere.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/DefaultRigidBodyEngineCI.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/DirectedForce.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ForceGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ForceRegistry.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Gravity.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/PhysicsMaterial.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/RigidBody.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyDef.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyEngineCI.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/RigidBodyWorld.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Spring.cpp
 )
 
 add_subdirectory(CollisionDetection)

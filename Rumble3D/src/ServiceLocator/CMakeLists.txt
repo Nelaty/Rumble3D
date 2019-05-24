@@ -1,4 +1,5 @@
-target_sources(rumble3D
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ServiceLocatorCollisionAlgorithmMatrix.cpp
-	PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/ServiceLocatorComputationInterface.cpp
+target_sources(${PROJECT_NAME}
+PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}/ServiceLocatorCollisionAlgorithmMatrix.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ServiceLocatorComputationInterface.cpp
 )
