@@ -22,7 +22,7 @@ namespace r3
 		/**
 		 * \brief Spring constructor.
 		 * \param localConnectionPoint Connection point in local 
-		 * coordinates of the body.
+		 * coordinates of the body, which receives forces.
 		 * \param other The other rigid body connected to the string.
 		 * \param otherConnectionPoint Connection point in local
 		 * coordinates of the other body.
