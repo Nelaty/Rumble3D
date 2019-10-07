@@ -25,7 +25,8 @@ namespace r3
 
 		// Betrag der Kraft:
 		real magnitude = glm::length(force);
-		magnitude = abs(magnitude - m_restLength);
+		//magnitude = abs(magnitude - m_restLength);
+		magnitude -= m_restLength;
 		magnitude *= m_springConstant;
 	
 		force = glm::normalize(force);

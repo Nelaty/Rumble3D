@@ -20,7 +20,7 @@ namespace r3
 			if(collisionData.isFull()) return false;
 
 			// Cache the sphere position
-			const auto& position = rbPlane->getTransform().getPosition();
+			const auto& position = rbSphere->getTransform().getPosition();
 
 			// Find the distance from the plane
 			real ballDistance =
