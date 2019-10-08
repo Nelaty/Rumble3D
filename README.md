@@ -5,6 +5,27 @@
 
 To build the library, open the visual studio solution, select the desired platform and configuration and press <kbd>F7</kbd>.
 
+**CMake**
+
+Install the following packages:
+```
+apt-get install \
+  cmake \
+  g++ \
+  libglm-dev
+```
+
+Create and navigate to your desired build directory (in this example `./build`) and run cmake:
+```
+mkdir build
+cd build
+cmake ..
+```
+
+Now just run `make` in your build directory.
+
+The library will be created in the `lib` subdirectory (`./build/lib`)
+
 ## 2. Installation
 
 **Visual Studio 2017**
