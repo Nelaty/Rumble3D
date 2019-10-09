@@ -46,5 +46,6 @@ namespace r3
 			collision->init(first, second);
 			return true;
 		}
+		return false;
 	}
 }

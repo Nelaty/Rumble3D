@@ -1,0 +1,16 @@
+target_sources(${PROJECT_NAME}
+PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}/BoxBoxNarrowAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/BoxSphereNarrowAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IBoxBoxNarrowAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IBoxSphereNarrowAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IPlaneBoxCollisionAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IPlanePlaneCollisionAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IPlaneSphereCollisionAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ISphereSphereNarrowAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/NullAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/PlaneBoxCollisionAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/PlanePlaneCollisionAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/PlaneSphereCollisionAlgorithm.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/SphereSphereNarrowAlgorithm.cpp
+)

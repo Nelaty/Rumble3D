@@ -64,12 +64,12 @@ namespace r3
 
 	void Transform3D::setRotation(const glm::quat& orientation)
 	{
-		m_rotation = glm::toMat3(orientation);
+		m_rotation = orientation;
 	}
 
 	void Transform3D::setRotation(const glm::mat3& rot)
 	{
-		m_rotation = rot;
+		m_rotation = glm::quat_cast(rot);
 	}
 
 	glm::mat3 Transform3D::getRotationMat() const
@@ -116,6 +116,6 @@ namespace r3
 							const glm::vec3& rotation)
 	{
 		m_position = position;
-		m_rotation = rotation;
+		m_rotation = glm::quat(rotation);
 	}
 }

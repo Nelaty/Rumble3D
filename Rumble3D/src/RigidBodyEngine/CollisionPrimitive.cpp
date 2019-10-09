@@ -14,7 +14,7 @@ namespace r3
 	{
 		/// \todo use new transform!
 		const auto& transform = m_body->getTransform();
-		glm::mat4 mat = transform.getRotationMat();
+		glm::mat4 mat = glm::mat4(transform.getRotationMat());
 		mat[3] = glm::vec4(transform.getPosition(), 1.0f);
 
 		m_transform = mat * m_offset;
@@ -23,7 +23,7 @@ namespace r3
 	glm::vec3 CollisionPrimitive::getAxis(const unsigned index) const
 	{
 		assert(index >= 0 && index <= 3);
-		return m_transform[index];
+		return glm::vec3(m_transform[index]);
 	}
 
 	const glm::mat4& CollisionPrimitive::getTransform() const

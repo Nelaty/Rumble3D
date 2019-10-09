@@ -1,0 +1,27 @@
+target_sources(${PROJECT_NAME}
+PRIVATE
+	${CMAKE_CURRENT_SOURCE_DIR}/DefaultParticleEngineCI.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/IParticleForceGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleAnchoredSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleBidirectionalSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleBungee.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleBuoyancy.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleCable.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleCollision.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleConstraint.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContact.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactGeneratorRegistry.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleContactResolver.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Particle.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleDef.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleDrag.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleEngineCI.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleForceRegistry.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleGravity.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleLink.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticlePlaneContactGenerator.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleRod.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleSpring.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/ParticleWorld.cpp
+)
