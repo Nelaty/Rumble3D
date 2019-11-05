@@ -6,22 +6,6 @@ project("Rumble3D")
 enable_testing()
 
 
-if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR
-   "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-	set(warnings "-Wall -Wextra -Werror -Wno-error=sign-compare -Wno-error=unused-parameter -Wno-error=unused-variable -Wno-error=type-limits -std=c++14")
-# elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
-# 	set(warnings "/W4 /WX /EHsc")
-endif()
-if(NOT CONFIGURED_ONCE)
-	set(CMAKE_C_FLAGS "${warnings}" CACHE STRING "Flags used by the compiler during all build types." FORCE)
-	set(CMAKE_CXX_FLAGS "${warnings}" CACHE STRING "Flags used by the compiler during all build types." FORCE)
-endif()
-
-
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-
 
 
 add_subdirectory(Rumble3D)
@@ -31,5 +15,23 @@ add_subdirectory(Example)
 
 
 
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD_REQUIRED ON)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CXX_STANDARD 14)
 
-set(CONFIGURED_ONCE TRUE CACHE INTERNAL "A flag showing that CMake has configured at least once.")
+
+if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR
+   "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
+	set_property(TARGET ${PROJECT_NAME} PROPERTY Rumble3D-warnings "-Wall")
+endif()
+if(NOT ${PROJECT_NAME}_CONFIGURED_ONCE)
+	set_property(TARGET ${PROJECT_NAME} PROPERTY CMAKE_C_FLAGS "${Rumble3D-warnings}" CACHE STRING "Flags used by the compiler during all build types." FORCE)
+	set_property(TARGET ${PROJECT_NAME} PROPERTY CMAKE_CXX_FLAGS "${Rumble3D-warnings}" CACHE STRING "Flags used by the compiler during all build types." FORCE)
+endif()
+
+
+set_property(TARGET ${PROJECT_NAME} PROPERTY CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set_property(TARGET ${PROJECT_NAME} PROPERTY CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+
+
+set(${PROJECT_NAME}_CONFIGURED_ONCE TRUE CACHE INTERNAL "A flag showing that CMake has configured at least once.")
