@@ -16,7 +16,7 @@ namespace r3
 	{
 	}
 	
-	void Spring::updateForce(RigidBody* body, real duration)
+	void Spring::updateForce(RigidBody* body)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:
 		glm::vec3 localW = body->getPointInWorldSpace(m_connectionPoint);

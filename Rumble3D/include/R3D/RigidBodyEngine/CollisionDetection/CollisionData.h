@@ -11,10 +11,10 @@ namespace r3
 	class R3D_DECLSPEC CollisionData
 	{
 	public:
-		explicit CollisionData(unsigned int contactsMax = 1000, int iterations = 0);
+		explicit CollisionData(unsigned int contactsMax = 1000);
 		~CollisionData();
 
-		void init(int contactsMax, int iterations);
+		void init(int contactsMax);
 		void reset();
 
 		/** \brief Check if there is no more room for new contacts. */
@@ -46,6 +46,5 @@ namespace r3
 
 		unsigned int m_contactsUsed{};
 		unsigned int m_contactsMax{};
-		int m_iterations{};
 	};
 }

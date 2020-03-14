@@ -135,6 +135,7 @@ namespace r3
 		unsigned int m_iterations;
 
 		FixedSizeContainer<CollisionPair> m_broadPhaseCollisions;
+		FixedSizeContainer<CollisionPair> m_intermediatePhaseCollisions;
 		CollisionData m_collisions;
 
 		BroadPhaseFilter_Ptr m_broadPhaseFilter;

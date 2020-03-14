@@ -47,9 +47,8 @@ namespace r3
 		/**
 		 * \brief Let all registered force generators act forces on
 		 * their linked particle(s).
-		 * \param duration How long forces will act on particles.
 		 */
-		void updateForces(real duration);
+		void updateForces();
 
 	protected:
 		Registry_Type m_registrations;

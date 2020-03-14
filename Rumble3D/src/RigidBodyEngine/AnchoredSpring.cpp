@@ -17,7 +17,7 @@ namespace r3
 	AnchoredSpring::~AnchoredSpring()
 	= default;
 
-	void AnchoredSpring::updateForce(RigidBody* body, const real duration)
+	void AnchoredSpring::updateForce(RigidBody* body)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:
 		const auto localW = body->getPointInWorldSpace(m_connectionPoint);

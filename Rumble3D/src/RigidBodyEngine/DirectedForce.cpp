@@ -15,7 +15,7 @@ namespace r3
 	DirectedForce::~DirectedForce()
 	= default;
 
-	void DirectedForce::updateForce(RigidBody* body, real duration)
+	void DirectedForce::updateForce(RigidBody* body)
 	{
 		const auto attackPoint = m_localPosition;
 		auto forceLocal = m_force;

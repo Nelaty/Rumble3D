@@ -13,7 +13,7 @@ namespace r3
 	ParticleAnchoredSpring::~ParticleAnchoredSpring()
 	= default;
 
-	void ParticleAnchoredSpring::updateForce(Particle* particle, real duration)
+	void ParticleAnchoredSpring::updateForce(Particle* particle)
 	{
 		auto force = particle->getPosition();
 		force -= *m_anchor;

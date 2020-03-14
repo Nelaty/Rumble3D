@@ -45,9 +45,8 @@ namespace r3
 		/**
 		 * \brief Use registered force generators to apply forces to
 		 * rigid bodies, which they are paired up with.
-		 * \param duration Time step of the simulation update.
 		 */
-		void updateForces(real duration);
+		void updateForces();
 
 	protected:	
 		Registry m_registrations;

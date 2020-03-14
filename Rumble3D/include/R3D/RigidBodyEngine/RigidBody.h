@@ -134,19 +134,19 @@ namespace r3
 		 * \brief Set the current orientation.
 		 * \param rotation The new rotation.
 		 */
-		void setRotation(const glm::vec3& rotation);
+		void setAngularVelocity(const glm::vec3& rotation);
 		/**
 		 * \brief Set the current orientation.
 		 * \param x The x-component of the new orientation.
 		 * \param y The y-component of the new orientation.
 		 * \param z The z-component of the new orientation.
 		 */
-		void setRotation(real x, real y, real z);
+		void setAngularVelocity(real x, real y, real z);
 		/**
 		 * \brief Get the current orientation.
 		 * \return The orientation.
 		 */
-		glm::vec3 getRotation() const;
+		glm::vec3 getAngularVelocity() const;
 
 		/** 
 		 * \brief Set the current velocity.
@@ -360,7 +360,7 @@ namespace r3
 		glm::vec3 m_velocity;
 		glm::vec3 m_acceleration;
 		glm::vec3 m_lastFrameAcceleration;
-		glm::vec3 m_rotation;
+		glm::vec3 m_angularVelocity;
 
 		glm::mat4 m_transformationMatrix;
 		glm::mat3 m_inverseInertiaTensor;

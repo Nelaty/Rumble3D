@@ -16,7 +16,7 @@ namespace r3
 	ParticleBungee::~ParticleBungee()
 	= default;
 
-	void ParticleBungee::updateForce(Particle* particle, real duration)
+	void ParticleBungee::updateForce(Particle* particle)
 	{
 		glm::vec3 force = particle->getPosition();
 		force -= m_other->getPosition();

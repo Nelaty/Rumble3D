@@ -30,7 +30,7 @@ namespace r3
 		* \param body The rigid body on which to apply force.
 		* \param duration The duration over which the force acts.
 		*/
-		void updateForce(RigidBody* body, real duration) override;
+		void updateForce(RigidBody* body) override;
 
 		/**
 		 * \brief Set the force, which will act on the body.

@@ -11,7 +11,7 @@ namespace r3
 	ParticleGravity::~ParticleGravity()
 	= default;
 
-	void ParticleGravity::updateForce(Particle* particle, real duration)
+	void ParticleGravity::updateForce(Particle* particle)
 	{
 		if(!particle->hasFiniteMass()) return;
 

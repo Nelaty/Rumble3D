@@ -27,9 +27,8 @@ namespace r3
 		/**
 		* \brief Apply force to a rigid body over a specific time.
 		* \param body The rigid body on which to apply force.
-		* \param duration The duration over which the force acts.
 		*/
-		void updateForce(RigidBody* body, real timeDelta) override;
+		void updateForce(RigidBody* body) override;
 	
 	protected:
 		glm::vec3 m_gravity;

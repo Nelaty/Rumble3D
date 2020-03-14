@@ -35,7 +35,7 @@ namespace r3
 		assert(m_particleWorld != nullptr);
 
 		auto& registry = m_particleWorld->getParticleForceRegistry();
-		registry.updateForces(timeDelta);
+		registry.updateForces();
 	}
 
 	void DefaultParticleEngineCI::integrate(const real timeDelta)
@@ -66,11 +66,6 @@ namespace r3
 	{
 		assert(m_particleWorld != nullptr);
 
-		auto& particles = m_particleWorld->getParticles();
-		for(auto& it : particles)
-		{
-			it->clearAccumulator();
-		}
 		m_contactData.reset();
 	}
 

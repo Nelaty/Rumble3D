@@ -21,7 +21,7 @@ namespace r3
 	ParticleBuoyancy::~ParticleBuoyancy()
 	= default;
 
-	void ParticleBuoyancy::updateForce(Particle* particle, real duration)
+	void ParticleBuoyancy::updateForce(Particle* particle)
 	{
 		const auto depth = particle->getPosition().y;
 		const auto halfMaxDepth = m_maxDepth / 2;

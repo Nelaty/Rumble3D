@@ -19,7 +19,7 @@ namespace r3
 		 * \param body The rigid body on which to apply force.
 		 * \param duration The duration over which the force acts.
 		 */
-		virtual void updateForce(RigidBody* body, real duration) = 0;
+		virtual void updateForce(RigidBody* body) = 0;
 
 	protected:
 		explicit ForceGenerator();

@@ -34,7 +34,7 @@ namespace r3
 		assert(m_rigidBodyWorld != nullptr);
 
 		auto forceRegistry = m_rigidBodyWorld->getForceRegistry();
-		forceRegistry.updateForces(timeDelta);
+		forceRegistry.updateForces();
 	}
 
 	void DefaultRigidBodyEngineCI::integrate(const real timeDelta)
@@ -89,12 +89,6 @@ namespace r3
 	void DefaultRigidBodyEngineCI::onEnd()
 	{
 		assert(m_rigidBodyWorld != nullptr);
-
-		auto& rigidBodies = m_rigidBodyWorld->getRigidBodies();
-		for(auto& rb : rigidBodies)
-		{
-			rb->clearAccumulators();
-		}
 	}
 
 	void DefaultRigidBodyEngineCI::reset()

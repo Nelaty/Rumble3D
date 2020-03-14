@@ -198,9 +198,6 @@
     <ClCompile Include="src\RigidBodyEngine\RigidBodyDef.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\ServiceLocator\ServiceLocatorComputationInterface.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -208,9 +205,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionAlgorithmMatrix.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.cpp">
@@ -271,6 +265,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\ParticleEngine\ParticleBidirectionalSpring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ServiceLocator\CollisionAlgorithmMatrixFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ServiceLocator\ComputationInterfaceFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -467,9 +467,6 @@
     <ClInclude Include="include\R3D\ParticleEngine\ParticleDef.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorComputationInterface.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionPair.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -483,9 +480,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionPrimitiveType.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.h">
@@ -546,6 +540,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\ParticleEngine\ParticleBidirectionalSpring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\Helper\CollisionAlgorithmMatrixFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\Helper\ComputationInterfaceFactory.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

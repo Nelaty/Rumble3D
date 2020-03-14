@@ -30,9 +30,8 @@ namespace r3
 		* \brief Calculates and changes the force in the force accumulator
 		* of a particle.
 		* \param particle The particle, on which the force should be applied to.
-		* \param duration The duration for which the force acts.
 		*/
-		void updateForce(Particle* particle, real duration) override;
+		void updateForce(Particle* particle) override;
 
 	protected:
 		real m_springConstant;

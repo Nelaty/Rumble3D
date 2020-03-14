@@ -37,7 +37,7 @@ namespace r3
 		m_velocity = definition.m_velocity;
 		m_acceleration = definition.m_acceleration;
 		m_lastFrameAcceleration = definition.m_lastFrameAcceleration;
-		m_rotation = definition.m_rotation;
+		m_angularVelocity = definition.m_rotation;
 
 		m_inverseInertiaTensor = definition.m_inverseInertiaTensor;
 		m_inverseInertiaTensorWorld = definition.m_inverseInertiaTensorWorld;
@@ -66,83 +66,6 @@ namespace r3
 		// Same as Millington, but readable
 		const glm::mat3 rot = rotMat;
 		iitWorld = rot * iit * glm::transpose(rot);
-
-		// Der folgende Code wurde von Millington direkt übernommen,
-		// der behauptet, er wäre automatisch optimiert worden:		
-		/*real t4 = 
-			rotMat[0][0] * iit[0][0] +
-			rotMat[1][0] * iit[0][1] +
-			rotMat[2][0] * iit[0][2];
-		real t9 = 
-			rotMat[0][0] * iit[1][0] +
-			rotMat[1][0] * iit[1][1] +
-			rotMat[2][0] * iit[1][2];
-		real t14 = 
-			rotMat[0][0] * iit[2][0] +
-			rotMat[1][0] * iit[2][1] +
-			rotMat[2][0] * iit[2][2];
-		real t28 = 
-			rotMat[0][1] * iit[0][0] +
-			rotMat[1][1] * iit[0][1] +
-			rotMat[2][1] * iit[0][2];
-		real t33 = 
-			rotMat[0][1] * iit[1][0] +
-			rotMat[1][1] * iit[1][1] +
-			rotMat[2][1] * iit[1][2];
-		real t38 = 
-			rotMat[0][1] * iit[2][0] +
-			rotMat[1][1] * iit[2][1] +
-			rotMat[2][1] * iit[2][2];
-		real t52 = 
-			rotMat[0][2] * iit[0][0] +
-			rotMat[1][2] * iit[0][1] +
-			rotMat[2][2] * iit[0][2];
-		real t57 = 
-			rotMat[0][2] * iit[1][0] +
-			rotMat[1][2] * iit[1][1] +
-			rotMat[2][2] * iit[1][2];
-		real t62 = 
-			rotMat[0][2] * iit[2][0] +
-			rotMat[1][2] * iit[2][1] +
-			rotMat[2][2] * iit[2][2];
-
-
-		iitWorld[0][0] = 
-			t4 * rotMat[0][0] +
-			t9 * rotMat[1][0] +
-			t14 * rotMat[2][0];
-		iitWorld[1][0] =
-			t4 * rotMat[0][1] +
-			t9 * rotMat[1][1] +
-			t14 * rotMat[2][1];
-		iitWorld[2][0] =
-			t4 * rotMat[0][2] +
-			t9 * rotMat[1][2] +
-			t14 * rotMat[2][2];
-		iitWorld[0][1] = 
-			t28 * rotMat[0][0] +
-			t33 * rotMat[1][0] +
-			t38 * rotMat[2][0];
-		iitWorld[1][1] = 
-			t28 * rotMat[0][1] +
-			t33 * rotMat[1][1] +
-			t38 * rotMat[2][1];
-		iitWorld[2][1] = 
-			t28 * rotMat[0][2] +
-			t33 * rotMat[1][2] +
-			t38 * rotMat[2][2];
-		iitWorld[0][2] = 
-			t52 * rotMat[0][0] +
-			t57 * rotMat[1][0] +
-			t62 * rotMat[2][0];
-		iitWorld[1][2] = 
-			t52 * rotMat[0][1] +
-			t57 * rotMat[1][1] +
-			t62 * rotMat[2][1];
-		iitWorld[2][2] = 
-			t52 * rotMat[0][2] +
-			t57 * rotMat[1][2] +
-			t62 * rotMat[2][2];*/
 	}
 
 	glm::vec3 RigidBody::getPointInLocalSpace(const glm::vec3& point) const
@@ -322,19 +245,19 @@ namespace r3
 		return glm::quat_cast(m_transform.getRotationMat());
 	}
 
-	void RigidBody::setRotation(const glm::vec3& rotation)
+	void RigidBody::setAngularVelocity(const glm::vec3& rotation)
 	{
-		m_rotation = rotation;
+		m_angularVelocity = rotation;
 	}
 
-	void RigidBody::setRotation(const real x, const real y, const real z)
+	void RigidBody::setAngularVelocity(const real x, const real y, const real z)
 	{
-		m_rotation = glm::vec3(x, y, z);
+		m_angularVelocity = glm::vec3(x, y, z);
 	}
 
-	glm::vec3 RigidBody::getRotation() const
+	glm::vec3 RigidBody::getAngularVelocity() const
 	{
-		return m_rotation;
+		return m_angularVelocity;
 	}
 
 	bool RigidBody::isAwake() const
@@ -352,7 +275,7 @@ namespace r3
 		else
 		{
 			m_velocity = glm::vec3(0);
-			m_rotation = glm::vec3(0);
+			m_angularVelocity = glm::vec3(0);
 		}
 	}
 
@@ -444,18 +367,18 @@ namespace r3
 		m_velocity += timeDelta * m_lastFrameAcceleration;
 
 		// Angular velocity from angular acceleration and impulse
-		m_rotation += timeDelta * angularAcceleration;
+		m_angularVelocity += timeDelta * angularAcceleration;
 
 		// Drag
 		m_velocity *= pow(m_linearDamping, timeDelta);
-		m_rotation *= pow(m_angularDamping, timeDelta);
+		m_angularVelocity *= pow(m_angularDamping, timeDelta);
 	
 		// Linear position update
 		m_transform.translate(timeDelta * m_velocity);
 
 		// Rotational position update
 		//m_transform.setRotation(m_transform.getRotation() + m_rotation * timeDelta);
-		m_transform.updateOrientationByAngularVelocity(m_rotation, timeDelta);
+		m_transform.updateOrientationByAngularVelocity(m_angularVelocity, timeDelta);
 
 		// Normalize orientation and update derived data
 		calculateDerivedData();
@@ -466,7 +389,7 @@ namespace r3
 		{
 			real currentMotion = 
 				glm::dot(m_velocity, m_velocity) +
-				glm::dot(m_rotation, m_rotation);
+				glm::dot(m_angularVelocity, m_angularVelocity);
 
 			real bias = pow(real(0.5), timeDelta);
 			m_motion = bias * m_motion + (real(1) - bias)*currentMotion;
@@ -488,7 +411,7 @@ namespace r3
 		m_velocity = glm::vec3(0);
 		m_acceleration = glm::vec3(0);
 		m_lastFrameAcceleration = glm::vec3(0);
-		m_rotation = glm::vec3(0);
+		m_angularVelocity = glm::vec3(0);
 
 		m_transform.reset(position, rotation);
 	}
@@ -500,7 +423,7 @@ namespace r3
 
 	void RigidBody::addRotation(const glm::vec3& deltaRotation)
 	{
-		m_rotation += deltaRotation;
+		m_angularVelocity += deltaRotation;
 	}
 }
 

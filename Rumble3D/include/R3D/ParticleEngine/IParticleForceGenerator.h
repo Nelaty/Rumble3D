@@ -18,9 +18,8 @@ namespace r3
 		 * \brief Calculates and changes the force in the force accumulator
 		 * of a particle.
 		 * \param particle The particle, on which the force should be applied to.
-		 * \param duration The duration for which the force acts
 		 */
-		virtual void updateForce(Particle* particle, real duration) = 0;
+		virtual void updateForce(Particle* particle) = 0;
 
 	protected:
 		explicit IParticleForceGenerator();

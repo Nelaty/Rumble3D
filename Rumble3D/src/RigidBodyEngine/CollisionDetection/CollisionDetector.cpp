@@ -12,13 +12,15 @@ namespace r3
 	CollisionDetector::CollisionDetector(const unsigned int broadPhaseCollisions,
 										 const unsigned int contactsMax,
 										 const unsigned int iterations)
-		: m_broadPhaseCollisions(0)
+		: m_broadPhaseCollisions(0),
+		m_intermediatePhaseCollisions(0)
 	{
 		init(broadPhaseCollisions, contactsMax, iterations);
 	}
 
 	CollisionDetector::~CollisionDetector()
-	= default;
+	{
+	}
 
 	void CollisionDetector::init(const unsigned int broadPhaseCollisions,
 								 const unsigned contactsMax,
@@ -29,12 +31,14 @@ namespace r3
 		m_iterations = iterations;
 
 		m_broadPhaseCollisions.init(broadPhaseCollisions);
-		m_collisions.init(contactsMax, iterations);
+		m_intermediatePhaseCollisions.init(broadPhaseCollisions);
+		m_collisions.init(contactsMax);
 	}
 
 	void CollisionDetector::reset()
 	{
 		m_broadPhaseCollisions.reset();
+		m_intermediatePhaseCollisions.reset();
 		m_collisions.reset();
 	}
 
@@ -42,19 +46,21 @@ namespace r3
 	{
 		m_broadPhaseCollisionsMax = count;
 		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax);
+		m_intermediatePhaseCollisions.init(m_broadPhaseCollisionsMax);
 	}
 
 	void CollisionDetector::setContactsMax(const int count)
 	{
 		m_contactsMax = count;
-		m_collisions.init(m_contactsMax, m_iterations);
+		m_collisions.init(m_contactsMax);
 	}
 
 	void CollisionDetector::setIterations(const int iterations)
 	{
 		m_iterations = iterations;
 		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax);
-		m_collisions.init(m_contactsMax, m_iterations);
+		m_intermediatePhaseCollisions.init(m_broadPhaseCollisionsMax);
+		m_collisions.init(m_contactsMax);
 	}
 
 	CollisionData& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
@@ -68,7 +74,7 @@ namespace r3
 		m_broadPhaseFilter->generateCollisions(rigidBodies, m_broadPhaseCollisions);
 		for(auto& it : m_intermediatePhaseFilters)
 		{
-			it->generateCollisions(m_broadPhaseCollisions);
+			it->generateCollisions(m_broadPhaseCollisions, m_intermediatePhaseCollisions);
 		}
 		m_narrowPhaseFilter->generateCollisionData(m_broadPhaseCollisions,
 												   m_collisions);

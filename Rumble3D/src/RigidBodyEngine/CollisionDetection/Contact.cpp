@@ -129,7 +129,7 @@ namespace r3
 		const auto thisBody = m_pair[bodyIndex];
 
 		// Work out the velocity of the contact point.
-		auto velocity = glm::cross(thisBody->getRotation(),
+		auto velocity = glm::cross(thisBody->getAngularVelocity(),
 								   m_relativeContactPosition[bodyIndex]);
 		velocity += thisBody->getVelocity();
 

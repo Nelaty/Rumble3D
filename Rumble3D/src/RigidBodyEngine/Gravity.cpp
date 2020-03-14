@@ -11,7 +11,7 @@ namespace r3
 	Gravity::~Gravity()
 	= default;
 
-	void Gravity::updateForce(RigidBody* body, const real timeDelta)
+	void Gravity::updateForce(RigidBody* body)
 	{
 		if(!body->hasFiniteMass())
 		{
