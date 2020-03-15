@@ -164,6 +164,7 @@
 \input{classr3_1_1_broad_phase_filter}
 \input{classr3_1_1_b_v_h_node}
 \input{classr3_1_1_collision_algorithm_matrix}
+\input{classr3_1_1_collision_algorithm_matrix_factory}
 \input{classr3_1_1_collision_box}
 \input{classr3_1_1_collision_callback}
 \input{classr3_1_1_collision_data}
@@ -175,6 +176,7 @@
 \input{classr3_1_1_collision_primitive}
 \input{classr3_1_1_collision_resolver}
 \input{classr3_1_1_collision_sphere}
+\input{classr3_1_1_computation_interface_factory}
 \input{classr3_1_1_contact}
 \input{classr3_1_1_default_particle_engine_c_i}
 \input{classr3_1_1_default_rigid_body_engine_c_i}
@@ -208,6 +210,7 @@
 \input{classr3_1_1detail_1_1_octree_node}
 \input{classr3_1_1_particle}
 \input{classr3_1_1_particle_anchored_spring}
+\input{classr3_1_1_particle_bidirectional_spring}
 \input{classr3_1_1_particle_bungee}
 \input{classr3_1_1_particle_buoyancy}
 \input{classr3_1_1_particle_cable}
@@ -224,6 +227,7 @@
 \input{classr3_1_1_particle_force_registry}
 \input{classr3_1_1_particle_gravity}
 \input{classr3_1_1_particle_link}
+\input{classr3_1_1_particle_plane_contact_generator}
 \input{classr3_1_1_particle_rod}
 \input{classr3_1_1_particle_spring}
 \input{classr3_1_1_particle_world}
@@ -239,22 +243,22 @@
 \input{structr3_1_1_rigid_body_def}
 \input{classr3_1_1_rigid_body_engine_c_i}
 \input{classr3_1_1_rigid_body_world}
-\input{classr3_1_1_service_locator_collision_algorithm_matrix}
-\input{classr3_1_1_service_locator_computation_interface}
 \input{classr3_1_1_sphere_sphere_narrow_algorithm}
 \input{classr3_1_1_spring}
-\input{classr3_1_1_test_class}
 \input{classr3_1_1_transform3_d}
 \input{classr3_1_1_velocity_resolver}
 \chapter{File Documentation}
 \input{_common_8h}
 \input{_config_8h}
 \input{_precision_8h}
+\input{_collision_algorithm_matrix_factory_8h}
+\input{_computation_interface_factory_8h}
 \input{_i_computation_interface_8h}
 \input{_default_particle_engine_c_i_8h}
 \input{_i_particle_force_generator_8h}
 \input{_particle_8h}
 \input{_particle_anchored_spring_8h}
+\input{_particle_bidirectional_spring_8h}
 \input{_particle_bungee_8h}
 \input{_particle_buoyancy_8h}
 \input{_particle_cable_8h}
@@ -270,6 +274,7 @@
 \input{_particle_force_registry_8h}
 \input{_particle_gravity_8h}
 \input{_particle_link_8h}
+\input{_particle_plane_contact_generator_8h}
 \input{_particle_rod_8h}
 \input{_particle_spring_8h}
 \input{_particle_world_8h}
@@ -330,8 +335,6 @@
 \input{_rigid_body_engine_c_i_8h}
 \input{_rigid_body_world_8h}
 \input{_spring_8h}
-\input{_service_locator_collision_algorithm_matrix_8h}
-\input{_service_locator_computation_interface_8h}
 \input{_transform3_d_8h}
 \input{_fixed_size_container_8h}
 \input{_fixed_size_container_8inl}
@@ -343,6 +346,7 @@
 \input{_i_particle_force_generator_8cpp}
 \input{_particle_8cpp}
 \input{_particle_anchored_spring_8cpp}
+\input{_particle_bidirectional_spring_8cpp}
 \input{_particle_bungee_8cpp}
 \input{_particle_buoyancy_8cpp}
 \input{_particle_cable_8cpp}
@@ -358,6 +362,7 @@
 \input{_particle_force_registry_8cpp}
 \input{_particle_gravity_8cpp}
 \input{_particle_link_8cpp}
+\input{_particle_plane_contact_generator_8cpp}
 \input{_particle_rod_8cpp}
 \input{_particle_spring_8cpp}
 \input{_particle_world_8cpp}
@@ -417,8 +422,8 @@
 \input{_rigid_body_engine_c_i_8cpp}
 \input{_rigid_body_world_8cpp}
 \input{_spring_8cpp}
-\input{_service_locator_collision_algorithm_matrix_8cpp}
-\input{_service_locator_computation_interface_8cpp}
+\input{_collision_algorithm_matrix_factory_8cpp}
+\input{_computation_interface_factory_8cpp}
 \input{_transform3_d_8cpp}
 \input{_inertia_tensor_generator_8cpp}
 \input{_random_8cpp}

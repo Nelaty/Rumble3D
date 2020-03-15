@@ -23,7 +23,7 @@ Collaboration diagram for r3\+:\+:I\+Intermediate\+Phase\+Filter\+:\nopagebreak
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_ab2257ec90263c444371f455078e5ff7c}{$\sim$\+I\+Intermediate\+Phase\+Filter}} ()
 \item 
-virtual void \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_a0b235161317095e134661aa49beb909d}{generate\+Collisions}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&collisions)=0
+virtual void \mbox{\hyperlink{classr3_1_1_i_intermediate_phase_filter_aea93ab8a004408c54409b27961db6425}{generate\+Collisions}} (const \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&collisions\+In, \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&collisions\+Out)=0
 \begin{DoxyCompactList}\small\item\em Further filter a previous set of collisions, which might still contain a lot of false negatives. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -51,11 +51,11 @@ Interface for intermediate phase filters. These filters are an optional part of 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_i_intermediate_phase_filter_a0b235161317095e134661aa49beb909d}\label{classr3_1_1_i_intermediate_phase_filter_a0b235161317095e134661aa49beb909d}} 
+\mbox{\Hypertarget{classr3_1_1_i_intermediate_phase_filter_aea93ab8a004408c54409b27961db6425}\label{classr3_1_1_i_intermediate_phase_filter_aea93ab8a004408c54409b27961db6425}} 
 \index{r3\+::\+I\+Intermediate\+Phase\+Filter@{r3\+::\+I\+Intermediate\+Phase\+Filter}!generate\+Collisions@{generate\+Collisions}}
 \index{generate\+Collisions@{generate\+Collisions}!r3\+::\+I\+Intermediate\+Phase\+Filter@{r3\+::\+I\+Intermediate\+Phase\+Filter}}
 \subsubsection{\texorpdfstring{generate\+Collisions()}{generateCollisions()}}
-{\footnotesize\ttfamily virtual void r3\+::\+I\+Intermediate\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{collisions }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void r3\+::\+I\+Intermediate\+Phase\+Filter\+::generate\+Collisions (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{collisions\+In,  }\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_collision_pair}{Collision\+Pair}} $>$ \&}]{collisions\+Out }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -63,14 +63,14 @@ Further filter a previous set of collisions, which might still contain a lot of 
 
 
 \begin{DoxyParams}{Parameters}
-{\em collisions} & \\
+{\em collisions\+In} & Collisions from previous phase \\
+\hline
+{\em collisions\+Out} & Resulting collisions after this filter \\
 \hline
 \end{DoxyParams}
-\begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000008}{Todo}}]\{ Changed param signature to (const Fixed\+Size\+Container$<$\+Collision\+Pair$>$\& in, Fixed\+Size\+Container$<$\+Collision\+Pair$>$\& out) \} \end{DoxyRefDesc}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_i_intermediate_phase_filter_8h}{I\+Intermediate\+Phase\+Filter.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_i_intermediate_phase_filter_8cpp}{I\+Intermediate\+Phase\+Filter.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_i_intermediate_phase_filter_8h}{I\+Intermediate\+Phase\+Filter.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\+Collision\+Detection/\mbox{\hyperlink{_i_intermediate_phase_filter_8cpp}{I\+Intermediate\+Phase\+Filter.\+cpp}}\end{DoxyCompactItemize}

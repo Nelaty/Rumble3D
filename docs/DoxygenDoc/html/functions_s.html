@@ -85,6 +85,9 @@ $(function() {
 <li>setAngularDamping()
 : <a class="el" href="classr3_1_1_rigid_body.html#a53d9954e15f52459386ea82e299c9857">r3::RigidBody</a>
 </li>
+<li>setAngularVelocity()
+: <a class="el" href="classr3_1_1_rigid_body.html#af3fe9bbb0f1eda401c2a5cd02c915600">r3::RigidBody</a>
+</li>
 <li>setAwake()
 : <a class="el" href="classr3_1_1_rigid_body.html#acd934e55a7f2f09d91f62ded40ebb325">r3::RigidBody</a>
 </li>
@@ -143,6 +146,10 @@ $(function() {
 <li>setFriction()
 : <a class="el" href="classr3_1_1_physics_material.html#a8193e719476e1b22ba61b9cd15066437">r3::PhysicsMaterial</a>
 </li>
+<li>setGravity()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a2e538fa2b683ee35d2fd1cfe30bc8216">r3::ParticleBuoyancy</a>
+, <a class="el" href="classr3_1_1_particle_gravity.html#af5caf366933860ee362f40337d82ae61">r3::ParticleGravity</a>
+</li>
 <li>setInertiaTensor()
 : <a class="el" href="classr3_1_1_rigid_body.html#a01092f4ae330b7fd13421d8c8177a30e">r3::RigidBody</a>
 </li>
@@ -162,8 +169,17 @@ $(function() {
 <li>setIterationsMax()
 : <a class="el" href="classr3_1_1_particle_contact_resolver.html#a631df60543a1709a7c48dcf56490b3d2">r3::ParticleContactResolver</a>
 </li>
+<li>setLength()
+: <a class="el" href="classr3_1_1_particle_rod.html#af81456ae2749d12bf7fa7bf265fc4c23">r3::ParticleRod</a>
+</li>
 <li>setLinearDamping()
 : <a class="el" href="classr3_1_1_rigid_body.html#ac65bfd9fd7a12de59141fab3c02e8579">r3::RigidBody</a>
+</li>
+<li>setLiquidDensity()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a9394f89ca96484706c8fe3fc95a57b0c">r3::ParticleBuoyancy</a>
+</li>
+<li>setLiquidHeight()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a3be640435a5aea5d851b793bfa0228f9">r3::ParticleBuoyancy</a>
 </li>
 <li>setMass()
 : <a class="el" href="classr3_1_1_particle.html#a01f396041b3b54d674e227d56d600f6b">r3::Particle</a>
@@ -173,6 +189,9 @@ $(function() {
 </li>
 <li>setMassInfinite()
 : <a class="el" href="structr3_1_1_rigid_body_def.html#a6912018eac59c46be887cf07e7aadc36">r3::RigidBodyDef</a>
+</li>
+<li>setMaxDepth()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a09b780ceb66884f0381da22ed9f35b83">r3::ParticleBuoyancy</a>
 </li>
 <li>setMaxIterations()
 : <a class="el" href="classr3_1_1_interpenetration_resolver.html#a8250baac4ce0ed634002ed3be4515519">r3::InterpenetrationResolver</a>
@@ -193,6 +212,9 @@ $(function() {
 <li>setOrientation()
 : <a class="el" href="classr3_1_1_rigid_body.html#a2a93ca6f386411f14e5e8b844c214573">r3::RigidBody</a>
 </li>
+<li>setParticle()
+: <a class="el" href="classr3_1_1_particle_plane_contact_generator.html#a2df4ea0456118fdd9016e61c56954b2a">r3::ParticlePlaneContactGenerator</a>
+</li>
 <li>setParticles()
 : <a class="el" href="classr3_1_1_particle_link.html#a6c199dcab0ac23674e0069e54bd841c4">r3::ParticleLink</a>
 </li>
@@ -206,9 +228,12 @@ $(function() {
 <li>setPhysicsMaterial()
 : <a class="el" href="classr3_1_1_rigid_body.html#a31a0677792f54e49a6fb2cc453fe2169">r3::RigidBody</a>
 </li>
+<li>setPlane()
+: <a class="el" href="classr3_1_1_particle_plane_contact_generator.html#a80fe5bbcb79304f020bf23a56651b833">r3::ParticlePlaneContactGenerator</a>
+</li>
 <li>setPosition()
-: <a class="el" href="classr3_1_1_particle.html#ac0d83f2396049b51383c692a70c44b34">r3::Particle</a>
-, <a class="el" href="classr3_1_1_transform3_d.html#adae3a3bf01667c1c6c67d9a817d03a77">r3::Transform3D</a>
+: <a class="el" href="classr3_1_1_particle.html#a22926644001b62f3e8bf1f9cf02b64e9">r3::Particle</a>
+, <a class="el" href="classr3_1_1_transform3_d.html#a24bf42a0f16e38b66bd6a3ecf4f026c4">r3::Transform3D</a>
 </li>
 <li>setPositionEpsilon()
 : <a class="el" href="classr3_1_1_interpenetration_resolver.html#ad70802061f5f8868622cc5024a10f8cf">r3::InterpenetrationResolver</a>
@@ -216,24 +241,27 @@ $(function() {
 <li>setRestitution()
 : <a class="el" href="classr3_1_1_particle_cable.html#a070f8df68fbf2b7a7b758f1c5b22c42c">r3::ParticleCable</a>
 , <a class="el" href="classr3_1_1_particle_contact.html#ad4e76907d589db86ef3e3ff767c3bb6e">r3::ParticleContact</a>
+, <a class="el" href="classr3_1_1_particle_plane_contact_generator.html#ad76fbd878fbcad8ee71f6cb70031e49d">r3::ParticlePlaneContactGenerator</a>
 , <a class="el" href="classr3_1_1_physics_material.html#a2056c195a2d655aefe9a480c28e67ddb">r3::PhysicsMaterial</a>
 </li>
 <li>setRigidBodyWorld()
 : <a class="el" href="classr3_1_1_rigid_body_engine_c_i.html#a6787623e1862550ce04f1d970375b0ce">r3::RigidBodyEngineCI</a>
 </li>
 <li>setRotation()
-: <a class="el" href="classr3_1_1_rigid_body.html#aeaad22c99a9254f38c93e8e622bb4c01">r3::RigidBody</a>
-, <a class="el" href="classr3_1_1_transform3_d.html#acaab6048f44805ef28fdae452f0c4853">r3::Transform3D</a>
+: <a class="el" href="classr3_1_1_transform3_d.html#acaab6048f44805ef28fdae452f0c4853">r3::Transform3D</a>
 </li>
 <li>setSecond()
 : <a class="el" href="classr3_1_1_collision_pair.html#acb8c2f4a2c44eeffb8a3d76023db985b">r3::CollisionPair</a>
 </li>
 <li>setVelocity()
 : <a class="el" href="classr3_1_1_particle.html#afe7217976e22ed36892d8f7df4ea68d2">r3::Particle</a>
-, <a class="el" href="classr3_1_1_rigid_body.html#a244d24ec2368098f4ac38603a982ea54">r3::RigidBody</a>
+, <a class="el" href="classr3_1_1_rigid_body.html#a033bf2bf8e128b5438fdd91f7d29c051">r3::RigidBody</a>
 </li>
 <li>setVelocityEpsilon()
 : <a class="el" href="classr3_1_1_velocity_resolver.html#a91b4f4f3c064f11983ae9dbe40232c86">r3::VelocityResolver</a>
+</li>
+<li>setVolume()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#acd41f54ee680a742284a7b5473935e19">r3::ParticleBuoyancy</a>
 </li>
 <li>SphereSphereNarrowAlgorithm()
 : <a class="el" href="classr3_1_1_sphere_sphere_narrow_algorithm.html#a502f461be63a812401d8d31cf094a143">r3::SphereSphereNarrowAlgorithm</a>

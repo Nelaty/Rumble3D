@@ -2,6 +2,7 @@ var searchData=
 [
   ['particle',['Particle',['../classr3_1_1_particle.html#a72d4ae82278e293bf0933a1aabbe9ac3',1,'r3::Particle::Particle()'],['../classr3_1_1_particle.html#a28a47b80f79433db842a47aca835003a',1,'r3::Particle::Particle(const ParticleDef &amp;definition)']]],
   ['particleanchoredspring',['ParticleAnchoredSpring',['../classr3_1_1_particle_anchored_spring.html#adc141455ffbe50ec1595679cc3fe9753',1,'r3::ParticleAnchoredSpring']]],
+  ['particlebidirectionalspring',['ParticleBidirectionalSpring',['../classr3_1_1_particle_bidirectional_spring.html#ac805f977d1adc647c2c5193e35c63f56',1,'r3::ParticleBidirectionalSpring']]],
   ['particlebungee',['ParticleBungee',['../classr3_1_1_particle_bungee.html#aab8cdf8541433de21bc3d31db0434b6e',1,'r3::ParticleBungee']]],
   ['particlebuoyancy',['ParticleBuoyancy',['../classr3_1_1_particle_buoyancy.html#a32db81f5aba8e5d2a6990c56074e1557',1,'r3::ParticleBuoyancy']]],
   ['particlecable',['ParticleCable',['../classr3_1_1_particle_cable.html#afcb568750f7430ec94e34942f766e087',1,'r3::ParticleCable']]],
@@ -16,7 +17,8 @@ var searchData=
   ['particleforceregistry',['ParticleForceRegistry',['../classr3_1_1_particle_force_registry.html#a4ca245fb0538dbfb0c04ca49a3a226b6',1,'r3::ParticleForceRegistry']]],
   ['particlegravity',['ParticleGravity',['../classr3_1_1_particle_gravity.html#a698440df6351766d4c5c3c7704bdead6',1,'r3::ParticleGravity']]],
   ['particlelink',['ParticleLink',['../classr3_1_1_particle_link.html#adc17e9225ff4f49803f5d5fe0a117af2',1,'r3::ParticleLink']]],
-  ['particlerod',['ParticleRod',['../classr3_1_1_particle_rod.html#a5ceef2a44c266092396799440c9c674f',1,'r3::ParticleRod']]],
+  ['particleplanecontactgenerator',['ParticlePlaneContactGenerator',['../classr3_1_1_particle_plane_contact_generator.html#ada48734f8fe0eaf4909e92a3b3b30703',1,'r3::ParticlePlaneContactGenerator']]],
+  ['particlerod',['ParticleRod',['../classr3_1_1_particle_rod.html#a1bb04a9a962ed22132ad3e954eec6609',1,'r3::ParticleRod']]],
   ['particlespring',['ParticleSpring',['../classr3_1_1_particle_spring.html#af9b9193c28a36a6e070483136f63a9ab',1,'r3::ParticleSpring']]],
   ['particleworld',['ParticleWorld',['../classr3_1_1_particle_world.html#a5cd4bf68559cd0e1194420d3233b095e',1,'r3::ParticleWorld']]],
   ['pause',['pause',['../classr3_1_1_physics_engine.html#a6ed605620a6f115f014d3940dc2a5487',1,'r3::PhysicsEngine']]],

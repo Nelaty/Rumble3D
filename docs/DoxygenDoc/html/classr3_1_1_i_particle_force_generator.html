@@ -82,12 +82,13 @@ Inheritance diagram for r3::IParticleForceGenerator:</div>
 <div class="dyncontent">
 <div class="center"><img src="classr3_1_1_i_particle_force_generator__inherit__graph.png" border="0" usemap="#r3_1_1_i_particle_force_generator_inherit__map" alt="Inheritance graph"/></div>
 <map name="r3_1_1_i_particle_force_generator_inherit__map" id="r3_1_1_i_particle_force_generator_inherit__map">
-<area shape="rect" id="node2" href="classr3_1_1_particle_anchored_spring.html" title="A ParticleAnchoredSpring is a particle generator, which simulates a spring, which is anchored to a sp..." alt="" coords="5,175,192,311"/>
-<area shape="rect" id="node3" href="classr3_1_1_particle_bungee.html" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="216,175,355,311"/>
-<area shape="rect" id="node4" href="classr3_1_1_particle_buoyancy.html" title="A ParticleBuoyancy is a particle force generator, which can simulate buoyancy. " alt="" coords="379,160,531,325"/>
-<area shape="rect" id="node5" href="classr3_1_1_particle_drag.html" title="A ParticleDrag is a particle force generator, which simulates the effect of drag forces. " alt="" coords="555,175,719,311"/>
-<area shape="rect" id="node6" href="classr3_1_1_particle_gravity.html" title="A ParticleGravity is a particle force generator, which applies a constant given force to particles..." alt="" coords="743,189,878,296"/>
-<area shape="rect" id="node7" href="classr3_1_1_particle_spring.html" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles..." alt="" coords="903,175,1041,311"/>
+<area shape="rect" id="node2" href="classr3_1_1_particle_anchored_spring.html" title="A ParticleAnchoredSpring is a particle generator, which simulates a spring, which is anchored to a sp..." alt="" coords="5,248,192,384"/>
+<area shape="rect" id="node3" href="classr3_1_1_particle_bidirectional_spring.html" title="{r3::ParticleBidirectional\lSpring\n||+ ParticleBidirectionalSpring()\l+ ~ParticleBidirectionalSpring()\l+ updateForce()\l}" alt="" coords="216,255,419,377"/>
+<area shape="rect" id="node4" href="classr3_1_1_particle_bungee.html" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="443,248,581,384"/>
+<area shape="rect" id="node5" href="classr3_1_1_particle_buoyancy.html" title="A ParticleBuoyancy is a particle force generator, which can simulate buoyancy. " alt="" coords="605,160,757,472"/>
+<area shape="rect" id="node6" href="classr3_1_1_particle_drag.html" title="A ParticleDrag is a particle force generator, which simulates the effect of drag forces. " alt="" coords="782,248,946,384"/>
+<area shape="rect" id="node7" href="classr3_1_1_particle_gravity.html" title="A ParticleGravity is a particle force generator, which applies a constant given force to particles..." alt="" coords="970,248,1105,384"/>
+<area shape="rect" id="node8" href="classr3_1_1_particle_spring.html" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles..." alt="" coords="1129,248,1268,384"/>
 </map>
 </div>
 <div class="dynheader">
@@ -100,9 +101,9 @@ Collaboration diagram for r3::IParticleForceGenerator:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1682bcec51cd294cbef8b6cbd4f50266"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_particle_force_generator.html#a1682bcec51cd294cbef8b6cbd4f50266">~IParticleForceGenerator</a> ()</td></tr>
 <tr class="separator:a1682bcec51cd294cbef8b6cbd4f50266"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8b692fc3a40f815dc44c106b451c3a90"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_particle_force_generator.html#a8b692fc3a40f815dc44c106b451c3a90">updateForce</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> duration)=0</td></tr>
-<tr class="memdesc:a8b692fc3a40f815dc44c106b451c3a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and changes the force in the force accumulator of a particle.  <a href="#a8b692fc3a40f815dc44c106b451c3a90">More...</a><br /></td></tr>
-<tr class="separator:a8b692fc3a40f815dc44c106b451c3a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af705063c5d7debca0f7a5c5c68c28f50"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_i_particle_force_generator.html#af705063c5d7debca0f7a5c5c68c28f50">updateForce</a> (<a class="el" href="classr3_1_1_particle.html">Particle</a> *particle)=0</td></tr>
+<tr class="memdesc:af705063c5d7debca0f7a5c5c68c28f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates and changes the force in the force accumulator of a particle.  <a href="#af705063c5d7debca0f7a5c5c68c28f50">More...</a><br /></td></tr>
+<tr class="separator:af705063c5d7debca0f7a5c5c68c28f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -163,8 +164,8 @@ Protected Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8b692fc3a40f815dc44c106b451c3a90"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8b692fc3a40f815dc44c106b451c3a90">&#9670;&nbsp;</a></span>updateForce()</h2>
+<a id="af705063c5d7debca0f7a5c5c68c28f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af705063c5d7debca0f7a5c5c68c28f50">&#9670;&nbsp;</a></span>updateForce()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,18 +177,8 @@ Protected Member Functions</h2></td></tr>
           <td class="memname">virtual void r3::IParticleForceGenerator::updateForce </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classr3_1_1_particle.html">Particle</a> *&#160;</td>
-          <td class="paramname"><em>particle</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>particle</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
-          <td class="paramname"><em>duration</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -201,18 +192,17 @@ Protected Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">particle</td><td>The particle, on which the force should be applied to. </td></tr>
-    <tr><td class="paramname">duration</td><td>The duration for which the force acts </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classr3_1_1_particle_buoyancy.html#ad1249e51508770fd9b1775c8e22eb51a">r3::ParticleBuoyancy</a>, <a class="el" href="classr3_1_1_particle_drag.html#abbfc4f053bb921be0068f8928c300384">r3::ParticleDrag</a>, <a class="el" href="classr3_1_1_particle_anchored_spring.html#aa445db9e0efcc25a422348f4e580ed7f">r3::ParticleAnchoredSpring</a>, <a class="el" href="classr3_1_1_particle_spring.html#a113e7bdf36d5edf020abecec5a0fb730">r3::ParticleSpring</a>, <a class="el" href="classr3_1_1_particle_bungee.html#a04de21f7e418f572a9c9dfc936384b96">r3::ParticleBungee</a>, and <a class="el" href="classr3_1_1_particle_gravity.html#a9535686bf25375d94bbe0451c089b788">r3::ParticleGravity</a>.</p>
+<p>Implemented in <a class="el" href="classr3_1_1_particle_buoyancy.html#afb3fc83d65052567b972e139ce167995">r3::ParticleBuoyancy</a>, <a class="el" href="classr3_1_1_particle_drag.html#a9bbaf7be2a4a4252cf5e9364d97ec5b7">r3::ParticleDrag</a>, <a class="el" href="classr3_1_1_particle_anchored_spring.html#a8c5690a32a5061582989d5915a84cff8">r3::ParticleAnchoredSpring</a>, <a class="el" href="classr3_1_1_particle_spring.html#a16f6dd1c995223af3a15ff9a1e2eb375">r3::ParticleSpring</a>, <a class="el" href="classr3_1_1_particle_bungee.html#a416f7100f9d859b0152ef6f8e551c2c1">r3::ParticleBungee</a>, <a class="el" href="classr3_1_1_particle_gravity.html#a2730d87272fcc1c29d143f3a7eb8ffa9">r3::ParticleGravity</a>, and <a class="el" href="classr3_1_1_particle_bidirectional_spring.html#a13ac531b70d2884364fba66aae55b5fb">r3::ParticleBidirectionalSpring</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_i_particle_force_generator_8h_source.html">IParticleForceGenerator.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_i_particle_force_generator_8cpp.html">IParticleForceGenerator.cpp</a></li>
+<li>D:/Programming/Repositories/GamePhysics/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/ParticleEngine/<a class="el" href="_i_particle_force_generator_8h_source.html">IParticleForceGenerator.h</a></li>
+<li>D:/Programming/Repositories/GamePhysics/SimulationVisualization/Rumble3D/Rumble3D/src/ParticleEngine/<a class="el" href="_i_particle_force_generator_8cpp.html">IParticleForceGenerator.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

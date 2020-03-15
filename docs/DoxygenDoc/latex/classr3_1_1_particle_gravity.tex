@@ -24,7 +24,7 @@ Collaboration diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=281pt]{classr3_1_1_particle_gravity__coll__graph}
+\includegraphics[width=282pt]{classr3_1_1_particle_gravity__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -34,8 +34,12 @@ Collaboration diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}{$\sim$\+Particle\+Gravity}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classr3_1_1_particle_gravity_a2730d87272fcc1c29d143f3a7eb8ffa9}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle) override
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classr3_1_1_particle_gravity_a12488a0a88c2f0b2b94ae29d376d2d03}{get\+Gravity}} () const
+\begin{DoxyCompactList}\small\item\em Get the current gravity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_gravity_af5caf366933860ee362f40337d82ae61}{set\+Gravity}} (const glm\+::vec3 \&gravity)
+\begin{DoxyCompactList}\small\item\em Set the current gravity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -72,11 +76,31 @@ A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a partic
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}\label{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}} 
+\mbox{\Hypertarget{classr3_1_1_particle_gravity_a12488a0a88c2f0b2b94ae29d376d2d03}\label{classr3_1_1_particle_gravity_a12488a0a88c2f0b2b94ae29d376d2d03}} 
+\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!get\+Gravity@{get\+Gravity}}
+\index{get\+Gravity@{get\+Gravity}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
+\subsubsection{\texorpdfstring{get\+Gravity()}{getGravity()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Particle\+Gravity\+::get\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current gravity. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_gravity_af5caf366933860ee362f40337d82ae61}\label{classr3_1_1_particle_gravity_af5caf366933860ee362f40337d82ae61}} 
+\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!set\+Gravity@{set\+Gravity}}
+\index{set\+Gravity@{set\+Gravity}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
+\subsubsection{\texorpdfstring{set\+Gravity()}{setGravity()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Gravity\+::set\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})}
+
+
+
+Set the current gravity. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_gravity_a2730d87272fcc1c29d143f3a7eb8ffa9}\label{classr3_1_1_particle_gravity_a2730d87272fcc1c29d143f3a7eb8ffa9}} 
 \index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -86,12 +110,10 @@ Calculates and changes the force in the force accumulator of a particle.
 \begin{DoxyParams}{Parameters}
 {\em particle} & The particle, on which the force should be applied to. \\
 \hline
-{\em duration} & The duration for which the force acts. \\
-\hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{r3\+::\+I\+Particle\+Force\+Generator}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}{r3\+::\+I\+Particle\+Force\+Generator}}.
 
 
 
@@ -106,5 +128,5 @@ Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}

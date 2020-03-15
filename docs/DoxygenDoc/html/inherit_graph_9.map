@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_collision_pair.html" title="A CollisionPair describes a potential collision between two rigid bodies. " alt="" coords="5,5,119,32"/>
+<area shape="rect" id="node1" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="5,5,133,32"/>
+<area shape="rect" id="node2" href="$classr3_1_1_rigid_body.html" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties. " alt="" coords="181,5,281,32"/>
 </map>

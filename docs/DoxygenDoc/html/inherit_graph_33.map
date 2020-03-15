@@ -1,3 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_particle_contact_resolver.html" title="A ParticleContactResolver resolves a given number of contacts. " alt="" coords="5,5,184,32"/>
+<area shape="rect" id="node1" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,56,192,83"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_constraint.html" title="Abstract class, which links a particle with a static position. " alt="" coords="249,5,393,32"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles. " alt="" coords="267,56,376,83"/>
+<area shape="rect" id="node7" href="$classr3_1_1_particle_plane_contact_generator.html" title="r3::ParticlePlaneContact\lGenerator" alt="" coords="240,107,403,149"/>
+<area shape="rect" id="node4" href="$classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart..." alt="" coords="459,5,577,32"/>
+<area shape="rect" id="node5" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="451,56,585,83"/>
+<area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="464,107,572,133"/>
 </map>

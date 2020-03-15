@@ -103,9 +103,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a01b61a6ebe0c54f92952d69e3d0cf09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98aa1b750a187ba18a6fce0c530e397f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_directed_force.html#a98aa1b750a187ba18a6fce0c530e397f">~DirectedForce</a> ()</td></tr>
 <tr class="separator:a98aa1b750a187ba18a6fce0c530e397f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac723ddeef767956d16fb9d0a1d706bfd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_directed_force.html#ac723ddeef767956d16fb9d0a1d706bfd">updateForce</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *body, <a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a> duration) override</td></tr>
-<tr class="memdesc:ac723ddeef767956d16fb9d0a1d706bfd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply force to a rigid body over a specific time.  <a href="#ac723ddeef767956d16fb9d0a1d706bfd">More...</a><br /></td></tr>
-<tr class="separator:ac723ddeef767956d16fb9d0a1d706bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13dc064fe26dabe6c2803f027079e26b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_directed_force.html#a13dc064fe26dabe6c2803f027079e26b">updateForce</a> (<a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *body) override</td></tr>
+<tr class="memdesc:a13dc064fe26dabe6c2803f027079e26b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply force to a rigid body over a specific time.  <a href="#a13dc064fe26dabe6c2803f027079e26b">More...</a><br /></td></tr>
+<tr class="separator:a13dc064fe26dabe6c2803f027079e26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c25cdaa94e053ffd2614472d2a04c7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classr3_1_1_directed_force.html#a5c25cdaa94e053ffd2614472d2a04c7e">setForce</a> (const glm::vec3 &amp;force)</td></tr>
 <tr class="memdesc:a5c25cdaa94e053ffd2614472d2a04c7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the force, which will act on the body.  <a href="#a5c25cdaa94e053ffd2614472d2a04c7e">More...</a><br /></td></tr>
 <tr class="separator:a5c25cdaa94e053ffd2614472d2a04c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,8 +211,8 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a id="ac723ddeef767956d16fb9d0a1d706bfd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac723ddeef767956d16fb9d0a1d706bfd">&#9670;&nbsp;</a></span>updateForce()</h2>
+<a id="a13dc064fe26dabe6c2803f027079e26b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13dc064fe26dabe6c2803f027079e26b">&#9670;&nbsp;</a></span>updateForce()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -224,18 +224,8 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void r3::DirectedForce::updateForce </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classr3_1_1_rigid_body.html">RigidBody</a> *&#160;</td>
-          <td class="paramname"><em>body</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>body</em></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="namespacer3.html#ab2016b3e3f743fb735afce242f0dc1eb">real</a>&#160;</td>
-          <td class="paramname"><em>duration</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -253,15 +243,15 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000016">Todo:</a></b></dt><dd>: add force at body point doesn't create rotational forces. </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000008">Todo:</a></b></dt><dd>: add force at body point doesn't create rotational forces. </dd></dl>
 
-<p>Implements <a class="el" href="classr3_1_1_force_generator.html#a69bebbde8cef792d6636af50037af2aa">r3::ForceGenerator</a>.</p>
+<p>Implements <a class="el" href="classr3_1_1_force_generator.html#a59deb54721cdcc6e33fabfb1f9a3fb27">r3::ForceGenerator</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_directed_force_8h_source.html">DirectedForce.h</a></li>
-<li>D:/Library/Documents/Job/Forschungsmaster/Projekte/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_directed_force_8cpp.html">DirectedForce.cpp</a></li>
+<li>D:/Programming/Repositories/GamePhysics/SimulationVisualization/Rumble3D/Rumble3D/include/R3D/RigidBodyEngine/<a class="el" href="_directed_force_8h_source.html">DirectedForce.h</a></li>
+<li>D:/Programming/Repositories/GamePhysics/SimulationVisualization/Rumble3D/Rumble3D/src/RigidBodyEngine/<a class="el" href="_directed_force_8cpp.html">DirectedForce.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

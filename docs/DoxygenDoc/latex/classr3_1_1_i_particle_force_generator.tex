@@ -27,7 +27,7 @@ Collaboration diagram for r3\+:\+:I\+Particle\+Force\+Generator\+:\nopagebreak
 \item 
 virtual \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a1682bcec51cd294cbef8b6cbd4f50266}{$\sim$\+I\+Particle\+Force\+Generator}} ()
 \item 
-virtual void \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)=0
+virtual void \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle)=0
 \begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
@@ -55,11 +55,11 @@ Interface for particle force generators.
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}\label{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}} 
+\mbox{\Hypertarget{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}\label{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}} 
 \index{r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+I\+Particle\+Force\+Generator@{r3\+::\+I\+Particle\+Force\+Generator}}
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
-{\footnotesize\ttfamily virtual void r3\+::\+I\+Particle\+Force\+Generator\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void r3\+::\+I\+Particle\+Force\+Generator\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
@@ -69,16 +69,14 @@ Calculates and changes the force in the force accumulator of a particle.
 \begin{DoxyParams}{Parameters}
 {\em particle} & The particle, on which the force should be applied to. \\
 \hline
-{\em duration} & The duration for which the force acts \\
-\hline
 \end{DoxyParams}
 
 
-Implemented in \mbox{\hyperlink{classr3_1_1_particle_buoyancy_ad1249e51508770fd9b1775c8e22eb51a}{r3\+::\+Particle\+Buoyancy}}, \mbox{\hyperlink{classr3_1_1_particle_drag_abbfc4f053bb921be0068f8928c300384}{r3\+::\+Particle\+Drag}}, \mbox{\hyperlink{classr3_1_1_particle_anchored_spring_aa445db9e0efcc25a422348f4e580ed7f}{r3\+::\+Particle\+Anchored\+Spring}}, \mbox{\hyperlink{classr3_1_1_particle_spring_a113e7bdf36d5edf020abecec5a0fb730}{r3\+::\+Particle\+Spring}}, \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384b96}{r3\+::\+Particle\+Bungee}}, and \mbox{\hyperlink{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}{r3\+::\+Particle\+Gravity}}.
+Implemented in \mbox{\hyperlink{classr3_1_1_particle_buoyancy_afb3fc83d65052567b972e139ce167995}{r3\+::\+Particle\+Buoyancy}}, \mbox{\hyperlink{classr3_1_1_particle_drag_a9bbaf7be2a4a4252cf5e9364d97ec5b7}{r3\+::\+Particle\+Drag}}, \mbox{\hyperlink{classr3_1_1_particle_anchored_spring_a8c5690a32a5061582989d5915a84cff8}{r3\+::\+Particle\+Anchored\+Spring}}, \mbox{\hyperlink{classr3_1_1_particle_spring_a16f6dd1c995223af3a15ff9a1e2eb375}{r3\+::\+Particle\+Spring}}, \mbox{\hyperlink{classr3_1_1_particle_bungee_a416f7100f9d859b0152ef6f8e551c2c1}{r3\+::\+Particle\+Bungee}}, \mbox{\hyperlink{classr3_1_1_particle_gravity_a2730d87272fcc1c29d143f3a7eb8ffa9}{r3\+::\+Particle\+Gravity}}, and \mbox{\hyperlink{classr3_1_1_particle_bidirectional_spring_a13ac531b70d2884364fba66aae55b5fb}{r3\+::\+Particle\+Bidirectional\+Spring}}.
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_i_particle_force_generator_8h}{I\+Particle\+Force\+Generator.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_i_particle_force_generator_8cpp}{I\+Particle\+Force\+Generator.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_i_particle_force_generator_8h}{I\+Particle\+Force\+Generator.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_i_particle_force_generator_8cpp}{I\+Particle\+Force\+Generator.\+cpp}}\end{DoxyCompactItemize}
