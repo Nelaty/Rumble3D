@@ -25,6 +25,8 @@ namespace r3
 
 		// Betrag der Kraft:
 		auto magnitude = glm::length(force);
+		if(magnitude == real(0)) return;
+
 		magnitude -= m_restLength;
 		magnitude *= m_springConstant;
 	
