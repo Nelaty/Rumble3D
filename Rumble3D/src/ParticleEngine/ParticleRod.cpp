@@ -16,21 +16,14 @@ namespace r3
 		const auto length = currentLength();
 
 		// Particle distance is already perfect
-		if(length == m_length) 
+		if(length == m_length)
 		{
 			return;
 		}
 
 		// Get an available contact
-		auto contact = contactData.getAvailableEntry();	
-		if(m_particles[1]->hasFiniteMass()) 
-		{
-			contact->init(m_particles[0], m_particles[1]);
-		}
-		else 
-		{
-			contact->init(m_particles[0], nullptr);
-		}
+		auto contact = contactData.getAvailableEntry();
+		contact->init(m_particles[0], m_particles[1]);
 
 		// Negative contact normal
 		auto normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
@@ -41,7 +34,7 @@ namespace r3
 			contact->setContactNormal(normal);
 			contact->setPenetration(length - m_length);
 		}
-		else 
+		else
 		{
 			contact->setContactNormal(-normal);
 			contact->setPenetration(m_length - length);

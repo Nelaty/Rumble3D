@@ -137,7 +137,7 @@ namespace r3
 				{
 					contactArray[i].addToPenetration(-glm::dot(move[1], contactNormal));
 				}
-				if (second)
+				if (second->hasFiniteMass())
 				{
 					if (second == firstMax)
 					{

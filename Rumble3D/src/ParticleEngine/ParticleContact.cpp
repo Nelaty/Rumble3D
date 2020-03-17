@@ -27,7 +27,7 @@ namespace r3
 	{
 		// v_s = (\dot{p_a} - \dot{p_b}) * (\hat{p_a -p_b})
 		glm::vec3 relativeVelocity = m_particles[0]->getVelocity();
-		if(m_particles[1])
+		if(m_particles[1]->hasFiniteMass())
 		{
 			relativeVelocity -= m_particles[1]->getVelocity();
 		}
@@ -38,31 +38,37 @@ namespace r3
 	{
 		const real separatingVelocity = calculateSeparatingVelocity();
 
-		// Check if particles are moving apart
+		// If particles don't move, there's nothing to resolve
 		if(separatingVelocity > 0) return;
+
+		// Wenn beide Teilchen unendliche Masse, dann aendert Impuls nichts:
+		if(!m_particles[0]->hasFiniteMass() && !m_particles[1]->hasFiniteMass())
+		{
+			return;
+		}
 
 		// \prime{v_s} = -c*v_s
 		real newSeparatingVelocity = -separatingVelocity * m_restitution;
-		
+
 		// Einschub für die Beruecksichtigung von ruhenden Kontakten:
 		// Prüfe Geschwindigkeit, die aus der Beschleunigung herruehrt:
 		//ACHTUNG: Hier nicht berücksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
 		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird geprüft.
-		
+
 		glm::vec3 accelerationCausedVelocity = m_particles[0]->getAcceleration();
-		if(m_particles[1])
+		if(m_particles[1]->hasFiniteMass())
 		{
 			accelerationCausedVelocity -= m_particles[1]->getAcceleration();
 		}
 		// Skalarprodukt: wieviel der Beschleunigung wirkt in Richtung Kontaktnormale:
-		real accelerationCausedSeparationVelocity =	glm::dot(accelerationCausedVelocity, m_contactNormal) * duration;
+		real accelerationCausedSeparationVelocity = glm::dot(accelerationCausedVelocity, m_contactNormal) * duration;
 		// Falls wir eine Kollisionsgeschwindigkeit aufgrund der Beschleunigung haben, 
 		// muss sie von der newSeparationVelocity abgezogen werden:
-		if (accelerationCausedSeparationVelocity < 0) 
+		if(accelerationCausedSeparationVelocity < 0)
 		{
 			newSeparatingVelocity += m_restitution * accelerationCausedSeparationVelocity;
 			// zuviel abgezogen?
-			if (newSeparatingVelocity < 0) 
+			if(newSeparatingVelocity < 0)
 			{
 				newSeparatingVelocity = 0;
 			}
@@ -73,26 +79,11 @@ namespace r3
 
 		// Veraenderung der Geschwindigkeit in Abh. der Massen der Teilchen
 		real totalInverseMass = m_particles[0]->getInverseMass();
-		if(m_particles[1])
+		if(m_particles[1]->hasFiniteMass())
 		{
 			totalInverseMass += m_particles[1]->getInverseMass();
 		}
-		// Fehler Millington: Massen und nicht 1/Masse nehmen!!!
 
-		if(!(m_particles[0]->hasFiniteMass())) return;
-
-		/*real totalMass = m_particles[0]->getMass();
-		if(m_particles[1] && m_particles[1]->hasFiniteMass())
-		{
-			totalMass += m_particles[1]->getMass();
-		}
-		real totalInverseMass = real(1) / totalMass;*/
-
-		// Wenn beide Teilchen unendliche Masse, dann aendert Impuls nichts:
-		if(totalInverseMass <= 0)
-		{
-			return;
-		}
 		// Gesamtimpuls g = (m_1 + m_2) * v 
 		const real impulse = deltaVelocity / totalInverseMass;
 
@@ -101,10 +92,14 @@ namespace r3
 
 		// Anwendung des Impulses je Teilchen proportional zu den inversen Massen:
 		// \prime{\hat{p}} = \dot{p} + 1/m * g
-		m_particles[0]->setVelocity(m_particles[0]->getVelocity() +
-									impulsePerInverseMass * m_particles[0]->getInverseMass());
 
-		if (m_particles[1]) 
+		if(m_particles[0]->hasFiniteMass())
+		{
+			m_particles[0]->setVelocity(m_particles[0]->getVelocity() +
+										impulsePerInverseMass * m_particles[0]->getInverseMass());
+		}
+
+		if(m_particles[1]->hasFiniteMass())
 		{
 			// hier negativ, da aus Sicht von m_particles[0]
 			m_particles[1]->setVelocity(m_particles[1]->getVelocity() +
@@ -120,7 +115,7 @@ namespace r3
 
 		// Velocity change in accordance with their masses
 		real totalInverseMass = m_particles[0]->getInverseMass();
-		if(m_particles[1])
+		if(m_particles[1]->hasFiniteMass())
 		{
 			totalInverseMass += m_particles[1]->getInverseMass();
 		}
@@ -131,7 +126,7 @@ namespace r3
 
 		// Berechnung von Delta-p_a und Delta-p_b
 		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->getInverseMass();
-		if (m_particles[1])
+		if (m_particles[1]->hasFiniteMass())
 		{
 			m_particlesMovement[1] = movePerInverseMass * -m_particles[1]->getInverseMass();
 		}
@@ -142,7 +137,7 @@ namespace r3
 
 		// Anwendung der Aufloesung der Durchdringung:
 		m_particles[0]->setPosition(m_particles[0]->getPosition() + m_particlesMovement[0]);
-		if (m_particles[1])
+		if (m_particles[1]->hasFiniteMass())
 		{
 			m_particles[1]->setPosition(m_particles[1]->getPosition() + m_particlesMovement[1]);
 		}

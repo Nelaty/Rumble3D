@@ -19,27 +19,19 @@ namespace r3
 	void ParticleCable::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
 		const auto length = currentLength();
-		if (length < m_maxLength)
+		if(length < m_maxLength)
 		{
 			return;
 		}
 
 		// Get an unused contact
 		auto contact = contactData.getAvailableEntry();
-		if (m_particles[1]->hasFiniteMass())
-		{
-			contact->init(m_particles[0], m_particles[1]);
-		}
-		else
-		{
-			contact->init(m_particles[0], nullptr);
-		}
+		contact->init(m_particles[0], m_particles[1]);
 
 		// Negative contact normal
 		auto normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
 		normal = glm::normalize(normal);
 
-		// 
 		contact->setContactNormal(normal);
 		contact->setPenetration(length - m_maxLength);
 		contact->setRestitution(m_restitution);
