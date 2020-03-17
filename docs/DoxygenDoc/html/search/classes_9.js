@@ -2,6 +2,7 @@ var searchData=
 [
   ['particle',['Particle',['../classr3_1_1_particle.html',1,'r3']]],
   ['particleanchoredspring',['ParticleAnchoredSpring',['../classr3_1_1_particle_anchored_spring.html',1,'r3']]],
+  ['particlebidirectionalspring',['ParticleBidirectionalSpring',['../classr3_1_1_particle_bidirectional_spring.html',1,'r3']]],
   ['particlebungee',['ParticleBungee',['../classr3_1_1_particle_bungee.html',1,'r3']]],
   ['particlebuoyancy',['ParticleBuoyancy',['../classr3_1_1_particle_buoyancy.html',1,'r3']]],
   ['particlecable',['ParticleCable',['../classr3_1_1_particle_cable.html',1,'r3']]],
@@ -18,6 +19,7 @@ var searchData=
   ['particleforceregistry',['ParticleForceRegistry',['../classr3_1_1_particle_force_registry.html',1,'r3']]],
   ['particlegravity',['ParticleGravity',['../classr3_1_1_particle_gravity.html',1,'r3']]],
   ['particlelink',['ParticleLink',['../classr3_1_1_particle_link.html',1,'r3']]],
+  ['particleplanecontactgenerator',['ParticlePlaneContactGenerator',['../classr3_1_1_particle_plane_contact_generator.html',1,'r3']]],
   ['particlerod',['ParticleRod',['../classr3_1_1_particle_rod.html',1,'r3']]],
   ['particlespring',['ParticleSpring',['../classr3_1_1_particle_spring.html',1,'r3']]],
   ['particleworld',['ParticleWorld',['../classr3_1_1_particle_world.html',1,'r3']]],

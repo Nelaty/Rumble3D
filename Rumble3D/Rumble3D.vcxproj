@@ -182,7 +182,7 @@
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\CollisionPair.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Octree.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\OctreeBroadPhaseFilter.cpp" />
-    <ClCompile Include="src\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.cpp" />
+    <ClCompile Include="src\ServiceLocator\CollisionAlgorithmMatrixFactory.cpp" />
     <ClCompile Include="src\IComputationInterface.cpp" />
     <ClCompile Include="src\ParticleEngine\DefaultParticleEngineCI.cpp" />
     <ClCompile Include="src\ParticleEngine\Particle.cpp" />
@@ -251,7 +251,7 @@
     <ClCompile Include="src\RigidBodyEngine\RigidBodyEngineCI.cpp" />
     <ClCompile Include="src\RigidBodyEngine\RigidBodyWorld.cpp" />
     <ClCompile Include="src\RigidBodyEngine\Spring.cpp" />
-    <ClCompile Include="src\ServiceLocator\ServiceLocatorComputationInterface.cpp" />
+    <ClCompile Include="src\ServiceLocator\ComputationInterfaceFactory.cpp" />
     <ClCompile Include="src\Transform3D.cpp" />
     <ClCompile Include="src\Utility\InertiaTensorGenerator.cpp" />
     <ClCompile Include="src\Utility\Random.cpp" />
@@ -341,8 +341,8 @@
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyEngineCI.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\RigidBodyWorld.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\Spring.h" />
-    <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorCollisionAlgorithmMatrix.h" />
-    <ClInclude Include="include\R3D\ServiceLocator\ServiceLocatorComputationInterface.h" />
+    <ClInclude Include="include\R3D\Helper\CollisionAlgorithmMatrixFactory.h" />
+    <ClInclude Include="include\R3D\Helper\ComputationInterfaceFactory.h" />
     <ClInclude Include="include\R3D\Transform3D.h" />
     <ClInclude Include="include\R3D\Utility\FixedSizeContainer.h" />
     <ClInclude Include="include\R3D\Utility\InertiaTensorGenerator.h" />

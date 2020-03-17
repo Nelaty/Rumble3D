@@ -35,11 +35,11 @@ namespace r3
 		m_registrations.push_back(registration);
 	}
 	
-	void ForceRegistry::updateForces(const real duration)
+	void ForceRegistry::updateForces()
 	{
 		for (auto& i : m_registrations)
 		{
-			i.m_forceGenerator->updateForce(i.m_rigidBody, duration);
+			i.m_forceGenerator->updateForce(i.m_rigidBody);
 		}
 	}
 }

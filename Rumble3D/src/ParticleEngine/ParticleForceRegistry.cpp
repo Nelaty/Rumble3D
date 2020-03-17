@@ -37,11 +37,11 @@ namespace r3
 		m_registrations.push_back(ParticleForceRegistrationEntry{particle, generator});
 	}
 	
-	void ParticleForceRegistry::updateForces(const real duration)
+	void ParticleForceRegistry::updateForces()
 	{
 		for(auto& it : m_registrations)
 		{
-			it.m_forceGenerator->updateForce(it.m_particle, duration);
+			it.m_forceGenerator->updateForce(it.m_particle);
 		}
 	}
 }

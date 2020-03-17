@@ -74,7 +74,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_broad_phase_filter.html#a0435dc6468401e32bf151f84f52e80f8">r3::BroadPhaseFilter</a>
 , <a class="el" href="classr3_1_1_collision_detector.html#a58a1bd9705f241e4c137458bed35f596">r3::CollisionDetector</a>
 , <a class="el" href="classr3_1_1_i_broad_phase_filter.html#a5f437f6390a8f10bf96d72e35e3b4432">r3::IBroadPhaseFilter</a>
-, <a class="el" href="classr3_1_1_i_intermediate_phase_filter.html#a0b235161317095e134661aa49beb909d">r3::IIntermediatePhaseFilter</a>
+, <a class="el" href="classr3_1_1_i_intermediate_phase_filter.html#aea93ab8a004408c54409b27961db6425">r3::IIntermediatePhaseFilter</a>
 , <a class="el" href="classr3_1_1_octree_broad_phase_filter.html#a9a4a5bbdcb978c782b89b729c475abfa">r3::OctreeBroadPhaseFilter</a>
 </li>
 <li>generateContactData()
@@ -119,6 +119,9 @@ $(function() {
 </li>
 <li>getAngularDamping()
 : <a class="el" href="classr3_1_1_rigid_body.html#afcef73f6bf5ad38780f39c8ebb5c4af1">r3::RigidBody</a>
+</li>
+<li>getAngularVelocity()
+: <a class="el" href="classr3_1_1_rigid_body.html#a0d60576d3d08d10cd529306a3a5888d7">r3::RigidBody</a>
 </li>
 <li>getAvailableContact()
 : <a class="el" href="classr3_1_1_collision_data.html#ad0e0b85004905b48a8faf7be34bdf305">r3::CollisionData</a>
@@ -221,6 +224,10 @@ $(function() {
 <li>getGenerators()
 : <a class="el" href="classr3_1_1_particle_contact_generator_registry.html#a31b80b662b52afd910ba3d4d07fd8649">r3::ParticleContactGeneratorRegistry</a>
 </li>
+<li>getGravity()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a10eb48db4677b687b49e2478fed25919">r3::ParticleBuoyancy</a>
+, <a class="el" href="classr3_1_1_particle_gravity.html#a12488a0a88c2f0b2b94ae29d376d2d03">r3::ParticleGravity</a>
+</li>
 <li>getGrowth()
 : <a class="el" href="classr3_1_1_bounding_box.html#a21631e2fffeb995d3a9647489f936d13">r3::BoundingBox</a>
 , <a class="el" href="classr3_1_1_bounding_sphere.html#ac13a86be56c1c52b33a707eb2356daa3">r3::BoundingSphere</a>
@@ -247,6 +254,12 @@ $(function() {
 <li>getLinearDamping()
 : <a class="el" href="classr3_1_1_rigid_body.html#ab48c055a703f1d3d84b9f1977ef504e6">r3::RigidBody</a>
 </li>
+<li>getLiquidDensity()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a075809e6cbced13f164cbcdcf50e04fc">r3::ParticleBuoyancy</a>
+</li>
+<li>getLiquidHeight()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#ab60350b1a4fe78771b8fd1d145aa6bf1">r3::ParticleBuoyancy</a>
+</li>
 <li>getMass()
 : <a class="el" href="classr3_1_1_particle.html#ade86b59933d1acc8d33f79a8735d8f3d">r3::Particle</a>
 , <a class="el" href="classr3_1_1_rigid_body.html#a171ee8190ba1c7c2a40c5faf8d654170">r3::RigidBody</a>
@@ -255,7 +268,10 @@ $(function() {
 : <a class="el" href="classr3_1_1_physics_material.html#a652318d9fa4f6db099dc58d6f6ae314a">r3::PhysicsMaterial</a>
 </li>
 <li>getMatrix()
-: <a class="el" href="classr3_1_1_service_locator_collision_algorithm_matrix.html#a3616f828528161b552f5c3bc5dc6aa65">r3::ServiceLocatorCollisionAlgorithmMatrix</a>
+: <a class="el" href="classr3_1_1_collision_algorithm_matrix_factory.html#a236c7063f66f29284fb1c008c402b043">r3::CollisionAlgorithmMatrixFactory</a>
+</li>
+<li>getMaxDepth()
+: <a class="el" href="classr3_1_1_particle_buoyancy.html#a7f0929df70102df213722afdd511cf68">r3::ParticleBuoyancy</a>
 </li>
 <li>getNarrowPhaseFilter()
 : <a class="el" href="classr3_1_1_collision_detector.html#aa43b5d1332028d15a3c9af1ec4cd4312">r3::CollisionDetector</a>
@@ -270,10 +286,10 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body.html#ae12d1d4d9dbbb970ed83fa1eab2d928a">r3::RigidBody</a>
 </li>
 <li>getParticleEngineCI()
-: <a class="el" href="classr3_1_1_service_locator_computation_interface.html#abc0c31a51308c4db9932763325c0cb08">r3::ServiceLocatorComputationInterface</a>
+: <a class="el" href="classr3_1_1_computation_interface_factory.html#a7b9e6f01921567e1530aac9c10e8a7c0">r3::ComputationInterfaceFactory</a>
 </li>
 <li>getParticleForceRegistry()
-: <a class="el" href="classr3_1_1_particle_world.html#aaa3f952fdfd8862673d41afa078245bf">r3::ParticleWorld</a>
+: <a class="el" href="classr3_1_1_particle_world.html#add0e006264e25065ff226eafc0c1a29d">r3::ParticleWorld</a>
 </li>
 <li>getParticleMovement()
 : <a class="el" href="classr3_1_1_particle_contact.html#af56ceb020653556811766410119351fa">r3::ParticleContact</a>
@@ -325,14 +341,13 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body_world.html#a31e9a0ddd26c25327aa21b3460c52893">r3::RigidBodyWorld</a>
 </li>
 <li>getRigidBodyEngineCI()
-: <a class="el" href="classr3_1_1_service_locator_computation_interface.html#a01d7434be386277d9a9a26d6859472c3">r3::ServiceLocatorComputationInterface</a>
+: <a class="el" href="classr3_1_1_computation_interface_factory.html#a9bc878f2dbfe7dbca2037ba0d5180a5a">r3::ComputationInterfaceFactory</a>
 </li>
 <li>getRigidBodyWorld()
 : <a class="el" href="classr3_1_1_rigid_body_engine_c_i.html#affb7b66f769300619e0c61f7d3ab13ee">r3::RigidBodyEngineCI</a>
 </li>
 <li>getRotation()
-: <a class="el" href="classr3_1_1_rigid_body.html#afd8accdd3c9a75053eaeac0c9c35d07d">r3::RigidBody</a>
-, <a class="el" href="classr3_1_1_transform3_d.html#a0a6737bc120cbcd7ae16801291478a35">r3::Transform3D</a>
+: <a class="el" href="classr3_1_1_transform3_d.html#a0a6737bc120cbcd7ae16801291478a35">r3::Transform3D</a>
 </li>
 <li>getRotationMat()
 : <a class="el" href="classr3_1_1_transform3_d.html#ac9c80563cfca63791987f04639cff411">r3::Transform3D</a>
@@ -357,7 +372,7 @@ $(function() {
 : <a class="el" href="classr3_1_1_rigid_body.html#a8a5111fa2e4bd5f3a2615525da4c2949">r3::RigidBody</a>
 </li>
 <li>getTransform()
-: <a class="el" href="classr3_1_1_collision_object.html#a79e04809124cad6aeb25a66f11826fee">r3::CollisionObject</a>
+: <a class="el" href="classr3_1_1_collision_object.html#acc41118b9a571e5aa918644aaeda6bfa">r3::CollisionObject</a>
 , <a class="el" href="classr3_1_1_collision_primitive.html#acc4e2139c698bab280338db36d7cc586">r3::CollisionPrimitive</a>
 </li>
 <li>getTransformationMatrix()
@@ -373,6 +388,7 @@ $(function() {
 <li>getVolume()
 : <a class="el" href="classr3_1_1_bounding_box.html#a3e6a9b79373dde150d18d5d5df59a2f3">r3::BoundingBox</a>
 , <a class="el" href="classr3_1_1_bounding_sphere.html#a01cc1a7397eeec86d2b074d2bf734798">r3::BoundingSphere</a>
+, <a class="el" href="classr3_1_1_particle_buoyancy.html#a071ee55cf3413806e11445956bbcda0c">r3::ParticleBuoyancy</a>
 </li>
 <li>Gravity()
 : <a class="el" href="classr3_1_1_gravity.html#a1c5f6d085a7b1484c23f5a6df4b58b05">r3::Gravity</a>

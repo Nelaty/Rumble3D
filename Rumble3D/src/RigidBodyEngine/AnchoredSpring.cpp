@@ -17,7 +17,7 @@ namespace r3
 	AnchoredSpring::~AnchoredSpring()
 	= default;
 
-	void AnchoredSpring::updateForce(RigidBody* body, const real duration)
+	void AnchoredSpring::updateForce(RigidBody* body)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:
 		const auto localW = body->getPointInWorldSpace(m_connectionPoint);
@@ -25,6 +25,8 @@ namespace r3
 
 		// Betrag der Kraft:
 		auto magnitude = glm::length(force);
+		if(magnitude == real(0)) return;
+
 		magnitude -= m_restLength;
 		magnitude *= m_springConstant;
 	

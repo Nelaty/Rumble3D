@@ -1,4 +1,4 @@
-#include "R3D/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.h"
+#include "R3D/Helper/CollisionAlgorithmMatrixFactory.h"
 
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
@@ -10,7 +10,7 @@
 
 namespace r3
 {
-	CollisionAlgorithmMatrix ServiceLocatorCollisionAlgorithmMatrix::getMatrix()
+	CollisionAlgorithmMatrix CollisionAlgorithmMatrixFactory::getMatrix()
 	{
 		CollisionAlgorithmMatrix matrix;
 		matrix.setAlgorithm(std::make_shared<BoxBoxNarrowAlgorithm>(),
@@ -40,9 +40,11 @@ namespace r3
 		return matrix;
 	}
 
-	ServiceLocatorCollisionAlgorithmMatrix::ServiceLocatorCollisionAlgorithmMatrix()
-	= default;
+	CollisionAlgorithmMatrixFactory::CollisionAlgorithmMatrixFactory()
+	{
+	}
 
-	ServiceLocatorCollisionAlgorithmMatrix::~ServiceLocatorCollisionAlgorithmMatrix()
-	= default;
+	CollisionAlgorithmMatrixFactory::~CollisionAlgorithmMatrixFactory()
+	{
+	}
 }

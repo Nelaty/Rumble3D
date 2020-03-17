@@ -3,23 +3,21 @@
 
 namespace r3
 {
-	CollisionData::CollisionData(const unsigned contactsMax,
-	                             const int iterations)
+	CollisionData::CollisionData(const unsigned contactsMax)
 	{
-		init(contactsMax, iterations);
+		init(contactsMax);
 	}
 
 	CollisionData::~CollisionData()
-	= default;
+	{
+	}
 
-	void CollisionData::init(const int contactsMax,
-							 const int iterations)
+	void CollisionData::init(const int contactsMax)
 	{
 		assert(contactsMax > 0);
 
 		m_data.resize(contactsMax);
 		m_contactsMax = contactsMax;
-		m_iterations = iterations;
 
 		reset();
 	}

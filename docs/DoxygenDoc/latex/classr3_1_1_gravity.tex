@@ -34,7 +34,7 @@ Collaboration diagram for r3\+:\+:Gravity\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_gravity}{Gravity}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_gravity_abdf3edf32d08b6c5b9c2fc161635f993}{$\sim$\+Gravity}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_gravity_ae3152c6a922ffa193aee362e161cd4a9}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta) override
+void \mbox{\hyperlink{classr3_1_1_gravity_ae1d29cae93289b8063d8833a7107ae64}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body) override
 \begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -72,11 +72,11 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_gravity_a2feb1d84fc4118e6e30b707a7224f6
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_gravity_ae3152c6a922ffa193aee362e161cd4a9}\label{classr3_1_1_gravity_ae3152c6a922ffa193aee362e161cd4a9}} 
+\mbox{\Hypertarget{classr3_1_1_gravity_ae1d29cae93289b8063d8833a7107ae64}\label{classr3_1_1_gravity_ae1d29cae93289b8063d8833a7107ae64}} 
 \index{r3\+::\+Gravity@{r3\+::\+Gravity}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+Gravity@{r3\+::\+Gravity}}
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
-{\footnotesize\ttfamily void r3\+::\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -86,12 +86,10 @@ Apply force to a rigid body over a specific time.
 \begin{DoxyParams}{Parameters}
 {\em body} & The rigid body on which to apply force. \\
 \hline
-{\em duration} & The duration over which the force acts. \\
-\hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af50037af2aa}{r3\+::\+Force\+Generator}}.
+Implements \mbox{\hyperlink{classr3_1_1_force_generator_a59deb54721cdcc6e33fabfb1f9a3fb27}{r3\+::\+Force\+Generator}}.
 
 
 
@@ -106,5 +104,5 @@ Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af5
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_gravity_8h}{Gravity.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_gravity_8cpp}{Gravity.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_gravity_8h}{Gravity.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_gravity_8cpp}{Gravity.\+cpp}}\end{DoxyCompactItemize}

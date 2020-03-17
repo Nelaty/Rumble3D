@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Generate default implementations of various computation
 	 * interfaces.
 	 */
-	class ServiceLocatorComputationInterface
+	class ComputationInterfaceFactory
 	{
 	public:
 		/**
@@ -27,7 +27,7 @@ namespace r3
 		static std::unique_ptr<RigidBodyEngineCI> getRigidBodyEngineCI();
 
 	private:
-		explicit ServiceLocatorComputationInterface();
-		~ServiceLocatorComputationInterface();
+		explicit ComputationInterfaceFactory();
+		~ComputationInterfaceFactory();
 	};
 }

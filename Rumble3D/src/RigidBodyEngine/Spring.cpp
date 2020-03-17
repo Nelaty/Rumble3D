@@ -16,7 +16,7 @@ namespace r3
 	{
 	}
 	
-	void Spring::updateForce(RigidBody* body, real duration)
+	void Spring::updateForce(RigidBody* body)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:
 		glm::vec3 localW = body->getPointInWorldSpace(m_connectionPoint);
@@ -25,6 +25,8 @@ namespace r3
 
 		// Betrag der Kraft:
 		real magnitude = glm::length(force);
+		if(magnitude == real(0)) return;
+
 		//magnitude = abs(magnitude - m_restLength);
 		magnitude -= m_restLength;
 		magnitude *= m_springConstant;

@@ -34,7 +34,7 @@ Collaboration diagram for r3\+:\+:Particle\+Anchored\+Spring\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_anchored_spring}{Particle\+Anchored\+Spring}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_anchored_spring_ab82659ed05c6dc0e3a60a68fa50d3f3e}{$\sim$\+Particle\+Anchored\+Spring}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_particle_anchored_spring_aa445db9e0efcc25a422348f4e580ed7f}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
+void \mbox{\hyperlink{classr3_1_1_particle_anchored_spring_a8c5690a32a5061582989d5915a84cff8}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle) override
 \begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -82,11 +82,11 @@ The specified point itself can move, but it will not be affected by this force g
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_anchored_spring_aa445db9e0efcc25a422348f4e580ed7f}\label{classr3_1_1_particle_anchored_spring_aa445db9e0efcc25a422348f4e580ed7f}} 
+\mbox{\Hypertarget{classr3_1_1_particle_anchored_spring_a8c5690a32a5061582989d5915a84cff8}\label{classr3_1_1_particle_anchored_spring_a8c5690a32a5061582989d5915a84cff8}} 
 \index{r3\+::\+Particle\+Anchored\+Spring@{r3\+::\+Particle\+Anchored\+Spring}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+Particle\+Anchored\+Spring@{r3\+::\+Particle\+Anchored\+Spring}}
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+Anchored\+Spring\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Anchored\+Spring\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -96,12 +96,10 @@ Calculates and changes the force in the force accumulator of a particle.
 \begin{DoxyParams}{Parameters}
 {\em particle} & The particle, on which the force should be applied to. \\
 \hline
-{\em duration} & The duration for which the force acts \\
-\hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{r3\+::\+I\+Particle\+Force\+Generator}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}{r3\+::\+I\+Particle\+Force\+Generator}}.
 
 
 
@@ -128,5 +126,5 @@ Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_anchored_spring_8h}{Particle\+Anchored\+Spring.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_anchored_spring_8cpp}{Particle\+Anchored\+Spring.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_anchored_spring_8h}{Particle\+Anchored\+Spring.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_anchored_spring_8cpp}{Particle\+Anchored\+Spring.\+cpp}}\end{DoxyCompactItemize}

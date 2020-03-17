@@ -30,48 +30,82 @@ Collaboration diagram for r3\+:\+:Particle\+Rod\+:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual \mbox{\hyperlink{classr3_1_1_particle_rod_aa6fd377f7694d3d64ef4135e6bd4299e}{$\sim$\+Particle\+Rod}} ()
-\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
-\begin{DoxyCompactItemize}
+\mbox{\hyperlink{classr3_1_1_particle_rod_a1bb04a9a962ed22132ad3e954eec6609}{Particle\+Rod}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} length)
 \item 
-\mbox{\hyperlink{classr3_1_1_particle_rod_a5ceef2a44c266092396799440c9c674f}{Particle\+Rod}} ()
-\end{DoxyCompactItemize}
+virtual \mbox{\hyperlink{classr3_1_1_particle_rod_aa6fd377f7694d3d64ef4135e6bd4299e}{$\sim$\+Particle\+Rod}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_rod_a6e76b20d315514a2ce7ef0b40154f0df}{add\+Contact}} (\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&contact\+Data) const override
+\begin{DoxyCompactList}\small\item\em Generate new contacts. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_rod_af81456ae2749d12bf7fa7bf265fc4c23}{set\+Length}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} length)
+\begin{DoxyCompactList}\small\item\em Set the current length of the rod. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_rod_af5a502fa94afea7144eadd509a951f70}{m\+\_\+distance}} \{\}
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_rod_af146e442c0ddcb83161f115da58fa026}{m\+\_\+length}} \{\}
 \end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 Abstract class, which creates a distance constraint between two particles. A contact gets created if this constraint is not fulfilled. 
 
 \subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_rod_a1bb04a9a962ed22132ad3e954eec6609}\label{classr3_1_1_particle_rod_a1bb04a9a962ed22132ad3e954eec6609}} 
+\index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!Particle\+Rod@{Particle\+Rod}}
+\index{Particle\+Rod@{Particle\+Rod}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
+\subsubsection{\texorpdfstring{Particle\+Rod()}{ParticleRod()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Rod\+::\+Particle\+Rod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
 \mbox{\Hypertarget{classr3_1_1_particle_rod_aa6fd377f7694d3d64ef4135e6bd4299e}\label{classr3_1_1_particle_rod_aa6fd377f7694d3d64ef4135e6bd4299e}} 
 \index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!````~Particle\+Rod@{$\sim$\+Particle\+Rod}}
 \index{````~Particle\+Rod@{$\sim$\+Particle\+Rod}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
 \subsubsection{\texorpdfstring{$\sim$\+Particle\+Rod()}{~ParticleRod()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Rod\+::$\sim$\+Particle\+Rod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
-\mbox{\Hypertarget{classr3_1_1_particle_rod_a5ceef2a44c266092396799440c9c674f}\label{classr3_1_1_particle_rod_a5ceef2a44c266092396799440c9c674f}} 
-\index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!Particle\+Rod@{Particle\+Rod}}
-\index{Particle\+Rod@{Particle\+Rod}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
-\subsubsection{\texorpdfstring{Particle\+Rod()}{ParticleRod()}}
-{\footnotesize\ttfamily r3\+::\+Particle\+Rod\+::\+Particle\+Rod (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}, {\ttfamily [default]}}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_rod_a6e76b20d315514a2ce7ef0b40154f0df}\label{classr3_1_1_particle_rod_a6e76b20d315514a2ce7ef0b40154f0df}} 
+\index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!add\+Contact@{add\+Contact}}
+\index{add\+Contact@{add\+Contact}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
+\subsubsection{\texorpdfstring{add\+Contact()}{addContact()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Rod\+::add\+Contact (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}$<$ \mbox{\hyperlink{classr3_1_1_particle_contact}{Particle\+Contact}} $>$ \&}]{contact\+Data }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generate new contacts. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contact\+Data} & Out parameter in which new contacts are added. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_particle_contact_generator_a39a7a8f0d5b31b1ca2c2ace2af8e2978}{r3\+::\+Particle\+Contact\+Generator}}.
+
+\mbox{\Hypertarget{classr3_1_1_particle_rod_af81456ae2749d12bf7fa7bf265fc4c23}\label{classr3_1_1_particle_rod_af81456ae2749d12bf7fa7bf265fc4c23}} 
+\index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!set\+Length@{set\+Length}}
+\index{set\+Length@{set\+Length}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
+\subsubsection{\texorpdfstring{set\+Length()}{setLength()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Rod\+::set\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{length }\end{DoxyParamCaption})}
+
+
+
+Set the current length of the rod. 
 
 
 
 \subsection{Member Data Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_rod_af5a502fa94afea7144eadd509a951f70}\label{classr3_1_1_particle_rod_af5a502fa94afea7144eadd509a951f70}} 
-\index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!m\+\_\+distance@{m\+\_\+distance}}
-\index{m\+\_\+distance@{m\+\_\+distance}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
-\subsubsection{\texorpdfstring{m\+\_\+distance}{m\_distance}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Rod\+::m\+\_\+distance \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+\mbox{\Hypertarget{classr3_1_1_particle_rod_af146e442c0ddcb83161f115da58fa026}\label{classr3_1_1_particle_rod_af146e442c0ddcb83161f115da58fa026}} 
+\index{r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}!m\+\_\+length@{m\+\_\+length}}
+\index{m\+\_\+length@{m\+\_\+length}!r3\+::\+Particle\+Rod@{r3\+::\+Particle\+Rod}}
+\subsubsection{\texorpdfstring{m\+\_\+length}{m\_length}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Rod\+::m\+\_\+length \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_rod_8h}{Particle\+Rod.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_rod_8cpp}{Particle\+Rod.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_rod_8h}{Particle\+Rod.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_rod_8cpp}{Particle\+Rod.\+cpp}}\end{DoxyCompactItemize}

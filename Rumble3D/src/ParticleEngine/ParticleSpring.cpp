@@ -17,13 +17,13 @@ namespace r3
 	ParticleSpring::~ParticleSpring()
 	= default;
 
-	void ParticleSpring::updateForce(Particle* particle, real duration)
+	void ParticleSpring::updateForce(Particle* particle)
 	{
-		// Vektor der Feder
+		// Feather length
 		auto force = particle->getPosition();
 		force -= m_other->getPosition();
 	
-		// Kraft berechnen:
+		// Force magnitude is needed for direction 
 		auto magnitude = glm::length(force);
 		if(magnitude == real(0))
 		{

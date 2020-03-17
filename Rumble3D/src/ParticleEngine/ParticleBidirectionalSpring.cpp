@@ -18,8 +18,7 @@ namespace r3
 	{
 	}
 
-	void ParticleBidirectionalSpring::updateForce(Particle* particle, 
-												  const real duration)
+	void ParticleBidirectionalSpring::updateForce(Particle* particle)
 	{
 		// Vektor der Feder
 		auto force = particle->getPosition();

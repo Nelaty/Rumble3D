@@ -12,7 +12,6 @@ namespace r3
 
 	void CollisionPrimitive::calculateInternals()
 	{
-		/// \todo use new transform!
 		const auto& transform = m_body->getTransform();
 		glm::mat4 mat = transform.getRotationMat();
 		mat[3] = glm::vec4(transform.getPosition(), 1.0f);

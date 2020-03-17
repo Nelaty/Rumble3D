@@ -34,7 +34,7 @@ Collaboration diagram for r3\+:\+:Particle\+Spring\+:\nopagebreak
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_spring}{Particle\+Spring}} constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_spring_a958707806b191f920e44eaff86aa124e}{$\sim$\+Particle\+Spring}} ()
 \item 
-void \mbox{\hyperlink{classr3_1_1_particle_spring_a113e7bdf36d5edf020abecec5a0fb730}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
+void \mbox{\hyperlink{classr3_1_1_particle_spring_a16f6dd1c995223af3a15ff9a1e2eb375}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle) override
 \begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -82,11 +82,11 @@ The spring force will not be applied to the particle, which is assigned to this 
 
 
 \subsection{Member Function Documentation}
-\mbox{\Hypertarget{classr3_1_1_particle_spring_a113e7bdf36d5edf020abecec5a0fb730}\label{classr3_1_1_particle_spring_a113e7bdf36d5edf020abecec5a0fb730}} 
+\mbox{\Hypertarget{classr3_1_1_particle_spring_a16f6dd1c995223af3a15ff9a1e2eb375}\label{classr3_1_1_particle_spring_a16f6dd1c995223af3a15ff9a1e2eb375}} 
 \index{r3\+::\+Particle\+Spring@{r3\+::\+Particle\+Spring}!update\+Force@{update\+Force}}
 \index{update\+Force@{update\+Force}!r3\+::\+Particle\+Spring@{r3\+::\+Particle\+Spring}}
 \subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+Spring\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Spring\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
 
@@ -96,12 +96,10 @@ Calculates and changes the force in the force accumulator of a particle.
 \begin{DoxyParams}{Parameters}
 {\em particle} & The particle, on which the force should be applied to. \\
 \hline
-{\em duration} & The duration for which the force acts. \\
-\hline
 \end{DoxyParams}
 
 
-Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f815dc44c106b451c3a90}{r3\+::\+I\+Particle\+Force\+Generator}}.
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}{r3\+::\+I\+Particle\+Force\+Generator}}.
 
 
 
@@ -128,5 +126,5 @@ Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_spring_8h}{Particle\+Spring.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_spring_8cpp}{Particle\+Spring.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_spring_8h}{Particle\+Spring.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_spring_8cpp}{Particle\+Spring.\+cpp}}\end{DoxyCompactItemize}

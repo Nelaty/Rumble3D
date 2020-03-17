@@ -1,8 +1,9 @@
 <map id="r3::IParticleForceGenerator" name="r3::IParticleForceGenerator">
-<area shape="rect" id="node2" href="$classr3_1_1_particle_anchored_spring.html" title="A ParticleAnchoredSpring is a particle generator, which simulates a spring, which is anchored to a sp..." alt="" coords="5,175,192,311"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_bungee.html" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="216,175,355,311"/>
-<area shape="rect" id="node4" href="$classr3_1_1_particle_buoyancy.html" title="A ParticleBuoyancy is a particle force generator, which can simulate buoyancy. " alt="" coords="379,160,531,325"/>
-<area shape="rect" id="node5" href="$classr3_1_1_particle_drag.html" title="A ParticleDrag is a particle force generator, which simulates the effect of drag forces. " alt="" coords="555,175,719,311"/>
-<area shape="rect" id="node6" href="$classr3_1_1_particle_gravity.html" title="A ParticleGravity is a particle force generator, which applies a constant given force to particles..." alt="" coords="743,189,878,296"/>
-<area shape="rect" id="node7" href="$classr3_1_1_particle_spring.html" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles..." alt="" coords="903,175,1041,311"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_anchored_spring.html" title="A ParticleAnchoredSpring is a particle generator, which simulates a spring, which is anchored to a sp..." alt="" coords="5,248,192,384"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_bidirectional_spring.html" title="{r3::ParticleBidirectional\lSpring\n||+ ParticleBidirectionalSpring()\l+ ~ParticleBidirectionalSpring()\l+ updateForce()\l}" alt="" coords="216,255,419,377"/>
+<area shape="rect" id="node4" href="$classr3_1_1_particle_bungee.html" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="443,248,581,384"/>
+<area shape="rect" id="node5" href="$classr3_1_1_particle_buoyancy.html" title="A ParticleBuoyancy is a particle force generator, which can simulate buoyancy. " alt="" coords="605,160,757,472"/>
+<area shape="rect" id="node6" href="$classr3_1_1_particle_drag.html" title="A ParticleDrag is a particle force generator, which simulates the effect of drag forces. " alt="" coords="782,248,946,384"/>
+<area shape="rect" id="node7" href="$classr3_1_1_particle_gravity.html" title="A ParticleGravity is a particle force generator, which applies a constant given force to particles..." alt="" coords="970,248,1105,384"/>
+<area shape="rect" id="node8" href="$classr3_1_1_particle_spring.html" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles..." alt="" coords="1129,248,1268,384"/>
 </map>

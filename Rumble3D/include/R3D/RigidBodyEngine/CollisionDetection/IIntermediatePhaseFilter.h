@@ -19,13 +19,11 @@ namespace r3
 		/**
 		 * \brief Further filter a previous set of collisions, which might
 		 * still contain a lot of false negatives.
-		 * \param collisions
-		 * \todo{
-		 *  Changed param signature to (const FixedSizeContainer<CollisionPair>& in,
-		 *								FixedSizeContainer<CollisionPair>& out)
-		 * }
+		 * \param collisionsIn Collisions from previous phase
+		 * \param collisionsOut Resulting collisions after this filter
 		 */
-		virtual void generateCollisions(FixedSizeContainer<CollisionPair>& collisions) = 0;
+		virtual void generateCollisions(const FixedSizeContainer<CollisionPair>& collisionsIn,
+										FixedSizeContainer<CollisionPair>& collisionsOut) = 0;
 
 	protected:
 		explicit IIntermediatePhaseFilter();

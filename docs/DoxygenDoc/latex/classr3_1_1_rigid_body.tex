@@ -70,11 +70,11 @@ void \mbox{\hyperlink{classr3_1_1_rigid_body_a8f6dcfce04ca4add81dce4f140e954c7}{
 \begin{DoxyCompactList}\small\item\em Set the current orientation. \end{DoxyCompactList}\item 
 glm\+::quat \mbox{\hyperlink{classr3_1_1_rigid_body_ae12d1d4d9dbbb970ed83fa1eab2d928a}{get\+Orientation}} () const
 \begin{DoxyCompactList}\small\item\em Get the current orientation. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_rigid_body_aeaad22c99a9254f38c93e8e622bb4c01}{set\+Rotation}} (const glm\+::vec3 \&rotation)
+void \mbox{\hyperlink{classr3_1_1_rigid_body_af3fe9bbb0f1eda401c2a5cd02c915600}{set\+Angular\+Velocity}} (const glm\+::vec3 \&rotation)
 \begin{DoxyCompactList}\small\item\em Set the current orientation. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_rigid_body_a5ac826cea8762df5a5b5c6113d84ad2b}{set\+Rotation}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} x, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} y, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} z)
+void \mbox{\hyperlink{classr3_1_1_rigid_body_a9b53314d9cc1a1dc26b9cc3312668b49}{set\+Angular\+Velocity}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} x, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} y, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} z)
 \begin{DoxyCompactList}\small\item\em Set the current orientation. \end{DoxyCompactList}\item 
-glm\+::vec3 \mbox{\hyperlink{classr3_1_1_rigid_body_afd8accdd3c9a75053eaeac0c9c35d07d}{get\+Rotation}} () const
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_rigid_body_a0d60576d3d08d10cd529306a3a5888d7}{get\+Angular\+Velocity}} () const
 \begin{DoxyCompactList}\small\item\em Get the current orientation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_rigid_body_a033bf2bf8e128b5438fdd91f7d29c051}{set\+Velocity}} (const glm\+::vec3 \&velocity)
 \begin{DoxyCompactList}\small\item\em Set the current velocity. \end{DoxyCompactList}\item 
@@ -176,7 +176,7 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_rigid_body_a3be64b2b09846d33ccdd9e276db
 \item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_rigid_body_aafe21461c488f0dffbbb2bd0c32f4585}{m\+\_\+last\+Frame\+Acceleration}}
 \item 
-glm\+::vec3 \mbox{\hyperlink{classr3_1_1_rigid_body_ad2b79563010507bc1ab9d34a47e48bfc}{m\+\_\+rotation}}
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_rigid_body_a2dd81db6f395b19d9bff314f198eedb8}{m\+\_\+angular\+Velocity}}
 \item 
 glm\+::mat4 \mbox{\hyperlink{classr3_1_1_rigid_body_ab973e24d84aedb3188aa04fcd2817228}{m\+\_\+transformation\+Matrix}}
 \item 
@@ -392,6 +392,19 @@ Get the angular damping coefficient.
 
 \begin{DoxyReturn}{Returns}
 The angular damping coefficient. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_a0d60576d3d08d10cd529306a3a5888d7}\label{classr3_1_1_rigid_body_a0d60576d3d08d10cd529306a3a5888d7}} 
+\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Angular\+Velocity@{get\+Angular\+Velocity}}
+\index{get\+Angular\+Velocity@{get\+Angular\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{get\+Angular\+Velocity()}{getAngularVelocity()}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Angular\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current orientation. 
+
+\begin{DoxyReturn}{Returns}
+The orientation. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a9b802fe5774292fbc6ce80cccab15151}\label{classr3_1_1_rigid_body_a9b802fe5774292fbc6ce80cccab15151}} 
 \index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Center\+Of\+Mass@{get\+Center\+Of\+Mass}}
@@ -614,19 +627,6 @@ Convert a point from local body space into world space.
 \begin{DoxyReturn}{Returns}
 The converted point in world space. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_rigid_body_afd8accdd3c9a75053eaeac0c9c35d07d}\label{classr3_1_1_rigid_body_afd8accdd3c9a75053eaeac0c9c35d07d}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Rotation@{get\+Rotation}}
-\index{get\+Rotation@{get\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the current orientation. 
-
-\begin{DoxyReturn}{Returns}
-The orientation. 
-\end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a8a5111fa2e4bd5f3a2615525da4c2949}\label{classr3_1_1_rigid_body_a8a5111fa2e4bd5f3a2615525da4c2949}} 
 \index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Torque\+Accumulated@{get\+Torque\+Accumulated}}
 \index{get\+Torque\+Accumulated@{get\+Torque\+Accumulated}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
@@ -781,6 +781,40 @@ Get the angular damping coefficient.
 
 \begin{DoxyParams}{Parameters}
 {\em angular\+Damping} & The new angular damping coefficient. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_af3fe9bbb0f1eda401c2a5cd02c915600}\label{classr3_1_1_rigid_body_af3fe9bbb0f1eda401c2a5cd02c915600}} 
+\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Angular\+Velocity@{set\+Angular\+Velocity}}
+\index{set\+Angular\+Velocity@{set\+Angular\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Angular\+Velocity()}{setAngularVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{rotation }\end{DoxyParamCaption})}
+
+
+
+Set the current orientation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & The new rotation. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_a9b53314d9cc1a1dc26b9cc3312668b49}\label{classr3_1_1_rigid_body_a9b53314d9cc1a1dc26b9cc3312668b49}} 
+\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Angular\+Velocity@{set\+Angular\+Velocity}}
+\index{set\+Angular\+Velocity@{set\+Angular\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{set\+Angular\+Velocity()}{setAngularVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Angular\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
+
+
+
+Set the current orientation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & The x-\/component of the new orientation. \\
+\hline
+{\em y} & The y-\/component of the new orientation. \\
+\hline
+{\em z} & The z-\/component of the new orientation. \\
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_acd934e55a7f2f09d91f62ded40ebb325}\label{classr3_1_1_rigid_body_acd934e55a7f2f09d91f62ded40ebb325}} 
@@ -963,40 +997,6 @@ Set the physics material.
 {\em material} & The new physics material. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_rigid_body_aeaad22c99a9254f38c93e8e622bb4c01}\label{classr3_1_1_rigid_body_aeaad22c99a9254f38c93e8e622bb4c01}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{rotation }\end{DoxyParamCaption})}
-
-
-
-Set the current orientation. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em rotation} & The new rotation. \\
-\hline
-\end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_rigid_body_a5ac826cea8762df5a5b5c6113d84ad2b}\label{classr3_1_1_rigid_body_a5ac826cea8762df5a5b5c6113d84ad2b}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
-
-
-
-Set the current orientation. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em x} & The x-\/component of the new orientation. \\
-\hline
-{\em y} & The y-\/component of the new orientation. \\
-\hline
-{\em z} & The z-\/component of the new orientation. \\
-\hline
-\end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a033bf2bf8e128b5438fdd91f7d29c051}\label{classr3_1_1_rigid_body_a033bf2bf8e128b5438fdd91f7d29c051}} 
 \index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Velocity@{set\+Velocity}}
 \index{set\+Velocity@{set\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
@@ -1038,7 +1038,7 @@ Set the current velocity.
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::transform\+Inertia\+Tensor (\begin{DoxyParamCaption}\item[{glm\+::mat3 \&}]{iit\+World,  }\item[{const glm\+::mat3 \&}]{iit,  }\item[{const glm\+::mat4 \&}]{rot\+Mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
 
 \begin{DoxyRefDesc}{Todo}
-\item[\mbox{\hyperlink{todo__todo000009}{Todo}}]\+: Refactor names and function implementation. \end{DoxyRefDesc}
+\item[\mbox{\hyperlink{todo__todo000002}{Todo}}]\+: Refactor names and function implementation. \end{DoxyRefDesc}
 
 
 \subsection{Member Data Documentation}
@@ -1053,6 +1053,12 @@ Set the current velocity.
 \index{m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
 \subsubsection{\texorpdfstring{m\+\_\+angular\+Damping}{m\_angularDamping}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+angular\+Damping \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_rigid_body_a2dd81db6f395b19d9bff314f198eedb8}\label{classr3_1_1_rigid_body_a2dd81db6f395b19d9bff314f198eedb8}} 
+\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+angular\+Velocity@{m\+\_\+angular\+Velocity}}
+\index{m\+\_\+angular\+Velocity@{m\+\_\+angular\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+angular\+Velocity}{m\_angularVelocity}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+angular\+Velocity\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_abfcca5ae4caa68d23ba68cc4fd1d2d33}\label{classr3_1_1_rigid_body_abfcca5ae4caa68d23ba68cc4fd1d2d33}} 
 \index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+awake@{m\+\_\+awake}}
@@ -1132,12 +1138,6 @@ Set the current velocity.
 \subsubsection{\texorpdfstring{m\+\_\+physics\+Material}{m\_physicsMaterial}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} r3\+::\+Rigid\+Body\+::m\+\_\+physics\+Material\hspace{0.3cm}{\ttfamily [protected]}}
 
-\mbox{\Hypertarget{classr3_1_1_rigid_body_ad2b79563010507bc1ab9d34a47e48bfc}\label{classr3_1_1_rigid_body_ad2b79563010507bc1ab9d34a47e48bfc}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+rotation@{m\+\_\+rotation}}
-\index{m\+\_\+rotation@{m\+\_\+rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
-{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
-
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a2becab957c58f4b306fedb692dcf5658}\label{classr3_1_1_rigid_body_a2becab957c58f4b306fedb692dcf5658}} 
 \index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+sleep\+Epsilon@{m\+\_\+sleep\+Epsilon}}
 \index{m\+\_\+sleep\+Epsilon@{m\+\_\+sleep\+Epsilon}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
@@ -1166,5 +1166,5 @@ Set the current velocity.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8cpp}{Rigid\+Body.\+cpp}}\end{DoxyCompactItemize}
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8cpp}{Rigid\+Body.\+cpp}}\end{DoxyCompactItemize}

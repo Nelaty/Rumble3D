@@ -1,0 +1,93 @@
+\hypertarget{classr3_1_1_particle_bidirectional_spring}{}\section{r3\+:\+:Particle\+Bidirectional\+Spring Class Reference}
+\label{classr3_1_1_particle_bidirectional_spring}\index{r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}}
+
+
+{\ttfamily \#include $<$Particle\+Bidirectional\+Spring.\+h$>$}
+
+
+
+Inheritance diagram for r3\+:\+:Particle\+Bidirectional\+Spring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classr3_1_1_particle_bidirectional_spring__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+:\+:Particle\+Bidirectional\+Spring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classr3_1_1_particle_bidirectional_spring__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_bidirectional_spring_ac805f977d1adc647c2c5193e35c63f56}{Particle\+Bidirectional\+Spring}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$other, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_spring}{Particle\+Spring}} constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classr3_1_1_particle_bidirectional_spring_aa390c4a3d88cb2fe39cba699abbfab35}{$\sim$\+Particle\+Bidirectional\+Spring}} ()
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_bidirectional_spring_a13ac531b70d2884364fba66aae55b5fb}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle) override
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+The \mbox{\hyperlink{classr3_1_1_particle_bidirectional_spring}{Particle\+Bidirectional\+Spring}} acts like two Particle\+Springs, which connects two particles, so that both particles are affected. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_bidirectional_spring_ac805f977d1adc647c2c5193e35c63f56}\label{classr3_1_1_particle_bidirectional_spring_ac805f977d1adc647c2c5193e35c63f56}} 
+\index{r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}!Particle\+Bidirectional\+Spring@{Particle\+Bidirectional\+Spring}}
+\index{Particle\+Bidirectional\+Spring@{Particle\+Bidirectional\+Spring}!r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}}
+\subsubsection{\texorpdfstring{Particle\+Bidirectional\+Spring()}{ParticleBidirectionalSpring()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Bidirectional\+Spring\+::\+Particle\+Bidirectional\+Spring (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{other,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classr3_1_1_particle_spring}{Particle\+Spring}} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other particle, which will be pulled towards the particle in update\+Force. \\
+\hline
+{\em spring\+Constant} & The hardness of the spring. \\
+\hline
+{\em rest\+Length} & The length at which no forces will be applied. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classr3_1_1_particle_bidirectional_spring_aa390c4a3d88cb2fe39cba699abbfab35}\label{classr3_1_1_particle_bidirectional_spring_aa390c4a3d88cb2fe39cba699abbfab35}} 
+\index{r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}!````~Particle\+Bidirectional\+Spring@{$\sim$\+Particle\+Bidirectional\+Spring}}
+\index{````~Particle\+Bidirectional\+Spring@{$\sim$\+Particle\+Bidirectional\+Spring}!r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}}
+\subsubsection{\texorpdfstring{$\sim$\+Particle\+Bidirectional\+Spring()}{~ParticleBidirectionalSpring()}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Bidirectional\+Spring\+::$\sim$\+Particle\+Bidirectional\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_bidirectional_spring_a13ac531b70d2884364fba66aae55b5fb}\label{classr3_1_1_particle_bidirectional_spring_a13ac531b70d2884364fba66aae55b5fb}} 
+\index{r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}!update\+Force@{update\+Force}}
+\index{update\+Force@{update\+Force}!r3\+::\+Particle\+Bidirectional\+Spring@{r3\+::\+Particle\+Bidirectional\+Spring}}
+\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Bidirectional\+Spring\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates and changes the force in the force accumulator of a particle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em particle} & The particle, on which the force should be applied to. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_af705063c5d7debca0f7a5c5c68c28f50}{r3\+::\+I\+Particle\+Force\+Generator}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_bidirectional_spring_8h}{Particle\+Bidirectional\+Spring.\+h}}\item 
+D\+:/\+Programming/\+Repositories/\+Game\+Physics/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_bidirectional_spring_8cpp}{Particle\+Bidirectional\+Spring.\+cpp}}\end{DoxyCompactItemize}
