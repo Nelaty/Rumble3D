@@ -14,11 +14,11 @@ namespace r3
 																CollisionSphere* sphere,
 																CollisionData& collisionData)
 	{
+		// Make sure we have contacts
+		if(collisionData.isFull()) return false;
+
 		if(plane->isHalfSpace())
 		{
-			// Make sure we have contacts
-			if(collisionData.isFull()) return false;
-
 			// Cache the sphere position
 			const auto& position = rbSphere->getTransform().getPosition();
 
@@ -38,7 +38,6 @@ namespace r3
 
 			return true;
 		}
-
 
 		/// \todo: implement -> plane is not half space
 		return false;

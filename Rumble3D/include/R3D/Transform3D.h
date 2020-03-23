@@ -133,7 +133,6 @@ namespace r3
 				   const glm::vec3& rotation = glm::vec3(0));
 
 	private:
-		//glm::mat3 m_rotation;
 		glm::quat m_rotation;
 		
 		glm::vec3 m_position;

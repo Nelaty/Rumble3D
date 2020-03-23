@@ -39,6 +39,11 @@ namespace r3
 		 */
 		void init(const RigidBodyDef& definition);
 
+		/**
+		 * \brief Derived attributes intertiaTensor and transformationMatrix
+		 * are pre-calculated and cached every simulation step, since they are
+		 * used multiple times throughout a single simulation step.
+		 */
 		void calculateDerivedData();
 		/** 
 		 * \brief Set the current inertia tensor. 
