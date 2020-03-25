@@ -3,6 +3,8 @@
 
 #include <glm/glm.hpp>
 
+#include <cassert>
+
 namespace r3
 {
 	ParticleBuoyancy::ParticleBuoyancy(const real maxDepth,
@@ -11,7 +13,7 @@ namespace r3
 									   const real liquidDensity,
 									   const real gravity)
 	{
-		m_maxDepth = maxDepth;
+		setMaxDepth(maxDepth);
 		m_volume = volume;
 		m_liquidHeight = liquidHeight;
 		m_liquidDensity = liquidDensity;
@@ -56,6 +58,7 @@ namespace r3
 
 	void ParticleBuoyancy::setMaxDepth(real depth)
 	{
+		assert(depth != real(0));
 		m_maxDepth = depth;
 	}
 

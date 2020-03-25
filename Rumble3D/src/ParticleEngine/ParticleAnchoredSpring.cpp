@@ -19,6 +19,8 @@ namespace r3
 		force -= *m_anchor;
 
 		auto magnitude = glm::length(force);
+		if(magnitude == real(0)) return;
+
 		magnitude -= m_restLength;
 		magnitude *= m_springConstant;
 
