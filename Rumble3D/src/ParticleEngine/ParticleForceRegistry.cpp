@@ -24,7 +24,13 @@ namespace r3
 				&& entry.m_forceGenerator == generator;
 		});
 
-		return removedItem != m_registrations.end();
+		bool found = removedItem != m_registrations.end();
+		if(found)
+		{
+			m_registrations.erase(removedItem);
+		}
+
+		return found;
 	}
 	
 	void ParticleForceRegistry::clear()
