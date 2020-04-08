@@ -12,7 +12,7 @@ namespace r3
 	class R3D_DECLSPEC IParticleForceGenerator
 	{
 	public:
-		virtual ~IParticleForceGenerator();
+		virtual ~IParticleForceGenerator() = default;
 
 		/**
 		 * \brief Calculates and changes the force in the force accumulator
@@ -22,6 +22,6 @@ namespace r3
 		virtual void updateForce(Particle* particle) = 0;
 
 	protected:
-		explicit IParticleForceGenerator();
+		explicit IParticleForceGenerator() = default;
 	};
 }

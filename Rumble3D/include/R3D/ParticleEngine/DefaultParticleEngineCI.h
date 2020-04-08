@@ -27,7 +27,7 @@ namespace r3
 		explicit DefaultParticleEngineCI(unsigned contactsMax, 
 										 unsigned iterations = 0,
 										 ParticleWorld* particleWorld = nullptr);
-		~DefaultParticleEngineCI();
+		~DefaultParticleEngineCI() = default;
 
 		void onBegin() override;
 		/**

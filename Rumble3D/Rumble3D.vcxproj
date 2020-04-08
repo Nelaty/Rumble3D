@@ -171,6 +171,7 @@
   <ItemGroup>
     <ClCompile Include="src\ParticleEngine\ParticleBidirectionalSpring.cpp" />
     <ClCompile Include="src\ParticleEngine\ParticlePlaneContactGenerator.cpp" />
+    <ClCompile Include="src\ParticleEngine\ParticleSpringBase.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionCallback.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\IPlaneBoxCollisionAlgorithm.cpp" />
     <ClCompile Include="src\RigidBodyEngine\CollisionDetection\Algorithm\IPlanePlaneCollisionAlgorithm.cpp" />
@@ -348,6 +349,7 @@
     <ClInclude Include="include\R3D\Utility\InertiaTensorGenerator.h" />
     <ClInclude Include="include\R3D\Utility\Random.h" />
     <ClInclude Include="include\R3D\RigidBodyEngine\CollisionDetection\CollisionAlgorithmMatrix.h" />
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleSpringBase.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="include\R3D\Utility\FixedSizeContainer.inl" />

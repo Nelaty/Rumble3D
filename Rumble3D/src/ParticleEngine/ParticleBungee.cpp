@@ -18,12 +18,16 @@ namespace r3
 
 	void ParticleBungee::updateForce(Particle* particle)
 	{
-		glm::vec3 force = particle->getPosition();
+		// Calculate distance vector
+		auto force = particle->getPosition();
 		force -= m_other->getPosition();
 	
-		real magnitude = glm::length(force);
+		// Force only acts at a different distance than the resting length
+		auto magnitude = glm::length(force);
 		if(magnitude <= m_restLength) return;
 	
+
+
 		magnitude = m_springConstant * (m_restLength - magnitude);
 	
 		force = glm::normalize(force);

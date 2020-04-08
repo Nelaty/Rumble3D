@@ -25,7 +25,7 @@ namespace r3
 		 * \param definition The properties of this particle.
 		 */
 		explicit Particle(const ParticleDef& definition);
-		virtual ~Particle();
+		virtual ~Particle() = default;
 
 		/**
 		 * \brief Initialize this particle.

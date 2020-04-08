@@ -7,9 +7,6 @@ namespace r3
 		: m_gravity(gravity)
 	{
 	}
-	
-	Gravity::~Gravity()
-	= default;
 
 	void Gravity::updateForce(RigidBody* body)
 	{
@@ -17,7 +14,9 @@ namespace r3
 		{
 			return;
 		}
-	
+
+		// The mass factor is necessary, since it will be nullified later on
+		// by inverse mass multiplication in the integration step.
 		body->addForce(m_gravity * body->getMass());
 	}
 }

@@ -273,6 +273,9 @@
     <ClCompile Include="src\ServiceLocator\ComputationInterfaceFactory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\ParticleEngine\ParticleSpringBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\R3D\RigidBodyEngine\AnchoredSpring.h">
@@ -546,6 +549,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\R3D\Helper\ComputationInterfaceFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\R3D\ParticleEngine\ParticleSpringBase.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

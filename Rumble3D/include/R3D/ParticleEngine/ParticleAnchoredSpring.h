@@ -25,7 +25,7 @@ namespace r3
 		 * \param restLength The length at which no forces are applied
 		 */
 		explicit ParticleAnchoredSpring(glm::vec3* anchor, real springConstant, real restLength);
-		~ParticleAnchoredSpring();
+		~ParticleAnchoredSpring() = default;
 
 		/**
 		* \brief Calculates and changes the force in the force accumulator

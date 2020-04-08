@@ -3,9 +3,4 @@
 
 namespace r3
 {
-	IParticleForceGenerator::~IParticleForceGenerator()
-	= default;
-
-	IParticleForceGenerator::IParticleForceGenerator()
-	= default;
 }

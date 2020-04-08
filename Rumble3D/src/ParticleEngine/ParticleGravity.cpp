@@ -15,6 +15,8 @@ namespace r3
 	{
 		if(!particle->hasFiniteMass()) return;
 
+		// The mass factor is necessary, since it will be nullified later on
+		// by inverse mass multiplication in the integration step.
 		particle->addForce(m_gravity * particle->getMass());
 	}
 
