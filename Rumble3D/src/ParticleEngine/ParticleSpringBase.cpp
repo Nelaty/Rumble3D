@@ -2,7 +2,6 @@
 
 namespace r3
 {
-
 	void ParticleSpringBase::setRestLength(real restLength)
 	{
 		m_restLength = restLength;
@@ -35,6 +34,7 @@ namespace r3
 											  glm::vec3& distance,
 											  real& magnitude)
 	{
+		// Force direction of zero vector is undefined
 		distance = particle - target;
 		magnitude = glm::length(distance);
 		return magnitude != real(0);
@@ -43,6 +43,9 @@ namespace r3
 	glm::vec3 ParticleSpringBase::calculateForce(glm::vec3 distance,
 												 real magnitude)
 	{
+		// a) Force only acts at a different distance than the resting length
+		// b) A firm spring (higher constant) is more sensitive to changes in
+		// the resting length
 		magnitude = m_springConstant * (m_restLength - magnitude);
 
 		distance = glm::normalize(distance);

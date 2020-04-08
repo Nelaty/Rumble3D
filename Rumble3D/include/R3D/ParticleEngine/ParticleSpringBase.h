@@ -9,7 +9,7 @@ namespace r3
 	class ParticleSpringBase : public IParticleForceGenerator
 	{
 	public:
-		virtual ~ParticleSpringBase() = 0;
+		virtual ~ParticleSpringBase() = default;
 
 		/** \brief Set the spring resting length. */
 		void setRestLength(real restLength);

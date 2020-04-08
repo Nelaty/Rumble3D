@@ -6,32 +6,21 @@
 namespace r3
 {
 	ParticleBungee::ParticleBungee(Particle* other, real springConstant, real restLength)
+		: ParticleSpringBase(springConstant, restLength),
+		m_other(other)
 	{
-		m_other = other;
-		m_springConstant = springConstant;
-		m_restLength = restLength;
 	}
-	
-	
-	ParticleBungee::~ParticleBungee()
-	= default;
 
 	void ParticleBungee::updateForce(Particle* particle)
 	{
-		// Calculate distance vector
-		auto force = particle->getPosition();
-		force -= m_other->getPosition();
-	
-		// Force only acts at a different distance than the resting length
-		auto magnitude = glm::length(force);
-		if(magnitude <= m_restLength) return;
-	
-
-
-		magnitude = m_springConstant * (m_restLength - magnitude);
-	
-		force = glm::normalize(force);
-		force *= magnitude;
-		particle->addForce(force);
+		real magnitude;
+		glm::vec3 distance;
+		if(isMagnitudeValid(particle->getPosition(),
+							m_other->getPosition(),
+							distance,
+							magnitude))
+		{
+			particle->addForce(calculateForce(distance, magnitude));
+		}
 	}
 }

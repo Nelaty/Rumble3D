@@ -4,30 +4,21 @@
 namespace r3
 {
 	ParticleAnchoredSpring::ParticleAnchoredSpring(glm::vec3* anchor, real springConstant, real restLength)
-		: m_anchor{anchor},
-		m_springConstant{springConstant},
-		m_restLength{restLength}
+		: ParticleSpringBase(springConstant, restLength),
+		m_anchor{anchor}
 	{
 	}
 
 	void ParticleAnchoredSpring::updateForce(Particle* particle)
 	{
-		// Calculate distance vector
-		auto force = particle->getPosition();
-		force -= *m_anchor;
-
-		// Calculate distance
-		auto magnitude = glm::length(force);
-		if(magnitude == real(0)) return;
-
-		// Force only acts at a different distance than the resting length
-		magnitude -= m_restLength;
-		// A firm spring (higher constant) is more sensitive to changes in
-		// the resting length
-		magnitude *= m_springConstant;
-
-		force = glm::normalize(force);
-		force *= -magnitude;
-		particle->addForce(force);
+		real magnitude;
+		glm::vec3 distance;
+		if(isMagnitudeValid(particle->getPosition(),
+							*m_anchor,
+							distance,
+							magnitude))
+		{
+			particle->addForce(calculateForce(distance, magnitude));
+		}
 	}
 }

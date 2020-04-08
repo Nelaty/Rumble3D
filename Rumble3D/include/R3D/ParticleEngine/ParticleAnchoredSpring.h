@@ -1,6 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "IParticleForceGenerator.h"
+#include "ParticleSpringBase.h"
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
@@ -15,7 +15,7 @@ namespace r3
 	 * \details The specified point itself can move, but it will not be 
 	 * affected by this force generator.
 	 */
-	class R3D_DECLSPEC ParticleAnchoredSpring : public IParticleForceGenerator
+	class R3D_DECLSPEC ParticleAnchoredSpring : public ParticleSpringBase
 	{
 	public:
 		/**
@@ -36,7 +36,5 @@ namespace r3
 	
 	protected:
 		glm::vec3* m_anchor;
-		real m_springConstant;
-		real m_restLength;
 	};
 }
