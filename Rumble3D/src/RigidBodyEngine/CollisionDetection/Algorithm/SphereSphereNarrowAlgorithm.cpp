@@ -33,11 +33,8 @@ namespace r3
 		const auto normal = midline / distance;
 		const real penetration = combinedSphereSize - distance;
 		
-		// The contact point is either shifted towards the first or second sphere
-		// depending on which one is smaller. 
-		const real sign = sphere1->getRadius() > sphere2->getRadius() ? -1.0 : 1.0;
-		glm::vec3 contactPoint = positionTwo 
-			+ normal * (sphere2->getRadius() + sign * real(0.5) * penetration);
+		// The contact point is right in the middle of the spheres' intersection
+		glm::vec3 contactPoint = positionTwo + normal * (sphere2->getRadius() - real(0.5) * penetration);
 
 		// Initialize the new contact
 		auto* contact = collisionData.getAvailableContact();
