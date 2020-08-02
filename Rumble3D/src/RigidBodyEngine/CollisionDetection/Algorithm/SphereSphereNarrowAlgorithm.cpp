@@ -15,37 +15,32 @@ namespace r3
 															  RigidBody* rbSphere2, CollisionSphere* sphere2,
 															  CollisionData& collisionData)
 	{
-		// Wenn Kontakt-Array voll ist, nichts mehr zu tun:
-		if(collisionData.getContactsLeft() <= 0)
-		{
-			return false;
-		}
+		if(collisionData.isFull()) return false;
 
-		// Positionen der Kugeln:
+		// Sphere positions
 		const auto positionOne = rbSphere1->getTransform().getPosition();
 		const auto positionTwo = rbSphere2->getTransform().getPosition();
 
-
-		//const auto positionOne = sphere1->getAxis(3);
-		//const auto positionTwo = sphere2->getAxis(3);
-
-		// Vector zwischen den Kugeln und seine Länge:
+		// Vector and distance between both spheres
 		const auto midline = positionOne - positionTwo;
-		const auto size = glm::length(midline);
+		const auto distance = glm::length(midline);
+		const auto combinedSphereSize = sphere1->getRadius() + sphere2->getRadius();
 
-		// Keine Kollision:
-		if(size <= 0.0f || size >= sphere1->getRadius() + sphere2->getRadius())
-		{
-			return false;
-		}
+		// Spheres don't overlap
+		if(distance <= 0.0f || distance >= combinedSphereSize) return false;
 
-		// Erstellung der Kontaktnormalen und der Kontaktdaten:
-		const auto normal = midline * (real(1) / size);
-		auto* contact = collisionData.getAvailableContact();
+		// Calculate derived data
+		const auto normal = midline / distance;
+		const real penetration = combinedSphereSize - distance;
 		
+		// The contact point is right in the middle of the spheres' intersection
+		glm::vec3 contactPoint = positionTwo + normal * (sphere2->getRadius() - real(0.5) * penetration);
+
+		// Initialize the new contact
+		auto* contact = collisionData.getAvailableContact();
 		contact->setContactNormal(normal);
-		contact->setContactPoint(positionOne + midline * real(0.5));
-		contact->setPenetration((sphere1->getRadius() + sphere2->getRadius() - size));
+		contact->setContactPoint(contactPoint);
+		contact->setPenetration(penetration);
 		contact->setBodyData(rbSphere1, rbSphere2);
 		return true;
 	}
