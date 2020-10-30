@@ -1,35 +1,29 @@
-cmake_minimum_required(VERSION 3.5.1 FATAL_ERROR)
-set(CMAKE_LEGACY_CYGWIN_WIN32 0)
+cmake_minimum_required(VERSION 3.11)
+project(rumble3d)
+set(PROJECT_SHORT_NAME "R3")
 
-project("Rumble3D")
+set(CMAKE_CXX_STANDARD 20)
 
-enable_testing()
+set(RUMBLE3D_ENABLE_TESTS 1)
+set(RUMBLE3D_BUILD_SAMPLES 1)
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/lib/)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/)
 
-if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR
-   "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
-	set(warnings "-Wall -Wextra -Werror -Wno-error=sign-compare -Wno-error=unused-parameter -Wno-error=unused-variable -Wno-error=type-limits -std=c++14")
-# elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
-# 	set(warnings "/W4 /WX /EHsc")
+# Projects
+include_directories(include)
+
+add_subdirectory(src)
+
+if(${RUMBLE3D_ENABLE_TESTS})
+#include_directories(test)
 endif()
-if(NOT CONFIGURED_ONCE)
-	set(CMAKE_C_FLAGS "${warnings}" CACHE STRING "Flags used by the compiler during all build types." FORCE)
-	set(CMAKE_CXX_FLAGS "${warnings}" CACHE STRING "Flags used by the compiler during all build types." FORCE)
+
+if(${RUMBLE3D_BUILD_SAMPLES})
+#include_directories(example)
 endif()
 
+install(TARGETS ${PROJECT_NAME}
+        LIBRARY	DESTINATION lib)
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-
-
-
-add_subdirectory(Rumble3D)
-# add_subdirectory(External)
-
-add_subdirectory(Example)
-
-
-
-
-set(CONFIGURED_ONCE TRUE CACHE INTERNAL "A flag showing that CMake has configured at least once.")

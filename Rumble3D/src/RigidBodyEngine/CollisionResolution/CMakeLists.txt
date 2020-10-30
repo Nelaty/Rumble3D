@@ -1,9 +1,0 @@
-target_sources(${PROJECT_NAME}
-PRIVATE
-	${CMAKE_CURRENT_SOURCE_DIR}/CollisionResolver.cpp
-	${CMAKE_CURRENT_SOURCE_DIR}/FrictionResolver.cpp
-	${CMAKE_CURRENT_SOURCE_DIR}/ICollisionResolutionFilter.cpp
-	${CMAKE_CURRENT_SOURCE_DIR}/ICollisionResolverAccess.cpp
-	${CMAKE_CURRENT_SOURCE_DIR}/InterpenetrationResolver.cpp
-	${CMAKE_CURRENT_SOURCE_DIR}/VelocityResolver.cpp
-)
