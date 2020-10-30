@@ -9,7 +9,7 @@ namespace r3
 	{
 	}
 
-	void ParticleAnchoredSpring::updateForce(Particle* particle)
+	void ParticleAnchoredSpring::updateForce(Particle* particle, real duration)
 	{
 		real magnitude;
 		glm::vec3 distance;

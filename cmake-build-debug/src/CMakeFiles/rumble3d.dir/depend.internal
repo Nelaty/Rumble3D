@@ -6,7 +6,7 @@ src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/IComputationInterface.h
- /home/nelaty/Development/Repositories/Rumble3D/src/IComputationInterface.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/IComputationInterface.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -25,7 +25,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o
  ../include/R3D/PhysicsEngineModule.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -33,14 +33,14 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o
  ../include/R3D/ParticleEngine/IParticleForceGenerator.h
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/Particle.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/Particle.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -49,7 +49,8 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleAnchoredSpring.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp
+ ../include/R3D/ParticleEngine/ParticleSpringBase.h
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -58,7 +59,8 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleBidirectionalSpring.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp
+ ../include/R3D/ParticleEngine/ParticleSpringBase.h
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -67,7 +69,8 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleBungee.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBungee.cpp
+ ../include/R3D/ParticleEngine/ParticleSpringBase.h
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBungee.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -76,7 +79,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleBuoyancy.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -89,7 +92,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o
  ../include/R3D/ParticleEngine/ParticleLink.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCable.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCable.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -102,7 +105,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o
  ../include/R3D/ParticleEngine/ParticleLink.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCollision.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCollision.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -113,7 +116,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o
  ../include/R3D/ParticleEngine/ParticleDef.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -121,19 +124,19 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleContact.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContact.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContact.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/ParticleEngine/ParticleContactGenerator.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/ParticleEngine/ParticleContactGeneratorRegistry.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -144,13 +147,13 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o
  ../include/R3D/ParticleEngine/ParticleDef.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/ParticleEngine/ParticleDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDef.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDef.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -159,14 +162,14 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleDef.h
  ../include/R3D/ParticleEngine/ParticleDrag.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDrag.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDrag.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/IComputationInterface.h
  ../include/R3D/ParticleEngine/ParticleEngineCI.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -175,7 +178,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleDef.h
  ../include/R3D/ParticleEngine/ParticleForceRegistry.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -184,7 +187,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleDef.h
  ../include/R3D/ParticleEngine/ParticleGravity.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleGravity.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleGravity.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -196,7 +199,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o
  ../include/R3D/ParticleEngine/ParticleLink.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleLink.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleLink.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -211,7 +214,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionPrimitive.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -224,7 +227,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o
  ../include/R3D/ParticleEngine/ParticleRod.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleRod.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleRod.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -233,7 +236,15 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o
  ../include/R3D/ParticleEngine/Particle.h
  ../include/R3D/ParticleEngine/ParticleDef.h
  ../include/R3D/ParticleEngine/ParticleSpring.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleSpring.cpp
+ ../include/R3D/ParticleEngine/ParticleSpringBase.h
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleSpring.cpp
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o
+ ../include/R3D/Common/Common.h
+ ../include/R3D/Common/Config.h
+ ../include/R3D/Common/Precision.h
+ ../include/R3D/ParticleEngine/IParticleForceGenerator.h
+ ../include/R3D/ParticleEngine/ParticleSpringBase.h
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleSpringBase.cpp
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -246,7 +257,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o
  ../include/R3D/ParticleEngine/ParticleForceRegistry.h
  ../include/R3D/ParticleEngine/ParticleWorld.h
  ../include/R3D/PhysicsEngineModule.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleWorld.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleWorld.cpp
 src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -254,12 +265,12 @@ src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o
  ../include/R3D/IComputationInterface.h
  ../include/R3D/PhysicsEngine.h
  ../include/R3D/PhysicsEngineModule.h
- /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngine.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngine.cpp
 src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/PhysicsEngineModule.h
- /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngineModule.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngineModule.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -275,7 +286,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -295,19 +306,19 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BVHNode.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BVHNode.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/RigidBodyEngine/BoundingBox.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/RigidBodyEngine/BoundingSphere.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -315,10 +326,10 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionBox.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h
  ../include/R3D/RigidBodyEngine/CollisionPrimitive.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionCallback.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -339,7 +350,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxN
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -361,7 +372,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphe
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -381,7 +392,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBox
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -402,7 +413,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSph
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -423,7 +434,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneB
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -443,7 +454,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneP
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -466,7 +477,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneS
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -486,7 +497,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphere
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -505,7 +516,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlg
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -527,7 +538,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBo
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -548,7 +559,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePl
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -572,7 +583,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSp
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -593,7 +604,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereS
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -612,7 +623,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -632,7 +643,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorith
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -640,7 +651,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/Contact.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -663,17 +674,17 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionMask.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -689,7 +700,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -707,7 +718,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -715,7 +726,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhas
  ../include/R3D/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -733,7 +744,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgor
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -744,7 +755,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilte
  ../include/R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -768,12 +779,12 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/Octree.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -783,7 +794,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseF
  ../include/R3D/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -792,7 +803,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionObject.h
  ../include/R3D/RigidBodyEngine/CollisionPrimitive.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -800,7 +811,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h
  ../include/R3D/RigidBodyEngine/CollisionPlane.h
  ../include/R3D/RigidBodyEngine/CollisionPrimitive.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -814,7 +825,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -828,7 +839,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolve
  ../include/R3D/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.h
  ../include/R3D/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.h
  ../include/R3D/RigidBodyEngine/CollisionResolution/VelocityResolver.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -838,7 +849,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver
  ../include/R3D/RigidBodyEngine/CollisionDetection/Contact.h
  ../include/R3D/RigidBodyEngine/CollisionResolution/FrictionResolver.h
  ../include/R3D/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -847,7 +858,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolu
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/Contact.h
  ../include/R3D/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -856,7 +867,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolv
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/Contact.h
  ../include/R3D/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -875,7 +886,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/Interpenetration
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -894,7 +905,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -903,7 +914,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionPrimitive.h
  ../include/R3D/RigidBodyEngine/CollisionSphere.h
  ../include/R3D/Utility/InertiaTensorGenerator.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -936,7 +947,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -952,13 +963,13 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/RigidBodyEngine/ForceGenerator.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -974,7 +985,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -990,13 +1001,13 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Gravity.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Gravity.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/RigidBodyEngine/PhysicsMaterial.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -1010,7 +1021,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBody.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBody.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBody.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -1020,7 +1031,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o
  ../include/R3D/RigidBodyEngine/CollisionPrimitive.h
  ../include/R3D/RigidBodyEngine/PhysicsMaterial.h
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -1042,7 +1053,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBodyWorld.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -1068,7 +1079,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o
  ../include/R3D/Transform3D.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -1084,7 +1095,7 @@ src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/RigidBodyEngine/Spring.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Spring.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Spring.cpp
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
@@ -1119,13 +1130,14 @@ src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatri
  ../include/R3D/RigidBodyEngine/RigidBodyDef.h
  ../include/R3D/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/IComputationInterface.h
  ../include/R3D/ParticleEngine/DefaultParticleEngineCI.h
+ ../include/R3D/ParticleEngine/ParticleContact.h
  ../include/R3D/ParticleEngine/ParticleContactResolver.h
  ../include/R3D/ParticleEngine/ParticleEngineCI.h
  ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h
@@ -1137,19 +1149,19 @@ src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cp
  ../include/R3D/ServiceLocator/ServiceLocatorComputationInterface.h
  ../include/R3D/Utility/FixedSizeContainer.h
  ../include/R3D/Utility/FixedSizeContainer.inl
- /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp
 src/CMakeFiles/rumble3d.dir/Transform3D.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/Transform3D.h
- /home/nelaty/Development/Repositories/Rumble3D/src/Transform3D.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Transform3D.cpp
 src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o
  ../include/R3D/Common/Common.h
  ../include/R3D/Common/Config.h
  ../include/R3D/Common/Precision.h
  ../include/R3D/Utility/InertiaTensorGenerator.h
- /home/nelaty/Development/Repositories/Rumble3D/src/Utility/InertiaTensorGenerator.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/InertiaTensorGenerator.cpp
 src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o
  ../include/R3D/Utility/Random.h
- /home/nelaty/Development/Repositories/Rumble3D/src/Utility/Random.cpp
+ /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/Random.cpp

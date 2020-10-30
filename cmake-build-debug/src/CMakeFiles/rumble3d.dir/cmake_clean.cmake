@@ -25,6 +25,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o"
   "CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o"
   "CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o"
+  "CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o"
   "CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o"
   "CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o"
   "CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o"

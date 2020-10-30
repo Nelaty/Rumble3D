@@ -56,16 +56,51 @@ CMAKE_BINARY_DIR = /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cma
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +112,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -772,6 +818,33 @@ ParticleEngine/ParticleSpring.s: ParticleEngine/ParticleSpring.cpp.s
 ParticleEngine/ParticleSpring.cpp.s:
 	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.s
 .PHONY : ParticleEngine/ParticleSpring.cpp.s
+
+ParticleEngine/ParticleSpringBase.o: ParticleEngine/ParticleSpringBase.cpp.o
+
+.PHONY : ParticleEngine/ParticleSpringBase.o
+
+# target to build an object file
+ParticleEngine/ParticleSpringBase.cpp.o:
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o
+.PHONY : ParticleEngine/ParticleSpringBase.cpp.o
+
+ParticleEngine/ParticleSpringBase.i: ParticleEngine/ParticleSpringBase.cpp.i
+
+.PHONY : ParticleEngine/ParticleSpringBase.i
+
+# target to preprocess a source file
+ParticleEngine/ParticleSpringBase.cpp.i:
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.i
+.PHONY : ParticleEngine/ParticleSpringBase.cpp.i
+
+ParticleEngine/ParticleSpringBase.s: ParticleEngine/ParticleSpringBase.cpp.s
+
+.PHONY : ParticleEngine/ParticleSpringBase.s
+
+# target to generate assembly for a file
+ParticleEngine/ParticleSpringBase.cpp.s:
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.s
+.PHONY : ParticleEngine/ParticleSpringBase.cpp.s
 
 ParticleEngine/ParticleWorld.o: ParticleEngine/ParticleWorld.cpp.o
 
@@ -2453,9 +2526,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... rumble3d"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... IComputationInterface.o"
 	@echo "... IComputationInterface.i"
 	@echo "... IComputationInterface.s"
@@ -2528,6 +2605,9 @@ help:
 	@echo "... ParticleEngine/ParticleSpring.o"
 	@echo "... ParticleEngine/ParticleSpring.i"
 	@echo "... ParticleEngine/ParticleSpring.s"
+	@echo "... ParticleEngine/ParticleSpringBase.o"
+	@echo "... ParticleEngine/ParticleSpringBase.i"
+	@echo "... ParticleEngine/ParticleSpringBase.s"
 	@echo "... ParticleEngine/ParticleWorld.o"
 	@echo "... ParticleEngine/ParticleWorld.i"
 	@echo "... ParticleEngine/ParticleWorld.s"

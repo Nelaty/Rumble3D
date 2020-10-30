@@ -48,6 +48,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../incl
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../include/R3D/ParticleEngine/Particle.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleAnchoredSpring.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleDef.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleSpringBase.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../src/ParticleEngine/ParticleAnchoredSpring.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../include/R3D/Common/Common.h
@@ -57,6 +58,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ..
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../include/R3D/ParticleEngine/Particle.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleBidirectionalSpring.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleDef.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleSpringBase.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../src/ParticleEngine/ParticleBidirectionalSpring.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../include/R3D/Common/Common.h
@@ -66,6 +68,7 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../include/R3D/
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../include/R3D/ParticleEngine/Particle.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../include/R3D/ParticleEngine/ParticleBungee.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../include/R3D/ParticleEngine/ParticleDef.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../include/R3D/ParticleEngine/ParticleSpringBase.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../src/ParticleEngine/ParticleBungee.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o: ../include/R3D/Common/Common.h
@@ -232,7 +235,15 @@ src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../include/R3D/
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../include/R3D/ParticleEngine/Particle.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleDef.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleSpring.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../include/R3D/ParticleEngine/ParticleSpringBase.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../src/ParticleEngine/ParticleSpring.cpp
+
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o: ../include/R3D/Common/Common.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o: ../include/R3D/Common/Config.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o: ../include/R3D/Common/Precision.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o: ../include/R3D/ParticleEngine/IParticleForceGenerator.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o: ../include/R3D/ParticleEngine/ParticleSpringBase.h
+src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpringBase.cpp.o: ../src/ParticleEngine/ParticleSpringBase.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o: ../include/R3D/Common/Common.h
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o: ../include/R3D/Common/Config.h
@@ -1125,6 +1136,7 @@ src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cp
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/Common/Precision.h
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/IComputationInterface.h
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/ParticleEngine/DefaultParticleEngineCI.h
+src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/ParticleEngine/ParticleContact.h
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/ParticleEngine/ParticleContactResolver.h
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/ParticleEngine/ParticleEngineCI.h
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../include/R3D/RigidBodyEngine/CollisionDetection/CollisionData.h
