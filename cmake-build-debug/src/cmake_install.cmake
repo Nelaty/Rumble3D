@@ -1,4 +1,4 @@
-# Install script for directory: /home/nelaty/Development/Repositories/Rumble3D/src
+# Install script for directory: /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

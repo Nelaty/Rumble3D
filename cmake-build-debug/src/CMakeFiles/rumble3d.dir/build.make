@@ -43,10 +43,10 @@ RM = /home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/nelaty/Development/Repositories/Rumble3D
+CMAKE_SOURCE_DIR = /home/nelaty/Development/Repositories/temp_merge/Rumble3D
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug
+CMAKE_BINARY_DIR = /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/rumble3d.dir/depend.make
@@ -59,1121 +59,1121 @@ include src/CMakeFiles/rumble3d.dir/flags.make
 
 src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o: ../src/IComputationInterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/IComputationInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/IComputationInterface.cpp
 
 src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/IComputationInterface.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/IComputationInterface.cpp > CMakeFiles/rumble3d.dir/IComputationInterface.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/IComputationInterface.cpp > CMakeFiles/rumble3d.dir/IComputationInterface.cpp.i
 
 src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/IComputationInterface.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/IComputationInterface.cpp -o CMakeFiles/rumble3d.dir/IComputationInterface.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/IComputationInterface.cpp -o CMakeFiles/rumble3d.dir/IComputationInterface.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o: ../src/ParticleEngine/DefaultParticleEngineCI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o: ../src/ParticleEngine/IParticleForceGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o: ../src/ParticleEngine/Particle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/Particle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/Particle.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/Particle.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/Particle.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/Particle.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/Particle.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o: ../src/ParticleEngine/ParticleAnchoredSpring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o: ../src/ParticleEngine/ParticleBidirectionalSpring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o: ../src/ParticleEngine/ParticleBungee.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBungee.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBungee.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBungee.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBungee.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBungee.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBungee.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o: ../src/ParticleEngine/ParticleBuoyancy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o: ../src/ParticleEngine/ParticleCable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCable.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCable.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCable.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCable.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCable.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o: ../src/ParticleEngine/ParticleCollision.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCollision.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCollision.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCollision.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCollision.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCollision.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCollision.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o: ../src/ParticleEngine/ParticleConstraint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o: ../src/ParticleEngine/ParticleContact.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContact.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContact.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContact.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContact.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContact.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContact.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o: ../src/ParticleEngine/ParticleContactGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o: ../src/ParticleEngine/ParticleContactGeneratorRegistry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o: ../src/ParticleEngine/ParticleContactResolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o: ../src/ParticleEngine/ParticleDef.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDef.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDef.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDef.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDef.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDef.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o: ../src/ParticleEngine/ParticleDrag.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDrag.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDrag.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDrag.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDrag.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDrag.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDrag.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o: ../src/ParticleEngine/ParticleEngineCI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o: ../src/ParticleEngine/ParticleForceRegistry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o: ../src/ParticleEngine/ParticleGravity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleGravity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleGravity.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleGravity.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleGravity.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleGravity.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleGravity.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o: ../src/ParticleEngine/ParticleLink.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleLink.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleLink.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleLink.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleLink.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleLink.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleLink.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o: ../src/ParticleEngine/ParticlePlaneContactGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o: ../src/ParticleEngine/ParticleRod.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleRod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleRod.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleRod.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleRod.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleRod.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleRod.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o: ../src/ParticleEngine/ParticleSpring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleSpring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleSpring.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleSpring.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleSpring.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleSpring.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleSpring.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o: ../src/ParticleEngine/ParticleWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleWorld.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleWorld.cpp
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleWorld.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleWorld.cpp > CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleWorld.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleWorld.cpp -o CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.s
 
 src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o: ../src/PhysicsEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngine.cpp
 
 src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngine.cpp > CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngine.cpp > CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.i
 
 src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngine.cpp -o CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngine.cpp -o CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.s
 
 src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o: ../src/PhysicsEngineModule.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngineModule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngineModule.cpp
 
 src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngineModule.cpp > CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngineModule.cpp > CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.i
 
 src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngineModule.cpp -o CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngineModule.cpp -o CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o: ../src/RigidBodyEngine/AnchoredSpring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o: ../src/RigidBodyEngine/BVHNode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BVHNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BVHNode.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BVHNode.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BVHNode.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BVHNode.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BVHNode.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o: ../src/RigidBodyEngine/BoundingBox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o: ../src/RigidBodyEngine/BoundingSphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o: ../src/RigidBodyEngine/CollisionBox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o: ../src/RigidBodyEngine/CollisionCallback.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o: ../src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o: ../src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o: ../src/RigidBodyEngine/CollisionDetection/CollisionData.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o: ../src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o: ../src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o: ../src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Contact.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o: ../src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o: ../src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o: ../src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o: ../src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o: ../src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o: ../src/RigidBodyEngine/CollisionDetection/Octree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o: ../src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o: ../src/RigidBodyEngine/CollisionObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o: ../src/RigidBodyEngine/CollisionPlane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o: ../src/RigidBodyEngine/CollisionPrimitive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o: ../src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o: ../src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o: ../src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o: ../src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o: ../src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o: ../src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o: ../src/RigidBodyEngine/CollisionSphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o: ../src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o: ../src/RigidBodyEngine/DirectedForce.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o: ../src/RigidBodyEngine/ForceGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o: ../src/RigidBodyEngine/ForceRegistry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o: ../src/RigidBodyEngine/Gravity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Gravity.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Gravity.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Gravity.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Gravity.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Gravity.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Gravity.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o: ../src/RigidBodyEngine/PhysicsMaterial.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o: ../src/RigidBodyEngine/RigidBody.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBody.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBody.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBody.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBody.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBody.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o: ../src/RigidBodyEngine/RigidBodyDef.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o: ../src/RigidBodyEngine/RigidBodyEngineCI.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o: ../src/RigidBodyEngine/RigidBodyWorld.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.s
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o: ../src/RigidBodyEngine/Spring.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Spring.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building CXX object src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Spring.cpp
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Spring.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Spring.cpp > CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.i
 
 src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Spring.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Spring.cpp -o CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o: ../src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building CXX object src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp
 
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp > CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp > CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s
 
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o: ../src/ServiceLocator/ServiceLocatorComputationInterface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building CXX object src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp
 
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp > CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp > CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.i
 
 src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp -o CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.s
 
 src/CMakeFiles/rumble3d.dir/Transform3D.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/Transform3D.cpp.o: ../src/Transform3D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object src/CMakeFiles/rumble3d.dir/Transform3D.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/Transform3D.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/Transform3D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building CXX object src/CMakeFiles/rumble3d.dir/Transform3D.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/Transform3D.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Transform3D.cpp
 
 src/CMakeFiles/rumble3d.dir/Transform3D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/Transform3D.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/Transform3D.cpp > CMakeFiles/rumble3d.dir/Transform3D.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Transform3D.cpp > CMakeFiles/rumble3d.dir/Transform3D.cpp.i
 
 src/CMakeFiles/rumble3d.dir/Transform3D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/Transform3D.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/Transform3D.cpp -o CMakeFiles/rumble3d.dir/Transform3D.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Transform3D.cpp -o CMakeFiles/rumble3d.dir/Transform3D.cpp.s
 
 src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o: ../src/Utility/InertiaTensorGenerator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/Utility/InertiaTensorGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building CXX object src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/InertiaTensorGenerator.cpp
 
 src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/Utility/InertiaTensorGenerator.cpp > CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/InertiaTensorGenerator.cpp > CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.i
 
 src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/Utility/InertiaTensorGenerator.cpp -o CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/InertiaTensorGenerator.cpp -o CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.s
 
 src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o: src/CMakeFiles/rumble3d.dir/flags.make
 src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o: ../src/Utility/Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/Utility/Random.cpp.o -c /home/nelaty/Development/Repositories/Rumble3D/src/Utility/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building CXX object src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/rumble3d.dir/Utility/Random.cpp.o -c /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/Random.cpp
 
 src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rumble3d.dir/Utility/Random.cpp.i"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/Rumble3D/src/Utility/Random.cpp > CMakeFiles/rumble3d.dir/Utility/Random.cpp.i
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/Random.cpp > CMakeFiles/rumble3d.dir/Utility/Random.cpp.i
 
 src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rumble3d.dir/Utility/Random.cpp.s"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/Rumble3D/src/Utility/Random.cpp -o CMakeFiles/rumble3d.dir/Utility/Random.cpp.s
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/Random.cpp -o CMakeFiles/rumble3d.dir/Utility/Random.cpp.s
 
 # Object files for target rumble3d
 rumble3d_OBJECTS = \
@@ -1355,9 +1355,9 @@ rumble3d_EXTERNAL_OBJECTS =
 ../bin/librumble3d.a: src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o
 ../bin/librumble3d.a: src/CMakeFiles/rumble3d.dir/build.make
 ../bin/librumble3d.a: src/CMakeFiles/rumble3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking CXX static library ../../bin/librumble3d.a"
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/rumble3d.dir/cmake_clean_target.cmake
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rumble3d.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Linking CXX static library ../../bin/librumble3d.a"
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/rumble3d.dir/cmake_clean_target.cmake
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rumble3d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/rumble3d.dir/build: ../bin/librumble3d.a
@@ -1365,10 +1365,10 @@ src/CMakeFiles/rumble3d.dir/build: ../bin/librumble3d.a
 .PHONY : src/CMakeFiles/rumble3d.dir/build
 
 src/CMakeFiles/rumble3d.dir/clean:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/rumble3d.dir/cmake_clean.cmake
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/rumble3d.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/rumble3d.dir/clean
 
 src/CMakeFiles/rumble3d.dir/depend:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nelaty/Development/Repositories/Rumble3D /home/nelaty/Development/Repositories/Rumble3D/src /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/CMakeFiles/rumble3d.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/nelaty/Development/Repositories/temp_merge/Rumble3D /home/nelaty/Development/Repositories/temp_merge/Rumble3D/src /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/CMakeFiles/rumble3d.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/rumble3d.dir/depend
 

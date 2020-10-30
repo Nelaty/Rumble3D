@@ -1,6 +1,6 @@
-/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nelaty/Development/Repositories/Rumble3D
--- The C compiler identification is GNU 10.1.0
--- The CXX compiler identification is GNU 10.1.0
+/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/nelaty/Development/Repositories/temp_merge/Rumble3D
+-- The C compiler identification is GNU 10.2.0
+-- The CXX compiler identification is GNU 10.2.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
 -- Detecting C compiler ABI info
@@ -15,4 +15,4 @@
 -- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug
+-- Build files have been written to: /home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug

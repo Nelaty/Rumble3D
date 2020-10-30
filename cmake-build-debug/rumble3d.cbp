@@ -8,344 +8,344 @@
 		<Option virtualFolders="CMake Files\;CMake Files\src\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug"/>
+				<Option working_dir="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug"/>
+				<Option working_dir="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug"/>
+				<Option working_dir="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rumble3d">
-				<Option output="/home/nelaty/Development/Repositories/Rumble3D/bin/librumble3d.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src"/>
+				<Option output="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/bin/librumble3d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nelaty/Development/Repositories/Rumble3D/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/../../../../include/c++/10.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/../../../../include/c++/10.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/../../../../include/c++/10.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 rumble3d"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 rumble3d"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rumble3d/fast">
-				<Option output="/home/nelaty/Development/Repositories/Rumble3D/bin/librumble3d.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src"/>
+				<Option output="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/bin/librumble3d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/nelaty/Development/Repositories/Rumble3D/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/../../../../include/c++/10.1.0"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/../../../../include/c++/10.1.0/x86_64-pc-linux-gnu"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/../../../../include/c++/10.1.0/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include"/>
+					<Add directory="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.1.0/include-fixed"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 rumble3d/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 rumble3d/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/nelaty/Development/Repositories/temp_merge/Rumble3D/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/IComputationInterface.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/IComputationInterface.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/DefaultParticleEngineCI.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/IParticleForceGenerator.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/Particle.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/Particle.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleAnchoredSpring.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBidirectionalSpring.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBungee.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBungee.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleBuoyancy.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCable.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCable.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleCollision.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleCollision.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleConstraint.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContact.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContact.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGenerator.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactGeneratorRegistry.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleContactResolver.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDef.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDef.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleDrag.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleDrag.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleEngineCI.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleForceRegistry.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleGravity.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleGravity.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleLink.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleLink.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticlePlaneContactGenerator.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleRod.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleRod.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleSpring.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleSpring.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ParticleEngine/ParticleWorld.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ParticleEngine/ParticleWorld.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngine.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngine.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/PhysicsEngineModule.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/PhysicsEngineModule.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/AnchoredSpring.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BVHNode.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BVHNode.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingBox.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/BoundingSphere.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionBox.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionCallback.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionData.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Contact.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/Octree.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionObject.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPlane.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionPrimitive.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/CollisionSphere.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/DirectedForce.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceGenerator.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/ForceRegistry.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Gravity.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Gravity.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/PhysicsMaterial.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBody.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBody.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyDef.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyEngineCI.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/RigidBodyWorld.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/RigidBodyEngine/Spring.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/RigidBodyEngine/Spring.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/ServiceLocator/ServiceLocatorComputationInterface.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/Transform3D.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Transform3D.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/Utility/InertiaTensorGenerator.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/InertiaTensorGenerator.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/Utility/Random.cpp">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/Utility/Random.cpp">
 			<Option target="rumble3d"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/CMakeLists.txt">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/nelaty/Development/Repositories/Rumble3D/src/CMakeLists.txt">
+		<Unit filename="/home/nelaty/Development/Repositories/temp_merge/Rumble3D/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
 	</Project>

@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nelaty/Development/Repositories/Rumble3D/include 
+CXX_INCLUDES = -I/home/nelaty/Development/Repositories/temp_merge/Rumble3D/include 
 
