@@ -1,5 +1,5 @@
 #pragma once
-#include "R3D/ParticleEngine/IParticleForceGenerator.h"
+#include "ParticleSpringBase.h"
 
 namespace r3
 {
@@ -7,7 +7,7 @@ namespace r3
 	 * The ParticleBidirectionalSpring acts like two ParticleSprings, which 
 	 * connects two particles, so that both particles are affected.
 	 */
-	class ParticleBidirectionalSpring : public IParticleForceGenerator
+	class ParticleBidirectionalSpring : public ParticleSpringBase
 	{
 	public:
 		/**
@@ -17,10 +17,10 @@ namespace r3
 		* \param springConstant The hardness of the spring.
 		* \param restLength The length at which no forces will be applied.
 		*/
-		ParticleBidirectionalSpring(Particle* other, 
-									real springConstant, 
-									real restLength);
-		~ParticleBidirectionalSpring();
+		explicit ParticleBidirectionalSpring(Particle* other, 
+											 real springConstant, 
+											 real restLength);
+		~ParticleBidirectionalSpring() = default;
 
 		/**
 		* \brief Calculates and changes the force in the force accumulator
@@ -32,8 +32,5 @@ namespace r3
 
 	private:
 		Particle* m_other;
-
-		real m_springConstant;
-		real m_restLength;
 	};
 }

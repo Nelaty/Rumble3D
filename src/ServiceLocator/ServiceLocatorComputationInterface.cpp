@@ -18,10 +18,4 @@ namespace r3
 		auto ci = std::make_unique<DefaultRigidBodyEngineCI>();
 		return std::move(ci);
 	}
-
-	ServiceLocatorComputationInterface::ServiceLocatorComputationInterface()
-	= default;
-
-	ServiceLocatorComputationInterface::~ServiceLocatorComputationInterface()
-	= default;
 }

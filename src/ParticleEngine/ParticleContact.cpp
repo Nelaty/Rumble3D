@@ -44,10 +44,10 @@ namespace r3
 		// \prime{v_s} = -c*v_s
 		real newSeparatingVelocity = -separatingVelocity * m_restitution;
 		
-		// Einschub für die Beruecksichtigung von ruhenden Kontakten:
-		// Prüfe Geschwindigkeit, die aus der Beschleunigung herruehrt:
-		//ACHTUNG: Hier nicht berücksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
-		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird geprüft.
+		// Einschub f?r die Beruecksichtigung von ruhenden Kontakten:
+		// Pr?fe Geschwindigkeit, die aus der Beschleunigung herruehrt:
+		//ACHTUNG: Hier nicht ber?cksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
+		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird gepr?ft.
 		
 		glm::vec3 accelerationCausedVelocity = m_particles[0]->getAcceleration();
 		if(m_particles[1])

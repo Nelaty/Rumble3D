@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.11)
 project(rumble3d)
+set(PROJECT_SHORT_NAME "R3")
+
+set(CMAKE_CXX_STANDARD 20)
 
 set(RUMBLE3D_ENABLE_TESTS 1)
 set(RUMBLE3D_BUILD_SAMPLES 1)
@@ -21,4 +24,6 @@ if(${RUMBLE3D_BUILD_SAMPLES})
 #include_directories(example)
 endif()
 
+install(TARGETS ${PROJECT_NAME}
+        LIBRARY	DESTINATION lib)
 

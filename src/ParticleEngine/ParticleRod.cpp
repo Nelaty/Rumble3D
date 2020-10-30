@@ -7,9 +7,6 @@
 
 namespace r3
 {
-	ParticleRod::~ParticleRod()
-	= default;
-
 	void ParticleRod::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
 		// Distance between particles

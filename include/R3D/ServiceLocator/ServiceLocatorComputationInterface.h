@@ -27,7 +27,7 @@ namespace r3
 		static std::unique_ptr<RigidBodyEngineCI> getRigidBodyEngineCI();
 
 	private:
-		explicit ServiceLocatorComputationInterface();
-		~ServiceLocatorComputationInterface();
+		explicit ServiceLocatorComputationInterface() = default;
+		~ServiceLocatorComputationInterface() = default;
 	};
 }

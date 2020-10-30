@@ -22,7 +22,7 @@ namespace r3
 		 * \param gravity A constant force.
 		 */
 		explicit Gravity(const glm::vec3& gravity);
-		~Gravity();
+		~Gravity() = default;
 
 		/**
 		* \brief Apply force to a rigid body over a specific time.

@@ -12,7 +12,7 @@ namespace r3
 	 * \brief A ParticleContact contains contact information of two
 	 * particles.
 	 */
-	class R3D_DECLSPEC ParticleContact
+	class ParticleContact
 	{
 	public:
 		explicit ParticleContact();

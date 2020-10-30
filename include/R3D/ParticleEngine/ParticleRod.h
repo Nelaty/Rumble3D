@@ -16,7 +16,7 @@ namespace r3
 	{
 	public:
 		explicit ParticleRod(real length);
-		virtual ~ParticleRod();
+		virtual ~ParticleRod() = default;
 
 		/**
 		* \brief Generate new contacts.

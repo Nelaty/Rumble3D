@@ -3,15 +3,14 @@
 #include "R3D/Common/Precision.h"
 
 #include "R3D/Utility/FixedSizeContainer.h"
+#include "R3D/ParticleEngine/ParticleContact.h"
 
 namespace r3
 {
-	class ParticleContact;
-
-	/**
+    /**
 	 * \brief A ParticleContactResolver resolves a given number of contacts.
 	 */
-	class R3D_DECLSPEC ParticleContactResolver
+	class ParticleContactResolver
 	{
 	public:
 		explicit ParticleContactResolver(unsigned int iterations);

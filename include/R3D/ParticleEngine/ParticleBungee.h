@@ -1,6 +1,6 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/ParticleEngine/IParticleForceGenerator.h"
+#include "ParticleSpringBase.h"
 #include "R3D/Common/Precision.h"
 
 namespace r3
@@ -11,7 +11,7 @@ namespace r3
 	 * \brief A ParticleBungee is a particle force generator, which
 	 * simulates a bungee cord and connects two particles.
 	 */
-	class R3D_DECLSPEC ParticleBungee : public IParticleForceGenerator
+	class R3D_DECLSPEC ParticleBungee : public ParticleSpringBase
 	{
 	public:
 		/**
@@ -21,7 +21,7 @@ namespace r3
 		 * \param restLength The threshold at which forces will be applied.
 		 */
 		explicit ParticleBungee(Particle* other, real springConstant, real restLength);
-		~ParticleBungee();
+		~ParticleBungee() = default;
 
 		/**
 		* \brief Calculates and changes the force in the force accumulator
@@ -33,8 +33,6 @@ namespace r3
 
 	protected:
 		Particle* m_other;
-		real m_springConstant;
-		real m_restLength;
 	};
 }
 

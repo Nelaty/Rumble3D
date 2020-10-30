@@ -14,9 +14,6 @@ namespace r3
 		init(definition);
 	}
 
-	Particle::~Particle()
-		= default;
-
 	void Particle::init(const ParticleDef& definition)
 	{
 		m_position = definition.m_position;

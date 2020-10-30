@@ -23,7 +23,7 @@ namespace r3
 		 * \brief FixedSizeContainer constructor
 		 */
 		explicit FixedSizeContainer(int size);
-		~FixedSizeContainer();
+		~FixedSizeContainer() = default;
 
 		/**
 		 * \brief Initialize the container size. This will reset the

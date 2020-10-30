@@ -22,9 +22,6 @@ namespace r3
 		reset();
 	}
 
-	DefaultParticleEngineCI::~DefaultParticleEngineCI()
-	= default;
-
 	void DefaultParticleEngineCI::onBegin()
 	{
 		assert(m_particleWorld != nullptr);

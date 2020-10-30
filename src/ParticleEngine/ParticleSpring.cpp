@@ -5,36 +5,25 @@
 
 namespace r3
 {
-	ParticleSpring::ParticleSpring(Particle* other, 
+	ParticleSpring::ParticleSpring(Particle* other,
 								   const real springConstant,
 								   const real restLength)
-		: m_springConstant{springConstant},
-		m_restLength{restLength},
+		: ParticleSpringBase(springConstant, restLength),
 		m_other{other}
 	{
 	}
-	
-	ParticleSpring::~ParticleSpring()
-	= default;
+
 
 	void ParticleSpring::updateForce(Particle* particle, real duration)
 	{
-		// Vektor der Feder
-		auto force = particle->getPosition();
-		force -= m_other->getPosition();
-	
-		// Kraft berechnen:
-		auto magnitude = glm::length(force);
-		if(magnitude == real(0))
+		real magnitude;
+		glm::vec3 distance;
+		if(isMagnitudeValid(particle->getPosition(),
+							 m_other->getPosition(),
+							 distance,
+							 magnitude))
 		{
-			return;
+			particle->addForce(calculateForce(distance, magnitude));
 		}
-		magnitude -= m_restLength;
-		magnitude *= m_springConstant;
-	
-		//Resultierende Federkraft und Anwendung auf Teilchen:
-		force = glm::normalize(force);
-		force *= -magnitude;
-		particle->addForce(force);
 	}
 }

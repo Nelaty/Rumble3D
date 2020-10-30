@@ -8,37 +8,24 @@ namespace r3
 	ParticleBidirectionalSpring::ParticleBidirectionalSpring(Particle* other, 
 															 const real springConstant, 
 															 const real restLength)
-		: m_other(other),
-		m_springConstant(springConstant),
-		m_restLength(restLength)
+		: ParticleSpringBase(springConstant, restLength),
+		m_other(other)
 	{
 	}
 
-	ParticleBidirectionalSpring::~ParticleBidirectionalSpring()
-	{
-	}
-
-	void ParticleBidirectionalSpring::updateForce(Particle* particle, 
+	void ParticleBidirectionalSpring::updateForce(Particle* particle,
 												  const real duration)
 	{
-		// Vektor der Feder
-		auto force = particle->getPosition();
-		force -= m_other->getPosition();
-
-		// Kraft berechnen:
-		auto magnitude = glm::length(force);
-		if(magnitude == real(0))
+		real magnitude;
+		glm::vec3 distance;
+		if(isMagnitudeValid(particle->getPosition(),
+							m_other->getPosition(),
+							distance,
+							magnitude))
 		{
-			return;
+			glm::vec3 force = real(0.5) * calculateForce(distance, magnitude);
+			particle->addForce(force);
+			m_other->addForce(-force);
 		}
-		magnitude -= m_restLength;
-		magnitude *= m_springConstant;
-
-		//Resultierende Federkraft und Anwendung auf Teilchen:
-		force = glm::normalize(force);
-		force *= -magnitude;
-		
-		particle->addForce(force);
-		m_other->addForce(-force);
 	}
 }

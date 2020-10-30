@@ -9,10 +9,6 @@ namespace r3
 	}
 
 	template <class Element_Type, class Container_Type>
-	FixedSizeContainer<Element_Type, Container_Type>::~FixedSizeContainer()
-		= default;
-
-	template <class Element_Type, class Container_Type>
 	void FixedSizeContainer<Element_Type, Container_Type>::init(const int size)
 	{
 		assert(size >= 0);
