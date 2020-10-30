@@ -13,7 +13,7 @@ namespace r3
 	{
 	}
 
-	void ParticleBidirectionalSpring::updateForce(Particle* particle, 
+	void ParticleBidirectionalSpring::updateForce(Particle* particle,
 												  const real duration)
 	{
 		real magnitude;
