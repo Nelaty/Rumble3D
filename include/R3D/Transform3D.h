@@ -11,7 +11,7 @@ namespace r3
 	 * \brief Encapsulates translation and rotation and manipulation
 	 * functions on them.
 	 */
-	class R3D_DECLSPEC Transform3D
+	class Transform3D
 	{
 	public:
 		/**

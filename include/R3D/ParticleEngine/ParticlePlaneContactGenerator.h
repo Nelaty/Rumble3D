@@ -7,11 +7,13 @@
 
 namespace r3
 {
+    class ParticleContact;
+
 	class ParticlePlaneContactGenerator : public ParticleContactGenerator
 	{
 	public:
 		ParticlePlaneContactGenerator(real restitution, real radius);
-		~ParticlePlaneContactGenerator();
+		~ParticlePlaneContactGenerator() = default;
 	
 		void addContact(FixedSizeContainer<ParticleContact>& contactData) const override;
 

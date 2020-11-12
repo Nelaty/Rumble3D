@@ -9,7 +9,7 @@ namespace r3
 	/**
 	 * \brief Interface for contact generators for particles.
 	 */
-	class R3D_DECLSPEC ParticleContactGenerator
+	class ParticleContactGenerator
 	{
 	public:
 		virtual ~ParticleContactGenerator();

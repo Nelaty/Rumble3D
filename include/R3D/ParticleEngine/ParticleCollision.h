@@ -18,7 +18,7 @@ namespace r3
 	 * between two particles. A contact will be generated if those
 	 * particles are too close together.
 	 */
-	class R3D_DECLSPEC ParticleCollision : public ParticleLink
+	class ParticleCollision : public ParticleLink
 	{	
 	public:
 		using CollisionCallback = std::function<void(Particle* first,

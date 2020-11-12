@@ -8,7 +8,7 @@ namespace r3
 	/**
 	 * \brief Abstract class for physic engine modules.
 	 */
-	class R3D_DECLSPEC PhysicsEngineModule
+	class PhysicsEngineModule
 	{
 	public:
 		virtual ~PhysicsEngineModule();

@@ -10,10 +10,6 @@ namespace r3
 	{
 	}
 
-	ParticlePlaneContactGenerator::~ParticlePlaneContactGenerator()
-	{
-	}
-
 	void ParticlePlaneContactGenerator::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
 		assert(m_particle && m_plane);

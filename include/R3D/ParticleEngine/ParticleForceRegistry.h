@@ -13,7 +13,7 @@ namespace r3
 	 * \brief A ParticleForceRegistry contains a set of 
 	 * ParticleForceGenerators and Particles they act on.
 	 */
-	class R3D_DECLSPEC ParticleForceRegistry
+	class ParticleForceRegistry
 	{	
 	public:
 		struct ParticleForceRegistrationEntry

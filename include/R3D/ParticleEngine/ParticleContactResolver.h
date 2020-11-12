@@ -11,11 +11,11 @@ namespace r3
 	/**
 	 * \brief A ParticleContactResolver resolves a given number of contacts.
 	 */
-	class R3D_DECLSPEC ParticleContactResolver
+	class ParticleContactResolver
 	{
 	public:
 		explicit ParticleContactResolver(unsigned int iterations);
-		~ParticleContactResolver();
+		~ParticleContactResolver() = default;
 
 		/**
 		 * \brief Set maximal number of iterations used. 

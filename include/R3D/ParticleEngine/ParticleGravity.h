@@ -13,7 +13,7 @@ namespace r3
 	 * \brief A ParticleGravity is a particle force generator, which
 	 * applies a constant given force to particles.
 	 */
-	class R3D_DECLSPEC ParticleGravity : public IParticleForceGenerator
+	class ParticleGravity : public IParticleForceGenerator
 	{
 	public:
 		/**

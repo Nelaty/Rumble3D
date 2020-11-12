@@ -13,7 +13,7 @@ namespace r3
 	 * \details The spring force will not be applied to the particle,
 	 * which is assigned to this generator.
 	 */
-	class R3D_DECLSPEC ParticleSpring : public IParticleForceGenerator
+	class ParticleSpring : public IParticleForceGenerator
 	{	
 	public:
 		/**

@@ -56,16 +56,29 @@ CMAKE_BINARY_DIR = /home/nelaty/Development/Repositories/Rumble3D/cmake-build-de
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +90,39 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/nelaty/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/201.7846.88/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,19 +157,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/rumble3d.dir/rule:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/rumble3d.dir/rule
-.PHONY : src/CMakeFiles/rumble3d.dir/rule
+src/CMakeFiles/Rumble3D.dir/rule:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/Rumble3D.dir/rule
+.PHONY : src/CMakeFiles/Rumble3D.dir/rule
 
 # Convenience name for target.
-rumble3d: src/CMakeFiles/rumble3d.dir/rule
+Rumble3D: src/CMakeFiles/Rumble3D.dir/rule
 
-.PHONY : rumble3d
+.PHONY : Rumble3D
 
 # fast build rule for target.
-rumble3d/fast:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/build
-.PHONY : rumble3d/fast
+Rumble3D/fast:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/build
+.PHONY : Rumble3D/fast
 
 IComputationInterface.o: IComputationInterface.cpp.o
 
@@ -131,7 +177,7 @@ IComputationInterface.o: IComputationInterface.cpp.o
 
 # target to build an object file
 IComputationInterface.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/IComputationInterface.cpp.o
 .PHONY : IComputationInterface.cpp.o
 
 IComputationInterface.i: IComputationInterface.cpp.i
@@ -140,7 +186,7 @@ IComputationInterface.i: IComputationInterface.cpp.i
 
 # target to preprocess a source file
 IComputationInterface.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/IComputationInterface.cpp.i
 .PHONY : IComputationInterface.cpp.i
 
 IComputationInterface.s: IComputationInterface.cpp.s
@@ -149,8 +195,35 @@ IComputationInterface.s: IComputationInterface.cpp.s
 
 # target to generate assembly for a file
 IComputationInterface.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/IComputationInterface.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/IComputationInterface.cpp.s
 .PHONY : IComputationInterface.cpp.s
+
+MolecularDynamics/MolecularDynamicsEngine.o: MolecularDynamics/MolecularDynamicsEngine.cpp.o
+
+.PHONY : MolecularDynamics/MolecularDynamicsEngine.o
+
+# target to build an object file
+MolecularDynamics/MolecularDynamicsEngine.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/MolecularDynamics/MolecularDynamicsEngine.cpp.o
+.PHONY : MolecularDynamics/MolecularDynamicsEngine.cpp.o
+
+MolecularDynamics/MolecularDynamicsEngine.i: MolecularDynamics/MolecularDynamicsEngine.cpp.i
+
+.PHONY : MolecularDynamics/MolecularDynamicsEngine.i
+
+# target to preprocess a source file
+MolecularDynamics/MolecularDynamicsEngine.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/MolecularDynamics/MolecularDynamicsEngine.cpp.i
+.PHONY : MolecularDynamics/MolecularDynamicsEngine.cpp.i
+
+MolecularDynamics/MolecularDynamicsEngine.s: MolecularDynamics/MolecularDynamicsEngine.cpp.s
+
+.PHONY : MolecularDynamics/MolecularDynamicsEngine.s
+
+# target to generate assembly for a file
+MolecularDynamics/MolecularDynamicsEngine.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/MolecularDynamics/MolecularDynamicsEngine.cpp.s
+.PHONY : MolecularDynamics/MolecularDynamicsEngine.cpp.s
 
 ParticleEngine/DefaultParticleEngineCI.o: ParticleEngine/DefaultParticleEngineCI.cpp.o
 
@@ -158,7 +231,7 @@ ParticleEngine/DefaultParticleEngineCI.o: ParticleEngine/DefaultParticleEngineCI
 
 # target to build an object file
 ParticleEngine/DefaultParticleEngineCI.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/DefaultParticleEngineCI.cpp.o
 .PHONY : ParticleEngine/DefaultParticleEngineCI.cpp.o
 
 ParticleEngine/DefaultParticleEngineCI.i: ParticleEngine/DefaultParticleEngineCI.cpp.i
@@ -167,7 +240,7 @@ ParticleEngine/DefaultParticleEngineCI.i: ParticleEngine/DefaultParticleEngineCI
 
 # target to preprocess a source file
 ParticleEngine/DefaultParticleEngineCI.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/DefaultParticleEngineCI.cpp.i
 .PHONY : ParticleEngine/DefaultParticleEngineCI.cpp.i
 
 ParticleEngine/DefaultParticleEngineCI.s: ParticleEngine/DefaultParticleEngineCI.cpp.s
@@ -176,7 +249,7 @@ ParticleEngine/DefaultParticleEngineCI.s: ParticleEngine/DefaultParticleEngineCI
 
 # target to generate assembly for a file
 ParticleEngine/DefaultParticleEngineCI.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/DefaultParticleEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/DefaultParticleEngineCI.cpp.s
 .PHONY : ParticleEngine/DefaultParticleEngineCI.cpp.s
 
 ParticleEngine/IParticleForceGenerator.o: ParticleEngine/IParticleForceGenerator.cpp.o
@@ -185,7 +258,7 @@ ParticleEngine/IParticleForceGenerator.o: ParticleEngine/IParticleForceGenerator
 
 # target to build an object file
 ParticleEngine/IParticleForceGenerator.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/IParticleForceGenerator.cpp.o
 .PHONY : ParticleEngine/IParticleForceGenerator.cpp.o
 
 ParticleEngine/IParticleForceGenerator.i: ParticleEngine/IParticleForceGenerator.cpp.i
@@ -194,7 +267,7 @@ ParticleEngine/IParticleForceGenerator.i: ParticleEngine/IParticleForceGenerator
 
 # target to preprocess a source file
 ParticleEngine/IParticleForceGenerator.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/IParticleForceGenerator.cpp.i
 .PHONY : ParticleEngine/IParticleForceGenerator.cpp.i
 
 ParticleEngine/IParticleForceGenerator.s: ParticleEngine/IParticleForceGenerator.cpp.s
@@ -203,7 +276,7 @@ ParticleEngine/IParticleForceGenerator.s: ParticleEngine/IParticleForceGenerator
 
 # target to generate assembly for a file
 ParticleEngine/IParticleForceGenerator.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/IParticleForceGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/IParticleForceGenerator.cpp.s
 .PHONY : ParticleEngine/IParticleForceGenerator.cpp.s
 
 ParticleEngine/Particle.o: ParticleEngine/Particle.cpp.o
@@ -212,7 +285,7 @@ ParticleEngine/Particle.o: ParticleEngine/Particle.cpp.o
 
 # target to build an object file
 ParticleEngine/Particle.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/Particle.cpp.o
 .PHONY : ParticleEngine/Particle.cpp.o
 
 ParticleEngine/Particle.i: ParticleEngine/Particle.cpp.i
@@ -221,7 +294,7 @@ ParticleEngine/Particle.i: ParticleEngine/Particle.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/Particle.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/Particle.cpp.i
 .PHONY : ParticleEngine/Particle.cpp.i
 
 ParticleEngine/Particle.s: ParticleEngine/Particle.cpp.s
@@ -230,7 +303,7 @@ ParticleEngine/Particle.s: ParticleEngine/Particle.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/Particle.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/Particle.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/Particle.cpp.s
 .PHONY : ParticleEngine/Particle.cpp.s
 
 ParticleEngine/ParticleAnchoredSpring.o: ParticleEngine/ParticleAnchoredSpring.cpp.o
@@ -239,7 +312,7 @@ ParticleEngine/ParticleAnchoredSpring.o: ParticleEngine/ParticleAnchoredSpring.c
 
 # target to build an object file
 ParticleEngine/ParticleAnchoredSpring.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleAnchoredSpring.cpp.o
 .PHONY : ParticleEngine/ParticleAnchoredSpring.cpp.o
 
 ParticleEngine/ParticleAnchoredSpring.i: ParticleEngine/ParticleAnchoredSpring.cpp.i
@@ -248,7 +321,7 @@ ParticleEngine/ParticleAnchoredSpring.i: ParticleEngine/ParticleAnchoredSpring.c
 
 # target to preprocess a source file
 ParticleEngine/ParticleAnchoredSpring.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleAnchoredSpring.cpp.i
 .PHONY : ParticleEngine/ParticleAnchoredSpring.cpp.i
 
 ParticleEngine/ParticleAnchoredSpring.s: ParticleEngine/ParticleAnchoredSpring.cpp.s
@@ -257,7 +330,7 @@ ParticleEngine/ParticleAnchoredSpring.s: ParticleEngine/ParticleAnchoredSpring.c
 
 # target to generate assembly for a file
 ParticleEngine/ParticleAnchoredSpring.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleAnchoredSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleAnchoredSpring.cpp.s
 .PHONY : ParticleEngine/ParticleAnchoredSpring.cpp.s
 
 ParticleEngine/ParticleBidirectionalSpring.o: ParticleEngine/ParticleBidirectionalSpring.cpp.o
@@ -266,7 +339,7 @@ ParticleEngine/ParticleBidirectionalSpring.o: ParticleEngine/ParticleBidirection
 
 # target to build an object file
 ParticleEngine/ParticleBidirectionalSpring.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.o
 .PHONY : ParticleEngine/ParticleBidirectionalSpring.cpp.o
 
 ParticleEngine/ParticleBidirectionalSpring.i: ParticleEngine/ParticleBidirectionalSpring.cpp.i
@@ -275,7 +348,7 @@ ParticleEngine/ParticleBidirectionalSpring.i: ParticleEngine/ParticleBidirection
 
 # target to preprocess a source file
 ParticleEngine/ParticleBidirectionalSpring.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.i
 .PHONY : ParticleEngine/ParticleBidirectionalSpring.cpp.i
 
 ParticleEngine/ParticleBidirectionalSpring.s: ParticleEngine/ParticleBidirectionalSpring.cpp.s
@@ -284,7 +357,7 @@ ParticleEngine/ParticleBidirectionalSpring.s: ParticleEngine/ParticleBidirection
 
 # target to generate assembly for a file
 ParticleEngine/ParticleBidirectionalSpring.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBidirectionalSpring.cpp.s
 .PHONY : ParticleEngine/ParticleBidirectionalSpring.cpp.s
 
 ParticleEngine/ParticleBungee.o: ParticleEngine/ParticleBungee.cpp.o
@@ -293,7 +366,7 @@ ParticleEngine/ParticleBungee.o: ParticleEngine/ParticleBungee.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleBungee.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBungee.cpp.o
 .PHONY : ParticleEngine/ParticleBungee.cpp.o
 
 ParticleEngine/ParticleBungee.i: ParticleEngine/ParticleBungee.cpp.i
@@ -302,7 +375,7 @@ ParticleEngine/ParticleBungee.i: ParticleEngine/ParticleBungee.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleBungee.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBungee.cpp.i
 .PHONY : ParticleEngine/ParticleBungee.cpp.i
 
 ParticleEngine/ParticleBungee.s: ParticleEngine/ParticleBungee.cpp.s
@@ -311,7 +384,7 @@ ParticleEngine/ParticleBungee.s: ParticleEngine/ParticleBungee.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleBungee.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBungee.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBungee.cpp.s
 .PHONY : ParticleEngine/ParticleBungee.cpp.s
 
 ParticleEngine/ParticleBuoyancy.o: ParticleEngine/ParticleBuoyancy.cpp.o
@@ -320,7 +393,7 @@ ParticleEngine/ParticleBuoyancy.o: ParticleEngine/ParticleBuoyancy.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleBuoyancy.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBuoyancy.cpp.o
 .PHONY : ParticleEngine/ParticleBuoyancy.cpp.o
 
 ParticleEngine/ParticleBuoyancy.i: ParticleEngine/ParticleBuoyancy.cpp.i
@@ -329,7 +402,7 @@ ParticleEngine/ParticleBuoyancy.i: ParticleEngine/ParticleBuoyancy.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleBuoyancy.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBuoyancy.cpp.i
 .PHONY : ParticleEngine/ParticleBuoyancy.cpp.i
 
 ParticleEngine/ParticleBuoyancy.s: ParticleEngine/ParticleBuoyancy.cpp.s
@@ -338,7 +411,7 @@ ParticleEngine/ParticleBuoyancy.s: ParticleEngine/ParticleBuoyancy.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleBuoyancy.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleBuoyancy.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleBuoyancy.cpp.s
 .PHONY : ParticleEngine/ParticleBuoyancy.cpp.s
 
 ParticleEngine/ParticleCable.o: ParticleEngine/ParticleCable.cpp.o
@@ -347,7 +420,7 @@ ParticleEngine/ParticleCable.o: ParticleEngine/ParticleCable.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleCable.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleCable.cpp.o
 .PHONY : ParticleEngine/ParticleCable.cpp.o
 
 ParticleEngine/ParticleCable.i: ParticleEngine/ParticleCable.cpp.i
@@ -356,7 +429,7 @@ ParticleEngine/ParticleCable.i: ParticleEngine/ParticleCable.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleCable.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleCable.cpp.i
 .PHONY : ParticleEngine/ParticleCable.cpp.i
 
 ParticleEngine/ParticleCable.s: ParticleEngine/ParticleCable.cpp.s
@@ -365,7 +438,7 @@ ParticleEngine/ParticleCable.s: ParticleEngine/ParticleCable.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleCable.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCable.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleCable.cpp.s
 .PHONY : ParticleEngine/ParticleCable.cpp.s
 
 ParticleEngine/ParticleCollision.o: ParticleEngine/ParticleCollision.cpp.o
@@ -374,7 +447,7 @@ ParticleEngine/ParticleCollision.o: ParticleEngine/ParticleCollision.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleCollision.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleCollision.cpp.o
 .PHONY : ParticleEngine/ParticleCollision.cpp.o
 
 ParticleEngine/ParticleCollision.i: ParticleEngine/ParticleCollision.cpp.i
@@ -383,7 +456,7 @@ ParticleEngine/ParticleCollision.i: ParticleEngine/ParticleCollision.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleCollision.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleCollision.cpp.i
 .PHONY : ParticleEngine/ParticleCollision.cpp.i
 
 ParticleEngine/ParticleCollision.s: ParticleEngine/ParticleCollision.cpp.s
@@ -392,7 +465,7 @@ ParticleEngine/ParticleCollision.s: ParticleEngine/ParticleCollision.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleCollision.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleCollision.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleCollision.cpp.s
 .PHONY : ParticleEngine/ParticleCollision.cpp.s
 
 ParticleEngine/ParticleConstraint.o: ParticleEngine/ParticleConstraint.cpp.o
@@ -401,7 +474,7 @@ ParticleEngine/ParticleConstraint.o: ParticleEngine/ParticleConstraint.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleConstraint.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleConstraint.cpp.o
 .PHONY : ParticleEngine/ParticleConstraint.cpp.o
 
 ParticleEngine/ParticleConstraint.i: ParticleEngine/ParticleConstraint.cpp.i
@@ -410,7 +483,7 @@ ParticleEngine/ParticleConstraint.i: ParticleEngine/ParticleConstraint.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleConstraint.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleConstraint.cpp.i
 .PHONY : ParticleEngine/ParticleConstraint.cpp.i
 
 ParticleEngine/ParticleConstraint.s: ParticleEngine/ParticleConstraint.cpp.s
@@ -419,7 +492,7 @@ ParticleEngine/ParticleConstraint.s: ParticleEngine/ParticleConstraint.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleConstraint.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleConstraint.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleConstraint.cpp.s
 .PHONY : ParticleEngine/ParticleConstraint.cpp.s
 
 ParticleEngine/ParticleContact.o: ParticleEngine/ParticleContact.cpp.o
@@ -428,7 +501,7 @@ ParticleEngine/ParticleContact.o: ParticleEngine/ParticleContact.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleContact.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContact.cpp.o
 .PHONY : ParticleEngine/ParticleContact.cpp.o
 
 ParticleEngine/ParticleContact.i: ParticleEngine/ParticleContact.cpp.i
@@ -437,7 +510,7 @@ ParticleEngine/ParticleContact.i: ParticleEngine/ParticleContact.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleContact.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContact.cpp.i
 .PHONY : ParticleEngine/ParticleContact.cpp.i
 
 ParticleEngine/ParticleContact.s: ParticleEngine/ParticleContact.cpp.s
@@ -446,7 +519,7 @@ ParticleEngine/ParticleContact.s: ParticleEngine/ParticleContact.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleContact.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContact.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContact.cpp.s
 .PHONY : ParticleEngine/ParticleContact.cpp.s
 
 ParticleEngine/ParticleContactGenerator.o: ParticleEngine/ParticleContactGenerator.cpp.o
@@ -455,7 +528,7 @@ ParticleEngine/ParticleContactGenerator.o: ParticleEngine/ParticleContactGenerat
 
 # target to build an object file
 ParticleEngine/ParticleContactGenerator.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactGenerator.cpp.o
 .PHONY : ParticleEngine/ParticleContactGenerator.cpp.o
 
 ParticleEngine/ParticleContactGenerator.i: ParticleEngine/ParticleContactGenerator.cpp.i
@@ -464,7 +537,7 @@ ParticleEngine/ParticleContactGenerator.i: ParticleEngine/ParticleContactGenerat
 
 # target to preprocess a source file
 ParticleEngine/ParticleContactGenerator.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactGenerator.cpp.i
 .PHONY : ParticleEngine/ParticleContactGenerator.cpp.i
 
 ParticleEngine/ParticleContactGenerator.s: ParticleEngine/ParticleContactGenerator.cpp.s
@@ -473,7 +546,7 @@ ParticleEngine/ParticleContactGenerator.s: ParticleEngine/ParticleContactGenerat
 
 # target to generate assembly for a file
 ParticleEngine/ParticleContactGenerator.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactGenerator.cpp.s
 .PHONY : ParticleEngine/ParticleContactGenerator.cpp.s
 
 ParticleEngine/ParticleContactGeneratorRegistry.o: ParticleEngine/ParticleContactGeneratorRegistry.cpp.o
@@ -482,7 +555,7 @@ ParticleEngine/ParticleContactGeneratorRegistry.o: ParticleEngine/ParticleContac
 
 # target to build an object file
 ParticleEngine/ParticleContactGeneratorRegistry.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.o
 .PHONY : ParticleEngine/ParticleContactGeneratorRegistry.cpp.o
 
 ParticleEngine/ParticleContactGeneratorRegistry.i: ParticleEngine/ParticleContactGeneratorRegistry.cpp.i
@@ -491,7 +564,7 @@ ParticleEngine/ParticleContactGeneratorRegistry.i: ParticleEngine/ParticleContac
 
 # target to preprocess a source file
 ParticleEngine/ParticleContactGeneratorRegistry.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.i
 .PHONY : ParticleEngine/ParticleContactGeneratorRegistry.cpp.i
 
 ParticleEngine/ParticleContactGeneratorRegistry.s: ParticleEngine/ParticleContactGeneratorRegistry.cpp.s
@@ -500,7 +573,7 @@ ParticleEngine/ParticleContactGeneratorRegistry.s: ParticleEngine/ParticleContac
 
 # target to generate assembly for a file
 ParticleEngine/ParticleContactGeneratorRegistry.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactGeneratorRegistry.cpp.s
 .PHONY : ParticleEngine/ParticleContactGeneratorRegistry.cpp.s
 
 ParticleEngine/ParticleContactResolver.o: ParticleEngine/ParticleContactResolver.cpp.o
@@ -509,7 +582,7 @@ ParticleEngine/ParticleContactResolver.o: ParticleEngine/ParticleContactResolver
 
 # target to build an object file
 ParticleEngine/ParticleContactResolver.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactResolver.cpp.o
 .PHONY : ParticleEngine/ParticleContactResolver.cpp.o
 
 ParticleEngine/ParticleContactResolver.i: ParticleEngine/ParticleContactResolver.cpp.i
@@ -518,7 +591,7 @@ ParticleEngine/ParticleContactResolver.i: ParticleEngine/ParticleContactResolver
 
 # target to preprocess a source file
 ParticleEngine/ParticleContactResolver.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactResolver.cpp.i
 .PHONY : ParticleEngine/ParticleContactResolver.cpp.i
 
 ParticleEngine/ParticleContactResolver.s: ParticleEngine/ParticleContactResolver.cpp.s
@@ -527,7 +600,7 @@ ParticleEngine/ParticleContactResolver.s: ParticleEngine/ParticleContactResolver
 
 # target to generate assembly for a file
 ParticleEngine/ParticleContactResolver.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleContactResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleContactResolver.cpp.s
 .PHONY : ParticleEngine/ParticleContactResolver.cpp.s
 
 ParticleEngine/ParticleDef.o: ParticleEngine/ParticleDef.cpp.o
@@ -536,7 +609,7 @@ ParticleEngine/ParticleDef.o: ParticleEngine/ParticleDef.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleDef.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleDef.cpp.o
 .PHONY : ParticleEngine/ParticleDef.cpp.o
 
 ParticleEngine/ParticleDef.i: ParticleEngine/ParticleDef.cpp.i
@@ -545,7 +618,7 @@ ParticleEngine/ParticleDef.i: ParticleEngine/ParticleDef.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleDef.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleDef.cpp.i
 .PHONY : ParticleEngine/ParticleDef.cpp.i
 
 ParticleEngine/ParticleDef.s: ParticleEngine/ParticleDef.cpp.s
@@ -554,7 +627,7 @@ ParticleEngine/ParticleDef.s: ParticleEngine/ParticleDef.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleDef.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDef.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleDef.cpp.s
 .PHONY : ParticleEngine/ParticleDef.cpp.s
 
 ParticleEngine/ParticleDrag.o: ParticleEngine/ParticleDrag.cpp.o
@@ -563,7 +636,7 @@ ParticleEngine/ParticleDrag.o: ParticleEngine/ParticleDrag.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleDrag.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleDrag.cpp.o
 .PHONY : ParticleEngine/ParticleDrag.cpp.o
 
 ParticleEngine/ParticleDrag.i: ParticleEngine/ParticleDrag.cpp.i
@@ -572,7 +645,7 @@ ParticleEngine/ParticleDrag.i: ParticleEngine/ParticleDrag.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleDrag.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleDrag.cpp.i
 .PHONY : ParticleEngine/ParticleDrag.cpp.i
 
 ParticleEngine/ParticleDrag.s: ParticleEngine/ParticleDrag.cpp.s
@@ -581,7 +654,7 @@ ParticleEngine/ParticleDrag.s: ParticleEngine/ParticleDrag.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleDrag.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleDrag.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleDrag.cpp.s
 .PHONY : ParticleEngine/ParticleDrag.cpp.s
 
 ParticleEngine/ParticleEngineCI.o: ParticleEngine/ParticleEngineCI.cpp.o
@@ -590,7 +663,7 @@ ParticleEngine/ParticleEngineCI.o: ParticleEngine/ParticleEngineCI.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleEngineCI.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleEngineCI.cpp.o
 .PHONY : ParticleEngine/ParticleEngineCI.cpp.o
 
 ParticleEngine/ParticleEngineCI.i: ParticleEngine/ParticleEngineCI.cpp.i
@@ -599,7 +672,7 @@ ParticleEngine/ParticleEngineCI.i: ParticleEngine/ParticleEngineCI.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleEngineCI.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleEngineCI.cpp.i
 .PHONY : ParticleEngine/ParticleEngineCI.cpp.i
 
 ParticleEngine/ParticleEngineCI.s: ParticleEngine/ParticleEngineCI.cpp.s
@@ -608,7 +681,7 @@ ParticleEngine/ParticleEngineCI.s: ParticleEngine/ParticleEngineCI.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleEngineCI.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleEngineCI.cpp.s
 .PHONY : ParticleEngine/ParticleEngineCI.cpp.s
 
 ParticleEngine/ParticleForceRegistry.o: ParticleEngine/ParticleForceRegistry.cpp.o
@@ -617,7 +690,7 @@ ParticleEngine/ParticleForceRegistry.o: ParticleEngine/ParticleForceRegistry.cpp
 
 # target to build an object file
 ParticleEngine/ParticleForceRegistry.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleForceRegistry.cpp.o
 .PHONY : ParticleEngine/ParticleForceRegistry.cpp.o
 
 ParticleEngine/ParticleForceRegistry.i: ParticleEngine/ParticleForceRegistry.cpp.i
@@ -626,7 +699,7 @@ ParticleEngine/ParticleForceRegistry.i: ParticleEngine/ParticleForceRegistry.cpp
 
 # target to preprocess a source file
 ParticleEngine/ParticleForceRegistry.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleForceRegistry.cpp.i
 .PHONY : ParticleEngine/ParticleForceRegistry.cpp.i
 
 ParticleEngine/ParticleForceRegistry.s: ParticleEngine/ParticleForceRegistry.cpp.s
@@ -635,7 +708,7 @@ ParticleEngine/ParticleForceRegistry.s: ParticleEngine/ParticleForceRegistry.cpp
 
 # target to generate assembly for a file
 ParticleEngine/ParticleForceRegistry.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleForceRegistry.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleForceRegistry.cpp.s
 .PHONY : ParticleEngine/ParticleForceRegistry.cpp.s
 
 ParticleEngine/ParticleGravity.o: ParticleEngine/ParticleGravity.cpp.o
@@ -644,7 +717,7 @@ ParticleEngine/ParticleGravity.o: ParticleEngine/ParticleGravity.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleGravity.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleGravity.cpp.o
 .PHONY : ParticleEngine/ParticleGravity.cpp.o
 
 ParticleEngine/ParticleGravity.i: ParticleEngine/ParticleGravity.cpp.i
@@ -653,7 +726,7 @@ ParticleEngine/ParticleGravity.i: ParticleEngine/ParticleGravity.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleGravity.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleGravity.cpp.i
 .PHONY : ParticleEngine/ParticleGravity.cpp.i
 
 ParticleEngine/ParticleGravity.s: ParticleEngine/ParticleGravity.cpp.s
@@ -662,7 +735,7 @@ ParticleEngine/ParticleGravity.s: ParticleEngine/ParticleGravity.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleGravity.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleGravity.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleGravity.cpp.s
 .PHONY : ParticleEngine/ParticleGravity.cpp.s
 
 ParticleEngine/ParticleLink.o: ParticleEngine/ParticleLink.cpp.o
@@ -671,7 +744,7 @@ ParticleEngine/ParticleLink.o: ParticleEngine/ParticleLink.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleLink.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleLink.cpp.o
 .PHONY : ParticleEngine/ParticleLink.cpp.o
 
 ParticleEngine/ParticleLink.i: ParticleEngine/ParticleLink.cpp.i
@@ -680,7 +753,7 @@ ParticleEngine/ParticleLink.i: ParticleEngine/ParticleLink.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleLink.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleLink.cpp.i
 .PHONY : ParticleEngine/ParticleLink.cpp.i
 
 ParticleEngine/ParticleLink.s: ParticleEngine/ParticleLink.cpp.s
@@ -689,7 +762,7 @@ ParticleEngine/ParticleLink.s: ParticleEngine/ParticleLink.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleLink.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleLink.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleLink.cpp.s
 .PHONY : ParticleEngine/ParticleLink.cpp.s
 
 ParticleEngine/ParticlePlaneContactGenerator.o: ParticleEngine/ParticlePlaneContactGenerator.cpp.o
@@ -698,7 +771,7 @@ ParticleEngine/ParticlePlaneContactGenerator.o: ParticleEngine/ParticlePlaneCont
 
 # target to build an object file
 ParticleEngine/ParticlePlaneContactGenerator.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.o
 .PHONY : ParticleEngine/ParticlePlaneContactGenerator.cpp.o
 
 ParticleEngine/ParticlePlaneContactGenerator.i: ParticleEngine/ParticlePlaneContactGenerator.cpp.i
@@ -707,7 +780,7 @@ ParticleEngine/ParticlePlaneContactGenerator.i: ParticleEngine/ParticlePlaneCont
 
 # target to preprocess a source file
 ParticleEngine/ParticlePlaneContactGenerator.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.i
 .PHONY : ParticleEngine/ParticlePlaneContactGenerator.cpp.i
 
 ParticleEngine/ParticlePlaneContactGenerator.s: ParticleEngine/ParticlePlaneContactGenerator.cpp.s
@@ -716,7 +789,7 @@ ParticleEngine/ParticlePlaneContactGenerator.s: ParticleEngine/ParticlePlaneCont
 
 # target to generate assembly for a file
 ParticleEngine/ParticlePlaneContactGenerator.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticlePlaneContactGenerator.cpp.s
 .PHONY : ParticleEngine/ParticlePlaneContactGenerator.cpp.s
 
 ParticleEngine/ParticleRod.o: ParticleEngine/ParticleRod.cpp.o
@@ -725,7 +798,7 @@ ParticleEngine/ParticleRod.o: ParticleEngine/ParticleRod.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleRod.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleRod.cpp.o
 .PHONY : ParticleEngine/ParticleRod.cpp.o
 
 ParticleEngine/ParticleRod.i: ParticleEngine/ParticleRod.cpp.i
@@ -734,7 +807,7 @@ ParticleEngine/ParticleRod.i: ParticleEngine/ParticleRod.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleRod.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleRod.cpp.i
 .PHONY : ParticleEngine/ParticleRod.cpp.i
 
 ParticleEngine/ParticleRod.s: ParticleEngine/ParticleRod.cpp.s
@@ -743,7 +816,7 @@ ParticleEngine/ParticleRod.s: ParticleEngine/ParticleRod.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleRod.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleRod.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleRod.cpp.s
 .PHONY : ParticleEngine/ParticleRod.cpp.s
 
 ParticleEngine/ParticleSpring.o: ParticleEngine/ParticleSpring.cpp.o
@@ -752,7 +825,7 @@ ParticleEngine/ParticleSpring.o: ParticleEngine/ParticleSpring.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleSpring.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleSpring.cpp.o
 .PHONY : ParticleEngine/ParticleSpring.cpp.o
 
 ParticleEngine/ParticleSpring.i: ParticleEngine/ParticleSpring.cpp.i
@@ -761,7 +834,7 @@ ParticleEngine/ParticleSpring.i: ParticleEngine/ParticleSpring.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleSpring.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleSpring.cpp.i
 .PHONY : ParticleEngine/ParticleSpring.cpp.i
 
 ParticleEngine/ParticleSpring.s: ParticleEngine/ParticleSpring.cpp.s
@@ -770,7 +843,7 @@ ParticleEngine/ParticleSpring.s: ParticleEngine/ParticleSpring.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleSpring.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleSpring.cpp.s
 .PHONY : ParticleEngine/ParticleSpring.cpp.s
 
 ParticleEngine/ParticleWorld.o: ParticleEngine/ParticleWorld.cpp.o
@@ -779,7 +852,7 @@ ParticleEngine/ParticleWorld.o: ParticleEngine/ParticleWorld.cpp.o
 
 # target to build an object file
 ParticleEngine/ParticleWorld.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleWorld.cpp.o
 .PHONY : ParticleEngine/ParticleWorld.cpp.o
 
 ParticleEngine/ParticleWorld.i: ParticleEngine/ParticleWorld.cpp.i
@@ -788,7 +861,7 @@ ParticleEngine/ParticleWorld.i: ParticleEngine/ParticleWorld.cpp.i
 
 # target to preprocess a source file
 ParticleEngine/ParticleWorld.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleWorld.cpp.i
 .PHONY : ParticleEngine/ParticleWorld.cpp.i
 
 ParticleEngine/ParticleWorld.s: ParticleEngine/ParticleWorld.cpp.s
@@ -797,7 +870,7 @@ ParticleEngine/ParticleWorld.s: ParticleEngine/ParticleWorld.cpp.s
 
 # target to generate assembly for a file
 ParticleEngine/ParticleWorld.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ParticleEngine/ParticleWorld.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ParticleEngine/ParticleWorld.cpp.s
 .PHONY : ParticleEngine/ParticleWorld.cpp.s
 
 PhysicsEngine.o: PhysicsEngine.cpp.o
@@ -806,7 +879,7 @@ PhysicsEngine.o: PhysicsEngine.cpp.o
 
 # target to build an object file
 PhysicsEngine.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/PhysicsEngine.cpp.o
 .PHONY : PhysicsEngine.cpp.o
 
 PhysicsEngine.i: PhysicsEngine.cpp.i
@@ -815,7 +888,7 @@ PhysicsEngine.i: PhysicsEngine.cpp.i
 
 # target to preprocess a source file
 PhysicsEngine.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/PhysicsEngine.cpp.i
 .PHONY : PhysicsEngine.cpp.i
 
 PhysicsEngine.s: PhysicsEngine.cpp.s
@@ -824,7 +897,7 @@ PhysicsEngine.s: PhysicsEngine.cpp.s
 
 # target to generate assembly for a file
 PhysicsEngine.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/PhysicsEngine.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/PhysicsEngine.cpp.s
 .PHONY : PhysicsEngine.cpp.s
 
 PhysicsEngineModule.o: PhysicsEngineModule.cpp.o
@@ -833,7 +906,7 @@ PhysicsEngineModule.o: PhysicsEngineModule.cpp.o
 
 # target to build an object file
 PhysicsEngineModule.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/PhysicsEngineModule.cpp.o
 .PHONY : PhysicsEngineModule.cpp.o
 
 PhysicsEngineModule.i: PhysicsEngineModule.cpp.i
@@ -842,7 +915,7 @@ PhysicsEngineModule.i: PhysicsEngineModule.cpp.i
 
 # target to preprocess a source file
 PhysicsEngineModule.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/PhysicsEngineModule.cpp.i
 .PHONY : PhysicsEngineModule.cpp.i
 
 PhysicsEngineModule.s: PhysicsEngineModule.cpp.s
@@ -851,8 +924,35 @@ PhysicsEngineModule.s: PhysicsEngineModule.cpp.s
 
 # target to generate assembly for a file
 PhysicsEngineModule.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/PhysicsEngineModule.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/PhysicsEngineModule.cpp.s
 .PHONY : PhysicsEngineModule.cpp.s
+
+Platform/IPlatform.o: Platform/IPlatform.cpp.o
+
+.PHONY : Platform/IPlatform.o
+
+# target to build an object file
+Platform/IPlatform.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Platform/IPlatform.cpp.o
+.PHONY : Platform/IPlatform.cpp.o
+
+Platform/IPlatform.i: Platform/IPlatform.cpp.i
+
+.PHONY : Platform/IPlatform.i
+
+# target to preprocess a source file
+Platform/IPlatform.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Platform/IPlatform.cpp.i
+.PHONY : Platform/IPlatform.cpp.i
+
+Platform/IPlatform.s: Platform/IPlatform.cpp.s
+
+.PHONY : Platform/IPlatform.s
+
+# target to generate assembly for a file
+Platform/IPlatform.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Platform/IPlatform.cpp.s
+.PHONY : Platform/IPlatform.cpp.s
 
 RigidBodyEngine/AnchoredSpring.o: RigidBodyEngine/AnchoredSpring.cpp.o
 
@@ -860,7 +960,7 @@ RigidBodyEngine/AnchoredSpring.o: RigidBodyEngine/AnchoredSpring.cpp.o
 
 # target to build an object file
 RigidBodyEngine/AnchoredSpring.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/AnchoredSpring.cpp.o
 .PHONY : RigidBodyEngine/AnchoredSpring.cpp.o
 
 RigidBodyEngine/AnchoredSpring.i: RigidBodyEngine/AnchoredSpring.cpp.i
@@ -869,7 +969,7 @@ RigidBodyEngine/AnchoredSpring.i: RigidBodyEngine/AnchoredSpring.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/AnchoredSpring.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/AnchoredSpring.cpp.i
 .PHONY : RigidBodyEngine/AnchoredSpring.cpp.i
 
 RigidBodyEngine/AnchoredSpring.s: RigidBodyEngine/AnchoredSpring.cpp.s
@@ -878,7 +978,7 @@ RigidBodyEngine/AnchoredSpring.s: RigidBodyEngine/AnchoredSpring.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/AnchoredSpring.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/AnchoredSpring.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/AnchoredSpring.cpp.s
 .PHONY : RigidBodyEngine/AnchoredSpring.cpp.s
 
 RigidBodyEngine/BVHNode.o: RigidBodyEngine/BVHNode.cpp.o
@@ -887,7 +987,7 @@ RigidBodyEngine/BVHNode.o: RigidBodyEngine/BVHNode.cpp.o
 
 # target to build an object file
 RigidBodyEngine/BVHNode.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BVHNode.cpp.o
 .PHONY : RigidBodyEngine/BVHNode.cpp.o
 
 RigidBodyEngine/BVHNode.i: RigidBodyEngine/BVHNode.cpp.i
@@ -896,7 +996,7 @@ RigidBodyEngine/BVHNode.i: RigidBodyEngine/BVHNode.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/BVHNode.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BVHNode.cpp.i
 .PHONY : RigidBodyEngine/BVHNode.cpp.i
 
 RigidBodyEngine/BVHNode.s: RigidBodyEngine/BVHNode.cpp.s
@@ -905,7 +1005,7 @@ RigidBodyEngine/BVHNode.s: RigidBodyEngine/BVHNode.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/BVHNode.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BVHNode.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BVHNode.cpp.s
 .PHONY : RigidBodyEngine/BVHNode.cpp.s
 
 RigidBodyEngine/BoundingBox.o: RigidBodyEngine/BoundingBox.cpp.o
@@ -914,7 +1014,7 @@ RigidBodyEngine/BoundingBox.o: RigidBodyEngine/BoundingBox.cpp.o
 
 # target to build an object file
 RigidBodyEngine/BoundingBox.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BoundingBox.cpp.o
 .PHONY : RigidBodyEngine/BoundingBox.cpp.o
 
 RigidBodyEngine/BoundingBox.i: RigidBodyEngine/BoundingBox.cpp.i
@@ -923,7 +1023,7 @@ RigidBodyEngine/BoundingBox.i: RigidBodyEngine/BoundingBox.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/BoundingBox.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BoundingBox.cpp.i
 .PHONY : RigidBodyEngine/BoundingBox.cpp.i
 
 RigidBodyEngine/BoundingBox.s: RigidBodyEngine/BoundingBox.cpp.s
@@ -932,7 +1032,7 @@ RigidBodyEngine/BoundingBox.s: RigidBodyEngine/BoundingBox.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/BoundingBox.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingBox.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BoundingBox.cpp.s
 .PHONY : RigidBodyEngine/BoundingBox.cpp.s
 
 RigidBodyEngine/BoundingSphere.o: RigidBodyEngine/BoundingSphere.cpp.o
@@ -941,7 +1041,7 @@ RigidBodyEngine/BoundingSphere.o: RigidBodyEngine/BoundingSphere.cpp.o
 
 # target to build an object file
 RigidBodyEngine/BoundingSphere.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BoundingSphere.cpp.o
 .PHONY : RigidBodyEngine/BoundingSphere.cpp.o
 
 RigidBodyEngine/BoundingSphere.i: RigidBodyEngine/BoundingSphere.cpp.i
@@ -950,7 +1050,7 @@ RigidBodyEngine/BoundingSphere.i: RigidBodyEngine/BoundingSphere.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/BoundingSphere.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BoundingSphere.cpp.i
 .PHONY : RigidBodyEngine/BoundingSphere.cpp.i
 
 RigidBodyEngine/BoundingSphere.s: RigidBodyEngine/BoundingSphere.cpp.s
@@ -959,7 +1059,7 @@ RigidBodyEngine/BoundingSphere.s: RigidBodyEngine/BoundingSphere.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/BoundingSphere.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/BoundingSphere.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/BoundingSphere.cpp.s
 .PHONY : RigidBodyEngine/BoundingSphere.cpp.s
 
 RigidBodyEngine/CollisionBox.o: RigidBodyEngine/CollisionBox.cpp.o
@@ -968,7 +1068,7 @@ RigidBodyEngine/CollisionBox.o: RigidBodyEngine/CollisionBox.cpp.o
 
 # target to build an object file
 RigidBodyEngine/CollisionBox.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionBox.cpp.o
 .PHONY : RigidBodyEngine/CollisionBox.cpp.o
 
 RigidBodyEngine/CollisionBox.i: RigidBodyEngine/CollisionBox.cpp.i
@@ -977,7 +1077,7 @@ RigidBodyEngine/CollisionBox.i: RigidBodyEngine/CollisionBox.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionBox.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionBox.cpp.i
 .PHONY : RigidBodyEngine/CollisionBox.cpp.i
 
 RigidBodyEngine/CollisionBox.s: RigidBodyEngine/CollisionBox.cpp.s
@@ -986,7 +1086,7 @@ RigidBodyEngine/CollisionBox.s: RigidBodyEngine/CollisionBox.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionBox.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionBox.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionBox.cpp.s
 .PHONY : RigidBodyEngine/CollisionBox.cpp.s
 
 RigidBodyEngine/CollisionCallback.o: RigidBodyEngine/CollisionCallback.cpp.o
@@ -995,7 +1095,7 @@ RigidBodyEngine/CollisionCallback.o: RigidBodyEngine/CollisionCallback.cpp.o
 
 # target to build an object file
 RigidBodyEngine/CollisionCallback.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionCallback.cpp.o
 .PHONY : RigidBodyEngine/CollisionCallback.cpp.o
 
 RigidBodyEngine/CollisionCallback.i: RigidBodyEngine/CollisionCallback.cpp.i
@@ -1004,7 +1104,7 @@ RigidBodyEngine/CollisionCallback.i: RigidBodyEngine/CollisionCallback.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionCallback.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionCallback.cpp.i
 .PHONY : RigidBodyEngine/CollisionCallback.cpp.i
 
 RigidBodyEngine/CollisionCallback.s: RigidBodyEngine/CollisionCallback.cpp.s
@@ -1013,7 +1113,7 @@ RigidBodyEngine/CollisionCallback.s: RigidBodyEngine/CollisionCallback.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionCallback.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionCallback.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionCallback.cpp.s
 .PHONY : RigidBodyEngine/CollisionCallback.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o
@@ -1022,7 +1122,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.o: RigidBodyE
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i
@@ -1031,7 +1131,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.i: RigidBodyE
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s
@@ -1040,7 +1140,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.s: RigidBodyE
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o
@@ -1049,7 +1149,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.o: RigidBo
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i
@@ -1058,7 +1158,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.i: RigidBo
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s
@@ -1067,7 +1167,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.s: RigidBo
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o
@@ -1076,7 +1176,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.o: RigidBody
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i
@@ -1085,7 +1185,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.i: RigidBody
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s
@@ -1094,7 +1194,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.s: RigidBody
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o
@@ -1103,7 +1203,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.o: RigidB
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i
@@ -1112,7 +1212,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.i: RigidB
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s
@@ -1121,7 +1221,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.s: RigidB
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IBoxSphereNarrowAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o
@@ -1130,7 +1230,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.o: Rigi
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i
@@ -1139,7 +1239,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.i: Rigi
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s
@@ -1148,7 +1248,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.s: Rigi
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlaneBoxCollisionAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o
@@ -1157,7 +1257,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.o: Ri
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i
@@ -1166,7 +1266,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.i: Ri
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s
@@ -1175,7 +1275,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.s: Ri
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlanePlaneCollisionAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o
@@ -1184,7 +1284,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.o: R
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i
@@ -1193,7 +1293,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.i: R
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s
@@ -1202,7 +1302,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.s: R
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/IPlaneSphereCollisionAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o
@@ -1211,7 +1311,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.o: Rig
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i
@@ -1220,7 +1320,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.i: Rig
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s
@@ -1229,7 +1329,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.s: Rig
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/ISphereSphereNarrowAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o
@@ -1238,7 +1338,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.o: RigidBodyEngine/Co
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i
@@ -1247,7 +1347,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.i: RigidBodyEngine/Co
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s
@@ -1256,7 +1356,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.s: RigidBodyEngine/Co
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/NullAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o
@@ -1265,7 +1365,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.o: Rigid
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i
@@ -1274,7 +1374,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.i: Rigid
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s
@@ -1283,7 +1383,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.s: Rigid
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlaneBoxCollisionAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o
@@ -1292,7 +1392,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.o: Rig
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i
@@ -1301,7 +1401,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.i: Rig
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s
@@ -1310,7 +1410,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.s: Rig
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlanePlaneCollisionAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o
@@ -1319,7 +1419,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.o: Ri
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i
@@ -1328,7 +1428,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.i: Ri
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s
@@ -1337,7 +1437,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.s: Ri
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/PlaneSphereCollisionAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.o: RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o
@@ -1346,7 +1446,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.o: Rigi
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.i: RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i
@@ -1355,7 +1455,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.i: Rigi
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.s: RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s
@@ -1364,7 +1464,7 @@ RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.s: Rigi
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Algorithm/SphereSphereNarrowAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/BroadPhaseFilter.o: RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o
@@ -1373,7 +1473,7 @@ RigidBodyEngine/CollisionDetection/BroadPhaseFilter.o: RigidBodyEngine/Collision
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.o
 
 RigidBodyEngine/CollisionDetection/BroadPhaseFilter.i: RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i
@@ -1382,7 +1482,7 @@ RigidBodyEngine/CollisionDetection/BroadPhaseFilter.i: RigidBodyEngine/Collision
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.i
 
 RigidBodyEngine/CollisionDetection/BroadPhaseFilter.s: RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s
@@ -1391,7 +1491,7 @@ RigidBodyEngine/CollisionDetection/BroadPhaseFilter.s: RigidBodyEngine/Collision
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/BroadPhaseFilter.cpp.s
 
 RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.o: RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o
@@ -1400,7 +1500,7 @@ RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.o: RigidBodyEngine/C
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.o
 
 RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.i: RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i
@@ -1409,7 +1509,7 @@ RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.i: RigidBodyEngine/C
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.i
 
 RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.s: RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s
@@ -1418,7 +1518,7 @@ RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.s: RigidBodyEngine/C
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.cpp.s
 
 RigidBodyEngine/CollisionDetection/CollisionData.o: RigidBodyEngine/CollisionDetection/CollisionData.cpp.o
@@ -1427,7 +1527,7 @@ RigidBodyEngine/CollisionDetection/CollisionData.o: RigidBodyEngine/CollisionDet
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/CollisionData.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionData.cpp.o
 
 RigidBodyEngine/CollisionDetection/CollisionData.i: RigidBodyEngine/CollisionDetection/CollisionData.cpp.i
@@ -1436,7 +1536,7 @@ RigidBodyEngine/CollisionDetection/CollisionData.i: RigidBodyEngine/CollisionDet
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/CollisionData.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionData.cpp.i
 
 RigidBodyEngine/CollisionDetection/CollisionData.s: RigidBodyEngine/CollisionDetection/CollisionData.cpp.s
@@ -1445,7 +1545,7 @@ RigidBodyEngine/CollisionDetection/CollisionData.s: RigidBodyEngine/CollisionDet
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/CollisionData.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionData.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionData.cpp.s
 
 RigidBodyEngine/CollisionDetection/CollisionDetector.o: RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o
@@ -1454,7 +1554,7 @@ RigidBodyEngine/CollisionDetection/CollisionDetector.o: RigidBodyEngine/Collisio
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.o
 
 RigidBodyEngine/CollisionDetection/CollisionDetector.i: RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i
@@ -1463,7 +1563,7 @@ RigidBodyEngine/CollisionDetection/CollisionDetector.i: RigidBodyEngine/Collisio
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.i
 
 RigidBodyEngine/CollisionDetection/CollisionDetector.s: RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s
@@ -1472,7 +1572,7 @@ RigidBodyEngine/CollisionDetection/CollisionDetector.s: RigidBodyEngine/Collisio
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionDetector.cpp.s
 
 RigidBodyEngine/CollisionDetection/CollisionMask.o: RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o
@@ -1481,7 +1581,7 @@ RigidBodyEngine/CollisionDetection/CollisionMask.o: RigidBodyEngine/CollisionDet
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionMask.cpp.o
 
 RigidBodyEngine/CollisionDetection/CollisionMask.i: RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i
@@ -1490,7 +1590,7 @@ RigidBodyEngine/CollisionDetection/CollisionMask.i: RigidBodyEngine/CollisionDet
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionMask.cpp.i
 
 RigidBodyEngine/CollisionDetection/CollisionMask.s: RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s
@@ -1499,7 +1599,7 @@ RigidBodyEngine/CollisionDetection/CollisionMask.s: RigidBodyEngine/CollisionDet
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionMask.cpp.s
 
 RigidBodyEngine/CollisionDetection/CollisionPair.o: RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o
@@ -1508,7 +1608,7 @@ RigidBodyEngine/CollisionDetection/CollisionPair.o: RigidBodyEngine/CollisionDet
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionPair.cpp.o
 
 RigidBodyEngine/CollisionDetection/CollisionPair.i: RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i
@@ -1517,7 +1617,7 @@ RigidBodyEngine/CollisionDetection/CollisionPair.i: RigidBodyEngine/CollisionDet
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionPair.cpp.i
 
 RigidBodyEngine/CollisionDetection/CollisionPair.s: RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s
@@ -1526,7 +1626,7 @@ RigidBodyEngine/CollisionDetection/CollisionPair.s: RigidBodyEngine/CollisionDet
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/CollisionPair.cpp.s
 
 RigidBodyEngine/CollisionDetection/Contact.o: RigidBodyEngine/CollisionDetection/Contact.cpp.o
@@ -1535,7 +1635,7 @@ RigidBodyEngine/CollisionDetection/Contact.o: RigidBodyEngine/CollisionDetection
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Contact.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Contact.cpp.o
 
 RigidBodyEngine/CollisionDetection/Contact.i: RigidBodyEngine/CollisionDetection/Contact.cpp.i
@@ -1544,7 +1644,7 @@ RigidBodyEngine/CollisionDetection/Contact.i: RigidBodyEngine/CollisionDetection
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Contact.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Contact.cpp.i
 
 RigidBodyEngine/CollisionDetection/Contact.s: RigidBodyEngine/CollisionDetection/Contact.cpp.s
@@ -1553,7 +1653,7 @@ RigidBodyEngine/CollisionDetection/Contact.s: RigidBodyEngine/CollisionDetection
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Contact.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Contact.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Contact.cpp.s
 
 RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.o: RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o
@@ -1562,7 +1662,7 @@ RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.o: RigidBodyEngine/Collisio
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.o
 
 RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.i: RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i
@@ -1571,7 +1671,7 @@ RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.i: RigidBodyEngine/Collisio
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.i
 
 RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.s: RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s
@@ -1580,7 +1680,7 @@ RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.s: RigidBodyEngine/Collisio
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp.s
 
 RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.o: RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o
@@ -1589,7 +1689,7 @@ RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.o: RigidBodyEngine/C
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.o
 
 RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.i: RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i
@@ -1598,7 +1698,7 @@ RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.i: RigidBodyEngine/C
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.i
 
 RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.s: RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s
@@ -1607,7 +1707,7 @@ RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.s: RigidBodyEngine/C
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp.s
 
 RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.o: RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o
@@ -1616,7 +1716,7 @@ RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.o: RigidBodyEngine/Coll
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.o
 
 RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.i: RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i
@@ -1625,7 +1725,7 @@ RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.i: RigidBodyEngine/Coll
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.i
 
 RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.s: RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s
@@ -1634,7 +1734,7 @@ RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.s: RigidBodyEngine/Coll
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp.s
 
 RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.o: RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o
@@ -1643,7 +1743,7 @@ RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.o: RigidBodyEngine/Collisi
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.o
 
 RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.i: RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i
@@ -1652,7 +1752,7 @@ RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.i: RigidBodyEngine/Collisi
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.i
 
 RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.s: RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s
@@ -1661,7 +1761,7 @@ RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.s: RigidBodyEngine/Collisi
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp.s
 
 RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.o: RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o
@@ -1670,7 +1770,7 @@ RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.o: RigidBodyEngine/Collisio
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.o
 
 RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.i: RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i
@@ -1679,7 +1779,7 @@ RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.i: RigidBodyEngine/Collisio
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.i
 
 RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.s: RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s
@@ -1688,7 +1788,7 @@ RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.s: RigidBodyEngine/Collisio
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp.s
 
 RigidBodyEngine/CollisionDetection/Octree.o: RigidBodyEngine/CollisionDetection/Octree.cpp.o
@@ -1697,7 +1797,7 @@ RigidBodyEngine/CollisionDetection/Octree.o: RigidBodyEngine/CollisionDetection/
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/Octree.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/Octree.cpp.o
 
 RigidBodyEngine/CollisionDetection/Octree.i: RigidBodyEngine/CollisionDetection/Octree.cpp.i
@@ -1706,7 +1806,7 @@ RigidBodyEngine/CollisionDetection/Octree.i: RigidBodyEngine/CollisionDetection/
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/Octree.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/Octree.cpp.i
 
 RigidBodyEngine/CollisionDetection/Octree.s: RigidBodyEngine/CollisionDetection/Octree.cpp.s
@@ -1715,7 +1815,7 @@ RigidBodyEngine/CollisionDetection/Octree.s: RigidBodyEngine/CollisionDetection/
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/Octree.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/Octree.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/Octree.cpp.s
 
 RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.o: RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o
@@ -1724,7 +1824,7 @@ RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.o: RigidBodyEngine/Col
 
 # target to build an object file
 RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.o
 
 RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.i: RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i
@@ -1733,7 +1833,7 @@ RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.i: RigidBodyEngine/Col
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.i
 
 RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.s: RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s
@@ -1742,7 +1842,7 @@ RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.s: RigidBodyEngine/Col
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp.s
 
 RigidBodyEngine/CollisionObject.o: RigidBodyEngine/CollisionObject.cpp.o
@@ -1751,7 +1851,7 @@ RigidBodyEngine/CollisionObject.o: RigidBodyEngine/CollisionObject.cpp.o
 
 # target to build an object file
 RigidBodyEngine/CollisionObject.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionObject.cpp.o
 .PHONY : RigidBodyEngine/CollisionObject.cpp.o
 
 RigidBodyEngine/CollisionObject.i: RigidBodyEngine/CollisionObject.cpp.i
@@ -1760,7 +1860,7 @@ RigidBodyEngine/CollisionObject.i: RigidBodyEngine/CollisionObject.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionObject.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionObject.cpp.i
 .PHONY : RigidBodyEngine/CollisionObject.cpp.i
 
 RigidBodyEngine/CollisionObject.s: RigidBodyEngine/CollisionObject.cpp.s
@@ -1769,7 +1869,7 @@ RigidBodyEngine/CollisionObject.s: RigidBodyEngine/CollisionObject.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionObject.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionObject.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionObject.cpp.s
 .PHONY : RigidBodyEngine/CollisionObject.cpp.s
 
 RigidBodyEngine/CollisionPlane.o: RigidBodyEngine/CollisionPlane.cpp.o
@@ -1778,7 +1878,7 @@ RigidBodyEngine/CollisionPlane.o: RigidBodyEngine/CollisionPlane.cpp.o
 
 # target to build an object file
 RigidBodyEngine/CollisionPlane.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionPlane.cpp.o
 .PHONY : RigidBodyEngine/CollisionPlane.cpp.o
 
 RigidBodyEngine/CollisionPlane.i: RigidBodyEngine/CollisionPlane.cpp.i
@@ -1787,7 +1887,7 @@ RigidBodyEngine/CollisionPlane.i: RigidBodyEngine/CollisionPlane.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionPlane.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionPlane.cpp.i
 .PHONY : RigidBodyEngine/CollisionPlane.cpp.i
 
 RigidBodyEngine/CollisionPlane.s: RigidBodyEngine/CollisionPlane.cpp.s
@@ -1796,7 +1896,7 @@ RigidBodyEngine/CollisionPlane.s: RigidBodyEngine/CollisionPlane.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionPlane.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPlane.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionPlane.cpp.s
 .PHONY : RigidBodyEngine/CollisionPlane.cpp.s
 
 RigidBodyEngine/CollisionPrimitive.o: RigidBodyEngine/CollisionPrimitive.cpp.o
@@ -1805,7 +1905,7 @@ RigidBodyEngine/CollisionPrimitive.o: RigidBodyEngine/CollisionPrimitive.cpp.o
 
 # target to build an object file
 RigidBodyEngine/CollisionPrimitive.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionPrimitive.cpp.o
 .PHONY : RigidBodyEngine/CollisionPrimitive.cpp.o
 
 RigidBodyEngine/CollisionPrimitive.i: RigidBodyEngine/CollisionPrimitive.cpp.i
@@ -1814,7 +1914,7 @@ RigidBodyEngine/CollisionPrimitive.i: RigidBodyEngine/CollisionPrimitive.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionPrimitive.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionPrimitive.cpp.i
 .PHONY : RigidBodyEngine/CollisionPrimitive.cpp.i
 
 RigidBodyEngine/CollisionPrimitive.s: RigidBodyEngine/CollisionPrimitive.cpp.s
@@ -1823,7 +1923,7 @@ RigidBodyEngine/CollisionPrimitive.s: RigidBodyEngine/CollisionPrimitive.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionPrimitive.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionPrimitive.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionPrimitive.cpp.s
 .PHONY : RigidBodyEngine/CollisionPrimitive.cpp.s
 
 RigidBodyEngine/CollisionResolution/CollisionResolver.o: RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o
@@ -1832,7 +1932,7 @@ RigidBodyEngine/CollisionResolution/CollisionResolver.o: RigidBodyEngine/Collisi
 
 # target to build an object file
 RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o
 .PHONY : RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.o
 
 RigidBodyEngine/CollisionResolution/CollisionResolver.i: RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i
@@ -1841,7 +1941,7 @@ RigidBodyEngine/CollisionResolution/CollisionResolver.i: RigidBodyEngine/Collisi
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i
 .PHONY : RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.i
 
 RigidBodyEngine/CollisionResolution/CollisionResolver.s: RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s
@@ -1850,7 +1950,7 @@ RigidBodyEngine/CollisionResolution/CollisionResolver.s: RigidBodyEngine/Collisi
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s
 .PHONY : RigidBodyEngine/CollisionResolution/CollisionResolver.cpp.s
 
 RigidBodyEngine/CollisionResolution/FrictionResolver.o: RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o
@@ -1859,7 +1959,7 @@ RigidBodyEngine/CollisionResolution/FrictionResolver.o: RigidBodyEngine/Collisio
 
 # target to build an object file
 RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o
 .PHONY : RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.o
 
 RigidBodyEngine/CollisionResolution/FrictionResolver.i: RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i
@@ -1868,7 +1968,7 @@ RigidBodyEngine/CollisionResolution/FrictionResolver.i: RigidBodyEngine/Collisio
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i
 .PHONY : RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.i
 
 RigidBodyEngine/CollisionResolution/FrictionResolver.s: RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s
@@ -1877,7 +1977,7 @@ RigidBodyEngine/CollisionResolution/FrictionResolver.s: RigidBodyEngine/Collisio
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s
 .PHONY : RigidBodyEngine/CollisionResolution/FrictionResolver.cpp.s
 
 RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.o: RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o
@@ -1886,7 +1986,7 @@ RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.o: RigidBodyEngin
 
 # target to build an object file
 RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o
 .PHONY : RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.o
 
 RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.i: RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i
@@ -1895,7 +1995,7 @@ RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.i: RigidBodyEngin
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i
 .PHONY : RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.i
 
 RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.s: RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s
@@ -1904,7 +2004,7 @@ RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.s: RigidBodyEngin
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s
 .PHONY : RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.cpp.s
 
 RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.o: RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o
@@ -1913,7 +2013,7 @@ RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.o: RigidBodyEngine/
 
 # target to build an object file
 RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o
 .PHONY : RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.o
 
 RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.i: RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i
@@ -1922,7 +2022,7 @@ RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.i: RigidBodyEngine/
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i
 .PHONY : RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.i
 
 RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.s: RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s
@@ -1931,7 +2031,7 @@ RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.s: RigidBodyEngine/
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s
 .PHONY : RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.cpp.s
 
 RigidBodyEngine/CollisionResolution/InterpenetrationResolver.o: RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o
@@ -1940,7 +2040,7 @@ RigidBodyEngine/CollisionResolution/InterpenetrationResolver.o: RigidBodyEngine/
 
 # target to build an object file
 RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o
 .PHONY : RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.o
 
 RigidBodyEngine/CollisionResolution/InterpenetrationResolver.i: RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i
@@ -1949,7 +2049,7 @@ RigidBodyEngine/CollisionResolution/InterpenetrationResolver.i: RigidBodyEngine/
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i
 .PHONY : RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.i
 
 RigidBodyEngine/CollisionResolution/InterpenetrationResolver.s: RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s
@@ -1958,7 +2058,7 @@ RigidBodyEngine/CollisionResolution/InterpenetrationResolver.s: RigidBodyEngine/
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s
 .PHONY : RigidBodyEngine/CollisionResolution/InterpenetrationResolver.cpp.s
 
 RigidBodyEngine/CollisionResolution/VelocityResolver.o: RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o
@@ -1967,7 +2067,7 @@ RigidBodyEngine/CollisionResolution/VelocityResolver.o: RigidBodyEngine/Collisio
 
 # target to build an object file
 RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o
 .PHONY : RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.o
 
 RigidBodyEngine/CollisionResolution/VelocityResolver.i: RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i
@@ -1976,7 +2076,7 @@ RigidBodyEngine/CollisionResolution/VelocityResolver.i: RigidBodyEngine/Collisio
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i
 .PHONY : RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.i
 
 RigidBodyEngine/CollisionResolution/VelocityResolver.s: RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s
@@ -1985,7 +2085,7 @@ RigidBodyEngine/CollisionResolution/VelocityResolver.s: RigidBodyEngine/Collisio
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s
 .PHONY : RigidBodyEngine/CollisionResolution/VelocityResolver.cpp.s
 
 RigidBodyEngine/CollisionSphere.o: RigidBodyEngine/CollisionSphere.cpp.o
@@ -1994,7 +2094,7 @@ RigidBodyEngine/CollisionSphere.o: RigidBodyEngine/CollisionSphere.cpp.o
 
 # target to build an object file
 RigidBodyEngine/CollisionSphere.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionSphere.cpp.o
 .PHONY : RigidBodyEngine/CollisionSphere.cpp.o
 
 RigidBodyEngine/CollisionSphere.i: RigidBodyEngine/CollisionSphere.cpp.i
@@ -2003,7 +2103,7 @@ RigidBodyEngine/CollisionSphere.i: RigidBodyEngine/CollisionSphere.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/CollisionSphere.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionSphere.cpp.i
 .PHONY : RigidBodyEngine/CollisionSphere.cpp.i
 
 RigidBodyEngine/CollisionSphere.s: RigidBodyEngine/CollisionSphere.cpp.s
@@ -2012,7 +2112,7 @@ RigidBodyEngine/CollisionSphere.s: RigidBodyEngine/CollisionSphere.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/CollisionSphere.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/CollisionSphere.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/CollisionSphere.cpp.s
 .PHONY : RigidBodyEngine/CollisionSphere.cpp.s
 
 RigidBodyEngine/DefaultRigidBodyEngineCI.o: RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o
@@ -2021,7 +2121,7 @@ RigidBodyEngine/DefaultRigidBodyEngineCI.o: RigidBodyEngine/DefaultRigidBodyEngi
 
 # target to build an object file
 RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o
 .PHONY : RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.o
 
 RigidBodyEngine/DefaultRigidBodyEngineCI.i: RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i
@@ -2030,7 +2130,7 @@ RigidBodyEngine/DefaultRigidBodyEngineCI.i: RigidBodyEngine/DefaultRigidBodyEngi
 
 # target to preprocess a source file
 RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i
 .PHONY : RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.i
 
 RigidBodyEngine/DefaultRigidBodyEngineCI.s: RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s
@@ -2039,7 +2139,7 @@ RigidBodyEngine/DefaultRigidBodyEngineCI.s: RigidBodyEngine/DefaultRigidBodyEngi
 
 # target to generate assembly for a file
 RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s
 .PHONY : RigidBodyEngine/DefaultRigidBodyEngineCI.cpp.s
 
 RigidBodyEngine/DirectedForce.o: RigidBodyEngine/DirectedForce.cpp.o
@@ -2048,7 +2148,7 @@ RigidBodyEngine/DirectedForce.o: RigidBodyEngine/DirectedForce.cpp.o
 
 # target to build an object file
 RigidBodyEngine/DirectedForce.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/DirectedForce.cpp.o
 .PHONY : RigidBodyEngine/DirectedForce.cpp.o
 
 RigidBodyEngine/DirectedForce.i: RigidBodyEngine/DirectedForce.cpp.i
@@ -2057,7 +2157,7 @@ RigidBodyEngine/DirectedForce.i: RigidBodyEngine/DirectedForce.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/DirectedForce.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/DirectedForce.cpp.i
 .PHONY : RigidBodyEngine/DirectedForce.cpp.i
 
 RigidBodyEngine/DirectedForce.s: RigidBodyEngine/DirectedForce.cpp.s
@@ -2066,7 +2166,7 @@ RigidBodyEngine/DirectedForce.s: RigidBodyEngine/DirectedForce.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/DirectedForce.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/DirectedForce.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/DirectedForce.cpp.s
 .PHONY : RigidBodyEngine/DirectedForce.cpp.s
 
 RigidBodyEngine/ForceGenerator.o: RigidBodyEngine/ForceGenerator.cpp.o
@@ -2075,7 +2175,7 @@ RigidBodyEngine/ForceGenerator.o: RigidBodyEngine/ForceGenerator.cpp.o
 
 # target to build an object file
 RigidBodyEngine/ForceGenerator.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/ForceGenerator.cpp.o
 .PHONY : RigidBodyEngine/ForceGenerator.cpp.o
 
 RigidBodyEngine/ForceGenerator.i: RigidBodyEngine/ForceGenerator.cpp.i
@@ -2084,7 +2184,7 @@ RigidBodyEngine/ForceGenerator.i: RigidBodyEngine/ForceGenerator.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/ForceGenerator.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/ForceGenerator.cpp.i
 .PHONY : RigidBodyEngine/ForceGenerator.cpp.i
 
 RigidBodyEngine/ForceGenerator.s: RigidBodyEngine/ForceGenerator.cpp.s
@@ -2093,7 +2193,7 @@ RigidBodyEngine/ForceGenerator.s: RigidBodyEngine/ForceGenerator.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/ForceGenerator.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/ForceGenerator.cpp.s
 .PHONY : RigidBodyEngine/ForceGenerator.cpp.s
 
 RigidBodyEngine/ForceRegistry.o: RigidBodyEngine/ForceRegistry.cpp.o
@@ -2102,7 +2202,7 @@ RigidBodyEngine/ForceRegistry.o: RigidBodyEngine/ForceRegistry.cpp.o
 
 # target to build an object file
 RigidBodyEngine/ForceRegistry.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/ForceRegistry.cpp.o
 .PHONY : RigidBodyEngine/ForceRegistry.cpp.o
 
 RigidBodyEngine/ForceRegistry.i: RigidBodyEngine/ForceRegistry.cpp.i
@@ -2111,7 +2211,7 @@ RigidBodyEngine/ForceRegistry.i: RigidBodyEngine/ForceRegistry.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/ForceRegistry.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/ForceRegistry.cpp.i
 .PHONY : RigidBodyEngine/ForceRegistry.cpp.i
 
 RigidBodyEngine/ForceRegistry.s: RigidBodyEngine/ForceRegistry.cpp.s
@@ -2120,7 +2220,7 @@ RigidBodyEngine/ForceRegistry.s: RigidBodyEngine/ForceRegistry.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/ForceRegistry.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/ForceRegistry.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/ForceRegistry.cpp.s
 .PHONY : RigidBodyEngine/ForceRegistry.cpp.s
 
 RigidBodyEngine/Gravity.o: RigidBodyEngine/Gravity.cpp.o
@@ -2129,7 +2229,7 @@ RigidBodyEngine/Gravity.o: RigidBodyEngine/Gravity.cpp.o
 
 # target to build an object file
 RigidBodyEngine/Gravity.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/Gravity.cpp.o
 .PHONY : RigidBodyEngine/Gravity.cpp.o
 
 RigidBodyEngine/Gravity.i: RigidBodyEngine/Gravity.cpp.i
@@ -2138,7 +2238,7 @@ RigidBodyEngine/Gravity.i: RigidBodyEngine/Gravity.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/Gravity.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/Gravity.cpp.i
 .PHONY : RigidBodyEngine/Gravity.cpp.i
 
 RigidBodyEngine/Gravity.s: RigidBodyEngine/Gravity.cpp.s
@@ -2147,7 +2247,7 @@ RigidBodyEngine/Gravity.s: RigidBodyEngine/Gravity.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/Gravity.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Gravity.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/Gravity.cpp.s
 .PHONY : RigidBodyEngine/Gravity.cpp.s
 
 RigidBodyEngine/PhysicsMaterial.o: RigidBodyEngine/PhysicsMaterial.cpp.o
@@ -2156,7 +2256,7 @@ RigidBodyEngine/PhysicsMaterial.o: RigidBodyEngine/PhysicsMaterial.cpp.o
 
 # target to build an object file
 RigidBodyEngine/PhysicsMaterial.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/PhysicsMaterial.cpp.o
 .PHONY : RigidBodyEngine/PhysicsMaterial.cpp.o
 
 RigidBodyEngine/PhysicsMaterial.i: RigidBodyEngine/PhysicsMaterial.cpp.i
@@ -2165,7 +2265,7 @@ RigidBodyEngine/PhysicsMaterial.i: RigidBodyEngine/PhysicsMaterial.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/PhysicsMaterial.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/PhysicsMaterial.cpp.i
 .PHONY : RigidBodyEngine/PhysicsMaterial.cpp.i
 
 RigidBodyEngine/PhysicsMaterial.s: RigidBodyEngine/PhysicsMaterial.cpp.s
@@ -2174,7 +2274,7 @@ RigidBodyEngine/PhysicsMaterial.s: RigidBodyEngine/PhysicsMaterial.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/PhysicsMaterial.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/PhysicsMaterial.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/PhysicsMaterial.cpp.s
 .PHONY : RigidBodyEngine/PhysicsMaterial.cpp.s
 
 RigidBodyEngine/RigidBody.o: RigidBodyEngine/RigidBody.cpp.o
@@ -2183,7 +2283,7 @@ RigidBodyEngine/RigidBody.o: RigidBodyEngine/RigidBody.cpp.o
 
 # target to build an object file
 RigidBodyEngine/RigidBody.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBody.cpp.o
 .PHONY : RigidBodyEngine/RigidBody.cpp.o
 
 RigidBodyEngine/RigidBody.i: RigidBodyEngine/RigidBody.cpp.i
@@ -2192,7 +2292,7 @@ RigidBodyEngine/RigidBody.i: RigidBodyEngine/RigidBody.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/RigidBody.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBody.cpp.i
 .PHONY : RigidBodyEngine/RigidBody.cpp.i
 
 RigidBodyEngine/RigidBody.s: RigidBodyEngine/RigidBody.cpp.s
@@ -2201,7 +2301,7 @@ RigidBodyEngine/RigidBody.s: RigidBodyEngine/RigidBody.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/RigidBody.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBody.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBody.cpp.s
 .PHONY : RigidBodyEngine/RigidBody.cpp.s
 
 RigidBodyEngine/RigidBodyDef.o: RigidBodyEngine/RigidBodyDef.cpp.o
@@ -2210,7 +2310,7 @@ RigidBodyEngine/RigidBodyDef.o: RigidBodyEngine/RigidBodyDef.cpp.o
 
 # target to build an object file
 RigidBodyEngine/RigidBodyDef.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyDef.cpp.o
 .PHONY : RigidBodyEngine/RigidBodyDef.cpp.o
 
 RigidBodyEngine/RigidBodyDef.i: RigidBodyEngine/RigidBodyDef.cpp.i
@@ -2219,7 +2319,7 @@ RigidBodyEngine/RigidBodyDef.i: RigidBodyEngine/RigidBodyDef.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/RigidBodyDef.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyDef.cpp.i
 .PHONY : RigidBodyEngine/RigidBodyDef.cpp.i
 
 RigidBodyEngine/RigidBodyDef.s: RigidBodyEngine/RigidBodyDef.cpp.s
@@ -2228,7 +2328,7 @@ RigidBodyEngine/RigidBodyDef.s: RigidBodyEngine/RigidBodyDef.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/RigidBodyDef.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyDef.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyDef.cpp.s
 .PHONY : RigidBodyEngine/RigidBodyDef.cpp.s
 
 RigidBodyEngine/RigidBodyEngineCI.o: RigidBodyEngine/RigidBodyEngineCI.cpp.o
@@ -2237,7 +2337,7 @@ RigidBodyEngine/RigidBodyEngineCI.o: RigidBodyEngine/RigidBodyEngineCI.cpp.o
 
 # target to build an object file
 RigidBodyEngine/RigidBodyEngineCI.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.o
 .PHONY : RigidBodyEngine/RigidBodyEngineCI.cpp.o
 
 RigidBodyEngine/RigidBodyEngineCI.i: RigidBodyEngine/RigidBodyEngineCI.cpp.i
@@ -2246,7 +2346,7 @@ RigidBodyEngine/RigidBodyEngineCI.i: RigidBodyEngine/RigidBodyEngineCI.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/RigidBodyEngineCI.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.i
 .PHONY : RigidBodyEngine/RigidBodyEngineCI.cpp.i
 
 RigidBodyEngine/RigidBodyEngineCI.s: RigidBodyEngine/RigidBodyEngineCI.cpp.s
@@ -2255,7 +2355,7 @@ RigidBodyEngine/RigidBodyEngineCI.s: RigidBodyEngine/RigidBodyEngineCI.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/RigidBodyEngineCI.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyEngineCI.cpp.s
 .PHONY : RigidBodyEngine/RigidBodyEngineCI.cpp.s
 
 RigidBodyEngine/RigidBodyWorld.o: RigidBodyEngine/RigidBodyWorld.cpp.o
@@ -2264,7 +2364,7 @@ RigidBodyEngine/RigidBodyWorld.o: RigidBodyEngine/RigidBodyWorld.cpp.o
 
 # target to build an object file
 RigidBodyEngine/RigidBodyWorld.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyWorld.cpp.o
 .PHONY : RigidBodyEngine/RigidBodyWorld.cpp.o
 
 RigidBodyEngine/RigidBodyWorld.i: RigidBodyEngine/RigidBodyWorld.cpp.i
@@ -2273,7 +2373,7 @@ RigidBodyEngine/RigidBodyWorld.i: RigidBodyEngine/RigidBodyWorld.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/RigidBodyWorld.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyWorld.cpp.i
 .PHONY : RigidBodyEngine/RigidBodyWorld.cpp.i
 
 RigidBodyEngine/RigidBodyWorld.s: RigidBodyEngine/RigidBodyWorld.cpp.s
@@ -2282,7 +2382,7 @@ RigidBodyEngine/RigidBodyWorld.s: RigidBodyEngine/RigidBodyWorld.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/RigidBodyWorld.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/RigidBodyWorld.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/RigidBodyWorld.cpp.s
 .PHONY : RigidBodyEngine/RigidBodyWorld.cpp.s
 
 RigidBodyEngine/Spring.o: RigidBodyEngine/Spring.cpp.o
@@ -2291,7 +2391,7 @@ RigidBodyEngine/Spring.o: RigidBodyEngine/Spring.cpp.o
 
 # target to build an object file
 RigidBodyEngine/Spring.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/Spring.cpp.o
 .PHONY : RigidBodyEngine/Spring.cpp.o
 
 RigidBodyEngine/Spring.i: RigidBodyEngine/Spring.cpp.i
@@ -2300,7 +2400,7 @@ RigidBodyEngine/Spring.i: RigidBodyEngine/Spring.cpp.i
 
 # target to preprocess a source file
 RigidBodyEngine/Spring.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/Spring.cpp.i
 .PHONY : RigidBodyEngine/Spring.cpp.i
 
 RigidBodyEngine/Spring.s: RigidBodyEngine/Spring.cpp.s
@@ -2309,7 +2409,7 @@ RigidBodyEngine/Spring.s: RigidBodyEngine/Spring.cpp.s
 
 # target to generate assembly for a file
 RigidBodyEngine/Spring.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/RigidBodyEngine/Spring.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/RigidBodyEngine/Spring.cpp.s
 .PHONY : RigidBodyEngine/Spring.cpp.s
 
 ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.o: ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o
@@ -2318,7 +2418,7 @@ ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.o: ServiceLocator/ServiceL
 
 # target to build an object file
 ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o
 .PHONY : ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.o
 
 ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.i: ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i
@@ -2327,7 +2427,7 @@ ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.i: ServiceLocator/ServiceL
 
 # target to preprocess a source file
 ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i
 .PHONY : ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.i
 
 ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.s: ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s
@@ -2336,7 +2436,7 @@ ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.s: ServiceLocator/ServiceL
 
 # target to generate assembly for a file
 ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s
 .PHONY : ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.cpp.s
 
 ServiceLocator/ServiceLocatorComputationInterface.o: ServiceLocator/ServiceLocatorComputationInterface.cpp.o
@@ -2345,7 +2445,7 @@ ServiceLocator/ServiceLocatorComputationInterface.o: ServiceLocator/ServiceLocat
 
 # target to build an object file
 ServiceLocator/ServiceLocatorComputationInterface.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.o
 .PHONY : ServiceLocator/ServiceLocatorComputationInterface.cpp.o
 
 ServiceLocator/ServiceLocatorComputationInterface.i: ServiceLocator/ServiceLocatorComputationInterface.cpp.i
@@ -2354,7 +2454,7 @@ ServiceLocator/ServiceLocatorComputationInterface.i: ServiceLocator/ServiceLocat
 
 # target to preprocess a source file
 ServiceLocator/ServiceLocatorComputationInterface.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.i
 .PHONY : ServiceLocator/ServiceLocatorComputationInterface.cpp.i
 
 ServiceLocator/ServiceLocatorComputationInterface.s: ServiceLocator/ServiceLocatorComputationInterface.cpp.s
@@ -2363,7 +2463,7 @@ ServiceLocator/ServiceLocatorComputationInterface.s: ServiceLocator/ServiceLocat
 
 # target to generate assembly for a file
 ServiceLocator/ServiceLocatorComputationInterface.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/ServiceLocator/ServiceLocatorComputationInterface.cpp.s
 .PHONY : ServiceLocator/ServiceLocatorComputationInterface.cpp.s
 
 Transform3D.o: Transform3D.cpp.o
@@ -2372,7 +2472,7 @@ Transform3D.o: Transform3D.cpp.o
 
 # target to build an object file
 Transform3D.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Transform3D.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Transform3D.cpp.o
 .PHONY : Transform3D.cpp.o
 
 Transform3D.i: Transform3D.cpp.i
@@ -2381,7 +2481,7 @@ Transform3D.i: Transform3D.cpp.i
 
 # target to preprocess a source file
 Transform3D.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Transform3D.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Transform3D.cpp.i
 .PHONY : Transform3D.cpp.i
 
 Transform3D.s: Transform3D.cpp.s
@@ -2390,7 +2490,7 @@ Transform3D.s: Transform3D.cpp.s
 
 # target to generate assembly for a file
 Transform3D.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Transform3D.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Transform3D.cpp.s
 .PHONY : Transform3D.cpp.s
 
 Utility/InertiaTensorGenerator.o: Utility/InertiaTensorGenerator.cpp.o
@@ -2399,7 +2499,7 @@ Utility/InertiaTensorGenerator.o: Utility/InertiaTensorGenerator.cpp.o
 
 # target to build an object file
 Utility/InertiaTensorGenerator.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Utility/InertiaTensorGenerator.cpp.o
 .PHONY : Utility/InertiaTensorGenerator.cpp.o
 
 Utility/InertiaTensorGenerator.i: Utility/InertiaTensorGenerator.cpp.i
@@ -2408,7 +2508,7 @@ Utility/InertiaTensorGenerator.i: Utility/InertiaTensorGenerator.cpp.i
 
 # target to preprocess a source file
 Utility/InertiaTensorGenerator.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Utility/InertiaTensorGenerator.cpp.i
 .PHONY : Utility/InertiaTensorGenerator.cpp.i
 
 Utility/InertiaTensorGenerator.s: Utility/InertiaTensorGenerator.cpp.s
@@ -2417,7 +2517,7 @@ Utility/InertiaTensorGenerator.s: Utility/InertiaTensorGenerator.cpp.s
 
 # target to generate assembly for a file
 Utility/InertiaTensorGenerator.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Utility/InertiaTensorGenerator.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Utility/InertiaTensorGenerator.cpp.s
 .PHONY : Utility/InertiaTensorGenerator.cpp.s
 
 Utility/Random.o: Utility/Random.cpp.o
@@ -2426,7 +2526,7 @@ Utility/Random.o: Utility/Random.cpp.o
 
 # target to build an object file
 Utility/Random.cpp.o:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.o
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Utility/Random.cpp.o
 .PHONY : Utility/Random.cpp.o
 
 Utility/Random.i: Utility/Random.cpp.i
@@ -2435,7 +2535,7 @@ Utility/Random.i: Utility/Random.cpp.i
 
 # target to preprocess a source file
 Utility/Random.cpp.i:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.i
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Utility/Random.cpp.i
 .PHONY : Utility/Random.cpp.i
 
 Utility/Random.s: Utility/Random.cpp.s
@@ -2444,8 +2544,494 @@ Utility/Random.s: Utility/Random.cpp.s
 
 # target to generate assembly for a file
 Utility/Random.cpp.s:
-	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/rumble3d.dir/build.make src/CMakeFiles/rumble3d.dir/Utility/Random.cpp.s
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Utility/Random.cpp.s
 .PHONY : Utility/Random.cpp.s
+
+Water/SPHEngine/Builder/ISPHEngineFactory.o: Water/SPHEngine/Builder/ISPHEngineFactory.cpp.o
+
+.PHONY : Water/SPHEngine/Builder/ISPHEngineFactory.o
+
+# target to build an object file
+Water/SPHEngine/Builder/ISPHEngineFactory.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Builder/ISPHEngineFactory.cpp.o
+.PHONY : Water/SPHEngine/Builder/ISPHEngineFactory.cpp.o
+
+Water/SPHEngine/Builder/ISPHEngineFactory.i: Water/SPHEngine/Builder/ISPHEngineFactory.cpp.i
+
+.PHONY : Water/SPHEngine/Builder/ISPHEngineFactory.i
+
+# target to preprocess a source file
+Water/SPHEngine/Builder/ISPHEngineFactory.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Builder/ISPHEngineFactory.cpp.i
+.PHONY : Water/SPHEngine/Builder/ISPHEngineFactory.cpp.i
+
+Water/SPHEngine/Builder/ISPHEngineFactory.s: Water/SPHEngine/Builder/ISPHEngineFactory.cpp.s
+
+.PHONY : Water/SPHEngine/Builder/ISPHEngineFactory.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Builder/ISPHEngineFactory.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Builder/ISPHEngineFactory.cpp.s
+.PHONY : Water/SPHEngine/Builder/ISPHEngineFactory.cpp.s
+
+Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.o: Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.o
+.PHONY : Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.o
+
+Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.i: Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.i
+.PHONY : Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.i
+
+Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.s: Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.s
+.PHONY : Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.cpp.s
+
+Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.o: Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.o
+.PHONY : Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.o
+
+Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.i: Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.i
+.PHONY : Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.i
+
+Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.s: Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.s
+.PHONY : Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.cpp.s
+
+Water/SPHEngine/Entity/SPHContext.o: Water/SPHEngine/Entity/SPHContext.cpp.o
+
+.PHONY : Water/SPHEngine/Entity/SPHContext.o
+
+# target to build an object file
+Water/SPHEngine/Entity/SPHContext.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHContext.cpp.o
+.PHONY : Water/SPHEngine/Entity/SPHContext.cpp.o
+
+Water/SPHEngine/Entity/SPHContext.i: Water/SPHEngine/Entity/SPHContext.cpp.i
+
+.PHONY : Water/SPHEngine/Entity/SPHContext.i
+
+# target to preprocess a source file
+Water/SPHEngine/Entity/SPHContext.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHContext.cpp.i
+.PHONY : Water/SPHEngine/Entity/SPHContext.cpp.i
+
+Water/SPHEngine/Entity/SPHContext.s: Water/SPHEngine/Entity/SPHContext.cpp.s
+
+.PHONY : Water/SPHEngine/Entity/SPHContext.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Entity/SPHContext.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHContext.cpp.s
+.PHONY : Water/SPHEngine/Entity/SPHContext.cpp.s
+
+Water/SPHEngine/Entity/SPHParticle.o: Water/SPHEngine/Entity/SPHParticle.cpp.o
+
+.PHONY : Water/SPHEngine/Entity/SPHParticle.o
+
+# target to build an object file
+Water/SPHEngine/Entity/SPHParticle.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHParticle.cpp.o
+.PHONY : Water/SPHEngine/Entity/SPHParticle.cpp.o
+
+Water/SPHEngine/Entity/SPHParticle.i: Water/SPHEngine/Entity/SPHParticle.cpp.i
+
+.PHONY : Water/SPHEngine/Entity/SPHParticle.i
+
+# target to preprocess a source file
+Water/SPHEngine/Entity/SPHParticle.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHParticle.cpp.i
+.PHONY : Water/SPHEngine/Entity/SPHParticle.cpp.i
+
+Water/SPHEngine/Entity/SPHParticle.s: Water/SPHEngine/Entity/SPHParticle.cpp.s
+
+.PHONY : Water/SPHEngine/Entity/SPHParticle.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Entity/SPHParticle.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHParticle.cpp.s
+.PHONY : Water/SPHEngine/Entity/SPHParticle.cpp.s
+
+Water/SPHEngine/Entity/SPHParticleDefinition.o: Water/SPHEngine/Entity/SPHParticleDefinition.cpp.o
+
+.PHONY : Water/SPHEngine/Entity/SPHParticleDefinition.o
+
+# target to build an object file
+Water/SPHEngine/Entity/SPHParticleDefinition.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHParticleDefinition.cpp.o
+.PHONY : Water/SPHEngine/Entity/SPHParticleDefinition.cpp.o
+
+Water/SPHEngine/Entity/SPHParticleDefinition.i: Water/SPHEngine/Entity/SPHParticleDefinition.cpp.i
+
+.PHONY : Water/SPHEngine/Entity/SPHParticleDefinition.i
+
+# target to preprocess a source file
+Water/SPHEngine/Entity/SPHParticleDefinition.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHParticleDefinition.cpp.i
+.PHONY : Water/SPHEngine/Entity/SPHParticleDefinition.cpp.i
+
+Water/SPHEngine/Entity/SPHParticleDefinition.s: Water/SPHEngine/Entity/SPHParticleDefinition.cpp.s
+
+.PHONY : Water/SPHEngine/Entity/SPHParticleDefinition.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Entity/SPHParticleDefinition.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHParticleDefinition.cpp.s
+.PHONY : Water/SPHEngine/Entity/SPHParticleDefinition.cpp.s
+
+Water/SPHEngine/Entity/SPHSystem.o: Water/SPHEngine/Entity/SPHSystem.cpp.o
+
+.PHONY : Water/SPHEngine/Entity/SPHSystem.o
+
+# target to build an object file
+Water/SPHEngine/Entity/SPHSystem.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHSystem.cpp.o
+.PHONY : Water/SPHEngine/Entity/SPHSystem.cpp.o
+
+Water/SPHEngine/Entity/SPHSystem.i: Water/SPHEngine/Entity/SPHSystem.cpp.i
+
+.PHONY : Water/SPHEngine/Entity/SPHSystem.i
+
+# target to preprocess a source file
+Water/SPHEngine/Entity/SPHSystem.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHSystem.cpp.i
+.PHONY : Water/SPHEngine/Entity/SPHSystem.cpp.i
+
+Water/SPHEngine/Entity/SPHSystem.s: Water/SPHEngine/Entity/SPHSystem.cpp.s
+
+.PHONY : Water/SPHEngine/Entity/SPHSystem.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Entity/SPHSystem.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Entity/SPHSystem.cpp.s
+.PHONY : Water/SPHEngine/Entity/SPHSystem.cpp.s
+
+Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.o: Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.o
+.PHONY : Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.o
+
+Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.i: Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.i
+.PHONY : Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.i
+
+Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.s: Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.s
+.PHONY : Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.cpp.s
+
+Water/SPHEngine/Integrator/ISPHIntegrator.o: Water/SPHEngine/Integrator/ISPHIntegrator.cpp.o
+
+.PHONY : Water/SPHEngine/Integrator/ISPHIntegrator.o
+
+# target to build an object file
+Water/SPHEngine/Integrator/ISPHIntegrator.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Integrator/ISPHIntegrator.cpp.o
+.PHONY : Water/SPHEngine/Integrator/ISPHIntegrator.cpp.o
+
+Water/SPHEngine/Integrator/ISPHIntegrator.i: Water/SPHEngine/Integrator/ISPHIntegrator.cpp.i
+
+.PHONY : Water/SPHEngine/Integrator/ISPHIntegrator.i
+
+# target to preprocess a source file
+Water/SPHEngine/Integrator/ISPHIntegrator.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Integrator/ISPHIntegrator.cpp.i
+.PHONY : Water/SPHEngine/Integrator/ISPHIntegrator.cpp.i
+
+Water/SPHEngine/Integrator/ISPHIntegrator.s: Water/SPHEngine/Integrator/ISPHIntegrator.cpp.s
+
+.PHONY : Water/SPHEngine/Integrator/ISPHIntegrator.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Integrator/ISPHIntegrator.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Integrator/ISPHIntegrator.cpp.s
+.PHONY : Water/SPHEngine/Integrator/ISPHIntegrator.cpp.s
+
+Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.o: Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.o
+.PHONY : Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.o
+
+Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.i: Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.i
+.PHONY : Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.i
+
+Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.s: Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.s
+.PHONY : Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.cpp.s
+
+Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.o: Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.o
+.PHONY : Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.o
+
+Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.i: Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.i
+.PHONY : Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.i
+
+Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.s: Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.s
+.PHONY : Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.cpp.s
+
+Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.o: Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.o
+.PHONY : Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.o
+
+Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.i: Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.i
+.PHONY : Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.i
+
+Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.s: Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.s
+.PHONY : Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.cpp.s
+
+Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.o: Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.o
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.o
+
+# target to build an object file
+Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.o
+.PHONY : Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.o
+
+Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.i: Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.i
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.i
+
+# target to preprocess a source file
+Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.i
+.PHONY : Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.i
+
+Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.s: Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.s
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.s
+.PHONY : Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.cpp.s
+
+Water/SPHEngine/Kernel/Cpu/SmoothingKernel.o: Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.o
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/SmoothingKernel.o
+
+# target to build an object file
+Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.o
+.PHONY : Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.o
+
+Water/SPHEngine/Kernel/Cpu/SmoothingKernel.i: Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.i
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/SmoothingKernel.i
+
+# target to preprocess a source file
+Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.i
+.PHONY : Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.i
+
+Water/SPHEngine/Kernel/Cpu/SmoothingKernel.s: Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.s
+
+.PHONY : Water/SPHEngine/Kernel/Cpu/SmoothingKernel.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.s
+.PHONY : Water/SPHEngine/Kernel/Cpu/SmoothingKernel.cpp.s
+
+Water/SPHEngine/Kernel/ISPHKernel.o: Water/SPHEngine/Kernel/ISPHKernel.cpp.o
+
+.PHONY : Water/SPHEngine/Kernel/ISPHKernel.o
+
+# target to build an object file
+Water/SPHEngine/Kernel/ISPHKernel.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/ISPHKernel.cpp.o
+.PHONY : Water/SPHEngine/Kernel/ISPHKernel.cpp.o
+
+Water/SPHEngine/Kernel/ISPHKernel.i: Water/SPHEngine/Kernel/ISPHKernel.cpp.i
+
+.PHONY : Water/SPHEngine/Kernel/ISPHKernel.i
+
+# target to preprocess a source file
+Water/SPHEngine/Kernel/ISPHKernel.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/ISPHKernel.cpp.i
+.PHONY : Water/SPHEngine/Kernel/ISPHKernel.cpp.i
+
+Water/SPHEngine/Kernel/ISPHKernel.s: Water/SPHEngine/Kernel/ISPHKernel.cpp.s
+
+.PHONY : Water/SPHEngine/Kernel/ISPHKernel.s
+
+# target to generate assembly for a file
+Water/SPHEngine/Kernel/ISPHKernel.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/Kernel/ISPHKernel.cpp.s
+.PHONY : Water/SPHEngine/Kernel/ISPHKernel.cpp.s
+
+Water/SPHEngine/SPHEngine.o: Water/SPHEngine/SPHEngine.cpp.o
+
+.PHONY : Water/SPHEngine/SPHEngine.o
+
+# target to build an object file
+Water/SPHEngine/SPHEngine.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/SPHEngine.cpp.o
+.PHONY : Water/SPHEngine/SPHEngine.cpp.o
+
+Water/SPHEngine/SPHEngine.i: Water/SPHEngine/SPHEngine.cpp.i
+
+.PHONY : Water/SPHEngine/SPHEngine.i
+
+# target to preprocess a source file
+Water/SPHEngine/SPHEngine.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/SPHEngine.cpp.i
+.PHONY : Water/SPHEngine/SPHEngine.cpp.i
+
+Water/SPHEngine/SPHEngine.s: Water/SPHEngine/SPHEngine.cpp.s
+
+.PHONY : Water/SPHEngine/SPHEngine.s
+
+# target to generate assembly for a file
+Water/SPHEngine/SPHEngine.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/SPHEngine.cpp.s
+.PHONY : Water/SPHEngine/SPHEngine.cpp.s
+
+Water/SPHEngine/SPHEngineComputationInterfaceBase.o: Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.o
+
+.PHONY : Water/SPHEngine/SPHEngineComputationInterfaceBase.o
+
+# target to build an object file
+Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.o
+.PHONY : Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.o
+
+Water/SPHEngine/SPHEngineComputationInterfaceBase.i: Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.i
+
+.PHONY : Water/SPHEngine/SPHEngineComputationInterfaceBase.i
+
+# target to preprocess a source file
+Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.i
+.PHONY : Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.i
+
+Water/SPHEngine/SPHEngineComputationInterfaceBase.s: Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.s
+
+.PHONY : Water/SPHEngine/SPHEngineComputationInterfaceBase.s
+
+# target to generate assembly for a file
+Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.s
+.PHONY : Water/SPHEngine/SPHEngineComputationInterfaceBase.cpp.s
+
+Water/ShallowWaterEngine/ShallowWaterEngine.o: Water/ShallowWaterEngine/ShallowWaterEngine.cpp.o
+
+.PHONY : Water/ShallowWaterEngine/ShallowWaterEngine.o
+
+# target to build an object file
+Water/ShallowWaterEngine/ShallowWaterEngine.cpp.o:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/ShallowWaterEngine/ShallowWaterEngine.cpp.o
+.PHONY : Water/ShallowWaterEngine/ShallowWaterEngine.cpp.o
+
+Water/ShallowWaterEngine/ShallowWaterEngine.i: Water/ShallowWaterEngine/ShallowWaterEngine.cpp.i
+
+.PHONY : Water/ShallowWaterEngine/ShallowWaterEngine.i
+
+# target to preprocess a source file
+Water/ShallowWaterEngine/ShallowWaterEngine.cpp.i:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/ShallowWaterEngine/ShallowWaterEngine.cpp.i
+.PHONY : Water/ShallowWaterEngine/ShallowWaterEngine.cpp.i
+
+Water/ShallowWaterEngine/ShallowWaterEngine.s: Water/ShallowWaterEngine/ShallowWaterEngine.cpp.s
+
+.PHONY : Water/ShallowWaterEngine/ShallowWaterEngine.s
+
+# target to generate assembly for a file
+Water/ShallowWaterEngine/ShallowWaterEngine.cpp.s:
+	cd /home/nelaty/Development/Repositories/Rumble3D/cmake-build-debug && $(MAKE) -f src/CMakeFiles/Rumble3D.dir/build.make src/CMakeFiles/Rumble3D.dir/Water/ShallowWaterEngine/ShallowWaterEngine.cpp.s
+.PHONY : Water/ShallowWaterEngine/ShallowWaterEngine.cpp.s
 
 # Help Target
 help:
@@ -2453,12 +3039,19 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... install/strip"
+	@echo "... install/local"
+	@echo "... Rumble3D"
 	@echo "... edit_cache"
-	@echo "... rumble3d"
+	@echo "... rebuild_cache"
+	@echo "... install"
+	@echo "... list_install_components"
 	@echo "... IComputationInterface.o"
 	@echo "... IComputationInterface.i"
 	@echo "... IComputationInterface.s"
+	@echo "... MolecularDynamics/MolecularDynamicsEngine.o"
+	@echo "... MolecularDynamics/MolecularDynamicsEngine.i"
+	@echo "... MolecularDynamics/MolecularDynamicsEngine.s"
 	@echo "... ParticleEngine/DefaultParticleEngineCI.o"
 	@echo "... ParticleEngine/DefaultParticleEngineCI.i"
 	@echo "... ParticleEngine/DefaultParticleEngineCI.s"
@@ -2537,6 +3130,9 @@ help:
 	@echo "... PhysicsEngineModule.o"
 	@echo "... PhysicsEngineModule.i"
 	@echo "... PhysicsEngineModule.s"
+	@echo "... Platform/IPlatform.o"
+	@echo "... Platform/IPlatform.i"
+	@echo "... Platform/IPlatform.s"
 	@echo "... RigidBodyEngine/AnchoredSpring.o"
 	@echo "... RigidBodyEngine/AnchoredSpring.i"
 	@echo "... RigidBodyEngine/AnchoredSpring.s"
@@ -2714,6 +3310,60 @@ help:
 	@echo "... Utility/Random.o"
 	@echo "... Utility/Random.i"
 	@echo "... Utility/Random.s"
+	@echo "... Water/SPHEngine/Builder/ISPHEngineFactory.o"
+	@echo "... Water/SPHEngine/Builder/ISPHEngineFactory.i"
+	@echo "... Water/SPHEngine/Builder/ISPHEngineFactory.s"
+	@echo "... Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.o"
+	@echo "... Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.i"
+	@echo "... Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.s"
+	@echo "... Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.o"
+	@echo "... Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.i"
+	@echo "... Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.s"
+	@echo "... Water/SPHEngine/Entity/SPHContext.o"
+	@echo "... Water/SPHEngine/Entity/SPHContext.i"
+	@echo "... Water/SPHEngine/Entity/SPHContext.s"
+	@echo "... Water/SPHEngine/Entity/SPHParticle.o"
+	@echo "... Water/SPHEngine/Entity/SPHParticle.i"
+	@echo "... Water/SPHEngine/Entity/SPHParticle.s"
+	@echo "... Water/SPHEngine/Entity/SPHParticleDefinition.o"
+	@echo "... Water/SPHEngine/Entity/SPHParticleDefinition.i"
+	@echo "... Water/SPHEngine/Entity/SPHParticleDefinition.s"
+	@echo "... Water/SPHEngine/Entity/SPHSystem.o"
+	@echo "... Water/SPHEngine/Entity/SPHSystem.i"
+	@echo "... Water/SPHEngine/Entity/SPHSystem.s"
+	@echo "... Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.o"
+	@echo "... Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.i"
+	@echo "... Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.s"
+	@echo "... Water/SPHEngine/Integrator/ISPHIntegrator.o"
+	@echo "... Water/SPHEngine/Integrator/ISPHIntegrator.i"
+	@echo "... Water/SPHEngine/Integrator/ISPHIntegrator.s"
+	@echo "... Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.o"
+	@echo "... Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.i"
+	@echo "... Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.s"
+	@echo "... Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.o"
+	@echo "... Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.i"
+	@echo "... Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.s"
+	@echo "... Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.o"
+	@echo "... Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.i"
+	@echo "... Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.s"
+	@echo "... Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.o"
+	@echo "... Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.i"
+	@echo "... Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.s"
+	@echo "... Water/SPHEngine/Kernel/Cpu/SmoothingKernel.o"
+	@echo "... Water/SPHEngine/Kernel/Cpu/SmoothingKernel.i"
+	@echo "... Water/SPHEngine/Kernel/Cpu/SmoothingKernel.s"
+	@echo "... Water/SPHEngine/Kernel/ISPHKernel.o"
+	@echo "... Water/SPHEngine/Kernel/ISPHKernel.i"
+	@echo "... Water/SPHEngine/Kernel/ISPHKernel.s"
+	@echo "... Water/SPHEngine/SPHEngine.o"
+	@echo "... Water/SPHEngine/SPHEngine.i"
+	@echo "... Water/SPHEngine/SPHEngine.s"
+	@echo "... Water/SPHEngine/SPHEngineComputationInterfaceBase.o"
+	@echo "... Water/SPHEngine/SPHEngineComputationInterfaceBase.i"
+	@echo "... Water/SPHEngine/SPHEngineComputationInterfaceBase.s"
+	@echo "... Water/ShallowWaterEngine/ShallowWaterEngine.o"
+	@echo "... Water/ShallowWaterEngine/ShallowWaterEngine.i"
+	@echo "... Water/ShallowWaterEngine/ShallowWaterEngine.s"
 .PHONY : help
 
 

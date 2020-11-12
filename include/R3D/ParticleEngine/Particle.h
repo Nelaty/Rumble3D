@@ -13,7 +13,7 @@ namespace r3
 	 * properties. A particle has no orientation and therefor can't
 	 * be rotated.
 	 */
-	class R3D_DECLSPEC Particle 
+	class Particle
 	{
 	public:
 		/**
