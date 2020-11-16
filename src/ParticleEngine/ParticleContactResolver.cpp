@@ -10,9 +10,6 @@ namespace r3
 	{
 	}
 
-	ParticleContactResolver::~ParticleContactResolver()
-	= default;
-
 	void ParticleContactResolver::setIterationsMax(const unsigned iterations)
 	{
 		m_iterationsMax = iterations;

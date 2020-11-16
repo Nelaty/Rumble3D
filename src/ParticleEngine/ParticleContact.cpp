@@ -11,12 +11,6 @@ namespace r3
 		resolveInterpenetration(duration);
 	}
 
-	ParticleContact::ParticleContact()
-	= default;
-
-	ParticleContact::~ParticleContact()
-	= default;
-
 	void ParticleContact::init(Particle* first, Particle* second)
 	{
 		m_particles[0] = first;
@@ -44,10 +38,10 @@ namespace r3
 		// \prime{v_s} = -c*v_s
 		real newSeparatingVelocity = -separatingVelocity * m_restitution;
 		
-		// Einschub f?r die Beruecksichtigung von ruhenden Kontakten:
-		// Pr?fe Geschwindigkeit, die aus der Beschleunigung herruehrt:
-		//ACHTUNG: Hier nicht ber?cksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
-		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird gepr?ft.
+		// Einschub für die Beruecksichtigung von ruhenden Kontakten:
+		// Prüfe Geschwindigkeit, die aus der Beschleunigung herruehrt:
+		//ACHTUNG: Hier nicht berücksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
+		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird geprüft.
 		
 		glm::vec3 accelerationCausedVelocity = m_particles[0]->getAcceleration();
 		if(m_particles[1])

@@ -15,7 +15,7 @@ namespace r3
 	 * \details The specified point itself can move, but it will not be 
 	 * affected by this force generator.
 	 */
-	class R3D_DECLSPEC ParticleAnchoredSpring : public ParticleSpringBase
+	class ParticleAnchoredSpring : public ParticleSpringBase
 	{
 	public:
 		/**

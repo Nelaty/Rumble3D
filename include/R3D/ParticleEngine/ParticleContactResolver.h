@@ -14,7 +14,7 @@ namespace r3
 	{
 	public:
 		explicit ParticleContactResolver(unsigned int iterations);
-		~ParticleContactResolver();
+		~ParticleContactResolver() = default;
 
 		/**
 		 * \brief Set maximal number of iterations used. 

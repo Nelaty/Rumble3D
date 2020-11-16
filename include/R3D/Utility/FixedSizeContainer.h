@@ -16,7 +16,7 @@ namespace r3
 	 * elements of type Element_Type
 	 */
 	template<class Element_Type, class Container_Type = std::vector<Element_Type>>
-	class R3D_DECLSPEC FixedSizeContainer
+	class FixedSizeContainer
 	{
 	public:
 		/**

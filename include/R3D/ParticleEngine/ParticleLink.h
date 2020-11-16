@@ -11,7 +11,7 @@ namespace r3
 	/**
 	 * \brief Abstract class. A ParticleLink links two particles.
 	 */
-	class R3D_DECLSPEC ParticleLink : public ParticleContactGenerator
+	class ParticleLink : public ParticleContactGenerator
 	{
 	public:
 		virtual ~ParticleLink();

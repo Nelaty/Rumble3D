@@ -15,8 +15,8 @@ namespace r3
 	class ParticleContact
 	{
 	public:
-		explicit ParticleContact();
-		~ParticleContact();
+		explicit ParticleContact() = default;
+		~ParticleContact() = default;
 
 		/**
 		 * \brief Initialize the contact.

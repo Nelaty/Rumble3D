@@ -9,7 +9,7 @@ namespace r3
 	/**
 	 * Interface for particle force generators.
 	 */
-	class R3D_DECLSPEC IParticleForceGenerator
+	class IParticleForceGenerator
 	{
 	public:
 		virtual ~IParticleForceGenerator() = default;

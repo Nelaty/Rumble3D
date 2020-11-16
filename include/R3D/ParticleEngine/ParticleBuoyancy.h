@@ -13,7 +13,7 @@ namespace r3
 	 * \details It can only simulate buoyancy in an axis aligned half space
 	 * perpendicular to the y-axis.
 	 */
-	class R3D_DECLSPEC ParticleBuoyancy : public IParticleForceGenerator
+	class ParticleBuoyancy : public IParticleForceGenerator
 	{
 	public:
 		/**

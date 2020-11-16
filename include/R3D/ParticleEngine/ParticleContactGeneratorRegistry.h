@@ -10,7 +10,7 @@ namespace r3
 	/**
 	 * \brief Registry for ParticleContactGenerators.
 	 */
-	class R3D_DECLSPEC ParticleContactGeneratorRegistry
+	class ParticleContactGeneratorRegistry
 	{
 	public:
 		explicit ParticleContactGeneratorRegistry();
