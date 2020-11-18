@@ -16,6 +16,4 @@ TEST(myUnsuccessfulTest)
 int main(int argc, char** argv)
 {
 	UnitTest::RunAllTests();
-
-	getchar();
 } 

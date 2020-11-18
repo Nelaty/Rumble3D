@@ -1,6 +1,6 @@
 file(GLOB_RECURSE source_files "*.cpp" "*.c" "*.cxx")
-file(GLOB_RECURSE header_files "*.h" "*.hpp")
-file(GLOB_RECURSE inline_files "*.inl")
+file(GLOB_RECURSE header_files "../include/*.h" "../include/*.hpp")
+file(GLOB_RECURSE inline_files "../include/*.inl")
 
 set(all_sources ${source_files}
         ${header_files}
