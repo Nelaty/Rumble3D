@@ -1,3 +1,4 @@
 <map id="r3::FrictionResolver" name="r3::FrictionResolver">
-<area shape="rect" id="node2" href="$classr3_1_1_i_collision_resolution_filter.html" title="Interface for collision resolution filter. " alt="" coords="5,5,197,127"/>
+<area shape="rect" id="node1" title="Specialized collision resolution filter, which adds friction at given contacts." alt="" coords="29,175,172,281"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_collision_resolution_filter.html" title="Interface for collision resolution filter." alt="" coords="5,5,196,127"/>
 </map>

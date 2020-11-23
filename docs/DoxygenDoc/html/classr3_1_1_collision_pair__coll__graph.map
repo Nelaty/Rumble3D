@@ -1,2 +1,3 @@
 <map id="r3::CollisionPair" name="r3::CollisionPair">
+<area shape="rect" id="node1" title="A CollisionPair describes a potential collision between two rigid bodies." alt="" coords="5,5,125,200"/>
 </map>

@@ -1,5 +1,5 @@
-\hypertarget{classr3_1_1_particle_gravity}{}\section{r3\+:\+:Particle\+Gravity Class Reference}
-\label{classr3_1_1_particle_gravity}\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
+\hypertarget{classr3_1_1_particle_gravity}{}\doxysection{r3\+::Particle\+Gravity Class Reference}
+\label{classr3_1_1_particle_gravity}\index{r3::ParticleGravity@{r3::ParticleGravity}}
 
 
 A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a particle force generator, which applies a constant given force to particles.  
@@ -11,7 +11,7 @@ A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a partic
 
 
 
-Inheritance diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
+Inheritance diagram for r3\+::Particle\+Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,14 +20,14 @@ Inheritance diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
+Collaboration diagram for r3\+::Particle\+Gravity\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=281pt]{classr3_1_1_particle_gravity__coll__graph}
+\includegraphics[width=283pt]{classr3_1_1_particle_gravity__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_gravity_a698440df6351766d4c5c3c7704bdead6}{Particle\+Gravity}} (const glm\+::vec3 \&gravity)
@@ -35,23 +35,27 @@ Collaboration diagram for r3\+:\+:Particle\+Gravity\+:\nopagebreak
 \mbox{\hyperlink{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}{$\sim$\+Particle\+Gravity}} ()
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
-\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\item 
+const glm\+::vec3 \& \mbox{\hyperlink{classr3_1_1_particle_gravity_a12488a0a88c2f0b2b94ae29d376d2d03}{get\+Gravity}} () const
+\begin{DoxyCompactList}\small\item\em Get the current gravity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_gravity_af5caf366933860ee362f40337d82ae61}{set\+Gravity}} (const glm\+::vec3 \&gravity)
+\begin{DoxyCompactList}\small\item\em Set the current gravity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_particle_gravity_a4e21b444ed08aa8c66ca40a11f34c384}{m\+\_\+gravity}}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a particle force generator, which applies a constant given force to particles. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_gravity_a698440df6351766d4c5c3c7704bdead6}\label{classr3_1_1_particle_gravity_a698440df6351766d4c5c3c7704bdead6}} 
-\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!Particle\+Gravity@{Particle\+Gravity}}
-\index{Particle\+Gravity@{Particle\+Gravity}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
-\subsubsection{\texorpdfstring{Particle\+Gravity()}{ParticleGravity()}}
+\index{r3::ParticleGravity@{r3::ParticleGravity}!ParticleGravity@{ParticleGravity}}
+\index{ParticleGravity@{ParticleGravity}!r3::ParticleGravity@{r3::ParticleGravity}}
+\doxysubsubsection{\texorpdfstring{ParticleGravity()}{ParticleGravity()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Gravity\+::\+Particle\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -64,18 +68,38 @@ A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a partic
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}\label{classr3_1_1_particle_gravity_a7130786765cc4befe6808a70254871bc}} 
-\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!````~Particle\+Gravity@{$\sim$\+Particle\+Gravity}}
-\index{````~Particle\+Gravity@{$\sim$\+Particle\+Gravity}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
-\subsubsection{\texorpdfstring{$\sim$\+Particle\+Gravity()}{~ParticleGravity()}}
+\index{r3::ParticleGravity@{r3::ParticleGravity}!````~ParticleGravity@{$\sim$ParticleGravity}}
+\index{````~ParticleGravity@{$\sim$ParticleGravity}!r3::ParticleGravity@{r3::ParticleGravity}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleGravity()}{~ParticleGravity()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Gravity\+::$\sim$\+Particle\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_gravity_a12488a0a88c2f0b2b94ae29d376d2d03}\label{classr3_1_1_particle_gravity_a12488a0a88c2f0b2b94ae29d376d2d03}} 
+\index{r3::ParticleGravity@{r3::ParticleGravity}!getGravity@{getGravity}}
+\index{getGravity@{getGravity}!r3::ParticleGravity@{r3::ParticleGravity}}
+\doxysubsubsection{\texorpdfstring{getGravity()}{getGravity()}}
+{\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Particle\+Gravity\+::get\+Gravity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the current gravity. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_gravity_af5caf366933860ee362f40337d82ae61}\label{classr3_1_1_particle_gravity_af5caf366933860ee362f40337d82ae61}} 
+\index{r3::ParticleGravity@{r3::ParticleGravity}!setGravity@{setGravity}}
+\index{setGravity@{setGravity}!r3::ParticleGravity@{r3::ParticleGravity}}
+\doxysubsubsection{\texorpdfstring{setGravity()}{setGravity()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Gravity\+::set\+Gravity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{gravity }\end{DoxyParamCaption})}
+
+
+
+Set the current gravity. 
+
 \mbox{\Hypertarget{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}\label{classr3_1_1_particle_gravity_a9535686bf25375d94bbe0451c089b788}} 
-\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!update\+Force@{update\+Force}}
-\index{update\+Force@{update\+Force}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
-\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+\index{r3::ParticleGravity@{r3::ParticleGravity}!updateForce@{updateForce}}
+\index{updateForce@{updateForce}!r3::ParticleGravity@{r3::ParticleGravity}}
+\doxysubsubsection{\texorpdfstring{updateForce()}{updateForce()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Gravity\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -95,16 +119,16 @@ Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f
 
 
 
-\subsection{Member Data Documentation}
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_gravity_a4e21b444ed08aa8c66ca40a11f34c384}\label{classr3_1_1_particle_gravity_a4e21b444ed08aa8c66ca40a11f34c384}} 
-\index{r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}!m\+\_\+gravity@{m\+\_\+gravity}}
-\index{m\+\_\+gravity@{m\+\_\+gravity}!r3\+::\+Particle\+Gravity@{r3\+::\+Particle\+Gravity}}
-\subsubsection{\texorpdfstring{m\+\_\+gravity}{m\_gravity}}
+\index{r3::ParticleGravity@{r3::ParticleGravity}!m\_gravity@{m\_gravity}}
+\index{m\_gravity@{m\_gravity}!r3::ParticleGravity@{r3::ParticleGravity}}
+\doxysubsubsection{\texorpdfstring{m\_gravity}{m\_gravity}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Gravity\+::m\+\_\+gravity\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8h}{Particle\+Gravity.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_gravity_8cpp}{Particle\+Gravity.\+cpp}}\end{DoxyCompactItemize}

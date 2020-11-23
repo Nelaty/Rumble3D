@@ -1,3 +1,4 @@
 <map id="r3::CollisionPlane" name="r3::CollisionPlane">
-<area shape="rect" id="node2" href="$classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives. " alt="" coords="5,5,153,200"/>
+<area shape="rect" id="node1" title="CollisionPrimitive that represents a plane." alt="" coords="14,248,145,472"/>
+<area shape="rect" id="node2" href="$classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives." alt="" coords="5,5,153,200"/>
 </map>

@@ -1,4 +1,9 @@
 <map id="r3::ParticleSpring" name="r3::ParticleSpring">
-<area shape="rect" id="node2" href="$classr3_1_1_i_particle_force_generator.html" title="{r3::IParticleForceGenerator\n||+ ~IParticleForceGenerator()\l+ updateForce()\l# IParticleForceGenerator()\l}" alt="" coords="5,248,192,355"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="382,189,514,413"/>
+<area shape="rect" id="node1" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles." alt="" coords="162,505,291,612"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_spring_base.html" title=" " alt="" coords="63,233,222,428"/>
+<area shape="rect" id="node3" href="$classr3_1_1_i_particle_force_generator.html" title=" " alt="" coords="5,5,192,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="241,20,287,97"/>
+<area shape="rect" id="node5" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="298,219,433,443"/>
+<area shape="rect" id="node6" title=" " alt="" coords="394,20,441,97"/>
+<area shape="rect" id="node7" title=" " alt="" coords="492,20,543,97"/>
 </map>

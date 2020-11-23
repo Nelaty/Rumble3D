@@ -1,3 +1,4 @@
 <map id="r3::AnchoredSpring" name="r3::AnchoredSpring">
-<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="Interface for rigid body force generators. " alt="" coords="7,5,147,112"/>
+<area shape="rect" id="node1" title="An AnchoredSpring is a force generator that simulates spring forces." alt="" coords="5,160,148,311"/>
+<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="Interface for rigid body force generators." alt="" coords="7,5,146,112"/>
 </map>

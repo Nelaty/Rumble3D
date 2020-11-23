@@ -1,3 +1,4 @@
 <map id="r3::BroadPhaseFilter" name="r3::BroadPhaseFilter">
-<area shape="rect" id="node2" href="$classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time..." alt="" coords="5,5,159,112"/>
+<area shape="rect" id="node1" title="Default implementation of IBroadPhaseFilter." alt="" coords="7,160,155,267"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_broad_phase_filter.html" title="Interface for broad phase filters. Only one broad phase filter can be used at the same time...." alt="" coords="5,5,157,112"/>
 </map>

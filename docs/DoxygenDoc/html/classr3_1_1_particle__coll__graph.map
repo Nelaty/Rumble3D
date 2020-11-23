@@ -1,2 +1,6 @@
 <map id="r3::Particle" name="r3::Particle">
+<area shape="rect" id="node1" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="92,189,227,413"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,52,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="136,5,183,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="234,5,285,83"/>
 </map>

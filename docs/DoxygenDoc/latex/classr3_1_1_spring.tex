@@ -1,5 +1,5 @@
-\hypertarget{classr3_1_1_spring}{}\section{r3\+:\+:Spring Class Reference}
-\label{classr3_1_1_spring}\index{r3\+::\+Spring@{r3\+::\+Spring}}
+\hypertarget{classr3_1_1_spring}{}\doxysection{r3\+::Spring Class Reference}
+\label{classr3_1_1_spring}\index{r3::Spring@{r3::Spring}}
 
 
 A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simulates a spring between two rigid bodies.  
@@ -11,7 +11,7 @@ A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simu
 
 
 
-Inheritance diagram for r3\+:\+:Spring\+:\nopagebreak
+Inheritance diagram for r3\+::Spring\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,21 +20,21 @@ Inheritance diagram for r3\+:\+:Spring\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for r3\+:\+:Spring\+:\nopagebreak
+Collaboration diagram for r3\+::Spring\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classr3_1_1_spring__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_spring_ae96ec521b5609d2ace1476aec3c831f3}{Spring}} (const glm\+::vec3 \&local\+Connection\+Point, \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$other, const glm\+::vec3 \&other\+Connection\+Point, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_spring}{Spring}} constructor. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_spring_a3305adfd568606ed9ae6fb589f20446b}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$body, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
 \begin{DoxyCompactList}\small\item\em Apply force to a rigid body over a specific time. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_spring_a06963e33fd2c3f8e25ddd345324b292b}{m\+\_\+spring\+Constant}}
@@ -47,19 +47,19 @@ glm\+::vec3 \mbox{\hyperlink{classr3_1_1_spring_a7a1c5a5c2960bbf756dac88986e939a
 \item 
 \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$ \mbox{\hyperlink{classr3_1_1_spring_ac762f73af2e30d8f6f1e6b0a1575d49e}{m\+\_\+other}}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simulates a spring between two rigid bodies. 
 
 The spring force will not be applied to the rigid body, which is assigned to this generator. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_spring_ae96ec521b5609d2ace1476aec3c831f3}\label{classr3_1_1_spring_ae96ec521b5609d2ace1476aec3c831f3}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!Spring@{Spring}}
-\index{Spring@{Spring}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{Spring()}{Spring()}}
+\index{r3::Spring@{r3::Spring}!Spring@{Spring}}
+\index{Spring@{Spring}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{Spring()}{Spring()}}
 {\footnotesize\ttfamily r3\+::\+Spring\+::\+Spring (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{local\+Connection\+Point,  }\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{other,  }\item[{const glm\+::vec3 \&}]{other\+Connection\+Point,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})}
 
 
@@ -81,11 +81,11 @@ The spring force will not be applied to the rigid body, which is assigned to thi
 \end{DoxyParams}
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_spring_a3305adfd568606ed9ae6fb589f20446b}\label{classr3_1_1_spring_a3305adfd568606ed9ae6fb589f20446b}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!update\+Force@{update\+Force}}
-\index{update\+Force@{update\+Force}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+\index{r3::Spring@{r3::Spring}!updateForce@{updateForce}}
+\index{updateForce@{updateForce}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{updateForce()}{updateForce()}}
 {\footnotesize\ttfamily void r3\+::\+Spring\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}} $\ast$}]{body,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -105,40 +105,40 @@ Implements \mbox{\hyperlink{classr3_1_1_force_generator_a69bebbde8cef792d6636af5
 
 
 
-\subsection{Member Data Documentation}
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_spring_a3c1e08e176ebc363b9f217875036955d}\label{classr3_1_1_spring_a3c1e08e176ebc363b9f217875036955d}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!m\+\_\+connection\+Point@{m\+\_\+connection\+Point}}
-\index{m\+\_\+connection\+Point@{m\+\_\+connection\+Point}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{m\+\_\+connection\+Point}{m\_connectionPoint}}
+\index{r3::Spring@{r3::Spring}!m\_connectionPoint@{m\_connectionPoint}}
+\index{m\_connectionPoint@{m\_connectionPoint}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{m\_connectionPoint}{m\_connectionPoint}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Spring\+::m\+\_\+connection\+Point\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_spring_ac762f73af2e30d8f6f1e6b0a1575d49e}\label{classr3_1_1_spring_ac762f73af2e30d8f6f1e6b0a1575d49e}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!m\+\_\+other@{m\+\_\+other}}
-\index{m\+\_\+other@{m\+\_\+other}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{m\+\_\+other}{m\_other}}
+\index{r3::Spring@{r3::Spring}!m\_other@{m\_other}}
+\index{m\_other@{m\_other}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{m\_other}{m\_other}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}}$\ast$ r3\+::\+Spring\+::m\+\_\+other\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_spring_a7a1c5a5c2960bbf756dac88986e939ae}\label{classr3_1_1_spring_a7a1c5a5c2960bbf756dac88986e939ae}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!m\+\_\+other\+Connection\+Point@{m\+\_\+other\+Connection\+Point}}
-\index{m\+\_\+other\+Connection\+Point@{m\+\_\+other\+Connection\+Point}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{m\+\_\+other\+Connection\+Point}{m\_otherConnectionPoint}}
+\index{r3::Spring@{r3::Spring}!m\_otherConnectionPoint@{m\_otherConnectionPoint}}
+\index{m\_otherConnectionPoint@{m\_otherConnectionPoint}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{m\_otherConnectionPoint}{m\_otherConnectionPoint}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Spring\+::m\+\_\+other\+Connection\+Point\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_spring_ad1c8ba98c782bee7f9896d0c868b9ee7}\label{classr3_1_1_spring_ad1c8ba98c782bee7f9896d0c868b9ee7}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!m\+\_\+rest\+Length@{m\+\_\+rest\+Length}}
-\index{m\+\_\+rest\+Length@{m\+\_\+rest\+Length}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{m\+\_\+rest\+Length}{m\_restLength}}
+\index{r3::Spring@{r3::Spring}!m\_restLength@{m\_restLength}}
+\index{m\_restLength@{m\_restLength}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{m\_restLength}{m\_restLength}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Spring\+::m\+\_\+rest\+Length\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_spring_a06963e33fd2c3f8e25ddd345324b292b}\label{classr3_1_1_spring_a06963e33fd2c3f8e25ddd345324b292b}} 
-\index{r3\+::\+Spring@{r3\+::\+Spring}!m\+\_\+spring\+Constant@{m\+\_\+spring\+Constant}}
-\index{m\+\_\+spring\+Constant@{m\+\_\+spring\+Constant}!r3\+::\+Spring@{r3\+::\+Spring}}
-\subsubsection{\texorpdfstring{m\+\_\+spring\+Constant}{m\_springConstant}}
+\index{r3::Spring@{r3::Spring}!m\_springConstant@{m\_springConstant}}
+\index{m\_springConstant@{m\_springConstant}!r3::Spring@{r3::Spring}}
+\doxysubsubsection{\texorpdfstring{m\_springConstant}{m\_springConstant}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Spring\+::m\+\_\+spring\+Constant\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_spring_8h}{Spring.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_spring_8cpp}{Spring.\+cpp}}\end{DoxyCompactItemize}
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_spring_8h}{Spring.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_spring_8cpp}{Spring.\+cpp}}\end{DoxyCompactItemize}

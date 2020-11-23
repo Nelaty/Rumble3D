@@ -1,5 +1,0 @@
-<map id="rum::RigidBodyEngineComputationInterface" name="rum::RigidBodyEngineComputationInterface">
-<area shape="rect" id="node2" href="$classrum_1_1_i_computation_interface.html" title="{rum::IComputationInterface\n||+ ~IComputationInterface()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# IComputationInterface()\l}" alt="" coords="5,389,183,555"/>
-<area shape="rect" id="node3" href="$classrum_1_1_rigid_body_world.html" title="{rum::RigidBodyWorld\n||+ RigidBodyWorld()\l+ ~RigidBodyWorld()\l+ setComputationInterface()\l+ getComputationInterface()\l+ addRigidBody()\l+ removeRigidBody()\l+ removeAllRigidBodies()\l+ addForceGenerator()\l+ removeForceGenerator()\l+ removeAllForceGenerators()\l+ addCollisionBox()\l+ addCollisionPrimitive()\l+ getRigidBodyForceRegistry()\l+ startFrame()\l+ runPhysics()\l}" alt="" coords="207,331,407,613"/>
-<area shape="rect" id="node4" href="$classrum_1_1_physics_engine_module.html" title="{rum::PhysicsEngineModule\n||+ ~PhysicsEngineModule()\l+ getComputationInterface()\l+ enable()\l+ isEnabled()\l# PhysicsEngineModule()\l}" alt="" coords="216,145,399,281"/>
-</map>

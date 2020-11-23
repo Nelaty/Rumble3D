@@ -1,4 +1,5 @@
 <map id="r3::IPlaneSphereCollisionAlgorithm" name="r3::IPlaneSphereCollisionAlgorithm">
-<area shape="rect" id="node3" href="$classr3_1_1_plane_sphere_collision_algorithm.html" title="Default implementation for a plane&#45;sphere narrow algorithm. " alt="" coords="7,344,235,465"/>
-<area shape="rect" id="node2" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="28,5,213,112"/>
+<area shape="rect" id="node1" title="Interface for plane&#45;sphere narrow algorithms." alt="" coords="5,160,236,296"/>
+<area shape="rect" id="node3" href="$classr3_1_1_plane_sphere_collision_algorithm.html" title="Default implementation for a plane&#45;sphere narrow algorithm." alt="" coords="7,344,234,465"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_narrow_phase_algorithm.html" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="27,5,214,112"/>
 </map>

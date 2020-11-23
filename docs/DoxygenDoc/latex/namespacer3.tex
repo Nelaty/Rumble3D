@@ -1,15 +1,17 @@
-\hypertarget{namespacer3}{}\section{r3 Namespace Reference}
+\hypertarget{namespacer3}{}\doxysection{r3 Namespace Reference}
 \label{namespacer3}\index{r3@{r3}}
-\subsection*{Namespaces}
+\doxysubsection*{Namespaces}
 \begin{DoxyCompactItemize}
 \item 
  \mbox{\hyperlink{namespacer3_1_1detail}{detail}}
 \end{DoxyCompactItemize}
-\subsection*{Classes}
+\doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 class \mbox{\hyperlink{classr3_1_1_anchored_spring}{Anchored\+Spring}}
 \begin{DoxyCompactList}\small\item\em An \mbox{\hyperlink{classr3_1_1_anchored_spring}{Anchored\+Spring}} is a force generator that simulates spring forces. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_boundary_condition_kernel_cpu_serial}{Boundary\+Condition\+Kernel\+Cpu\+Serial}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_bounding_box}{Bounding\+Box}}
 \item 
 class \mbox{\hyperlink{classr3_1_1_bounding_sphere}{Bounding\+Sphere}}
@@ -24,6 +26,8 @@ class \mbox{\hyperlink{classr3_1_1_b_v_h_node}{B\+V\+H\+Node}}
 \item 
 class \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}}
 \begin{DoxyCompactList}\small\item\em Describes a collision algorithm for every collision primitive type combination. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix_factory}{Collision\+Algorithm\+Matrix\+Factory}}
+\begin{DoxyCompactList}\small\item\em Generate a \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}} with default narrow phase collision detection and contact generation algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_box}{Collision\+Box}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}} that represents a box. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_callback}{Collision\+Callback}}
@@ -46,18 +50,24 @@ class \mbox{\hyperlink{classr3_1_1_collision_resolver}{Collision\+Resolver}}
 \begin{DoxyCompactList}\small\item\em Default implementation for a collision resolver. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_collision_sphere}{Collision\+Sphere}}
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_collision_primitive}{Collision\+Primitive}}, which represents a sphere. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_computation_interface_factory}{Computation\+Interface\+Factory}}
+\begin{DoxyCompactList}\small\item\em Generate default implementations of various computation interfaces. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_contact}{Contact}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_contact}{Contact}} represents a point in space at which two rigid bodies collide. It is not a point in world space but rather knows the relative offsets to the points of mass of both rigid bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i}{Default\+Particle\+Engine\+CI}}
 \begin{DoxyCompactList}\small\item\em Default implementation of the particle computation interface. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_default_rigid_body_engine_c_i}{Default\+Rigid\+Body\+Engine\+CI}}
 \begin{DoxyCompactList}\small\item\em Default implementation of the rigid body engine computation interface. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_density_kernel_cpu_serial}{Density\+Kernel\+Cpu\+Serial}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_directed_force}{Directed\+Force}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_directed_force}{Directed\+Force}} is a force generator, which will continually apply a specified force at a specific body point. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_fixed_size_container}{Fixed\+Size\+Container}}
 \begin{DoxyCompactList}\small\item\em Template class for a container, which can be resized, with random access (dependent on Container\+\_\+\+Type) and can be filled similar to a stack. Its size in memory will stay the same at all times. Elements can not be erased from it. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_force_generator}{Force\+Generator}}
 \begin{DoxyCompactList}\small\item\em Interface for rigid body force generators. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_force_kernel_cpu_serial}{Force\+Kernel\+Cpu\+Serial}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_force_registry}{Force\+Registry}}
 \begin{DoxyCompactList}\small\item\em Pairs force generators with rigid bodies. It uses the force generators to update forces of linked rigid bodies. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_friction_resolver}{Friction\+Resolver}}
@@ -94,8 +104,18 @@ class \mbox{\hyperlink{classr3_1_1_i_plane_plane_collision_algorithm}{I\+Plane\+
 \begin{DoxyCompactList}\small\item\em Interface for plane-\/plane narrow algorithms. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_i_plane_sphere_collision_algorithm}{I\+Plane\+Sphere\+Collision\+Algorithm}}
 \begin{DoxyCompactList}\small\item\em Interface for plane-\/sphere narrow algorithms. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_i_platform}{I\+Platform}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_i_s_p_h_engine_factory}{I\+S\+P\+H\+Engine\+Factory}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_i_sphere_sphere_narrow_algorithm}{I\+Sphere\+Sphere\+Narrow\+Algorithm}}
 \begin{DoxyCompactList}\small\item\em Interface for sphere-\/sphere narrow algorithms. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_i_s_p_h_integrator}{I\+S\+P\+H\+Integrator}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_i_s_p_h_kernel}{I\+S\+P\+H\+Kernel}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_molecular_dynamics_engine}{Molecular\+Dynamics\+Engine}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_narrow_phase_filter}{Narrow\+Phase\+Filter}}
 \item 
 class \mbox{\hyperlink{classr3_1_1_null_algorithm}{Null\+Algorithm}}
@@ -108,6 +128,8 @@ class \mbox{\hyperlink{classr3_1_1_particle}{Particle}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_particle}{Particle}} represents a single point in space with physical properties. A particle has no orientation and therefor can\textquotesingle{}t be rotated. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_particle_anchored_spring}{Particle\+Anchored\+Spring}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_particle_anchored_spring}{Particle\+Anchored\+Spring}} is a particle generator, which simulates a spring, which is anchored to a specific point. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_particle_bidirectional_spring}{Particle\+Bidirectional\+Spring}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle force generator, which simulates a bungee cord and connects two particles. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_particle_buoyancy}{Particle\+Buoyancy}}
@@ -138,10 +160,14 @@ class \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_particle_gravity}{Particle\+Gravity}} is a particle force generator, which applies a constant given force to particles. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_particle_link}{Particle\+Link}}
 \begin{DoxyCompactList}\small\item\em Abstract class. A \mbox{\hyperlink{classr3_1_1_particle_link}{Particle\+Link}} links two particles. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_particle_plane_contact_generator}{Particle\+Plane\+Contact\+Generator}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_particle_rod}{Particle\+Rod}}
 \begin{DoxyCompactList}\small\item\em Abstract class, which creates a distance constraint between two particles. A contact gets created if this constraint is not fulfilled. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_particle_spring}{Particle\+Spring}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_particle_spring}{Particle\+Spring}} is a particle force generator, which simulates a spring between two particles. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_particle_spring_base}{Particle\+Spring\+Base}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} is a physics engine module, used to simulate particles. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_physics_engine}{Physics\+Engine}}
@@ -158,6 +184,8 @@ class \mbox{\hyperlink{classr3_1_1_plane_plane_collision_algorithm}{Plane\+Plane
 \begin{DoxyCompactList}\small\item\em Default implementation for a plane-\/plane narrow algorithm. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_plane_sphere_collision_algorithm}{Plane\+Sphere\+Collision\+Algorithm}}
 \begin{DoxyCompactList}\small\item\em Default implementation for a plane-\/sphere narrow algorithm. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_pressure_kernel_cpu_serial}{Pressure\+Kernel\+Cpu\+Serial}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_random}{Random}}
 \begin{DoxyCompactList}\small\item\em Equally distributed random number generator. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_rigid_body}{Rigid\+Body}}
@@ -168,31 +196,80 @@ class \mbox{\hyperlink{classr3_1_1_rigid_body_engine_c_i}{Rigid\+Body\+Engine\+C
 \begin{DoxyCompactList}\small\item\em Abstract class for computation interfaces used by rigid body worlds. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_rigid_body_world}{Rigid\+Body\+World}} is a physics engine module, used to simulate rigid bodies. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classr3_1_1_service_locator_collision_algorithm_matrix}{Service\+Locator\+Collision\+Algorithm\+Matrix}}
-\begin{DoxyCompactList}\small\item\em Generate a \mbox{\hyperlink{classr3_1_1_collision_algorithm_matrix}{Collision\+Algorithm\+Matrix}} with default narrow phase collision detection and contact generation algorithms. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classr3_1_1_service_locator_computation_interface}{Service\+Locator\+Computation\+Interface}}
-\begin{DoxyCompactList}\small\item\em Generate default implementations of various computation interfaces. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_shallow_water_engine}{Shallow\+Water\+Engine}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_smoothing_kernel}{Smoothing\+Kernel}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_context}{S\+P\+H\+Context}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_engine}{S\+P\+H\+Engine}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_engine_c_i_cpu_serial}{S\+P\+H\+Engine\+C\+I\+Cpu\+Serial}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_engine_computation_interface_base}{S\+P\+H\+Engine\+Computation\+Interface\+Base}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_engine_factory_cpu_serial}{S\+P\+H\+Engine\+Factory\+Cpu\+Serial}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_sphere_sphere_narrow_algorithm}{Sphere\+Sphere\+Narrow\+Algorithm}}
 \begin{DoxyCompactList}\small\item\em Default implementation for a sphere-\/sphere narrow algorithm. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_integrator_cpu_serial}{S\+P\+H\+Integrator\+Cpu\+Serial}}
+\item 
+struct \mbox{\hyperlink{structr3_1_1_s_p_h_params}{S\+P\+H\+Params}}
+\item 
+struct \mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}}
+\item 
+struct \mbox{\hyperlink{structr3_1_1_s_p_h_particle_definition}{S\+P\+H\+Particle\+Definition}}
+\item 
+class \mbox{\hyperlink{classr3_1_1_s_p_h_system}{S\+P\+H\+System}}
+\item 
 class \mbox{\hyperlink{classr3_1_1_spring}{Spring}}
 \begin{DoxyCompactList}\small\item\em A \mbox{\hyperlink{classr3_1_1_spring}{Spring}} is a force generator, which simulates a spring between two rigid bodies. \end{DoxyCompactList}\item 
-class \mbox{\hyperlink{classr3_1_1_test_class}{Test\+Class}}
-\item 
 class \mbox{\hyperlink{classr3_1_1_transform3_d}{Transform3D}}
 \begin{DoxyCompactList}\small\item\em Encapsulates translation and rotation and manipulation functions on them. \end{DoxyCompactList}\item 
 class \mbox{\hyperlink{classr3_1_1_velocity_resolver}{Velocity\+Resolver}}
 \begin{DoxyCompactList}\small\item\em Specialized collision resolution filter, which changes body velocities for bodies involved in contacts. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Typedefs}
+\doxysubsection*{Typedefs}
 \begin{DoxyCompactItemize}
 \item 
 using \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} = float
 \end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68}{Platform\+Type}} \{ \mbox{\hyperlink{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68ad9747e2da342bdb995f6389533ad1a3d}{Platform\+Type\+::cpu}}, 
+\mbox{\hyperlink{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68a39466fe22b062a34cfe09f3cc8c24868}{Platform\+Type\+::cuda}}, 
+\mbox{\hyperlink{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68a93195db1ad73788fe96193503a7d8887}{Platform\+Type\+::opencl}}
+ \}
+\end{DoxyCompactItemize}
 
 
-\subsection{Typedef Documentation}
+\doxysubsection{Typedef Documentation}
 \mbox{\Hypertarget{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}\label{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}} 
 \index{r3@{r3}!real@{real}}
 \index{real@{real}!r3@{r3}}
-\subsubsection{\texorpdfstring{real}{real}}
+\doxysubsubsection{\texorpdfstring{real}{real}}
 {\footnotesize\ttfamily using \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{r3\+::real}} = typedef float}
 
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68}\label{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68}} 
+\index{r3@{r3}!PlatformType@{PlatformType}}
+\index{PlatformType@{PlatformType}!r3@{r3}}
+\doxysubsubsection{\texorpdfstring{PlatformType}{PlatformType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68}{r3\+::\+Platform\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cpu@{cpu}!r3@{r3}}\index{r3@{r3}!cpu@{cpu}}}\mbox{\Hypertarget{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68ad9747e2da342bdb995f6389533ad1a3d}\label{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68ad9747e2da342bdb995f6389533ad1a3d}} 
+cpu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cuda@{cuda}!r3@{r3}}\index{r3@{r3}!cuda@{cuda}}}\mbox{\Hypertarget{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68a39466fe22b062a34cfe09f3cc8c24868}\label{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68a39466fe22b062a34cfe09f3cc8c24868}} 
+cuda&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{opencl@{opencl}!r3@{r3}}\index{r3@{r3}!opencl@{opencl}}}\mbox{\Hypertarget{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68a93195db1ad73788fe96193503a7d8887}\label{namespacer3_ace92b7fb1cb07147a906aa1e9ae78f68a93195db1ad73788fe96193503a7d8887}} 
+opencl&\\
+\hline
+
+\end{DoxyEnumFields}

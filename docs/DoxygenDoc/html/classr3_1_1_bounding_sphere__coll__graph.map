@@ -1,2 +1,5 @@
 <map id="r3::BoundingSphere" name="r3::BoundingSphere">
+<area shape="rect" id="node1" title="A bounding sphere is a kind of bounding volume." alt="" coords="5,145,148,325"/>
+<area shape="rect" id="node2" title=" " alt="" coords="7,5,53,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="99,5,150,83"/>
 </map>

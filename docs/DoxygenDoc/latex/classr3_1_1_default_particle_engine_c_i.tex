@@ -1,5 +1,5 @@
-\hypertarget{classr3_1_1_default_particle_engine_c_i}{}\section{r3\+:\+:Default\+Particle\+Engine\+CI Class Reference}
-\label{classr3_1_1_default_particle_engine_c_i}\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
+\hypertarget{classr3_1_1_default_particle_engine_c_i}{}\doxysection{r3\+::Default\+Particle\+Engine\+CI Class Reference}
+\label{classr3_1_1_default_particle_engine_c_i}\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
 
 
 Default implementation of the particle computation interface.  
@@ -11,28 +11,29 @@ Default implementation of the particle computation interface.
 
 
 
-Inheritance diagram for r3\+:\+:Default\+Particle\+Engine\+CI\+:\nopagebreak
+Inheritance diagram for r3\+::Default\+Particle\+Engine\+CI\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=220pt]{classr3_1_1_default_particle_engine_c_i__inherit__graph}
+\includegraphics[width=219pt]{classr3_1_1_default_particle_engine_c_i__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for r3\+:\+:Default\+Particle\+Engine\+CI\+:\nopagebreak
+Collaboration diagram for r3\+::Default\+Particle\+Engine\+CI\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=550pt]{classr3_1_1_default_particle_engine_c_i__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a5f7619a5dd227d681d5dcbde6e8368eb}{Default\+Particle\+Engine\+CI}} (unsigned contacts\+Max, unsigned iterations=0, \mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$particle\+World=nullptr)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i}{Default\+Particle\+Engine\+CI}} constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}{$\sim$\+Default\+Particle\+Engine\+CI}} ()
+\mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_aed0618a4b48bd65bf5ff74a37478bfae}{$\sim$\+Default\+Particle\+Engine\+CI}} ()=default
 \item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}{on\+Begin}} () override
 \begin{DoxyCompactList}\small\item\em Called at the start of a physics step. \end{DoxyCompactList}\item 
@@ -46,24 +47,24 @@ void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266d
 \begin{DoxyCompactList}\small\item\em Reset the computation interface. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a7dbb49cbf2f5b028656ea2e14174a3ed}{set\+Contacts\+Max}} (unsigned contacts\+Max)
 \begin{DoxyCompactList}\small\item\em Set the maximal number of contacts that the collision solver can use. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Member Functions}
+\doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}{run\+Collision\+Solver}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} time\+Delta)
 \begin{DoxyCompactList}\small\item\em Solve all previously generated particle contacts. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_default_particle_engine_c_i_a61aea4f32cc73960915d3c68396bd47e}{generate\+Contacts}} ()
 \begin{DoxyCompactList}\small\item\em Generate particle contacts by using all registered particle contact generators. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 Default implementation of the particle computation interface. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a5f7619a5dd227d681d5dcbde6e8368eb}\label{classr3_1_1_default_particle_engine_c_i_a5f7619a5dd227d681d5dcbde6e8368eb}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!Default\+Particle\+Engine\+CI@{Default\+Particle\+Engine\+CI}}
-\index{Default\+Particle\+Engine\+CI@{Default\+Particle\+Engine\+CI}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{Default\+Particle\+Engine\+C\+I()}{DefaultParticleEngineCI()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!DefaultParticleEngineCI@{DefaultParticleEngineCI}}
+\index{DefaultParticleEngineCI@{DefaultParticleEngineCI}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{DefaultParticleEngineCI()}{DefaultParticleEngineCI()}}
 {\footnotesize\ttfamily r3\+::\+Default\+Particle\+Engine\+C\+I\+::\+Default\+Particle\+Engine\+CI (\begin{DoxyParamCaption}\item[{unsigned}]{contacts\+Max,  }\item[{unsigned}]{iterations = {\ttfamily 0},  }\item[{\mbox{\hyperlink{classr3_1_1_particle_world}{Particle\+World}} $\ast$}]{particle\+World = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -79,19 +80,19 @@ Default implementation of the particle computation interface.
 {\em particle\+World} & The particle world, which should be used for calculations. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}\label{classr3_1_1_default_particle_engine_c_i_afb7df43eb7fe45d6bcb15c39e3c30849}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!````~Default\+Particle\+Engine\+CI@{$\sim$\+Default\+Particle\+Engine\+CI}}
-\index{````~Default\+Particle\+Engine\+CI@{$\sim$\+Default\+Particle\+Engine\+CI}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{$\sim$\+Default\+Particle\+Engine\+C\+I()}{~DefaultParticleEngineCI()}}
+\mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_aed0618a4b48bd65bf5ff74a37478bfae}\label{classr3_1_1_default_particle_engine_c_i_aed0618a4b48bd65bf5ff74a37478bfae}} 
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!````~DefaultParticleEngineCI@{$\sim$DefaultParticleEngineCI}}
+\index{````~DefaultParticleEngineCI@{$\sim$DefaultParticleEngineCI}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{$\sim$DefaultParticleEngineCI()}{~DefaultParticleEngineCI()}}
 {\footnotesize\ttfamily r3\+::\+Default\+Particle\+Engine\+C\+I\+::$\sim$\+Default\+Particle\+Engine\+CI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a61aea4f32cc73960915d3c68396bd47e}\label{classr3_1_1_default_particle_engine_c_i_a61aea4f32cc73960915d3c68396bd47e}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!generate\+Contacts@{generate\+Contacts}}
-\index{generate\+Contacts@{generate\+Contacts}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{generate\+Contacts()}{generateContacts()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!generateContacts@{generateContacts}}
+\index{generateContacts@{generateContacts}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{generateContacts()}{generateContacts()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::generate\+Contacts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -99,9 +100,9 @@ Default implementation of the particle computation interface.
 Generate particle contacts by using all registered particle contact generators. 
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}\label{classr3_1_1_default_particle_engine_c_i_a4603707afe6c841a83294a46ea4a1c62}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!integrate@{integrate}}
-\index{integrate@{integrate}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!integrate@{integrate}}
+\index{integrate@{integrate}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::integrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -118,9 +119,9 @@ Perform integration and solve collisions.
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a162250f2b6efbd85460bd0f780d42cff}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}\label{classr3_1_1_default_particle_engine_c_i_aaf2e9ca87bff5e48c8eb59384e9cf180}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!on\+Begin@{on\+Begin}}
-\index{on\+Begin@{on\+Begin}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{on\+Begin()}{onBegin()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!onBegin@{onBegin}}
+\index{onBegin@{onBegin}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{onBegin()}{onBegin()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::on\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -132,9 +133,9 @@ Called at the start of a physics step.
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a430ebc9cb8d4ba064ac6a032ef07edd7}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}\label{classr3_1_1_default_particle_engine_c_i_a6a34c77436d8133560eaa7366c740119}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!on\+End@{on\+End}}
-\index{on\+End@{on\+End}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{on\+End()}{onEnd()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!onEnd@{onEnd}}
+\index{onEnd@{onEnd}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{onEnd()}{onEnd()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::on\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -146,9 +147,9 @@ Clear force accumulators and reset contact data.
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_acae0c5fada7e414c74fe6f5a8f4a6c7d}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}\label{classr3_1_1_default_particle_engine_c_i_a97757c62b4cb1266da29e2b5625bb9d3}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!reset@{reset}}
-\index{reset@{reset}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{reset()}{reset()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!reset@{reset}}
+\index{reset@{reset}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -160,9 +161,9 @@ Reset the computation interface.
 Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd4e714788d0968851007}{r3\+::\+I\+Computation\+Interface}}.
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}\label{classr3_1_1_default_particle_engine_c_i_a19138f7707e948b7e8e05647bcba52fe}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!run\+Collision\+Solver@{run\+Collision\+Solver}}
-\index{run\+Collision\+Solver@{run\+Collision\+Solver}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{run\+Collision\+Solver()}{runCollisionSolver()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!runCollisionSolver@{runCollisionSolver}}
+\index{runCollisionSolver@{runCollisionSolver}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{runCollisionSolver()}{runCollisionSolver()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::run\+Collision\+Solver (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
@@ -170,9 +171,9 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_a6069989c54ffd4e
 Solve all previously generated particle contacts. 
 
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a7dbb49cbf2f5b028656ea2e14174a3ed}\label{classr3_1_1_default_particle_engine_c_i_a7dbb49cbf2f5b028656ea2e14174a3ed}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!set\+Contacts\+Max@{set\+Contacts\+Max}}
-\index{set\+Contacts\+Max@{set\+Contacts\+Max}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{set\+Contacts\+Max()}{setContactsMax()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!setContactsMax@{setContactsMax}}
+\index{setContactsMax@{setContactsMax}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{setContactsMax()}{setContactsMax()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::set\+Contacts\+Max (\begin{DoxyParamCaption}\item[{unsigned}]{contacts\+Max }\end{DoxyParamCaption})}
 
 
@@ -185,9 +186,9 @@ Set the maximal number of contacts that the collision solver can use.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}\label{classr3_1_1_default_particle_engine_c_i_a7c58fd00ec521410e1b412e9885ee0d2}} 
-\index{r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}!step@{step}}
-\index{step@{step}!r3\+::\+Default\+Particle\+Engine\+CI@{r3\+::\+Default\+Particle\+Engine\+CI}}
-\subsubsection{\texorpdfstring{step()}{step()}}
+\index{r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}!step@{step}}
+\index{step@{step}!r3::DefaultParticleEngineCI@{r3::DefaultParticleEngineCI}}
+\doxysubsubsection{\texorpdfstring{step()}{step()}}
 {\footnotesize\ttfamily void r3\+::\+Default\+Particle\+Engine\+C\+I\+::step (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -207,5 +208,5 @@ Implements \mbox{\hyperlink{classr3_1_1_i_computation_interface_aaa12bcc35005f32
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_default_particle_engine_c_i_8h}{Default\+Particle\+Engine\+C\+I.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_default_particle_engine_c_i_8cpp}{Default\+Particle\+Engine\+C\+I.\+cpp}}\end{DoxyCompactItemize}
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_default_particle_engine_c_i_8h}{Default\+Particle\+Engine\+C\+I.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_default_particle_engine_c_i_8cpp}{Default\+Particle\+Engine\+C\+I.\+cpp}}\end{DoxyCompactItemize}

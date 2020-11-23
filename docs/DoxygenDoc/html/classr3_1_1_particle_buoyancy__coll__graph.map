@@ -1,3 +1,5 @@
 <map id="r3::ParticleBuoyancy" name="r3::ParticleBuoyancy">
-<area shape="rect" id="node2" href="$classr3_1_1_i_particle_force_generator.html" title="{r3::IParticleForceGenerator\n||+ ~IParticleForceGenerator()\l+ updateForce()\l# IParticleForceGenerator()\l}" alt="" coords="5,5,192,112"/>
+<area shape="rect" id="node1" title="A ParticleBuoyancy is a particle force generator, which can simulate buoyancy." alt="" coords="95,233,243,487"/>
+<area shape="rect" id="node2" href="$classr3_1_1_i_particle_force_generator.html" title=" " alt="" coords="5,5,192,112"/>
+<area shape="rect" id="node3" title=" " alt="" coords="217,20,263,97"/>
 </map>

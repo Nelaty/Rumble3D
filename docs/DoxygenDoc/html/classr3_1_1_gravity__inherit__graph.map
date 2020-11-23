@@ -1,3 +1,4 @@
 <map id="r3::Gravity" name="r3::Gravity">
-<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="Interface for rigid body force generators. " alt="" coords="5,5,145,112"/>
+<area shape="rect" id="node1" title="Gravity is a force generator, which will apply constant force on bodies." alt="" coords="18,160,131,267"/>
+<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="Interface for rigid body force generators." alt="" coords="5,5,144,112"/>
 </map>

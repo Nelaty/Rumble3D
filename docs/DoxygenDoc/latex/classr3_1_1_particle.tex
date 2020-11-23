@@ -1,5 +1,5 @@
-\hypertarget{classr3_1_1_particle}{}\section{r3\+:\+:Particle Class Reference}
-\label{classr3_1_1_particle}\index{r3\+::\+Particle@{r3\+::\+Particle}}
+\hypertarget{classr3_1_1_particle}{}\doxysection{r3\+::Particle Class Reference}
+\label{classr3_1_1_particle}\index{r3::Particle@{r3::Particle}}
 
 
 A \mbox{\hyperlink{classr3_1_1_particle}{Particle}} represents a single point in space with physical properties. A particle has no orientation and therefor can\textquotesingle{}t be rotated.  
@@ -11,21 +11,21 @@ A \mbox{\hyperlink{classr3_1_1_particle}{Particle}} represents a single point in
 
 
 
-Collaboration diagram for r3\+:\+:Particle\+:\nopagebreak
+Collaboration diagram for r3\+::Particle\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classr3_1_1_particle__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_a72d4ae82278e293bf0933a1aabbe9ac3}{Particle}} ()
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle}{Particle}} default constructor. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classr3_1_1_particle_a28a47b80f79433db842a47aca835003a}{Particle}} (const \mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}} \&definition)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle}{Particle}} constructor. \end{DoxyCompactList}\item 
-virtual \mbox{\hyperlink{classr3_1_1_particle_a235fd8a567a6ec911f26ca49a8045460}{$\sim$\+Particle}} ()
+virtual \mbox{\hyperlink{classr3_1_1_particle_ad3cf20eb0dc98658c2cb009a67053865}{$\sim$\+Particle}} ()=default
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_a660673cfa03f0195560df72c659b22a5}{init}} (const \mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}} \&definition)
 \begin{DoxyCompactList}\small\item\em Initialize this particle. \end{DoxyCompactList}\item 
@@ -71,11 +71,11 @@ void \mbox{\hyperlink{classr3_1_1_particle_a1ba9a33fb4513cf79eb8bf4954ec6b97}{cl
 \begin{DoxyCompactList}\small\item\em Reset the force accumulator to zero. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_particle_a18bc9d9ded382879086eb2820ce787c9}{add\+Force}} (const glm\+::vec3 \&force)
 \begin{DoxyCompactList}\small\item\em Add a force to the force accumulator. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classr3_1_1_particle_a28335c3bee5a6956ec43653f3b26f84a}{reset}} (const glm\+::vec3 \&position=glm\+::vec3(0))
+void \mbox{\hyperlink{classr3_1_1_particle_a9109e616f7168798fed064ecf68d07eb}{reset}} (const glm\+::vec3 \&position=glm\+::vec3(0.\+0))
 \begin{DoxyCompactList}\small\item\em Reset this particle. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classr3_1_1_particle_aff134984d9bc7409579e16eca3e42b68}{integrate}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration)
 \begin{DoxyCompactList}\small\item\em Integrate changes made to the particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 glm\+::vec3 \mbox{\hyperlink{classr3_1_1_particle_ab7f5aa7cf48278441aab18db1a0c1ba9}{m\+\_\+position}}
@@ -94,14 +94,14 @@ bool \mbox{\hyperlink{classr3_1_1_particle_a0a04ce870abc9017f09c2564344fda82}{m\
 \end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 A \mbox{\hyperlink{classr3_1_1_particle}{Particle}} represents a single point in space with physical properties. A particle has no orientation and therefor can\textquotesingle{}t be rotated. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_a72d4ae82278e293bf0933a1aabbe9ac3}\label{classr3_1_1_particle_a72d4ae82278e293bf0933a1aabbe9ac3}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!Particle@{Particle}}
-\index{Particle@{Particle}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{Particle()}{Particle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::Particle@{r3::Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{Particle()}{Particle()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily r3\+::\+Particle\+::\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -109,9 +109,9 @@ A \mbox{\hyperlink{classr3_1_1_particle}{Particle}} represents a single point in
 \mbox{\hyperlink{classr3_1_1_particle}{Particle}} default constructor. 
 
 \mbox{\Hypertarget{classr3_1_1_particle_a28a47b80f79433db842a47aca835003a}\label{classr3_1_1_particle_a28a47b80f79433db842a47aca835003a}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!Particle@{Particle}}
-\index{Particle@{Particle}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{Particle()}{Particle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::Particle@{r3::Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{Particle()}{Particle()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily r3\+::\+Particle\+::\+Particle (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}} \&}]{definition }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -123,19 +123,19 @@ A \mbox{\hyperlink{classr3_1_1_particle}{Particle}} represents a single point in
 {\em definition} & The properties of this particle. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_particle_a235fd8a567a6ec911f26ca49a8045460}\label{classr3_1_1_particle_a235fd8a567a6ec911f26ca49a8045460}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!````~Particle@{$\sim$\+Particle}}
-\index{````~Particle@{$\sim$\+Particle}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{$\sim$\+Particle()}{~Particle()}}
-{\footnotesize\ttfamily r3\+::\+Particle\+::$\sim$\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+\mbox{\Hypertarget{classr3_1_1_particle_ad3cf20eb0dc98658c2cb009a67053865}\label{classr3_1_1_particle_ad3cf20eb0dc98658c2cb009a67053865}} 
+\index{r3::Particle@{r3::Particle}!````~Particle@{$\sim$Particle}}
+\index{````~Particle@{$\sim$Particle}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{$\sim$Particle()}{~Particle()}}
+{\footnotesize\ttfamily virtual r3\+::\+Particle\+::$\sim$\+Particle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
 
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_a18bc9d9ded382879086eb2820ce787c9}\label{classr3_1_1_particle_a18bc9d9ded382879086eb2820ce787c9}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!add\+Force@{add\+Force}}
-\index{add\+Force@{add\+Force}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{add\+Force()}{addForce()}}
+\index{r3::Particle@{r3::Particle}!addForce@{addForce}}
+\index{addForce@{addForce}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{addForce()}{addForce()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::add\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force }\end{DoxyParamCaption})}
 
 
@@ -148,9 +148,9 @@ Add a force to the force accumulator.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_a1ba9a33fb4513cf79eb8bf4954ec6b97}\label{classr3_1_1_particle_a1ba9a33fb4513cf79eb8bf4954ec6b97}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!clear\+Accumulator@{clear\+Accumulator}}
-\index{clear\+Accumulator@{clear\+Accumulator}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{clear\+Accumulator()}{clearAccumulator()}}
+\index{r3::Particle@{r3::Particle}!clearAccumulator@{clearAccumulator}}
+\index{clearAccumulator@{clearAccumulator}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{clearAccumulator()}{clearAccumulator()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::clear\+Accumulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -158,9 +158,9 @@ Add a force to the force accumulator.
 Reset the force accumulator to zero. 
 
 \mbox{\Hypertarget{classr3_1_1_particle_ab97ffa1b19d4fda5ea49b67531d0300d}\label{classr3_1_1_particle_ab97ffa1b19d4fda5ea49b67531d0300d}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Acceleration@{get\+Acceleration}}
-\index{get\+Acceleration@{get\+Acceleration}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Acceleration()}{getAcceleration()}}
+\index{r3::Particle@{r3::Particle}!getAcceleration@{getAcceleration}}
+\index{getAcceleration@{getAcceleration}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getAcceleration()}{getAcceleration()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Particle\+::get\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -171,9 +171,9 @@ Get the particle\textquotesingle{}s acceleration.
 The current acceleration 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_a5e8544a8ac8e4765a9021f9112209eba}\label{classr3_1_1_particle_a5e8544a8ac8e4765a9021f9112209eba}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Damping@{get\+Damping}}
-\index{get\+Damping@{get\+Damping}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Damping()}{getDamping()}}
+\index{r3::Particle@{r3::Particle}!getDamping@{getDamping}}
+\index{getDamping@{getDamping}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getDamping()}{getDamping()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+::get\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -184,9 +184,9 @@ Get the particle\textquotesingle{}s linear damping.
 The current damping constant. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_a81fe0cfac976df7da6337dabc8f73313}\label{classr3_1_1_particle_a81fe0cfac976df7da6337dabc8f73313}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Force\+Accumulator@{get\+Force\+Accumulator}}
-\index{get\+Force\+Accumulator@{get\+Force\+Accumulator}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Force\+Accumulator()}{getForceAccumulator()}}
+\index{r3::Particle@{r3::Particle}!getForceAccumulator@{getForceAccumulator}}
+\index{getForceAccumulator@{getForceAccumulator}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getForceAccumulator()}{getForceAccumulator()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Particle\+::get\+Force\+Accumulator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -197,9 +197,9 @@ Get the sum of forces, accumulated since the last update.
 Sum of accumulated forces 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_a6924e65c0aacb7e50057e43be134156b}\label{classr3_1_1_particle_a6924e65c0aacb7e50057e43be134156b}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Inverse\+Mass@{get\+Inverse\+Mass}}
-\index{get\+Inverse\+Mass@{get\+Inverse\+Mass}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Inverse\+Mass()}{getInverseMass()}}
+\index{r3::Particle@{r3::Particle}!getInverseMass@{getInverseMass}}
+\index{getInverseMass@{getInverseMass}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getInverseMass()}{getInverseMass()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+::get\+Inverse\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -210,9 +210,9 @@ Get the current inverse mass of this particle.
 The inverse mass. If particle has infinite mass, the inverse mass will be 0. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_ade86b59933d1acc8d33f79a8735d8f3d}\label{classr3_1_1_particle_ade86b59933d1acc8d33f79a8735d8f3d}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Mass@{get\+Mass}}
-\index{get\+Mass@{get\+Mass}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+\index{r3::Particle@{r3::Particle}!getMass@{getMass}}
+\index{getMass@{getMass}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getMass()}{getMass()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -223,9 +223,9 @@ Get the current mass of this particle.
 The current mass. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_a6f61c64625f2d9bf7fe1145d74790a92}\label{classr3_1_1_particle_a6f61c64625f2d9bf7fe1145d74790a92}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Position@{get\+Position}}
-\index{get\+Position@{get\+Position}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+\index{r3::Particle@{r3::Particle}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Particle\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -236,9 +236,9 @@ Get the particle\textquotesingle{}s position.
 The current position. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_ad62513767465d21c328b4296aa9720ff}\label{classr3_1_1_particle_ad62513767465d21c328b4296aa9720ff}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!get\+Velocity@{get\+Velocity}}
-\index{get\+Velocity@{get\+Velocity}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+\index{r3::Particle@{r3::Particle}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Particle\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -249,9 +249,9 @@ Get the particle\textquotesingle{}s velocity.
 The current velocity 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_a7517367ac5587d97d783429585ec0e90}\label{classr3_1_1_particle_a7517367ac5587d97d783429585ec0e90}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!has\+Finite\+Mass@{has\+Finite\+Mass}}
-\index{has\+Finite\+Mass@{has\+Finite\+Mass}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{has\+Finite\+Mass()}{hasFiniteMass()}}
+\index{r3::Particle@{r3::Particle}!hasFiniteMass@{hasFiniteMass}}
+\index{hasFiniteMass@{hasFiniteMass}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{hasFiniteMass()}{hasFiniteMass()}}
 {\footnotesize\ttfamily bool r3\+::\+Particle\+::has\+Finite\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -262,9 +262,9 @@ Check if this particle has infinite mass.
 True if mass is infinite, false otherwise. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_particle_a660673cfa03f0195560df72c659b22a5}\label{classr3_1_1_particle_a660673cfa03f0195560df72c659b22a5}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!init@{init}}
-\index{init@{init}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{init()}{init()}}
+\index{r3::Particle@{r3::Particle}!init@{init}}
+\index{init@{init}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structr3_1_1_particle_def}{Particle\+Def}} \&}]{definition }\end{DoxyParamCaption})}
 
 
@@ -277,9 +277,9 @@ Initialize this particle.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_aff134984d9bc7409579e16eca3e42b68}\label{classr3_1_1_particle_aff134984d9bc7409579e16eca3e42b68}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!integrate@{integrate}}
-\index{integrate@{integrate}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+\index{r3::Particle@{r3::Particle}!integrate@{integrate}}
+\index{integrate@{integrate}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::integrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -287,9 +287,9 @@ Initialize this particle.
 Integrate changes made to the particle. 
 
 Apply forces and update position, velocity and acceleration. \mbox{\Hypertarget{classr3_1_1_particle_aeeb9dd636d0851bc007ff718ef9140e9}\label{classr3_1_1_particle_aeeb9dd636d0851bc007ff718ef9140e9}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!is\+Dead@{is\+Dead}}
-\index{is\+Dead@{is\+Dead}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{is\+Dead()}{isDead()}}
+\index{r3::Particle@{r3::Particle}!isDead@{isDead}}
+\index{isDead@{isDead}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{isDead()}{isDead()}}
 {\footnotesize\ttfamily bool r3\+::\+Particle\+::is\+Dead (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -299,20 +299,20 @@ Check if the particle is dead.
 \begin{DoxyReturn}{Returns}
 True if the particle is dead, false otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classr3_1_1_particle_a28335c3bee5a6956ec43653f3b26f84a}\label{classr3_1_1_particle_a28335c3bee5a6956ec43653f3b26f84a}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!reset@{reset}}
-\index{reset@{reset}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{reset()}{reset()}}
-{\footnotesize\ttfamily void r3\+::\+Particle\+::reset (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position = {\ttfamily glm\+:\+:vec3(0)} }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classr3_1_1_particle_a9109e616f7168798fed064ecf68d07eb}\label{classr3_1_1_particle_a9109e616f7168798fed064ecf68d07eb}} 
+\index{r3::Particle@{r3::Particle}!reset@{reset}}
+\index{reset@{reset}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+::reset (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position = {\ttfamily glm\+:\+:vec3(0.0)} }\end{DoxyParamCaption})}
 
 
 
 Reset this particle. 
 
 \mbox{\Hypertarget{classr3_1_1_particle_ad4c180ad74ee8cfd1b0e5c76347d6182}\label{classr3_1_1_particle_ad4c180ad74ee8cfd1b0e5c76347d6182}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Acceleration@{set\+Acceleration}}
-\index{set\+Acceleration@{set\+Acceleration}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::Particle@{r3::Particle}!setAcceleration@{setAcceleration}}
+\index{setAcceleration@{setAcceleration}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{acceleration }\end{DoxyParamCaption})}
 
 
@@ -325,9 +325,9 @@ Change the particle\textquotesingle{}s acceleration.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_a4043de464de32d14d8db0f676f63da75}\label{classr3_1_1_particle_a4043de464de32d14d8db0f676f63da75}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Acceleration@{set\+Acceleration}}
-\index{set\+Acceleration@{set\+Acceleration}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::Particle@{r3::Particle}!setAcceleration@{setAcceleration}}
+\index{setAcceleration@{setAcceleration}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -344,9 +344,9 @@ Change the particle\textquotesingle{}s acceleration.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_a5a7d9ff7821fd5755317ec877f66e8f6}\label{classr3_1_1_particle_a5a7d9ff7821fd5755317ec877f66e8f6}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Damping@{set\+Damping}}
-\index{set\+Damping@{set\+Damping}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Damping()}{setDamping()}}
+\index{r3::Particle@{r3::Particle}!setDamping@{setDamping}}
+\index{setDamping@{setDamping}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setDamping()}{setDamping()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Damping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{damping }\end{DoxyParamCaption})}
 
 
@@ -359,9 +359,9 @@ Change the particle\textquotesingle{}s linear damping.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_a6219cdcf36221881e92fbe548a682bed}\label{classr3_1_1_particle_a6219cdcf36221881e92fbe548a682bed}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Inverse\+Mass@{set\+Inverse\+Mass}}
-\index{set\+Inverse\+Mass@{set\+Inverse\+Mass}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Inverse\+Mass()}{setInverseMass()}}
+\index{r3::Particle@{r3::Particle}!setInverseMass@{setInverseMass}}
+\index{setInverseMass@{setInverseMass}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setInverseMass()}{setInverseMass()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Inverse\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{inverse\+Mass }\end{DoxyParamCaption})}
 
 
@@ -370,13 +370,13 @@ Change the inverse mass of this particle to the given value.
 
 
 \begin{DoxyParams}{Parameters}
-{\em inverse\+Mass} & A value of 0 is equivalent to infinite mass.\\
+{\em inverse\+Mass} & A value of 0 is equivalent to infinite mass.  Implicitly changes mass. \\
 \hline
 \end{DoxyParams}
-Implicitly changes mass. \mbox{\Hypertarget{classr3_1_1_particle_a1f0b0ac6f094025e02359026c681350f}\label{classr3_1_1_particle_a1f0b0ac6f094025e02359026c681350f}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Is\+Dead@{set\+Is\+Dead}}
-\index{set\+Is\+Dead@{set\+Is\+Dead}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Is\+Dead()}{setIsDead()}}
+\mbox{\Hypertarget{classr3_1_1_particle_a1f0b0ac6f094025e02359026c681350f}\label{classr3_1_1_particle_a1f0b0ac6f094025e02359026c681350f}} 
+\index{r3::Particle@{r3::Particle}!setIsDead@{setIsDead}}
+\index{setIsDead@{setIsDead}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setIsDead()}{setIsDead()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Is\+Dead (\begin{DoxyParamCaption}\item[{bool}]{is\+Dead }\end{DoxyParamCaption})}
 
 
@@ -389,9 +389,9 @@ Set the particle\textquotesingle{}s dead flag.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_a01f396041b3b54d674e227d56d600f6b}\label{classr3_1_1_particle_a01f396041b3b54d674e227d56d600f6b}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Mass@{set\+Mass}}
-\index{set\+Mass@{set\+Mass}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
+\index{r3::Particle@{r3::Particle}!setMass@{setMass}}
+\index{setMass@{setMass}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setMass()}{setMass()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{mass }\end{DoxyParamCaption})}
 
 
@@ -400,13 +400,13 @@ Set the mass of this particle.
 
 
 \begin{DoxyParams}{Parameters}
-{\em mass} & The new mass.\\
+{\em mass} & The new mass.  Implicitly changes inverse mass. \\
 \hline
 \end{DoxyParams}
-Implicitly changes inverse mass. \mbox{\Hypertarget{classr3_1_1_particle_a22926644001b62f3e8bf1f9cf02b64e9}\label{classr3_1_1_particle_a22926644001b62f3e8bf1f9cf02b64e9}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Position@{set\+Position}}
-\index{set\+Position@{set\+Position}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\mbox{\Hypertarget{classr3_1_1_particle_a22926644001b62f3e8bf1f9cf02b64e9}\label{classr3_1_1_particle_a22926644001b62f3e8bf1f9cf02b64e9}} 
+\index{r3::Particle@{r3::Particle}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Position (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position }\end{DoxyParamCaption})}
 
 
@@ -419,9 +419,9 @@ Change the particle\textquotesingle{}s position.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_ac0d83f2396049b51383c692a70c44b34}\label{classr3_1_1_particle_ac0d83f2396049b51383c692a70c44b34}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Position@{set\+Position}}
-\index{set\+Position@{set\+Position}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Position()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::Particle@{r3::Particle}!setPosition@{setPosition}}
+\index{setPosition@{setPosition}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setPosition()}{setPosition()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -438,9 +438,9 @@ Change the particle\textquotesingle{}s position.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_ae0e84b5875dcf2dc6850ba8698f8f936}\label{classr3_1_1_particle_ae0e84b5875dcf2dc6850ba8698f8f936}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Velocity@{set\+Velocity}}
-\index{set\+Velocity@{set\+Velocity}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::Particle@{r3::Particle}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
 
 
@@ -453,9 +453,9 @@ Change the particle\textquotesingle{}s velocity.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_particle_afe7217976e22ed36892d8f7df4ea68d2}\label{classr3_1_1_particle_afe7217976e22ed36892d8f7df4ea68d2}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!set\+Velocity@{set\+Velocity}}
-\index{set\+Velocity@{set\+Velocity}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::Particle@{r3::Particle}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+::set\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -473,52 +473,52 @@ Change the particle\textquotesingle{}s velocity.
 \end{DoxyParams}
 
 
-\subsection{Member Data Documentation}
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_aa6c9d639f87a9291c60165c057e05a4f}\label{classr3_1_1_particle_aa6c9d639f87a9291c60165c057e05a4f}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+acceleration@{m\+\_\+acceleration}}
-\index{m\+\_\+acceleration@{m\+\_\+acceleration}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+acceleration}{m\_acceleration}}
+\index{r3::Particle@{r3::Particle}!m\_acceleration@{m\_acceleration}}
+\index{m\_acceleration@{m\_acceleration}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_acceleration}{m\_acceleration}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+::m\+\_\+acceleration\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_a68034523bad4d9e4023f69b849197eb3}\label{classr3_1_1_particle_a68034523bad4d9e4023f69b849197eb3}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+damping@{m\+\_\+damping}}
-\index{m\+\_\+damping@{m\+\_\+damping}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+damping}{m\_damping}}
+\index{r3::Particle@{r3::Particle}!m\_damping@{m\_damping}}
+\index{m\_damping@{m\_damping}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_damping}{m\_damping}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+::m\+\_\+damping\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_accfbf52627c85fa26c4df442873df497}\label{classr3_1_1_particle_accfbf52627c85fa26c4df442873df497}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+force\+Accumulator@{m\+\_\+force\+Accumulator}}
-\index{m\+\_\+force\+Accumulator@{m\+\_\+force\+Accumulator}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+force\+Accumulator}{m\_forceAccumulator}}
+\index{r3::Particle@{r3::Particle}!m\_forceAccumulator@{m\_forceAccumulator}}
+\index{m\_forceAccumulator@{m\_forceAccumulator}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_forceAccumulator}{m\_forceAccumulator}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+::m\+\_\+force\+Accumulator\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_aad38f3126d055c2677ffe8f08089fc5c}\label{classr3_1_1_particle_aad38f3126d055c2677ffe8f08089fc5c}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}}
-\index{m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+inverse\+Mass}{m\_inverseMass}}
+\index{r3::Particle@{r3::Particle}!m\_inverseMass@{m\_inverseMass}}
+\index{m\_inverseMass@{m\_inverseMass}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_inverseMass}{m\_inverseMass}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+::m\+\_\+inverse\+Mass\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_a0a04ce870abc9017f09c2564344fda82}\label{classr3_1_1_particle_a0a04ce870abc9017f09c2564344fda82}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+is\+Dead@{m\+\_\+is\+Dead}}
-\index{m\+\_\+is\+Dead@{m\+\_\+is\+Dead}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+is\+Dead}{m\_isDead}}
+\index{r3::Particle@{r3::Particle}!m\_isDead@{m\_isDead}}
+\index{m\_isDead@{m\_isDead}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_isDead}{m\_isDead}}
 {\footnotesize\ttfamily bool r3\+::\+Particle\+::m\+\_\+is\+Dead\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_ab7f5aa7cf48278441aab18db1a0c1ba9}\label{classr3_1_1_particle_ab7f5aa7cf48278441aab18db1a0c1ba9}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+position@{m\+\_\+position}}
-\index{m\+\_\+position@{m\+\_\+position}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+position}{m\_position}}
+\index{r3::Particle@{r3::Particle}!m\_position@{m\_position}}
+\index{m\_position@{m\_position}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_position}{m\_position}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+::m\+\_\+position\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_particle_a037d73e42df0c7bb9f1ae79b37301477}\label{classr3_1_1_particle_a037d73e42df0c7bb9f1ae79b37301477}} 
-\index{r3\+::\+Particle@{r3\+::\+Particle}!m\+\_\+velocity@{m\+\_\+velocity}}
-\index{m\+\_\+velocity@{m\+\_\+velocity}!r3\+::\+Particle@{r3\+::\+Particle}}
-\subsubsection{\texorpdfstring{m\+\_\+velocity}{m\_velocity}}
+\index{r3::Particle@{r3::Particle}!m\_velocity@{m\_velocity}}
+\index{m\_velocity@{m\_velocity}!r3::Particle@{r3::Particle}}
+\doxysubsubsection{\texorpdfstring{m\_velocity}{m\_velocity}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_8h}{Particle.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_8cpp}{Particle.\+cpp}}\end{DoxyCompactItemize}
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_8h}{Particle.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_8cpp}{Particle.\+cpp}}\end{DoxyCompactItemize}

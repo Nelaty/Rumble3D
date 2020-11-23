@@ -1,2 +1,3 @@
 <map id="r3::INarrowPhaseAlgorithm" name="r3::INarrowPhaseAlgorithm">
+<area shape="rect" id="node1" title="Interface for a narrow phase algorithm, which can generate new contacts between one specific pair of ..." alt="" coords="5,5,192,112"/>
 </map>

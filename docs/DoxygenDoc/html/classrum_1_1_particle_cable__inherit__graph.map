@@ -1,4 +1,0 @@
-<map id="rum::ParticleCable" name="rum::ParticleCable">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_link.html" title="{rum::ParticleLink\n|# m_particles\l|+ ~ParticleLink()\l+ addContact()\l+ setParticles()\l# ParticleLink()\l# currentLength()\l}" alt="" coords="45,160,165,296"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle_contact_generator.html" title="{rum::ParticleContactGenerator\n||+ ~ParticleContactGenerator()\l+ addContact()\l# ParticleContactGenerator()\l}" alt="" coords="5,5,204,112"/>
-</map>

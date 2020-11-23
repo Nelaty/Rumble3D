@@ -1,2 +1,3 @@
 <map id="r3::Contact" name="r3::Contact">
+<area shape="rect" id="node1" title="A Contact represents a point in space at which two rigid bodies collide. It is not a point in world s..." alt="" coords="5,5,152,229"/>
 </map>

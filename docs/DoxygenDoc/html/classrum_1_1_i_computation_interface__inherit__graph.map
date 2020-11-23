@@ -1,6 +1,0 @@
-<map id="rum::IComputationInterface" name="rum::IComputationInterface">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_engine_c_i.html" title="{rum::ParticleEngineCI\n|# m_particleWorld\l|+ ~ParticleEngineCI()\l+ setParticleWorld()\l+ getParticleWorld()\l# ParticleEngineCI()\l}" alt="" coords="35,219,183,340"/>
-<area shape="rect" id="node4" href="$classrum_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used for rigid body worlds. " alt="" coords="227,219,390,340"/>
-<area shape="rect" id="node3" href="$classrum_1_1_default_particle_engine_c_i.html" title="{rum::DefaultParticleEngineCI\n||+ DefaultParticleEngineCI()\l+ ~DefaultParticleEngineCI()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l# runCollisionSolver()\l# generateContacts()\l}" alt="" coords="5,388,193,583"/>
-<area shape="rect" id="node5" href="$classrum_1_1_default_rigid_body_engine_c_i.html" title="{rum::DefaultRigidBodyEngineCI\n||+ DefaultRigidBodyEngineCI()\l+ ~DefaultRigidBodyEngineCI()\l+ onBegin()\l+ step()\l+ integrate()\l+ onEnd()\l+ reset()\l}" alt="" coords="218,403,421,568"/>
-</map>

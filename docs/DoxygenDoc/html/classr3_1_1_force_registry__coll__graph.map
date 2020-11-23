@@ -1,2 +1,4 @@
 <map id="r3::ForceRegistry" name="r3::ForceRegistry">
+<area shape="rect" id="node1" title="Pairs force generators with rigid bodies. It uses the force generators to update forces of linked rig..." alt="" coords="25,160,156,311"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,5,176,97"/>
 </map>

@@ -1,4 +1,0 @@
-<map id="rum::BoxBoxNarrowAlgorithm" name="rum::BoxBoxNarrowAlgorithm">
-<area shape="rect" id="node2" href="$classrum_1_1_i_box_box_narrow_algorithm.html" title="{rum::IBoxBoxNarrowAlgorithm\n||+ ~IBoxBoxNarrowAlgorithm()\l+ generateContactData()\l# IBoxBoxNarrowAlgorithm()\l}" alt="" coords="5,145,201,252"/>
-<area shape="rect" id="node3" href="$classrum_1_1_i_narrow_phase_algorithm.html" title="{rum::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="10,5,197,97"/>
-</map>

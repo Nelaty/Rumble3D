@@ -1,5 +1,5 @@
-\hypertarget{classr3_1_1_particle_bungee}{}\section{r3\+:\+:Particle\+Bungee Class Reference}
-\label{classr3_1_1_particle_bungee}\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
+\hypertarget{classr3_1_1_particle_bungee}{}\doxysection{r3\+::Particle\+Bungee Class Reference}
+\label{classr3_1_1_particle_bungee}\index{r3::ParticleBungee@{r3::ParticleBungee}}
 
 
 A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle force generator, which simulates a bungee cord and connects two particles.  
@@ -11,7 +11,7 @@ A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle
 
 
 
-Inheritance diagram for r3\+:\+:Particle\+Bungee\+:\nopagebreak
+Inheritance diagram for r3\+::Particle\+Bungee\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,42 +20,38 @@ Inheritance diagram for r3\+:\+:Particle\+Bungee\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for r3\+:\+:Particle\+Bungee\+:\nopagebreak
+Collaboration diagram for r3\+::Particle\+Bungee\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classr3_1_1_particle_bungee__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle_bungee_aab8cdf8541433de21bc3d31db0434b6e}{Particle\+Bungee}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$other, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
 \begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} constructor. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classr3_1_1_particle_bungee_a54b12a4381fdcaeaba38a743c96b2bdc}{$\sim$\+Particle\+Bungee}} ()
+\mbox{\hyperlink{classr3_1_1_particle_bungee_a84337b9667b28dc4bc56b0e14d43e2a2}{$\sim$\+Particle\+Bungee}} ()=default
 \item 
 void \mbox{\hyperlink{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384b96}{update\+Force}} (\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$particle, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} duration) override
 \begin{DoxyCompactList}\small\item\em Calculates and changes the force in the force accumulator of a particle. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$ \mbox{\hyperlink{classr3_1_1_particle_bungee_ab5c8ec0ee5390b785e02e4dac28f9b5c}{m\+\_\+other}}
-\item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_bungee_a5fb1a60d165188d6871ba8b6410c9e84}{m\+\_\+spring\+Constant}}
-\item 
-\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_bungee_aeefefba54d7f8080424c17d12cb9ca06}{m\+\_\+rest\+Length}}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle force generator, which simulates a bungee cord and connects two particles. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_bungee_aab8cdf8541433de21bc3d31db0434b6e}\label{classr3_1_1_particle_bungee_aab8cdf8541433de21bc3d31db0434b6e}} 
-\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!Particle\+Bungee@{Particle\+Bungee}}
-\index{Particle\+Bungee@{Particle\+Bungee}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
-\subsubsection{\texorpdfstring{Particle\+Bungee()}{ParticleBungee()}}
+\index{r3::ParticleBungee@{r3::ParticleBungee}!ParticleBungee@{ParticleBungee}}
+\index{ParticleBungee@{ParticleBungee}!r3::ParticleBungee@{r3::ParticleBungee}}
+\doxysubsubsection{\texorpdfstring{ParticleBungee()}{ParticleBungee()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Bungee\+::\+Particle\+Bungee (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{other,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -71,19 +67,19 @@ A \mbox{\hyperlink{classr3_1_1_particle_bungee}{Particle\+Bungee}} is a particle
 {\em rest\+Length} & The threshold at which forces will be applied. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_particle_bungee_a54b12a4381fdcaeaba38a743c96b2bdc}\label{classr3_1_1_particle_bungee_a54b12a4381fdcaeaba38a743c96b2bdc}} 
-\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!````~Particle\+Bungee@{$\sim$\+Particle\+Bungee}}
-\index{````~Particle\+Bungee@{$\sim$\+Particle\+Bungee}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
-\subsubsection{\texorpdfstring{$\sim$\+Particle\+Bungee()}{~ParticleBungee()}}
+\mbox{\Hypertarget{classr3_1_1_particle_bungee_a84337b9667b28dc4bc56b0e14d43e2a2}\label{classr3_1_1_particle_bungee_a84337b9667b28dc4bc56b0e14d43e2a2}} 
+\index{r3::ParticleBungee@{r3::ParticleBungee}!````~ParticleBungee@{$\sim$ParticleBungee}}
+\index{````~ParticleBungee@{$\sim$ParticleBungee}!r3::ParticleBungee@{r3::ParticleBungee}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleBungee()}{~ParticleBungee()}}
 {\footnotesize\ttfamily r3\+::\+Particle\+Bungee\+::$\sim$\+Particle\+Bungee (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384b96}\label{classr3_1_1_particle_bungee_a04de21f7e418f572a9c9dfc936384b96}} 
-\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!update\+Force@{update\+Force}}
-\index{update\+Force@{update\+Force}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
-\subsubsection{\texorpdfstring{update\+Force()}{updateForce()}}
+\index{r3::ParticleBungee@{r3::ParticleBungee}!updateForce@{updateForce}}
+\index{updateForce@{updateForce}!r3::ParticleBungee@{r3::ParticleBungee}}
+\doxysubsubsection{\texorpdfstring{updateForce()}{updateForce()}}
 {\footnotesize\ttfamily void r3\+::\+Particle\+Bungee\+::update\+Force (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classr3_1_1_particle}{Particle}} $\ast$}]{particle,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{duration }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
 
 
@@ -103,28 +99,16 @@ Implements \mbox{\hyperlink{classr3_1_1_i_particle_force_generator_a8b692fc3a40f
 
 
 
-\subsection{Member Data Documentation}
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_particle_bungee_ab5c8ec0ee5390b785e02e4dac28f9b5c}\label{classr3_1_1_particle_bungee_ab5c8ec0ee5390b785e02e4dac28f9b5c}} 
-\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!m\+\_\+other@{m\+\_\+other}}
-\index{m\+\_\+other@{m\+\_\+other}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
-\subsubsection{\texorpdfstring{m\+\_\+other}{m\_other}}
+\index{r3::ParticleBungee@{r3::ParticleBungee}!m\_other@{m\_other}}
+\index{m\_other@{m\_other}!r3::ParticleBungee@{r3::ParticleBungee}}
+\doxysubsubsection{\texorpdfstring{m\_other}{m\_other}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_particle}{Particle}}$\ast$ r3\+::\+Particle\+Bungee\+::m\+\_\+other\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{classr3_1_1_particle_bungee_aeefefba54d7f8080424c17d12cb9ca06}\label{classr3_1_1_particle_bungee_aeefefba54d7f8080424c17d12cb9ca06}} 
-\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!m\+\_\+rest\+Length@{m\+\_\+rest\+Length}}
-\index{m\+\_\+rest\+Length@{m\+\_\+rest\+Length}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
-\subsubsection{\texorpdfstring{m\+\_\+rest\+Length}{m\_restLength}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Bungee\+::m\+\_\+rest\+Length\hspace{0.3cm}{\ttfamily [protected]}}
-
-\mbox{\Hypertarget{classr3_1_1_particle_bungee_a5fb1a60d165188d6871ba8b6410c9e84}\label{classr3_1_1_particle_bungee_a5fb1a60d165188d6871ba8b6410c9e84}} 
-\index{r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}!m\+\_\+spring\+Constant@{m\+\_\+spring\+Constant}}
-\index{m\+\_\+spring\+Constant@{m\+\_\+spring\+Constant}!r3\+::\+Particle\+Bungee@{r3\+::\+Particle\+Bungee}}
-\subsubsection{\texorpdfstring{m\+\_\+spring\+Constant}{m\_springConstant}}
-{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Bungee\+::m\+\_\+spring\+Constant\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8h}{Particle\+Bungee.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8cpp}{Particle\+Bungee.\+cpp}}\end{DoxyCompactItemize}
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8h}{Particle\+Bungee.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_bungee_8cpp}{Particle\+Bungee.\+cpp}}\end{DoxyCompactItemize}

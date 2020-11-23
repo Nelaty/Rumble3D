@@ -1,8 +1,0 @@
-<map id="rum::ParticleForceGenerator" name="rum::ParticleForceGenerator">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_anchored_spring.html" title="{rum::ParticleAnchoredSpring\n|# m_anchor\l# m_springConstant\l# m_restLength\l|+ ParticleAnchoredSpring()\l+ ~ParticleAnchoredSpring()\l+ updateForce()\l}" alt="" coords="5,167,193,303"/>
-<area shape="rect" id="node3" href="$classrum_1_1_particle_bungee.html" title="{rum::ParticleBungee\n|# m_other\l# m_springConstant\l# m_restLength\l|+ ParticleBungee()\l+ ~ParticleBungee()\l+ updateForce()\l}" alt="" coords="217,167,357,303"/>
-<area shape="rect" id="node4" href="$classrum_1_1_particle_buoyancy.html" title="{rum::ParticleBuoyancy\n|# m_maxDepth\l# m_volume\l# m_liquidHeight\l# m_liquidDensity\l|+ ParticleBuoyancy()\l+ ~ParticleBuoyancy()\l+ updateForce()\l}" alt="" coords="382,160,537,311"/>
-<area shape="rect" id="node5" href="$classrum_1_1_particle_drag.html" title="{rum::ParticleDrag\n|# m_k1\l# m_k2\l|+ ParticleDrag()\l+ ~ParticleDrag()\l+ updateForce()\l}" alt="" coords="561,175,683,296"/>
-<area shape="rect" id="node6" href="$classrum_1_1_particle_gravity.html" title="{rum::ParticleGravity\n|# m_gravity\l|+ ParticleGravity()\l+ ~ParticleGravity()\l+ updateForce()\l}" alt="" coords="707,182,843,289"/>
-<area shape="rect" id="node7" href="$classrum_1_1_particle_spring.html" title="{rum::ParticleSpring\n|# m_other\l# m_springConstant\l# m_restLength\l|+ ParticleSpring()\l+ ~ParticleSpring()\l+ updateForce()\l}" alt="" coords="867,167,1006,303"/>
-</map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['collisionprimitivetype',['CollisionPrimitiveType',['../namespacer3.html#a7079ec5e42c1a55140d3bc093d49e319',1,'r3']]]
+  ['platformtype_1759',['PlatformType',['../namespacer3.html#ace92b7fb1cb07147a906aa1e9ae78f68',1,'r3']]]
 ];

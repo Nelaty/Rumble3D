@@ -1,3 +1,0 @@
-<map id="rum::CollisionObject" name="rum::CollisionObject">
-<area shape="rect" id="node2" href="$classrum_1_1_rigid_body.html" title="{rum::RigidBody\n|# m_inverseMass\l# m_linearDamping\l# m_angularDamping\l# m_centerOfMass\l# m_orientation\l# m_velocity\l# m_acceleration\l# m_lastFrameAcceleration\l# m_rotation\l# m_transformationMatrix\l# m_inverseInertiaTensor\l# m_inverseInertiaTensorWorld\l# m_forceAccumulated\l# m_torqueAccumulated\l# m_dead\l|+ RigidBody()\l+ ~RigidBody()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\land 37 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="5,175,220,633"/>
-</map>

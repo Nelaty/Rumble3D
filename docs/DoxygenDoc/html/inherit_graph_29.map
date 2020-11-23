@@ -1,3 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node1" href="$classr3_1_1_i_particle_force_generator.html" title=" " alt="" coords="5,81,183,108"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_buoyancy.html" title="A ParticleBuoyancy is a particle force generator, which can simulate buoyancy." alt="" coords="237,5,375,32"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle_drag.html" title="A ParticleDrag is a particle force generator, which simulates the effect of drag forces." alt="" coords="251,56,361,83"/>
+<area shape="rect" id="node4" href="$classr3_1_1_particle_gravity.html" title="A ParticleGravity is a particle force generator, which applies a constant given force to particles." alt="" coords="244,107,368,133"/>
+<area shape="rect" id="node5" href="$classr3_1_1_particle_spring_base.html" title=" " alt="" coords="231,157,381,184"/>
+<area shape="rect" id="node6" href="$classr3_1_1_particle_anchored_spring.html" title="A ParticleAnchoredSpring is a particle generator, which simulates a spring, which is anchored to a sp..." alt="" coords="429,69,604,96"/>
+<area shape="rect" id="node7" href="$classr3_1_1_particle_bidirectional_spring.html" title=" " alt="" coords="439,121,594,162"/>
+<area shape="rect" id="node8" href="$classr3_1_1_particle_bungee.html" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="453,187,580,213"/>
+<area shape="rect" id="node9" href="$classr3_1_1_particle_spring.html" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles." alt="" coords="457,237,577,264"/>
 </map>

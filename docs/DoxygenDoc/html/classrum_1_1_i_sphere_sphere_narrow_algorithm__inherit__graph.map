@@ -1,4 +1,0 @@
-<map id="rum::ISphereSphereNarrowAlgorithm" name="rum::ISphereSphereNarrowAlgorithm">
-<area shape="rect" id="node3" href="$classrum_1_1_sphere_sphere_narrow_algorithm.html" title="{rum::SphereSphereNarrowAlgorithm\n||+ SphereSphereNarrowAlgorithm()\l+ ~SphereSphereNarrowAlgorithm()\l+ generateContactData()\l}" alt="" coords="6,315,235,421"/>
-<area shape="rect" id="node2" href="$classrum_1_1_i_narrow_phase_algorithm.html" title="{rum::INarrowPhaseAlgorithm\n||+ ~INarrowPhaseAlgorithm()\l# INarrowPhaseAlgorithm()\l}" alt="" coords="27,5,214,97"/>
-</map>

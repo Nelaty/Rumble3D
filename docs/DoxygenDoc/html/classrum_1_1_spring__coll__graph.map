@@ -1,6 +1,0 @@
-<map id="rum::Spring" name="rum::Spring">
-<area shape="rect" id="node2" href="$classrum_1_1_force_generator.html" title="{rum::ForceGenerator\n||+ ~ForceGenerator()\l+ updateForce()\l# ForceGenerator()\l}" alt="" coords="203,307,346,413"/>
-<area shape="rect" id="node4" href="$classrum_1_1_rigid_body.html" title="{rum::RigidBody\n||+ RigidBody()\l+ ~RigidBody()\l+ calculateDerivedData()\l+ setInertiaTensor()\l+ getInverseTensor()\l+ setMass()\l+ getMass()\l+ setInverseMass()\l+ getInverseMass()\l+ hasFiniteMass()\land 37 more...\l# calculateTransformationMatrix()\l# transformInertiaTensor()\l}" alt="" coords="555,233,770,487"/>
-<area shape="rect" id="node6" href="$classrum_1_1_collision_primitive.html" title="{rum::CollisionPrimitive\n||+ ~CollisionPrimitive()\l+ generateContact()\l+ generateContact()\l+ generateContact()\l+ calculateInternals()\l+ getAxis()\l+ getTransform()\l+ getBody()\l# CollisionPrimitive()\l}" alt="" coords="700,549,851,744"/>
-<area shape="rect" id="node5" href="$classrum_1_1_collision_object.html" title="{rum::CollisionObject\n||+ ~CollisionObject()\l+ setCollisionPrimitive()\l+ getCollisionPrimitive()\l# CollisionObject()\l}" alt="" coords="622,807,780,928"/>
-</map>

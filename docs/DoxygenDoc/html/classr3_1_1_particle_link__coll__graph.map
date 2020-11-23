@@ -1,4 +1,8 @@
 <map id="r3::ParticleLink" name="r3::ParticleLink">
-<area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles. " alt="" coords="5,248,201,355"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,357,413"/>
+<area shape="rect" id="node1" title="Abstract class. A ParticleLink links two particles." alt="" coords="64,476,184,627"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles." alt="" coords="5,248,200,355"/>
+<area shape="rect" id="node3" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,359,413"/>
+<area shape="rect" id="node4" title=" " alt="" coords="138,5,185,83"/>
+<area shape="rect" id="node5" title=" " alt="" coords="269,5,315,83"/>
+<area shape="rect" id="node6" title=" " alt="" coords="367,5,417,83"/>
 </map>

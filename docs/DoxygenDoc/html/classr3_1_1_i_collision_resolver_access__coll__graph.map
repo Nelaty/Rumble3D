@@ -1,2 +1,3 @@
 <map id="r3::ICollisionResolverAccess" name="r3::ICollisionResolverAccess">
+<area shape="rect" id="node1" title="Interface for collision resolvers. Uses ICollisionResolutionFilter to resolve given contacts." alt="" coords="5,5,201,112"/>
 </map>

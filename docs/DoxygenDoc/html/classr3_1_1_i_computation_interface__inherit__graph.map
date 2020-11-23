@@ -1,6 +1,9 @@
 <map id="r3::IComputationInterface" name="r3::IComputationInterface">
-<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds. " alt="" coords="35,233,181,355"/>
-<area shape="rect" id="node4" href="$classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds. " alt="" coords="226,219,387,369"/>
-<area shape="rect" id="node3" href="$classr3_1_1_default_particle_engine_c_i.html" title="Default implementation of the particle computation interface. " alt="" coords="5,417,192,627"/>
-<area shape="rect" id="node5" href="$classr3_1_1_default_rigid_body_engine_c_i.html" title="Default implementation of the rigid body engine computation interface. " alt="" coords="217,439,418,605"/>
+<area shape="rect" id="node1" title="Interface used by physics modules to accomplish their tasks." alt="" coords="214,5,390,171"/>
+<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds." alt="" coords="46,233,190,355"/>
+<area shape="rect" id="node4" href="$classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds." alt="" coords="223,219,381,369"/>
+<area shape="rect" id="node6" href="$classr3_1_1_s_p_h_engine_computation_interface_base.html" title=" " alt="" coords="406,226,675,362"/>
+<area shape="rect" id="node3" href="$classr3_1_1_default_particle_engine_c_i.html" title="Default implementation of the particle computation interface." alt="" coords="5,417,191,627"/>
+<area shape="rect" id="node5" href="$classr3_1_1_default_rigid_body_engine_c_i.html" title="Default implementation of the rigid body engine computation interface." alt="" coords="215,439,413,605"/>
+<area shape="rect" id="node7" href="$classr3_1_1_s_p_h_engine_c_i_cpu_serial.html" title=" " alt="" coords="449,439,633,605"/>
 </map>

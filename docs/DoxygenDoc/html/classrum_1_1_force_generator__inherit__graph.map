@@ -1,6 +1,0 @@
-<map id="rum::ForceGenerator" name="rum::ForceGenerator">
-<area shape="rect" id="node2" href="$classrum_1_1_anchored_spring.html" title="{rum::AnchoredSpring\n|# m_connectionPoint\l# m_anchor\l# m_springConstant\l# m_restLength\l|+ AnchoredSpring()\l+ ~AnchoredSpring()\l+ updateForce()\l}" alt="" coords="5,160,149,311"/>
-<area shape="rect" id="node3" href="$classrum_1_1_directed_force.html" title="{rum::DirectedForce\n||+ DirectedForce()\l+ ~DirectedForce()\l+ updateForce()\l+ setForce()\l}" alt="" coords="173,175,307,296"/>
-<area shape="rect" id="node4" href="$classrum_1_1_gravity.html" title="{rum::Gravity\n|# m_gravity\l|+ Gravity()\l+ ~Gravity()\l+ updateForce()\l}" alt="" coords="331,182,445,289"/>
-<area shape="rect" id="node5" href="$classrum_1_1_spring.html" title="{rum::Spring\n|# m_connectionPoint\l# m_otherConnectionPoint\l# m_other\l# m_springConstant\l# m_restLength\l|+ Spring()\l+ updateForce()\l}" alt="" coords="470,160,645,311"/>
-</map>

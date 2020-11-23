@@ -1,3 +1,4 @@
 <map id="r3::RigidBody" name="r3::RigidBody">
-<area shape="rect" id="node2" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space. " alt="" coords="33,5,192,171"/>
+<area shape="rect" id="node1" title="A rigid body is a 3D object, which can be moved and rotated and has collision properties." alt="" coords="5,219,220,619"/>
+<area shape="rect" id="node2" href="$classr3_1_1_collision_object.html" title="A CollisionObject can collide with other collision objects in 3D space." alt="" coords="33,5,192,171"/>
 </map>

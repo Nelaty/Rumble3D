@@ -1,5 +1,5 @@
-\hypertarget{classr3_1_1_rigid_body}{}\section{r3\+:\+:Rigid\+Body Class Reference}
-\label{classr3_1_1_rigid_body}\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
+\hypertarget{classr3_1_1_rigid_body}{}\doxysection{r3\+::Rigid\+Body Class Reference}
+\label{classr3_1_1_rigid_body}\index{r3::RigidBody@{r3::RigidBody}}
 
 
 A rigid body is a 3D object, which can be moved and rotated and has collision properties.  
@@ -11,7 +11,7 @@ A rigid body is a 3D object, which can be moved and rotated and has collision pr
 
 
 
-Inheritance diagram for r3\+:\+:Rigid\+Body\+:\nopagebreak
+Inheritance diagram for r3\+::Rigid\+Body\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -20,14 +20,14 @@ Inheritance diagram for r3\+:\+:Rigid\+Body\+:\nopagebreak
 \end{figure}
 
 
-Collaboration diagram for r3\+:\+:Rigid\+Body\+:\nopagebreak
+Collaboration diagram for r3\+::Rigid\+Body\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{classr3_1_1_rigid_body__coll__graph}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_rigid_body_a8acb625440a10d83a87e9139bc9429d5}{Rigid\+Body}} ()
@@ -146,14 +146,14 @@ virtual void \mbox{\hyperlink{classr3_1_1_rigid_body_a82945a23582ddfd4bad5c9b518
 \begin{DoxyCompactList}\small\item\em Resolve position and rotation. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classr3_1_1_rigid_body_a87ecb0826050e8dc9b9a9a8eaf0fff66}{reset}} (const glm\+::vec3 \&position=glm\+::vec3(0), const glm\+::vec3 \&rotation=glm\+::vec3(0))
 \begin{DoxyCompactList}\small\item\em Reset the rigid body. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Static Protected Member Functions}
+\doxysubsection*{Static Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static void \mbox{\hyperlink{classr3_1_1_rigid_body_ac2a67d810e9923dc125a0300c718a97a}{calculate\+Transformation\+Matrix}} (glm\+::mat4 \&transformation\+Matrix, const glm\+::vec3 \&position, const glm\+::mat3 \&orientation)
 \begin{DoxyCompactList}\small\item\em Calculate a transformation matrix from given parameters. \end{DoxyCompactList}\item 
 static void \mbox{\hyperlink{classr3_1_1_rigid_body_a59d331a52a0110415b38bfa89cf0f804}{transform\+Inertia\+Tensor}} (glm\+::mat3 \&iit\+World, const glm\+::mat3 \&iit, const glm\+::mat4 \&rot\+Mat)
 \end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
+\doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} \mbox{\hyperlink{classr3_1_1_rigid_body_abcd4f744963b80cc1d592ccec117fd54}{m\+\_\+physics\+Material}}
@@ -196,23 +196,23 @@ bool \mbox{\hyperlink{classr3_1_1_rigid_body_abfcca5ae4caa68d23ba68cc4fd1d2d33}{
 \item 
 bool \mbox{\hyperlink{classr3_1_1_rigid_body_ada1bb4c1c933c96090fe705612db5866}{m\+\_\+can\+Sleep}} \{\}
 \end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 A rigid body is a 3D object, which can be moved and rotated and has collision properties. 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a8acb625440a10d83a87e9139bc9429d5}\label{classr3_1_1_rigid_body_a8acb625440a10d83a87e9139bc9429d5}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!Rigid\+Body@{Rigid\+Body}}
-\index{Rigid\+Body@{Rigid\+Body}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{Rigid\+Body()}{RigidBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!RigidBody@{RigidBody}}
+\index{RigidBody@{RigidBody}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{RigidBody()}{RigidBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily r3\+::\+Rigid\+Body\+::\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a5d12d73e66bca3b95a9597f064fa9d56}\label{classr3_1_1_rigid_body_a5d12d73e66bca3b95a9597f064fa9d56}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!Rigid\+Body@{Rigid\+Body}}
-\index{Rigid\+Body@{Rigid\+Body}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{Rigid\+Body()}{RigidBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!RigidBody@{RigidBody}}
+\index{RigidBody@{RigidBody}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{RigidBody()}{RigidBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily r3\+::\+Rigid\+Body\+::\+Rigid\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structr3_1_1_rigid_body_def}{Rigid\+Body\+Def}} \&}]{def }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
@@ -225,18 +225,18 @@ A rigid body is a 3D object, which can be moved and rotated and has collision pr
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a84d30e7e97d0341c08f58efc8ec60532}\label{classr3_1_1_rigid_body_a84d30e7e97d0341c08f58efc8ec60532}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!````~Rigid\+Body@{$\sim$\+Rigid\+Body}}
-\index{````~Rigid\+Body@{$\sim$\+Rigid\+Body}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{$\sim$\+Rigid\+Body()}{~RigidBody()}}
+\index{r3::RigidBody@{r3::RigidBody}!````~RigidBody@{$\sim$RigidBody}}
+\index{````~RigidBody@{$\sim$RigidBody}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{$\sim$RigidBody()}{~RigidBody()}}
 {\footnotesize\ttfamily r3\+::\+Rigid\+Body\+::$\sim$\+Rigid\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
 
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a3ec9e7463d7c9a6607b35a334049a1e3}\label{classr3_1_1_rigid_body_a3ec9e7463d7c9a6607b35a334049a1e3}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!add\+Force@{add\+Force}}
-\index{add\+Force@{add\+Force}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{add\+Force()}{addForce()}}
+\index{r3::RigidBody@{r3::RigidBody}!addForce@{addForce}}
+\index{addForce@{addForce}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addForce()}{addForce()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::add\+Force (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force }\end{DoxyParamCaption})}
 
 
@@ -249,9 +249,9 @@ Add a force which\textquotesingle{}s attack point is the bodies center of mass.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_abba1067c4db2d246e3f82b6c1bd35c87}\label{classr3_1_1_rigid_body_abba1067c4db2d246e3f82b6c1bd35c87}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!add\+Force\+At\+Body\+Point@{add\+Force\+At\+Body\+Point}}
-\index{add\+Force\+At\+Body\+Point@{add\+Force\+At\+Body\+Point}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{add\+Force\+At\+Body\+Point()}{addForceAtBodyPoint()}}
+\index{r3::RigidBody@{r3::RigidBody}!addForceAtBodyPoint@{addForceAtBodyPoint}}
+\index{addForceAtBodyPoint@{addForceAtBodyPoint}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addForceAtBodyPoint()}{addForceAtBodyPoint()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::add\+Force\+At\+Body\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force,  }\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption})}
 
 
@@ -266,9 +266,9 @@ Add a force at a specified body point. Can create rotational forces.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a9e8fc5409e15ae0184baf3238b97dec7}\label{classr3_1_1_rigid_body_a9e8fc5409e15ae0184baf3238b97dec7}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!add\+Force\+At\+Point@{add\+Force\+At\+Point}}
-\index{add\+Force\+At\+Point@{add\+Force\+At\+Point}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{add\+Force\+At\+Point()}{addForceAtPoint()}}
+\index{r3::RigidBody@{r3::RigidBody}!addForceAtPoint@{addForceAtPoint}}
+\index{addForceAtPoint@{addForceAtPoint}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addForceAtPoint()}{addForceAtPoint()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::add\+Force\+At\+Point (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{force,  }\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption})}
 
 
@@ -283,9 +283,9 @@ Add a force at a specified body point. Can create rotational forces.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aaa3f92c7abc8b733a3dac8841ff41b61}\label{classr3_1_1_rigid_body_aaa3f92c7abc8b733a3dac8841ff41b61}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!add\+Rotation@{add\+Rotation}}
-\index{add\+Rotation@{add\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{add\+Rotation()}{addRotation()}}
+\index{r3::RigidBody@{r3::RigidBody}!addRotation@{addRotation}}
+\index{addRotation@{addRotation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addRotation()}{addRotation()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::add\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{delta\+Rotation }\end{DoxyParamCaption})}
 
 
@@ -298,9 +298,9 @@ Additively increase rotation.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a276ac614e4eab3df963d64401112bd36}\label{classr3_1_1_rigid_body_a276ac614e4eab3df963d64401112bd36}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!add\+Torque@{add\+Torque}}
-\index{add\+Torque@{add\+Torque}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{add\+Torque()}{addTorque()}}
+\index{r3::RigidBody@{r3::RigidBody}!addTorque@{addTorque}}
+\index{addTorque@{addTorque}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addTorque()}{addTorque()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::add\+Torque (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{torque }\end{DoxyParamCaption})}
 
 
@@ -308,9 +308,9 @@ Additively increase rotation.
 Additively increase the torque accumulator.. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aa3303f1eb97e56d75562525b5e317937}\label{classr3_1_1_rigid_body_aa3303f1eb97e56d75562525b5e317937}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!add\+Velocity@{add\+Velocity}}
-\index{add\+Velocity@{add\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{add\+Velocity()}{addVelocity()}}
+\index{r3::RigidBody@{r3::RigidBody}!addVelocity@{addVelocity}}
+\index{addVelocity@{addVelocity}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{addVelocity()}{addVelocity()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::add\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{delta\+Velocity }\end{DoxyParamCaption})}
 
 
@@ -323,15 +323,15 @@ Additively increase velocity.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_addae07b8e8842e78012c5f3825e5185a}\label{classr3_1_1_rigid_body_addae07b8e8842e78012c5f3825e5185a}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!calculate\+Derived\+Data@{calculate\+Derived\+Data}}
-\index{calculate\+Derived\+Data@{calculate\+Derived\+Data}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{calculate\+Derived\+Data()}{calculateDerivedData()}}
+\index{r3::RigidBody@{r3::RigidBody}!calculateDerivedData@{calculateDerivedData}}
+\index{calculateDerivedData@{calculateDerivedData}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{calculateDerivedData()}{calculateDerivedData()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::calculate\+Derived\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ac2a67d810e9923dc125a0300c718a97a}\label{classr3_1_1_rigid_body_ac2a67d810e9923dc125a0300c718a97a}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!calculate\+Transformation\+Matrix@{calculate\+Transformation\+Matrix}}
-\index{calculate\+Transformation\+Matrix@{calculate\+Transformation\+Matrix}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{calculate\+Transformation\+Matrix()}{calculateTransformationMatrix()}}
+\index{r3::RigidBody@{r3::RigidBody}!calculateTransformationMatrix@{calculateTransformationMatrix}}
+\index{calculateTransformationMatrix@{calculateTransformationMatrix}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{calculateTransformationMatrix()}{calculateTransformationMatrix()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::calculate\+Transformation\+Matrix (\begin{DoxyParamCaption}\item[{glm\+::mat4 \&}]{transformation\+Matrix,  }\item[{const glm\+::vec3 \&}]{position,  }\item[{const glm\+::mat3 \&}]{orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
 
 
@@ -340,7 +340,7 @@ Calculate a transformation matrix from given parameters.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt out}  & {\em transformation\+Matrix} & The calculated transformation matrix. \\
+\mbox{\texttt{ out}}  & {\em transformation\+Matrix} & The calculated transformation matrix. \\
 \hline
  & {\em position} & The translation applied to the matrix. \\
 \hline
@@ -348,9 +348,9 @@ Calculate a transformation matrix from given parameters.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a1ed88cb4d77383c43c9058cecacbd407}\label{classr3_1_1_rigid_body_a1ed88cb4d77383c43c9058cecacbd407}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!can\+Sleep@{can\+Sleep}}
-\index{can\+Sleep@{can\+Sleep}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{can\+Sleep()}{canSleep()}}
+\index{r3::RigidBody@{r3::RigidBody}!canSleep@{canSleep}}
+\index{canSleep@{canSleep}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{canSleep()}{canSleep()}}
 {\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+::can\+Sleep (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -358,9 +358,9 @@ Calculate a transformation matrix from given parameters.
 Check if this body can go to sleep at any time. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a86bfec9a651351b27c0f53f5db56c7c4}\label{classr3_1_1_rigid_body_a86bfec9a651351b27c0f53f5db56c7c4}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!clear\+Accumulators@{clear\+Accumulators}}
-\index{clear\+Accumulators@{clear\+Accumulators}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{clear\+Accumulators()}{clearAccumulators()}}
+\index{r3::RigidBody@{r3::RigidBody}!clearAccumulators@{clearAccumulators}}
+\index{clearAccumulators@{clearAccumulators}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{clearAccumulators()}{clearAccumulators()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::clear\+Accumulators (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -368,9 +368,9 @@ Check if this body can go to sleep at any time.
 Reset accumulated linear and angular forces. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a671c60af58aea7cff7fe3e029fa5ef71}\label{classr3_1_1_rigid_body_a671c60af58aea7cff7fe3e029fa5ef71}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Acceleration@{get\+Acceleration}}
-\index{get\+Acceleration@{get\+Acceleration}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Acceleration()}{getAcceleration()}}
+\index{r3::RigidBody@{r3::RigidBody}!getAcceleration@{getAcceleration}}
+\index{getAcceleration@{getAcceleration}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getAcceleration()}{getAcceleration()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Rigid\+Body\+::get\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -381,9 +381,9 @@ Get the current acceleration.
 The acceleration. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_afcef73f6bf5ad38780f39c8ebb5c4af1}\label{classr3_1_1_rigid_body_afcef73f6bf5ad38780f39c8ebb5c4af1}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Angular\+Damping@{get\+Angular\+Damping}}
-\index{get\+Angular\+Damping@{get\+Angular\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Angular\+Damping()}{getAngularDamping()}}
+\index{r3::RigidBody@{r3::RigidBody}!getAngularDamping@{getAngularDamping}}
+\index{getAngularDamping@{getAngularDamping}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getAngularDamping()}{getAngularDamping()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::get\+Angular\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -394,9 +394,9 @@ Get the angular damping coefficient.
 The angular damping coefficient. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a9b802fe5774292fbc6ce80cccab15151}\label{classr3_1_1_rigid_body_a9b802fe5774292fbc6ce80cccab15151}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Center\+Of\+Mass@{get\+Center\+Of\+Mass}}
-\index{get\+Center\+Of\+Mass@{get\+Center\+Of\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Center\+Of\+Mass()}{getCenterOfMass()}}
+\index{r3::RigidBody@{r3::RigidBody}!getCenterOfMass@{getCenterOfMass}}
+\index{getCenterOfMass@{getCenterOfMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getCenterOfMass()}{getCenterOfMass()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Center\+Of\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -407,9 +407,9 @@ Get the current position.
 The position. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ac138908f5f7aa4763683d9bdd4cc9fd5}\label{classr3_1_1_rigid_body_ac138908f5f7aa4763683d9bdd4cc9fd5}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Collision\+Callback@{get\+Collision\+Callback}}
-\index{get\+Collision\+Callback@{get\+Collision\+Callback}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Collision\+Callback()}{getCollisionCallback()}}
+\index{r3::RigidBody@{r3::RigidBody}!getCollisionCallback@{getCollisionCallback}}
+\index{getCollisionCallback@{getCollisionCallback}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getCollisionCallback()}{getCollisionCallback()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classr3_1_1_collision_callback}{Collision\+Callback}} \& r3\+::\+Rigid\+Body\+::get\+Collision\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -417,9 +417,9 @@ The position.
 Get the collision callback of this body. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a621796b0cd49499e10b158096ae5c938}\label{classr3_1_1_rigid_body_a621796b0cd49499e10b158096ae5c938}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Direction\+In\+Local\+Space@{get\+Direction\+In\+Local\+Space}}
-\index{get\+Direction\+In\+Local\+Space@{get\+Direction\+In\+Local\+Space}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Direction\+In\+Local\+Space()}{getDirectionInLocalSpace()}}
+\index{r3::RigidBody@{r3::RigidBody}!getDirectionInLocalSpace@{getDirectionInLocalSpace}}
+\index{getDirectionInLocalSpace@{getDirectionInLocalSpace}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getDirectionInLocalSpace()}{getDirectionInLocalSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Direction\+In\+Local\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption}) const}
 
 
@@ -435,9 +435,9 @@ Convert a direction from world space into local space.
 The direction in local space. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aa51f55f7c344d1d7754b91b565cb6eac}\label{classr3_1_1_rigid_body_aa51f55f7c344d1d7754b91b565cb6eac}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Direction\+In\+World\+Space@{get\+Direction\+In\+World\+Space}}
-\index{get\+Direction\+In\+World\+Space@{get\+Direction\+In\+World\+Space}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Direction\+In\+World\+Space()}{getDirectionInWorldSpace()}}
+\index{r3::RigidBody@{r3::RigidBody}!getDirectionInWorldSpace@{getDirectionInWorldSpace}}
+\index{getDirectionInWorldSpace@{getDirectionInWorldSpace}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getDirectionInWorldSpace()}{getDirectionInWorldSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Direction\+In\+World\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{direction }\end{DoxyParamCaption}) const}
 
 
@@ -453,9 +453,9 @@ Convert a direction from local body space into world space.
 The direction in world space. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ae15bce9cc4aa2db577bdfb61464d26c0}\label{classr3_1_1_rigid_body_ae15bce9cc4aa2db577bdfb61464d26c0}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Force\+Accumulated@{get\+Force\+Accumulated}}
-\index{get\+Force\+Accumulated@{get\+Force\+Accumulated}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Force\+Accumulated()}{getForceAccumulated()}}
+\index{r3::RigidBody@{r3::RigidBody}!getForceAccumulated@{getForceAccumulated}}
+\index{getForceAccumulated@{getForceAccumulated}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getForceAccumulated()}{getForceAccumulated()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Force\+Accumulated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -465,10 +465,20 @@ Get the current sum of linear forces.
 \begin{DoxyReturn}{Returns}
 The force accumulator. 
 \end{DoxyReturn}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_a03c55eb4a0df2ec179e621ed5de0919a}\label{classr3_1_1_rigid_body_a03c55eb4a0df2ec179e621ed5de0919a}} 
+\index{r3::RigidBody@{r3::RigidBody}!getInverseInertiaTensorWorld@{getInverseInertiaTensorWorld}}
+\index{getInverseInertiaTensorWorld@{getInverseInertiaTensorWorld}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getInverseInertiaTensorWorld()}{getInverseInertiaTensorWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const glm\+::mat3 \& r3\+::\+Rigid\+Body\+::get\+Inverse\+Inertia\+Tensor\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the inverted inertia tensor in world coordinates. 
+
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ae9057a0acbb7dd552a23557ed773b3d5}\label{classr3_1_1_rigid_body_ae9057a0acbb7dd552a23557ed773b3d5}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Inverse\+Inertia\+Tensor\+World@{get\+Inverse\+Inertia\+Tensor\+World}}
-\index{get\+Inverse\+Inertia\+Tensor\+World@{get\+Inverse\+Inertia\+Tensor\+World}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Inverse\+Inertia\+Tensor\+World()}{getInverseInertiaTensorWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!getInverseInertiaTensorWorld@{getInverseInertiaTensorWorld}}
+\index{getInverseInertiaTensorWorld@{getInverseInertiaTensorWorld}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getInverseInertiaTensorWorld()}{getInverseInertiaTensorWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::get\+Inverse\+Inertia\+Tensor\+World (\begin{DoxyParamCaption}\item[{glm\+::mat3 $\ast$}]{inverse\+Inertia\+Tensor\+World }\end{DoxyParamCaption}) const}
 
 
@@ -477,23 +487,13 @@ Get the inverted inertia tensor in world coordinates.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\tt out}  & {\em inverse\+Inertia\+Tensor\+World} & Contains the inverted inertia tensor. \\
+\mbox{\texttt{ out}}  & {\em inverse\+Inertia\+Tensor\+World} & Contains the inverted inertia tensor. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classr3_1_1_rigid_body_a03c55eb4a0df2ec179e621ed5de0919a}\label{classr3_1_1_rigid_body_a03c55eb4a0df2ec179e621ed5de0919a}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Inverse\+Inertia\+Tensor\+World@{get\+Inverse\+Inertia\+Tensor\+World}}
-\index{get\+Inverse\+Inertia\+Tensor\+World@{get\+Inverse\+Inertia\+Tensor\+World}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Inverse\+Inertia\+Tensor\+World()}{getInverseInertiaTensorWorld()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily const glm\+::mat3 \& r3\+::\+Rigid\+Body\+::get\+Inverse\+Inertia\+Tensor\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
-
-
-
-Get the inverted inertia tensor in world coordinates. 
-
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a9a994b91ccc980c1dcc4ed43f71b6913}\label{classr3_1_1_rigid_body_a9a994b91ccc980c1dcc4ed43f71b6913}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Inverse\+Mass@{get\+Inverse\+Mass}}
-\index{get\+Inverse\+Mass@{get\+Inverse\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Inverse\+Mass()}{getInverseMass()}}
+\index{r3::RigidBody@{r3::RigidBody}!getInverseMass@{getInverseMass}}
+\index{getInverseMass@{getInverseMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getInverseMass()}{getInverseMass()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::get\+Inverse\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -501,12 +501,12 @@ Get the inverted inertia tensor in world coordinates.
 Get the inverse mass. 
 
 \begin{DoxyReturn}{Returns}
-The inverse of the current mass.
+The inverse of the current mass.  An inverse mass of zero equals a rigid body with infinite mass. 
 \end{DoxyReturn}
-An inverse mass of zero equals a rigid body with infinite mass. \mbox{\Hypertarget{classr3_1_1_rigid_body_a8a99ed119357d0cec8b77dfcb169dfab}\label{classr3_1_1_rigid_body_a8a99ed119357d0cec8b77dfcb169dfab}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Inverse\+Tensor@{get\+Inverse\+Tensor}}
-\index{get\+Inverse\+Tensor@{get\+Inverse\+Tensor}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Inverse\+Tensor()}{getInverseTensor()}}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_a8a99ed119357d0cec8b77dfcb169dfab}\label{classr3_1_1_rigid_body_a8a99ed119357d0cec8b77dfcb169dfab}} 
+\index{r3::RigidBody@{r3::RigidBody}!getInverseTensor@{getInverseTensor}}
+\index{getInverseTensor@{getInverseTensor}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getInverseTensor()}{getInverseTensor()}}
 {\footnotesize\ttfamily glm\+::mat3 r3\+::\+Rigid\+Body\+::get\+Inverse\+Tensor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -517,9 +517,9 @@ Get the inverted inertia tensor.
 The inverse of the current inertia tensor. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a0107527952d289050043c9625a7818ee}\label{classr3_1_1_rigid_body_a0107527952d289050043c9625a7818ee}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Last\+Frame\+Acceleration@{get\+Last\+Frame\+Acceleration}}
-\index{get\+Last\+Frame\+Acceleration@{get\+Last\+Frame\+Acceleration}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Last\+Frame\+Acceleration()}{getLastFrameAcceleration()}}
+\index{r3::RigidBody@{r3::RigidBody}!getLastFrameAcceleration@{getLastFrameAcceleration}}
+\index{getLastFrameAcceleration@{getLastFrameAcceleration}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getLastFrameAcceleration()}{getLastFrameAcceleration()}}
 {\footnotesize\ttfamily const glm\+::vec3 \& r3\+::\+Rigid\+Body\+::get\+Last\+Frame\+Acceleration (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -527,9 +527,9 @@ The inverse of the current inertia tensor.
 Get the acceleration from the last update. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ab48c055a703f1d3d84b9f1977ef504e6}\label{classr3_1_1_rigid_body_ab48c055a703f1d3d84b9f1977ef504e6}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Linear\+Damping@{get\+Linear\+Damping}}
-\index{get\+Linear\+Damping@{get\+Linear\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Linear\+Damping()}{getLinearDamping()}}
+\index{r3::RigidBody@{r3::RigidBody}!getLinearDamping@{getLinearDamping}}
+\index{getLinearDamping@{getLinearDamping}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getLinearDamping()}{getLinearDamping()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::get\+Linear\+Damping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -540,9 +540,9 @@ Get the linear damping factor.
 The linear damping coefficient. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a171ee8190ba1c7c2a40c5faf8d654170}\label{classr3_1_1_rigid_body_a171ee8190ba1c7c2a40c5faf8d654170}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Mass@{get\+Mass}}
-\index{get\+Mass@{get\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+\index{r3::RigidBody@{r3::RigidBody}!getMass@{getMass}}
+\index{getMass@{getMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getMass()}{getMass()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -553,9 +553,9 @@ Get the mass of this rigid body.
 The current mass. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ae12d1d4d9dbbb970ed83fa1eab2d928a}\label{classr3_1_1_rigid_body_ae12d1d4d9dbbb970ed83fa1eab2d928a}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Orientation@{get\+Orientation}}
-\index{get\+Orientation@{get\+Orientation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Orientation()}{getOrientation()}}
+\index{r3::RigidBody@{r3::RigidBody}!getOrientation@{getOrientation}}
+\index{getOrientation@{getOrientation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getOrientation()}{getOrientation()}}
 {\footnotesize\ttfamily glm\+::quat r3\+::\+Rigid\+Body\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -566,9 +566,9 @@ Get the current orientation.
 The orientation. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ab73b4319a248ebf6557851afa5050481}\label{classr3_1_1_rigid_body_ab73b4319a248ebf6557851afa5050481}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Physics\+Material@{get\+Physics\+Material}}
-\index{get\+Physics\+Material@{get\+Physics\+Material}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Physics\+Material()}{getPhysicsMaterial()}}
+\index{r3::RigidBody@{r3::RigidBody}!getPhysicsMaterial@{getPhysicsMaterial}}
+\index{getPhysicsMaterial@{getPhysicsMaterial}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getPhysicsMaterial()}{getPhysicsMaterial()}}
 {\footnotesize\ttfamily const \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} \& r3\+::\+Rigid\+Body\+::get\+Physics\+Material (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -576,12 +576,13 @@ The orientation.
 Get the current physics material. 
 
 \begin{DoxyReturn}{Returns}
-The current physics material if existent, nullptr otherwise. 
+The current physics material if existent, nullptr otherwise. ~\newline
+ 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a23b72178cb04117c3b016218fefff835}\label{classr3_1_1_rigid_body_a23b72178cb04117c3b016218fefff835}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Point\+In\+Local\+Space@{get\+Point\+In\+Local\+Space}}
-\index{get\+Point\+In\+Local\+Space@{get\+Point\+In\+Local\+Space}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Point\+In\+Local\+Space()}{getPointInLocalSpace()}}
+\index{r3::RigidBody@{r3::RigidBody}!getPointInLocalSpace@{getPointInLocalSpace}}
+\index{getPointInLocalSpace@{getPointInLocalSpace}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getPointInLocalSpace()}{getPointInLocalSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Point\+In\+Local\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption}) const}
 
 
@@ -597,9 +598,9 @@ Convert a point into local body space.
 The point in local body space. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a1d694ab55e5846af2d5a184b2be4c523}\label{classr3_1_1_rigid_body_a1d694ab55e5846af2d5a184b2be4c523}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Point\+In\+World\+Space@{get\+Point\+In\+World\+Space}}
-\index{get\+Point\+In\+World\+Space@{get\+Point\+In\+World\+Space}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Point\+In\+World\+Space()}{getPointInWorldSpace()}}
+\index{r3::RigidBody@{r3::RigidBody}!getPointInWorldSpace@{getPointInWorldSpace}}
+\index{getPointInWorldSpace@{getPointInWorldSpace}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getPointInWorldSpace()}{getPointInWorldSpace()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Point\+In\+World\+Space (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{point }\end{DoxyParamCaption}) const}
 
 
@@ -615,9 +616,9 @@ Convert a point from local body space into world space.
 The converted point in world space. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_afd8accdd3c9a75053eaeac0c9c35d07d}\label{classr3_1_1_rigid_body_afd8accdd3c9a75053eaeac0c9c35d07d}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Rotation@{get\+Rotation}}
-\index{get\+Rotation@{get\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+\index{r3::RigidBody@{r3::RigidBody}!getRotation@{getRotation}}
+\index{getRotation@{getRotation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getRotation()}{getRotation()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -628,9 +629,9 @@ Get the current orientation.
 The orientation. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a8a5111fa2e4bd5f3a2615525da4c2949}\label{classr3_1_1_rigid_body_a8a5111fa2e4bd5f3a2615525da4c2949}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Torque\+Accumulated@{get\+Torque\+Accumulated}}
-\index{get\+Torque\+Accumulated@{get\+Torque\+Accumulated}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Torque\+Accumulated()}{getTorqueAccumulated()}}
+\index{r3::RigidBody@{r3::RigidBody}!getTorqueAccumulated@{getTorqueAccumulated}}
+\index{getTorqueAccumulated@{getTorqueAccumulated}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getTorqueAccumulated()}{getTorqueAccumulated()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Torque\+Accumulated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -641,9 +642,9 @@ Get the current sum of rotational forces.
 The torque accumulator. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a5a96949cb2103e3c4d563849a6c8fb94}\label{classr3_1_1_rigid_body_a5a96949cb2103e3c4d563849a6c8fb94}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Transformation\+Matrix@{get\+Transformation\+Matrix}}
-\index{get\+Transformation\+Matrix@{get\+Transformation\+Matrix}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Transformation\+Matrix()}{getTransformationMatrix()}}
+\index{r3::RigidBody@{r3::RigidBody}!getTransformationMatrix@{getTransformationMatrix}}
+\index{getTransformationMatrix@{getTransformationMatrix}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getTransformationMatrix()}{getTransformationMatrix()}}
 {\footnotesize\ttfamily const glm\+::mat4 \& r3\+::\+Rigid\+Body\+::get\+Transformation\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -654,9 +655,9 @@ Get the current transformation matrix.
 The transformation matrix. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a17b3c0a13865cdca6e43037ec7107d58}\label{classr3_1_1_rigid_body_a17b3c0a13865cdca6e43037ec7107d58}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!get\+Velocity@{get\+Velocity}}
-\index{get\+Velocity@{get\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+\index{r3::RigidBody@{r3::RigidBody}!getVelocity@{getVelocity}}
+\index{getVelocity@{getVelocity}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{getVelocity()}{getVelocity()}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -667,9 +668,9 @@ Get the current velocity.
 The velocity. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a4e2a5b4dd423c75199fb0a4fb2ae078f}\label{classr3_1_1_rigid_body_a4e2a5b4dd423c75199fb0a4fb2ae078f}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!has\+Finite\+Mass@{has\+Finite\+Mass}}
-\index{has\+Finite\+Mass@{has\+Finite\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{has\+Finite\+Mass()}{hasFiniteMass()}}
+\index{r3::RigidBody@{r3::RigidBody}!hasFiniteMass@{hasFiniteMass}}
+\index{hasFiniteMass@{hasFiniteMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{hasFiniteMass()}{hasFiniteMass()}}
 {\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+::has\+Finite\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -680,9 +681,9 @@ Check if this rigid body has infinite mass.
 True if the mass is infinite, false otherwise. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aa617fb4da3d5aeec43e04983765f7db6}\label{classr3_1_1_rigid_body_aa617fb4da3d5aeec43e04983765f7db6}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!init@{init}}
-\index{init@{init}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{init()}{init()}}
+\index{r3::RigidBody@{r3::RigidBody}!init@{init}}
+\index{init@{init}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structr3_1_1_rigid_body_def}{Rigid\+Body\+Def}} \&}]{definition }\end{DoxyParamCaption})}
 
 
@@ -690,9 +691,9 @@ True if the mass is infinite, false otherwise.
 Initialize all attributes of this rigid body. param definition Rigid body construction information. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a82945a23582ddfd4bad5c9b51847f9a4}\label{classr3_1_1_rigid_body_a82945a23582ddfd4bad5c9b51847f9a4}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!integrate@{integrate}}
-\index{integrate@{integrate}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{integrate()}{integrate()}}
+\index{r3::RigidBody@{r3::RigidBody}!integrate@{integrate}}
+\index{integrate@{integrate}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{integrate()}{integrate()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::integrate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{time\+Delta }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -705,9 +706,9 @@ Resolve position and rotation.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a162bb9f31e5214001dabb1bdd94a9fbf}\label{classr3_1_1_rigid_body_a162bb9f31e5214001dabb1bdd94a9fbf}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!is\+Awake@{is\+Awake}}
-\index{is\+Awake@{is\+Awake}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{is\+Awake()}{isAwake()}}
+\index{r3::RigidBody@{r3::RigidBody}!isAwake@{isAwake}}
+\index{isAwake@{isAwake}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{isAwake()}{isAwake()}}
 {\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+::is\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
@@ -718,9 +719,9 @@ Check if this rigid body is being simulated.
 True if it is being siulated, false otherwise. 
 \end{DoxyReturn}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a87ecb0826050e8dc9b9a9a8eaf0fff66}\label{classr3_1_1_rigid_body_a87ecb0826050e8dc9b9a9a8eaf0fff66}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!reset@{reset}}
-\index{reset@{reset}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{reset()}{reset()}}
+\index{r3::RigidBody@{r3::RigidBody}!reset@{reset}}
+\index{reset@{reset}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::reset (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{position = {\ttfamily glm\+:\+:vec3(0)},  }\item[{const glm\+::vec3 \&}]{rotation = {\ttfamily glm\+:\+:vec3(0)} }\end{DoxyParamCaption})}
 
 
@@ -735,9 +736,9 @@ Reset the rigid body.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_add57880a9a4df0d016c1639eba48350d}\label{classr3_1_1_rigid_body_add57880a9a4df0d016c1639eba48350d}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Acceleration@{set\+Acceleration}}
-\index{set\+Acceleration@{set\+Acceleration}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setAcceleration@{setAcceleration}}
+\index{setAcceleration@{setAcceleration}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{acceleration }\end{DoxyParamCaption})}
 
 
@@ -750,9 +751,9 @@ Set the current acceleration.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a39362e0dad1d6758be86c54fc6e6b944}\label{classr3_1_1_rigid_body_a39362e0dad1d6758be86c54fc6e6b944}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Acceleration@{set\+Acceleration}}
-\index{set\+Acceleration@{set\+Acceleration}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Acceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setAcceleration@{setAcceleration}}
+\index{setAcceleration@{setAcceleration}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setAcceleration()}{setAcceleration()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Acceleration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -769,9 +770,9 @@ Set the current acceleration.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a53d9954e15f52459386ea82e299c9857}\label{classr3_1_1_rigid_body_a53d9954e15f52459386ea82e299c9857}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Angular\+Damping@{set\+Angular\+Damping}}
-\index{set\+Angular\+Damping@{set\+Angular\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Angular\+Damping()}{setAngularDamping()}}
+\index{r3::RigidBody@{r3::RigidBody}!setAngularDamping@{setAngularDamping}}
+\index{setAngularDamping@{setAngularDamping}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setAngularDamping()}{setAngularDamping()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Angular\+Damping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{angular\+Damping }\end{DoxyParamCaption})}
 
 
@@ -784,9 +785,9 @@ Get the angular damping coefficient.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_acd934e55a7f2f09d91f62ded40ebb325}\label{classr3_1_1_rigid_body_acd934e55a7f2f09d91f62ded40ebb325}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Awake@{set\+Awake}}
-\index{set\+Awake@{set\+Awake}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Awake()}{setAwake()}}
+\index{r3::RigidBody@{r3::RigidBody}!setAwake@{setAwake}}
+\index{setAwake@{setAwake}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setAwake()}{setAwake()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Awake (\begin{DoxyParamCaption}\item[{bool}]{awake }\end{DoxyParamCaption})}
 
 
@@ -799,9 +800,9 @@ Start or stop simulating this rigid body.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ac630b9cb1a8fbb50356aa46330f5f2a6}\label{classr3_1_1_rigid_body_ac630b9cb1a8fbb50356aa46330f5f2a6}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Can\+Sleep@{set\+Can\+Sleep}}
-\index{set\+Can\+Sleep@{set\+Can\+Sleep}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Can\+Sleep()}{setCanSleep()}}
+\index{r3::RigidBody@{r3::RigidBody}!setCanSleep@{setCanSleep}}
+\index{setCanSleep@{setCanSleep}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setCanSleep()}{setCanSleep()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Can\+Sleep (\begin{DoxyParamCaption}\item[{bool}]{can\+Sleep }\end{DoxyParamCaption})}
 
 
@@ -809,9 +810,9 @@ Start or stop simulating this rigid body.
 Set whether the body can got to sleep at any time. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a96d0738162ca1fe649bab7174e21afd8}\label{classr3_1_1_rigid_body_a96d0738162ca1fe649bab7174e21afd8}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Center\+Of\+Mass@{set\+Center\+Of\+Mass}}
-\index{set\+Center\+Of\+Mass@{set\+Center\+Of\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Center\+Of\+Mass()}{setCenterOfMass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setCenterOfMass@{setCenterOfMass}}
+\index{setCenterOfMass@{setCenterOfMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setCenterOfMass()}{setCenterOfMass()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Center\+Of\+Mass (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{center\+Of\+Mass }\end{DoxyParamCaption})}
 
 
@@ -824,9 +825,9 @@ Set the position of this rigid body.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aed33487eb4fdc0009b40361391cdf6c2}\label{classr3_1_1_rigid_body_aed33487eb4fdc0009b40361391cdf6c2}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Center\+Of\+Mass@{set\+Center\+Of\+Mass}}
-\index{set\+Center\+Of\+Mass@{set\+Center\+Of\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Center\+Of\+Mass()}{setCenterOfMass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setCenterOfMass@{setCenterOfMass}}
+\index{setCenterOfMass@{setCenterOfMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setCenterOfMass()}{setCenterOfMass()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Center\+Of\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -843,9 +844,9 @@ Set the position of this rigid body.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a7936cec92e28c40ba886b66b274e1858}\label{classr3_1_1_rigid_body_a7936cec92e28c40ba886b66b274e1858}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Collision\+Callback@{set\+Collision\+Callback}}
-\index{set\+Collision\+Callback@{set\+Collision\+Callback}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Collision\+Callback()}{setCollisionCallback()}}
+\index{r3::RigidBody@{r3::RigidBody}!setCollisionCallback@{setCollisionCallback}}
+\index{setCollisionCallback@{setCollisionCallback}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setCollisionCallback()}{setCollisionCallback()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Collision\+Callback (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_collision_callback}{Collision\+Callback}} \&}]{callback }\end{DoxyParamCaption})}
 
 
@@ -853,9 +854,9 @@ Set the position of this rigid body.
 Set the currently used callback. 
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a01092f4ae330b7fd13421d8c8177a30e}\label{classr3_1_1_rigid_body_a01092f4ae330b7fd13421d8c8177a30e}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Inertia\+Tensor@{set\+Inertia\+Tensor}}
-\index{set\+Inertia\+Tensor@{set\+Inertia\+Tensor}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Inertia\+Tensor()}{setInertiaTensor()}}
+\index{r3::RigidBody@{r3::RigidBody}!setInertiaTensor@{setInertiaTensor}}
+\index{setInertiaTensor@{setInertiaTensor}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setInertiaTensor()}{setInertiaTensor()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Inertia\+Tensor (\begin{DoxyParamCaption}\item[{const glm\+::mat3 \&}]{inertia\+Tensor }\end{DoxyParamCaption})}
 
 
@@ -868,9 +869,9 @@ Set the current inertia tensor.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a28ee9e1542663a4e704077e9327ddece}\label{classr3_1_1_rigid_body_a28ee9e1542663a4e704077e9327ddece}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Inverse\+Mass@{set\+Inverse\+Mass}}
-\index{set\+Inverse\+Mass@{set\+Inverse\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Inverse\+Mass()}{setInverseMass()}}
+\index{r3::RigidBody@{r3::RigidBody}!setInverseMass@{setInverseMass}}
+\index{setInverseMass@{setInverseMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setInverseMass()}{setInverseMass()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Inverse\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{inverse\+Mass }\end{DoxyParamCaption})}
 
 
@@ -879,13 +880,13 @@ Set the inverse mass of this rigid body.
 
 
 \begin{DoxyParams}{Parameters}
-{\em inverse\+Mass} & An inverse mass of zero equals a rigid body with infinite mass.\\
+{\em inverse\+Mass} & An inverse mass of zero equals a rigid body with infinite mass.  Implicitly sets the mass. \\
 \hline
 \end{DoxyParams}
-Implicitly sets the mass. \mbox{\Hypertarget{classr3_1_1_rigid_body_ac65bfd9fd7a12de59141fab3c02e8579}\label{classr3_1_1_rigid_body_ac65bfd9fd7a12de59141fab3c02e8579}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Linear\+Damping@{set\+Linear\+Damping}}
-\index{set\+Linear\+Damping@{set\+Linear\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Linear\+Damping()}{setLinearDamping()}}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_ac65bfd9fd7a12de59141fab3c02e8579}\label{classr3_1_1_rigid_body_ac65bfd9fd7a12de59141fab3c02e8579}} 
+\index{r3::RigidBody@{r3::RigidBody}!setLinearDamping@{setLinearDamping}}
+\index{setLinearDamping@{setLinearDamping}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setLinearDamping()}{setLinearDamping()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Linear\+Damping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{linear\+Damping }\end{DoxyParamCaption})}
 
 
@@ -898,9 +899,9 @@ Set the linear damping coefficient.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a84c88437d863261773c9514d87bbc56a}\label{classr3_1_1_rigid_body_a84c88437d863261773c9514d87bbc56a}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Mass@{set\+Mass}}
-\index{set\+Mass@{set\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
+\index{r3::RigidBody@{r3::RigidBody}!setMass@{setMass}}
+\index{setMass@{setMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setMass()}{setMass()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{mass }\end{DoxyParamCaption})}
 
 
@@ -909,13 +910,13 @@ Set the mass of this rigid body.
 
 
 \begin{DoxyParams}{Parameters}
-{\em mass} & The new mass.\\
+{\em mass} & The new mass.  Implicitly sets the inverse mass. \\
 \hline
 \end{DoxyParams}
-Implicitly sets the inverse mass. \mbox{\Hypertarget{classr3_1_1_rigid_body_a2a93ca6f386411f14e5e8b844c214573}\label{classr3_1_1_rigid_body_a2a93ca6f386411f14e5e8b844c214573}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Orientation@{set\+Orientation}}
-\index{set\+Orientation@{set\+Orientation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Orientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\mbox{\Hypertarget{classr3_1_1_rigid_body_a2a93ca6f386411f14e5e8b844c214573}\label{classr3_1_1_rigid_body_a2a93ca6f386411f14e5e8b844c214573}} 
+\index{r3::RigidBody@{r3::RigidBody}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const glm\+::quat \&}]{orientation }\end{DoxyParamCaption})}
 
 
@@ -928,9 +929,9 @@ Set the current orientation.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a8f6dcfce04ca4add81dce4f140e954c7}\label{classr3_1_1_rigid_body_a8f6dcfce04ca4add81dce4f140e954c7}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Orientation@{set\+Orientation}}
-\index{set\+Orientation@{set\+Orientation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Orientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setOrientation@{setOrientation}}
+\index{setOrientation@{setOrientation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setOrientation()}{setOrientation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Orientation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{r,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{i,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{j,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{k }\end{DoxyParamCaption})}
 
 
@@ -949,9 +950,9 @@ Set the current orientation.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a31a0677792f54e49a6fb2cc453fe2169}\label{classr3_1_1_rigid_body_a31a0677792f54e49a6fb2cc453fe2169}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Physics\+Material@{set\+Physics\+Material}}
-\index{set\+Physics\+Material@{set\+Physics\+Material}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Physics\+Material()}{setPhysicsMaterial()}}
+\index{r3::RigidBody@{r3::RigidBody}!setPhysicsMaterial@{setPhysicsMaterial}}
+\index{setPhysicsMaterial@{setPhysicsMaterial}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setPhysicsMaterial()}{setPhysicsMaterial()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Physics\+Material (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} \&}]{material }\end{DoxyParamCaption})}
 
 
@@ -964,9 +965,9 @@ Set the physics material.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aeaad22c99a9254f38c93e8e622bb4c01}\label{classr3_1_1_rigid_body_aeaad22c99a9254f38c93e8e622bb4c01}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{rotation }\end{DoxyParamCaption})}
 
 
@@ -979,9 +980,9 @@ Set the current orientation.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a5ac826cea8762df5a5b5c6113d84ad2b}\label{classr3_1_1_rigid_body_a5ac826cea8762df5a5b5c6113d84ad2b}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Rotation@{set\+Rotation}}
-\index{set\+Rotation@{set\+Rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setRotation@{setRotation}}
+\index{setRotation@{setRotation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setRotation()}{setRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -998,9 +999,9 @@ Set the current orientation.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a033bf2bf8e128b5438fdd91f7d29c051}\label{classr3_1_1_rigid_body_a033bf2bf8e128b5438fdd91f7d29c051}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Velocity@{set\+Velocity}}
-\index{set\+Velocity@{set\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Velocity (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{velocity }\end{DoxyParamCaption})}
 
 
@@ -1013,9 +1014,9 @@ Set the current velocity.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a244d24ec2368098f4ac38603a982ea54}\label{classr3_1_1_rigid_body_a244d24ec2368098f4ac38603a982ea54}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!set\+Velocity@{set\+Velocity}}
-\index{set\+Velocity@{set\+Velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{set\+Velocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+\index{r3::RigidBody@{r3::RigidBody}!setVelocity@{setVelocity}}
+\index{setVelocity@{setVelocity}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{setVelocity()}{setVelocity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::set\+Velocity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{x,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{y,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{z }\end{DoxyParamCaption})}
 
 
@@ -1032,139 +1033,139 @@ Set the current velocity.
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a59d331a52a0110415b38bfa89cf0f804}\label{classr3_1_1_rigid_body_a59d331a52a0110415b38bfa89cf0f804}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!transform\+Inertia\+Tensor@{transform\+Inertia\+Tensor}}
-\index{transform\+Inertia\+Tensor@{transform\+Inertia\+Tensor}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{transform\+Inertia\+Tensor()}{transformInertiaTensor()}}
+\index{r3::RigidBody@{r3::RigidBody}!transformInertiaTensor@{transformInertiaTensor}}
+\index{transformInertiaTensor@{transformInertiaTensor}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{transformInertiaTensor()}{transformInertiaTensor()}}
 {\footnotesize\ttfamily void r3\+::\+Rigid\+Body\+::transform\+Inertia\+Tensor (\begin{DoxyParamCaption}\item[{glm\+::mat3 \&}]{iit\+World,  }\item[{const glm\+::mat3 \&}]{iit,  }\item[{const glm\+::mat4 \&}]{rot\+Mat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
 
 \begin{DoxyRefDesc}{Todo}
 \item[\mbox{\hyperlink{todo__todo000009}{Todo}}]\+: Refactor names and function implementation. \end{DoxyRefDesc}
 
 
-\subsection{Member Data Documentation}
+\doxysubsection{Member Data Documentation}
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a3be64b2b09846d33ccdd9e276db020b9}\label{classr3_1_1_rigid_body_a3be64b2b09846d33ccdd9e276db020b9}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+acceleration@{m\+\_\+acceleration}}
-\index{m\+\_\+acceleration@{m\+\_\+acceleration}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+acceleration}{m\_acceleration}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_acceleration@{m\_acceleration}}
+\index{m\_acceleration@{m\_acceleration}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_acceleration}{m\_acceleration}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+acceleration\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a3d9cfac391d02a657401f5e633361fe9}\label{classr3_1_1_rigid_body_a3d9cfac391d02a657401f5e633361fe9}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}}
-\index{m\+\_\+angular\+Damping@{m\+\_\+angular\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+angular\+Damping}{m\_angularDamping}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_angularDamping@{m\_angularDamping}}
+\index{m\_angularDamping@{m\_angularDamping}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_angularDamping}{m\_angularDamping}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+angular\+Damping \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_abfcca5ae4caa68d23ba68cc4fd1d2d33}\label{classr3_1_1_rigid_body_abfcca5ae4caa68d23ba68cc4fd1d2d33}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+awake@{m\+\_\+awake}}
-\index{m\+\_\+awake@{m\+\_\+awake}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+awake}{m\_awake}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_awake@{m\_awake}}
+\index{m\_awake@{m\_awake}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_awake}{m\_awake}}
 {\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+::m\+\_\+awake \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ada1bb4c1c933c96090fe705612db5866}\label{classr3_1_1_rigid_body_ada1bb4c1c933c96090fe705612db5866}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+can\+Sleep@{m\+\_\+can\+Sleep}}
-\index{m\+\_\+can\+Sleep@{m\+\_\+can\+Sleep}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+can\+Sleep}{m\_canSleep}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_canSleep@{m\_canSleep}}
+\index{m\_canSleep@{m\_canSleep}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_canSleep}{m\_canSleep}}
 {\footnotesize\ttfamily bool r3\+::\+Rigid\+Body\+::m\+\_\+can\+Sleep \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a88185161bb32b108719e78a3944d5257}\label{classr3_1_1_rigid_body_a88185161bb32b108719e78a3944d5257}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+collision\+Callback@{m\+\_\+collision\+Callback}}
-\index{m\+\_\+collision\+Callback@{m\+\_\+collision\+Callback}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+collision\+Callback}{m\_collisionCallback}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_collisionCallback@{m\_collisionCallback}}
+\index{m\_collisionCallback@{m\_collisionCallback}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_collisionCallback}{m\_collisionCallback}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_collision_callback}{Collision\+Callback}} r3\+::\+Rigid\+Body\+::m\+\_\+collision\+Callback\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a9ce3f6c2a0f158d9df5910c3697ebf7f}\label{classr3_1_1_rigid_body_a9ce3f6c2a0f158d9df5910c3697ebf7f}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+collision\+Mask@{m\+\_\+collision\+Mask}}
-\index{m\+\_\+collision\+Mask@{m\+\_\+collision\+Mask}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+collision\+Mask}{m\_collisionMask}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_collisionMask@{m\_collisionMask}}
+\index{m\_collisionMask@{m\_collisionMask}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_collisionMask}{m\_collisionMask}}
 {\footnotesize\ttfamily \mbox{\hyperlink{structr3_1_1_collision_mask}{Collision\+Mask}} r3\+::\+Rigid\+Body\+::m\+\_\+collision\+Mask\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a7d7ce53ed37502e4314766da7679b4cc}\label{classr3_1_1_rigid_body_a7d7ce53ed37502e4314766da7679b4cc}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+force\+Accumulated@{m\+\_\+force\+Accumulated}}
-\index{m\+\_\+force\+Accumulated@{m\+\_\+force\+Accumulated}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+force\+Accumulated}{m\_forceAccumulated}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_forceAccumulated@{m\_forceAccumulated}}
+\index{m\_forceAccumulated@{m\_forceAccumulated}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_forceAccumulated}{m\_forceAccumulated}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+force\+Accumulated\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ac0a016d0e9d03e5365dd082eddb171fe}\label{classr3_1_1_rigid_body_ac0a016d0e9d03e5365dd082eddb171fe}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+inverse\+Inertia\+Tensor@{m\+\_\+inverse\+Inertia\+Tensor}}
-\index{m\+\_\+inverse\+Inertia\+Tensor@{m\+\_\+inverse\+Inertia\+Tensor}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+inverse\+Inertia\+Tensor}{m\_inverseInertiaTensor}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_inverseInertiaTensor@{m\_inverseInertiaTensor}}
+\index{m\_inverseInertiaTensor@{m\_inverseInertiaTensor}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_inverseInertiaTensor}{m\_inverseInertiaTensor}}
 {\footnotesize\ttfamily glm\+::mat3 r3\+::\+Rigid\+Body\+::m\+\_\+inverse\+Inertia\+Tensor\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a48c87824d37104f44cd190e7ff1159a9}\label{classr3_1_1_rigid_body_a48c87824d37104f44cd190e7ff1159a9}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+inverse\+Inertia\+Tensor\+World@{m\+\_\+inverse\+Inertia\+Tensor\+World}}
-\index{m\+\_\+inverse\+Inertia\+Tensor\+World@{m\+\_\+inverse\+Inertia\+Tensor\+World}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+inverse\+Inertia\+Tensor\+World}{m\_inverseInertiaTensorWorld}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_inverseInertiaTensorWorld@{m\_inverseInertiaTensorWorld}}
+\index{m\_inverseInertiaTensorWorld@{m\_inverseInertiaTensorWorld}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_inverseInertiaTensorWorld}{m\_inverseInertiaTensorWorld}}
 {\footnotesize\ttfamily glm\+::mat3 r3\+::\+Rigid\+Body\+::m\+\_\+inverse\+Inertia\+Tensor\+World\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a57f0423607e2ce9738a2fa796a443e5f}\label{classr3_1_1_rigid_body_a57f0423607e2ce9738a2fa796a443e5f}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}}
-\index{m\+\_\+inverse\+Mass@{m\+\_\+inverse\+Mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+inverse\+Mass}{m\_inverseMass}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_inverseMass@{m\_inverseMass}}
+\index{m\_inverseMass@{m\_inverseMass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_inverseMass}{m\_inverseMass}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+inverse\+Mass \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aafe21461c488f0dffbbb2bd0c32f4585}\label{classr3_1_1_rigid_body_aafe21461c488f0dffbbb2bd0c32f4585}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+last\+Frame\+Acceleration@{m\+\_\+last\+Frame\+Acceleration}}
-\index{m\+\_\+last\+Frame\+Acceleration@{m\+\_\+last\+Frame\+Acceleration}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+last\+Frame\+Acceleration}{m\_lastFrameAcceleration}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_lastFrameAcceleration@{m\_lastFrameAcceleration}}
+\index{m\_lastFrameAcceleration@{m\_lastFrameAcceleration}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_lastFrameAcceleration}{m\_lastFrameAcceleration}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+last\+Frame\+Acceleration\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_aa7ae14fd779acb22a7c50aab88d1cb75}\label{classr3_1_1_rigid_body_aa7ae14fd779acb22a7c50aab88d1cb75}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+linear\+Damping@{m\+\_\+linear\+Damping}}
-\index{m\+\_\+linear\+Damping@{m\+\_\+linear\+Damping}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+linear\+Damping}{m\_linearDamping}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_linearDamping@{m\_linearDamping}}
+\index{m\_linearDamping@{m\_linearDamping}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_linearDamping}{m\_linearDamping}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+linear\+Damping \{\}\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a9ecbd510187cfaaee3154d11f3bd782b}\label{classr3_1_1_rigid_body_a9ecbd510187cfaaee3154d11f3bd782b}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+mass@{m\+\_\+mass}}
-\index{m\+\_\+mass@{m\+\_\+mass}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+mass}{m\_mass}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_mass@{m\_mass}}
+\index{m\_mass@{m\_mass}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_mass}{m\_mass}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+mass\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a345902809f82c0d95a8c747d14bcee17}\label{classr3_1_1_rigid_body_a345902809f82c0d95a8c747d14bcee17}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+motion@{m\+\_\+motion}}
-\index{m\+\_\+motion@{m\+\_\+motion}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+motion}{m\_motion}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_motion@{m\_motion}}
+\index{m\_motion@{m\_motion}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_motion}{m\_motion}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+motion\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_abcd4f744963b80cc1d592ccec117fd54}\label{classr3_1_1_rigid_body_abcd4f744963b80cc1d592ccec117fd54}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+physics\+Material@{m\+\_\+physics\+Material}}
-\index{m\+\_\+physics\+Material@{m\+\_\+physics\+Material}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+physics\+Material}{m\_physicsMaterial}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_physicsMaterial@{m\_physicsMaterial}}
+\index{m\_physicsMaterial@{m\_physicsMaterial}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_physicsMaterial}{m\_physicsMaterial}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classr3_1_1_physics_material}{Physics\+Material}} r3\+::\+Rigid\+Body\+::m\+\_\+physics\+Material\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ad2b79563010507bc1ab9d34a47e48bfc}\label{classr3_1_1_rigid_body_ad2b79563010507bc1ab9d34a47e48bfc}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+rotation@{m\+\_\+rotation}}
-\index{m\+\_\+rotation@{m\+\_\+rotation}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+rotation}{m\_rotation}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_rotation@{m\_rotation}}
+\index{m\_rotation@{m\_rotation}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_rotation}{m\_rotation}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+rotation\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a2becab957c58f4b306fedb692dcf5658}\label{classr3_1_1_rigid_body_a2becab957c58f4b306fedb692dcf5658}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+sleep\+Epsilon@{m\+\_\+sleep\+Epsilon}}
-\index{m\+\_\+sleep\+Epsilon@{m\+\_\+sleep\+Epsilon}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+sleep\+Epsilon}{m\_sleepEpsilon}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_sleepEpsilon@{m\_sleepEpsilon}}
+\index{m\_sleepEpsilon@{m\_sleepEpsilon}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_sleepEpsilon}{m\_sleepEpsilon}}
 {\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Rigid\+Body\+::m\+\_\+sleep\+Epsilon\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a51d3583c700e3bf071fce532a960bb98}\label{classr3_1_1_rigid_body_a51d3583c700e3bf071fce532a960bb98}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+torque\+Accumulated@{m\+\_\+torque\+Accumulated}}
-\index{m\+\_\+torque\+Accumulated@{m\+\_\+torque\+Accumulated}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+torque\+Accumulated}{m\_torqueAccumulated}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_torqueAccumulated@{m\_torqueAccumulated}}
+\index{m\_torqueAccumulated@{m\_torqueAccumulated}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_torqueAccumulated}{m\_torqueAccumulated}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+torque\+Accumulated\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_ab973e24d84aedb3188aa04fcd2817228}\label{classr3_1_1_rigid_body_ab973e24d84aedb3188aa04fcd2817228}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+transformation\+Matrix@{m\+\_\+transformation\+Matrix}}
-\index{m\+\_\+transformation\+Matrix@{m\+\_\+transformation\+Matrix}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+transformation\+Matrix}{m\_transformationMatrix}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_transformationMatrix@{m\_transformationMatrix}}
+\index{m\_transformationMatrix@{m\_transformationMatrix}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_transformationMatrix}{m\_transformationMatrix}}
 {\footnotesize\ttfamily glm\+::mat4 r3\+::\+Rigid\+Body\+::m\+\_\+transformation\+Matrix\hspace{0.3cm}{\ttfamily [protected]}}
 
 \mbox{\Hypertarget{classr3_1_1_rigid_body_a2de7cddcf262009fc8261688d1e56c49}\label{classr3_1_1_rigid_body_a2de7cddcf262009fc8261688d1e56c49}} 
-\index{r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}!m\+\_\+velocity@{m\+\_\+velocity}}
-\index{m\+\_\+velocity@{m\+\_\+velocity}!r3\+::\+Rigid\+Body@{r3\+::\+Rigid\+Body}}
-\subsubsection{\texorpdfstring{m\+\_\+velocity}{m\_velocity}}
+\index{r3::RigidBody@{r3::RigidBody}!m\_velocity@{m\_velocity}}
+\index{m\_velocity@{m\_velocity}!r3::RigidBody@{r3::RigidBody}}
+\doxysubsubsection{\texorpdfstring{m\_velocity}{m\_velocity}}
 {\footnotesize\ttfamily glm\+::vec3 r3\+::\+Rigid\+Body\+::m\+\_\+velocity\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}}\item 
-D\+:/\+Library/\+Documents/\+Job/\+Forschungsmaster/\+Projekte/\+Simulation\+Visualization/\+Rumble3\+D/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8cpp}{Rigid\+Body.\+cpp}}\end{DoxyCompactItemize}
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8h}{Rigid\+Body.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Rigid\+Body\+Engine/\mbox{\hyperlink{_rigid_body_8cpp}{Rigid\+Body.\+cpp}}\end{DoxyCompactItemize}

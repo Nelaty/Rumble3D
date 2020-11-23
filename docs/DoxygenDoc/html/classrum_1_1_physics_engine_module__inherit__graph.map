@@ -1,4 +1,0 @@
-<map id="rum::PhysicsEngineModule" name="rum::PhysicsEngineModule">
-<area shape="rect" id="node2" href="$classrum_1_1_particle_world.html" title="ParticleWorld holds a number of particles and contact generators. " alt="" coords="5,189,216,443"/>
-<area shape="rect" id="node3" href="$classrum_1_1_rigid_body_world.html" title="{rum::RigidBodyWorld\n||+ RigidBodyWorld()\l+ ~RigidBodyWorld()\l+ setComputationInterface()\l+ getComputationInterface()\l+ registerRigidBody()\l+ unregisterRigidBody()\l+ unregisterAllRigidBodies()\l+ getRigidBodies()\l+ getRigidBodies()\l+ getForceRegistry()\l+ getForceRegistry()\l}" alt="" coords="241,204,423,428"/>
-</map>
