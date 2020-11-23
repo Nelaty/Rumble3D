@@ -1,6 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 
+#include <string>
+
 namespace r3
 {
 	class IComputationInterface;
@@ -30,9 +32,15 @@ namespace r3
 		 */
 		bool isEnabled() const;
 
-	protected:
-		explicit PhysicsEngineModule();
+        /** Set the name of this module */
+		void setName(std::string_view name);
+		/** Get the name of this module */
+		std::string_view getName() const;
 
+	protected:
+		explicit PhysicsEngineModule(std::string_view name = "");
+
+		std::string m_name;
 		bool m_enabled;
 	};
 }

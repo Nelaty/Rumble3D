@@ -5,10 +5,11 @@ namespace r3
 	PhysicsEngineModule::~PhysicsEngineModule()
 	= default;
 
-	PhysicsEngineModule::PhysicsEngineModule()
-		: m_enabled{true}
-	{
-	}
+    PhysicsEngineModule::PhysicsEngineModule(std::string_view name)
+        : m_enabled{true},
+        m_name{name}
+    {
+    }
 
 	void PhysicsEngineModule::enable(const bool enabled)
 	{
@@ -20,4 +21,13 @@ namespace r3
 		return m_enabled;
 	}
 
+	void PhysicsEngineModule::setName(std::string_view name)
+    {
+        m_name = name;
+    }
+
+    std::string_view PhysicsEngineModule::getName() const
+    {
+        return m_name;
+    }
 }

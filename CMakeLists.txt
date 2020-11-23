@@ -42,7 +42,7 @@ add_test(NAME ${RUMBLE3D_TEST_NAME}
 endif()
 
 if(${RUMBLE3D_BUILD_SAMPLES})
-#include_directories(example)
+include_directories(example)
 endif()
 
 # Install library and include files

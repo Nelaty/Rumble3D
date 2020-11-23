@@ -2,8 +2,9 @@
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
-#include <map>
+#include <vector>
 #include <string>
+#include <memory>
 
 namespace r3
 {
@@ -24,31 +25,34 @@ namespace r3
 		 */
 		void tick(real timeDelta);
 
-		/** 
-		 * \brief Try to find an existing module.
-		 * \return The found module or nullptr if the module doesn't exist.
-		 */
-		PhysicsEngineModule* findModule(const std::string& key) const;
-
 		/**
 		 * Check if a module with the given key is already registered.
 		 * \return True if module is registered.
 		 */
-		bool isModuleRegistered(const std::string& key) const;
-
-		/** 
-		 * \brief Register a new physics module with a given key. Fails, when a
-		 * module with the same key is already registered.
-		 * \return The registered module or an existing module with the same key.
-		 */
-		PhysicsEngineModule* registerModule(PhysicsEngineModule* module, const std::string& key);
-
+		bool isModuleRegistered(std::string_view key) const;
 		/**
-		 * \brief Unregister an existing physics module. 
-		 * \return The unregistered module or nullptr if the module doesn't exist.
+		 * Search for a module by its name.
+		 * @param name The name of the module.
+		 * @return Returns the first occurence of a module with the given name or nullptr if none was found.
 		 */
-		PhysicsEngineModule* unregisterModule(const std::string& key);
-		
+        std::shared_ptr<PhysicsEngineModule> findModule(std::string_view name) const;
+        /**
+         * Register a new module.
+         * @param module The module to register.
+         */
+		void registerModule(const std::shared_ptr<PhysicsEngineModule>& module);
+		/**
+		 * Unregister a given module.
+		 * @param module The module to unregister.
+		 * @return Returns true if the module was found, false otherwise.
+		 */
+		bool unregisterModule(const std::shared_ptr<PhysicsEngineModule>& module);
+		/**
+		 * Unregister the first module with the given name.
+		 * @param name The name of the module to unregister.
+		 * @return Returns true if the module was found, false otherwise.
+		 */
+        bool unregisterModule(std::string_view name);
 
 		/**
 		 * \brief Check if the simulation is currently paused.
@@ -83,6 +87,6 @@ namespace r3
 		void integrate(real timeDelta);
 
 		bool m_paused{false};
-		std::map<std::string, PhysicsEngineModule*> m_modules;
+		std::vector<std::shared_ptr<PhysicsEngineModule>> m_modules;
 	};
 }
