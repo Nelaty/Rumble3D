@@ -95,6 +95,12 @@ namespace r3
 		 */
 		const glm::quat& getRotation() const;
 
+		/**
+		 * Approximate rotation around a given axis for a specified duration. This function will
+		 * produce wrong values for long durations.
+		 * @param rotation
+		 * @param duration The duration
+		 */
 		void updateOrientationByAngularVelocity(const glm::vec3& rotation, 
 												real duration);
 
@@ -133,9 +139,7 @@ namespace r3
 				   const glm::vec3& rotation = glm::vec3(0));
 
 	private:
-		//glm::mat3 m_rotation;
 		glm::quat m_rotation;
-		
 		glm::vec3 m_position;
 	};
 }

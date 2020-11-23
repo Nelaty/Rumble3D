@@ -1,5 +1,5 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.h"
-#include "R3D/ServiceLocator/ServiceLocatorCollisionAlgorithmMatrix.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrixFactory.h"
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
 
@@ -28,7 +28,7 @@ namespace r3
 
 	void NarrowPhaseFilter::init()
 	{
-		m_algorithms = ServiceLocatorCollisionAlgorithmMatrix::getMatrix();
+		m_algorithms = CollisionAlgorithmMatrixFactory::getMatrix();
 	}
 
 	void NarrowPhaseFilter::generateCollisionData(RigidBody* first, RigidBody* second, CollisionData& collisions)
