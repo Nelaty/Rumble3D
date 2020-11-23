@@ -1,0 +1,116 @@
+\hypertarget{classr3_1_1_s_p_h_system}{}\doxysection{r3\+::S\+P\+H\+System Class Reference}
+\label{classr3_1_1_s_p_h_system}\index{r3::SPHSystem@{r3::SPHSystem}}
+
+
+{\ttfamily \#include $<$S\+P\+H\+System.\+h$>$}
+
+
+
+Collaboration diagram for r3\+::S\+P\+H\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classr3_1_1_s_p_h_system__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{Particle\+Definition\+\_\+\+Ptr}} = std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structr3_1_1_s_p_h_particle_definition}{S\+P\+H\+Particle\+Definition}} $>$
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_s_p_h_system_a3e15ac8b45faeca3d5b0503285736c79}{S\+P\+H\+System}} ()=default
+\item 
+\mbox{\hyperlink{classr3_1_1_s_p_h_system_ae929d9e6ce3e234e8db8520f69d76377}{$\sim$\+S\+P\+H\+System}} ()=default
+\item 
+\mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}} \& \mbox{\hyperlink{classr3_1_1_s_p_h_system_a76f1aa83468d3747cf676cbf221d60c7}{add\+Particle}} (int particle\+Definition\+Id)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}} $>$ \& \mbox{\hyperlink{classr3_1_1_s_p_h_system_a14cf2abcd06aecd28acf4a6f3a256627}{get\+Particles}} ()
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}} $>$ \& \mbox{\hyperlink{classr3_1_1_s_p_h_system_a6823d57425dc112db6a439eef205b98b}{get\+Particles}} () const
+\item 
+int \mbox{\hyperlink{classr3_1_1_s_p_h_system_a6857c454ed3c8aa0eb64bd93da1ff47f}{get\+Particle\+Definition\+Id}} (const \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{Particle\+Definition\+\_\+\+Ptr}} \&definition) const
+\item 
+int \mbox{\hyperlink{classr3_1_1_s_p_h_system_ad9feca545e1cc0ce37c8d50c4f9a78e8}{add\+Particle\+Definition}} (const \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{Particle\+Definition\+\_\+\+Ptr}} \&definition)
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{Particle\+Definition\+\_\+\+Ptr}} $>$ \& \mbox{\hyperlink{classr3_1_1_s_p_h_system_acd9eb0d18178a3a2d003dedc1bd9ebd3}{get\+Particle\+Definitions}} () const
+\item 
+void \mbox{\hyperlink{classr3_1_1_s_p_h_system_a1a8d1d4df96353dc3ddcf4e08db37787}{clear}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}\label{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!ParticleDefinition\_Ptr@{ParticleDefinition\_Ptr}}
+\index{ParticleDefinition\_Ptr@{ParticleDefinition\_Ptr}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{ParticleDefinition\_Ptr}{ParticleDefinition\_Ptr}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{r3\+::\+S\+P\+H\+System\+::\+Particle\+Definition\+\_\+\+Ptr}} =  std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structr3_1_1_s_p_h_particle_definition}{S\+P\+H\+Particle\+Definition}}$>$}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_a3e15ac8b45faeca3d5b0503285736c79}\label{classr3_1_1_s_p_h_system_a3e15ac8b45faeca3d5b0503285736c79}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!SPHSystem@{SPHSystem}}
+\index{SPHSystem@{SPHSystem}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{SPHSystem()}{SPHSystem()}}
+{\footnotesize\ttfamily r3\+::\+S\+P\+H\+System\+::\+S\+P\+H\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_ae929d9e6ce3e234e8db8520f69d76377}\label{classr3_1_1_s_p_h_system_ae929d9e6ce3e234e8db8520f69d76377}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!````~SPHSystem@{$\sim$SPHSystem}}
+\index{````~SPHSystem@{$\sim$SPHSystem}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{$\sim$SPHSystem()}{~SPHSystem()}}
+{\footnotesize\ttfamily r3\+::\+S\+P\+H\+System\+::$\sim$\+S\+P\+H\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_a76f1aa83468d3747cf676cbf221d60c7}\label{classr3_1_1_s_p_h_system_a76f1aa83468d3747cf676cbf221d60c7}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!addParticle@{addParticle}}
+\index{addParticle@{addParticle}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{addParticle()}{addParticle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}} \& r3\+::\+S\+P\+H\+System\+::add\+Particle (\begin{DoxyParamCaption}\item[{int}]{particle\+Definition\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_ad9feca545e1cc0ce37c8d50c4f9a78e8}\label{classr3_1_1_s_p_h_system_ad9feca545e1cc0ce37c8d50c4f9a78e8}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!addParticleDefinition@{addParticleDefinition}}
+\index{addParticleDefinition@{addParticleDefinition}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{addParticleDefinition()}{addParticleDefinition()}}
+{\footnotesize\ttfamily int r3\+::\+S\+P\+H\+System\+::add\+Particle\+Definition (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{Particle\+Definition\+\_\+\+Ptr}} \&}]{definition }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_a1a8d1d4df96353dc3ddcf4e08db37787}\label{classr3_1_1_s_p_h_system_a1a8d1d4df96353dc3ddcf4e08db37787}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!clear@{clear}}
+\index{clear@{clear}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void r3\+::\+S\+P\+H\+System\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_a6857c454ed3c8aa0eb64bd93da1ff47f}\label{classr3_1_1_s_p_h_system_a6857c454ed3c8aa0eb64bd93da1ff47f}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!getParticleDefinitionId@{getParticleDefinitionId}}
+\index{getParticleDefinitionId@{getParticleDefinitionId}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{getParticleDefinitionId()}{getParticleDefinitionId()}}
+{\footnotesize\ttfamily int r3\+::\+S\+P\+H\+System\+::get\+Particle\+Definition\+Id (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{Particle\+Definition\+\_\+\+Ptr}} \&}]{definition }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_acd9eb0d18178a3a2d003dedc1bd9ebd3}\label{classr3_1_1_s_p_h_system_acd9eb0d18178a3a2d003dedc1bd9ebd3}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!getParticleDefinitions@{getParticleDefinitions}}
+\index{getParticleDefinitions@{getParticleDefinitions}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{getParticleDefinitions()}{getParticleDefinitions()}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{classr3_1_1_s_p_h_system_ae207c0f7ecc961835069ce3f770218b8}{S\+P\+H\+System\+::\+Particle\+Definition\+\_\+\+Ptr}} $>$ \& r3\+::\+S\+P\+H\+System\+::get\+Particle\+Definitions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_a14cf2abcd06aecd28acf4a6f3a256627}\label{classr3_1_1_s_p_h_system_a14cf2abcd06aecd28acf4a6f3a256627}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!getParticles@{getParticles}}
+\index{getParticles@{getParticles}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{getParticles()}{getParticles()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}} $>$ \& r3\+::\+S\+P\+H\+System\+::get\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classr3_1_1_s_p_h_system_a6823d57425dc112db6a439eef205b98b}\label{classr3_1_1_s_p_h_system_a6823d57425dc112db6a439eef205b98b}} 
+\index{r3::SPHSystem@{r3::SPHSystem}!getParticles@{getParticles}}
+\index{getParticles@{getParticles}!r3::SPHSystem@{r3::SPHSystem}}
+\doxysubsubsection{\texorpdfstring{getParticles()}{getParticles()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ \mbox{\hyperlink{structr3_1_1_s_p_h_particle}{S\+P\+H\+Particle}} $>$ \& r3\+::\+S\+P\+H\+System\+::get\+Particles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Water/\+S\+P\+H\+Engine/\+Entity/\mbox{\hyperlink{_s_p_h_system_8h}{S\+P\+H\+System.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Water/\+S\+P\+H\+Engine/\+Entity/\mbox{\hyperlink{_s_p_h_system_8cpp}{S\+P\+H\+System.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\hypertarget{classr3_1_1_particle_spring_base}{}\doxysection{r3\+::Particle\+Spring\+Base Class Reference}
+\label{classr3_1_1_particle_spring_base}\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+
+
+{\ttfamily \#include $<$Particle\+Spring\+Base.\+h$>$}
+
+
+
+Inheritance diagram for r3\+::Particle\+Spring\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classr3_1_1_particle_spring_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for r3\+::Particle\+Spring\+Base\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classr3_1_1_particle_spring_base__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classr3_1_1_particle_spring_base_afdbd3043ea3d4e9f23f8a57263f7e94a}{$\sim$\+Particle\+Spring\+Base}} ()=default
+\item 
+void \mbox{\hyperlink{classr3_1_1_particle_spring_base_afd3f4e5f83de6ebc157aedf20e321eb8}{set\+Rest\+Length}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
+\begin{DoxyCompactList}\small\item\em Set the spring resting length. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_spring_base_af492dbaf57d5fe3cbbe001d566448faf}{get\+Rest\+Length}} () const
+\begin{DoxyCompactList}\small\item\em Get the spring resting length. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classr3_1_1_particle_spring_base_aea52905838a9a14a091c69eb503191e8}{set\+Spring\+Constant}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} constant)
+\begin{DoxyCompactList}\small\item\em Set the spring firmness. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_spring_base_a2afd35b6f4aba2cec5d0d1a50a997055}{get\+Spring\+Constant}} () const
+\begin{DoxyCompactList}\small\item\em Get the spring firmness. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_spring_base_adc1eae78e7cdd794384af20daa94c5f8}{Particle\+Spring\+Base}} ()=default
+\item 
+\mbox{\hyperlink{classr3_1_1_particle_spring_base_a89760b8962fd019faa37087a6ada5c2e}{Particle\+Spring\+Base}} (\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} spring\+Constant, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} rest\+Length)
+\item 
+bool \mbox{\hyperlink{classr3_1_1_particle_spring_base_ac3e2ff264b210aba28dab4f1f77b699b}{is\+Magnitude\+Valid}} (const glm\+::vec3 \&particle, const glm\+::vec3 \&target, glm\+::vec3 \&distance, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \&magnitude)
+\begin{DoxyCompactList}\small\item\em Check if a force can be calculated. \end{DoxyCompactList}\item 
+glm\+::vec3 \mbox{\hyperlink{classr3_1_1_particle_spring_base_a83e87058892f7befcba9c8d46b60ccb7}{calculate\+Force}} (glm\+::vec3 distance, \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} magnitude)
+\begin{DoxyCompactList}\small\item\em Calculate the spring force between two points. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_spring_base_a799929321a69b5e6dca3ddd8e811510a}{m\+\_\+spring\+Constant}} \{0\}
+\item 
+\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \mbox{\hyperlink{classr3_1_1_particle_spring_base_a0a560a6f4fab9fffaef9928dfbe38859}{m\+\_\+rest\+Length}} \{0\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_afdbd3043ea3d4e9f23f8a57263f7e94a}\label{classr3_1_1_particle_spring_base_afdbd3043ea3d4e9f23f8a57263f7e94a}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!````~ParticleSpringBase@{$\sim$ParticleSpringBase}}
+\index{````~ParticleSpringBase@{$\sim$ParticleSpringBase}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{$\sim$ParticleSpringBase()}{~ParticleSpringBase()}}
+{\footnotesize\ttfamily virtual r3\+::\+Particle\+Spring\+Base\+::$\sim$\+Particle\+Spring\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_adc1eae78e7cdd794384af20daa94c5f8}\label{classr3_1_1_particle_spring_base_adc1eae78e7cdd794384af20daa94c5f8}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!ParticleSpringBase@{ParticleSpringBase}}
+\index{ParticleSpringBase@{ParticleSpringBase}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{ParticleSpringBase()}{ParticleSpringBase()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Spring\+Base\+::\+Particle\+Spring\+Base (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_a89760b8962fd019faa37087a6ada5c2e}\label{classr3_1_1_particle_spring_base_a89760b8962fd019faa37087a6ada5c2e}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!ParticleSpringBase@{ParticleSpringBase}}
+\index{ParticleSpringBase@{ParticleSpringBase}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{ParticleSpringBase()}{ParticleSpringBase()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily r3\+::\+Particle\+Spring\+Base\+::\+Particle\+Spring\+Base (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{spring\+Constant,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_a83e87058892f7befcba9c8d46b60ccb7}\label{classr3_1_1_particle_spring_base_a83e87058892f7befcba9c8d46b60ccb7}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!calculateForce@{calculateForce}}
+\index{calculateForce@{calculateForce}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{calculateForce()}{calculateForce()}}
+{\footnotesize\ttfamily glm\+::vec3 r3\+::\+Particle\+Spring\+Base\+::calculate\+Force (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{distance,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Calculate the spring force between two points. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_af492dbaf57d5fe3cbbe001d566448faf}\label{classr3_1_1_particle_spring_base_af492dbaf57d5fe3cbbe001d566448faf}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!getRestLength@{getRestLength}}
+\index{getRestLength@{getRestLength}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{getRestLength()}{getRestLength()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{r3\+::real}} r3\+::\+Particle\+Spring\+Base\+::get\+Rest\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the spring resting length. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_a2afd35b6f4aba2cec5d0d1a50a997055}\label{classr3_1_1_particle_spring_base_a2afd35b6f4aba2cec5d0d1a50a997055}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!getSpringConstant@{getSpringConstant}}
+\index{getSpringConstant@{getSpringConstant}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{getSpringConstant()}{getSpringConstant()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{r3\+::real}} r3\+::\+Particle\+Spring\+Base\+::get\+Spring\+Constant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the spring firmness. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_ac3e2ff264b210aba28dab4f1f77b699b}\label{classr3_1_1_particle_spring_base_ac3e2ff264b210aba28dab4f1f77b699b}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!isMagnitudeValid@{isMagnitudeValid}}
+\index{isMagnitudeValid@{isMagnitudeValid}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{isMagnitudeValid()}{isMagnitudeValid()}}
+{\footnotesize\ttfamily bool r3\+::\+Particle\+Spring\+Base\+::is\+Magnitude\+Valid (\begin{DoxyParamCaption}\item[{const glm\+::vec3 \&}]{particle,  }\item[{const glm\+::vec3 \&}]{target,  }\item[{glm\+::vec3 \&}]{distance,  }\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} \&}]{magnitude }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Check if a force can be calculated. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_afd3f4e5f83de6ebc157aedf20e321eb8}\label{classr3_1_1_particle_spring_base_afd3f4e5f83de6ebc157aedf20e321eb8}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!setRestLength@{setRestLength}}
+\index{setRestLength@{setRestLength}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{setRestLength()}{setRestLength()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Spring\+Base\+::set\+Rest\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{rest\+Length }\end{DoxyParamCaption})}
+
+
+
+Set the spring resting length. 
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_aea52905838a9a14a091c69eb503191e8}\label{classr3_1_1_particle_spring_base_aea52905838a9a14a091c69eb503191e8}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!setSpringConstant@{setSpringConstant}}
+\index{setSpringConstant@{setSpringConstant}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{setSpringConstant()}{setSpringConstant()}}
+{\footnotesize\ttfamily void r3\+::\+Particle\+Spring\+Base\+::set\+Spring\+Constant (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}}}]{constant }\end{DoxyParamCaption})}
+
+
+
+Set the spring firmness. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_a0a560a6f4fab9fffaef9928dfbe38859}\label{classr3_1_1_particle_spring_base_a0a560a6f4fab9fffaef9928dfbe38859}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!m\_restLength@{m\_restLength}}
+\index{m\_restLength@{m\_restLength}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{m\_restLength}{m\_restLength}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Spring\+Base\+::m\+\_\+rest\+Length \{0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classr3_1_1_particle_spring_base_a799929321a69b5e6dca3ddd8e811510a}\label{classr3_1_1_particle_spring_base_a799929321a69b5e6dca3ddd8e811510a}} 
+\index{r3::ParticleSpringBase@{r3::ParticleSpringBase}!m\_springConstant@{m\_springConstant}}
+\index{m\_springConstant@{m\_springConstant}!r3::ParticleSpringBase@{r3::ParticleSpringBase}}
+\doxysubsubsection{\texorpdfstring{m\_springConstant}{m\_springConstant}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacer3_ab2016b3e3f743fb735afce242f0dc1eb}{real}} r3\+::\+Particle\+Spring\+Base\+::m\+\_\+spring\+Constant \{0\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/include/\+R3\+D/\+Particle\+Engine/\mbox{\hyperlink{_particle_spring_base_8h}{Particle\+Spring\+Base.\+h}}\item 
+/home/nelaty/\+Development/\+Repositories/\+Rumble3\+D/src/\+Particle\+Engine/\mbox{\hyperlink{_particle_spring_base_8cpp}{Particle\+Spring\+Base.\+cpp}}\end{DoxyCompactItemize}
