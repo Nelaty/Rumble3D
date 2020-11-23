@@ -1,4 +1,0 @@
-<map id="r3::DirectedForce" name="r3::DirectedForce">
-<area shape="rect" id="node1" title="A DirectedForce is a force generator, which will continually apply a specified force at a specific bo..." alt="" coords="10,160,139,281"/>
-<area shape="rect" id="node2" href="$classr3_1_1_force_generator.html" title="Interface for rigid body force generators." alt="" coords="5,5,144,112"/>
-</map>

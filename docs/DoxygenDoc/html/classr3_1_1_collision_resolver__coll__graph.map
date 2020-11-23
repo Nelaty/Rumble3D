@@ -1,5 +1,0 @@
-<map id="r3::CollisionResolver" name="r3::CollisionResolver">
-<area shape="rect" id="node1" title="Default implementation for a collision resolver." alt="" coords="124,175,272,325"/>
-<area shape="rect" id="node2" href="$classr3_1_1_i_collision_resolver_access.html" title="Interface for collision resolvers. Uses ICollisionResolutionFilter to resolve given contacts." alt="" coords="5,5,201,112"/>
-<area shape="rect" id="node3" title=" " alt="" coords="226,20,359,97"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_i_computation_interface.html" title="Interface used by physics modules to accomplish their tasks." alt="" coords="5,56,172,83"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_engine_c_i.html" title="Abstract class for computation interfaces used for particle worlds." alt="" coords="242,5,377,32"/>
-<area shape="rect" id="node4" href="$classr3_1_1_rigid_body_engine_c_i.html" title="Abstract class for computation interfaces used by rigid body worlds." alt="" coords="235,56,384,83"/>
-<area shape="rect" id="node6" href="$classr3_1_1_s_p_h_engine_computation_interface_base.html" title=" " alt="" coords="220,107,399,149"/>
-<area shape="rect" id="node3" href="$classr3_1_1_default_particle_engine_c_i.html" title="Default implementation of the particle computation interface." alt="" coords="454,5,630,32"/>
-<area shape="rect" id="node5" href="$classr3_1_1_default_rigid_body_engine_c_i.html" title="Default implementation of the rigid body engine computation interface." alt="" coords="447,56,637,83"/>
-<area shape="rect" id="node7" href="$classr3_1_1_s_p_h_engine_c_i_cpu_serial.html" title=" " alt="" coords="455,115,629,141"/>
-</map>

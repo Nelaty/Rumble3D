@@ -1,9 +1,0 @@
-<map id="r3::ParticleContactGenerator" name="r3::ParticleContactGenerator">
-<area shape="rect" id="node1" title="Interface for contact generators for particles." alt="" coords="143,5,338,112"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_constraint.html" title="Abstract class, which links a particle with a static position." alt="" coords="5,182,156,303"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles." alt="" coords="181,167,301,318"/>
-<area shape="rect" id="node7" href="$classr3_1_1_particle_plane_contact_generator.html" title=" " alt="" coords="325,160,551,325"/>
-<area shape="rect" id="node4" href="$classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart." alt="" coords="11,381,137,531"/>
-<area shape="rect" id="node5" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="161,373,320,539"/>
-<area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="345,395,459,517"/>
-</map>

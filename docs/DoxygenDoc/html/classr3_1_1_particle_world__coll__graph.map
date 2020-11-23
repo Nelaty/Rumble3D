@@ -1,6 +1,0 @@
-<map id="r3::ParticleWorld" name="r3::ParticleWorld">
-<area shape="rect" id="node1" title="A ParticleWorld is a physics engine module, used to simulate particles." alt="" coords="5,360,213,599"/>
-<area shape="rect" id="node2" href="$classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules." alt="" coords="18,145,201,311"/>
-<area shape="rect" id="node3" title=" " alt="" coords="34,5,81,83"/>
-<area shape="rect" id="node4" title=" " alt="" coords="134,5,189,83"/>
-</map>

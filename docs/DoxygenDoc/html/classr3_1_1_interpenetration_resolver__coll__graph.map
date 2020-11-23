@@ -1,4 +1,0 @@
-<map id="r3::InterpenetrationResolver" name="r3::InterpenetrationResolver">
-<area shape="rect" id="node1" title="Specialized collision resolution filter, which solves interpenetration of bodies." alt="" coords="6,175,195,311"/>
-<area shape="rect" id="node2" href="$classr3_1_1_i_collision_resolution_filter.html" title="Interface for collision resolution filter." alt="" coords="5,5,196,127"/>
-</map>

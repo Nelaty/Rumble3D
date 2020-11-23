@@ -1,8 +1,0 @@
-<map id="r3::ParticleSpringBase" name="r3::ParticleSpringBase">
-<area shape="rect" id="node1" title=" " alt="" coords="330,160,489,369"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_anchored_spring.html" title="A ParticleAnchoredSpring is a particle generator, which simulates a spring, which is anchored to a sp..." alt="" coords="5,425,189,531"/>
-<area shape="rect" id="node4" href="$classr3_1_1_particle_bidirectional_spring.html" title=" " alt="" coords="213,417,413,539"/>
-<area shape="rect" id="node5" href="$classr3_1_1_particle_bungee.html" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="437,425,573,531"/>
-<area shape="rect" id="node6" href="$classr3_1_1_particle_spring.html" title="A ParticleSpring is a particle force generator, which simulates a spring between two particles." alt="" coords="598,425,727,531"/>
-<area shape="rect" id="node2" href="$classr3_1_1_i_particle_force_generator.html" title=" " alt="" coords="316,5,503,112"/>
-</map>

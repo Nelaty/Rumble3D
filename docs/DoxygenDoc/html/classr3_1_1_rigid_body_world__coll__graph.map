@@ -1,6 +1,0 @@
-<map id="r3::RigidBodyWorld" name="r3::RigidBodyWorld">
-<area shape="rect" id="node1" title="A RigidBodyWorld is a physics engine module, used to simulate rigid bodies." alt="" coords="5,360,188,569"/>
-<area shape="rect" id="node2" href="$classr3_1_1_physics_engine_module.html" title="Abstract class for physic engine modules." alt="" coords="5,145,188,311"/>
-<area shape="rect" id="node3" title=" " alt="" coords="21,5,68,83"/>
-<area shape="rect" id="node4" title=" " alt="" coords="121,5,176,83"/>
-</map>

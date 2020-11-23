@@ -1,6 +1,0 @@
-<map id="r3::CollisionPrimitive" name="r3::CollisionPrimitive">
-<area shape="rect" id="node1" title="Abstract collision shape, which can collide with other collision primitives." alt="" coords="139,5,287,200"/>
-<area shape="rect" id="node2" href="$classr3_1_1_collision_box.html" title="CollisionPrimitive that represents a box." alt="" coords="5,307,124,413"/>
-<area shape="rect" id="node3" href="$classr3_1_1_collision_plane.html" title="CollisionPrimitive that represents a plane." alt="" coords="147,248,278,472"/>
-<area shape="rect" id="node4" href="$classr3_1_1_collision_sphere.html" title="CollisionPrimitive, which represents a sphere." alt="" coords="302,307,441,413"/>
-</map>

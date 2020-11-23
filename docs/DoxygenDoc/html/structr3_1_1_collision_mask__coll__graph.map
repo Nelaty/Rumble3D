@@ -1,4 +1,0 @@
-<map id="r3::CollisionMask" name="r3::CollisionMask">
-<area shape="rect" id="node1" title="Used to group rigid bodies. Only rigid bodies from the same layer can collide. Rigid bodies from the ..." alt="" coords="5,160,128,267"/>
-<area shape="rect" id="node2" title=" " alt="" coords="29,5,104,83"/>
-</map>

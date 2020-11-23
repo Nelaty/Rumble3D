@@ -1,7 +1,0 @@
-<map id="r3::ParticleLink" name="r3::ParticleLink">
-<area shape="rect" id="node1" title="Abstract class. A ParticleLink links two particles." alt="" coords="175,160,295,311"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart." alt="" coords="5,366,131,517"/>
-<area shape="rect" id="node4" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="155,359,314,524"/>
-<area shape="rect" id="node5" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="339,381,453,502"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles." alt="" coords="137,5,332,112"/>
-</map>

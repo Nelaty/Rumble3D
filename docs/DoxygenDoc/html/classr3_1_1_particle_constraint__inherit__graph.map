@@ -1,4 +1,0 @@
-<map id="r3::ParticleConstraint" name="r3::ParticleConstraint">
-<area shape="rect" id="node1" title="Abstract class, which links a particle with a static position." alt="" coords="27,160,178,281"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles." alt="" coords="5,5,200,112"/>
-</map>

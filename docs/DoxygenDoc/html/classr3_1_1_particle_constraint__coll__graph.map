@@ -1,8 +1,0 @@
-<map id="r3::ParticleConstraint" name="r3::ParticleConstraint">
-<area shape="rect" id="node1" title="Abstract class, which links a particle with a static position." alt="" coords="217,476,367,583"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles." alt="" coords="5,248,200,355"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,359,413"/>
-<area shape="rect" id="node4" title=" " alt="" coords="89,5,135,83"/>
-<area shape="rect" id="node5" title=" " alt="" coords="219,5,266,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="391,5,441,83"/>
-</map>

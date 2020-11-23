@@ -1,4 +1,0 @@
-<map id="r3::CollisionSphere" name="r3::CollisionSphere">
-<area shape="rect" id="node1" title="CollisionPrimitive, which represents a sphere." alt="" coords="10,248,149,355"/>
-<area shape="rect" id="node2" href="$classr3_1_1_collision_primitive.html" title="Abstract collision shape, which can collide with other collision primitives." alt="" coords="5,5,153,200"/>
-</map>

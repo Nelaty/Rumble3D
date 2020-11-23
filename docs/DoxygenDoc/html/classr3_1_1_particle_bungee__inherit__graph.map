@@ -1,5 +1,0 @@
-<map id="r3::ParticleBungee" name="r3::ParticleBungee">
-<area shape="rect" id="node1" title="A ParticleBungee is a particle force generator, which simulates a bungee cord and connects two partic..." alt="" coords="31,417,167,524"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_spring_base.html" title=" " alt="" coords="19,160,178,369"/>
-<area shape="rect" id="node3" href="$classr3_1_1_i_particle_force_generator.html" title=" " alt="" coords="5,5,192,112"/>
-</map>

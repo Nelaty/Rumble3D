@@ -1,9 +1,0 @@
-<map id="r3::ParticleCable" name="r3::ParticleCable">
-<area shape="rect" id="node1" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart." alt="" coords="368,691,493,827"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles." alt="" coords="232,491,352,641"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles." alt="" coords="5,248,200,355"/>
-<area shape="rect" id="node4" href="$classr3_1_1_particle.html" title="A Particle represents a single point in space with physical properties. A particle has no orientation..." alt="" coords="225,189,359,413"/>
-<area shape="rect" id="node5" title=" " alt="" coords="407,5,454,83"/>
-<area shape="rect" id="node6" title=" " alt="" coords="89,5,135,83"/>
-<area shape="rect" id="node7" title=" " alt="" coords="187,5,237,83"/>
-</map>

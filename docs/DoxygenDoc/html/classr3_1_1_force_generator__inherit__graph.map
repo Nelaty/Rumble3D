@@ -1,7 +1,0 @@
-<map id="r3::ForceGenerator" name="r3::ForceGenerator">
-<area shape="rect" id="node1" title="Interface for rigid body force generators." alt="" coords="239,5,378,112"/>
-<area shape="rect" id="node2" href="$classr3_1_1_anchored_spring.html" title="An AnchoredSpring is a force generator that simulates spring forces." alt="" coords="5,160,148,311"/>
-<area shape="rect" id="node3" href="$classr3_1_1_directed_force.html" title="A DirectedForce is a force generator, which will continually apply a specified force at a specific bo..." alt="" coords="172,175,301,296"/>
-<area shape="rect" id="node4" href="$classr3_1_1_gravity.html" title="Gravity is a force generator, which will apply constant force on bodies." alt="" coords="325,182,439,289"/>
-<area shape="rect" id="node5" href="$classr3_1_1_spring.html" title="A Spring is a force generator, which simulates a spring between two rigid bodies." alt="" coords="463,160,637,311"/>
-</map>

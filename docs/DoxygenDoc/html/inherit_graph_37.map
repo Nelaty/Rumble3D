@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classr3_1_1_particle_contact_generator.html" title="Interface for contact generators for particles." alt="" coords="5,56,191,83"/>
-<area shape="rect" id="node2" href="$classr3_1_1_particle_constraint.html" title="Abstract class, which links a particle with a static position." alt="" coords="248,5,391,32"/>
-<area shape="rect" id="node3" href="$classr3_1_1_particle_link.html" title="Abstract class. A ParticleLink links two particles." alt="" coords="265,56,373,83"/>
-<area shape="rect" id="node7" href="$classr3_1_1_particle_plane_contact_generator.html" title=" " alt="" coords="239,107,400,149"/>
-<area shape="rect" id="node4" href="$classr3_1_1_particle_cable.html" title="A ParticleCable is a contact generator, which will generate a contact if particles are too far apart." alt="" coords="456,5,572,32"/>
-<area shape="rect" id="node5" href="$classr3_1_1_particle_collision.html" title="A ParticleCollision can maintains a certain distance between two particles. A contact will be generat..." alt="" coords="448,56,580,83"/>
-<area shape="rect" id="node6" href="$classr3_1_1_particle_rod.html" title="Abstract class, which creates a distance constraint between two particles. A contact gets created if ..." alt="" coords="461,107,567,133"/>
-</map>
