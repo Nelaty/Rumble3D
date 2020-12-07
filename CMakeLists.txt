@@ -4,8 +4,30 @@ set(PROJECT_SHORT_NAME "r3")
 
 set(CMAKE_CXX_STANDARD 20)
 
+#################################################
+# User configuration
+#################################################
+
+# Configuration values
 set(RUMBLE3D_ENABLE_TESTS 1)
 set(RUMBLE3D_BUILD_SAMPLES 1)
+
+set(R3D_VERSION_MAJOR "1")
+set(R3D_VERSION_MINOR "0")
+set(R3D_VERSION_PATCH "0")
+set(R3D_VERSION "${R3D_VERSION_MAJOR}.${R3D_VERSION_MINOR}.${R3D_VERSION_PATCH}")
+
+set(R3D_CONFIG_USE_DOUBLE_PRECISION "0")
+
+# Configuration file setup
+set(R3D_CONFIGURATION_PATH "${CMAKE_SOURCE_DIR}/Rumble3D/include/R3D/Common/Config.h")
+configure_file("${R3D_CONFIGURATION_PATH}.in"
+        "${R3D_CONFIGURATION_PATH}"
+        @ONLY)
+
+#################################################
+# General configuration
+#################################################
 
 # Configure output paths
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -15,7 +37,7 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(RUMBLE3D_TEST_NAME Test)
 
 # Configure installation paths
-set(RUMBLE3D_INCLUDE_DIRECTORY include/)
+set(RUMBLE3D_INCLUDE_DIRECTORY Rumble3D/include/)
 set(RUMBLE3D_LIBRARY_INSTALL_PATH lib)
 set(RUMBLE3D_INCLUDE_INSTALL_PATH include/)
 
@@ -27,10 +49,14 @@ ENDIF()
 SET(CMAKE_DEBUG_POSTFIX "_d")
 
 
-include_directories(include)
+include_directories(${RUMBLE3D_INCLUDE_DIRECTORY})
+
+#################################################
+# Build
+#################################################
 
 # Projects
-add_subdirectory(src)
+add_subdirectory(Rumble3D)
 
 if(${RUMBLE3D_ENABLE_TESTS})
 enable_testing()
@@ -44,6 +70,10 @@ endif()
 if(${RUMBLE3D_BUILD_SAMPLES})
 include_directories(example)
 endif()
+
+#################################################
+# Installation
+#################################################
 
 # Install library and include files
 install(TARGETS ${PROJECT_NAME}

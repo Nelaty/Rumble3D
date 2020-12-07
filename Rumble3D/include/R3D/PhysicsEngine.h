@@ -17,8 +17,8 @@ namespace r3
 	class PhysicsEngine
 	{
 	public:
-		explicit PhysicsEngine();
-		~PhysicsEngine();
+		explicit PhysicsEngine() = default;
+		~PhysicsEngine() = default;
 
 		/** 
 		 * \brief Update all enabled physic modules. 

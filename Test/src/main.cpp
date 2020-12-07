@@ -1,4 +1,4 @@
-#include "UnitTest++/UnitTest++.h"
+#include "catch2/catch.hpp
 #include "R3D/PhysicsEngine.h"
 
 #include <stdio.h>
