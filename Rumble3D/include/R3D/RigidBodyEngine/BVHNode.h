@@ -16,7 +16,7 @@ namespace r3
 	class R3D_DECLSPEC BVHNode
 	{
 	public:
-		BVHNode();
+		BVHNode() = default;
 		/**
 		 * \brief BVHNode constructor.
 		 * \param parent The parent bounding volume.

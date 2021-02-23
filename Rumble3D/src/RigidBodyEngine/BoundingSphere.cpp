@@ -6,9 +6,6 @@
 
 namespace r3
 {
-	BoundingSphere::BoundingSphere()
-	= default;
-
 	BoundingSphere::BoundingSphere(const glm::vec3 & center, real radius)
 		: m_center(center), 
 		m_radius(radius)
@@ -49,9 +46,6 @@ namespace r3
 			}
 		}
 	}
-	
-	BoundingSphere::~BoundingSphere()
-	= default;
 
 	bool BoundingSphere::overlaps(const BoundingSphere* other) const
 	{

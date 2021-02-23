@@ -7,13 +7,7 @@
 
 namespace r3
 {
-	BoxBoxNarrowAlgorithm::BoxBoxNarrowAlgorithm()
-	= default;
-
-	BoxBoxNarrowAlgorithm::~BoxBoxNarrowAlgorithm()
-	= default;
-
-	bool BoxBoxNarrowAlgorithm::generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1, 
+    bool BoxBoxNarrowAlgorithm::generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1,
 														RigidBody* rbBox2, CollisionBox* box2,
 														CollisionData& collisionData)
 	{
@@ -76,14 +70,14 @@ namespace r3
 		// die minimale Durchdringung ergab. Nun folgt die Fallunterscheidung:
 		if(best < 3)
 		{
-			// Ecke von Box2 und Fläche von Box1.
+			// Ecke von Box2 und Flï¿½che von Box1.
 			fillPointFaceBoxBox(box1, box2, toCentre, contact, best, pen);
 			return true;
 		}
 		
 		if(best < 6)
 		{
-			// Ecke von Box1 und Fläche von Box2.
+			// Ecke von Box1 und Flï¿½che von Box2.
 			// Vertausche Argumente und invertiere toCentre
 			fillPointFaceBoxBox(box2, box1, -toCentre, contact, best - 3, pen);
 			return true;
@@ -105,7 +99,7 @@ namespace r3
 		}
 		// Wir kennen die Achse, aber nicht, welche Kanten betroffen sind.
 		// Dazu suchen wir den Mittelpunkt der Kanten (eine Koordinate der
-		// halfSize ist 0) und wir bestimmen die nächstliegende andere Achse.
+		// halfSize ist 0) und wir bestimmen die nï¿½chstliegende andere Achse.
 		glm::vec3 ptOnOneEdge = box1->getHalfSize();
 		glm::vec3 ptOnTwoEdge = box2->getHalfSize();
 		for(unsigned int i = 0; i < 3; ++i)
@@ -137,8 +131,8 @@ namespace r3
 		ptOnOneEdge = rbBox1->getTransform().getPointInWorldSpace(ptOnOneEdge);
 		ptOnTwoEdge = rbBox2->getTransform().getPointInWorldSpace(ptOnTwoEdge);
 
-		// Wir haben jetzt einen Punkt und eine Richtung für die kollidierenden
-		// Kanten. Wir suchen jetzt den Punkt wo die beiden Kanten am nächsten
+		// Wir haben jetzt einen Punkt und eine Richtung fï¿½r die kollidierenden
+		// Kanten. Wir suchen jetzt den Punkt wo die beiden Kanten am nï¿½chsten
 		// zusammeniegen.
 		const glm::vec3 vertex = contactPoint(
 			ptOnOneEdge, oneAxis, box1->getHalfSize()[oneAxisIndex],
@@ -177,8 +171,8 @@ namespace r3
 		// Projektion des Abstandsvektors auf die Achse.
 		const real distance = abs(glm::dot(toCentre, axis));
 
-		// Rückgabe der Überlappung. Positive Werte
-		// bedeuten Überlappung, negative keine.
+		// Rï¿½ckgabe der ï¿½berlappung. Positive Werte
+		// bedeuten ï¿½berlappung, negative keine.
 		return oneProject + twoProject - distance;
 	}
 
@@ -190,7 +184,7 @@ namespace r3
 										real& smallestPenetration, 
 										unsigned& smallestCase)
 	{
-		// Fast parallele Achsen nicht berücksichtigen.
+		// Fast parallele Achsen nicht berï¿½cksichtigen.
 		if(real(glm::length2(axis)) < s_epsilon)
 		{
 			return true;
@@ -225,14 +219,14 @@ namespace r3
 		const auto& rotationTwo = rbBox2->getTransform().getRotationMat();
 
 		glm::vec3 normal = rotationOne[best];
-		// Richtige Fläche auswählen:
+		// Richtige Flï¿½che auswï¿½hlen:
 		if(glm::dot(rotationOne[best], toCentre) > real(0))
 		{
 			normal = -normal;
 		}
 
 		// Welche Ecke der anderen Box ist betroffen? toCentre reicht nicht!
-		// Es könnten alle 6 Ecken sein, daher 6 Variationen: Zeigt ein Punkt 
+		// Es kï¿½nnten alle 6 Ecken sein, daher 6 Variationen: Zeigt ein Punkt 
 		// in die entgegengesetze Richtung negieren wir seine Koordinate, um 
 		//eine andere Ecke zu erhalten:
 		glm::vec3 vertex = box2->getHalfSize();

@@ -16,7 +16,7 @@ namespace r3
 	{
 	public:
 		explicit DefaultRigidBodyEngineCI();
-		~DefaultRigidBodyEngineCI();
+		~DefaultRigidBodyEngineCI() = default;
 
 		/**
 		 * \brief Prepare rigid bodies.

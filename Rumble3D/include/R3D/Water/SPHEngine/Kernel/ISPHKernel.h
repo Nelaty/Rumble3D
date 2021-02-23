@@ -1,12 +1,13 @@
 #pragma once
-
 #include <R3D/Water/SPHEngine/Entity/SPHContext.h>
+
+#include <R3D/Common/Common.h>
 
 #include <memory>
 
 namespace r3
 {
-    class ISPHKernel
+    class R3D_DECLSPEC ISPHKernel
     {
     public:
         using SPHContext_Ptr = std::shared_ptr<SPHContext>;

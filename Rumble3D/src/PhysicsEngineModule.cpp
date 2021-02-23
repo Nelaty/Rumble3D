@@ -2,9 +2,6 @@
 
 namespace r3
 {
-	PhysicsEngineModule::~PhysicsEngineModule()
-	= default;
-
     PhysicsEngineModule::PhysicsEngineModule(std::string_view name)
         : m_enabled{true},
         m_name{name}

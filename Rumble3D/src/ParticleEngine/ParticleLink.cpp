@@ -6,9 +6,6 @@
 
 namespace r3
 {
-	ParticleLink::~ParticleLink()
-	= default;
-
 	void ParticleLink::setParticles(Particle* first, Particle* second)
 	{
 		m_particles[0] = first;
@@ -24,9 +21,6 @@ namespace r3
 	{
 		return m_particles[1];
 	}
-
-	ParticleLink::ParticleLink()
-	= default;
 
 	real ParticleLink::currentLength() const
 	{

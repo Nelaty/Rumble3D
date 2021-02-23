@@ -1,10 +1,11 @@
 #pragma once
+#include <R3D/Water/SPHEngine/Integrator/ISPHIntegrator.h>
 
-#include "R3D/Water/SPHEngine/Integrator/ISPHIntegrator.h"
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
-    class SPHIntegratorCpuSerial : public ISPHIntegrator
+    class R3D_DECLSPEC SPHIntegratorCpuSerial : public ISPHIntegrator
     {
     public:
         explicit SPHIntegratorCpuSerial() = default;

@@ -11,7 +11,7 @@ namespace r3
 	class R3D_DECLSPEC IPlanePlaneCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~IPlanePlaneCollisionAlgorithm();
+		virtual ~IPlanePlaneCollisionAlgorithm() = default;
 
 		bool generateContactData(RigidBody* first, 
 								 RigidBody* second,
@@ -22,6 +22,6 @@ namespace r3
 											 RigidBody* rbPlane2, CollisionPlane* plane2,
 											 CollisionData& collisionData) = 0;
 
-		explicit IPlanePlaneCollisionAlgorithm();
+		explicit IPlanePlaneCollisionAlgorithm() = default;
 	};
 }

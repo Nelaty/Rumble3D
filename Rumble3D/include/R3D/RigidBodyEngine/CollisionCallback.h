@@ -1,4 +1,6 @@
 #pragma once
+#include <R3D/Common/Common.h>
+
 #include <functional>
 
 namespace r3
@@ -9,13 +11,13 @@ namespace r3
 	 * \brief Callback, which gets executed, when two rigid bodies
 	 * collide.
 	 */
-	class CollisionCallback
+	class R3D_DECLSPEC CollisionCallback
 	{
 	public:
 		using Callback = std::function<void(RigidBody*, RigidBody*)>;
 
 		explicit CollisionCallback(Callback callback = nullptr);
-		~CollisionCallback();
+		~CollisionCallback() = default;
 
 		/** \brief Set the currently used callback function. */
 		void setCallback(const Callback& callback);

@@ -20,9 +20,6 @@ namespace r3
 		init(def);
 	}
 
-	RigidBody::~RigidBody()
-	= default;
-
 	void RigidBody::init(const RigidBodyDef& definition)
 	{
 		m_physicsMaterial = definition.m_physicsMaterial;
@@ -67,8 +64,8 @@ namespace r3
 		const glm::mat3 rot = glm::mat3(rotMat);
 		iitWorld = rot * iit * glm::transpose(rot);
 
-		// Der folgende Code wurde von Millington direkt übernommen,
-		// der behauptet, er wäre automatisch optimiert worden:		
+		// Der folgende Code wurde von Millington direkt ï¿½bernommen,
+		// der behauptet, er wï¿½re automatisch optimiert worden:		
 		/*real t4 = 
 			rotMat[0][0] * iit[0][0] +
 			rotMat[1][0] * iit[0][1] +

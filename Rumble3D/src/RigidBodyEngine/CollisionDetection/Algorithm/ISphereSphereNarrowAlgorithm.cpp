@@ -3,9 +3,6 @@
 
 namespace r3
 {
-	ISphereSphereNarrowAlgorithm::~ISphereSphereNarrowAlgorithm()
-	= default;
-
 	bool ISphereSphereNarrowAlgorithm::generateContactData(RigidBody* first, RigidBody* second,
 		CollisionData& collisionData)
 	{
@@ -16,7 +13,4 @@ namespace r3
 									   second, sphere2,
 									   collisionData);
 	}
-
-	ISphereSphereNarrowAlgorithm::ISphereSphereNarrowAlgorithm()
-	= default;
 }

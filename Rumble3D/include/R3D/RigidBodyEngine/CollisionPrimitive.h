@@ -18,7 +18,7 @@ namespace r3
 	class R3D_DECLSPEC CollisionPrimitive
 	{
 	public:
-		virtual ~CollisionPrimitive();	
+		virtual ~CollisionPrimitive() = default;
 
 		/**
 		 * \brief Calculates its transformation.

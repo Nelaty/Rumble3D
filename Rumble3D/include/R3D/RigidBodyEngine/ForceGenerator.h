@@ -12,7 +12,7 @@ namespace r3
 	class R3D_DECLSPEC ForceGenerator
 	{
 	public:
-		virtual ~ForceGenerator();
+		virtual ~ForceGenerator() = default;
 
 		/**
 		 * \brief Apply force to a rigid body over a specific time.
@@ -22,6 +22,6 @@ namespace r3
 		virtual void updateForce(RigidBody* body, real duration) = 0;
 
 	protected:
-		explicit ForceGenerator();
+		explicit ForceGenerator() = default;
 	};
 }

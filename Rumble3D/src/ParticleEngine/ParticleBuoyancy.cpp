@@ -17,9 +17,6 @@ namespace r3
 		m_liquidDensity = liquidDensity;
 		m_gravity = gravity;
 	}
-	
-	ParticleBuoyancy::~ParticleBuoyancy()
-	= default;
 
 	void ParticleBuoyancy::updateForce(Particle* particle, real duration)
 	{

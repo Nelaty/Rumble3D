@@ -19,14 +19,14 @@ namespace r3
 	 * \brief A ParticleWorld is a physics engine module, used to
 	 * simulate particles.
 	 */
-	class ParticleWorld : public PhysicsEngineModule
+	class R3D_DECLSPEC ParticleWorld : public PhysicsEngineModule
 	{
 	public:
 		using Particle_Ptr = Particle*;
 		using Particle_Container = std::vector<Particle_Ptr>;
 
-		explicit ParticleWorld();
-		~ParticleWorld();
+		explicit ParticleWorld() = default;
+		~ParticleWorld() = default;
 
 		/**
 		 * \brief Change the computation interface, used by the module.
@@ -45,9 +45,8 @@ namespace r3
 		void addParticle(Particle* particle);
 		/**
 		 * \brief Remove a registered particle
-		 * \return True if particle was registered, false otherwise.
 		 */
-		bool removeParticle(Particle* particle);
+		void removeParticle(Particle* particle);
 
 		/** 
 		 * \brief Get the module's particle force registry

@@ -2,9 +2,6 @@
 
 namespace r3
 {
-	ParticleEngineCI::~ParticleEngineCI()
-	= default;
-
 	void ParticleEngineCI::setParticleWorld(ParticleWorld* particleWorld)
 	{
 		m_particleWorld = particleWorld;

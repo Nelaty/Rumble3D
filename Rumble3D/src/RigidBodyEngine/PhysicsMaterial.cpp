@@ -37,9 +37,6 @@ namespace r3
 		return m_mat;
 	}
 
-	PhysicsMaterial::~PhysicsMaterial()
-	= default;
-
 	void PhysicsMaterial::init(const PhysicsMaterialDef& definition)
 	{
 		m_mat = definition;

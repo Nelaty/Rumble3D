@@ -23,8 +23,8 @@ namespace r3
 		};
 		using Registry = std::vector<ForceRegistrationEntry>;
 
-		explicit ForceRegistry();
-		~ForceRegistry();
+		explicit ForceRegistry() = default;
+		~ForceRegistry() = default;
 
 		/**
 		 * \brief Register a pair of rigid body and force generator.

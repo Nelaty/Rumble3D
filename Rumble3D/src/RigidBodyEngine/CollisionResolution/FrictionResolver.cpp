@@ -2,14 +2,8 @@
 
 namespace r3
 {
-	FrictionResolver::~FrictionResolver()
-	= default;
-
 	void FrictionResolver::resolve(CollisionData& collisionData,
 								   real timeDelta)
 	{
 	}
-
-	FrictionResolver::FrictionResolver()
-	= default;
 }

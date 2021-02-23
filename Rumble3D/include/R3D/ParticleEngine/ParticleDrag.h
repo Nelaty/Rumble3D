@@ -3,6 +3,8 @@
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
 
+#include <glm/gtc/constants.hpp>
+
 namespace r3
 {
 	class Particle;
@@ -11,7 +13,7 @@ namespace r3
 	 * \brief A ParticleDrag is a particle force generator, which 
 	 * simulates the effect of drag forces.
 	 */
-	class ParticleDrag : public IParticleForceGenerator
+	class R3D_DECLSPEC ParticleDrag : public IParticleForceGenerator
 	{
 	public:
 		/**
@@ -25,10 +27,10 @@ namespace r3
 		* Drag coefficient of a smooth sphere = 0.47, RE = 10^5 (RE = Reynolds Number)
 		* Density of air at 15�C = 1.225
 		*/
-		explicit ParticleDrag(real crossSectionalArea = real(2.0 * R3D_PI),
+		explicit ParticleDrag(real crossSectionalArea = glm::two_pi<real>(),
 							  real dragCoefficient = real(0.47),
 							  real mediumDensity = real(1.225));
-		~ParticleDrag();
+		~ParticleDrag() = default;
 
 		/**
 		* \brief Calculates and changes the force in the force accumulator

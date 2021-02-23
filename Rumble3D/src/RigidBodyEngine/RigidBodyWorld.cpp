@@ -8,13 +8,6 @@
 
 namespace r3
 {
-	
-	RigidBodyWorld::RigidBodyWorld()
-	= default;
-
-	RigidBodyWorld::~RigidBodyWorld()
-	= default;
-
 	void RigidBodyWorld::setComputationInterface(RigidBodyEngineCI* computationInterface)
 	{
 		m_computationInterface = computationInterface;
@@ -27,22 +20,16 @@ namespace r3
 
 	void RigidBodyWorld::addRigidBody(RigidBody* body)
 	{
-		m_rigidBodies.push_back(body);
+		m_rigidBodies.emplace_back(body);
 	}
 
-	bool RigidBodyWorld::removeRigidBody(RigidBody* body)
+	void RigidBodyWorld::removeRigidBody(RigidBody* body)
 	{
-		const auto removedIt = std::remove(m_rigidBodies.begin(),
-										   m_rigidBodies.end(),
-										   body);
-
-		const bool found = removedIt != m_rigidBodies.end();
-		if(found)
-		{
-			m_rigidBodies.erase(removedIt);
-		}
-
-		return found;
+	    m_rigidBodies.erase(
+	        std::remove(m_rigidBodies.begin(),
+	            m_rigidBodies.end(),
+	            body),
+            m_rigidBodies.end());
 	}
 
 	RigidBodyWorld::RigidBody_Container& RigidBodyWorld::getRigidBodies()

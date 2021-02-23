@@ -14,9 +14,6 @@ namespace r3
 	{
 	}
 
-	ParticleDrag::~ParticleDrag()
-	= default;
-
 	void ParticleDrag::updateForce(Particle* particle, 
 								   const real duration)
 	{

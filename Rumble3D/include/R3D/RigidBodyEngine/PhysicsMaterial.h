@@ -29,7 +29,7 @@ namespace r3
 		 */
 		explicit PhysicsMaterial(const PhysicsMaterialDef& definition);
 		PhysicsMaterial& operator=(const PhysicsMaterial&) = default;
-		~PhysicsMaterial();
+		~PhysicsMaterial() = default;
 
 		/**
 		 * \brief Initialize all attributes.

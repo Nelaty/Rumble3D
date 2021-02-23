@@ -29,13 +29,13 @@ namespace r3
 	{
 	}
 
-	bool ParticleSpringBase::isMagnitudeValid(const glm::vec3& particle,
-											  const glm::vec3& target,
+	bool ParticleSpringBase::isMagnitudeValid(const glm::vec3& target,
+											  const glm::vec3& source,
 											  glm::vec3& distance,
 											  real& magnitude)
 	{
 		// Force direction of zero vector is undefined
-		distance = particle - target;
+		distance = target - source;
 		magnitude = glm::length(distance);
 		return magnitude != real(0);
 	}

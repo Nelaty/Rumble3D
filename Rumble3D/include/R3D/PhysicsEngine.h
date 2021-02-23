@@ -1,6 +1,6 @@
 #pragma once
-#include "R3D/Common/Common.h"
-#include "R3D/Common/Precision.h"
+#include <R3D/Common/Precision.h>
+#include <R3D/Common/Common.h>
 
 #include <vector>
 #include <string>
@@ -14,7 +14,7 @@ namespace r3
 	 * \brief The PhysicsEngine is the main component of this library and consists
 	 * of multiple PhysicsEngineModule.
 	 */
-	class PhysicsEngine
+	class R3D_DECLSPEC PhysicsEngine
 	{
 	public:
 		explicit PhysicsEngine() = default;
@@ -46,13 +46,13 @@ namespace r3
 		 * @param module The module to unregister.
 		 * @return Returns true if the module was found, false otherwise.
 		 */
-		bool unregisterModule(const std::shared_ptr<PhysicsEngineModule>& module);
+		void unregisterModule(const std::shared_ptr<PhysicsEngineModule>& module);
 		/**
 		 * Unregister the first module with the given name.
 		 * @param name The name of the module to unregister.
 		 * @return Returns true if the module was found, false otherwise.
 		 */
-        bool unregisterModule(std::string_view name);
+        void unregisterModule(std::string_view name);
 
 		/**
 		 * \brief Check if the simulation is currently paused.

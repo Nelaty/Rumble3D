@@ -7,9 +7,6 @@ namespace r3
 		m_callback = callback;
 	}
 
-	CollisionCallback::~CollisionCallback()
-	= default;
-
 	void CollisionCallback::setCallback(const Callback& callback)
 	{
 		m_callback = callback;

@@ -39,10 +39,4 @@ namespace r3
 
 		return matrix;
 	}
-
-	CollisionAlgorithmMatrixFactory::CollisionAlgorithmMatrixFactory()
-	= default;
-
-	CollisionAlgorithmMatrixFactory::~CollisionAlgorithmMatrixFactory()
-	= default;
 }

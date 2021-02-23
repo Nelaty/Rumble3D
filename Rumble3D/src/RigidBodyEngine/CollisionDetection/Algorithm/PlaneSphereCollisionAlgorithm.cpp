@@ -2,12 +2,6 @@
 
 namespace r3
 {
-	PlaneSphereCollisionAlgorithm::PlaneSphereCollisionAlgorithm()
-	= default;
-
-	PlaneSphereCollisionAlgorithm::~PlaneSphereCollisionAlgorithm()
-	= default;
-
 	bool PlaneSphereCollisionAlgorithm::generateContactDataImpl(RigidBody* rbPlane,
 																CollisionPlane* plane,
 																RigidBody* rbSphere,

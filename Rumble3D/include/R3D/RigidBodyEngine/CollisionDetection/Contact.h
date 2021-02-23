@@ -19,7 +19,7 @@ namespace r3
 	{
 	public:
 		explicit Contact();
-		~Contact();
+		~Contact() = default;
 
 		/** 
 		 * \brief Get the first colliding rigid body. 

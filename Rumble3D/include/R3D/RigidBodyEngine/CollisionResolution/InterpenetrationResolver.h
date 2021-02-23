@@ -12,7 +12,7 @@ namespace r3
 	{
 	public:
 		explicit InterpenetrationResolver();
-		~InterpenetrationResolver();
+		~InterpenetrationResolver() = default;
 
 		void resolve(CollisionData& collisionData,
 					 real timeDelta) override;

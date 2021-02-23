@@ -12,7 +12,7 @@ namespace r3
 	{
 	public:
 		explicit VelocityResolver();
-		~VelocityResolver();
+		~VelocityResolver() = default;
 
 		void resolve(CollisionData& collisionData,
 					 real timeDelta) override;

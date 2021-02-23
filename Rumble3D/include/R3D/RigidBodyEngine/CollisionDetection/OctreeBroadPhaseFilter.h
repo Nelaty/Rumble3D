@@ -9,8 +9,8 @@ namespace r3
 	class R3D_DECLSPEC OctreeBroadPhaseFilter : public IBroadPhaseFilter
 	{
 	public:
-		explicit OctreeBroadPhaseFilter();
-		~OctreeBroadPhaseFilter();
+		explicit OctreeBroadPhaseFilter() = default;
+		~OctreeBroadPhaseFilter() = default;
 
 		void generateCollisions(
 			const std::vector<RigidBody*>& rigidBodies,

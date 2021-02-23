@@ -12,7 +12,7 @@ namespace r3
 	class R3D_DECLSPEC BoundingSphere
 	{	
 	public:
-		BoundingSphere();
+		BoundingSphere() = default;
 		/**
 		 * \brief BoundingBox constructor
 		 * \param center The center of the spehere in world coordinates.
@@ -26,7 +26,7 @@ namespace r3
 		 * \param two The second child bounding sphere.
 		 */
 		BoundingSphere(const BoundingSphere& one, const BoundingSphere& two);
-		~BoundingSphere();
+		~BoundingSphere() = default;
 
 		/** 
 		 * \brief Check if this bounding sphere overlaps with the

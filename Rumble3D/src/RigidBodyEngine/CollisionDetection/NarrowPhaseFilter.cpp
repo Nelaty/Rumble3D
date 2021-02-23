@@ -13,9 +13,6 @@ namespace r3
 		init();
 	}
 
-	NarrowPhaseFilter::~NarrowPhaseFilter()
-	= default;
-
 	void NarrowPhaseFilter::generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
 												  CollisionData& collisions)
 	{

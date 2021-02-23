@@ -23,7 +23,7 @@ namespace r3
 		 */
 		DirectedForce(const glm::vec3& localPosition, 
 					  const glm::vec3& force);
-		~DirectedForce();
+		~DirectedForce() = default;
 
 		/**
 		* \brief Apply force to a rigid body over a specific time.

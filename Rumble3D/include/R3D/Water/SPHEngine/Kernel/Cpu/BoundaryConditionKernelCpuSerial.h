@@ -1,13 +1,14 @@
 #pragma once
-
 #include <R3D/Water/SPHEngine/Entity/SPHParticle.h>
-#include "R3D/Water/SPHEngine/Kernel/ISPHKernel.h"
+#include <R3D/Water/SPHEngine/Kernel/ISPHKernel.h>
+
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
     // Makes usage of Lennard-Jones potential to restrain SPHParticles to a
     // boundary box
-    class BoundaryConditionKernelCpuSerial : public ISPHKernel
+    class R3D_DECLSPEC BoundaryConditionKernelCpuSerial : public ISPHKernel
     {
     public:
     public:

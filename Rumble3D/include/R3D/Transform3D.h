@@ -1,6 +1,6 @@
 #pragma once
-#include "Common/Common.h"
-#include "Common/Precision.h"
+#include <R3D/Common/Precision.h>
+#include <R3D/Common/Common.h>
 
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
@@ -11,7 +11,7 @@ namespace r3
 	 * \brief Encapsulates translation and rotation and manipulation
 	 * functions on them.
 	 */
-	class Transform3D
+	class R3D_DECLSPEC Transform3D
 	{
 	public:
 		/**
@@ -21,7 +21,7 @@ namespace r3
 		 */
 		explicit Transform3D(const glm::vec3& position = glm::vec3(0.0),
 		                     const glm::mat3& rotation = glm::mat3(1));
-		~Transform3D();
+		~Transform3D() = default;
 
 		/** 
 		 * \brief Set the current position. 

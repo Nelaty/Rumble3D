@@ -1,9 +1,10 @@
 #pragma once
-#include "R3D/Water/SPHEngine/Kernel/ISPHKernel.h"
+#include <R3D/Water/SPHEngine/Kernel/ISPHKernel.h>
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
-    class ForceKernelCpuSerial : public ISPHKernel
+    class R3D_DECLSPEC ForceKernelCpuSerial : public ISPHKernel
     {
     public:
         explicit ForceKernelCpuSerial() = default;

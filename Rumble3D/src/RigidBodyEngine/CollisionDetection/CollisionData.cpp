@@ -9,9 +9,6 @@ namespace r3
 		init(contactsMax, iterations);
 	}
 
-	CollisionData::~CollisionData()
-	= default;
-
 	void CollisionData::init(const int contactsMax,
 							 const int iterations)
 	{

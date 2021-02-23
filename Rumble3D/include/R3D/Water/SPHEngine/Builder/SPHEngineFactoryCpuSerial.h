@@ -1,14 +1,16 @@
 #pragma once
 
-#include "ISPHEngineFactory.h"
+#include <R3D/Water/SPHEngine/Builder/ISPHEngineFactory.h>
 
-#include "R3D/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.h"
-#include "R3D/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.h"
-#include "R3D/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.h"
+#include <R3D/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.h>
+#include <R3D/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.h>
+#include <R3D/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.h>
+
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
-    class SPHEngineFactoryCpuSerial : public ISPHEngineFactory
+    class R3D_DECLSPEC SPHEngineFactoryCpuSerial : public ISPHEngineFactory
     {
     public:
         explicit SPHEngineFactoryCpuSerial() = default;

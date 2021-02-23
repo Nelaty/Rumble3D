@@ -26,9 +26,6 @@ namespace r3
 		m_center = one.m_center + real(0.5) * dist;
 	}
 
-	BoundingBox::~BoundingBox()
-	= default;
-
 	bool BoundingBox::overlaps(const BoundingBox* other) const
 	{
 		// Check all six sides

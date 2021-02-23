@@ -14,9 +14,6 @@ namespace r3
 	{
 		init();
 	}
-
-	DefaultRigidBodyEngineCI::~DefaultRigidBodyEngineCI()
-	= default;
 	
 	void DefaultRigidBodyEngineCI::onBegin()
 	{
@@ -57,9 +54,9 @@ namespace r3
 	//	m_registry.updateForces(timeDelta);
 	//	//integrate(timeDelta);
 	//	return;
-	//	// Prüfe auf Kontakte:
+	//	// Prï¿½fe auf Kontakte:
 
-	//	//Hier Iteration über RigidBodies und ihre BoundingAreas
+	//	//Hier Iteration ï¿½ber RigidBodies und ihre BoundingAreas
 	//	//Je nachdem, welche Kombination, die richtige Methode von
 	//	//detect aufrufen. Hier momentan nur 2 Boxen mit BoundingBoxes:
 	//	CollisionBox * b1 = nullptr;

@@ -24,7 +24,7 @@ namespace r3
 		 * \param two The second contained bounding box.
 		 */
 		BoundingBox(const BoundingBox& one, const BoundingBox& two);
-		~BoundingBox();
+		~BoundingBox() = default;
 		
 		/**
 		 * \brief Check the given bounding box overlaps with this one.

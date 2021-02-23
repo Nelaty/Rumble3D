@@ -6,9 +6,6 @@
 
 namespace r3
 {
-	InterpenetrationResolver::~InterpenetrationResolver()
-	= default;
-
 	void InterpenetrationResolver::resolve(CollisionData& collisionData,
 	                                       const real timeDelta)
 	{

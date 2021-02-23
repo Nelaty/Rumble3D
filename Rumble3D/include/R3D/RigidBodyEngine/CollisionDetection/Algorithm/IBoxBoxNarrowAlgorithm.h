@@ -13,7 +13,7 @@ namespace r3
 	class R3D_DECLSPEC IBoxBoxNarrowAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~IBoxBoxNarrowAlgorithm();
+		virtual ~IBoxBoxNarrowAlgorithm() = default;
 
 		bool generateContactData(RigidBody* first,
 								 RigidBody* second,
@@ -24,6 +24,6 @@ namespace r3
 											 RigidBody* rbBox2, CollisionBox* box2,
 											 CollisionData& collisionData) = 0;
 
-		explicit IBoxBoxNarrowAlgorithm();
+		explicit IBoxBoxNarrowAlgorithm() = default;
 	};
 }

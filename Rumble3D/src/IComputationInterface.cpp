@@ -2,9 +2,6 @@
 
 namespace r3
 {
-	IComputationInterface::~IComputationInterface()
-	= default;
-
 	void IComputationInterface::onBegin()
 	{
 	}
@@ -24,7 +21,4 @@ namespace r3
 	void IComputationInterface::reset()
 	{
 	}
-
-	IComputationInterface::IComputationInterface()
-	= default;
 }

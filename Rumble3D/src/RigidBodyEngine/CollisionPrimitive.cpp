@@ -7,9 +7,6 @@
 
 namespace r3
 {
-	CollisionPrimitive::~CollisionPrimitive()
-		= default;
-
 	void CollisionPrimitive::calculateInternals()
 	{
 		/// \todo use new transform!

@@ -14,7 +14,7 @@ namespace r3
 	class R3D_DECLSPEC IBoxSphereNarrowAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~IBoxSphereNarrowAlgorithm();
+		virtual ~IBoxSphereNarrowAlgorithm() = default;
 
 		bool generateContactData(RigidBody* first,
 								 RigidBody* second,
@@ -25,6 +25,6 @@ namespace r3
 											 RigidBody* rbSphere, CollisionSphere* sphere,
 											 CollisionData& collisionData) = 0;
 
-		explicit IBoxSphereNarrowAlgorithm();
+		explicit IBoxSphereNarrowAlgorithm() = default;
 	};
 }

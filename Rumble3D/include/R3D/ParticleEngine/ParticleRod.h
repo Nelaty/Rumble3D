@@ -12,7 +12,7 @@ namespace r3
 	 * between two particles. A contact gets created if this constraint
 	 * is not fulfilled.
 	 */
-	class  ParticleRod : public ParticleLink
+	class R3D_DECLSPEC ParticleRod : public ParticleLink
 	{
 	public:
 		explicit ParticleRod(real length);

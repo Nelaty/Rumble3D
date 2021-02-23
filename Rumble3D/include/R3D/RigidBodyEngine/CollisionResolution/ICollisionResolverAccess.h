@@ -13,12 +13,12 @@ namespace r3
 	class R3D_DECLSPEC ICollisionResolverAccess
 	{
 	public:
-		virtual ~ICollisionResolverAccess();
+		virtual ~ICollisionResolverAccess() = default;
 
 		virtual void resolveCollisions(CollisionData& collisionData,
 									   real timeDelta) = 0;
 
 	protected:
-		explicit ICollisionResolverAccess();
+		explicit ICollisionResolverAccess() = default;
 	};
 }

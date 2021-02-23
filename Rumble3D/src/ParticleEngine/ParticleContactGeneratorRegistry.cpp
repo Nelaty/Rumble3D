@@ -4,24 +4,18 @@
 
 namespace r3
 {
-	ParticleContactGeneratorRegistry::ParticleContactGeneratorRegistry()
-	= default;
-
-	ParticleContactGeneratorRegistry::~ParticleContactGeneratorRegistry()
-	= default;
-
 	void ParticleContactGeneratorRegistry::registerContactGenerator(ParticleContactGenerator* generator)
 	{
-		m_contactGenerators.push_back(generator);
+		m_contactGenerators.emplace_back(generator);
 	}
 
-	bool ParticleContactGeneratorRegistry::unregisterContactGenerator(ParticleContactGenerator* generator)
+	void ParticleContactGeneratorRegistry::unregisterContactGenerator(ParticleContactGenerator* generator)
 	{
-		const auto foundGenerator = std::remove(m_contactGenerators.begin(),
-												m_contactGenerators.end(),
-												generator);
-
-		return foundGenerator != m_contactGenerators.end();
+	    m_contactGenerators.erase(
+	        std::remove(m_contactGenerators.begin(),
+	            m_contactGenerators.end(),
+	            generator),
+		    m_contactGenerators.end());
 	}
 
 	void ParticleContactGeneratorRegistry::clear()

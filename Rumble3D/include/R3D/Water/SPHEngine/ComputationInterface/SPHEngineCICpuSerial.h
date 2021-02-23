@@ -1,16 +1,18 @@
 #pragma once
-#include "R3D/Water/SPHEngine/SPHEngineComputationInterfaceBase.h"
-#include "R3D/Water/SPHEngine/SPHEngine.h"
+#include <R3D/Water/SPHEngine/SPHEngineComputationInterfaceBase.h>
+#include <R3D/Water/SPHEngine/SPHEngine.h>
 
 #include <R3D/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.h>
 #include <R3D/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.h>
 #include <R3D/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.h>
 #include <R3D/Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.h>
-#include "R3D/Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.h"
+#include <R3D/Water/SPHEngine/Kernel/Cpu/BoundaryConditionKernelCpuSerial.h>
+
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
-    class SPHEngineCICpuSerial : public SPHEngineComputationInterfaceBase
+    class R3D_DECLSPEC SPHEngineCICpuSerial : public SPHEngineComputationInterfaceBase
     {
     public:
         explicit SPHEngineCICpuSerial(const SPHEngine_Ptr& engine = nullptr);

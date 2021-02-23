@@ -10,11 +10,11 @@ namespace r3
 
 	namespace detail
 	{
-		class OctreeNode
+		class R3D_DECLSPEC OctreeNode
 		{
 		public:
-			explicit OctreeNode();
-			~OctreeNode();
+			explicit OctreeNode() = default;
+			~OctreeNode() = default;
 
 			void expand();
 
@@ -29,8 +29,8 @@ namespace r3
 	public:
 		using InsertFunction = std::function<void(RigidBody*, RigidBody*)>;
 
-		explicit Octree();
-		~Octree();
+		explicit Octree() = default;
+		~Octree() = default;
 
 		void insert(RigidBody* rigidBody);
 		void collectCollisionPairs(const InsertFunction& func) const;

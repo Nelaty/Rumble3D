@@ -11,8 +11,8 @@ namespace r3
 	class R3D_DECLSPEC BroadPhaseFilter : public IBroadPhaseFilter
 	{
 	public:
-		explicit BroadPhaseFilter();
-		~BroadPhaseFilter();
+		explicit BroadPhaseFilter()  = default;
+		~BroadPhaseFilter() = default;
 
 		/**
 		 * \brief Conservatively check, which rigid body pairs might

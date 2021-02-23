@@ -18,7 +18,7 @@ namespace r3
 	 * between two particles. A contact will be generated if those
 	 * particles are too close together.
 	 */
-	class ParticleCollision : public ParticleLink
+	class R3D_DECLSPEC ParticleCollision : public ParticleLink
 	{	
 	public:
 		using CollisionCallback = std::function<void(Particle* first,
@@ -33,7 +33,7 @@ namespace r3
 		 * \param penetration \todo Why does this even exist? Just calculate interpenetration in contact generation.
 		 */
 		explicit ParticleCollision(real restitution, real distance, real penetration);
-		~ParticleCollision();
+		~ParticleCollision() = default;
 
 		/**
 		 * \brief Generate new contacts.

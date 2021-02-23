@@ -12,9 +12,6 @@ namespace r3
 		init();
 	}
 
-	CollisionAlgorithmMatrix::~CollisionAlgorithmMatrix()
-	= default;
-
 	void CollisionAlgorithmMatrix::setAlgorithm(const Algorithm_Ptr& algorithm,
 	                                            const CollisionPrimitiveType firstShape,
 	                                            const CollisionPrimitiveType secondShape)

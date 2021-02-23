@@ -3,13 +3,6 @@
 
 namespace r3
 {
-
-	ParticleConstraint::~ParticleConstraint()
-	= default;
-
-	ParticleConstraint::ParticleConstraint()
-	= default;
-
 	real ParticleConstraint::currentLength() const
 	{
 		glm::vec3 distance = m_particle->getPosition() - m_anchor;

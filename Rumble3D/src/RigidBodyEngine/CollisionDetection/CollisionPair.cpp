@@ -10,9 +10,6 @@ namespace r3
 		init(first, second);
 	}
 
-	CollisionPair::~CollisionPair()
-	= default;
-
 	RigidBody* CollisionPair::operator[](const int index) const
 	{
 		assert(index == 0 || index == 1);

@@ -8,12 +8,6 @@
 
 namespace r3
 {
-	BoxSphereNarrowAlgorithm::BoxSphereNarrowAlgorithm()
-	= default;
-
-	BoxSphereNarrowAlgorithm::~BoxSphereNarrowAlgorithm()
-	= default;
-
 	bool BoxSphereNarrowAlgorithm::generateContactDataImpl(
 		RigidBody* rbBox, CollisionBox* box,
 		RigidBody* rbSphere, CollisionSphere* sphere, 

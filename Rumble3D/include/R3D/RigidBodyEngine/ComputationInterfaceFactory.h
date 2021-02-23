@@ -1,4 +1,6 @@
 #pragma once
+#include <R3D/Common/Common.h>
+
 #include <memory>
 
 namespace r3
@@ -10,7 +12,7 @@ namespace r3
 	 * \brief Generate default implementations of various computation
 	 * interfaces.
 	 */
-	class ComputationInterfaceFactory
+	class R3D_DECLSPEC ComputationInterfaceFactory
 	{
 	public:
 		/**

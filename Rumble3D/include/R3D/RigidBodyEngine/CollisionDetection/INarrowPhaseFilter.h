@@ -17,7 +17,7 @@ namespace r3
 	class R3D_DECLSPEC INarrowPhaseFilter
 	{
 	public:
-		virtual ~INarrowPhaseFilter();
+		virtual ~INarrowPhaseFilter() = default;
 
 		/**
 		 * \brief Generate contacts.
@@ -30,6 +30,6 @@ namespace r3
 										   CollisionData& collisions) = 0;
 
 	protected:
-		explicit INarrowPhaseFilter();
+		explicit INarrowPhaseFilter() = default;
 	};
 }

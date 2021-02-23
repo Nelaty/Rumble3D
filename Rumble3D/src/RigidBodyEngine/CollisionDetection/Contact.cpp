@@ -9,9 +9,6 @@ namespace r3
 	{
 	}
 
-	Contact::~Contact()
-	= default;
-
 	RigidBody* Contact::getFirst() const
 	{
 		return m_pair.getFirst();

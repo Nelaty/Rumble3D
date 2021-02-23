@@ -13,14 +13,14 @@ namespace r3
 	class R3D_DECLSPEC IPlaneBoxCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~IPlaneBoxCollisionAlgorithm();
+		virtual ~IPlaneBoxCollisionAlgorithm() = default;
 
 		bool generateContactData(RigidBody* first, 
 								 RigidBody* second,
 								 CollisionData& collisionData) override final;
 	
 	protected:
-		explicit IPlaneBoxCollisionAlgorithm();
+		explicit IPlaneBoxCollisionAlgorithm() = default;
 
 		virtual bool generateContactDataImpl(RigidBody* rbPlane, CollisionPlane* plane,
 											 RigidBody* rbBox, CollisionBox* box,

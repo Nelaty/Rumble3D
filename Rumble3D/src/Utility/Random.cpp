@@ -144,11 +144,5 @@ namespace r3
 		}
 	}
 
-	Random::Random()
-		= default;
-
-	Random::~Random()
-		= default;
-
 	unsigned int Random::s_seed = 0;
 }

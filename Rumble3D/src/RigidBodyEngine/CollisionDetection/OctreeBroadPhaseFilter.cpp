@@ -2,12 +2,6 @@
 
 namespace r3
 {
-	OctreeBroadPhaseFilter::OctreeBroadPhaseFilter()
-	= default;
-
-	OctreeBroadPhaseFilter::~OctreeBroadPhaseFilter()
-	= default;
-
 	void OctreeBroadPhaseFilter::generateCollisions(
 		const std::vector<RigidBody*>& rigidBodies,
 		FixedSizeContainer<CollisionPair>& data)

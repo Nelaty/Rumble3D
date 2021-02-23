@@ -25,7 +25,7 @@ namespace r3
 		CollisionSphere(RigidBody* body,
 						real radius, 
 						const glm::mat4& offset = glm::mat4(1));
-		~CollisionSphere();
+		~CollisionSphere() = default;
 
 		/**
 		 * \brief Get the radius of the collision sphere.

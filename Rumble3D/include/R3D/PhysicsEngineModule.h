@@ -1,5 +1,5 @@
 #pragma once
-#include "R3D/Common/Common.h"
+#include <R3D/Common/Common.h>
 
 #include <string>
 
@@ -10,10 +10,10 @@ namespace r3
 	/**
 	 * \brief Abstract class for physic engine modules.
 	 */
-	class PhysicsEngineModule
+	class R3D_DECLSPEC PhysicsEngineModule
 	{
 	public:
-		virtual ~PhysicsEngineModule();
+		virtual ~PhysicsEngineModule() = default;
 
 		/**
 		 * \brief Get the computation interface of this module.

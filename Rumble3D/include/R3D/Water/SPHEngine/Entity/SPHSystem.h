@@ -1,6 +1,6 @@
 #pragma once
-
-#include "SPHParticle.h"
+#include <R3D/Common/Common.h>
+#include <R3D/Water/SPHEngine/Entity/SPHParticle.h>
 
 #include <memory>
 #include <map>
@@ -10,7 +10,7 @@ namespace r3
 {
     class SPHParticleDefinition;
 
-    class SPHSystem
+    class R3D_DECLSPEC SPHSystem
     {
     public:
         using ParticleDefinition_Ptr = std::shared_ptr<SPHParticleDefinition>;

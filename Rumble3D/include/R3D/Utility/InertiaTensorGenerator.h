@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Static class, which provides methods to generate inertia
 	 * tensors for various shapes.
 	 */
-	class InertiaTensorGenerator
+	class R3D_DECLSPEC InertiaTensorGenerator
 	{
 	public:
 		/**
@@ -31,7 +31,7 @@ namespace r3
 		static glm::mat3 generateSphereTensor(real mass, real radius);
 
 	private:
-		InertiaTensorGenerator();
-		~InertiaTensorGenerator();
+		InertiaTensorGenerator() = default;
+		~InertiaTensorGenerator() = default;
 	};
 }

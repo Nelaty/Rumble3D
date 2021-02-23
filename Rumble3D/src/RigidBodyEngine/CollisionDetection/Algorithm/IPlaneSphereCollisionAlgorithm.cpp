@@ -2,9 +2,6 @@
 
 namespace r3
 {
-	IPlaneSphereCollisionAlgorithm::~IPlaneSphereCollisionAlgorithm()
-	= default;
-
 	bool IPlaneSphereCollisionAlgorithm::generateContactData(RigidBody* first,
 															 RigidBody* second,
 															 CollisionData& collisionData)
@@ -21,7 +18,4 @@ namespace r3
 									   rbSphere, sphere,
 									   collisionData);
 	}
-
-	IPlaneSphereCollisionAlgorithm::IPlaneSphereCollisionAlgorithm()
-	= default;
 }

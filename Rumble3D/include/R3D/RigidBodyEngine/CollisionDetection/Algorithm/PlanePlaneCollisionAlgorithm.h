@@ -11,8 +11,8 @@ namespace r3
 	class R3D_DECLSPEC PlanePlaneCollisionAlgorithm : public IPlanePlaneCollisionAlgorithm
 	{
 	public:
-		explicit PlanePlaneCollisionAlgorithm();
-		~PlanePlaneCollisionAlgorithm();
+		explicit PlanePlaneCollisionAlgorithm() = default;
+		~PlanePlaneCollisionAlgorithm() = default;
 
 	protected:
 		bool generateContactDataImpl(RigidBody* rbPlane1,

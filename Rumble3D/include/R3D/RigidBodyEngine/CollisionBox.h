@@ -25,7 +25,7 @@ namespace r3
 		explicit CollisionBox(RigidBody* body, 
 							  const glm::vec3& halfSizes,
 							  const glm::mat4& offset = glm::mat4(1));
-		~CollisionBox();
+		~CollisionBox() = default;
 
 		/**
 		 * \brief Get the half sizes of the box.

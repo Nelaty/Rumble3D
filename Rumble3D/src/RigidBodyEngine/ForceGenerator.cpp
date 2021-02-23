@@ -2,9 +2,4 @@
 
 namespace r3
 {
-	ForceGenerator::~ForceGenerator()
-	= default;
-
-	ForceGenerator::ForceGenerator()
-	= default;
 }

@@ -109,29 +109,25 @@ namespace r3
         m_modules.emplace_back(module);
     }
 
-    bool PhysicsEngine::unregisterModule(const std::shared_ptr<PhysicsEngineModule>& module)
+    void PhysicsEngine::unregisterModule(const std::shared_ptr<PhysicsEngineModule>& module)
     {
-        auto removed = std::remove(m_modules.begin(), m_modules.end(), module);
-        if(removed != m_modules.end())
-        {
-            m_modules.erase(removed);
-            return true;
-        }
-        return false;
+	    m_modules.erase(
+	        std::remove(m_modules.begin(),
+	            m_modules.end(),
+	            module),
+            m_modules.end());
     }
-    bool PhysicsEngine::unregisterModule(std::string_view name)
-    {
-	    auto removed = std::remove_if(m_modules.begin(), m_modules.end(), [&]
-            (const std::shared_ptr<PhysicsEngineModule>& module)
-        {
-	        return module->getName() == name;
-        });
 
-	    if(removed != m_modules.end())
-	    {
-            m_modules.erase(removed);
-            return true;
-        }
-        return false;
+    void PhysicsEngine::unregisterModule(std::string_view name)
+    {
+        m_modules.erase(
+            std::remove_if(m_modules.begin(),
+                        m_modules.end(),
+                           [&]
+                               (const std::shared_ptr<PhysicsEngineModule>& module)
+                           {
+                               return module->getName() == name;
+                           }),
+            m_modules.end());
     }
 }

@@ -10,12 +10,6 @@ namespace r3
 		}
 	}
 
-	Octree::Octree()
-		= default;
-
-	Octree::~Octree()
-		= default;
-
 	void Octree::insert(RigidBody* rigidBody)
 	{
 		

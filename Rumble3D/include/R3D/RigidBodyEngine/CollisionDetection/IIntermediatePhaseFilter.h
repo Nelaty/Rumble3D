@@ -14,7 +14,7 @@ namespace r3
 	class R3D_DECLSPEC IIntermediatePhaseFilter
 	{
 	public:
-		virtual ~IIntermediatePhaseFilter();
+		virtual ~IIntermediatePhaseFilter() = default;
 
 		/**
 		 * \brief Further filter a previous set of collisions, which might
@@ -24,6 +24,6 @@ namespace r3
 		virtual void generateCollisions(FixedSizeContainer<CollisionPair>& collisions) = 0;
 
 	protected:
-		explicit IIntermediatePhaseFilter();
+		explicit IIntermediatePhaseFilter() = default;
 	};
 }

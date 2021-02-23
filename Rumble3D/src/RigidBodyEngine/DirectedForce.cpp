@@ -11,9 +11,6 @@ namespace r3
 		m_localPosition{localPosition}
 	{
 	}
-	
-	DirectedForce::~DirectedForce()
-	= default;
 
 	void DirectedForce::updateForce(RigidBody* body, real duration)
 	{

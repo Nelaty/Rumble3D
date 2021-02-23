@@ -31,7 +31,7 @@ namespace r3
 		 * \param def Rigid body construction information.
 		 */
 		explicit RigidBody(const RigidBodyDef& def);
-		~RigidBody();
+		~RigidBody() = default;
 	
 		/** 
 		 * \brief Initialize all attributes of this rigid body. 

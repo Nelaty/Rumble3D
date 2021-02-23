@@ -7,9 +7,6 @@
 
 namespace r3
 {
-	CollisionResolver::~CollisionResolver()
-	= default;
-
 	void CollisionResolver::resolveCollisions(CollisionData& collisionData,
 	                                          const real timeDelta)
 	{

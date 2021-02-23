@@ -10,9 +10,6 @@ namespace r3
 		m_body = body;
 		m_offset = offset;
 	}
-	
-	CollisionSphere::~CollisionSphere()
-	= default;
 
 	real CollisionSphere::getRadius() const
 	{

@@ -9,7 +9,7 @@ namespace r3
 	/**
 	 * \brief Bundles construction information of a particle.
 	 */
-	struct ParticleDef
+	struct R3D_DECLSPEC ParticleDef
 	{
 		glm::vec3 m_position{0};
 		glm::vec3 m_velocity{0};

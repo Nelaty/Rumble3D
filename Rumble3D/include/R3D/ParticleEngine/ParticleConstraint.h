@@ -15,13 +15,13 @@ namespace r3
 	 * \brief Abstract class, which links a particle with a static
 	 * position.
 	 */
-	class ParticleConstraint : public ParticleContactGenerator
+	class R3D_DECLSPEC ParticleConstraint : public ParticleContactGenerator
 	{
 	public:
-		virtual ~ParticleConstraint();
+		virtual ~ParticleConstraint() = default;
 
 	protected:
-		explicit ParticleConstraint();
+		explicit ParticleConstraint() = default;
 
 		/**
 		 * \brief Get the distance between the anchor point and the

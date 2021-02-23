@@ -14,7 +14,7 @@ namespace r3
 	class R3D_DECLSPEC INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~INarrowPhaseAlgorithm();
+		virtual ~INarrowPhaseAlgorithm() = default;
 
 		/**
 		 * \brief Generate contacts between two rigid bodies.
@@ -30,6 +30,6 @@ namespace r3
 										 CollisionData& collisionData) = 0;
 
 	protected:
-		explicit INarrowPhaseAlgorithm();
+		explicit INarrowPhaseAlgorithm() = default;
 	};
 }

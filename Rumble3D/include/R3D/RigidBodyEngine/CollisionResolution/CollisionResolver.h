@@ -18,7 +18,7 @@ namespace r3
 		using Filter_Ptr = std::shared_ptr<ICollisionResolutionFilter>;
 
 		explicit CollisionResolver();
-		virtual ~CollisionResolver();
+		virtual ~CollisionResolver() = default;
 
 		void resolveCollisions(CollisionData& collisionData,
 							   real timeDelta) override;

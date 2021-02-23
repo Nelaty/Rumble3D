@@ -19,7 +19,7 @@ namespace r3
 		 */
 		explicit CollisionPair(RigidBody* first = nullptr,
 							   RigidBody* second = nullptr);
-		~CollisionPair();
+		~CollisionPair() = default;
 
 		/**
 		 * \brief Get a rigid body by index.

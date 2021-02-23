@@ -3,9 +3,6 @@
 
 namespace r3
 {
-	CollisionObject::~CollisionObject()
-	= default;
-
 	void CollisionObject::setCollisionPrimitive(CollisionPrimitive* collisionPrimitive)
 	{
 		m_collisionPrimitive = collisionPrimitive;

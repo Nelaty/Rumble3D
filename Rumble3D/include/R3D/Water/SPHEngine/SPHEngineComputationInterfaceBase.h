@@ -1,13 +1,15 @@
 #pragma once
+#include <R3D/IComputationInterface.h>
 
-#include "R3D/IComputationInterface.h"
+#include <R3D/Common/Common.h>
+
 #include <memory>
 
 namespace r3
 {
     class SPHEngine;
 
-    class SPHEngineComputationInterfaceBase : public IComputationInterface
+    class R3D_DECLSPEC SPHEngineComputationInterfaceBase : public IComputationInterface
     {
     public:
         using SPHEngine_Ptr = std::shared_ptr<SPHEngine>;

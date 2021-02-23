@@ -1,4 +1,5 @@
 #pragma once
+#include <R3D/Common/Common.h>
 
 #include <glm/glm.hpp>
 
@@ -7,7 +8,7 @@ namespace r3
 	/**
 	* \brief Equally distributed random number generator.
 	*/
-	class Random
+	class R3D_DECLSPEC Random
 	{
 	public:
 		/**
@@ -154,8 +155,8 @@ namespace r3
 		static int randomSign(float chance = 0.5f);
 
 	private:
-		explicit Random();
-		~Random();
+		explicit Random() = default;
+		~Random() = default;
 
 		static unsigned int s_seed;
 	};

@@ -7,12 +7,12 @@
 
 namespace r3
 {
-
+    // \todo Use FixedSizeContainer instead of this. Remove this.
 	class R3D_DECLSPEC CollisionData
 	{
 	public:
 		explicit CollisionData(unsigned int contactsMax = 1000, int iterations = 0);
-		~CollisionData();
+		~CollisionData() = default;
 
 		void init(int contactsMax, int iterations);
 		void reset();

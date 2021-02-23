@@ -9,10 +9,10 @@ namespace r3
 	/**
 	 * \brief Interface for contact generators for particles.
 	 */
-	class ParticleContactGenerator
+	class R3D_DECLSPEC ParticleContactGenerator
 	{
 	public:
-		virtual ~ParticleContactGenerator();
+		virtual ~ParticleContactGenerator() = default;
 
 		/**
 		 * \brief Generate new contacts.
@@ -29,6 +29,6 @@ namespace r3
 		virtual void addContact(FixedSizeContainer<ParticleContact>& contactData) const = 0;
 
 	protected:
-		explicit ParticleContactGenerator();
+		explicit ParticleContactGenerator() = default;
 	};
 }

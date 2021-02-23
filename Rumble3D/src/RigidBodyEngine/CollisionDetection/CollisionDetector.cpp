@@ -17,9 +17,6 @@ namespace r3
 		init(broadPhaseCollisions, contactsMax, iterations);
 	}
 
-	CollisionDetector::~CollisionDetector()
-	= default;
-
 	void CollisionDetector::init(const unsigned int broadPhaseCollisions,
 								 const unsigned contactsMax,
 	                             const unsigned iterations)
@@ -125,4 +122,6 @@ namespace r3
 	{
 		return m_narrowPhaseFilter.get();
 	}
+
+    CollisionDetector::~CollisionDetector() = default;
 }

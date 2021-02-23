@@ -17,7 +17,7 @@ namespace r3
 		using Algorithm = std::unique_ptr<AlgorithmType>;
 
 		explicit NarrowPhaseFilter(unsigned iterations = 10, unsigned collisionsMax = 1000);
-		~NarrowPhaseFilter();
+		~NarrowPhaseFilter() = default;
 
 		/**
 		 * \brief Generate contacts.

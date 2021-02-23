@@ -23,8 +23,8 @@ namespace r3
 	public:
 		using RigidBody_Container = std::vector<RigidBody*>;
 		
-		RigidBodyWorld();
-		~RigidBodyWorld();
+		RigidBodyWorld() = default;
+		~RigidBodyWorld() = default;
 
 		/** 
 		 * \brief Set the computation interface, which simulates the rigid bodies.
@@ -46,9 +46,8 @@ namespace r3
 		/**
 		 * \brief Unregister an already registered rigid body.
 		 * \param body The rigid body to unregister.
-		 * \return True if the body was registered, false otherwise.
 		 */
-		bool removeRigidBody(RigidBody* body);
+		void removeRigidBody(RigidBody* body);
 
 		/** 
 		 * \brief Get the world's rigid bodies. 

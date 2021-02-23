@@ -21,18 +21,12 @@ namespace r3
 		m_registrations.clear();
 	}
 
-	ForceRegistry::ForceRegistry()
-	= default;
-
-	ForceRegistry::~ForceRegistry()
-	= default;
-
 	void ForceRegistry::registerForce(RigidBody* rigidBody, ForceGenerator* generator)
 	{
 		ForceRegistrationEntry registration{};
 		registration.m_rigidBody = rigidBody;
 		registration.m_forceGenerator = generator;
-		m_registrations.push_back(registration);
+		m_registrations.emplace_back(registration);
 	}
 	
 	void ForceRegistry::updateForces(const real duration)

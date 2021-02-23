@@ -15,9 +15,6 @@ namespace r3
 		initVertices();
 	}
 
-	CollisionBox::~CollisionBox()
-		= default;
-
 	const glm::vec3& CollisionBox::getHalfSize() const
 	{
 		return m_halfSizes;

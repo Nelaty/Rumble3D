@@ -2,9 +2,4 @@
 
 namespace r3
 {
-	INarrowPhaseAlgorithm::~INarrowPhaseAlgorithm()
-	= default;
-
-	INarrowPhaseAlgorithm::INarrowPhaseAlgorithm()
-	= default;
 }

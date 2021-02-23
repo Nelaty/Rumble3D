@@ -1,14 +1,16 @@
 #pragma once
-#include <memory>
+#include <R3D/Common/Common.h>
 
 #include <glm/glm.hpp>
+
+#include <memory>
 
 namespace r3
 {
     class SPHSystem;
     struct SPHParams;
 
-    class SPHContext
+    class R3D_DECLSPEC SPHContext
     {
     public:
         explicit SPHContext();

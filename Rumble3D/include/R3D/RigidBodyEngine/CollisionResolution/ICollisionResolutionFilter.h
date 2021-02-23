@@ -10,7 +10,7 @@ namespace r3
 	class R3D_DECLSPEC ICollisionResolutionFilter
 	{
 	public:
-		virtual ~ICollisionResolutionFilter();
+		virtual ~ICollisionResolutionFilter() = default;
 
 		/**
 		 * \brief Resolve given contacts.
@@ -22,6 +22,6 @@ namespace r3
 							 real timeDelta) = 0;
 
 	protected:
-		explicit ICollisionResolutionFilter();
+		explicit ICollisionResolutionFilter() = default;
 	};
 }

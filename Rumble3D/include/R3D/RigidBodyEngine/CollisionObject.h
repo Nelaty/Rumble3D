@@ -13,7 +13,7 @@ namespace r3
 	class R3D_DECLSPEC CollisionObject
 	{
 	public:
-		virtual ~CollisionObject();
+		virtual ~CollisionObject() = default;
 
 		/**
 		 * \brief Set the collision primitive used for collision

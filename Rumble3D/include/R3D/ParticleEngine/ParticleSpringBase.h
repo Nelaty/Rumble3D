@@ -6,7 +6,12 @@
 
 namespace r3
 {
-	class ParticleSpringBase : public IParticleForceGenerator
+    /**
+     * \brief A base class for spring like force generators, which can
+     * calculate forces between two points according to Hooke's Law.
+     * @f$ F_s = -kx @f$
+     */
+	class R3D_DECLSPEC ParticleSpringBase : public IParticleForceGenerator
 	{
 	public:
 		virtual ~ParticleSpringBase() = default;
@@ -26,10 +31,14 @@ namespace r3
 		explicit ParticleSpringBase(real springConstant,
 									real restLength);
 
-		/** \brief Check if a force can be calculated. */
-		bool isMagnitudeValid(const glm::vec3& particle,
-							  const glm::vec3& target,
-							  glm::vec3& distance,
+		/** \brief Check if a force can be calculated.
+		 * \param target First position (distance will point towards this position)
+		 * \param source Second position
+		 * \param [out] distance Distance vector between the given positions
+		 * \param [out] magnitude Magnitude of the distance*/
+		bool isMagnitudeValid(const glm::vec3& target,
+                              const glm::vec3& source,
+                              glm::vec3& distance,
 							  real& magnitude);
 
 		/** \brief Calculate the spring force between two points. */

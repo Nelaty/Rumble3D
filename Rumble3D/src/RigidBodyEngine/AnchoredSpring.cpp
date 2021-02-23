@@ -14,9 +14,6 @@ namespace r3
 	{
 	}
 
-	AnchoredSpring::~AnchoredSpring()
-	= default;
-
 	void AnchoredSpring::updateForce(RigidBody* body, const real duration)
 	{
 		// Beide Enden der Feder in Weltkoordinaten:

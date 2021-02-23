@@ -13,9 +13,6 @@ namespace r3
 		m_rotation = glm::quat_cast(rotation);
 	}
 
-	Transform3D::~Transform3D()
-	= default;
-
 	void Transform3D::setPosition(const glm::vec3& position)
 	{
 		m_position = position;

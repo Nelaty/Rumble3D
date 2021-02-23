@@ -13,7 +13,7 @@ namespace r3
 	class R3D_DECLSPEC ISphereSphereNarrowAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~ISphereSphereNarrowAlgorithm();
+		virtual ~ISphereSphereNarrowAlgorithm() = default;
 
 		/**
 		 * \brief Generate contacts between two rigid bodies with
@@ -45,6 +45,6 @@ namespace r3
 											 RigidBody* rbSphere2, CollisionSphere* sphere2,
 											 CollisionData& collisionData) = 0;
 
-		explicit ISphereSphereNarrowAlgorithm();
+		explicit ISphereSphereNarrowAlgorithm() = default;
 	};
 }

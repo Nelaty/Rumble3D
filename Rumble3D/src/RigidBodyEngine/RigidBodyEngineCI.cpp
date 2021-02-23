@@ -4,9 +4,6 @@
 
 namespace r3
 {
-	RigidBodyEngineCI::~RigidBodyEngineCI()
-	= default;
-
 	void RigidBodyEngineCI::setRigidBodyWorld(RigidBodyWorld* rigidBodyWorld)
 	{
 		m_rigidBodyWorld = rigidBodyWorld;
@@ -22,4 +19,6 @@ namespace r3
 		m_rigidBodyWorld{rigidBodyWorld}
 	{
 	}
+
+    RigidBodyEngineCI::~RigidBodyEngineCI() = default;
 }

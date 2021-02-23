@@ -13,9 +13,6 @@ namespace r3
 		m_isHalfSpace(isHalfSpace)
 	{
 	}
-	
-	CollisionPlane::~CollisionPlane()
-	= default;
 
 	real CollisionPlane::getOffset() const
 	{

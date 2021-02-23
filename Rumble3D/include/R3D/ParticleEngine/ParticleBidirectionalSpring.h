@@ -7,7 +7,7 @@ namespace r3
 	 * The ParticleBidirectionalSpring acts like two ParticleSprings, which 
 	 * connects two particles, so that both particles are affected.
 	 */
-	class ParticleBidirectionalSpring : public ParticleSpringBase
+	class R3D_DECLSPEC ParticleBidirectionalSpring : public ParticleSpringBase
 	{
 	public:
 		/**

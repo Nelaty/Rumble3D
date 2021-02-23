@@ -14,7 +14,7 @@ namespace r3
 	class R3D_DECLSPEC IPlaneSphereCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
-		virtual ~IPlaneSphereCollisionAlgorithm();
+		virtual ~IPlaneSphereCollisionAlgorithm() = default;
 
 		/**
 		 * \brief Generate contacts between two rigid bodies one with
@@ -32,7 +32,7 @@ namespace r3
 								 CollisionData& collisionData) override final;
 
 	protected:
-		explicit IPlaneSphereCollisionAlgorithm();
+		explicit IPlaneSphereCollisionAlgorithm() = default;
 
 		/**
 		 * \brief Generate contacts between a plane and a sphere.

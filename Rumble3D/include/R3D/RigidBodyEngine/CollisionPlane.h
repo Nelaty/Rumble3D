@@ -23,7 +23,7 @@ namespace r3
 					   real offset,
 					   const glm::vec2& halfSizes = glm::vec2(1.0f, 1.0f),
 					   bool isHalfSpace = false);
-		~CollisionPlane();
+		~CollisionPlane() = default;
 
 		/**
 		 * \brief Set the current offset.

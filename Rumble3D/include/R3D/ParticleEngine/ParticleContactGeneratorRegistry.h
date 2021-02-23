@@ -10,11 +10,11 @@ namespace r3
 	/**
 	 * \brief Registry for ParticleContactGenerators.
 	 */
-	class ParticleContactGeneratorRegistry
+	class R3D_DECLSPEC ParticleContactGeneratorRegistry
 	{
 	public:
-		explicit ParticleContactGeneratorRegistry();
-		~ParticleContactGeneratorRegistry();
+		explicit ParticleContactGeneratorRegistry() = default;
+		~ParticleContactGeneratorRegistry() = default;
 
 		/** 
 		 * \brief Register a contact generator.
@@ -24,9 +24,8 @@ namespace r3
 		/** 
 		 * \brief Unregister a contact generator.
 		 * \param generator The generator, which will be unregistered.
-		 * \return True if the given generator was found and removed, false otherwise.
 		 */
-		bool unregisterContactGenerator(ParticleContactGenerator* generator);
+		void unregisterContactGenerator(ParticleContactGenerator* generator);
 		/** 
 		 * \brief Unregister all previously registered contact generators.
 		 */

@@ -3,9 +3,6 @@
 
 namespace r3
 {
-	IBoxBoxNarrowAlgorithm::~IBoxBoxNarrowAlgorithm()
-	= default;
-
 	bool IBoxBoxNarrowAlgorithm::generateContactData(RigidBody* first,
 													 RigidBody* second,
 													 CollisionData& collisionData)
@@ -17,7 +14,4 @@ namespace r3
 									   second, box2,
 									   collisionData);
 	}
-
-	IBoxBoxNarrowAlgorithm::IBoxBoxNarrowAlgorithm()
-	= default;
 }

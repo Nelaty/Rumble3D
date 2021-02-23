@@ -11,7 +11,7 @@ namespace r3
 	 * \brief A ParticleCable is a contact generator, which will 
 	 * generate a contact if particles are too far apart.
 	 */
-	class ParticleCable : public ParticleLink
+	class R3D_DECLSPEC ParticleCable : public ParticleLink
 	{
 	public:
 		/**
@@ -21,7 +21,7 @@ namespace r3
 		 * contacts.
 		 */
 		explicit ParticleCable(real maxLength = 1.0f, real restitution = 0.0f);
-		~ParticleCable();
+		~ParticleCable() = default;
 
 		/**
 		* \brief Generate new contacts.

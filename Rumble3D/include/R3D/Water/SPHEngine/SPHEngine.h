@@ -1,13 +1,10 @@
-//
-// Created by root on 25.09.20.
-//
-
 #pragma once
+#include <R3D/PhysicsEngineModule.h>
+#include <R3D/Water/SPHEngine/SPHEngineComputationInterfaceBase.h>
+
+#include <R3D/Common/Common.h>
 
 #include <memory>
-
-#include "R3D/PhysicsEngineModule.h"
-#include "SPHEngineComputationInterfaceBase.h"
 
 namespace r3
 {
@@ -15,7 +12,7 @@ namespace r3
     class SPHContext;
     struct SPHParams;
 
-    class SPHEngine : public PhysicsEngineModule
+    class R3D_DECLSPEC SPHEngine : public PhysicsEngineModule
     {
     public:
         using ComputationInterface_Ptr = std::shared_ptr<SPHEngineComputationInterfaceBase>;

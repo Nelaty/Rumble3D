@@ -12,7 +12,7 @@ namespace r3
 	/**
 	 * \brief Default implementation of the particle computation interface.
 	 */
-	class DefaultParticleEngineCI : public ParticleEngineCI
+	class R3D_DECLSPEC DefaultParticleEngineCI : public ParticleEngineCI
 	{
 	public:
 		/**

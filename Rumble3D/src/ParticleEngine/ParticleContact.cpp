@@ -19,7 +19,7 @@ namespace r3
 
 	real ParticleContact::calculateSeparatingVelocity() const
 	{
-		// v_s = (\dot{p_a} - \dot{p_b}) * (\hat{p_a -p_b})
+		/// @f$ v_s = (\dot{p_a} - \dot{p_b}) * (\hat{p_a -p_b}) @f$
 		glm::vec3 relativeVelocity = m_particles[0]->getVelocity();
 		if(m_particles[1])
 		{

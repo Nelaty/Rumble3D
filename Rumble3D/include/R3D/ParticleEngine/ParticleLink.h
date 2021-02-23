@@ -11,10 +11,10 @@ namespace r3
 	/**
 	 * \brief Abstract class. A ParticleLink links two particles.
 	 */
-	class ParticleLink : public ParticleContactGenerator
+	class R3D_DECLSPEC ParticleLink : public ParticleContactGenerator
 	{
 	public:
-		virtual ~ParticleLink();
+		virtual ~ParticleLink() = default;
 
 		/**
 		 * \brief Change the referenced particles
@@ -30,7 +30,7 @@ namespace r3
 		Particle* getSecond() const;
 
 	protected:
-		explicit ParticleLink();
+		explicit ParticleLink() = default;
 
 		/**
 		 * \brief Calculate the length between the current particles.

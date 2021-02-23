@@ -29,7 +29,7 @@ namespace r3
 								const glm::vec3& localConnectionPoint,
 								real springConstant,
 								real restLength);
-		~AnchoredSpring();
+		~AnchoredSpring() = default;
 
 		/**
 		* \brief Apply force to a rigid body over a specific time.

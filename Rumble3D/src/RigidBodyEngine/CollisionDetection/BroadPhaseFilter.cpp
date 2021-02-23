@@ -3,12 +3,6 @@
 
 namespace r3
 {
-	BroadPhaseFilter::BroadPhaseFilter()
-		= default;
-
-	BroadPhaseFilter::~BroadPhaseFilter()
-		= default;
-
 	void BroadPhaseFilter::generateCollisions(const std::vector<RigidBody*>& rigidBodies,
 											  FixedSizeContainer<CollisionPair>& data)
 	{

@@ -12,9 +12,6 @@ namespace r3
 		m_penetration(penetration)
 	{
 	}
-	
-	ParticleCollision::~ParticleCollision()
-	= default;
 
 	void ParticleCollision::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
@@ -26,7 +23,7 @@ namespace r3
 
 		auto contact = contactData.getAvailableEntry();
 
-		// Sonst Kontakt erzeugen und einfügen:
+		// Sonst Kontakt erzeugen und einfï¿½gen:
 		contact->init(m_particles[0], m_particles[1]);
 
 		// Negative Kontaktnormale:

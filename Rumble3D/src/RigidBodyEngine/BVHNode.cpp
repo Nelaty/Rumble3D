@@ -20,10 +20,6 @@ namespace r3
 	}
 
 	template<class BoundingVolumeClass>
-	BVHNode<BoundingVolumeClass>::BVHNode()
-	= default;
-
-	template<class BoundingVolumeClass>
 	BVHNode<BoundingVolumeClass>::BVHNode(BVHNode<BoundingVolumeClass>* parent, 
 										  const BoundingVolumeClass& volume,
 										  RigidBody* body)
@@ -41,13 +37,13 @@ namespace r3
 		auto* sibling = getSibling();
 		if(sibling)
 		{
-			// Überschreibe Elternknoten mit Geschwisterdaten
+			// ï¿½berschreibe Elternknoten mit Geschwisterdaten
 			m_parent->m_volume = sibling->m_volume;
 			m_parent->m_body = sibling->m_body;
 			m_parent->m_children[0] = sibling->m_children[0];
 			m_parent->m_children[1] = sibling->m_children[1];
 
-			// Lösche das ursprünglicheGeschwisterojekt.
+			// Lï¿½sche das ursprï¿½nglicheGeschwisterojekt.
 			sibling->m_parent = nullptr;
 			sibling->m_body = nullptr;
 			sibling->m_children[0] = nullptr;
@@ -58,7 +54,7 @@ namespace r3
 			m_parent->recalculateBoundingVolume();
 		}
 
-		// Lösche Kinder.
+		// Lï¿½sche Kinder.
 		if(m_children[0])
 		{
 			m_children[0]->m_parent = nullptr;
@@ -164,7 +160,7 @@ namespace r3
 			// Kopie von this in Kind_0.
 			m_children[0] = new BVHNode<BoundingVolumeClass>(this, m_volume, m_body);
 
-			// Kind2 ist neuer Festkörper
+			// Kind2 ist neuer Festkï¿½rper
 			m_children[1] = new BVHNode<BoundingVolumeClass>(this, newVolume, newBody);
 
 			// And we now loose the body (we're no longer a leaf)
@@ -173,7 +169,7 @@ namespace r3
 			recalculateBoundingVolume();
 		}
 
-		// Füge neuen Festkörper dort ein, wo resultierendes Volumen
+		// Fï¿½ge neuen Festkï¿½rper dort ein, wo resultierendes Volumen
 		// am kleinsten ist:
 		else
 		{
@@ -189,8 +185,8 @@ namespace r3
 		}
 	}
 
-	// Widerspricht dem Template-Konzept, sorgt jedoch für
-	// Information Hiding der Implementierung. Es dürfen seitens
+	// Widerspricht dem Template-Konzept, sorgt jedoch fï¿½r
+	// Information Hiding der Implementierung. Es dï¿½rfen seitens
 	// der Nutzer der Klasse lediglich Instanzen mit aktuellem
 	// Klassenparameter BoundingSphere gebildet werden.
 	template class BVHNode<BoundingSphere>;

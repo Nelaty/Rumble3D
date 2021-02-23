@@ -13,7 +13,7 @@ namespace r3
 	 * \details It can only simulate buoyancy in an axis aligned half space
 	 * perpendicular to the y-axis.
 	 */
-	class ParticleBuoyancy : public IParticleForceGenerator
+	class R3D_DECLSPEC ParticleBuoyancy : public IParticleForceGenerator
 	{
 	public:
 		/**
@@ -29,7 +29,7 @@ namespace r3
 								  real liquidHeight, 
 								  real liquidDensity = real(1000),
 								  real gravity = real(9.81));
-		~ParticleBuoyancy();
+		~ParticleBuoyancy() = default;
 
 		/**
 		* \brief Calculates and changes the force in the force accumulator

@@ -21,7 +21,7 @@ namespace r3
 		using Algorithm_Ptr = std::shared_ptr<INarrowPhaseAlgorithm>;
 
 		explicit CollisionAlgorithmMatrix();
-		~CollisionAlgorithmMatrix();
+		~CollisionAlgorithmMatrix() = default;
 
 		/**
 		 * \brief Set the collision algorithm for a specific

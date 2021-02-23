@@ -1,9 +1,11 @@
 #pragma once
-#include "R3D/Water/SPHEngine/Entity/SPHContext.h"
+#include <R3D/Water/SPHEngine/Entity/SPHContext.h>
+
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
-    class ISPHIntegrator
+    class R3D_DECLSPEC ISPHIntegrator
     {
     public:
         using SPHContext_Ptr = std::shared_ptr<SPHContext>;

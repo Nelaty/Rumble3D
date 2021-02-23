@@ -10,8 +10,8 @@ namespace r3
 	class R3D_DECLSPEC BoxSphereNarrowAlgorithm : public IBoxSphereNarrowAlgorithm
 	{
 	public:
-		explicit BoxSphereNarrowAlgorithm();
-		~BoxSphereNarrowAlgorithm();
+		explicit BoxSphereNarrowAlgorithm() = default;
+		~BoxSphereNarrowAlgorithm() = default;
 
 	protected:
 		bool generateContactDataImpl(RigidBody* rbBox, CollisionBox* box,

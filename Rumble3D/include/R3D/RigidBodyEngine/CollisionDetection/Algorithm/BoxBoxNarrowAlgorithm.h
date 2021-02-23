@@ -12,8 +12,8 @@ namespace r3
 	class R3D_DECLSPEC BoxBoxNarrowAlgorithm : public IBoxBoxNarrowAlgorithm
 	{
 	public:
-		explicit BoxBoxNarrowAlgorithm();
-		~BoxBoxNarrowAlgorithm();
+		explicit BoxBoxNarrowAlgorithm() = default;
+		~BoxBoxNarrowAlgorithm() = default;
 
 	protected:
 		bool generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1,
@@ -26,10 +26,10 @@ namespace r3
 									const glm::vec3& axis);
 
 		/**
-		* Überlappen zweier Quader entlang einer Achse.
-		* Rückgabe ist der Wert der Überlappung.
+		* ï¿½berlappen zweier Quader entlang einer Achse.
+		* Rï¿½ckgabe ist der Wert der ï¿½berlappung.
 		* toCentre ist der Vektor zwischen den Quadern und wird
-		* übergeben, um nicht immer neu berechnet werden zu müssen.
+		* ï¿½bergeben, um nicht immer neu berechnet werden zu mï¿½ssen.
 		*/
 		static real penetrationOnAxis(const CollisionBox* one,
 									  const CollisionBox* two,
@@ -37,7 +37,7 @@ namespace r3
 									  const glm::vec3& toCentre);
 
 		/**
-		* \brief SAT-Test, ob bzgl.einer Achse eine Überlappung stattfindet.
+		* \brief SAT-Test, ob bzgl.einer Achse eine ï¿½berlappung stattfindet.
 		* \param smallestPenetration INOUT-Parameter
 		* \param smallestCase INOUT-Parameter
 		* \return True if there are overlapping axis, false otherwise
@@ -51,8 +51,8 @@ namespace r3
 							unsigned &smallestCase);
 
 		/**
-		* Erstellt die Kontaktdaten für den Fall BoxBox-Kollision
-		* wenn der Kontakt Ecke-Fläche ist:
+		* Erstellt die Kontaktdaten fï¿½r den Fall BoxBox-Kollision
+		* wenn der Kontakt Ecke-Flï¿½che ist:
 		*/
 		static void fillPointFaceBoxBox(const CollisionBox* box1,
 										const CollisionBox* box2,
@@ -62,8 +62,8 @@ namespace r3
 										real penetration);
 
 		/**
-		* \param useOne true und Kontaktpunkt außerhalb der Kante
-		* (Kante-Fläche-Kontakt) dann nehmen wir den Mittelpunkt
+		* \param useOne true und Kontaktpunkt auï¿½erhalb der Kante
+		* (Kante-Flï¿½che-Kontakt) dann nehmen wir den Mittelpunkt
 		* von Quader 1, sonst von Quader 2.
 		*/
 		static glm::vec3 contactPoint(const glm::vec3& pOne,

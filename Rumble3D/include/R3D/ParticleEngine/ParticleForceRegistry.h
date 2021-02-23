@@ -13,7 +13,7 @@ namespace r3
 	 * \brief A ParticleForceRegistry contains a set of 
 	 * ParticleForceGenerators and Particles they act on.
 	 */
-	class ParticleForceRegistry
+	class R3D_DECLSPEC ParticleForceRegistry
 	{	
 	public:
 		struct ParticleForceRegistrationEntry
@@ -23,8 +23,8 @@ namespace r3
 		};
 		using Registry_Type = std::vector<ParticleForceRegistrationEntry>;
 
-		explicit ParticleForceRegistry();
-		~ParticleForceRegistry();
+		explicit ParticleForceRegistry() = default;
+		~ParticleForceRegistry() = default;
 
 		/**
 		 * \brief Register a force generator with a particle it acts on.
@@ -39,7 +39,7 @@ namespace r3
 		 * \param generator The force generator stored in the entry.
 		 * \return True if the given pair was found, false otherwise.
 		 */
-		bool remove(Particle* particle, IParticleForceGenerator* generator);
+		void remove(Particle* particle, IParticleForceGenerator* generator);
 		/**
 		 * \brief Remove all entries.
 		 */

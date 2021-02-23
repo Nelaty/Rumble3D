@@ -1,8 +1,9 @@
 #pragma once
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
-    struct SPHParams
+    struct R3D_DECLSPEC SPHParams
     {
         float m_smoothingLength{s_defaultSmoothingLength};
         float m_stiffnessParameter{s_defaultStiffnessParameter};

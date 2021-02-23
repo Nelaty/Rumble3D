@@ -1,6 +1,6 @@
 #pragma once
-#include "R3D/Common/Common.h"
-#include "R3D/Common/Precision.h"
+#include <R3D/Common/Precision.h>
+#include <R3D/Common/Common.h>
 
 namespace r3
 {
@@ -8,10 +8,10 @@ namespace r3
 	 * \brief Interface used by physics modules to accomplish their
 	 * tasks.
 	 */
-	class IComputationInterface
+	class R3D_DECLSPEC IComputationInterface
 	{
 	public:
-		virtual ~IComputationInterface();
+		virtual ~IComputationInterface() = default;
 
 		/**
 		 * \brief Called at the start of a physics step.
@@ -38,6 +38,6 @@ namespace r3
 		virtual void reset() = 0;
 
 	protected:
-		explicit IComputationInterface();
+		explicit IComputationInterface() = default;
 	};
 }

@@ -2,9 +2,4 @@
 
 namespace r3
 {
-	INarrowPhaseFilter::~INarrowPhaseFilter()
-	= default;
-
-	INarrowPhaseFilter::INarrowPhaseFilter()
-	= default;
 }

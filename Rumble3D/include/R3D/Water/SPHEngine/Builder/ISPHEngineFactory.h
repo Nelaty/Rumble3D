@@ -3,13 +3,14 @@
 //
 
 #pragma once
+#include <R3D/Water/SPHEngine/SPHEngine.h>
+#include <R3D/Common/Common.h>
 
 #include <memory>
-#include <R3D/Water/SPHEngine/SPHEngine.h>
 
 namespace r3
 {
-    class ISPHEngineFactory
+    class R3D_DECLSPEC ISPHEngineFactory
     {
     public:
         virtual ~ISPHEngineFactory() = default;

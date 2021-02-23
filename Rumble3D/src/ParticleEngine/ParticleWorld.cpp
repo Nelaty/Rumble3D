@@ -6,12 +6,6 @@
 
 namespace r3
 {
-	ParticleWorld::ParticleWorld()
-	= default;
-
-	ParticleWorld::~ParticleWorld()
-	= default;
-
 	void ParticleWorld::setComputationInterface(ParticleEngineCI* computationInterface)
 	{
 		m_computationInterface = computationInterface;
@@ -24,26 +18,18 @@ namespace r3
 
 	void ParticleWorld::addParticle(Particle* particle)
 	{
-		m_particles.push_back(particle);
+		m_particles.emplace_back(particle);
 	}
 
-	bool ParticleWorld::removeParticle(Particle* particle)
+	void ParticleWorld::removeParticle(Particle* particle)
 	{
-		const auto removedParticle = std::remove(m_particles.begin(),
-												 m_particles.end(),
-												 particle);
-		
-		const bool found = removedParticle != m_particles.end();
-		if(found)
-		{
-			m_particles.erase(removedParticle);
-		}
-		
-		return found;
+	    m_particles.erase(
+	        std::remove(m_particles.begin(), m_particles.end(), particle),
+	        m_particles.end());
 	}
 
 	r3::ParticleForceRegistry& ParticleWorld::getParticleForceRegistry()
-{
+    {
 		return m_forceRegistry;
 	}
 

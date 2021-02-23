@@ -2,9 +2,6 @@
 
 namespace r3
 {
-	IPlanePlaneCollisionAlgorithm::~IPlanePlaneCollisionAlgorithm()
-	= default;
-
 	bool IPlanePlaneCollisionAlgorithm::generateContactData(RigidBody* first,
 															RigidBody* second,
 															CollisionData& collisionData)
@@ -16,7 +13,4 @@ namespace r3
 									   second, plane2,
 									   collisionData);
 	}
-
-	IPlanePlaneCollisionAlgorithm::IPlanePlaneCollisionAlgorithm()
-	= default;
 }

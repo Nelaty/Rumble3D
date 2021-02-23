@@ -13,9 +13,6 @@ namespace r3
 	{
 	}
 
-	ParticleCable::~ParticleCable()
-	= default;
-
 	void ParticleCable::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
 		const auto length = currentLength();

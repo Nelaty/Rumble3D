@@ -11,8 +11,8 @@ namespace r3
 	class R3D_DECLSPEC FrictionResolver : public ICollisionResolutionFilter
 	{
 	public:
-		explicit FrictionResolver();
-		~FrictionResolver();
+		explicit FrictionResolver() = default;
+		~FrictionResolver() = default;
 
 
 		void resolve(CollisionData& collisionData,

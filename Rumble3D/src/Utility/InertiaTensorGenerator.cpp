@@ -32,10 +32,4 @@ namespace r3
 						 0, scalar, 0,
 						 0, 0, scalar);
 	}
-
-	InertiaTensorGenerator::InertiaTensorGenerator()
-	= default;
-
-	InertiaTensorGenerator::~InertiaTensorGenerator()
-	= default;
 }

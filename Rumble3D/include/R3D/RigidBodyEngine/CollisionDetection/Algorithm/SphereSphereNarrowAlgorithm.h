@@ -11,8 +11,8 @@ namespace r3
 	class R3D_DECLSPEC SphereSphereNarrowAlgorithm : public ISphereSphereNarrowAlgorithm
 	{
 	public:
-		explicit SphereSphereNarrowAlgorithm();
-		~SphereSphereNarrowAlgorithm();
+		explicit SphereSphereNarrowAlgorithm() = default;
+		~SphereSphereNarrowAlgorithm() = default;
 
 	protected:
 		bool generateContactDataImpl(RigidBody* rbSphere1, CollisionSphere* sphere1,

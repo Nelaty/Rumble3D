@@ -2,9 +2,4 @@
 
 namespace r3
 {
-	ICollisionResolverAccess::~ICollisionResolverAccess()
-	= default;
-
-	ICollisionResolverAccess::ICollisionResolverAccess()
-	= default;
 }

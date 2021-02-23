@@ -2,9 +2,4 @@
 
 namespace r3
 {
-	IIntermediatePhaseFilter::~IIntermediatePhaseFilter()
-	= default;
-
-	IIntermediatePhaseFilter::IIntermediatePhaseFilter()
-	= default;
 }

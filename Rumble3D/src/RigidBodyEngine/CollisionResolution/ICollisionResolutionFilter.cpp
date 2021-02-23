@@ -2,9 +2,4 @@
 
 namespace r3
 {
-	ICollisionResolutionFilter::~ICollisionResolutionFilter()
-	= default;
-
-	ICollisionResolutionFilter::ICollisionResolutionFilter()
-	= default;
 }
