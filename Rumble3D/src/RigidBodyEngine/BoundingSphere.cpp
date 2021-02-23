@@ -55,7 +55,7 @@ namespace r3
 	
 	real BoundingSphere::getVolume() const
 	{
-		return R3D_4_OVER_3 * R3D_PI * m_radius * m_radius * m_radius;
+		return (4/3) * glm::pi<real>() * m_radius * m_radius * m_radius;
 	}
 	
 	real BoundingSphere::getGrowth(const BoundingSphere& other) const

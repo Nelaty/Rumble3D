@@ -1,7 +1,8 @@
 #pragma once
-#include "R3D/Common/Common.h"
-#include "R3D/RigidBodyEngine/RigidBody.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
+#include <R3D/Common/Common.h>
+#include <R3D/RigidBodyEngine/RigidBody.h>
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -27,7 +28,7 @@ namespace r3
 		 */
 		virtual bool generateContactData(RigidBody* first,
 										 RigidBody* second,
-										 CollisionData& collisionData) = 0;
+                                         FixedSizeContainer<Contact>& collisionData) = 0;
 
 	protected:
 		explicit INarrowPhaseAlgorithm() = default;

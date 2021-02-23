@@ -2,7 +2,7 @@
 
 namespace r3
 {
-	void FrictionResolver::resolve(CollisionData& collisionData,
+	void FrictionResolver::resolve(FixedSizeContainer<Contact>& collisionData,
 								   real timeDelta)
 	{
 	}

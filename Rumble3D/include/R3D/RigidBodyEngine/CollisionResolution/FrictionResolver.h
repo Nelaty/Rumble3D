@@ -1,6 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -15,7 +17,7 @@ namespace r3
 		~FrictionResolver() = default;
 
 
-		void resolve(CollisionData& collisionData,
+		void resolve(FixedSizeContainer<Contact>& collisionData,
 					 real timeDelta) override;
 	};
 }

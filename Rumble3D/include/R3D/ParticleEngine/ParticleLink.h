@@ -1,7 +1,9 @@
 #pragma once
-#include "ParticleContactGenerator.h"
-#include "R3D/Common/Common.h"
-#include "R3D/Common/Precision.h"
+#include <R3D/ParticleEngine/ParticleContactGenerator.h>
+#include <R3D/Common/Common.h>
+#include <R3D/Common/Precision.h>
+
+#include <utility>
 
 namespace r3
 {
@@ -38,6 +40,6 @@ namespace r3
 		 */
 		real currentLength() const;
 
-		Particle* m_particles[2]{};		
+		std::pair<Particle*, Particle*> m_particles{};
 	};
 }

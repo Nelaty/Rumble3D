@@ -1,6 +1,8 @@
 #pragma once
-#include "R3D/Common/Common.h"
-#include "IBoxBoxNarrowAlgorithm.h"
+#include <R3D/Common/Common.h>
+#include <R3D/RigidBodyEngine/CollisionDetection/Algorithm/IBoxBoxNarrowAlgorithm.h>
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 #include <glm/glm.hpp>
 
@@ -18,7 +20,7 @@ namespace r3
 	protected:
 		bool generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1,
 									 RigidBody* rbBox2, CollisionBox* box2,
-									 CollisionData& collisionData) override;
+									 FixedSizeContainer<Contact>& collisionData) override;
 	
 	private:
 

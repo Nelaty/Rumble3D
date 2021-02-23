@@ -20,17 +20,17 @@ namespace r3
 
 		// Get an available contact
 		auto contact = contactData.getAvailableEntry();	
-		if(m_particles[1]->hasFiniteMass()) 
+		if(m_particles.second->hasFiniteMass())
 		{
-			contact->init(m_particles[0], m_particles[1]);
+			contact->init(m_particles.first, m_particles.second);
 		}
 		else 
 		{
-			contact->init(m_particles[0], nullptr);
+			contact->init(m_particles.first, nullptr);
 		}
 
 		// Negative contact normal
-		auto normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
+		auto normal = m_particles.second->getPosition() - m_particles.first->getPosition();
 		normal = glm::normalize(normal);
 
 		if(length > m_length)

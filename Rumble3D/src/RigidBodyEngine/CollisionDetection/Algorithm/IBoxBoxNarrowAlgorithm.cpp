@@ -5,7 +5,7 @@ namespace r3
 {
 	bool IBoxBoxNarrowAlgorithm::generateContactData(RigidBody* first,
 													 RigidBody* second,
-													 CollisionData& collisionData)
+                                                     FixedSizeContainer<Contact>& collisionData)
 	{
 		const auto box1 = static_cast<CollisionBox*>(first->getCollisionPrimitive());
 		const auto box2 = static_cast<CollisionBox*>(second->getCollisionPrimitive());

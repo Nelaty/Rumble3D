@@ -4,7 +4,7 @@ namespace r3
 {
 	bool IPlanePlaneCollisionAlgorithm::generateContactData(RigidBody* first,
 															RigidBody* second,
-															CollisionData& collisionData)
+                                                            FixedSizeContainer<Contact>& collisionData)
 	{
 		auto* plane1 = static_cast<CollisionPlane*>(first->getCollisionPrimitive());
 		auto* plane2 = static_cast<CollisionPlane*>(second->getCollisionPrimitive());

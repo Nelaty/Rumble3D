@@ -5,6 +5,9 @@
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 
 #include "BoxBoxNarrowAlgorithm.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
+
 
 namespace r3
 {
@@ -28,8 +31,8 @@ namespace r3
 		 * otherwise.
 		 */
 		bool generateContactData(RigidBody* first, 
-								 RigidBody* second, 
-								 CollisionData& collisionData) override final;
+								 RigidBody* second,
+                                 FixedSizeContainer<Contact>& collisionData) override final;
 
 	protected:
 		explicit IPlaneSphereCollisionAlgorithm() = default;
@@ -39,6 +42,6 @@ namespace r3
 		 */
 		virtual bool generateContactDataImpl(RigidBody* rbPlane, CollisionPlane* plane,
 											 RigidBody* rbSphere, CollisionSphere* sphere,
-											 CollisionData& collisionData) = 0;
+                                             FixedSizeContainer<Contact>& collisionData) = 0;
 	};
 }

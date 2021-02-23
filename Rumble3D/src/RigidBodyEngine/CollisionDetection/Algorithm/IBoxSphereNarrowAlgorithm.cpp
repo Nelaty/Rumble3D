@@ -6,7 +6,7 @@ namespace r3
 {
 	bool IBoxSphereNarrowAlgorithm::generateContactData(RigidBody* first,
 														RigidBody* second,
-														CollisionData& collisionData)
+                                                        FixedSizeContainer<Contact>& collisionData)
 	{
 		// Check if the first collision primitive is a sphere
 		const bool needSwap = first->getCollisionPrimitive()->getType() == R3D_PRIMITIVE_SPHERE;

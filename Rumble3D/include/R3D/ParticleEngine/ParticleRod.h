@@ -28,7 +28,6 @@ namespace r3
 		void setLength(real length);
 
 	protected:
-
 		real m_length{};
 	};
 }

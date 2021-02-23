@@ -22,7 +22,7 @@ namespace r3
 		/**
 		 * \brief FixedSizeContainer constructor
 		 */
-		explicit FixedSizeContainer(int size);
+		explicit FixedSizeContainer(int size = 0);
 		~FixedSizeContainer() = default;
 
 		/**

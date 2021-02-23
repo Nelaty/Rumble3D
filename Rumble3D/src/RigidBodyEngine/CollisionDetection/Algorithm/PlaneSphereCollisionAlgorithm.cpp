@@ -6,7 +6,7 @@ namespace r3
 																CollisionPlane* plane,
 																RigidBody* rbSphere,
 																CollisionSphere* sphere,
-																CollisionData& collisionData)
+                                                                FixedSizeContainer<Contact>& collisionData)
 	{
 		if(plane->isHalfSpace())
 		{
@@ -24,7 +24,7 @@ namespace r3
 			if(ballDistance >= 0) return false;
 
 			// Create the contact - it has a normal in the plane direction.
-			Contact* contact = collisionData.getAvailableContact();
+			Contact* contact = collisionData.getAvailableEntry();
 			contact->setContactNormal(plane->getNormal());
 			contact->setPenetration(-ballDistance);
 			contact->setContactPoint(position - plane->getNormal() * (ballDistance + sphere->getRadius()));

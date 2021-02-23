@@ -8,7 +8,7 @@ namespace r3
 															 CollisionPlane* plane,
 															 RigidBody* rbBox,
 															 CollisionBox* box,
-															 CollisionData& collisionData)
+                                                             FixedSizeContainer<Contact>& collisionData)
 	{
 		if (collisionData.isFull())
 		{
@@ -54,7 +54,7 @@ namespace r3
 						return false;
 					}
 
-					auto* contact = collisionData.getAvailableContact();
+					auto* contact = collisionData.getAvailableEntry();
 
 					// Create the contact data.
 					// The contact point is halfway between the vertex and the

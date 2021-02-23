@@ -4,7 +4,7 @@
 namespace r3
 {
 	bool ISphereSphereNarrowAlgorithm::generateContactData(RigidBody* first, RigidBody* second,
-		CollisionData& collisionData)
+                                                           FixedSizeContainer<Contact>& collisionData)
 	{
 		const auto sphere1 = static_cast<CollisionSphere*>(first->getCollisionPrimitive());
 		const auto sphere2 = static_cast<CollisionSphere*>(second->getCollisionPrimitive());

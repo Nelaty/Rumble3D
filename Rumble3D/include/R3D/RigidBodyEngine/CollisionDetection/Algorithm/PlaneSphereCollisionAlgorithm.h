@@ -2,6 +2,8 @@
 #include "IPlaneSphereCollisionAlgorithm.h"
 
 #include "R3D/Common/Common.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -18,7 +20,7 @@ namespace r3
 		bool generateContactDataImpl(RigidBody* rbPlane, 
 									 CollisionPlane* plane,
 									 RigidBody* rbSphere,
-									 CollisionSphere* sphere, 
-									 CollisionData& collisionData) override;
+									 CollisionSphere* sphere,
+                                     FixedSizeContainer<Contact>& collisionData) override;
 	};
 }

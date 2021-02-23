@@ -9,7 +9,7 @@ namespace r3
 {
     bool BoxBoxNarrowAlgorithm::generateContactDataImpl(RigidBody* rbBox1, CollisionBox* box1,
 														RigidBody* rbBox2, CollisionBox* box2,
-														CollisionData& collisionData)
+														FixedSizeContainer<Contact>& collisionData)
 	{
 		// Check if there is still a contact left
 		if(collisionData.isFull())
@@ -64,7 +64,7 @@ namespace r3
 		// Make sure we've got a result.
 		assert(best != 0xffffff);
 
-		auto* contact = collisionData.getAvailableContact();
+		auto* contact = collisionData.getAvailableEntry();
 
 		// Wir wissen, es gibt eine Kollision und wir wissen, welche der SAT-Achsen
 		// die minimale Durchdringung ergab. Nun folgt die Fallunterscheidung:

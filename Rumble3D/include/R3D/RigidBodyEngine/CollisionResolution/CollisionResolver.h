@@ -1,6 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 #include <memory>
 #include <vector>
@@ -20,7 +22,7 @@ namespace r3
 		explicit CollisionResolver();
 		virtual ~CollisionResolver() = default;
 
-		void resolveCollisions(CollisionData& collisionData,
+		void resolveCollisions(FixedSizeContainer<Contact>& collisionData,
 							   real timeDelta) override;
 
 		/**

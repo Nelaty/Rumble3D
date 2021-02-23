@@ -2,6 +2,8 @@
 #include "ISphereSphereNarrowAlgorithm.h"
 
 #include "R3D/Common/Common.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -17,6 +19,6 @@ namespace r3
 	protected:
 		bool generateContactDataImpl(RigidBody* rbSphere1, CollisionSphere* sphere1,
 									 RigidBody* rbSphere2, CollisionSphere* sphere2,
-									 CollisionData& collisionData) override;
+                                     FixedSizeContainer<Contact>& collisionData) override;
 	};
 }

@@ -4,7 +4,7 @@ namespace r3
 {
 	bool IPlaneBoxCollisionAlgorithm::generateContactData(RigidBody* first,
 														  RigidBody* second,
-														  CollisionData& collisionData)
+                                                          FixedSizeContainer<Contact>& collisionData)
 	{
 		const auto needSwap = first->getCollisionPrimitive()->getType() == R3D_PRIMITIVE_BOX;
 

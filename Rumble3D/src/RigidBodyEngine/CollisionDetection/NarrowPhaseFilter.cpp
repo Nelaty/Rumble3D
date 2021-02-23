@@ -14,7 +14,7 @@ namespace r3
 	}
 
 	void NarrowPhaseFilter::generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
-												  CollisionData& collisions)
+												  FixedSizeContainer<Contact>& collisions)
 	{
 		const auto& data = broadPhaseData.getData();
 		for(auto i = 0; i < broadPhaseData.getEntriesUsed(); ++i)
@@ -28,7 +28,9 @@ namespace r3
 		m_algorithms = CollisionAlgorithmMatrixFactory::getMatrix();
 	}
 
-	void NarrowPhaseFilter::generateCollisionData(RigidBody* first, RigidBody* second, CollisionData& collisions)
+	void NarrowPhaseFilter::generateCollisionData(RigidBody* first,
+		RigidBody* second,
+		FixedSizeContainer<Contact>& collisions)
 	{
 		const auto firstCollider = first->getCollisionPrimitive();
 		const auto secondCollider = second->getCollisionPrimitive();

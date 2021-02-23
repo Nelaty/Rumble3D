@@ -7,7 +7,7 @@ namespace r3
 {
 	bool SphereSphereNarrowAlgorithm::generateContactDataImpl(RigidBody* rbSphere1, CollisionSphere* sphere1,
 															  RigidBody* rbSphere2, CollisionSphere* sphere2,
-															  CollisionData& collisionData)
+                                                              FixedSizeContainer<Contact>& collisionData)
 	{
 		if(collisionData.isFull()) return false;
 
@@ -31,7 +31,7 @@ namespace r3
 		glm::vec3 contactPoint = positionTwo + normal * (sphere2->getRadius() - real(0.5) * penetration);
 
 		// Initialize the new contact
-		auto* contact = collisionData.getAvailableContact();
+		auto* contact = collisionData.getAvailableEntry();
 		contact->setContactNormal(normal);
 		contact->setContactPoint(contactPoint);
 		contact->setPenetration(penetration);

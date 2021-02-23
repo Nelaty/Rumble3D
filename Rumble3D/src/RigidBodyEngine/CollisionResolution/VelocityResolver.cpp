@@ -8,7 +8,7 @@
 
 namespace r3
 {
-	void VelocityResolver::resolve(CollisionData& collisionData,
+	void VelocityResolver::resolve(FixedSizeContainer<Contact>& collisionData,
 	                               const real timeDelta)
 	{
 		adjustVelocities(collisionData, timeDelta);
@@ -156,7 +156,7 @@ namespace r3
 		return impulseContact;
 	}
 
-	void VelocityResolver::adjustVelocities(CollisionData& collisionData,
+	void VelocityResolver::adjustVelocities(FixedSizeContainer<Contact>& collisionData,
 	                                        const real duration)
 	{
 		glm::vec3 velocityChange[2]{};
@@ -170,7 +170,7 @@ namespace r3
 			auto& data = collisionData.getData();
 			auto maxIndex = -1;
 			auto maxValue = m_epsilon;
-			for(int i = 0; i < collisionData.getContactsUsed(); ++i)
+			for(int i = 0; i < collisionData.getEntriesUsed(); ++i)
 			{
 				auto value = data[i].getDesiredDeltaVelocity();
 				if(value > maxValue)
@@ -199,7 +199,7 @@ namespace r3
 			// With the change in velocity of the two bodies, the update of
 			// contact velocities means that some of the relative closing
 			// velocities need recomputing.
-			for(auto i = 0; i < collisionData.getContactsUsed(); ++i)
+			for(auto i = 0; i < collisionData.getEntriesUsed(); ++i)
 			{
 				auto& it = data[i];
 

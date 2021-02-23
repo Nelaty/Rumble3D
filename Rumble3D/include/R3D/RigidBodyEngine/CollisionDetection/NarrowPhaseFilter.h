@@ -1,8 +1,9 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrix.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 #include <memory>
 
@@ -27,7 +28,7 @@ namespace r3
 		 * be put in here.
 		 */
 		void generateCollisionData(const FixedSizeContainer<CollisionPair>& broadPhaseData,
-								   CollisionData& collisions) override;
+                                   FixedSizeContainer<Contact>& collisions) override;
 
 		/** 
 		 * \brief Generate contacts between two rigid bodies if existent. 
@@ -37,8 +38,8 @@ namespace r3
 		 * be put in here.
 		 */
 		void generateCollisionData(RigidBody* first,
-								   RigidBody* second, 
-								   CollisionData& collisions);
+								   RigidBody* second,
+                                   FixedSizeContainer<Contact>& collisions);
 
 
 	protected:

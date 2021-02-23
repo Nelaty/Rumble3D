@@ -1,8 +1,7 @@
 #pragma once
-#include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
-#include "R3D/Utility/FixedSizeContainer.h"
-
-#include "R3D/Common/Common.h"
+#include <R3D/Common/Common.h>
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 #include <memory>
 #include <list>
@@ -85,7 +84,7 @@ namespace r3
 		 * \param rigidBodies The rigid bodies used for contact generation.
 		 * \return The generated contacts.
 		 */
-		CollisionData& generateCollisions(const std::vector<RigidBody*>& rigidBodies);
+        FixedSizeContainer<Contact>& generateCollisions(const std::vector<RigidBody*>& rigidBodies);
 
 		/**
 		 * \brief Set the currently used broad phase filter 
@@ -135,7 +134,7 @@ namespace r3
 		unsigned int m_iterations;
 
 		FixedSizeContainer<CollisionPair> m_broadPhaseCollisions;
-		CollisionData m_collisions;
+        FixedSizeContainer<Contact> m_collisions;
 
 		BroadPhaseFilter_Ptr m_broadPhaseFilter;
 		std::list<IntermediatePhaseFilter_Ptr> m_intermediatePhaseFilters;

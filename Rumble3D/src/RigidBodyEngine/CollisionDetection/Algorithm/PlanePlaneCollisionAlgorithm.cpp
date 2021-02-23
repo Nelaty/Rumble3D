@@ -6,7 +6,7 @@ namespace r3
 															   CollisionPlane* plane1,
 															   RigidBody* rbPlane2,
 															   CollisionPlane* plane2,
-															   CollisionData& collisionData)
+                                                               FixedSizeContainer<Contact>& collisionData)
 	{
 		/// \todo: implement
 		return false;

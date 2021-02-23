@@ -2,6 +2,8 @@
 #include "IPlanePlaneCollisionAlgorithm.h"
 
 #include "R3D/Common/Common.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -19,6 +21,6 @@ namespace r3
 									 CollisionPlane* plane1,
 									 RigidBody* rbPlane2,
 									 CollisionPlane* plane2,
-									 CollisionData& collisionData) override;
+                                     FixedSizeContainer<Contact>& collisionData) override;
 	};
 }

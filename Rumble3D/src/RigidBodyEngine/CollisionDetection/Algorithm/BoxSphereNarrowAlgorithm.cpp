@@ -10,11 +10,11 @@ namespace r3
 {
 	bool BoxSphereNarrowAlgorithm::generateContactDataImpl(
 		RigidBody* rbBox, CollisionBox* box,
-		RigidBody* rbSphere, CollisionSphere* sphere, 
-		CollisionData& collisionData)
+		RigidBody* rbSphere, CollisionSphere* sphere,
+        FixedSizeContainer<Contact>& collisionData)
 	{
 		// Check if there is room for more contacts
-		if(collisionData.getContactsLeft() <= 0)
+		if(collisionData.getEntriesLeft() <= 0)
 		{
 			return false;
 		}
@@ -51,7 +51,7 @@ namespace r3
 		// Create the contact
 		const auto closestPtWorld = rbBox->getPointInWorldSpace(closestPt);
 		
-		auto* contact = collisionData.getAvailableContact();
+		auto* contact = collisionData.getAvailableEntry();
 		glm::vec3 contactNormal = glm::normalize(closestPtWorld - center);
 		contact->setContactNormal(contactNormal);
 		contact->setContactPoint(closestPtWorld);

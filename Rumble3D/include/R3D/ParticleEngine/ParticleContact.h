@@ -106,10 +106,10 @@ namespace r3
 		 */
 		void resolveInterpenetration(real duration);
 
-		Particle* m_particles[2]{};
+		Particle* m_particles[2]{}; // \todo
 		real m_restitution{};
 		glm::vec3 m_contactNormal;
 		real m_penetration{};
-		glm::vec3 m_particlesMovement[2];
+		glm::vec3 m_particlesMovement[2]; // \todo
 	};
 }

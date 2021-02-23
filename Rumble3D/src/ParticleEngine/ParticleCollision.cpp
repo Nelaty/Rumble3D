@@ -24,10 +24,10 @@ namespace r3
 		auto contact = contactData.getAvailableEntry();
 
 		// Sonst Kontakt erzeugen und einf�gen:
-		contact->init(m_particles[0], m_particles[1]);
+		contact->init(m_particles.first, m_particles.second);
 
 		// Negative Kontaktnormale:
-		glm::vec3 normal = m_particles[1]->getPosition() - m_particles[0]->getPosition();
+		glm::vec3 normal = m_particles.second->getPosition() - m_particles.first->getPosition();
 		normal *= -1;
 		normal = glm::normalize(normal);
 
@@ -37,7 +37,7 @@ namespace r3
 	
 		if(m_callback)
 		{
-			m_callback(m_particles[0], m_particles[1], normal);
+			m_callback(m_particles.first, m_particles.second, normal);
 		}
 	}
 

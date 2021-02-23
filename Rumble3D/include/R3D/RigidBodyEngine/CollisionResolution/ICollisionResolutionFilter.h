@@ -1,6 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/CollisionData.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -18,7 +19,7 @@ namespace r3
 		 * \param timeDelta The time step of the current physics
 		 * update.
 		 */
-		virtual void resolve(CollisionData& collisionData,
+		virtual void resolve(FixedSizeContainer<Contact>& collisionData,
 							 real timeDelta) = 0;
 
 	protected:

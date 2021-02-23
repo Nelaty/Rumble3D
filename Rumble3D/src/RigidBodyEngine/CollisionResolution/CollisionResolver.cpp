@@ -7,15 +7,17 @@
 
 namespace r3
 {
-	void CollisionResolver::resolveCollisions(CollisionData& collisionData,
+	void CollisionResolver::resolveCollisions(FixedSizeContainer<Contact>& collisionData,
 	                                          const real timeDelta)
 	{
-		if(collisionData.isEmpty())
-		{
-			return;
-		}
+		if(collisionData.isEmpty()) return;
 
-		collisionData.prepareContacts(timeDelta);
+		// \todo: this is a function
+		for(auto& it : collisionData.getData())
+        {
+		    it.calculateInternals(timeDelta);
+        }
+
 		for(auto& it : m_filters)
 		{
 			it->resolve(collisionData, timeDelta);

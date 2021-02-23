@@ -1,6 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionResolution/ICollisionResolutionFilter.h"
+#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
+#include <R3D/Utility/FixedSizeContainer.h>
 
 namespace r3
 {
@@ -14,14 +16,14 @@ namespace r3
 		explicit InterpenetrationResolver();
 		~InterpenetrationResolver() = default;
 
-		void resolve(CollisionData& collisionData,
+		void resolve(FixedSizeContainer<Contact>& collisionData,
 					 real timeDelta) override;
 
 		void setMaxIterations(unsigned int iterations);
 		void setPositionEpsilon(real epsilon);
 
 	private:
-		void adjustPositions(CollisionData& collisionData, real timeDelta);
+		void adjustPositions(FixedSizeContainer<Contact>& collisionData, real timeDelta);
 
 		void applyPositionChange(glm::vec3 linearChange[2],
 								 glm::vec3 angularChange[2],

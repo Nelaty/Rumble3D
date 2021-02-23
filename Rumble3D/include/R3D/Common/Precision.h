@@ -93,11 +93,4 @@ namespace r3
 	#define GLM_PRECISION_HIGHP_UINT
 
 	#endif // __PRECISION_LEVEL_EROS__
-
-	static constexpr real R3D_PI = static_cast<real>(3.1415926535897932384626433832795);
-	static constexpr real R3D_TWO_PI = static_cast<real>(2.0) * R3D_PI;
-	static constexpr real R3D_HALF_PI = static_cast<real>(0.5) * R3D_PI;
-
-	static constexpr real R3D_1_OVER_3 = static_cast<real>(0.3333333333333333333333333333);
-	static constexpr real R3D_4_OVER_3 = static_cast<real>(1.333333333333333333333333333333);
 }

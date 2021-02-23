@@ -6,7 +6,7 @@
 
 namespace r3
 {
-	void InterpenetrationResolver::resolve(CollisionData& collisionData,
+	void InterpenetrationResolver::resolve(FixedSizeContainer<Contact>& collisionData,
 	                                       const real timeDelta)
 	{
 		adjustPositions(collisionData, timeDelta);
@@ -22,7 +22,7 @@ namespace r3
 		m_epsilon = epsilon;
 	}
 
-	void InterpenetrationResolver::adjustPositions(CollisionData& collisionData,
+	void InterpenetrationResolver::adjustPositions(FixedSizeContainer<Contact>& collisionData,
 	                                               const real timeDelta)
 	{
 		glm::vec3 linearChange[2]{};
@@ -36,7 +36,7 @@ namespace r3
 			auto& data = collisionData.getData();
 			auto maxIndex = -1;
 			auto maxValue = m_epsilon;
-			for (int i = 0; i < collisionData.getContactsUsed(); ++i)
+			for (int i = 0; i < collisionData.getEntriesUsed(); ++i)
 			{
 				auto value = data[i].getPenetration();
 				if (value > maxValue)
@@ -62,7 +62,7 @@ namespace r3
 
 			// Again this action may have changed the penetration of other
 			// bodies, so we update contacts.
-			for (auto i = 0; i < collisionData.getContactsUsed(); ++i)
+			for (auto i = 0; i < collisionData.getEntriesLeft(); ++i)
 			{
 				auto& it = data[i];
 				for (auto b = 0; b < 2; b++)

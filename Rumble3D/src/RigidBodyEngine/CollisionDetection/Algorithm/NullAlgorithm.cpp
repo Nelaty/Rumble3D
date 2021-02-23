@@ -4,7 +4,7 @@ namespace r3
 {
 	bool NullAlgorithm::generateContactData(RigidBody* first, 
 											RigidBody* second,
-											CollisionData& collisionData)
+                                            FixedSizeContainer<Contact>& collisionData)
 	{
 		return false;
 	}

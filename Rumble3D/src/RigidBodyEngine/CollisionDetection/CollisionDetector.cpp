@@ -26,7 +26,7 @@ namespace r3
 		m_iterations = iterations;
 
 		m_broadPhaseCollisions.init(broadPhaseCollisions);
-		m_collisions.init(contactsMax, iterations);
+		m_collisions.init(contactsMax);
 	}
 
 	void CollisionDetector::reset()
@@ -44,17 +44,17 @@ namespace r3
 	void CollisionDetector::setContactsMax(const int count)
 	{
 		m_contactsMax = count;
-		m_collisions.init(m_contactsMax, m_iterations);
+		m_collisions.init(m_contactsMax);
 	}
 
 	void CollisionDetector::setIterations(const int iterations)
 	{
 		m_iterations = iterations;
 		m_broadPhaseCollisions.init(m_broadPhaseCollisionsMax);
-		m_collisions.init(m_contactsMax, m_iterations);
+		m_collisions.init(m_contactsMax);
 	}
 
-	CollisionData& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
+    FixedSizeContainer<Contact>& CollisionDetector::generateCollisions(const std::vector<RigidBody*>& rigidBodies)
 	{
 		reset();
 		if(!m_broadPhaseFilter || !m_narrowPhaseFilter)

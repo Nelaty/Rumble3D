@@ -49,40 +49,6 @@ namespace r3
 		}
 	}
 
-	//void RigidBodyWorld::runPhysics(const real timeDelta, unsigned& tmp)
-	//{
-	//	m_registry.updateForces(timeDelta);
-	//	//integrate(timeDelta);
-	//	return;
-	//	// Pr�fe auf Kontakte:
-
-	//	//Hier Iteration �ber RigidBodies und ihre BoundingAreas
-	//	//Je nachdem, welche Kombination, die richtige Methode von
-	//	//detect aufrufen. Hier momentan nur 2 Boxen mit BoundingBoxes:
-	//	CollisionBox * b1 = nullptr;
-	//	CollisionBox * b2 = nullptr;
-	//	auto i = 1;
-	//	for(auto& box : m_collisionBoxes)
-	//	{
-	//		if(i == 1)
-	//		{
-	//			b1 = box;
-	//			i++;
-	//		}
-	//		else
-	//		{
-	//			b2 = box;
-	//		}
-	//	}
-
-	//	tmp = CollisionDetectorOld::boxAndBox(*b1, *b2, m_collisionData);
-	//	// Resolve Kontakte:
-	//	if(m_collisionData->getContactCount() > 0)
-	//	{
-	//		m_resolver->resolveContacts(m_collisionData->getContacts(), 1, timeDelta);
-	//	}
-	//}
-
 	void DefaultRigidBodyEngineCI::onEnd()
 	{
 		assert(m_rigidBodyWorld != nullptr);
