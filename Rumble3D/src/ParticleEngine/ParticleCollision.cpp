@@ -1,44 +1,33 @@
-#include "R3D/ParticleEngine/ParticleCollision.h"
-#include "R3D/ParticleEngine/Particle.h"
-#include "R3D/ParticleEngine/ParticleContact.h"
+#include <R3D/ParticleEngine/ParticleCollision.h>
+#include <R3D/ParticleEngine/Particle.h>
+#include <R3D/ParticleEngine/ParticleContact.h>
 
 namespace r3
 {
 	ParticleCollision::ParticleCollision(const real restitution, 
-										 const real distance, 
-										 const real penetration) 
+										 const real distance)
 		: m_restitution(restitution), 
-		m_distance(distance), 
-		m_penetration(penetration)
+		m_distance(distance)
 	{
 	}
 
 	void ParticleCollision::addContact(FixedSizeContainer<ParticleContact>& contactData) const
 	{
-		// Wenn wir nicht zu nah sind, nichts tun:
-		if (currentLength() > m_distance)
-		{
-			return;
-		}
+	    // Check if particles overlap
+        real penetration = m_distance - currentLength();
+		if (penetration <= 0) return;
 
-		auto contact = contactData.getAvailableEntry();
+		// Negative contact normal
+		glm::vec3 normal = glm::normalize(m_particles.first->getPosition()
+		                                  - m_particles.second->getPosition());
 
-		// Sonst Kontakt erzeugen und einf�gen:
-		contact->init(m_particles.first, m_particles.second);
-
-		// Negative Kontaktnormale:
-		glm::vec3 normal = m_particles.second->getPosition() - m_particles.first->getPosition();
-		normal *= -1;
-		normal = glm::normalize(normal);
-
+        auto contact = contactData.getAvailableEntry();
+        contact->init(m_particles.first, m_particles.second);
 		contact->setContactNormal(normal);
-		contact->setPenetration(m_penetration);
+		contact->setPenetration(penetration);
 		contact->setRestitution(m_restitution);
 	
-		if(m_callback)
-		{
-			m_callback(m_particles.first, m_particles.second, normal);
-		}
+		if(m_callback) m_callback(m_particles.first, m_particles.second, normal);
 	}
 
 	void ParticleCollision::setCollisionCallback(const CollisionCallback& callback)

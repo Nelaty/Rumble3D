@@ -26,7 +26,7 @@ namespace r3
 		}
 		else 
 		{
-			contact->init(m_particles.first, nullptr);
+			contact->init(m_particles.first, nullptr);  // todo: Check if mass is infinite instead
 		}
 
 		// Negative contact normal

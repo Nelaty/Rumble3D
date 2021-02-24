@@ -13,17 +13,17 @@ namespace r3
 
 	void ParticleContact::init(Particle* first, Particle* second)
 	{
-		m_particles[0] = first;
-		m_particles[1] = second;
+	    m_particles.first = first;
+	    m_particles.second = second;
 	}
 
 	real ParticleContact::calculateSeparatingVelocity() const
 	{
 		/// @f$ v_s = (\dot{p_a} - \dot{p_b}) * (\hat{p_a -p_b}) @f$
-		glm::vec3 relativeVelocity = m_particles[0]->getVelocity();
-		if(m_particles[1])
+		glm::vec3 relativeVelocity = m_particles.first->getVelocity();
+		if(m_particles.second)
 		{
-			relativeVelocity -= m_particles[1]->getVelocity();
+			relativeVelocity -= m_particles.second->getVelocity();
 		}
 		return glm::dot(relativeVelocity, m_contactNormal);
 	}
@@ -43,10 +43,10 @@ namespace r3
 		//ACHTUNG: Hier nicht berücksichtigt, dass Masse unendlich seinkann -> keine v aus der acc
 		//DOCH: da hier particle[1] nicht gesetzt werden darf. ->> NULL und das wird geprüft.
 		
-		glm::vec3 accelerationCausedVelocity = m_particles[0]->getAcceleration();
-		if(m_particles[1])
+		glm::vec3 accelerationCausedVelocity = m_particles.first->getAcceleration();
+		if(m_particles.second) // todo: Check if mass is infinite instead
 		{
-			accelerationCausedVelocity -= m_particles[1]->getAcceleration();
+			accelerationCausedVelocity -= m_particles.second->getAcceleration();
 		}
 		// Skalarprodukt: wieviel der Beschleunigung wirkt in Richtung Kontaktnormale:
 		real accelerationCausedSeparationVelocity =	glm::dot(accelerationCausedVelocity, m_contactNormal) * duration;
@@ -66,14 +66,14 @@ namespace r3
 		const real deltaVelocity = newSeparatingVelocity - separatingVelocity;
 
 		// Veraenderung der Geschwindigkeit in Abh. der Massen der Teilchen
-		real totalInverseMass = m_particles[0]->getInverseMass();
-		if(m_particles[1])
+		real totalInverseMass = m_particles.first->getInverseMass();
+		if(m_particles.second) // todo: Check if mass is infinite instead
 		{
-			totalInverseMass += m_particles[1]->getInverseMass();
+			totalInverseMass += m_particles.second->getInverseMass();
 		}
 		// Fehler Millington: Massen und nicht 1/Masse nehmen!!!
 
-		if(!(m_particles[0]->hasFiniteMass())) return;
+		if(!(m_particles.first->hasFiniteMass())) return;
 
 		/*real totalMass = m_particles[0]->getMass();
 		if(m_particles[1] && m_particles[1]->hasFiniteMass())
@@ -95,14 +95,14 @@ namespace r3
 
 		// Anwendung des Impulses je Teilchen proportional zu den inversen Massen:
 		// \prime{\hat{p}} = \dot{p} + 1/m * g
-		m_particles[0]->setVelocity(m_particles[0]->getVelocity() +
-									impulsePerInverseMass * m_particles[0]->getInverseMass());
+		m_particles.first->setVelocity(m_particles.first->getVelocity() +
+									impulsePerInverseMass * m_particles.first->getInverseMass());
 
-		if (m_particles[1]) 
+		if (m_particles.second)  // todo: Check if mass is infinite instead
 		{
 			// hier negativ, da aus Sicht von m_particles[0]
-			m_particles[1]->setVelocity(m_particles[1]->getVelocity() +
-										impulsePerInverseMass * -m_particles[1]->getInverseMass());
+			m_particles.second->setVelocity(m_particles.second->getVelocity() +
+										impulsePerInverseMass * -m_particles.second->getInverseMass());
 		}
 	}
 
@@ -113,10 +113,10 @@ namespace r3
 		if(m_penetration <= 0) return;
 
 		// Velocity change in accordance with their masses
-		real totalInverseMass = m_particles[0]->getInverseMass();
-		if(m_particles[1])
+		real totalInverseMass = m_particles.first->getInverseMass();
+		if(m_particles.second)
 		{
-			totalInverseMass += m_particles[1]->getInverseMass();
+			totalInverseMass += m_particles.second->getInverseMass();
 		}
 		if(totalInverseMass <= 0) return;
 
@@ -124,10 +124,10 @@ namespace r3
 		glm::vec3 movePerInverseMass = m_contactNormal * (m_penetration / totalInverseMass);
 
 		// Berechnung von Delta-p_a und Delta-p_b
-		m_particlesMovement[0] = movePerInverseMass * m_particles[0]->getInverseMass();
-		if (m_particles[1])
+		m_particlesMovement[0] = movePerInverseMass * m_particles.first->getInverseMass();
+		if (m_particles.second)
 		{
-			m_particlesMovement[1] = movePerInverseMass * -m_particles[1]->getInverseMass();
+			m_particlesMovement[1] = movePerInverseMass * -m_particles.second->getInverseMass();
 		}
 		else 
 		{
@@ -135,17 +135,22 @@ namespace r3
 		}
 
 		// Anwendung der Aufloesung der Durchdringung:
-		m_particles[0]->setPosition(m_particles[0]->getPosition() + m_particlesMovement[0]);
-		if (m_particles[1])
+		m_particles.first->setPosition(m_particles.first->getPosition() + m_particlesMovement[0]);
+		if (m_particles.second)
 		{
-			m_particles[1]->setPosition(m_particles[1]->getPosition() + m_particlesMovement[1]);
+			m_particles.second->setPosition(m_particles.second->getPosition() + m_particlesMovement[1]);
 		}
 	}
 
-	Particle* ParticleContact::getParticles()
-	{
-		return m_particles[0];
-	}
+    std::pair<Particle*, Particle*>& ParticleContact::getParticles()
+    {
+        return m_particles;
+    }
+
+    const std::pair<Particle*, Particle*>& ParticleContact::getParticles() const
+    {
+        return m_particles;
+    }
 
 	void ParticleContact::setContactNormal(const glm::vec3& normal)
 	{
@@ -184,12 +189,12 @@ namespace r3
 
 	Particle* ParticleContact::getFirst() const
 	{
-		return m_particles[0];
+		return m_particles.first;
 	}
 
 	Particle* ParticleContact::getSecond() const
 	{
-		return m_particles[1];
+		return m_particles.second;
 	}
 
 	const glm::vec3* ParticleContact::getParticleMovement() const

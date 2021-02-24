@@ -32,7 +32,7 @@ namespace r3
 		 * maintained.
 		 * \param penetration \todo Why does this even exist? Just calculate interpenetration in contact generation.
 		 */
-		explicit ParticleCollision(real restitution, real distance, real penetration);
+		explicit ParticleCollision(real restitution, real distance);
 		~ParticleCollision() = default;
 
 		/**
@@ -47,7 +47,6 @@ namespace r3
 	protected:
 		real m_restitution;
 		real m_distance;
-		real m_penetration;
 
 		CollisionCallback m_callback;
 	};

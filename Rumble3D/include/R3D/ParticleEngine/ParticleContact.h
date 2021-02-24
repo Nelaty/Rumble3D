@@ -4,6 +4,8 @@
 
 #include <glm/glm.hpp>
 
+#include <utility>
+
 namespace r3
 {
 	class Particle;
@@ -41,7 +43,8 @@ namespace r3
 		 * \brief Get the contact's particles.
 		 * \return The particles.
 		 */
-		Particle* getParticles();
+		std::pair<Particle*, Particle*>& getParticles();
+		const std::pair<Particle*, Particle*>& getParticles() const;
 
 		/**
 		 * \brief Set the contact's contact normal.
@@ -106,7 +109,7 @@ namespace r3
 		 */
 		void resolveInterpenetration(real duration);
 
-		Particle* m_particles[2]{}; // \todo
+		std::pair<Particle*, Particle*> m_particles{};
 		real m_restitution{};
 		glm::vec3 m_contactNormal;
 		real m_penetration{};
