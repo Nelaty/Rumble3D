@@ -1,5 +1,4 @@
 #include "R3D/Water/SPHEngine/Integrator/Cpu/SPHIntegratorCpuSerial.h"
-
 #include "R3D/Water/SPHEngine/Entity/SPHSystem.h"
 #include "R3D/Water/SPHEngine/Entity/SPHParticleDefinition.h"
 #include "R3D/Water/SPHEngine/Entity/SPHParams.h"

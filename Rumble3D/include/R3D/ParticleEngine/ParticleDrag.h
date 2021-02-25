@@ -1,7 +1,7 @@
 #pragma once
-#include "IParticleForceGenerator.h"
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
+#include "R3D/ParticleEngine/IParticleForceGenerator.h"
 
 #include <glm/gtc/constants.hpp>
 

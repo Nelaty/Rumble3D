@@ -3,7 +3,6 @@
 #include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
-
 #include <utility>
 
 namespace r3

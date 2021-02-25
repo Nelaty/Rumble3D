@@ -1,9 +1,5 @@
-//
-// Created by root on 26.09.20.
-//
-
 #pragma once
-#include <R3D/Common/Common.h>
+#include "R3D/Common/Common.h"
 
 namespace r3
 {

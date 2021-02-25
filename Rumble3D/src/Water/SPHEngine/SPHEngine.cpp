@@ -1,10 +1,6 @@
-//
-// Created by root on 25.09.20.
-//
-
 #include "R3D/Water/SPHEngine/SPHEngine.h"
-#include "R3D/IComputationInterface.h"
 #include "R3D/Water/SPHEngine/Entity/SPHContext.h"
+#include "R3D/IComputationInterface.h"
 
 namespace r3
 {

@@ -1,7 +1,3 @@
-//
-// Created by root on 26.09.20.
-//
-
 #include <R3D/Water/SPHEngine/ComputationInterface/SPHEngineCICpuSerial.h>
 #include "R3D/Water/SPHEngine/Builder/SPHEngineFactoryCpuSerial.h"
 

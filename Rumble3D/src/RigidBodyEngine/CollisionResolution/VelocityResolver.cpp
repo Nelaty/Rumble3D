@@ -1,10 +1,9 @@
 #include "R3D/RigidBodyEngine/CollisionResolution/VelocityResolver.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
-#include <algorithm>
-
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/matrix_cross_product.hpp>
+#include <algorithm>
 
 namespace r3
 {

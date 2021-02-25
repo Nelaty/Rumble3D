@@ -1,7 +1,7 @@
 #pragma once
-#include "ForceGenerator.h"
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
+#include "R3D/RigidBodyEngine/ForceGenerator.h"
 
 #include <glm/glm.hpp>
 

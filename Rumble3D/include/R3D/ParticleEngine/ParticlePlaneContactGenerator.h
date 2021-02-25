@@ -1,9 +1,8 @@
 #pragma once
-#include "R3D/ParticleEngine/ParticleContactGenerator.h"
-
 #include "R3D/Common/Precision.h"
-#include "R3D/RigidBodyEngine/CollisionPlane.h"
+#include "R3D/ParticleEngine/ParticleContactGenerator.h"
 #include "R3D/ParticleEngine/Particle.h"
+#include "R3D/RigidBodyEngine/CollisionPlane.h"
 
 namespace r3
 {

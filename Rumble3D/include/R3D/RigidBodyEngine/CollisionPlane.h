@@ -1,7 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 #include "R3D/Common/Precision.h"
+#include "R3D/RigidBodyEngine/CollisionPrimitive.h"
+
 #include <glm/glm.hpp>
 
 namespace r3

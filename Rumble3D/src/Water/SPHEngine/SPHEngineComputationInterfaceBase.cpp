@@ -1,7 +1,3 @@
-//
-// Created by root on 25.09.20.
-//
-
 #include "R3D/Water/SPHEngine/SPHEngineComputationInterfaceBase.h"
 #include "R3D/Water/SPHEngine/SPHEngine.h"
 

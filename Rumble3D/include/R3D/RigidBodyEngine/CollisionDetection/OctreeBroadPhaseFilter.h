@@ -1,8 +1,7 @@
 #pragma once
+#include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/Octree.h"
-
-#include "R3D/Common/Common.h"
 
 namespace r3
 {

@@ -1,8 +1,7 @@
 #pragma once
-#include <R3D/Water/SPHEngine/Entity/SPHParticle.h>
-#include <R3D/Water/SPHEngine/Kernel/ISPHKernel.h>
-
-#include <R3D/Common/Common.h>
+#include "R3D/Common/Common.h"
+#include "R3D/Water/SPHEngine/Entity/SPHParticle.h"
+#include "R3D/Water/SPHEngine/Kernel/ISPHKernel.h"
 
 namespace r3
 {

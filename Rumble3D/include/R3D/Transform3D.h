@@ -1,6 +1,6 @@
 #pragma once
-#include <R3D/Common/Precision.h>
-#include <R3D/Common/Common.h>
+#include "R3D/Common/Common.h"
+#include "R3D/Common/Precision.h"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>

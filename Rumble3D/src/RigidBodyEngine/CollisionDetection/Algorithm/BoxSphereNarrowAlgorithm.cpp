@@ -2,8 +2,6 @@
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
 
-
-
 #include <glm/gtx/norm.inl>
 
 namespace r3

@@ -1,8 +1,8 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionBox.h"
 
-#include <glm/gtx/norm.inl>
-
+#define GLM_ENABLE_EXPERIMENTAL
+#include <glm/gtx/norm.hpp>
 #include <cassert>
 
 namespace r3

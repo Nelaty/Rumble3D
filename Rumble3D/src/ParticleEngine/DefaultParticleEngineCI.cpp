@@ -1,7 +1,6 @@
 #include "R3D/ParticleEngine/DefaultParticleEngineCI.h"
 #include "R3D/ParticleEngine/ParticleWorld.h"
 #include "R3D/ParticleEngine/Particle.h"
-
 #include "R3D/ParticleEngine/ParticleContactGenerator.h"
 #include "R3D/ParticleEngine/ParticleContact.h"
 

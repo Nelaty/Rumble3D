@@ -1,7 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
-#include "CollisionPair.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h"
 
 #include <glm/glm.hpp>
 

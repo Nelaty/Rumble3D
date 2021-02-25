@@ -1,7 +1,6 @@
 #include "R3D/RigidBodyEngine/ComputationInterfaceFactory.h"
-
-#include "R3D/ParticleEngine/DefaultParticleEngineCI.h"
 #include "R3D/RigidBodyEngine/DefaultRigidBodyEngineCI.h"
+#include "R3D/ParticleEngine/DefaultParticleEngineCI.h"
 
 #include <utility>
 

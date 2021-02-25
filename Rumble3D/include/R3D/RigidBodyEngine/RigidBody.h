@@ -1,18 +1,14 @@
 #pragma once
+#include "R3D/Common/Common.h"
+#include "R3D/Common/Precision.h"
 #include "R3D/Transform3D.h"
-
 #include "R3D/RigidBodyEngine/CollisionObject.h"
 #include "R3D/RigidBodyEngine/CollisionCallback.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionMask.h"
 #include "R3D/RigidBodyEngine/RigidBodyDef.h"
 
-#include "R3D/Common/Precision.h"
-#include "R3D/Common/Common.h"
-
 #include <glm/glm.hpp>
 #include <glm/gtc/quaternion.hpp>
-
-
 
 namespace r3 
 {

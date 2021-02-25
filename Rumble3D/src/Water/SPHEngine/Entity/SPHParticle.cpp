@@ -1,5 +1,6 @@
-//
-// Created by root on 26.09.20.
-//
-
 #include "R3D/Water/SPHEngine/Entity/SPHParticle.h"
+
+namespace r3
+{
+
+}

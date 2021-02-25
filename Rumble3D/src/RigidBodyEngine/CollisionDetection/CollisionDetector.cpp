@@ -1,6 +1,5 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionDetector.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
-
 #include "R3D/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.h"

@@ -1,6 +1,6 @@
 #pragma once
-#include <R3D/Water/SPHEngine/Kernel/ISPHKernel.h>
-#include <R3D/Common/Common.h>
+#include "R3D/Common/Common.h"
+#include "R3D/Water/SPHEngine/Kernel/ISPHKernel.h"
 
 namespace r3
 {
@@ -13,5 +13,3 @@ namespace r3
         void execute(const SPHContext_Ptr &context) override;
     };
 }
-
-

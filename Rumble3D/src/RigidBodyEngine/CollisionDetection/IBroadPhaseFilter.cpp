@@ -2,12 +2,4 @@
 
 namespace r3
 {
-    IBroadPhaseFilter::~IBroadPhaseFilter()
-    {
-
-    }
-    IBroadPhaseFilter::IBroadPhaseFilter()
-    {
-
-    }
 }

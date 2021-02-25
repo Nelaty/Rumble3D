@@ -1,13 +1,11 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionPlane.h"
 #include "R3D/RigidBodyEngine/CollisionSphere.h"
-
-#include "BoxBoxNarrowAlgorithm.h"
-#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
-#include <R3D/Utility/FixedSizeContainer.h>
-
+#include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
+#include "R3D/RigidBodyEngine/CollisionDetection/Contact.h"
+#include "R3D/Utility/FixedSizeContainer.h"
 
 namespace r3
 {

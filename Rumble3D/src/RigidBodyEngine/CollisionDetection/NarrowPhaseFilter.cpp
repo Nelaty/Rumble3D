@@ -2,7 +2,6 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrixFactory.h"
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.h"
-
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
 namespace r3

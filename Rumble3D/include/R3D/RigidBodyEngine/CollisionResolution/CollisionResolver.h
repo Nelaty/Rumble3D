@@ -1,8 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/RigidBodyEngine/CollisionResolution/ICollisionResolverAccess.h"
-#include <R3D/RigidBodyEngine/CollisionDetection/Contact.h>
-#include <R3D/Utility/FixedSizeContainer.h>
+#include "R3D/RigidBodyEngine/CollisionDetection/Contact.h"
+#include "R3D/Utility/FixedSizeContainer.h"
 
 #include <memory>
 #include <vector>

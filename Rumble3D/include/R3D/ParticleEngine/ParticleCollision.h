@@ -1,10 +1,9 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "ParticleLink.h"
 #include "R3D/Common/Precision.h"
+#include "R3D/ParticleEngine/ParticleLink.h"
 
 #include <glm/glm.hpp>
-
 #include <functional>
 
 namespace r3

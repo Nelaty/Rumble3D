@@ -1,9 +1,8 @@
 #pragma once
 #include "R3D/Common/Common.h"
 #include "R3D/Common/Precision.h"
-
-#include "R3D/Utility/FixedSizeContainer.h"
 #include "R3D/ParticleEngine/ParticleContact.h"
+#include "R3D/Utility/FixedSizeContainer.h"
 
 namespace r3
 {

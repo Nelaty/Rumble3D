@@ -1,7 +1,7 @@
 #pragma once
 #include "R3D/Common/Common.h"
-#include "R3D/Utility/FixedSizeContainer.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionPair.h"
+#include "R3D/Utility/FixedSizeContainer.h"
 
 namespace r3
 {
@@ -15,7 +15,7 @@ namespace r3
 	class R3D_DECLSPEC IBroadPhaseFilter
 	{
 	public:
-		virtual ~IBroadPhaseFilter();
+		virtual ~IBroadPhaseFilter() = default;
 
 		/** 
 		 * \brief Conservatively check, which rigid body pairs might 
@@ -29,6 +29,6 @@ namespace r3
 										FixedSizeContainer<CollisionPair>& data) = 0;
 
 	protected:
-		explicit IBroadPhaseFilter();
+		explicit IBroadPhaseFilter() = default;
 	};
 }

@@ -1,7 +1,6 @@
 #include "R3D/RigidBodyEngine/DefaultRigidBodyEngineCI.h"
 #include "R3D/RigidBodyEngine/RigidBodyWorld.h"
 #include "R3D/RigidBodyEngine/RigidBody.h"
-
 #include "R3D/RigidBodyEngine/CollisionResolution/CollisionResolver.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/BroadPhaseFilter.h"

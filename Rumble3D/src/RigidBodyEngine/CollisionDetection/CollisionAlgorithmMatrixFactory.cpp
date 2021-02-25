@@ -1,5 +1,4 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionAlgorithmMatrixFactory.h"
-
 #include "R3D/RigidBodyEngine/CollisionDetection/CollisionPrimitiveType.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxBoxNarrowAlgorithm.h"
 #include "R3D/RigidBodyEngine/CollisionDetection/Algorithm/BoxSphereNarrowAlgorithm.h"

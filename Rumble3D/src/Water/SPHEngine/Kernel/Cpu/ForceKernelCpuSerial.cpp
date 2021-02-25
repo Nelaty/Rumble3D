@@ -1,9 +1,9 @@
 #include "R3D/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.h"
+#include "R3D/Water/SPHEngine/Kernel/Cpu/SmoothingKernel.h"
 #include "R3D/Water/SPHEngine/Entity/SPHSystem.h"
 #include "R3D/Water/SPHEngine/Entity/SPHParticleDefinition.h"
 #include "R3D/Water/SPHEngine/Entity/SPHParams.h"
 
-#include "R3D/Water/SPHEngine/Kernel/Cpu/SmoothingKernel.h"
 
 namespace r3
 {

@@ -3,16 +3,16 @@
 //
 
 #pragma once
-#include <R3D/PhysicsEngineModule.h>
-#include <R3D/Common/Common.h>
+#include "R3D/Common/Common.h"
+#include "R3D/PhysicsEngineModule.h"
 
 namespace r3
 {
     class R3D_DECLSPEC ShallowWaterEngine : public PhysicsEngineModule
     {
     public:
-        explicit ShallowWaterEngine();
-        ~ShallowWaterEngine();
+        explicit ShallowWaterEngine() = default;
+        ~ShallowWaterEngine() = default;
     };
 }
 

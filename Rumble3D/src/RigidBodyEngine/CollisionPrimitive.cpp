@@ -2,7 +2,6 @@
 #include "R3D/RigidBodyEngine/RigidBody.h"
 
 #include <glm/gtc/matrix_transform.inl>
-
 #include <cassert>
 
 namespace r3

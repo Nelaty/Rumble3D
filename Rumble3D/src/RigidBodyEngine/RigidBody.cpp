@@ -2,11 +2,10 @@
 #include "R3D/RigidBodyEngine/PhysicsMaterial.h"
 #include "R3D/RigidBodyEngine/CollisionPrimitive.h"
 
-#include <cassert>
-#include <glm/gtc/matrix_transform.inl>
-
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/quaternion.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <cassert>
 
 namespace r3
 {

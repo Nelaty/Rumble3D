@@ -1,6 +1,6 @@
-#include <glm/ext/scalar_constants.hpp>
 #include "R3D/Water/SPHEngine/Kernel/Cpu/SmoothingKernel.h"
 
+#include <glm/ext/scalar_constants.hpp>
 
 namespace r3
 {

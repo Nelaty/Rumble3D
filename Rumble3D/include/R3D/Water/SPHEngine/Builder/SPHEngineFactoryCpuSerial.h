@@ -1,12 +1,9 @@
 #pragma once
-
-#include <R3D/Water/SPHEngine/Builder/ISPHEngineFactory.h>
-
-#include <R3D/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.h>
-#include <R3D/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.h>
-#include <R3D/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.h>
-
-#include <R3D/Common/Common.h>
+#include "R3D/Common/Common.h"
+#include "R3D/Water/SPHEngine/Builder/ISPHEngineFactory.h"
+#include "R3D/Water/SPHEngine/Kernel/Cpu/DensityKernelCpuSerial.h"
+#include "R3D/Water/SPHEngine/Kernel/Cpu/ForceKernelCpuSerial.h"
+#include "R3D/Water/SPHEngine/Kernel/Cpu/PressureKernelCpuSerial.h"
 
 namespace r3
 {
