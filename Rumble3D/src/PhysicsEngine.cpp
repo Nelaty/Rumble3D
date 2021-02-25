@@ -130,4 +130,22 @@ namespace r3
                            }),
             m_modules.end());
     }
+
+    std::vector<std::shared_ptr<PhysicsEngineModule>>& PhysicsEngine::getModules()
+    {
+        return m_modules;
+    }
+
+    bool PhysicsEngine::isModuleRegistered(PhysicsEngineModule *module) const
+    {
+        return std::find_if(m_modules.begin(), m_modules.end(), [&](auto it)
+        {
+            return it.get() == module;
+        }) != m_modules.end();
+    }
+
+    bool PhysicsEngine::isModuleRegistered(const std::shared_ptr<PhysicsEngineModule>& module) const
+    {
+        return std::find(m_modules.begin(), m_modules.end(), module) != m_modules.end();
+    }
 }

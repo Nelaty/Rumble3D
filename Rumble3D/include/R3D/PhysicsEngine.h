@@ -30,12 +30,27 @@ namespace r3
 		 * \return True if module is registered.
 		 */
 		bool isModuleRegistered(std::string_view key) const;
-		/**
+        /**
+         * Check if a module is already registered.
+         * \return True if module is registered.
+         */
+        bool isModuleRegistered(PhysicsEngineModule* module) const;
+        /**
+         * Check if a module is already registered.
+         * \return True if module is registered.
+         */
+        bool isModuleRegistered(const std::shared_ptr<PhysicsEngineModule>& module) const;
+        /**
 		 * Search for a module by its name.
 		 * @param name The name of the module.
 		 * @return Returns the first occurence of a module with the given name or nullptr if none was found.
 		 */
         std::shared_ptr<PhysicsEngineModule> findModule(std::string_view name) const;
+        /**
+         * Get all registered modules.
+         * @return All registered modules.
+         */
+        std::vector<std::shared_ptr<PhysicsEngineModule>>& getModules();
         /**
          * Register a new module.
          * @param module The module to register.
