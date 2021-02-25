@@ -27,6 +27,8 @@ namespace r3
 		explicit Particle(const ParticleDef& definition);
 		virtual ~Particle() = default;
 
+		bool operator==(const Particle& rhs) const = default;
+
 		/**
 		 * \brief Initialize this particle.
 		 * \param definition The properties of this particle
@@ -155,7 +157,8 @@ namespace r3
 		void addForce(const glm::vec3& force);
 
 		/**
-		 * \brief Reset this particle.
+		 * \brief Reset position, velocity, acceleration, force accumulator
+		 * and dead status.
 		 */
 		void reset(const glm::vec3& position = glm::vec3(0.0));
 

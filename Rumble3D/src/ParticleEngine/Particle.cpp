@@ -1,6 +1,7 @@
 #include "R3D/ParticleEngine/Particle.h"
 
 #include <cassert>
+#include <stdexcept>
 
 namespace r3
 {
@@ -27,7 +28,7 @@ namespace r3
 
 	void Particle::setMass(const real mass)
 	{
-		assert(mass != 0);
+	    if(mass <= 0) throw std::invalid_argument("mass must be > 0");
 		m_inverseMass = real(1) / mass;
 	}
 
@@ -42,6 +43,7 @@ namespace r3
 
 	void Particle::setInverseMass(const real inverseMass)
 	{
+	    if(inverseMass < 0) throw std::invalid_argument("inverse mass must be positive");
 		m_inverseMass = inverseMass;
 	}
 
@@ -153,8 +155,6 @@ namespace r3
 	void Particle::integrate(const real duration)
 	{
 		if (m_isDead || m_inverseMass <= 0) return;
-
-		assert(duration > 0.0);
 
 		// Ignore quadratic term, since its effect is marginal
 		m_position += m_velocity * duration;
