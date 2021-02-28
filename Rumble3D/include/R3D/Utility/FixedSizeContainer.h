@@ -16,13 +16,13 @@ namespace r3
 	 * elements of type Element_Type
 	 */
 	template<class Element_Type, class Container_Type = std::vector<Element_Type>>
-	class R3D_DECLSPEC FixedSizeContainer
+	class R3D_DECLSPEC FixedSizeContainer // todo: define iterator
 	{
 	public:
 		/**
 		 * \brief FixedSizeContainer constructor
 		 */
-		explicit FixedSizeContainer(int size = 0);
+		explicit FixedSizeContainer(uint size = 0);
 		~FixedSizeContainer() = default;
 
 		/**
@@ -30,7 +30,7 @@ namespace r3
 		 * container.
 		 * \param size The new size of the container.
 		 */
-		void init(int size);
+		void init(uint size);
 
 		/**
 		 * \brief Reset the number of used entries.
@@ -54,19 +54,19 @@ namespace r3
 		 * container
 		 * \return The count of free entries.
 		 */
-		int getEntriesLeft() const;
+        uint getEntriesLeft() const;
 		/**
 		 * \brief Get the number of elements, which are already stored in
 		 * the container.
 		 * \return The number of used entries.
 		 */
-		int getEntriesUsed() const;
+        uint getEntriesUsed() const;
 		/**
 		 * \brief Get the maximal number of elements, which can fit in
 		 * this container.
 		 * \return The maximal number of elements.
 		 */
-		int getSize() const;
+        uint getSize() const;
 
 		/** \brief Get the last element. */
 		Element_Type* back();
@@ -93,8 +93,8 @@ namespace r3
 		const Container_Type& getData() const;
 
 	private:
-		int m_size{};
-		int m_entriesUsed{};
+        uint m_size{};
+        uint m_entriesUsed{};
 
 		Container_Type m_data;
 	};
