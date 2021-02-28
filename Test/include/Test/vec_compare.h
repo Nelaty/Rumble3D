@@ -6,6 +6,7 @@
 #pragma once
 
 #include <glm/glm.hpp>
+#include <string>
 
 namespace test
 {
@@ -16,4 +17,8 @@ namespace test
     bool compareRangeApprox(const glm::vec3 &val,
                             const glm::vec3 &start,
                             const glm::vec3 &end);
+
+    std::string vecToString(const glm::vec2& val);
+    std::string vecToString(const glm::vec3& val);
+    std::string vecToString(const glm::vec4& val);
 }

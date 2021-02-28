@@ -2,6 +2,8 @@
 #include "R3D/Common/Common.h"
 
 #include <glm/glm.hpp>
+#include <climits>
+#include <random>
 
 namespace r3
 {
@@ -26,8 +28,7 @@ namespace r3
 		 * \return The seed
 		 */
 		static unsigned int getSeed();
-
-		/**
+        /**
 		 * \brief Calculate random integer value \f$\in\f$ [INT_MIN, INT_MAX].
 		 * \return A random integer
 		 */
@@ -38,7 +39,7 @@ namespace r3
 		 * \param max Maximal value
 		 * \return A random integer
 		 */
-		static int randomInt(int min, int max);
+		static int32_t randomInt(int min32_t, int max32_t);
 
 		/**
 		 * \brief Calculate random float value \f$\in\f$ [FLOAT_MIN, FLOAT_MAX].
@@ -158,6 +159,12 @@ namespace r3
 		explicit Random() = default;
 		~Random() = default;
 
-		static unsigned int s_seed;
+		static std::mt19937 s_rng32;
+        static std::mt19937_64 s_rng64;
+        static std::uniform_int_distribution<int32_t> s_distInt32;
+        static std::uniform_int_distribution<int64_t> s_distInt64;
+        static std::uniform_real_distribution<float> s_distFloatZeroOne;
+        static std::uniform_real_distribution<double> s_distDoubleZeroOne;
+        static unsigned int s_seed;
 	};
 }

@@ -1,20 +1,20 @@
 #include "R3D/Utility/Random.h"
 
-#include <cassert>
-#include <utility>
-#include <ctime>
+#include <stdexcept>
 
 namespace r3
 {
 	void Random::seed()
 	{
-		seed(time(nullptr));
+	    std::random_device rd;
+	    seed(rd());
 	}
 
 	void Random::seed(const unsigned int seed)
 	{
-		s_seed = seed;
-		srand(seed);
+	    s_rng32.seed(seed);
+        s_rng64.seed(seed);
+        s_seed = seed;
 	}
 
 	unsigned int Random::getSeed()
@@ -24,45 +24,45 @@ namespace r3
 
 	int Random::randomInt()
 	{
-		return rand();
+	    return s_rng32();
 	}
 
-	int Random::randomInt(const int min, const int max)
+	int32_t Random::randomInt(const int32_t min, const int32_t max)
 	{
-		assert(min <= max);
-		return rand() % (max - min) + min;
+	    if(min > max) throw std::invalid_argument("min value larger than max is not allowed");
+		return s_rng32() % (max - min + 1) + min;
 	}
 
 	float Random::randomFloat()
 	{
-		return randomFloatZeroOne() * FLT_MAX;
+		return randomFloatZeroOne() * std::numeric_limits<float>::max();
 	}
 
 	float Random::randomFloat(const float min, const float max)
 	{
-		assert(min <= max);
+	    if(min > max) throw std::invalid_argument("min value larger than max is not allowed");
 		return randomFloatZeroOne() * (max - min) + min;
 	}
 
 	float Random::randomFloatZeroOne()
 	{
-		return static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+	    return s_distFloatZeroOne(s_rng32);
 	}
 
 	double Random::randomDouble()
 	{
-		return randomDoubleZeroOne() * DBL_MAX;
+		return randomDoubleZeroOne() * std::numeric_limits<double>::max();
 	}
 
 	double Random::randomDouble(const double min, const double max)
 	{
-		assert(min <= max);
+        if(min > max) throw std::invalid_argument("min value larger than max is not allowed");
 		return randomDoubleZeroOne() * (max - min) + min;
 	}
 
 	double Random::randomDoubleZeroOne()
 	{
-		return static_cast<double>(rand()) / static_cast<double>(RAND_MAX);
+	    return s_distDoubleZeroOne(s_rng64);
 	}
 
 	glm::vec2 Random::randomVec2()
@@ -135,15 +135,23 @@ namespace r3
 
 	int Random::randomSign(float chance)
 	{
-		if(randomBool(chance))
-		{
-			return 1;
-		}
-		else
-		{
-			return -1;
-		}
+		if(randomBool(chance)) return 1;
+		else return -1;
 	}
+
+    std::mt19937 Random::s_rng32 = std::mt19937();
+    std::mt19937_64 Random::s_rng64 = std::mt19937_64();
+
+    std::uniform_int_distribution<int32_t> Random::s_distInt32 =
+            std::uniform_int_distribution<int32_t>(std::numeric_limits<int32_t>::min(),
+                                                   std::numeric_limits<int32_t>::max());
+    std::uniform_int_distribution<int64_t> Random::s_distInt64 =
+            std::uniform_int_distribution<int64_t>(std::numeric_limits<int64_t>::min(),
+                                                   std::numeric_limits<int64_t>::max());
+    std::uniform_real_distribution<float> Random::s_distFloatZeroOne =
+            std::uniform_real_distribution<float>(0.0f, 1.0f);
+    std::uniform_real_distribution<double> Random::s_distDoubleZeroOne =
+            std::uniform_real_distribution<double>(0.0, 1.0);
 
 	unsigned int Random::s_seed = 0;
 }
