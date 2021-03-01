@@ -29,7 +29,7 @@ namespace r3
 		* \param particle The particle, on which the force should be applied to.
 		* \param duration The duration for which the force acts
 		*/
-		void updateForce(Particle* particle, real duration) override;
+		void updateForce(Particle* particle) override;
 
 	protected:
 		Particle* m_other;

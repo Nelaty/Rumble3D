@@ -31,7 +31,7 @@ namespace r3
 		assert(m_particleWorld != nullptr);
 
 		auto& registry = m_particleWorld->getParticleForceRegistry();
-		registry.updateForces(timeDelta);
+		registry.updateForces();
 	}
 
 	void DefaultParticleEngineCI::integrate(const real timeDelta)

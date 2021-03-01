@@ -20,7 +20,9 @@ namespace r3
 		 * \brief ParticleGravity constructor
 		 * \param gravity A constant force
 		 */
-		explicit ParticleGravity(const glm::vec3& gravity);
+		explicit ParticleGravity(real uniform);
+		explicit ParticleGravity(real x, real y, real z);
+		explicit ParticleGravity(const glm::vec3& gravity = glm::vec3(0.0, -9.81, 0.0));
 		~ParticleGravity() = default;
 
 		/**
@@ -29,12 +31,16 @@ namespace r3
 		* \param particle The particle, on which the force should be applied to.
 		* \param duration The duration for which the force acts.
 		*/
-		void updateForce(Particle* particle, real duration) override;
+		void updateForce(Particle* particle) override;
 
 		/** \brief Get the current gravity. */
 		const glm::vec3& getGravity() const;
 		/** \brief Set the current gravity. */
 		void setGravity(const glm::vec3& gravity);
+        /** \brief Set the current gravity. */
+		void setGravity(real x, real y, real z);
+        /** \brief Set the current gravity. */
+		void setGravity(real uniform);
 
 	protected:
 		glm::vec3 m_gravity;

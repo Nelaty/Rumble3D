@@ -8,7 +8,7 @@ namespace r3
 	{
 	}
 
-	void ParticleGravity::updateForce(Particle* particle, real duration)
+	void ParticleGravity::updateForce(Particle* particle)
 	{
 		if(!particle->hasFiniteMass()) return;
 
@@ -26,4 +26,28 @@ namespace r3
 	{
 		m_gravity = gravity;
 	}
+
+    ParticleGravity::ParticleGravity(real uniform)
+    {
+        m_gravity = glm::vec3(uniform);
+    }
+
+    ParticleGravity::ParticleGravity(real x, real y, real z)
+    {
+        m_gravity.x = x;
+        m_gravity.y = y;
+        m_gravity.z = z;
+    }
+
+    void ParticleGravity::setGravity(real x, real y, real z)
+    {
+        m_gravity.x = x;
+        m_gravity.y = y;
+        m_gravity.z = z;
+    }
+
+    void ParticleGravity::setGravity(real uniform)
+    {
+        m_gravity = glm::vec3(uniform);
+    }
 }

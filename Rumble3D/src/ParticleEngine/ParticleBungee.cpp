@@ -11,7 +11,7 @@ namespace r3
 	{
 	}
 
-	void ParticleBungee::updateForce(Particle* particle, real duration)
+	void ParticleBungee::updateForce(Particle* particle)
 	{
 		real magnitude;
 		glm::vec3 distance;

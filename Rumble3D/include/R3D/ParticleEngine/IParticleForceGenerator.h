@@ -20,7 +20,7 @@ namespace r3
 		 * \param particle The particle, on which the force should be applied to.
 		 * \param duration The duration for which the force acts
 		 */
-		virtual void updateForce(Particle* particle, real duration) = 0;
+		virtual void updateForce(Particle* particle) = 0;
 
 	protected:
 		explicit IParticleForceGenerator() = default;

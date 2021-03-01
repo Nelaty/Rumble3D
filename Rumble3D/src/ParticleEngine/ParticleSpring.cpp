@@ -14,7 +14,7 @@ namespace r3
 	}
 
 
-	void ParticleSpring::updateForce(Particle* particle, real duration)
+	void ParticleSpring::updateForce(Particle* particle)
 	{
 		real magnitude;
 		glm::vec3 distance;
