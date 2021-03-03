@@ -16,6 +16,10 @@ namespace r3
 	class R3D_DECLSPEC ParticleSpring : public ParticleSpringBase
 	{	
 	public:
+	    /**
+	     * \brief Construct a zero initialized ParticleSpring.
+	     */
+        explicit ParticleSpring();
 		/**
 		 * \brief ParticleSpring constructor.
 		 * \param other The reference position. Will not be influenced
@@ -26,6 +30,11 @@ namespace r3
 		explicit ParticleSpring(Particle* other, real springConstant, real restLength);
 		~ParticleSpring() = default;
 
+		/** \brief Set the other particle of this spring. */
+		void setOther(Particle* other);
+		/** \brief Get the other particle of this spring. */
+		Particle* getOther();
+
 		/**
 		* \brief Calculates and changes the force in the force accumulator
 		* of a particle.
@@ -35,6 +44,6 @@ namespace r3
 		void updateForce(Particle* particle) override;
 
 	protected:		
-		Particle* m_other;
+		Particle* m_other{nullptr};
 	};
 }

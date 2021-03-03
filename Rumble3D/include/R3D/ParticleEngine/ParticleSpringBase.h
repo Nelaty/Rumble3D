@@ -26,24 +26,26 @@ namespace r3
 		/** \brief Get the spring firmness. */
 		real getSpringConstant() const;
 
+        /** \brief Check if a force can be calculated.
+         * \param target First position (distance will point towards this position)
+         * \param source Second position
+         * \param [out] distance Distance vector between the given positions
+         * \param [out] magnitude Magnitude of the distance*/
+        bool isMagnitudeValid(const glm::vec3& target,
+                              const glm::vec3& source,
+                              glm::vec3& distance,
+                              real& magnitude) const;
+
 	protected:
 		explicit ParticleSpringBase() = default;
 		explicit ParticleSpringBase(real springConstant,
 									real restLength);
 
-		/** \brief Check if a force can be calculated.
-		 * \param target First position (distance will point towards this position)
-		 * \param source Second position
-		 * \param [out] distance Distance vector between the given positions
-		 * \param [out] magnitude Magnitude of the distance*/
-		bool isMagnitudeValid(const glm::vec3& target,
-                              const glm::vec3& source,
-                              glm::vec3& distance,
-							  real& magnitude);
-
-		/** \brief Calculate the spring force between two points. */
-		glm::vec3 calculateForce(glm::vec3 distance,
-								 real magnitude);
+        /** \brief Calculate the spring force between two points.
+         * \param distance Distance vector between two points. Undefined behavior for zero vector.
+         * \param magnitude The length of the distance vector. */
+        glm::vec3 calculateForce(glm::vec3 distance,
+                                 real magnitude) const;
 
 		real m_springConstant{0};
 		real m_restLength{0};

@@ -425,7 +425,11 @@ namespace r3
 
 	void RigidBody::integrate(const real timeDelta)
 	{
-		if(!m_awake) return;
+	    if(!m_awake || !hasFiniteMass())
+        {
+	        clearAccumulators();
+	        return;
+        }
 
 		calculateDerivedData();
 

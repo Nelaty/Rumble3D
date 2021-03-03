@@ -1,5 +1,5 @@
 #include "R3D/ParticleEngine/ParticleSpringBase.h"
-
+#include <iostream>
 namespace r3
 {
 	void ParticleSpringBase::setRestLength(real restLength)
@@ -32,7 +32,7 @@ namespace r3
 	bool ParticleSpringBase::isMagnitudeValid(const glm::vec3& target,
 											  const glm::vec3& source,
 											  glm::vec3& distance,
-											  real& magnitude)
+											  real& magnitude) const
 	{
 		// Force direction of zero vector is undefined
 		distance = target - source;
@@ -41,7 +41,7 @@ namespace r3
 	}
 
 	glm::vec3 ParticleSpringBase::calculateForce(glm::vec3 distance,
-												 real magnitude)
+												 real magnitude) const
 	{
 		// a) Force only acts at a different distance than the resting length
 		// b) A firm spring (higher constant) is more sensitive to changes in

@@ -154,7 +154,11 @@ namespace r3
 
 	void Particle::integrate(const real duration)
 	{
-		if (m_isDead || m_inverseMass <= 0) return;
+	    if(m_isDead || m_inverseMass <= 0)
+        {
+	        clearAccumulator();
+	        return;
+        }
 
 		// Ignore quadratic term, since its effect is marginal
 		m_position += m_velocity * duration;

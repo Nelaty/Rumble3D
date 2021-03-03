@@ -26,4 +26,18 @@ namespace r3
 			particle->addForce(calculateForce(distance, magnitude));
 		}
 	}
+
+    void ParticleSpring::setOther(Particle *other)
+    {
+        m_other = other;
+    }
+
+    Particle *ParticleSpring::getOther()
+    {
+	    return m_other;
+    }
+
+    ParticleSpring::ParticleSpring()
+    {
+    }
 }

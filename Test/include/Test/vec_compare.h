@@ -7,6 +7,7 @@
 
 #include <glm/glm.hpp>
 #include <string>
+#include <iostream>
 
 namespace test
 {
