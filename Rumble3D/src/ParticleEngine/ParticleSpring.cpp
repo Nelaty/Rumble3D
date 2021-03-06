@@ -36,8 +36,4 @@ namespace r3
     {
 	    return m_other;
     }
-
-    ParticleSpring::ParticleSpring()
-    {
-    }
 }

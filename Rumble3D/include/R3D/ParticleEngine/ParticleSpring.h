@@ -19,7 +19,7 @@ namespace r3
 	    /**
 	     * \brief Construct a zero initialized ParticleSpring.
 	     */
-        explicit ParticleSpring();
+        explicit ParticleSpring() = default;
 		/**
 		 * \brief ParticleSpring constructor.
 		 * \param other The reference position. Will not be influenced

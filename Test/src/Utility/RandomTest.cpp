@@ -14,6 +14,8 @@ TEST_CASE("Seeding")
 {
     r3::Random::seed(1337);
     CHECK(r3::Random::getSeed() == 1337);
+    r3::Random::seed(0);
+    CHECK(r3::Random::getSeed() == 0);
 }
 
 TEST_CASE("Random integer")
@@ -412,4 +414,5 @@ TEST_CASE("Random 4d vector")
                                                glm::vec4(2.0, -8.0, -15.0, 14.5)),
                         std::invalid_argument);
     }
+    r3::Random::seed(0);
 }

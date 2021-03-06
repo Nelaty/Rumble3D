@@ -27,4 +27,14 @@ namespace r3
 			m_other->addForce(-force);
 		}
 	}
+
+    void ParticleBidirectionalSpring::setOther(Particle *other)
+    {
+        m_other = other;
+    }
+
+    Particle *ParticleBidirectionalSpring::getOther()
+    {
+        return m_other;
+    }
 }

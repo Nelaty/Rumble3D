@@ -10,6 +10,10 @@ namespace r3
 	class R3D_DECLSPEC ParticleBidirectionalSpring : public ParticleSpringBase
 	{
 	public:
+	    /**
+	     * Construct a zero initialized ParticleBidirectionalSpring.
+	     */
+	    explicit ParticleBidirectionalSpring() = default;
 		/**
 		* \brief ParticleSpring constructor.
 		* \param other The other particle, which will be pulled towards the
@@ -22,6 +26,11 @@ namespace r3
 											 real restLength);
 		~ParticleBidirectionalSpring() = default;
 
+        /** \brief Set the other particle of this spring. */
+        void setOther(Particle* other);
+        /** \brief Get the other particle of this spring. */
+        Particle* getOther();
+
 		/**
 		* \brief Calculates and changes the force in the force accumulator
 		* of a particle.
@@ -31,6 +40,6 @@ namespace r3
 		void updateForce(Particle* particle) override;
 
 	private:
-		Particle* m_other;
+		Particle* m_other{nullptr};
 	};
 }
