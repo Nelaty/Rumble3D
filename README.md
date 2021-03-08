@@ -1,18 +1,17 @@
 # Rumble3D
 ## 1. Building
 
+This 3D physics engine is based on the [cyclone physics engine](https://github.com/idmillington/cyclone-physics) by Ian Millington.
+
 **Dependencies**
 
 * glm
 
-**CMake**
+**Linux**
 
 Install the following packages:
 ```
-apt-get install \
-  cmake \
-  g++ \
-  libglm-dev
+apt-get install cmake g++ libglm-dev
 ```
 
 Create and navigate to your desired build directory (in this example `./build`) and run cmake:
@@ -25,6 +24,10 @@ cmake ..
 Now just run `make` in your build directory.
 
 The library will be created in the `lib` subdirectory (`./build/lib`)
+
+**Windows**
+
+TBD
 
 ## 2. Installation
 The built library can be installed using the command
