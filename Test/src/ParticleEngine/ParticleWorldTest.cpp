@@ -3,5 +3,5 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include <ThirdParty/catch.hpp>
+#include "ThirdParty/catch.hpp"
 

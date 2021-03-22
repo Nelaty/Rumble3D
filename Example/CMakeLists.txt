@@ -10,6 +10,6 @@ add_executable(${PROJECT_NAME}_Example
 	${all_sources}
 )
 
-add_dependencies(${PROJECT_NAME}_Example ${PROJECT_NAME})
+add_dependencies(${PROJECT_NAME}_Example ${R3D_LIBRARIES})
 target_link_libraries(${PROJECT_NAME}_Example ${PROJECT_NAME})
 
