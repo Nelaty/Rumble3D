@@ -96,8 +96,13 @@ endif()
 # Installation
 #################################################
 # Install library and include files
-install(TARGETS ${PROJECT_NAME}
-        LIBRARY	DESTINATION ${RUMBLE3D_LIBRARY_INSTALL_PATH})
 
-install(DIRECTORY ${RUMBLE3D_INCLUDE_DIRECTORY}
-        DESTINATION ${RUMBLE3D_INCLUDE_INSTALL_PATH})
+if(${CMAKE_CXX_COMPILER_ID} STREQUAL MSVCC)
+    # TODO
+else()
+    install(TARGETS ${PROJECT_NAME}
+            LIBRARY	DESTINATION ${RUMBLE3D_LIBRARY_INSTALL_PATH})
+
+    install(DIRECTORY ${RUMBLE3D_INCLUDE_DIRECTORY}
+            DESTINATION ${RUMBLE3D_INCLUDE_INSTALL_PATH})
+endif()
