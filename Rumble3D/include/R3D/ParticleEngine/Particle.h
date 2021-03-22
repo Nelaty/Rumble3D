@@ -26,7 +26,8 @@ namespace r3
 		explicit Particle(const ParticleDef& definition);
 		virtual ~Particle() = default;
 
-		bool operator==(const Particle& rhs) const = default;
+		// TODO: Change to = default, when MSVC supports it (C++20)
+		bool operator==(const Particle& rhs) const;
 
 		/**
 		 * \brief Initialize this particle.

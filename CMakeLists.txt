@@ -1,4 +1,11 @@
 cmake_minimum_required(VERSION 3.11)
+
+include("cmake/HunterGate.cmake")
+HunterGate(
+        URL "https://github.com/cpp-pm/hunter/archive/v0.23.296.tar.gz"
+        SHA1 "232f5022ee1d45955a7e8d3e1720f31bac1bb534"
+)
+
 project(Rumble3d)
 set(PROJECT_SHORT_NAME "r3")
 
@@ -31,7 +38,7 @@ configure_file("${R3D_CONFIGURATION_PATH}.in"
 
 # Configure output paths
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 
 set(RUMBLE3D_LIB_NAME ${PROJECT_NAME})
@@ -42,13 +49,26 @@ set(RUMBLE3D_INCLUDE_DIRECTORY Rumble3D/include/)
 set(RUMBLE3D_LIBRARY_INSTALL_PATH lib)
 set(RUMBLE3D_INCLUDE_INSTALL_PATH include/)
 
-# Configure build types
-SET(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE)
-IF(DEFINED CMAKE_BUILD_TYPE AND CMAKE_VERSION VERSION_GREATER "2.8")
-    SET_PROPERTY(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS ${CMAKE_CONFIGURATION_TYPES})
-ENDIF()
-SET(CMAKE_DEBUG_POSTFIX "_d")
+# Configure build types #TODO:
+#SET(CMAKE_CONFIGURATION_TYPES "Debug;Release" CACHE STRING "Configs" FORCE)
+#IF(DEFINED CMAKE_BUILD_TYPE AND CMAKE_VERSION VERSION_GREATER "2.8")
+#    SET_PROPERTY(CACHE CMAKE_BUILD_TYPE PROPERTY STRINGS ${CMAKE_CONFIGURATION_TYPES})
+#ENDIF()
+#SET(CMAKE_DEBUG_POSTFIX "_d")
 
+#################################################
+# Dependencies of library
+#################################################
+hunter_add_package(glm)
+find_package(glm REQUIRED)
+
+set(R3D_DEP_LIBRARIES glm)
+
+
+#################################################
+# Dependencies (incl. library itself)
+#################################################
+set(R3D_LIBRARIES ${R3D_DEP_LIBRARIES} ${PROJECT_NAME})
 
 include_directories(${RUMBLE3D_INCLUDE_DIRECTORY})
 
@@ -60,12 +80,12 @@ include_directories(${RUMBLE3D_INCLUDE_DIRECTORY})
 add_subdirectory(Rumble3D)
 
 if(${RUMBLE3D_ENABLE_TESTS})
-enable_testing()
-add_subdirectory(Test)
+    enable_testing()
+    add_subdirectory(Test)
 
-add_test(NAME ${RUMBLE3D_TEST_NAME}
-        COMMAND ${RUMBLE3D_TEST_NAME} --config $<CONFIGURATION>
-        --exe $<TARGET_FILE:${RUMBLE3D_TEST_NAME}>)
+    add_test(NAME ${RUMBLE3D_TEST_NAME}
+            COMMAND ${RUMBLE3D_TEST_NAME} --config $<CONFIGURATION>
+            --exe $<TARGET_FILE:${RUMBLE3D_TEST_NAME}>)
 endif()
 
 if(${RUMBLE3D_BUILD_SAMPLES})
@@ -75,7 +95,6 @@ endif()
 #################################################
 # Installation
 #################################################
-
 # Install library and include files
 install(TARGETS ${PROJECT_NAME}
         LIBRARY	DESTINATION ${RUMBLE3D_LIBRARY_INSTALL_PATH})
