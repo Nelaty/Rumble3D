@@ -7,6 +7,7 @@
 #include "R3D/Utility/Random.h"
 #include "Test/vec_compare.h"
 
+#include <array>
 #include <stdexcept>
 #include <iostream>
 
