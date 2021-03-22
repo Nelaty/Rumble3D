@@ -175,4 +175,15 @@ namespace r3
 
 		clearAccumulator();
 	}
+
+    bool Particle::operator==(const Particle& rhs) const
+    {
+	    return rhs.m_position == m_position
+	        && rhs.m_velocity == m_velocity
+	        && rhs.m_acceleration == m_acceleration
+	        && rhs.m_forceAccumulator == m_forceAccumulator
+	        && rhs.m_damping == m_damping
+	        && rhs.m_inverseMass == m_inverseMass
+	        && rhs.m_isDead == m_isDead;
+    }
 }
