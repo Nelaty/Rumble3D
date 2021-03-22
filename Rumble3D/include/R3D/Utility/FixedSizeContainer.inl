@@ -3,13 +3,13 @@
 namespace r3
 {
 	template <class Element_Type, class Container_Type>
-	FixedSizeContainer<Element_Type, Container_Type>::FixedSizeContainer(const uint size)
+	FixedSizeContainer<Element_Type, Container_Type>::FixedSizeContainer(const size_t size)
 	{
 		init(size);
 	}
 
 	template <class Element_Type, class Container_Type>
-	void FixedSizeContainer<Element_Type, Container_Type>::init(const uint size)
+	void FixedSizeContainer<Element_Type, Container_Type>::init(const size_t size)
 	{
 		m_data.resize(size);
 		m_size = size;
@@ -36,19 +36,19 @@ namespace r3
 	}
 
 	template <class Element_Type, class Container_Type>
-    uint FixedSizeContainer<Element_Type, Container_Type>::getEntriesLeft() const
+    size_t FixedSizeContainer<Element_Type, Container_Type>::getEntriesLeft() const
 	{
 		return m_size - m_entriesUsed;
 	}
 
 	template <class Element_Type, class Container_Type>
-    uint FixedSizeContainer<Element_Type, Container_Type>::getEntriesUsed() const
+    size_t FixedSizeContainer<Element_Type, Container_Type>::getEntriesUsed() const
 	{
 		return m_entriesUsed;
 	}
 
 	template <class Element_Type, class Container_Type>
-    uint FixedSizeContainer<Element_Type, Container_Type>::getSize() const
+    size_t FixedSizeContainer<Element_Type, Container_Type>::getSize() const
 	{
 		return m_size;
 	}

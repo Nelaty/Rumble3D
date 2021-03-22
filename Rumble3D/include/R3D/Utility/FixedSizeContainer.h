@@ -22,7 +22,7 @@ namespace r3
 		/**
 		 * \brief FixedSizeContainer constructor
 		 */
-		explicit FixedSizeContainer(uint size = 0);
+		explicit FixedSizeContainer(size_t size = 0);
 		~FixedSizeContainer() = default;
 
 		/**
@@ -30,7 +30,7 @@ namespace r3
 		 * container.
 		 * \param size The new size of the container.
 		 */
-		void init(uint size);
+		void init(size_t size);
 
 		/**
 		 * \brief Reset the number of used entries.
@@ -54,19 +54,19 @@ namespace r3
 		 * container
 		 * \return The count of free entries.
 		 */
-        uint getEntriesLeft() const;
+        size_t getEntriesLeft() const;
 		/**
 		 * \brief Get the number of elements, which are already stored in
 		 * the container.
 		 * \return The number of used entries.
 		 */
-        uint getEntriesUsed() const;
+        size_t getEntriesUsed() const;
 		/**
 		 * \brief Get the maximal number of elements, which can fit in
 		 * this container.
 		 * \return The maximal number of elements.
 		 */
-        uint getSize() const;
+        size_t getSize() const;
 
 		/** \brief Get the last element. */
 		Element_Type* back();
@@ -93,8 +93,8 @@ namespace r3
 		const Container_Type& getData() const;
 
 	private:
-        uint m_size{};
-        uint m_entriesUsed{};
+        size_t m_size{};
+        size_t m_entriesUsed{};
 
 		Container_Type m_data;
 	};
