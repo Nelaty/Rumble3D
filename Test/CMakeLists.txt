@@ -1,9 +1,29 @@
-file(GLOB_RECURSE source_files "*.cpp" "*.c" "*.cxx")
-file(GLOB_RECURSE header_files "*.hpp" "*.h")
-file(GLOB_RECURSE inline_files "*.inl")
+add_executable(${PROJECT_NAME}_unittests 
+    src/ParticleEngine/ParticleBidirectionalSpringTest.cpp
+    src/ParticleEngine/ParticleGravityTest.cpp
+    src/ParticleEngine/ParticleSpringBaseTest.cpp
+    src/ParticleEngine/ParticleSpringTest.cpp
+    src/ParticleEngine/ParticleTest.cpp
+    src/ParticleEngine/ParticleWorldTest.cpp
+    
+    src/Test/vec_compare.cpp
 
-set(all_source_files ${source_files} ${header_files} ${inline_files})
+    src/Utility/FixedSizeContainerTest.cpp
+    src/Utility/RandomTest.cpp
+    
+    src/main.cpp
+    src/PhysicsEngineModuleTest.cpp
+    src/PhysicsEngineTest.cpp
+    src/TransformTest.cpp
+)
+target_link_libraries(${PROJECT_NAME}_unittests  
+    ${PROJECT_NAME}
+    Catch2::Catch2
+)
+target_include_directories(${PROJECT_NAME}_unittests 
+    PRIVATE
+        "include/"
+)
 
-add_executable(${RUMBLE3D_TEST_NAME} ${all_source_files})
-target_link_libraries(${RUMBLE3D_TEST_NAME} ${R3D_LIBRARIES})
-target_include_directories(${RUMBLE3D_TEST_NAME} PUBLIC ${RUMBLE_INCLUDE_DIRECTORY} "include/")
+add_test(NAME ${PROJECT_NAME}_unittests COMMAND ${PROJECT_NAME}_unittests)
+add_dependencies(ctest ${PROJECT_NAME}_unittests)
