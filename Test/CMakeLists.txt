@@ -15,12 +15,14 @@ add_executable(${PROJECT_NAME}_unittests
     src/PhysicsEngineTest.cpp
     src/TransformTest.cpp
 )
-target_link_libraries(${PROJECT_NAME}_unittests  
+target_link_libraries(${PROJECT_NAME}_unittests
+    PRIVATE
         ${PROJECT_NAME}
         Catch2
         
 )
-target_include_directories(${PROJECT_NAME}_unittests PUBLIC
+target_include_directories(${PROJECT_NAME}_unittests
+    PRIVATE
         ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 

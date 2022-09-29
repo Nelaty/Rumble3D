@@ -33,8 +33,6 @@ add_subdirectory(ThirdParty)
 # Option: Use standalone
 #find_package(glm REQUIRED)
 
-set(R3D_DEP_LIBRARIES glm)
-
 include_directories(${RUMBLE3D_INCLUDE_DIRECTORY})
 
 # Projects
@@ -47,6 +45,6 @@ if(${RUMBLE3D_ENABLE_TESTS})
     add_subdirectory(Test)
 endif()
 
-#if(${RUMBLE3D_BUILD_SAMPLES})
- #   include_directories(example)
-#endif()
+if(${RUMBLE3D_BUILD_SAMPLES})
+    include_directories(Example)
+endif()
