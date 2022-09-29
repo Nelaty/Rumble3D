@@ -1,7 +1,7 @@
 ###############################################################################
 # Catch2
 ###############################################################################
-if(NOT TARGET Catch2)
+if(NOT TARGET Catch2 AND RUMBLE3D_ENABLE_TESTS)
     message("Adding catch2 library")
     set(CATCH_BUILD_TESTING OFF)
     set(CATCH_BUILD_EXAMPLES OFF)

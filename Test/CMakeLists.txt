@@ -1,3 +1,7 @@
+if(RUMBLE3D_USE_STANDALONE_DEPS)
+    find_package(Catch2 REQUIRED)
+endif()
+
 add_executable(${PROJECT_NAME}_unittests 
     src/ParticleEngine/ParticleBidirectionalSpringTest.cpp
     src/ParticleEngine/ParticleGravityTest.cpp
