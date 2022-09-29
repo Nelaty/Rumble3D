@@ -643,7 +643,7 @@ contents={\parbox{\layerwidth}{\centering}}
 		\subsection{Filter}
 		A \textbf{ICollisionResolutionFilter} (as seen in listing \ref{lst:collisionResolutionFilter}) computes and applies changes to rigid bodies by using the contact data generated in the collision detection stage. 
 		\begin{lstlisting}[caption={Collision resolution filter},captionpos=b, label=lst:collisionResolutionFilter]
-			class R3D_DECLSPEC ICollisionResolutionFilter
+			class R3D_EXPORT ICollisionResolutionFilter
 			{
 			public:
 				virtual ~ICollisionResolutionFilter();

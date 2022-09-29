@@ -14,7 +14,7 @@ namespace r3
 	/**
 	 * \brief Default implementation for a collision resolver.
 	 */
-	class R3D_DECLSPEC CollisionResolver : public ICollisionResolverAccess
+	class R3D_EXPORT CollisionResolver : public ICollisionResolverAccess
 	{
 	public:
 		using Filter_Ptr = std::shared_ptr<ICollisionResolutionFilter>;

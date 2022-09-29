@@ -10,7 +10,7 @@ namespace r3
 
 	namespace detail
 	{
-		class R3D_DECLSPEC OctreeNode
+		class R3D_EXPORT OctreeNode
 		{
 		public:
 			explicit OctreeNode() = default;
@@ -24,7 +24,7 @@ namespace r3
 		};
 	}
 	
-	class R3D_DECLSPEC Octree
+	class R3D_EXPORT Octree
 	{
 	public:
 		using InsertFunction = std::function<void(RigidBody*, RigidBody*)>;

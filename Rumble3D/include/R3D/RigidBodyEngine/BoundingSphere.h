@@ -9,7 +9,7 @@ namespace r3
 	/**
 	 * \brief A bounding sphere is a kind of bounding volume.
 	 */
-	class R3D_DECLSPEC BoundingSphere
+	class R3D_EXPORT BoundingSphere
 	{	
 	public:
 		BoundingSphere() = default;

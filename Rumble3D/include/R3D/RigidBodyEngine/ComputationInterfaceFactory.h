@@ -12,7 +12,7 @@ namespace r3
 	 * \brief Generate default implementations of various computation
 	 * interfaces.
 	 */
-	class R3D_DECLSPEC ComputationInterfaceFactory
+	class R3D_EXPORT ComputationInterfaceFactory
 	{
 	public:
 		/**

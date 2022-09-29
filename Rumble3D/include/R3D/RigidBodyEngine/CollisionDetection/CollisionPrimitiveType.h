@@ -8,7 +8,7 @@ namespace r3
 	 * so the narrow phase can differentiate incoming collision 
 	 * primitives.
 	 */
-	enum R3D_DECLSPEC CollisionPrimitiveType
+	enum R3D_EXPORT CollisionPrimitiveType
 	{
 		R3D_PRIMITIVE_BOX = 0,
 		R3D_PRIMITIVE_SPHERE,

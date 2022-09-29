@@ -11,7 +11,7 @@ namespace r3
 	 * an IBroadPhaseFilter. They are functionally identical to an 
 	 * IBroadPhaseFilter, but can be chained.
 	 */
-	class R3D_DECLSPEC IIntermediatePhaseFilter
+	class R3D_EXPORT IIntermediatePhaseFilter
 	{
 	public:
 		virtual ~IIntermediatePhaseFilter() = default;

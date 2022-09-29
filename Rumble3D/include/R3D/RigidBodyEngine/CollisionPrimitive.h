@@ -15,7 +15,7 @@ namespace r3
 	 * \brief Abstract collision shape, which can collide with
 	 * other collision primitives.
 	 */
-	class R3D_DECLSPEC CollisionPrimitive
+	class R3D_EXPORT CollisionPrimitive
 	{
 	public:
 		virtual ~CollisionPrimitive() = default;

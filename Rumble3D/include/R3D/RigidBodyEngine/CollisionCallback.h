@@ -11,7 +11,7 @@ namespace r3
 	 * \brief Callback, which gets executed, when two rigid bodies
 	 * collide.
 	 */
-	class R3D_DECLSPEC CollisionCallback
+	class R3D_EXPORT CollisionCallback
 	{
 	public:
 		using Callback = std::function<void(RigidBody*, RigidBody*)>;

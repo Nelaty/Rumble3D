@@ -12,7 +12,7 @@ namespace r3
 	 * actually collidable bounding volumes.
 	 */
 	template<class BoundingVolumeClass>
-	class R3D_DECLSPEC BVHNode
+	class R3D_EXPORT BVHNode
 	{
 	public:
 		BVHNode() = default;

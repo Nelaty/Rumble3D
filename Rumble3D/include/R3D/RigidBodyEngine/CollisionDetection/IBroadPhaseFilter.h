@@ -12,7 +12,7 @@ namespace r3
 	 * filter can be used at the same time. To expand the broad phase
 	 * look at IIntermediatePhaseFilter.
 	 */
-	class R3D_DECLSPEC IBroadPhaseFilter
+	class R3D_EXPORT IBroadPhaseFilter
 	{
 	public:
 		virtual ~IBroadPhaseFilter() = default;

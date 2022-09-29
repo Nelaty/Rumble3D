@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Static class, which provides methods to generate inertia
 	 * tensors for various shapes.
 	 */
-	class R3D_DECLSPEC InertiaTensorGenerator
+	class R3D_EXPORT InertiaTensorGenerator
 	{
 	public:
 		/**

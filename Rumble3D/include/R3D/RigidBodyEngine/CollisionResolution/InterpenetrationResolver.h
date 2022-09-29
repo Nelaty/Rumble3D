@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Specialized collision resolution filter, which solves
 	 * interpenetration of bodies.
 	 */
-	class R3D_DECLSPEC InterpenetrationResolver : public ICollisionResolutionFilter
+	class R3D_EXPORT InterpenetrationResolver : public ICollisionResolutionFilter
 	{
 	public:
 		explicit InterpenetrationResolver();

@@ -12,7 +12,7 @@ namespace r3
 	 * \brief Default implementation of the rigid body engine
 	 * computation interface.
 	 */
-	class R3D_DECLSPEC DefaultRigidBodyEngineCI : public RigidBodyEngineCI
+	class R3D_EXPORT DefaultRigidBodyEngineCI : public RigidBodyEngineCI
 	{
 	public:
 		explicit DefaultRigidBodyEngineCI();

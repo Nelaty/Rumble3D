@@ -18,7 +18,7 @@ namespace r3
 	 * \brief A ParticleWorld is a physics engine module, used to
 	 * simulate particles.
 	 */
-	class R3D_DECLSPEC ParticleWorld : public PhysicsEngineModule
+	class R3D_EXPORT ParticleWorld : public PhysicsEngineModule
 	{
 	public:
 		using Particle_Ptr = Particle*;

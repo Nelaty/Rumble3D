@@ -14,7 +14,7 @@ namespace r3
 	 * \brief Describes a collision algorithm for every collision
 	 * primitive type combination.
 	 */
-	class R3D_DECLSPEC CollisionAlgorithmMatrix
+	class R3D_EXPORT CollisionAlgorithmMatrix
 	{
 	public:
 		using Algorithm_Ptr = std::shared_ptr<INarrowPhaseAlgorithm>;

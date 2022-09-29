@@ -11,7 +11,7 @@ namespace r3
 	/**
 	 * \brief Interface for sphere-sphere narrow algorithms.
 	 */
-	class R3D_DECLSPEC ISphereSphereNarrowAlgorithm : public INarrowPhaseAlgorithm
+	class R3D_EXPORT ISphereSphereNarrowAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
 		virtual ~ISphereSphereNarrowAlgorithm() = default;

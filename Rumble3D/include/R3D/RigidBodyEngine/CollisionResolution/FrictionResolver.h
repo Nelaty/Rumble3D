@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Specialized collision resolution filter, which adds
 	 * friction at given contacts.
 	 */
-	class R3D_DECLSPEC FrictionResolver : public ICollisionResolutionFilter
+	class R3D_EXPORT FrictionResolver : public ICollisionResolutionFilter
 	{
 	public:
 		explicit FrictionResolver() = default;

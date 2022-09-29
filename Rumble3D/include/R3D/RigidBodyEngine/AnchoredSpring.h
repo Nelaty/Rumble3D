@@ -14,7 +14,7 @@ namespace r3
 	 * spring forces.
 	 * \details One end of the spring is a static point.
 	 */
-	class R3D_DECLSPEC AnchoredSpring : public ForceGenerator
+	class R3D_EXPORT AnchoredSpring : public ForceGenerator
 	{
 	public:
 		/**

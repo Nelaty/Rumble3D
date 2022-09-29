@@ -12,7 +12,7 @@ namespace r3
 	/**
 	 * \brief CollisionPrimitive, which represents a sphere.
 	 */
-	class R3D_DECLSPEC CollisionSphere : public CollisionPrimitive
+	class R3D_EXPORT CollisionSphere : public CollisionPrimitive
 	{
 	public:
 		/**

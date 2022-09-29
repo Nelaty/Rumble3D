@@ -10,7 +10,7 @@ namespace r3
 	/**
 	 * \brief CollisionPrimitive that represents a plane.
 	 */
-	class R3D_DECLSPEC CollisionPlane : public CollisionPrimitive
+	class R3D_EXPORT CollisionPlane : public CollisionPrimitive
 	{
 	public:
 		/**

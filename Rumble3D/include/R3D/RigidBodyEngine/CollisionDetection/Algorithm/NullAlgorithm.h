@@ -6,7 +6,7 @@
 
 namespace r3
 {
-	class R3D_DECLSPEC NullAlgorithm : public INarrowPhaseAlgorithm
+	class R3D_EXPORT NullAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
 		explicit NullAlgorithm() = default;

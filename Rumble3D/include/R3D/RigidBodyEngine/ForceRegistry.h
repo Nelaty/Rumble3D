@@ -13,7 +13,7 @@ namespace r3
 	 * \brief Pairs force generators with rigid bodies. It uses the
 	 * force generators to update forces of linked rigid bodies.
 	 */
-	class R3D_DECLSPEC ForceRegistry
+	class R3D_EXPORT ForceRegistry
 	{
 	public:
 		struct ForceRegistrationEntry

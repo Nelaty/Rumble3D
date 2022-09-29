@@ -8,7 +8,7 @@ namespace r3
 	/**
 	 * \brief Interface for collision resolution filter.
 	 */
-	class R3D_DECLSPEC ICollisionResolutionFilter
+	class R3D_EXPORT ICollisionResolutionFilter
 	{
 	public:
 		virtual ~ICollisionResolutionFilter() = default;

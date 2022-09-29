@@ -13,7 +13,7 @@ namespace r3
 	 * \brief A DirectedForce is a force generator, which will continually
 	 * apply a specified force at a specific body point.
 	 */
-	class R3D_DECLSPEC DirectedForce : public ForceGenerator
+	class R3D_EXPORT DirectedForce : public ForceGenerator
 	{
 	public:
 		/**

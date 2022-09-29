@@ -10,7 +10,7 @@ namespace r3
 	 * \brief A CollisionObject can collide with other collision objects
 	 * in 3D space.
 	 */
-	class R3D_DECLSPEC CollisionObject
+	class R3D_EXPORT CollisionObject
 	{
 	public:
 		virtual ~CollisionObject() = default;

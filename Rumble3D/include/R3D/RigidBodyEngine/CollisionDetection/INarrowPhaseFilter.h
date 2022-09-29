@@ -14,7 +14,7 @@ namespace r3
 	/**
 	 * \brief Interface for narrow phase filters.
 	 */
-	class R3D_DECLSPEC INarrowPhaseFilter
+	class R3D_EXPORT INarrowPhaseFilter
 	{
 	public:
 		virtual ~INarrowPhaseFilter() = default;

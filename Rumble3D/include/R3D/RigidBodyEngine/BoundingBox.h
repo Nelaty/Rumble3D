@@ -6,7 +6,7 @@
 
 namespace r3
 {
-	class R3D_DECLSPEC BoundingBox
+	class R3D_EXPORT BoundingBox
 	{
 	public:
 	

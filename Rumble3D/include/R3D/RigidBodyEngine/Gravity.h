@@ -13,7 +13,7 @@ namespace r3
 	 * \brief Gravity is a force generator, which will apply constant
 	 * force on bodies.
 	 */
-	class R3D_DECLSPEC Gravity : public ForceGenerator
+	class R3D_EXPORT Gravity : public ForceGenerator
 	{
 	public:
 		/**

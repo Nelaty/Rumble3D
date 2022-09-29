@@ -9,7 +9,7 @@ namespace r3
 	/**
 	* \brief Abstract class for computation interfaces used for particle worlds.
 	*/
-	class R3D_DECLSPEC ParticleEngineCI : public IComputationInterface
+	class R3D_EXPORT ParticleEngineCI : public IComputationInterface
 	{
 	public:
 		virtual ~ParticleEngineCI() = default;

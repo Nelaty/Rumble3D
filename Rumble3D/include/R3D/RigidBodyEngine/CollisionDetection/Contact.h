@@ -15,7 +15,7 @@ namespace r3
 	 * rather knows the relative offsets to the points of mass of 
 	 * both rigid bodies.
 	 */
-	class R3D_DECLSPEC Contact
+	class R3D_EXPORT Contact
 	{
 	public:
 		explicit Contact();

@@ -11,7 +11,7 @@ namespace r3
 {
 	class RigidBody;
 
-	class R3D_DECLSPEC NarrowPhaseFilter : public INarrowPhaseFilter
+	class R3D_EXPORT NarrowPhaseFilter : public INarrowPhaseFilter
 	{
 	public:
 		template<class AlgorithmType>

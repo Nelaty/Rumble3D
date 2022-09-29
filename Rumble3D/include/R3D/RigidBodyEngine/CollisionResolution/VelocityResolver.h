@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Specialized collision resolution filter, which changes
 	 * body velocities for bodies involved in contacts.
 	 */
-	class R3D_DECLSPEC VelocityResolver : public ICollisionResolutionFilter
+	class R3D_EXPORT VelocityResolver : public ICollisionResolutionFilter
 	{
 	public:
 		explicit VelocityResolver();

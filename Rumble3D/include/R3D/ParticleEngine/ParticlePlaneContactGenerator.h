@@ -8,7 +8,7 @@ namespace r3
 {
     class ParticleContact;
 
-	class R3D_DECLSPEC ParticlePlaneContactGenerator : public ParticleContactGenerator
+	class R3D_EXPORT ParticlePlaneContactGenerator : public ParticleContactGenerator
 	{
 	public:
 		ParticlePlaneContactGenerator(real restitution, real radius);

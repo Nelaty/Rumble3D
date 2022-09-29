@@ -12,7 +12,7 @@ namespace r3
 	 * primitives, i.e. sphere-sphere, box-sphere. 
 	 * 
 	 */
-	class R3D_DECLSPEC INarrowPhaseAlgorithm
+	class R3D_EXPORT INarrowPhaseAlgorithm
 	{
 	public:
 		virtual ~INarrowPhaseAlgorithm() = default;

@@ -17,7 +17,7 @@ namespace r3
 	 * \brief A RigidBodyWorld is a physics engine module, used to
 	 * simulate rigid bodies.
 	 */
-	class R3D_DECLSPEC RigidBodyWorld : public PhysicsEngineModule
+	class R3D_EXPORT RigidBodyWorld : public PhysicsEngineModule
 	{
 	public:
 		using RigidBody_Container = std::vector<RigidBody*>;

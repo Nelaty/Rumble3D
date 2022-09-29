@@ -11,7 +11,7 @@ namespace r3
 	/**
 	 * \brief Default implementation for a box-box narrow algorithm.
 	 */
-	class R3D_DECLSPEC BoxBoxNarrowAlgorithm : public IBoxBoxNarrowAlgorithm
+	class R3D_EXPORT BoxBoxNarrowAlgorithm : public IBoxBoxNarrowAlgorithm
 	{
 	public:
 		explicit BoxBoxNarrowAlgorithm() = default;

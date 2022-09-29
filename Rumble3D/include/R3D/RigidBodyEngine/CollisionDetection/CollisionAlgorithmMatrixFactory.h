@@ -9,7 +9,7 @@ namespace r3
 	 * narrow phase collision detection and contact generation
 	 * algorithms.
 	 */
-	class R3D_DECLSPEC CollisionAlgorithmMatrixFactory
+	class R3D_EXPORT CollisionAlgorithmMatrixFactory
 	{
 	public:
 		/**

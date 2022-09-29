@@ -9,7 +9,7 @@ namespace r3
 	/**
 	 * \brief Interface for rigid body force generators.
 	 */
-	class R3D_DECLSPEC ForceGenerator
+	class R3D_EXPORT ForceGenerator
 	{
 	public:
 		virtual ~ForceGenerator() = default;

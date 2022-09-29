@@ -8,7 +8,7 @@ namespace r3
 	 * same layer can collide. Rigid bodies from the same group cannot
 	 * collide!
 	 */
-	struct R3D_DECLSPEC CollisionMask
+	struct R3D_EXPORT CollisionMask
 	{
 		/**
 		 * \brief CollisionMask constructor

@@ -11,7 +11,7 @@ namespace r3
      * calculate forces between two points according to Hooke's Law.
      * @f$ F_s = -kx @f$
      */
-	class R3D_DECLSPEC ParticleSpringBase : public IParticleForceGenerator
+	class R3D_EXPORT ParticleSpringBase : public IParticleForceGenerator
 	{
 	public:
 		virtual ~ParticleSpringBase() = default;

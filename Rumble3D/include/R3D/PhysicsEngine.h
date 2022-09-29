@@ -14,7 +14,7 @@ namespace r3
 	 * \brief The PhysicsEngine is the main component of this library and consists
 	 * of multiple PhysicsEngineModule.
 	 */
-	class R3D_DECLSPEC PhysicsEngine
+	class R3D_EXPORT PhysicsEngine
 	{
 	public:
 		explicit PhysicsEngine() = default;

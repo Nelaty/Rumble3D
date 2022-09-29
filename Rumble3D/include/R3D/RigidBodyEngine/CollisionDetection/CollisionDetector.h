@@ -20,7 +20,7 @@ namespace r3
 	 * It executes collision detection filters (programs) in a specific
 	 * order to generate contacts.
 	 */
-	class R3D_DECLSPEC CollisionDetector
+	class R3D_EXPORT CollisionDetector
 	{
 	public:
 		using BroadPhaseFilter_Ptr = std::unique_ptr<IBroadPhaseFilter>;

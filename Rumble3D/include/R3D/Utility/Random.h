@@ -10,7 +10,7 @@ namespace r3
 	/**
 	* \brief Equally distributed random number generator.
 	*/
-	class R3D_DECLSPEC Random
+	class R3D_EXPORT Random
 	{
 	public:
 		/**

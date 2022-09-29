@@ -13,7 +13,7 @@ namespace r3
 	 * \brief Abstract class for computation interfaces used by rigid
 	 * body worlds.
 	 */
-	class R3D_DECLSPEC RigidBodyEngineCI : public IComputationInterface
+	class R3D_EXPORT RigidBodyEngineCI : public IComputationInterface
 	{
 	public:
 		virtual ~RigidBodyEngineCI();

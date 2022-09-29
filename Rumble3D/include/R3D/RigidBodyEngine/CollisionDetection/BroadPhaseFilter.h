@@ -7,7 +7,7 @@ namespace r3
 	/**
 	 * \brief Default implementation of IBroadPhaseFilter.
 	 */
-	class R3D_DECLSPEC BroadPhaseFilter : public IBroadPhaseFilter
+	class R3D_EXPORT BroadPhaseFilter : public IBroadPhaseFilter
 	{
 	public:
 		explicit BroadPhaseFilter()  = default;

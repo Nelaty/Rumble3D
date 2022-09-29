@@ -9,7 +9,7 @@ namespace r3
 	 * \brief A CollisionPair describes a potential collision between
 	 * two rigid bodies.
 	 */
-	class R3D_DECLSPEC CollisionPair
+	class R3D_EXPORT CollisionPair
 	{
 	public:
 		/**

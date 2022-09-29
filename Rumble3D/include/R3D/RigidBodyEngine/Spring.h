@@ -15,7 +15,7 @@ namespace r3
 	* \details The spring force will not be applied to the rigid body,
 	* which is assigned to this generator.
 	*/
-	class R3D_DECLSPEC Spring : public ForceGenerator
+	class R3D_EXPORT Spring : public ForceGenerator
 	{
 	public:
 		/**

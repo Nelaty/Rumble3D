@@ -11,7 +11,7 @@ namespace r3
 	 * \brief A ParticleBungee is a particle force generator, which
 	 * simulates a bungee cord and connects two particles.
 	 */
-	class R3D_DECLSPEC ParticleBungee : public ParticleSpringBase
+	class R3D_EXPORT ParticleBungee : public ParticleSpringBase
 	{
 	public:
 		/**

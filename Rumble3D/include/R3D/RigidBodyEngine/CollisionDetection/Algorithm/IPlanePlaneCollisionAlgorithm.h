@@ -10,7 +10,7 @@ namespace r3
 	/**
 	 * \brief Interface for plane-plane narrow algorithms.
 	 */
-	class R3D_DECLSPEC IPlanePlaneCollisionAlgorithm : public INarrowPhaseAlgorithm
+	class R3D_EXPORT IPlanePlaneCollisionAlgorithm : public INarrowPhaseAlgorithm
 	{
 	public:
 		virtual ~IPlanePlaneCollisionAlgorithm() = default;

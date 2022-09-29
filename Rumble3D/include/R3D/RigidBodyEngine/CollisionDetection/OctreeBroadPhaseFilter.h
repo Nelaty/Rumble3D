@@ -5,7 +5,7 @@
 
 namespace r3
 {
-	class R3D_DECLSPEC OctreeBroadPhaseFilter : public IBroadPhaseFilter
+	class R3D_EXPORT OctreeBroadPhaseFilter : public IBroadPhaseFilter
 	{
 	public:
 		explicit OctreeBroadPhaseFilter() = default;

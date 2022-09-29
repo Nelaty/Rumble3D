@@ -7,7 +7,7 @@ namespace r3
 	/**
 	 * \brief Construction information for a PhysicsMaterial
 	 */
-	struct R3D_DECLSPEC PhysicsMaterialDef
+	struct R3D_EXPORT PhysicsMaterialDef
 	{
 		static constexpr real s_defaultFriction = 0.5f;
 		static constexpr real s_defaultRestitution = 0.5f;
@@ -19,7 +19,7 @@ namespace r3
 	/**
 	 * \brief Contains physical properties of a material.
 	 */
-	class R3D_DECLSPEC PhysicsMaterial
+	class R3D_EXPORT PhysicsMaterial
 	{
 	public:
 		explicit PhysicsMaterial();

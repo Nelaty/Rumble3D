@@ -18,7 +18,7 @@ namespace r3
 	 * \brief A rigid body is a 3D object, which can be moved and
 	 * rotated and has collision properties.
 	 */
-	class R3D_DECLSPEC RigidBody : public CollisionObject
+	class R3D_EXPORT RigidBody : public CollisionObject
 	{
 	public:
 		explicit RigidBody();

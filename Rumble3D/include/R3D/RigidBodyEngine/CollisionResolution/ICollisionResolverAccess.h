@@ -10,7 +10,7 @@ namespace r3
 	 * \brief Interface for collision resolvers. Uses
 	 * ICollisionResolutionFilter to resolve given contacts.
 	 */
-	class R3D_DECLSPEC ICollisionResolverAccess
+	class R3D_EXPORT ICollisionResolverAccess
 	{
 	public:
 		virtual ~ICollisionResolverAccess() = default;

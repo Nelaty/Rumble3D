@@ -13,7 +13,7 @@ namespace r3
 	 * \brief A ParticleDrag is a particle force generator, which 
 	 * simulates the effect of drag forces.
 	 */
-	class R3D_DECLSPEC ParticleDrag : public IParticleForceGenerator
+	class R3D_EXPORT ParticleDrag : public IParticleForceGenerator
 	{
 	public:
 		/**

@@ -9,7 +9,7 @@ namespace r3
     /**
 	 * \brief A ParticleContactResolver resolves a given number of contacts.
 	 */
-	class R3D_DECLSPEC ParticleContactResolver
+	class R3D_EXPORT ParticleContactResolver
 	{
 	public:
 		explicit ParticleContactResolver(unsigned int iterations);

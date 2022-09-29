@@ -8,7 +8,7 @@ namespace r3
 	 * \brief Interface used by physics modules to accomplish their
 	 * tasks.
 	 */
-	class R3D_DECLSPEC IComputationInterface
+	class R3D_EXPORT IComputationInterface
 	{
 	public:
 		virtual ~IComputationInterface() = default;

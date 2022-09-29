@@ -12,7 +12,7 @@ namespace r3
 	/**
 	 * \brief CollisionPrimitive that represents a box.
 	 */
-	class R3D_DECLSPEC CollisionBox : public CollisionPrimitive
+	class R3D_EXPORT CollisionBox : public CollisionPrimitive
 	{
 	public:
 		/**

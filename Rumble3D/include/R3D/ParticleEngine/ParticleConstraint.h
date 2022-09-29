@@ -13,7 +13,7 @@ namespace r3
 	 * \brief Abstract class, which links a particle with a static
 	 * position.
 	 */
-	class R3D_DECLSPEC ParticleConstraint : public ParticleContactGenerator
+	class R3D_EXPORT ParticleConstraint : public ParticleContactGenerator
 	{
 	public:
 		virtual ~ParticleConstraint() = default;
