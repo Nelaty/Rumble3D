@@ -4,7 +4,6 @@ add_executable(${PROJECT_NAME}_unittests
     src/ParticleEngine/ParticleSpringBaseTest.cpp
     src/ParticleEngine/ParticleSpringTest.cpp
     src/ParticleEngine/ParticleTest.cpp
-    src/ParticleEngine/ParticleWorldTest.cpp
     
     src/Test/vec_compare.cpp
 
@@ -17,12 +16,12 @@ add_executable(${PROJECT_NAME}_unittests
     src/TransformTest.cpp
 )
 target_link_libraries(${PROJECT_NAME}_unittests  
-    ${PROJECT_NAME}
-    Catch2::Catch2
+        ${PROJECT_NAME}
+        Catch2
+        
 )
-target_include_directories(${PROJECT_NAME}_unittests 
-    PRIVATE
-        "include/"
+target_include_directories(${PROJECT_NAME}_unittests PUBLIC
+        ${CMAKE_CURRENT_SOURCE_DIR}/include
 )
 
 add_test(NAME ${PROJECT_NAME}_unittests COMMAND ${PROJECT_NAME}_unittests)

@@ -2,7 +2,6 @@
 
 add_library(${PROJECT_NAME}
         src/ParticleEngine/DefaultParticleEngineCI.cpp
-        src/ParticleEngine/IParticleForceGenerator.cpp
         src/ParticleEngine/Particle.cpp
         src/ParticleEngine/ParticleAnchoredSpring.cpp
         src/ParticleEngine/ParticleBidirectionalSpring.cpp
@@ -12,7 +11,6 @@ add_library(${PROJECT_NAME}
         src/ParticleEngine/ParticleCollision.cpp
         src/ParticleEngine/ParticleConstraint.cpp
         src/ParticleEngine/ParticleContact.cpp
-        src/ParticleEngine/ParticleContactGenerator.cpp
         src/ParticleEngine/ParticleContactGeneratorRegistry.cpp
         src/ParticleEngine/ParticleContactResolver.cpp
         src/ParticleEngine/ParticleDef.cpp
@@ -48,10 +46,6 @@ add_library(${PROJECT_NAME}
         src/RigidBodyEngine/CollisionDetection/CollisionMask.cpp
         src/RigidBodyEngine/CollisionDetection/CollisionPair.cpp
         src/RigidBodyEngine/CollisionDetection/Contact.cpp
-        src/RigidBodyEngine/CollisionDetection/IBroadPhaseFilter.cpp
-        src/RigidBodyEngine/CollisionDetection/IIntermediatePhaseFilter.cpp
-        src/RigidBodyEngine/CollisionDetection/INarrowPhaseAlgorithm.cpp
-        src/RigidBodyEngine/CollisionDetection/INarrowPhaseFilter.cpp
         src/RigidBodyEngine/CollisionDetection/NarrowPhaseFilter.cpp
         src/RigidBodyEngine/CollisionDetection/Octree.cpp
         src/RigidBodyEngine/CollisionDetection/OctreeBroadPhaseFilter.cpp
@@ -76,7 +70,6 @@ add_library(${PROJECT_NAME}
         src/RigidBodyEngine/ComputationInterfaceFactory.cpp
         src/RigidBodyEngine/DefaultRigidBodyEngineCI.cpp
         src/RigidBodyEngine/DirectedForce.cpp
-        src/RigidBodyEngine/ForceGenerator.cpp
         src/RigidBodyEngine/ForceRegistry.cpp
         src/RigidBodyEngine/Gravity.cpp
         src/RigidBodyEngine/PhysicsMaterial.cpp

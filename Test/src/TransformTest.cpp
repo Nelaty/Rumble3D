@@ -4,8 +4,10 @@
  */
 
 #include "R3D/Transform3D.h"
+
 #include "Test/vec_compare.h"
-#include "ThirdParty/catch.hpp"
+
+#include "catch2/catch_all.hpp"
 
 TEST_CASE("A new transformation is located in the origin and not rotated")
 {

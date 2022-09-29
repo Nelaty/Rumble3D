@@ -3,10 +3,13 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include <Test/vec_compare.h>
-#include <ThirdParty/catch.hpp>
+#include "Test/vec_compare.h"
+
+#include "catch2/catch_all.hpp"
 
 #include <sstream>
+
+using namespace Catch;
 
 namespace test
 {

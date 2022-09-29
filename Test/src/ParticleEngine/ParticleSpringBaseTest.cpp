@@ -3,8 +3,10 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include "ThirdParty/catch.hpp"
+#include "catch2/catch_all.hpp"
 #include "R3D/ParticleEngine/ParticleSpringBase.h"
+
+using namespace Catch;
 
 class SpringTest : public r3::ParticleSpringBase
 {

@@ -3,9 +3,10 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include "ThirdParty/catch.hpp"
 #include "R3D/PhysicsEngineModule.h"
 #include "R3D/IComputationInterface.h"
+
+#include "catch2/catch_all.hpp"
 
 class TestModule : public r3::PhysicsEngineModule
 {

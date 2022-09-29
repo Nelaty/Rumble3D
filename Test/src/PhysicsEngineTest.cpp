@@ -3,11 +3,11 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include <R3D/PhysicsEngine.h>
-#include <R3D/ParticleEngine/ParticleWorld.h>
-#include <R3D/RigidBodyEngine/RigidBodyWorld.h>
+#include "R3D/PhysicsEngine.h"
+#include "R3D/ParticleEngine/ParticleWorld.h"
+#include "R3D/RigidBodyEngine/RigidBodyWorld.h"
 
-#include <ThirdParty/catch.hpp>
+#include "catch2/catch_all.hpp"
 
 
 TEST_CASE("Pause and resume")

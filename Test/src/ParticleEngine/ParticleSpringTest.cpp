@@ -3,7 +3,7 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include "ThirdParty/catch.hpp"
+#include "catch2/catch_all.hpp"
 #include "R3D/ParticleEngine/ParticleSpring.h"
 #include "R3D/ParticleEngine/Particle.h"
 
@@ -11,6 +11,8 @@
 
 #include <glm/gtx/io.hpp>
 #include <iostream>
+
+using namespace Catch;
 
 TEST_CASE("Test constructor")
 {

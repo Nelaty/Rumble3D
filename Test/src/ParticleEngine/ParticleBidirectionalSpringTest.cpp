@@ -6,7 +6,8 @@
 #include "R3D/ParticleEngine/ParticleBidirectionalSpring.h"
 #include "R3D/ParticleEngine/Particle.h"
 #include "Test/vec_compare.h"
-#include "ThirdParty/catch.hpp"
+
+#include "catch2/catch_all.hpp"
 
 TEST_CASE("BidirectionalSpring Getter and setter")
 {

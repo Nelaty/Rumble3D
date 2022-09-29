@@ -1,14 +1,11 @@
-cmake_minimum_required(VERSION 3.11)
-
+cmake_minimum_required(VERSION 3.14)
 project(Rumble3d)
-set(PROJECT_SHORT_NAME "r3")
 
 set(CMAKE_CXX_STANDARD 20)
 
-
 # Configure library version
-set(RUMBLE3D_ENABLE_TESTS 1)
-set(RUMBLE3D_BUILD_SAMPLES 1)
+option(RUMBLE3D_ENABLE_TESTS "Build and run unittests" ON)
+option(RUMBLE3D_BUILD_SAMPLES "Build the examples" ON)
 
 set(R3D_VERSION_MAJOR "1")
 set(R3D_VERSION_MINOR "0")
@@ -23,17 +20,12 @@ configure_file("${R3D_CONFIGURATION_PATH}.in"
         "${R3D_CONFIGURATION_PATH}"
         @ONLY)
 
-# Configure output paths
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
 
 set(RUMBLE3D_LIB_NAME ${PROJECT_NAME})
 set(RUMBLE3D_TEST_NAME Test)
 
 # Configure installation paths
-set(RUMBLE3D_LIBRARY_INSTALL_PATH lib)
-set(RUMBLE3D_INCLUDE_INSTALL_PATH include/)
 
 # Third party libraries
 add_subdirectory(ThirdParty)

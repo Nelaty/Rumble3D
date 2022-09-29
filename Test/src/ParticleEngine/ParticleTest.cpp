@@ -3,14 +3,15 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include <R3D/ParticleEngine/Particle.h>
+#include "R3D/ParticleEngine/Particle.h"
+#include "Test/vec_compare.h"
 
-#include <ThirdParty/catch.hpp>
-#include <Test/vec_compare.h>
+#include "catch2/catch_all.hpp"
 
-#include <stdexcept>
 #include <climits>
+#include <stdexcept>
 
+using namespace Catch;
 
 TEST_CASE("Particle mass")
 {

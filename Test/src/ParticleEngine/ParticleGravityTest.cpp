@@ -3,7 +3,7 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include "ThirdParty/catch.hpp"
+#include "catch2/catch_all.hpp"
 #include "R3D/ParticleEngine/ParticleGravity.h"
 #include "R3D/ParticleEngine/Particle.h"
 

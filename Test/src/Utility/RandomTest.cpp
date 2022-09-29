@@ -3,13 +3,17 @@
  * Copyright (c) 2021 Matthias Gensheimer. All rights reserved.
  */
 
-#include "ThirdParty/catch.hpp"
 #include "R3D/Utility/Random.h"
+
 #include "Test/vec_compare.h"
+
+#include "catch2/catch_all.hpp"
 
 #include <array>
 #include <stdexcept>
 #include <iostream>
+
+using namespace Catch;
 
 TEST_CASE("Seeding")
 {
