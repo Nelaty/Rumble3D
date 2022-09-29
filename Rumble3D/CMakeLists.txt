@@ -1,4 +1,14 @@
 # Set source files
+if(RUMBLE3D_USE_DOUBLE_PRECISION)
+    message("Double precision not supported yet. Fallback to 32 bit float.")
+    set(R3D_CONFIG_USE_DOUBLE_PRECISION "0")
+else()
+    set(R3D_CONFIG_USE_DOUBLE_PRECISION "0")
+endif()
+
+configure_file("${CMAKE_CURRENT_SOURCE_DIR}/include/R3D/Common/Config.h.in"
+               "${CMAKE_CURRENT_SOURCE_DIR}/include/R3D/Common/Config.h"
+               @ONLY)
 
 add_library(${PROJECT_NAME}
         src/ParticleEngine/DefaultParticleEngineCI.cpp
