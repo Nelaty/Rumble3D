@@ -2,6 +2,8 @@
 #include "R3D/ParticleEngine/ParticleContact.h"
 #include "R3D/ParticleEngine/Particle.h"
 
+#include <limits>
+
 namespace r3
 {
 	ParticleContactResolver::ParticleContactResolver(const unsigned iterations)
@@ -26,7 +28,7 @@ namespace r3
 		{
 			// Suche den Kontakt mit kleinster Trennungsgeschwindigkeit
 			// gleich gr��ter Kollisionsgeschwindigkeit:
-			auto max = R3D_REAL_MAX;
+			auto max = std::numeric_limits<real>::max();
 			auto maxIndex = numberOfContacts;
 			for (unsigned i = 0; i < numberOfContacts; ++i)
 			{

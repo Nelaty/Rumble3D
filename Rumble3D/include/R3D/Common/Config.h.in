@@ -1,8 +1,9 @@
 #pragma once
+#include <string>
 
-#define R3D_VERSION_MAJOR   "@R3D_VERSION_MAJOR@"
-#define R3D_VERSION_MINOR   "@R3D_VERSION_MINOR@"
-#define R3D_VERSION_PATCH   "@R3D_VERSION_PATCH@"
-#define R3D_VERSION         "@R3D_VERSION@"
+const auto R3D_VERSION_MAJOR = std::string("@R3D_VERSION_MAJOR@");
+const auto R3D_VERSION_MINOR = std::string("@R3D_VERSION_MINOR@");
+const auto R3D_VERSION_PATCH = std::string("@R3D_VERSION_PATCH@");
+const auto R3D_VERSION       = std::string("@R3D_VERSION@");
 
 #define R3D_CONFIG_USE_DOUBLE_PRECISION "@R3D_CONFIG_USE_DOUBLE_PRECISION@"

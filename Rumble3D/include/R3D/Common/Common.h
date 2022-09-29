@@ -1,10 +1,5 @@
 #pragma once
 
-// Check if platform is windows
-#if !defined(_WIN32) && (defined(__WIN32__) || defined(WIN32) || defined(__MINGW32__))
-#define _WIN32
-#endif
-
 // Dllimport, Dllexport
 #if defined(_WIN32) && defined(_GLFW_BUILD_DLL)
     #define R3D_DECLSPEC __declspec(dllexport)

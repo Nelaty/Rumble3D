@@ -6,6 +6,7 @@
 #include <glm/gtx/quaternion.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <cassert>
+#include <limits>
 
 namespace r3
 {
@@ -195,7 +196,7 @@ namespace r3
 
 	void RigidBody::setInverseMass(const real inverseMass)
 	{
-		m_mass = inverseMass != real(0) ? real(1) / inverseMass : R3D_REAL_MAX;
+		m_mass = inverseMass != real(0) ? real(1) / inverseMass : std::numeric_limits<real>::max();
 		m_inverseMass = inverseMass;
 	}
 

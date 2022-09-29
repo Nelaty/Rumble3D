@@ -1,6 +1,7 @@
 #include "R3D/ParticleEngine/Particle.h"
 
 #include <cassert>
+#include <limits>
 #include <stdexcept>
 
 namespace r3
@@ -36,7 +37,7 @@ namespace r3
 	{
 		if (m_inverseMass == 0)
 		{
-			return R3D_REAL_MAX;
+			return std::numeric_limits<real>::max();
 		}
 		return real(1) / m_inverseMass;
 	}

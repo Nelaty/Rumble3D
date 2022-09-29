@@ -1,17 +1,12 @@
 #include "R3D/ParticleEngine/ParticleDef.h"
 
+#include <limits>
+
 namespace r3
 {
 	void ParticleDef::setMass(const real mass)
 	{
-		if (mass != 0)
-		{
-			m_inverseMass = real(1) / mass;
-		}
-		else
-		{
-			m_inverseMass = real(R3D_REAL_MAX);
-		}
+		m_inverseMass = mass != 0 ? static_cast<real>(1) / mass : std::numeric_limits<real>::max();
 	}
 
 	void ParticleDef::setInfiniteMass()

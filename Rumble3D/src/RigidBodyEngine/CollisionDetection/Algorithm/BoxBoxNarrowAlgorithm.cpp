@@ -3,7 +3,9 @@
 
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/norm.hpp>
+
 #include <cassert>
+#include <limits>
 
 namespace r3
 {
@@ -23,7 +25,7 @@ namespace r3
 		glm::vec3 toCentre = twoCentre - oneCentre;
 
 		// Angenommen,es gibt keinen Kontakt:
-		real pen = R3D_REAL_MAX;
+		real pen = std::numeric_limits<real>::max();
 		unsigned int best = 0xffffff;
 
 		const auto checkOverlap = [&](const glm::vec3& axis, const unsigned int index)
