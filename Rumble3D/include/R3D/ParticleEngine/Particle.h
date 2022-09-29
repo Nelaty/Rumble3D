@@ -160,7 +160,7 @@ namespace r3
 		 * \brief Reset position, velocity, acceleration, force accumulator
 		 * and dead status.
 		 */
-		void reset(const glm::vec3& position = glm::vec3(0.0));
+		void reset(const glm::vec3& position = glm::vec3(0));
 
 		/** 
 		 * \brief Integrate changes made to the particle.

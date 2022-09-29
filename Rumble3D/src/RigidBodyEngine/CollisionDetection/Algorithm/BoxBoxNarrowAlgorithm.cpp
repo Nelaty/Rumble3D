@@ -20,13 +20,15 @@ namespace r3
 		}
 
 		// Vektor zwischen den Schwerpunkten:
-		const glm::vec3 oneCentre = rbBox1->getTransform().getPosition();
-		const glm::vec3 twoCentre = rbBox2->getTransform().getPosition();
-		glm::vec3 toCentre = twoCentre - oneCentre;
+		const auto oneCentre = rbBox1->getTransform().getPosition();
+		const auto twoCentre = rbBox2->getTransform().getPosition();
+		auto       toCentre = twoCentre - oneCentre;
 
 		// Angenommen,es gibt keinen Kontakt:
-		real pen = std::numeric_limits<real>::max();
-		unsigned int best = 0xffffff;
+		auto pen = std::numeric_limits<real>::max();
+
+		constexpr auto invalidBest = std::numeric_limits<std::uint32_t>::max();
+		auto 		   best 	   = invalidBest;
 
 		const auto checkOverlap = [&](const glm::vec3& axis, const unsigned int index)
 		{
@@ -39,32 +41,25 @@ namespace r3
 		const auto& rotationOne = rbBox1->getTransform().getRotationMat();
 		const auto& rotationTwo = rbBox2->getTransform().getRotationMat();
 
-		if(checkOverlap(rotationOne[0], 0)) return false;
-		if(checkOverlap(rotationOne[1], 1)) return false;
-		if(checkOverlap(rotationOne[2], 2)) return false;
-
-		if(checkOverlap(rotationTwo[0], 3)) return false;
-		if(checkOverlap(rotationTwo[1], 4)) return false;
-		if(checkOverlap(rotationTwo[2], 5)) return false;
-
+		#pragma unroll
+		for(int i = 0; i < 6; ++i)
+		{
+			if(checkOverlap(rotationOne[i % 3], i)) return false;
+		}
 		// Beste Werte zwischenspeichern, falls es nur noch
 		// fast parallele Kanten gibt, die uns keine Aussage
 		// machen lassen.
 		const unsigned bestSingleAxis = best;
 
-
-		if(checkOverlap(glm::cross(rotationOne[0], rotationTwo[0]), 6)) return false;
-		if(checkOverlap(glm::cross(rotationOne[0], rotationTwo[1]), 7)) return false;
-		if(checkOverlap(glm::cross(rotationOne[0], rotationTwo[2]), 8)) return false;
-		if(checkOverlap(glm::cross(rotationOne[1], rotationTwo[0]), 9)) return false;
-		if(checkOverlap(glm::cross(rotationOne[1], rotationTwo[1]), 10)) return false;
-		if(checkOverlap(glm::cross(rotationOne[1], rotationTwo[2]), 11)) return false;
-		if(checkOverlap(glm::cross(rotationOne[2], rotationTwo[0]), 12)) return false;
-		if(checkOverlap(glm::cross(rotationOne[2], rotationTwo[1]), 13)) return false;
-		if(checkOverlap(glm::cross(rotationOne[2], rotationTwo[2]), 14)) return false;
+		#pragma unroll
+		for(int i = 0; i < 9; ++i)
+		{
+			if(checkOverlap(glm::cross(rotationOne[i / 3], rotationTwo[i % 3]), i + 6)) return false;
+		}
 
 		// Make sure we've got a result.
-		assert(best != 0xffffff);
+		if(best == invalidBest)
+			throw std::runtime_error("No result for box box narrow algorithm");
 
 		auto* contact = collisionData.getAvailableEntry();
 

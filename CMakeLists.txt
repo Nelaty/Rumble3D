@@ -24,9 +24,10 @@ else()
     find_package(glm REQUIRED)
 endif()
 
-# Projects
+# Library
 add_subdirectory(Rumble3D)
 
+# Tests
 if(RUMBLE3D_ENABLE_TESTS)
     enable_testing()
     add_custom_target(ctest ${PROJECT_NAME}_unittests "-v")
@@ -34,6 +35,7 @@ if(RUMBLE3D_ENABLE_TESTS)
     add_subdirectory(Test)
 endif()
 
+# Examples
 if(RUMBLE3D_BUILD_SAMPLES)
     include_directories(Example)
 endif()

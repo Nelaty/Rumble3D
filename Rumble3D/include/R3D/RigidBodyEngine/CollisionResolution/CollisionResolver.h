@@ -4,6 +4,7 @@
 #include "R3D/RigidBodyEngine/CollisionDetection/Contact.h"
 #include "R3D/Utility/FixedSizeContainer.h"
 
+#include <cstdint>
 #include <memory>
 #include <vector>
 
@@ -35,7 +36,7 @@ namespace r3
 
 
 		/** Get the current number of used filters. */
-		unsigned int getFilterCount() const;
+		std::size_t getFilterCount() const;
 
 		/** 
 		 * Removes all filters from this collision resolver. 

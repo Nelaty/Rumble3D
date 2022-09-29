@@ -30,9 +30,9 @@ namespace r3
 		return m_filters.back().get();
 	}
 
-	unsigned CollisionResolver::getFilterCount() const
+	std::size_t CollisionResolver::getFilterCount() const
 	{
-		return unsigned(m_filters.size());
+		return m_filters.size();
 	}
 
 	void CollisionResolver::clear()

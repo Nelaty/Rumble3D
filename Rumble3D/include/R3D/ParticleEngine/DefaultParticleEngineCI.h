@@ -5,6 +5,8 @@
 
 #include "R3D/Utility/FixedSizeContainer.h"
 
+#include <cstdint>
+
 namespace r3
 {
 	class ParticleContact;
@@ -24,8 +26,8 @@ namespace r3
 		 * \param particleWorld The particle world, which should be used for
 		 * calculations.
 		 */
-		explicit DefaultParticleEngineCI(unsigned contactsMax, 
-										 unsigned iterations = 0,
+		explicit DefaultParticleEngineCI(std::size_t contactsMax, 
+										 std::size_t iterations = 0,
 										 ParticleWorld* particleWorld = nullptr);
 		~DefaultParticleEngineCI() = default;
 

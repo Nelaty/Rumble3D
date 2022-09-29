@@ -9,14 +9,14 @@
 
 namespace r3
 {
-	DefaultParticleEngineCI::DefaultParticleEngineCI(const unsigned contactsMax,
-													 const unsigned iterations,
+	DefaultParticleEngineCI::DefaultParticleEngineCI(std::size_t contactsMax,
+													 std::size_t iterations,
 													 ParticleWorld* particleWorld)
-		: ParticleEngineCI(particleWorld),
-		m_resolver(iterations),
-		m_contactData(contactsMax),
-		m_contactsMax(contactsMax),
-		m_iterations(iterations)
+		: ParticleEngineCI(particleWorld)
+		, m_resolver(iterations)
+		, m_contactData(contactsMax)
+		, m_contactsMax(contactsMax)
+		, m_iterations(iterations)
 	{
 		reset();
 	}
